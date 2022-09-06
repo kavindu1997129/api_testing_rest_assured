@@ -1,42 +1,53 @@
 package tests;
 
-import java.io.File;
-import java.nio.file.Files;
-import java.nio.file.Paths;
-
+import java.io.FileInputStream;
+import java.util.Properties;
 import org.testng.annotations.Test;
-
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 
 public class Wso2_Apim {
 	
-	Response  res;
+	Response  res1;
 	Response  res2;
 	Response  res3;
 	Response  res4;
 	Response  res5;
 	Response  res6;
-	
+
+	FileInputStream input;
+	Properties p;
+
 	
 	@Test
 	public void oauth2() {
+
+		try {
+			String path =  "./src/test/resources/config.properties";
+			p = new Properties();
+			input = new FileInputStream(path);
+			p.load(input);
+			System.out.println(p.getProperty("adminusername"));
+
+		} catch (Exception e) {
+			System.out.println(e);
+		}
 		
-		res = RestAssured.given()
+		res1 = RestAssured.given()
 				.relaxedHTTPSValidation()
 				.auth()
 				.preemptive()
-				.basic("admin", "admin")   
+				.basic(p.getProperty("adminusername"), p.getProperty("adminpassword"))
 				.body("{\"callbackUrl\":\"www.google.lk\",\"clientName\":\"rest_api_publisher\",\"owner\":\"admin\",\"grantType\":\"client_credentialspasswordrefresh_token\",\"saasApp\":true}")
 				.contentType("application/json")
-				.post("https://localhost:9443/client-registration/v0.17/register");
+				.post(p.getProperty("hosturi")+"/client-registration/v0.17/register");
 		
-		System.out.println(res.jsonPath().prettify());
+		System.out.println(res1.jsonPath().prettify());
 		
 		res2 = RestAssured.given()
 				.relaxedHTTPSValidation()
 				.auth()
-				.basic(res.jsonPath().get("clientId").toString(), res.jsonPath().get("clientSecret").toString())  
+				.basic(res1.jsonPath().get("clientId").toString(), res1.jsonPath().get("clientSecret").toString())  
 				.queryParam("grant_type","password")
 				.queryParam("username","admin")
 				.queryParam("password","admin")
