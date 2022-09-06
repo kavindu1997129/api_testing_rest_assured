@@ -27,7 +27,6 @@ public class Wso2_Apim {
 			p = new Properties();
 			input = new FileInputStream(path);
 			p.load(input);
-			System.out.println(p.getProperty("adminusername"));
 
 		} catch (Exception e) {
 			System.out.println(e);
@@ -37,7 +36,7 @@ public class Wso2_Apim {
 				.relaxedHTTPSValidation()
 				.auth()
 				.preemptive()
-				.basic(p.getProperty("adminusername"), p.getProperty("adminpassword"))
+				.basic(p.getProperty("adminusername"),p.getProperty("adminpassword"))
 				.body("{\"callbackUrl\":\"www.google.lk\",\"clientName\":\"rest_api_publisher\",\"owner\":\"admin\",\"grantType\":\"client_credentialspasswordrefresh_token\",\"saasApp\":true}")
 				.contentType("application/json")
 				.post(p.getProperty("hosturi")+"/client-registration/v0.17/register");
