@@ -75,7 +75,7 @@ public class Wso2_Apim {
 				.oauth2(res2.jsonPath().get("access_token").toString())
 				.body(apicreationpls)
 				.contentType("application/json")
-				.post(p.getProperty("apicreation_url"));
+				.post(p.getProperty("publisher_url"));
 		
 		System.out.println(res3.jsonPath().prettify());
 		
@@ -83,7 +83,7 @@ public class Wso2_Apim {
 				.relaxedHTTPSValidation()
 				.auth()
 				.oauth2(res2.jsonPath().get("access_token").toString())
-				.get("https://127.0.0.1:9443/api/am/publisher/v1/apis");
+				.get(p.getProperty("publisher_url"));
 		
 		System.out.println(res4.jsonPath().prettyPrint());
 		
