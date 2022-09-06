@@ -21,7 +21,9 @@ public class Wso2_Apim {
 	FileInputStream input;
 	Properties p;
 	byte[] authplj;
+	byte[] apicreationplj;
 	String authpls;
+	String apicreationpls;
 
 	
 	@Test
@@ -31,6 +33,8 @@ public class Wso2_Apim {
 			String path =  "./src/test/resources/config.properties";
 			authplj = Files.readAllBytes(Paths.get("./src/test/java/tests/payload.json"));
 			authpls = new String(authplj);
+			apicreationplj = Files.readAllBytes(Paths.get("./src/test/java/tests/apicretioon_payload.json"));
+			apicreationpls = new String(apicreationplj);
 			p = new Properties();
 			input = new FileInputStream(path);
 			p.load(input);
@@ -46,7 +50,7 @@ public class Wso2_Apim {
 				.basic(p.getProperty("adminusername"),p.getProperty("adminpassword"))
 				.body(authpls)
 				.contentType("application/json")
-				.post(p.getProperty("hosturi")+"/client-registration/v0.17/register");
+				.post(p.getProperty("hosturi")+"9443/client-registration/v0.17/register");
 		
 		System.out.println(res1.jsonPath().prettify());
 		
@@ -55,10 +59,10 @@ public class Wso2_Apim {
 				.auth()
 				.basic(res1.jsonPath().get("clientId").toString(), res1.jsonPath().get("clientSecret").toString())  
 				.queryParam("grant_type","password")
-				.queryParam("username","admin")
+				.queryParam("username",p.getProperty("adminusername"))
 				.queryParam("password","admin")
 				.queryParam("scope","apim:api_view apim:api_create")
-				.post("https://localhost:8243/token");
+				.post(p.getProperty("hosturi")+"8243/token");
 		
 		System.out.println(res2.statusCode());
 		System.out.println(res2.jsonPath().prettify());
@@ -69,9 +73,9 @@ public class Wso2_Apim {
 				.relaxedHTTPSValidation()
 				.auth()
 				.oauth2(res2.jsonPath().get("access_token").toString())
-				.body("{\"id\":\"01234567-0123-0123-0123-012345678901\",\"name\":\"PizzaShackAPI\",\"description\":\"ThisisasimpleAPIforPizzaShackonlinepizzadeliverystore.\",\"context\":\"pizza\",\"version\":\"1.0.0\",\"provider\":\"admin\",\"lifeCycleStatus\":\"CREATED\",\"wsdlInfo\":{\"type\":\"WSDL\"},\"wsdlUrl\":\"/apimgt/applicationdata/wsdls/admin--soap1.wsdl\",\"testKey\":\"8swdwj9080edejhj\",\"responseCachingEnabled\":true,\"cacheTimeout\":300,\"destinationStatsEnabled\":\"Disabled\",\"hasThumbnail\":false,\"isDefaultVersion\":false,\"enableSchemaValidation\":false,\"enableStore\":true,\"type\":\"HTTP\",\"transport\":[\"http\",\"https\"],\"tags\":[\"pizza\",\"food\"],\"policies\":[\"Unlimited\"],\"apiThrottlingPolicy\":\"Unlimited\",\"authorizationHeader\":\"Authorization\",\"securityScheme\":[\"oauth2\"],\"maxTps\":{\"production\":1000,\"sandbox\":1000},\"visibility\":\"PUBLIC\",\"visibleRoles\":[],\"visibleTenants\":[],\"endpointSecurity\":{\"type\":\"BASIC\",\"username\":\"admin\",\"password\":\"password\"},\"gatewayEnvironments\":[\"ProductionandSandbox\"],\"deploymentEnvironments\":[{\"type\":\"Kubernetes\",\"clusterName\":[\"minikube\"]}],\"labels\":[],\"mediationPolicies\":[{\"name\":\"json_to_xml_in_message\",\"type\":\"in\"},{\"name\":\"xml_to_json_out_message\",\"type\":\"out\"},{\"name\":\"json_fault\",\"type\":\"fault\"}],\"subscriptionAvailability\":\"CURRENT_TENANT\",\"subscriptionAvailableTenants\":[],\"additionalProperties\":{\"property1\":\"string\",\"property2\":\"string\"},\"monetization\":{\"enabled\":true,\"properties\":{\"property1\":\"string\",\"property2\":\"string\"}},\"accessControl\":\"NONE\",\"accessControlRoles\":[],\"businessInformation\":{\"businessOwner\":\"businessowner\",\"businessOwnerEmail\":\"businessowner@wso2.com\",\"technicalOwner\":\"technicalowner\",\"technicalOwnerEmail\":\"technicalowner@wso2.com\"},\"corsConfiguration\":{\"corsConfigurationEnabled\":false,\"accessControlAllowOrigins\":[\"string\"],\"accessControlAllowCredentials\":false,\"accessControlAllowHeaders\":[\"string\"],\"accessControlAllowMethods\":[\"string\"]},\"workflowStatus\":\"APPROVED\",\"createdTime\":\"2017-02-20T13:57:16.229\",\"lastUpdatedTime\":\"2017-02-20T13:57:16.229\",\"endpointConfig\":{\"endpoint_type\":\"http\",\"sandbox_endpoints\":{\"url\":\"https://localhost:9443/am/sample/pizzashack/v1/api/\"},\"production_endpoints\":{\"url\":\"https://localhost:9443/am/sample/pizzashack/v1/api/\"},\"endpoint_security\":{\"sandbox\":{\"password\":null,\"tokenUrl\":\"http://localhost:9443/token\",\"clientId\":\"cid123\",\"clientSecret\":\"cs123\",\"customParameters\":{},\"type\":\"OAUTH\",\"grantType\":\"CLIENT_CREDENTIALS\",\"enabled\":true,\"username\":null},\"production\":{\"password\":null,\"tokenUrl\":\"http://localhost:9443/token\",\"clientId\":\"cid123\",\"clientSecret\":\"cs123\",\"customParameters\":{},\"type\":\"OAUTH\",\"grantType\":\"CLIENT_CREDENTIALS\",\"enabled\":true,\"username\":null}}},\"endpointImplementationType\":\"INLINE\",\"scopes\":[{\"scope\":{\"id\":\"01234567-0123-0123-0123-012345678901\",\"name\":\"apim:api_view\",\"displayName\":\"api_view\",\"description\":\"ThisScopecanusedtoviewApis\",\"bindings\":[\"admin\",\"Internal/creator\",\"Internal/publisher\"],\"usageCount\":3},\"shared\":true}],\"operations\":[{\"target\":\"/order/{orderId}\",\"verb\":\"POST\",\"authType\":\"Application&ApplicationUser\",\"throttlingPolicy\":\"Unlimited\"},{\"target\":\"/menu\",\"verb\":\"GET\",\"authType\":\"Application&ApplicationUser\",\"throttlingPolicy\":\"Unlimited\"}],\"threatProtectionPolicies\":{\"list\":[{\"policyId\":\"string\",\"priority\":0}]},\"categories\":[],\"keyManagers\":[]}")
+				.body(apicreationpls)
 				.contentType("application/json")
-				.post("https://localhost:9443/api/am/publisher/v1/apis");
+				.post(p.getProperty("apicreation_url"));
 		
 		System.out.println(res3.jsonPath().prettify());
 		
