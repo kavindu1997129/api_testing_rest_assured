@@ -1,6 +1,9 @@
 package tests;
 
+import java.io.File;
 import java.io.FileInputStream;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.util.Properties;
 import org.testng.annotations.Test;
 import io.restassured.RestAssured;
@@ -17,6 +20,8 @@ public class Wso2_Apim {
 
 	FileInputStream input;
 	Properties p;
+	byte[] authplj;
+	String authpls;
 
 	
 	@Test
@@ -24,6 +29,8 @@ public class Wso2_Apim {
 
 		try {
 			String path =  "./src/test/resources/config.properties";
+			authplj = Files.readAllBytes(Paths.get("./src/test/java/tests/payload.json"));
+			authpls = new String(authplj);
 			p = new Properties();
 			input = new FileInputStream(path);
 			p.load(input);
@@ -37,7 +44,7 @@ public class Wso2_Apim {
 				.auth()
 				.preemptive()
 				.basic(p.getProperty("adminusername"),p.getProperty("adminpassword"))
-				.body("{\"callbackUrl\":\"www.google.lk\",\"clientName\":\"rest_api_publisher\",\"owner\":\"admin\",\"grantType\":\"client_credentialspasswordrefresh_token\",\"saasApp\":true}")
+				.body(authpls)
 				.contentType("application/json")
 				.post(p.getProperty("hosturi")+"/client-registration/v0.17/register");
 		
