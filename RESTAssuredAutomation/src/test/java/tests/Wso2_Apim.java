@@ -86,7 +86,6 @@ public class Wso2_Apim {
 				.get(p.getProperty("publisher_url"));
 		
 		System.out.println(res4.jsonPath().prettyPrint());
-		
 			
 	}
 	
@@ -97,7 +96,7 @@ public class Wso2_Apim {
 				.relaxedHTTPSValidation()
 				.auth()
 				.oauth2(res2.jsonPath().get("access_token").toString())
-				.get("https://127.0.0.1:9443/api/am/publisher/v1/apis/"+res4.jsonPath().get("list[0]['id']"));
+				.get(p.getProperty("publisher_url")+"/"+res4.jsonPath().get("list[0]['id']"));
 		
 		System.out.println(res5.jsonPath().prettyPrint());
 	}
@@ -109,7 +108,7 @@ public class Wso2_Apim {
 				.relaxedHTTPSValidation()
 				.auth()
 				.oauth2(res2.jsonPath().get("access_token").toString())
-				.get("https://127.0.0.1:9443/api/am/publisher/v1/apis/"+res4.jsonPath().get("list[0]['id']"));
+				.get(p.getProperty("publisher_url")+"/"+res4.jsonPath().get("list[0]['id']"));
 		
 		System.out.println(res5.jsonPath().prettyPrint());
 	}
