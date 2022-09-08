@@ -8,12 +8,12 @@ import io.restassured.RestAssured;
 import io.restassured.response.Response;
 
 public class Authentication {
-    Response  res1, res2, res3, res4, res5, res6, res7, res8, res9, res10;
+    Response  getClientIdResponse, getAccessTokenResponse;
 
 	FileInputStream input;
 	Properties p;
-	byte[] authplj;
-	String authpls;
+	byte[] authPlayloadJson;
+	String authPlayloadString;
     String accessToken;
 
     String username = "";
@@ -21,42 +21,46 @@ public class Authentication {
     String endpoint = "";
     String payloadPath = "";
     String tokenUrl = "";
+    String scope = "";
+    String grantType = "";
+    String contentType = "";
 
-    
-
-    public Authentication(String username, String userpassword, String endpoint, String tokenUrl, String payloadPath) {
+    public Authentication(String username, String userpassword, String endpoint, String tokenUrl, String payloadPath, String scope, String grantType,String contentType) {
         this.username = username;
         this.userpassword = userpassword;
         this.endpoint = endpoint;
         this.payloadPath = payloadPath;
         this.tokenUrl = tokenUrl;
+        this.scope = scope;
+        this.grantType = grantType;
+        this.contentType = contentType;
     }
 
     public String getAccessToken(){
         try {
-			authplj = Files.readAllBytes(Paths.get(payloadPath));
-			authpls = new String(authplj);
-            res1 = RestAssured.given()
+			authPlayloadJson = Files.readAllBytes(Paths.get(payloadPath));
+			authPlayloadString = new String(authPlayloadJson);
+            getClientIdResponse = RestAssured.given()
 				.relaxedHTTPSValidation()
 				.auth()
 				.preemptive()
 				.basic(username,userpassword)
-				.body(authpls)
-				.contentType("application/json")
+				.body(authPlayloadString)
+				.contentType(contentType)
 				.post(endpoint
                 );
 		
-		    res2 = RestAssured.given()
+		    getAccessTokenResponse = RestAssured.given()
 				.relaxedHTTPSValidation()
 				.auth()
-				.basic(res1.jsonPath().get("clientId").toString(), res1.jsonPath().get("clientSecret").toString())  
-				.queryParam("grant_type","password")
+				.basic(getClientIdResponse.jsonPath().get("clientId").toString(), getClientIdResponse.jsonPath().get("clientSecret").toString())  
+				.queryParam("grant_type",grantType)
 				.queryParam("username",username)
 				.queryParam("password",userpassword)
-				.queryParam("scope","apim:api_view apim:api_create")
+				.queryParam("scope",scope)
 				.post(tokenUrl);
 	
-		    accessToken = res2.jsonPath().get("access_token").toString();
+		    accessToken = getAccessTokenResponse.jsonPath().get("access_token").toString();
 
 		} 
         catch (Exception e) {
