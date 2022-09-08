@@ -13,8 +13,8 @@ public class TestClasses {
         accessToken = authentication.getAccessToken();
         System.out.println(authentication.getAccessToken());	
 
-        Apis api = new Apis(accessToken,"https://localhost:9443/api/am/publisher/v1");
-        System.out.println(api.searchApis("apis"));
+        Apis api = new Apis(accessToken,"https://localhost:9443/api/am/publisher/v1/apis");
+        System.out.println(api.createApi("application/json", "./src/test/payloads/apicretion_payload.json").jsonPath().prettyPrint());
 
 	 }
     
