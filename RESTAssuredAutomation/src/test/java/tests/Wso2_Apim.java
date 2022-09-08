@@ -12,7 +12,7 @@ import io.restassured.response.Response;
 
 public class Wso2_Apim {
 	
-	Response  res1, res2, res3, res4, res5, res6, res7, res8;
+	Response  res1, res2, res3, res4, res5, res6, res7, res8, res9, res10;
 
 	FileInputStream input;
 	Properties p;
@@ -78,6 +78,8 @@ public class Wso2_Apim {
 				.body(apicreationpls)
 				.contentType("application/json")
 				.post(p.getProperty("publisher_url"));
+
+		System.out.println("Api Creeation: " + res3.jsonPath().prettyPrint());
 		
 		res4 = RestAssured.given()
 				.relaxedHTTPSValidation()
@@ -85,7 +87,7 @@ public class Wso2_Apim {
 				.oauth2(accessToken)
 				.get(p.getProperty("publisher_url"));
 		
-		//System.out.println(res4.jsonPath().prettyPrint());
+		System.out.println(res4.jsonPath().prettyPrint());
 			
 	}
 	
@@ -98,7 +100,7 @@ public class Wso2_Apim {
 				.oauth2(accessToken)
 				.get(p.getProperty("publisher_url")+"/"+res4.jsonPath().get("list[0]['id']"));
 		
-		//System.out.println(res5.jsonPath().prettyPrint());
+		System.out.println(res5.jsonPath().prettyPrint());
 	}
 	
 	@Test
@@ -124,14 +126,38 @@ public class Wso2_Apim {
 
 		System.out.println(res7.jsonPath().prettyPrint());
 
-		res8= RestAssured.given()
+		// res8= RestAssured.given()
+		// 		.relaxedHTTPSValidation()
+		// 		.auth()
+		// 		.oauth2(accessToken)
+		// 		.contentType("application/json")
+		// 		.post(p.getProperty("publisher_url")+"/copy-api?newVersion=2.0.0&defaultVersion=false&apiId="+res4.jsonPath().get("list[0]['id']"));
+
+		// System.out.println(res8.jsonPath().prettyPrint());
+
+
+		//-----------Example for create New API Product not working 
+		// res9= RestAssured.given()
+		// 		.relaxedHTTPSValidation()
+		// 		.auth()
+		// 		.oauth2(accessToken)
+		// 		.body(createapiproductpls)
+		// 		.contentType("application/json")
+		// 		.post("https://127.0.0.1:9443/api/am/publisher/v1/api-products");
+
+		// System.out.println(res9.jsonPath().prettyPrint());
+
+		
+	// "https://127.0.0.1:9443/api/am/publisher/v1/apis/change-lifecycle?apiId=890a4f4d-09eb-4877-a323-57f6ce2ed79b&action=Publish"
+
+	res10= RestAssured.given()
 				.relaxedHTTPSValidation()
 				.auth()
 				.oauth2(accessToken)
 				.contentType("application/json")
-				.post(p.getProperty("publisher_url")+"/copy-api?newVersion=2.0.0&defaultVersion=false&apiId="+res4.jsonPath().get("list[0]['id']"));
-
-		System.out.println(res8.jsonPath().prettyPrint());
+				.post("https://localhost:9443/api/am/publisher/v1/apis/change-lifecycle?action=Publish&apiId=a3796a5f-7e2e-4b00-858f-4d859b8682f8");
+		System.out.println(res10.jsonPath().prettify());
+	RestAssured.enableLoggingOfRequestAndResponseIfValidationFails();
 	}	
 
 }
