@@ -32,9 +32,8 @@ public class TestClasses {
 
         String apiId =api.searchApis().jsonPath().get("list[0]['id']");
         //System.out.println(api.uploadThumbnailImage("./src/test/payloads/thumbnail.jpg", apiId));
-        System.out.println(api.getApiDetails(apiId).jsonPath().prettyPrint());
-        System.out.println(api.updateApi("application/json", apiId,"./src/test/payloads/apiupdate_payload.json").jsonPath().prettyPrint());
-
-	 }
+        //System.out.println(api.getApiDetails(apiId).jsonPath().prettyPrint());
+        System.out.println(api.getGeneratedMockResponsePayloads(apiId).jsonPath().prettyPrint());
+	}
     
 }

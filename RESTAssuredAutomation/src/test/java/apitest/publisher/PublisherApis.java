@@ -17,6 +17,7 @@ public class PublisherApis {
     Response getApiDetailsResponse;
     Response createNewApiVersiResponse;
     Response updateApiResponse;
+    Response deleteApiResponse;
 
     byte[] apiCreationPayloadJson;
     String apiCreationPayloadString;
@@ -125,6 +126,50 @@ public class PublisherApis {
 
     }
 
+    public Response deleteApi(String apiId){
+        deleteApiResponse = RestAssured.given()
+        .relaxedHTTPSValidation()
+        .auth()
+        .oauth2(accessToken)
+        .delete(endPoint+"/"+apiId);
+
+        return deleteApiResponse;
+    }
+
+    public Response getSwaggerDefinition(){
+        Response getSwaggerDefinitionResponse = RestAssured.given()
+        .relaxedHTTPSValidation()
+        .auth()
+        .oauth2(accessToken)
+        .get(endPoint);
+        return getSwaggerDefinitionResponse;
+    }
+
+
+    public Response generateMockResponsePayloads(String apiId){
+        Response generateMockResponsePayloadsResponse = RestAssured.given()
+        .relaxedHTTPSValidation()
+        .auth()
+        .oauth2(accessToken)
+        .contentType("application/json")
+        .post(endPoint+"/"+apiId+"/generate-mock-scripts");
+        
+        return generateMockResponsePayloadsResponse;
+        
+    }
+
+    public Response getGeneratedMockResponsePayloads(String apiId){
+        Response getGeneratedMockResponsePayloadsResponse = RestAssured.given()
+        .relaxedHTTPSValidation()
+        .auth()
+        .oauth2(accessToken)
+        .contentType("application/json")
+        .get(endPoint+"/"+apiId+"/generated-mock-scripts");
+        
+        return getGeneratedMockResponsePayloadsResponse;
+        
+    }
+    
 
     
 }
