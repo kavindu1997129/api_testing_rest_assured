@@ -25,15 +25,15 @@ public class Authentication {
     String grantType = "";
     String contentType = "";
 
-    public Authentication(String username, String userpassword, String endpoint, String tokenUrl, String payloadPath, String scope, String grantType,String contentType) {
-        this.username = username;
-        this.userpassword = userpassword;
-        this.endpoint = endpoint;
-        this.payloadPath = payloadPath;
-        this.tokenUrl = tokenUrl;
-        this.scope = scope;
-        this.grantType = grantType;
-        this.contentType = contentType;
+    public Authentication(AuthenticationObject authenticationObject) {
+        this.username = authenticationObject.getUsername();
+        this.userpassword = authenticationObject.getUserpassword();
+        this.endpoint = authenticationObject.getEndpoint();
+        this.payloadPath = authenticationObject.getPayloadPath();
+        this.tokenUrl = authenticationObject.getTokenUrl();
+        this.scope = authenticationObject.getScope();
+        this.grantType = authenticationObject.getGrantType();
+        this.contentType = authenticationObject.getContentType();
     }
 
     public String getAccessToken(){

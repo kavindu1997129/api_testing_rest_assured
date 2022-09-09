@@ -6,7 +6,7 @@ import java.nio.file.Paths;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 
-public class Apis {
+public class PublisherApis {
 
     String accessToken;
     String endPoint;
@@ -16,6 +16,7 @@ public class Apis {
     Response uploadThumbnailImageResponse;
     Response getApiDetailsResponse;
     Response createNewApiVersiResponse;
+    Response updateApiResponse;
 
     byte[] apiCreationPayloadJson;
     String apiCreationPayloadString;
@@ -23,10 +24,13 @@ public class Apis {
     byte[] createapiproductplj;
     String createapiproductpls;
 
+    byte[] updateApiPayloadJson;
+    String updateApiPayloadString;
+
     
 
 
-    public Apis(String accessToken, String endPoint){
+    public PublisherApis(String accessToken, String endPoint){
         this.accessToken = accessToken;
         this.endPoint = endPoint;
     }
@@ -97,6 +101,27 @@ public class Apis {
 				.oauth2(accessToken)
 				.post(endPoint+"/copy-api?newVersion="+apiVersion+"&defaultVersion="+defaultVersion+"&apiId="+apiId);
         return createNewApiVersiResponse;
+
+    }
+
+    public Response updateApi(String contentType, String apiId, String jsonPayloadPath){
+
+        try {
+            updateApiPayloadJson = Files.readAllBytes(Paths.get(jsonPayloadPath));
+		    updateApiPayloadString = new String(updateApiPayloadJson);
+
+            updateApiResponse  = RestAssured.given()
+            .relaxedHTTPSValidation()
+            .auth()
+            .oauth2(accessToken)
+            .body(updateApiPayloadString)
+            .contentType(contentType)
+            .put(endPoint+"/"+apiId);
+
+        } catch (Exception e) {
+        }
+        
+        return updateApiResponse;
 
     }
 
