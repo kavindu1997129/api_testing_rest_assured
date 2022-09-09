@@ -180,5 +180,16 @@ public class PublisherApis {
         return getThumbnailImageResponse;
     }
 
+    public Response getSubscriptionThrotlling(String apiId){
+        Response getSubscriptionThrotllingResponse = RestAssured.given()
+				.relaxedHTTPSValidation()
+				.auth()
+				.oauth2(accessToken)
+				.get(endPoint+"/"+apiId+"/subscription-policies");
+
+        return getSubscriptionThrotllingResponse;
+    }
+
+
     
 }

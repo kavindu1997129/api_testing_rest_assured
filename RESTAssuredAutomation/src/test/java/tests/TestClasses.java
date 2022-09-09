@@ -4,6 +4,7 @@ import org.testng.annotations.Test;
 import apitest.Authentication;
 import apitest.AuthenticationObject;
 import apitest.publisher.PublisherApis;
+import io.restassured.path.json.JsonPath;
 
 public class TestClasses {
 	String accessToken;
@@ -33,7 +34,7 @@ public class TestClasses {
         String apiId =api.searchApis().jsonPath().get("list[0]['id']");
         //System.out.println(api.uploadThumbnailImage("./src/test/payloads/thumbnail.jpg", apiId));
         //System.out.println(api.getApiDetails(apiId).jsonPath().prettyPrint());
-        System.out.println(api.getThumbnailImage(apiId).statusCode());
+        System.out.println(api.getSubscriptionThrotlling(apiId).jsonPath().prettyPrint());
 	}
     
 }
