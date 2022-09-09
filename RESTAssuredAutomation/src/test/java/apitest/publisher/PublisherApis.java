@@ -72,17 +72,6 @@ public class PublisherApis {
 
     } 
 
-    public Response uploadThumbnailImage(String imagePath,  String apiId){
-        uploadThumbnailImageResponse= RestAssured.given()
-				.relaxedHTTPSValidation()
-				.auth()
-				.oauth2(accessToken)
-				.multiPart(new File(imagePath))
-				.put(endPoint+"/"+apiId+"/thumbnail");
-
-        return uploadThumbnailImageResponse;
-    }
-
     public Response getApiDetails(String apiId){
         getApiDetailsResponse = RestAssured.given()
 				.relaxedHTTPSValidation()
@@ -169,7 +158,27 @@ public class PublisherApis {
         return getGeneratedMockResponsePayloadsResponse;
         
     }
+
+    public Response uploadThumbnailImage(String imagePath,  String apiId){
+        Response uploadThumbnailImageResponse= RestAssured.given()
+				.relaxedHTTPSValidation()
+				.auth()
+				.oauth2(accessToken)
+				.multiPart(new File(imagePath))
+				.put(endPoint+"/"+apiId+"/thumbnail");
+
+        return uploadThumbnailImageResponse;
+    }
     
+    public Response getThumbnailImage(String apiId){
+        Response getThumbnailImageResponse= RestAssured.given()
+				.relaxedHTTPSValidation()
+				.auth()
+				.oauth2(accessToken)
+				.get(endPoint+"/"+apiId+"/thumbnail");
+
+        return getThumbnailImageResponse;
+    }
 
     
 }
