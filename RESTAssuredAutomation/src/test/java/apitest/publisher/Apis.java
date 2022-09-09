@@ -89,14 +89,17 @@ public class Apis {
     }
 
     public Response createNewApiVersion(String apiId, String apiVersion, boolean defaultVersion){
+        
+        
         createNewApiVersiResponse = RestAssured.given()
 				.relaxedHTTPSValidation()
 				.auth()
 				.oauth2(accessToken)
-				.get(endPoint+"/copy-api?newVersion="+apiVersion+"&defaultVersion="+defaultVersion+"&apiId="+apiId);
-
+				.post(endPoint+"/copy-api?newVersion="+apiVersion+"&defaultVersion="+defaultVersion+"&apiId="+apiId);
         return createNewApiVersiResponse;
 
     }
+
+
     
 }

@@ -126,14 +126,14 @@ public class Wso2_Apim {
 
 		System.out.println(res7.jsonPath().prettyPrint());
 
-		// res8= RestAssured.given()
-		// 		.relaxedHTTPSValidation()
-		// 		.auth()
-		// 		.oauth2(accessToken)
-		// 		.contentType("application/json")
-		// 		.post(p.getProperty("publisher_url")+"/copy-api?newVersion=2.0.0&defaultVersion=false&apiId="+res4.jsonPath().get("list[0]['id']"));
+		res8= RestAssured.given()
+				.relaxedHTTPSValidation()
+				.auth()
+				.oauth2(accessToken)
+				.contentType("application/json")
+				.post(p.getProperty("publisher_url")+"/copy-api?newVersion=2.0.0&defaultVersion=false&apiId="+res4.jsonPath().get("list[0]['id']"));
 
-		// System.out.println(res8.jsonPath().prettyPrint());
+		System.out.println(res8.jsonPath().prettyPrint());
 
 
 		//-----------Example for create New API Product not working 
@@ -150,14 +150,14 @@ public class Wso2_Apim {
 		
 	// "https://127.0.0.1:9443/api/am/publisher/v1/apis/change-lifecycle?apiId=890a4f4d-09eb-4877-a323-57f6ce2ed79b&action=Publish"
 
-	res10= RestAssured.given()
-				.relaxedHTTPSValidation()
-				.auth()
-				.oauth2(accessToken)
-				.contentType("application/json")
-				.post("https://localhost:9443/api/am/publisher/v1/apis/change-lifecycle?action=Publish&apiId=a3796a5f-7e2e-4b00-858f-4d859b8682f8");
-		System.out.println(res10.jsonPath().prettify());
-	RestAssured.enableLoggingOfRequestAndResponseIfValidationFails();
+	// res10= RestAssured.given()
+	// 			.relaxedHTTPSValidation()
+	// 			.auth()
+	// 			.oauth2(accessToken)
+	// 			.contentType("application/json")
+	// 			.post("https://localhost:9443/api/am/publisher/v1/apis/change-lifecycle?action=Publish&apiId=a3796a5f-7e2e-4b00-858f-4d859b8682f8");
+	// 	System.out.println(res10.jsonPath().prettify());
+	// RestAssured.enableLoggingOfRequestAndResponseIfValidationFails();
 	}	
 
 }

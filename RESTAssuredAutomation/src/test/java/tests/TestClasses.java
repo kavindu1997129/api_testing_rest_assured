@@ -20,7 +20,7 @@ public class TestClasses {
         String apiId =api.searchApis().jsonPath().get("list[0]['id']");
         //System.out.println(api.uploadThumbnailImage("./src/test/payloads/thumbnail.jpg", apiId));
         System.out.println(api.getApiDetails(apiId).jsonPath().prettyPrint());
-        System.out.println(api.createNewApiVersion(apiId,"2.0.0", false).jsonPath().prettyPrint());
+        System.out.println(api.createNewApiVersion(apiId,"2.0.0", false).statusCode());
 
 	 }
     
