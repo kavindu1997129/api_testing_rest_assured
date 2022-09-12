@@ -1,5 +1,6 @@
 package apitest.publisher;
 
+import java.io.File;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 
@@ -51,6 +52,16 @@ public class PublisherApiProducts {
 
     } 
 
+    public Response deleteApiProduct(String apiId){
+        Response deleteApiProductResponse = RestAssured.given()
+        .relaxedHTTPSValidation()
+        .auth()
+        .oauth2(accessToken)
+        .delete(endPoint+"/"+apiId);
+
+        return deleteApiProductResponse;
+    }
+
     public Response getDetailsOfApiProduct(String apiProductId){
         Response getDetailsOfApiProductResponse = RestAssured.given()
         .relaxedHTTPSValidation()
@@ -72,6 +83,49 @@ public class PublisherApiProducts {
         .get(endPoint+"/"+"swagger"); 
 
         return getSwaggerDefinitionResponse;
+    }
+
+    public Response updateApiProduct(String apiProductId){
+
+        Response updateApiProductResponse = RestAssured.given()
+        .relaxedHTTPSValidation()
+        .auth()
+        .oauth2(accessToken)
+        .put(endPoint+"/"+apiProductId); 
+
+        return updateApiProductResponse;
+    }
+
+    public Response getProductThumbnail(String apiProductId){
+
+        Response getProductThumbnailResponse = RestAssured.given()
+        .relaxedHTTPSValidation()
+        .auth()
+        .oauth2(accessToken)
+        .get(endPoint+"/"+apiProductId+"/thumbnail"); 
+
+        return getProductThumbnailResponse;
+    }
+
+    public Response uploadProductThumbnail(String imagePath,  String apiProductId){
+        Response uploadProductThumbnailResponse= RestAssured.given()
+				.relaxedHTTPSValidation()
+				.auth()
+				.oauth2(accessToken)
+				.multiPart(new File(imagePath))
+				.put(endPoint+"/"+apiProductId+"/thumbnail");
+
+        return uploadProductThumbnailResponse;
+    }
+
+    public Response isApiProductOutdated(String apiProductId){
+        Response isApiProductOutdatedResponse = RestAssured.given()
+        .relaxedHTTPSValidation()
+        .auth()
+        .oauth2(accessToken)
+        .get(endPoint+"/"+apiProductId+"/is-outdated"); 
+
+        return isApiProductOutdatedResponse;
     }
     
 }

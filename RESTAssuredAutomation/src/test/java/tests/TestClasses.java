@@ -19,10 +19,11 @@ public class TestClasses {
         authenticationObject.setEndpoint("https://localhost:9443/client-registration/v0.17/register");
         authenticationObject.setTokenUrl("https://localhost:8243/token");
         authenticationObject.setPayloadPath("./src/test/payloads/payload.json");
-        authenticationObject.setScope("apim:admin apim:api_import_export apim:api_view apim:api_create apim:api_product_import_export");
+        authenticationObject.setScope("apim:api_admin apim:api_import_export apim:api_view apim:api_create apim:api_product_import_export apim:api_product_create");
         //apim:api_view apim:api_create 
         //authenticationObject.setScope("apim:api_view apim:api_create");
         //authenticationObject.setScope(""apim:api_product_import_export");
+        //authenticationObject.setScope("apim:api_publish");
         authenticationObject.setContentType("application/json");
         authenticationObject.setGrantType("password");
 
@@ -41,11 +42,13 @@ public class TestClasses {
         //DevportalApis apiDev = new DevportalApis(accessToken,"https://localhost:9443/api/am/store/v1/apis");
         // PublisherApis apiPub = new PublisherApis(accessToken, "https://localhost:9443/api/am/publisher/v1/apis");
         // String apiId =apiPub.searchApis().jsonPath().get("list[0]['id']");
-        //System.out.println(apiPub.deleteApi(apiId).statusCode());
+        // System.out.println(apiPub.deleteApi(apiId).statusCode());
 
         PublisherApiProducts apiProd = new PublisherApiProducts("https://localhost:9443/api/am/publisher/v1/api-products", accessToken);
+        //String apiProductId = apiProd.searchApiProduct().jsonPath().get("list[0]['id']");
         String apiProductId = apiProd.searchApiProduct().jsonPath().get("list[0]['id']");
-        System.out.println(apiProd.getSwaggerDefinition(apiProductId).jsonPath().prettify());
+        System.out.println(apiProductId);
+        System.out.println(apiProd.getDetailsOfApiProduct(apiProductId).jsonPath().prettify());
 	}
     
 }
