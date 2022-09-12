@@ -47,8 +47,7 @@ public class Authentication {
 				.basic(username,userpassword)
 				.body(authPlayloadString)
 				.contentType(contentType)
-				.post(endpoint
-                );
+				.post(endpoint);
 		
 		    getAccessTokenResponse = RestAssured.given()
 				.relaxedHTTPSValidation()

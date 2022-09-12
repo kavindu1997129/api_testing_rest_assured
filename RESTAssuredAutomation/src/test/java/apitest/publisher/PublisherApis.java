@@ -28,9 +28,6 @@ public class PublisherApis {
     byte[] updateApiPayloadJson;
     String updateApiPayloadString;
 
-    
-
-
     public PublisherApis(String accessToken, String endPoint){
         this.accessToken = accessToken;
         this.endPoint = endPoint;
@@ -189,7 +186,6 @@ public class PublisherApis {
 
         return getSubscriptionThrotllingResponse;
     }
-
 
     
 }
