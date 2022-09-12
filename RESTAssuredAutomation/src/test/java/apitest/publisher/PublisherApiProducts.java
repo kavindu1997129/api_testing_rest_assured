@@ -75,12 +75,12 @@ public class PublisherApiProducts {
         return getDetailsOfApiProductResponse;
     }
 
-    public Response getSwaggerDefinition(String apiId){
+    public Response getSwaggerDefinition(String apiPproductId){
         Response getSwaggerDefinitionResponse = RestAssured.given()
         .relaxedHTTPSValidation()
         .auth()
         .oauth2(accessToken)
-        .get(endPoint+"/"+"swagger"); 
+        .get(endPoint+"/"+apiPproductId+"/swagger"); 
 
         return getSwaggerDefinitionResponse;
     }
