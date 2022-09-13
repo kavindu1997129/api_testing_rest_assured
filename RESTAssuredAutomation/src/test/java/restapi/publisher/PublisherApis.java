@@ -58,10 +58,8 @@ public class PublisherApis {
 				.relaxedHTTPSValidation()
 				.auth()
 				.oauth2(accessToken)
-				.get(endPoint+publisherApisString);
-            
+				.get(endPoint+publisherApisString);    
         } catch (Exception e) {
-
         }
         
         return searchApisResponse;
@@ -218,6 +216,17 @@ public class PublisherApis {
         //System.out.println(endPoint+publisherApiLifecycleString+"?apiId="+apiId+"&action="+action);
 
         return changeApiStatusResponse;
+    }
+
+    public Response getComplexityRelatedDetailsOfApi(String apiId){
+        Response getComplexityRelatedDetailsOfApiResponse = RestAssured.given()
+        .relaxedHTTPSValidation()
+        .auth()
+        .oauth2(accessToken)
+        .contentType(ContentTypes.APPLICATION_JSON)
+        .post(endPoint+publisherApisString+"/"+apiId+"/"+"/graphql-policies/complexity");
+
+        return getComplexityRelatedDetailsOfApiResponse;
     }
 
     
