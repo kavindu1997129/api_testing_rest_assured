@@ -8,6 +8,7 @@ import java.util.Properties;
 
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
+import restapi.ContentTypes;
 
 public class PublisherApiProducts {
 
@@ -17,6 +18,9 @@ public class PublisherApiProducts {
     byte[] createApiProductPayloadJson;
     String createApiProductPayloadString;
     Response createApiProductResponse;
+
+    byte[] apiProductUpdatePayloadJson;
+    String apiProductUpdatePayloadString;
 
     String publisherApisProductString = "/api-products";
 
@@ -101,15 +105,24 @@ public class PublisherApiProducts {
         return getSwaggerDefinitionResponse;
     }
 
-    public Response updateApiProduct(String apiProductId){
+    public Response updateApiProduct(String apiProductId, String contentType,  String jsonPayloadPath){
+
+        try {
+            apiProductUpdatePayloadJson = Files.readAllBytes(Paths.get(jsonPayloadPath));
+		    apiProductUpdatePayloadString = new String(apiProductUpdatePayloadJson);
+        } catch (Exception e) {
+        }
 
         Response updateApiProductResponse = RestAssured.given()
         .relaxedHTTPSValidation()
         .auth()
         .oauth2(accessToken)
-        .put(endPoint+publisherApisProductString+"/"+apiProductId); 
+        .contentType(contentType)
+        .body(apiProductUpdatePayloadString)
+        .put(endPoint+publisherApisProductString+"/"+apiProductId);
 
-        return updateApiProductResponse;
+        return  updateApiProductResponse;
+
     }
 
     public Response getProductThumbnail(String apiProductId){
@@ -128,6 +141,7 @@ public class PublisherApiProducts {
 				.relaxedHTTPSValidation()
 				.auth()
 				.oauth2(accessToken)
+                .contentType(ContentTypes.MULTIPART_FORMDATA)
 				.multiPart(new File(imagePath))
 				.put(endPoint+publisherApisProductString+"/"+apiProductId+"/thumbnail");
 
@@ -143,5 +157,6 @@ public class PublisherApiProducts {
 
         return isApiProductOutdatedResponse;
     }
+    
     
 }

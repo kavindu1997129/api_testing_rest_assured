@@ -8,6 +8,7 @@ import java.util.Properties;
 
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
+import restapi.ContentTypes;
 
 public class PublisherApis {
 
@@ -182,7 +183,6 @@ public class PublisherApis {
 				.oauth2(accessToken)
 				.multiPart(new File(imagePath))
 				.put(endPoint+publisherApisString+"/"+apiId+"/thumbnail");
-        System.out.println(endPoint+publisherApisString+"/"+apiId+"/thumbnail");
 
         return uploadThumbnailImageResponse;
     }
@@ -205,6 +205,19 @@ public class PublisherApis {
 				.get(endPoint+publisherApisString+"/"+apiId+"/subscription-policies");
 
         return getSubscriptionThrotllingResponse;
+    }
+
+    //API Lifecycle relaated methods
+    public Response changeApiStatus(String apiId, String action){
+        Response changeApiStatusResponse  = RestAssured.given()
+        .relaxedHTTPSValidation()
+        .auth()
+        .oauth2(accessToken)
+        .contentType(ContentTypes.APPLICATION_JSON)
+        .post(endPoint+publisherApisString+"/change-lifecycle?apiId="+apiId+"&action="+action);
+        //System.out.println(endPoint+publisherApiLifecycleString+"?apiId="+apiId+"&action="+action);
+
+        return changeApiStatusResponse;
     }
 
     

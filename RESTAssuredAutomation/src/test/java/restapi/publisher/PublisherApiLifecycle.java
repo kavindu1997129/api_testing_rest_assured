@@ -1,17 +1,22 @@
 package restapi.publisher;
 
 import java.io.FileInputStream;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.util.Properties;
 
 import io.restassured.RestAssured;
+import io.restassured.http.ContentType;
 import io.restassured.response.Response;
+import restapi.ContentTypes;
 
 public class PublisherApiLifecycle {
 
     String accessToken="";
     String endPoint = "";
 
-    String publisherApiLifecycleString = "/change-lifecycle";
+
+    String publisherApiLifecycleString = "/apis/change-lifecycle";
 
     public PublisherApiLifecycle(String accessToken){
         this.accessToken = accessToken;
@@ -30,14 +35,36 @@ public class PublisherApiLifecycle {
         }
     }
 
-    public Response changeApiStatus(String apiId){
+    public Response changeApiStatus(String apiId, String action){
         Response changeApiStatusResponse  = RestAssured.given()
         .relaxedHTTPSValidation()
         .auth()
         .oauth2(accessToken)
-        .post(endPoint+publisherApiLifecycleString);
+        .contentType(ContentTypes.APPLICATION_JSON)
+        .post(endPoint+publisherApiLifecycleString+"?apiId="+apiId+"&action="+action);
+        System.out.println(endPoint+publisherApiLifecycleString+"?apiId="+apiId+"&action="+action);
 
         return changeApiStatusResponse;
     }
+
+    // public Response updateApiProduct(String apiProductId, String contentType,  String jsonPayloadPath){
+
+    //     try {
+    //         apiProductUpdatePayloadJson = Files.readAllBytes(Paths.get(jsonPayloadPath));
+	// 	    apiProductUpdatePayloadString = new String(apiProductUpdatePayloadJson);
+    //     } catch (Exception e) {
+    //     }
+
+    //     Response updateApiProductResponse = RestAssured.given()
+    //     .relaxedHTTPSValidation()
+    //     .auth()
+    //     .oauth2(accessToken)
+    //     .contentType(contentType)
+    //     .body(apiProductUpdatePayloadString)
+    //     .put(endPoint+publisherApiLifecycleString+"/"+apiProductId);
+
+    //     return  updateApiProductResponse;
+
+    // }
     
 }

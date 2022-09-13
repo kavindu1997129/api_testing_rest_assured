@@ -10,6 +10,7 @@ import restapi.ContentTypes;
 import restapi.GrantTypes;
 import restapi.Scopes;
 import restapi.devportal.DevportalApis;
+import restapi.publisher.PublisherApiLifecycle;
 import restapi.publisher.PublisherApiProducts;
 import restapi.publisher.PublisherApis;
 
@@ -34,22 +35,22 @@ public class TestClasses {
         accessToken = authentication.getAccessToken();
 
         PublisherApis api = new PublisherApis(accessToken);
-        api.createApi(ContentTypes.APPLICATION_JSON, "./src/test/payloads/apicretion_payload.json").then().assertThat().statusCode(409);;
+        api.createApi(ContentTypes.APPLICATION_JSON, "./src/test/payloads/apicretion_payload.json");
         String apiId = api.searchApis().jsonPath().get("list[0]['id']");
         api.uploadThumbnailImage("./src/test/payloads/thumbnail.jpg", apiId);
-        //api.createNewApiVersion(apiId, "2.0.1", false);
-
+        System.out.println(api.changeApiStatus(apiId, "Publish").statusCode());
         System.out.println(api.createNewApiVersion(apiId, "2.0.1", false).statusCode());
         
         System.out.println(api.uploadThumbnailImage("./src/test/payloads/thumbnail.jpg", apiId).statusCode());
         System.out.println(apiId);
         
-        //PublisherApiProducts apiProd = new PublisherApiProducts(accessToken);
-        //String apiProductId = apiProd.searchApiProduct().jsonPath().get("list[0]['id']");
+        PublisherApiProducts apiProd = new PublisherApiProducts(accessToken);
+        String apiProductId = apiProd.searchApiProduct().jsonPath().get("list[0]['id']");
         //String apiProductId = apiProd.searchApiProduct().jsonPath().get("list[0]['id']");
         //System.out.println(accessToken);
-        //System.out.println(apiProd.createApiProduct(ContentTypes.APPLICATION_JSON, "./src/test/payloads/apiproduct_creation.json").statusCode());
-
-        }
+        System.out.println(apiProd.createApiProduct(ContentTypes.APPLICATION_JSON, "./src/test/payloads/apiproduct_creation.json").statusCode());
+        System.out.println(apiProd.updateApiProduct(apiProductId, ContentTypes.APPLICATION_JSON, "./src/test/payloads/updateApiProductPayload.json").statusCode());
+        System.out.println(apiProd.uploadProductThumbnail("./src/test/payloads/thumbnail.jpg", apiProductId).jsonPath().prettify());
+}
     
 }
