@@ -1,15 +1,18 @@
 package apitest.publisher;
 
 import java.io.File;
+import java.io.FileInputStream;
 import java.nio.file.Files;
 import java.nio.file.Paths;
+import java.util.Properties;
+
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 
 public class PublisherApis {
 
-    String accessToken;
-    String endPoint;
+    String accessToken="";
+    String endPoint="";
 
     Response searchApisResponse;
     Response createApiResponse;
@@ -28,9 +31,24 @@ public class PublisherApis {
     byte[] updateApiPayloadJson;
     String updateApiPayloadString;
 
-    public PublisherApis(String accessToken, String endPoint){
+    String publisherApisString = "/apis";
+
+    public PublisherApis(String accessToken){
         this.accessToken = accessToken;
-        this.endPoint = endPoint;
+
+        FileInputStream input;
+	    Properties properties;
+
+        try {
+            String path =  "./src/test/resources/config.properties";
+			properties = new Properties();
+			input = new FileInputStream(path);
+			properties.load(input);
+            this.endPoint = properties.getProperty("base_url");
+            
+        } catch (Exception e) {
+        }
+        
     }
 
     public Response searchApis(){
@@ -39,7 +57,7 @@ public class PublisherApis {
 				.relaxedHTTPSValidation()
 				.auth()
 				.oauth2(accessToken)
-				.get(endPoint);
+				.get(endPoint+publisherApisString);
             
         } catch (Exception e) {
 
@@ -60,7 +78,7 @@ public class PublisherApis {
             .oauth2(accessToken)
             .body(apiCreationPayloadString)
             .contentType(contentType)
-            .post(endPoint);
+            .post(endPoint+publisherApisString);
         } catch (Exception e) {
             
         }
@@ -74,7 +92,7 @@ public class PublisherApis {
 				.relaxedHTTPSValidation()
 				.auth()
 				.oauth2(accessToken)
-				.get(endPoint+"/"+apiId);
+				.get(endPoint+publisherApisString+"/"+apiId);
 
         return getApiDetailsResponse;
     }
@@ -86,7 +104,7 @@ public class PublisherApis {
 				.relaxedHTTPSValidation()
 				.auth()
 				.oauth2(accessToken)
-				.post(endPoint+"/copy-api?newVersion="+apiVersion+"&defaultVersion="+defaultVersion+"&apiId="+apiId);
+				.post(endPoint+publisherApisString+"/copy-api?newVersion="+apiVersion+"&defaultVersion="+defaultVersion+"&apiId="+apiId);
         return createNewApiVersiResponse;
 
     }
@@ -103,7 +121,7 @@ public class PublisherApis {
             .oauth2(accessToken)
             .body(updateApiPayloadString)
             .contentType(contentType)
-            .put(endPoint+"/"+apiId);
+            .put(endPoint+publisherApisString+"/"+apiId);
 
         } catch (Exception e) {
         }
@@ -117,7 +135,7 @@ public class PublisherApis {
         .relaxedHTTPSValidation()
         .auth()
         .oauth2(accessToken)
-        .delete(endPoint+"/"+apiId);
+        .delete(endPoint+publisherApisString+"/"+apiId);
 
         return deleteApiResponse;
     }
@@ -127,7 +145,7 @@ public class PublisherApis {
         .relaxedHTTPSValidation()
         .auth()
         .oauth2(accessToken)
-        .get(endPoint);
+        .get(endPoint+publisherApisString);
         return getSwaggerDefinitionResponse;
     }
 
@@ -138,7 +156,7 @@ public class PublisherApis {
         .auth()
         .oauth2(accessToken)
         .contentType("application/json")
-        .post(endPoint+"/"+apiId+"/generate-mock-scripts");
+        .post(endPoint+publisherApisString+"/"+apiId+"/generate-mock-scripts");
         
         return generateMockResponsePayloadsResponse;
         
@@ -150,7 +168,7 @@ public class PublisherApis {
         .auth()
         .oauth2(accessToken)
         .contentType("application/json")
-        .get(endPoint+"/"+apiId+"/generated-mock-scripts");
+        .get(endPoint+publisherApisString+"/"+apiId+"/generated-mock-scripts");
         
         return getGeneratedMockResponsePayloadsResponse;
         
@@ -162,7 +180,7 @@ public class PublisherApis {
 				.auth()
 				.oauth2(accessToken)
 				.multiPart(new File(imagePath))
-				.put(endPoint+"/"+apiId+"/thumbnail");
+				.put(endPoint+publisherApisString+"/"+apiId+"/thumbnail");
 
         return uploadThumbnailImageResponse;
     }
@@ -172,7 +190,7 @@ public class PublisherApis {
 				.relaxedHTTPSValidation()
 				.auth()
 				.oauth2(accessToken)
-				.get(endPoint+"/"+apiId+"/thumbnail");
+				.get(endPoint+publisherApisString+"/"+apiId+"/thumbnail");
 
         return getThumbnailImageResponse;
     }
@@ -182,7 +200,7 @@ public class PublisherApis {
 				.relaxedHTTPSValidation()
 				.auth()
 				.oauth2(accessToken)
-				.get(endPoint+"/"+apiId+"/subscription-policies");
+				.get(endPoint+publisherApisString+"/"+apiId+"/subscription-policies");
 
         return getSubscriptionThrotllingResponse;
     }

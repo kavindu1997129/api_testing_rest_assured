@@ -31,7 +31,7 @@ public class Authentication {
         this.endpoint = authenticationObject.getEndpoint();
         this.payloadPath = authenticationObject.getPayloadPath();
         this.tokenUrl = authenticationObject.getTokenUrl();
-        this.scope = authenticationObject.getScope();
+        this.scope = authenticationObject.getScopes();
         this.grantType = authenticationObject.getGrantType();
         this.contentType = authenticationObject.getContentType();
     }

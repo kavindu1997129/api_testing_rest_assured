@@ -1,8 +1,10 @@
 package apitest.publisher;
 
 import java.io.File;
+import java.io.FileInputStream;
 import java.nio.file.Files;
 import java.nio.file.Paths;
+import java.util.Properties;
 
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
@@ -16,9 +18,23 @@ public class PublisherApiProducts {
     String createApiProductPayloadString;
     Response createApiProductResponse;
 
-    public PublisherApiProducts(String endPoint,String accessToken){
+    String publisherApisProductString = "/api-products";
+
+    public PublisherApiProducts(String accessToken){
         this.accessToken = accessToken;
-        this.endPoint = endPoint;
+
+        FileInputStream input;
+	    Properties properties;
+
+        try {
+            String path =  "./src/test/resources/config.properties";
+			properties = new Properties();
+			input = new FileInputStream(path);
+			properties.load(input);
+            this.endPoint = properties.getProperty("base_url");
+            
+        } catch (Exception e) {
+        }
     }
 
     public Response searchApiProduct(){
@@ -26,7 +42,7 @@ public class PublisherApiProducts {
         .relaxedHTTPSValidation()
         .auth()
         .oauth2(accessToken)
-        .get(endPoint); 
+        .get(endPoint+publisherApisProductString); 
 
         return searchApiProductResponse;
     }
@@ -43,7 +59,7 @@ public class PublisherApiProducts {
             .oauth2(accessToken)
             .body(createApiProductPayloadString)
             .contentType(contentType)
-            .post(endPoint);
+            .post(endPoint+publisherApisProductString);
         } catch (Exception e) {
             
         }
@@ -57,7 +73,7 @@ public class PublisherApiProducts {
         .relaxedHTTPSValidation()
         .auth()
         .oauth2(accessToken)
-        .delete(endPoint+"/"+apiId);
+        .delete(endPoint+publisherApisProductString+"/"+apiId);
 
         return deleteApiProductResponse;
     }
@@ -68,9 +84,9 @@ public class PublisherApiProducts {
         .auth()
         .oauth2(accessToken)
         .contentType("application/json")
-        .get(endPoint+"/"+apiProductId);
+        .get(endPoint+publisherApisProductString+"/"+apiProductId);
 
-        System.out.println(endPoint+"/"+apiProductId);
+        System.out.println(endPoint+publisherApisProductString+"/"+apiProductId);
 
         return getDetailsOfApiProductResponse;
     }
@@ -80,7 +96,7 @@ public class PublisherApiProducts {
         .relaxedHTTPSValidation()
         .auth()
         .oauth2(accessToken)
-        .get(endPoint+"/"+apiPproductId+"/swagger"); 
+        .get(endPoint+publisherApisProductString+"/"+apiPproductId+"/swagger"); 
 
         return getSwaggerDefinitionResponse;
     }
@@ -91,7 +107,7 @@ public class PublisherApiProducts {
         .relaxedHTTPSValidation()
         .auth()
         .oauth2(accessToken)
-        .put(endPoint+"/"+apiProductId); 
+        .put(endPoint+publisherApisProductString+"/"+apiProductId); 
 
         return updateApiProductResponse;
     }
@@ -102,7 +118,7 @@ public class PublisherApiProducts {
         .relaxedHTTPSValidation()
         .auth()
         .oauth2(accessToken)
-        .get(endPoint+"/"+apiProductId+"/thumbnail"); 
+        .get(endPoint+publisherApisProductString+"/"+apiProductId+"/thumbnail"); 
 
         return getProductThumbnailResponse;
     }
@@ -113,7 +129,7 @@ public class PublisherApiProducts {
 				.auth()
 				.oauth2(accessToken)
 				.multiPart(new File(imagePath))
-				.put(endPoint+"/"+apiProductId+"/thumbnail");
+				.put(endPoint+publisherApisProductString+"/"+apiProductId+"/thumbnail");
 
         return uploadProductThumbnailResponse;
     }
@@ -123,7 +139,7 @@ public class PublisherApiProducts {
         .relaxedHTTPSValidation()
         .auth()
         .oauth2(accessToken)
-        .get(endPoint+"/"+apiProductId+"/is-outdated"); 
+        .get(endPoint+publisherApisProductString+"/"+apiProductId+"/is-outdated"); 
 
         return isApiProductOutdatedResponse;
     }

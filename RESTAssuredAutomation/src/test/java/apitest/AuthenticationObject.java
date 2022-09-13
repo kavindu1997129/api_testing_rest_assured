@@ -1,5 +1,7 @@
 package apitest;
 
+import java.util.ArrayList;
+
 public class AuthenticationObject {
 
     private String username = "";
@@ -7,7 +9,7 @@ public class AuthenticationObject {
     private String endpoint = "";
     private String payloadPath = "";
     private String tokenUrl = "";
-    private String scope = "";
+    private String scopes = "";
     private String grantType = "";
     private String contentType = "";   
 
@@ -87,15 +89,16 @@ public class AuthenticationObject {
     /**
      * @return String return the scope
      */
-    public String getScope() {
-        return scope;
+    public String getScopes() {
+        return scopes;
     }
 
     /**
      * @param scope the scope to set
      */
-    public void setScope(String scope) {
-        this.scope = scope;
+    public void setScopes(String... scopes) {
+        this.scopes = String.join(" ",scopes);
+        System.out.println(this.scopes);
     }
 
     /**

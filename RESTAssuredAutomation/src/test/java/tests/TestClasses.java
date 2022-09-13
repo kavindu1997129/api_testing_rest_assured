@@ -1,8 +1,13 @@
 package tests;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 import org.testng.annotations.Test;
 import apitest.Authentication;
 import apitest.AuthenticationObject;
+import apitest.Scopes;
 import apitest.devportal.DevportalApis;
 import apitest.publisher.PublisherApiProducts;
 import apitest.publisher.PublisherApis;
@@ -19,11 +24,7 @@ public class TestClasses {
         authenticationObject.setEndpoint("https://localhost:9443/client-registration/v0.17/register");
         authenticationObject.setTokenUrl("https://localhost:8243/token");
         authenticationObject.setPayloadPath("./src/test/payloads/payload.json");
-        authenticationObject.setScope("apim:api_publish apim:api_admin apim:api_import_export apim:api_view apim:api_create apim:api_product_import_export apim:api_product_create");
-        //authenticationObject.setScope("apim:api_publish");
-        //authenticationObject.setScope("apim:api_publish");
-        //authenticationObject.setScope(""apim:api_product_import_export");
-        //authenticationObject.setScope("apim:api_publish");
+        authenticationObject.setScopes(Scopes.API_PUBLISH, Scopes.API_CREATE, Scopes.API_VIEW, Scopes.API_IMPORT_EXPORT);
         authenticationObject.setContentType("application/json");
         authenticationObject.setGrantType("password");
 
@@ -44,11 +45,15 @@ public class TestClasses {
         // String apiId =apiPub.searchApis().jsonPath().get("list[0]['id']");
         // System.out.println(apiPub.deleteApi(apiId).statusCode());
 
-        PublisherApiProducts apiProd = new PublisherApiProducts("https://localhost:9443/api/am/publisher/v1/api-products", accessToken);
+        PublisherApiProducts apiProd = new PublisherApiProducts(accessToken);
         //String apiProductId = apiProd.searchApiProduct().jsonPath().get("list[0]['id']");
         String apiProductId = apiProd.searchApiProduct().jsonPath().get("list[0]['id']");
         System.out.println(accessToken);
         System.out.println(apiProd.isApiProductOutdated(apiProductId).statusCode());
+
+        PublisherApis api = new PublisherApis(accessToken);
+        String apiId = api.searchApis().jsonPath().get("list[0]['id']");
+        System.out.println(apiId);
         }
     
 }
