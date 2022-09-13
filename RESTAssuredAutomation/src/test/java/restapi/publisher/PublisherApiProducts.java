@@ -1,4 +1,4 @@
-package apitest.publisher;
+package restapi.publisher;
 
 import java.io.File;
 import java.io.FileInputStream;

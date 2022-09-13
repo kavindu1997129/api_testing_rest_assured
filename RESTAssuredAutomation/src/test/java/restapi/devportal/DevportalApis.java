@@ -1,4 +1,4 @@
-package apitest.devportal;
+package restapi.devportal;
 
 import io.restassured.RestAssured;
 import io.restassured.response.Response;

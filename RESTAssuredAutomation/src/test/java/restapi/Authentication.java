@@ -1,4 +1,4 @@
-package apitest;
+package restapi;
 
 import java.io.FileInputStream;
 import java.nio.file.Files;

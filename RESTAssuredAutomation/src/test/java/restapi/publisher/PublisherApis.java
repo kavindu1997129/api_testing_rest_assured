@@ -1,4 +1,4 @@
-package apitest.publisher;
+package restapi.publisher;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -104,6 +104,7 @@ public class PublisherApis {
 				.relaxedHTTPSValidation()
 				.auth()
 				.oauth2(accessToken)
+                .contentType("application/json")
 				.post(endPoint+publisherApisString+"/copy-api?newVersion="+apiVersion+"&defaultVersion="+defaultVersion+"&apiId="+apiId);
         return createNewApiVersiResponse;
 
@@ -181,6 +182,7 @@ public class PublisherApis {
 				.oauth2(accessToken)
 				.multiPart(new File(imagePath))
 				.put(endPoint+publisherApisString+"/"+apiId+"/thumbnail");
+        System.out.println(endPoint+publisherApisString+"/"+apiId+"/thumbnail");
 
         return uploadThumbnailImageResponse;
     }

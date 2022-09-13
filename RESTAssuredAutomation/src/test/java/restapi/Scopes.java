@@ -1,4 +1,4 @@
-package apitest;
+package restapi;
 
 public abstract class Scopes {
 

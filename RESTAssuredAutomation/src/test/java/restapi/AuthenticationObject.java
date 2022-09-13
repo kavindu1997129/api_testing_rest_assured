@@ -1,6 +1,4 @@
-package apitest;
-
-import java.util.ArrayList;
+package restapi;
 
 public class AuthenticationObject {
 
@@ -98,7 +96,6 @@ public class AuthenticationObject {
      */
     public void setScopes(String... scopes) {
         this.scopes = String.join(" ",scopes);
-        System.out.println(this.scopes);
     }
 
     /**

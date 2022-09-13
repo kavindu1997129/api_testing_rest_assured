@@ -71,7 +71,7 @@
   "apis": [
     {
       "name": "PizzaShackAPI",
-      "apiId": "01234567-0123-0123-0123-012345678901",
+      "apiId": "7a5ca6a4-ee73-427e-8245-97d48ae36ea3",
       "version": "1.0",
       "operations": [
         {
