@@ -43,12 +43,12 @@ public class TestClasses {
         Response createNewApiVersioRes = api.createNewApiVersion(apiId, "2.0.1", false);
         Response getComplexityRelatedDetailsOfApiRes = api.getComplexityRelatedDetailsOfApi(apiId);
         
-        System.out.println(createApiRes.statusCode());
-        System.out.println(apiId);
-        System.out.println(changeApiStatusRes.statusCode());
-        System.out.println(createNewApiVersioRes.statusCode());
-        System.out.println(uploadApiThumbnailRes.statusCode());
-        System.out.println(getComplexityRelatedDetailsOfApiRes.statusCode());
+        System.out.println("createApiRes: "+createApiRes.statusCode());
+        System.out.println("apiId: "+apiId);
+        System.out.println("changeApiStatusRes: "+changeApiStatusRes.statusCode());
+        System.out.println("createNewApiVersioRes: "+createNewApiVersioRes.statusCode());
+        System.out.println("uploadApiThumbnailRes: "+uploadApiThumbnailRes.statusCode());
+        System.out.println("getComplexityRelatedDetailsOfApiRes: "+getComplexityRelatedDetailsOfApiRes.statusCode());
         
         PublisherApiProducts apiProd = new PublisherApiProducts(accessToken);
         Response searchApiProductRes = apiProd.searchApiProduct();
@@ -57,9 +57,37 @@ public class TestClasses {
         Response updateApiProductRes = apiProd.updateApiProduct(apiProductId, ContentTypes.APPLICATION_JSON, "./src/test/payloads/updateApiProductPayload.json");
         Response uploadProductThumbnailRes = apiProd.uploadProductThumbnail("./src/test/payloads/thumbnail.jpg", apiProductId);
         
-        System.out.println(createApiProductRes.statusCode());
-        System.out.println(updateApiProductRes.statusCode());
-        System.out.println(uploadProductThumbnailRes.statusCode());
+        System.out.println("createApiProductRes: "+createApiProductRes.statusCode());
+        System.out.println("updateApiProductRes: " +updateApiProductRes.statusCode());
+        System.out.println("uploadProductThumbnailRes: "+ uploadProductThumbnailRes.statusCode());
 }
+
+        @Test
+        public void validateData(){
+                PublisherApis api = new PublisherApis(accessToken);
+                Response searchApi = api.searchApis();
+                String apiId = searchApi.jsonPath().get("list[0]['id']");
+                Response getApiDetails = api.getApiDetails(apiId);
+                Response getApiThumbnail = api.getThumbnailImage(apiId);
+                Response getApiStatus = api.getApiStatus(apiId);
+
+                System.out.println("Search APIs: "+searchApi.statusCode());
+                System.out.println("Get API details: "+getApiDetails.statusCode());
+                System.out.println("Get API Thumbnail: "+getApiThumbnail.statusCode());
+                System.out.println("Get API status: "+getApiStatus.statusCode());
+
+                PublisherApiProducts apiProd = new PublisherApiProducts(accessToken);
+                Response searchApiProdsRes = apiProd.searchApiProduct();
+                String apiProductId  = searchApiProdsRes.jsonPath().get("list[0]['id']");
+                Response getDetailsOfApiProdRes = apiProd.getDetailsOfApiProduct(apiProductId);
+                Response getThumbnailOfApiprodRes = apiProd.getProductThumbnail(apiProductId);
+
+                System.out.println("Search Api Product: "+ searchApiProdsRes.statusCode());
+                System.out.println("Get details of API product: "+ getDetailsOfApiProdRes.statusCode());
+                System.out.println("Get thumbnail of API product: "+ getThumbnailOfApiprodRes.statusCode());
+
+
+
+        }
     
 }

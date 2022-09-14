@@ -90,8 +90,6 @@ public class PublisherApiProducts {
         .contentType("application/json")
         .get(endPoint+publisherApisProductString+"/"+apiProductId);
 
-        System.out.println(endPoint+publisherApisProductString+"/"+apiProductId);
-
         return getDetailsOfApiProductResponse;
     }
 

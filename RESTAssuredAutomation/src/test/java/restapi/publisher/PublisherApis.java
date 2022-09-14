@@ -218,16 +218,29 @@ public class PublisherApis {
         return changeApiStatusResponse;
     }
 
+    public Response getApiStatus(String apiId){
+        Response changeApiStatusResponse  = RestAssured.given()
+        .relaxedHTTPSValidation()
+        .auth()
+        .oauth2(accessToken)
+        .contentType(ContentTypes.APPLICATION_JSON)
+        .get(endPoint+publisherApisString+"/"+apiId+"/lifecycle-history");
+        //System.out.println(endPoint+publisherApiLifecycleString+"?apiId="+apiId+"&action="+action);
+
+        return changeApiStatusResponse;
+    }
+
     public Response getComplexityRelatedDetailsOfApi(String apiId){
         Response getComplexityRelatedDetailsOfApiResponse = RestAssured.given()
         .relaxedHTTPSValidation()
         .auth()
         .oauth2(accessToken)
         .contentType(ContentTypes.APPLICATION_JSON)
-        .post(endPoint+publisherApisString+"/"+apiId+"/"+"/graphql-policies/complexity");
+        .get(endPoint+publisherApisString+"/"+apiId+"/graphql-policies/complexity");
 
         return getComplexityRelatedDetailsOfApiResponse;
     }
+
 
     
 }
