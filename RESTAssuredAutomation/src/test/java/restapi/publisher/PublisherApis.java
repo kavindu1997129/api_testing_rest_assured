@@ -78,6 +78,7 @@ public class PublisherApis {
             .body(apiCreationPayloadString)
             .contentType(contentType)
             .post(endPoint+publisherApisString);
+
         } catch (Exception e) {
             
         }
@@ -213,7 +214,7 @@ public class PublisherApis {
         .oauth2(accessToken)
         .contentType(ContentTypes.APPLICATION_JSON)
         .post(endPoint+publisherApisString+"/change-lifecycle?apiId="+apiId+"&action="+action);
-        //System.out.println(endPoint+publisherApiLifecycleString+"?apiId="+apiId+"&action="+action);
+        System.out.println(endPoint+publisherApisString+"?apiId="+apiId+"&action="+action);
 
         return changeApiStatusResponse;
     }
