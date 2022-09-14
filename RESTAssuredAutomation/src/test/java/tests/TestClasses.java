@@ -4,6 +4,7 @@ import org.testng.annotations.Test;
 
 import io.restassured.http.ContentType;
 import io.restassured.path.json.JsonPath;
+import io.restassured.response.Response;
 import restapi.Authentication;
 import restapi.AuthenticationObject;
 import restapi.ContentTypes;
@@ -17,7 +18,7 @@ import restapi.publisher.PublisherApis;
 public class TestClasses {
 	String accessToken;
 	@Test
-	public void oauth2() {
+	public void dataGeneration() {
 
         AuthenticationObject authenticationObject = new AuthenticationObject();
         authenticationObject.setUsername("admin");
@@ -35,22 +36,30 @@ public class TestClasses {
         accessToken = authentication.getAccessToken();
 
         PublisherApis api = new PublisherApis(accessToken);
-        api.createApi(ContentTypes.APPLICATION_JSON, "./src/test/payloads/apicretion_payload.json");
+        Response createApiRes = api.createApi(ContentTypes.APPLICATION_JSON, "./src/test/payloads/apicretion_payload.json");
         String apiId = api.searchApis().jsonPath().get("list[0]['id']");
-        api.uploadThumbnailImage("./src/test/payloads/thumbnail.jpg", apiId);
-        System.out.println(api.changeApiStatus(apiId, "Publish").statusCode());
-        System.out.println(api.createNewApiVersion(apiId, "2.0.1", false).statusCode());
+        Response uploadApiThumbnailRes = api.uploadThumbnailImage("./src/test/payloads/thumbnail.jpg", apiId);
+        Response changeApiStatusRes = api.changeApiStatus(apiId, "Publish");
+        Response createNewApiVersioRes = api.createNewApiVersion(apiId, "2.0.1", false);
+        Response getComplexityRelatedDetailsOfApiRes = api.getComplexityRelatedDetailsOfApi(apiId);
         
-        System.out.println(api.uploadThumbnailImage("./src/test/payloads/thumbnail.jpg", apiId).statusCode());
+        System.out.println(createApiRes.statusCode());
         System.out.println(apiId);
+        System.out.println(changeApiStatusRes.statusCode());
+        System.out.println(createNewApiVersioRes.statusCode());
+        System.out.println(uploadApiThumbnailRes.statusCode());
+        System.out.println(getComplexityRelatedDetailsOfApiRes.statusCode());
         
         PublisherApiProducts apiProd = new PublisherApiProducts(accessToken);
-        String apiProductId = apiProd.searchApiProduct().jsonPath().get("list[0]['id']");
-        //String apiProductId = apiProd.searchApiProduct().jsonPath().get("list[0]['id']");
-        //System.out.println(accessToken);
-        System.out.println(apiProd.createApiProduct(ContentTypes.APPLICATION_JSON, "./src/test/payloads/apiproduct_creation.json").statusCode());
-        System.out.println(apiProd.updateApiProduct(apiProductId, ContentTypes.APPLICATION_JSON, "./src/test/payloads/updateApiProductPayload.json").statusCode());
-        System.out.println(apiProd.uploadProductThumbnail("./src/test/payloads/thumbnail.jpg", apiProductId).jsonPath().prettify());
+        Response searchApiProductRes = apiProd.searchApiProduct();
+        String apiProductId = searchApiProductRes.jsonPath().get("list[0]['id']");
+        Response createApiProductRes = apiProd.createApiProduct(ContentTypes.APPLICATION_JSON, "./src/test/payloads/apiproduct_creation.json");
+        Response updateApiProductRes = apiProd.updateApiProduct(apiProductId, ContentTypes.APPLICATION_JSON, "./src/test/payloads/updateApiProductPayload.json");
+        Response uploadProductThumbnailRes = apiProd.uploadProductThumbnail("./src/test/payloads/thumbnail.jpg", apiProductId);
+        
+        System.out.println(createApiProductRes.statusCode());
+        System.out.println(updateApiProductRes.statusCode());
+        System.out.println(uploadProductThumbnailRes.statusCode());
 }
     
 }
