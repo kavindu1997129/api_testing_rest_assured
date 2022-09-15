@@ -6,7 +6,8 @@
     "hasThumbnail": false,
     "state": "CREATED",
     "enableSchemaValidation": false,
-    "enableStore": true,
+    "isRevision": false,
+    "revisionId": 1,
     "responseCachingEnabled": true,
     "cacheTimeout": 300,
     "visibility": "PUBLIC",
@@ -14,10 +15,7 @@
     "visibleTenants": [],
     "accessControl": "NONE",
     "accessControlRoles": [],
-    "gatewayEnvironments": [
-      "Production and Sandbox"
-    ],
-    "apiType": "APIProduct",
+    "apiType": "APIPRODUCT",
     "transport": [
       "http",
       "https"
@@ -36,9 +34,24 @@
     ],
     "subscriptionAvailability": "CURRENT_TENANT",
     "subscriptionAvailableTenants": [],
-    "additionalProperties": {
-      "property1": "string",
-      "property2": "string"
+    "additionalProperties": [
+      {
+        "name": "string",
+        "value": "string",
+        "display": true
+      }
+    ],
+    "additionalPropertiesMap": {
+      "property1": {
+        "name": "string",
+        "value": "string",
+        "display": false
+      },
+      "property2": {
+        "name": "string",
+        "value": "string",
+        "display": false
+      }
     },
     "monetization": {
       "enabled": true,
@@ -66,8 +79,9 @@
         "string"
       ]
     },
-    "createdTime": "2017-02-20T13:57:16.229",
-    "lastUpdatedTime": "2017-02-20T13:57:16.229",
+    "createdTime": "string",
+    "lastUpdatedTime": "string",
+    "gatewayVendor": "wso2",
     "apis": [
       {
         "name": "PizzaShackAPI",
@@ -90,5 +104,6 @@
       }
     ],
     "scopes": [],
-    "categories": []
+    "categories": [],
+    "workflowStatus": "APPROVED"
   }
