@@ -1,0 +1,489 @@
+[INFO ] 2022-09-15 16:15:07.094 [main] TestClasses - createApiRes [Logger]: 409
+[INFO ] 2022-09-15 16:26:38.731 [main] TestClasses - This API was already created
+[INFO ] 2022-09-15 16:26:38.734 [main] TestClasses - createApiRes [Logger]: 409
+[INFO ] 2022-09-15 16:27:52.292 [main] TestClasses - This API was already created
+[INFO ] 2022-09-15 16:28:21.002 [main] TestClasses - This API has been already created
+[INFO ] 2022-09-15 16:43:43.237 [main] TestClasses - This API has been already created
+[INFO ] 2022-09-15 16:43:43.239 [main] TestClasses - Your APIs list has been returned
+[INFO ] 2022-09-15 16:49:47.321 [main] TestClasses - This API has been already created
+[INFO ] 2022-09-15 16:49:47.329 [main] TestClasses - Your APIs list has been returned
+[INFO ] 2022-09-15 16:49:47.329 [main] TestClasses - Lifecycle changed successfully
+[INFO ] 2022-09-15 16:53:07.287 [main] TestClasses - This API has been already created
+[INFO ] 2022-09-15 16:53:07.291 [main] TestClasses - Your APIs list has been returned
+[INFO ] 2022-09-15 16:53:07.291 [main] TestClasses - Lifecycle changed successfully
+[INFO ] 2022-09-15 16:53:07.291 [main] TestClasses - Lifecycle state data returned successfully
+[INFO ] 2022-09-15 16:56:03.033 [main] TestClasses - This API has been already created
+[INFO ] 2022-09-15 16:56:03.037 [main] TestClasses - Your APIs list has been returned
+[INFO ] 2022-09-15 16:56:03.037 [main] TestClasses - Lifecycle changed successfully
+[INFO ] 2022-09-15 16:56:03.037 [main] TestClasses - Lifecycle state data returned successfully
+[INFO ] 2022-09-15 16:56:03.037 [main] TestClasses - There is an error while creaing the API. The error is - 
+[INFO ] 2022-09-15 16:57:06.927 [main] TestClasses - This API has been already created
+[INFO ] 2022-09-15 16:57:06.931 [main] TestClasses - Your APIs list has been returned
+[INFO ] 2022-09-15 16:57:06.931 [main] TestClasses - Lifecycle changed successfully
+[INFO ] 2022-09-15 16:57:06.931 [main] TestClasses - Lifecycle state data returned successfully
+[INFO ] 2022-09-15 16:57:06.931 [main] TestClasses - There is an error while creaing the API. The error is - 
+[INFO ] 2022-09-16 09:36:33.819 [main] TestClasses - Not Found. The specified resource does not exist
+[INFO ] 2022-09-16 09:36:33.875 [main] TestClasses - Not Found. The specified resource does not exist
+[INFO ] 2022-09-16 09:37:32.917 [main] TestClasses - Not Found. The specified resource does not exist
+[INFO ] 2022-09-16 09:37:32.970 [main] TestClasses - Not Found. The specified resource does not exist
+[INFO ] 2022-09-16 09:40:58.639 [main] TestClasses - Conflict. Specified resource already exists
+[INFO ] 2022-09-16 09:40:59.005 [main] TestClasses - Your APIs list has been returned
+[INFO ] 2022-09-16 09:41:32.709 [main] TestClasses - Conflict. Specified resource already exists
+[INFO ] 2022-09-16 09:41:32.779 [main] TestClasses - Your APIs list has been returned
+[INFO ] 2022-09-16 09:41:33.315 [main] TestClasses - There is an error occured while perfoming searching query
+[INFO ] 2022-09-16 09:41:33.370 [main] TestClasses - Lifecycle state data returned successfully
+[INFO ] 2022-09-16 09:41:33.498 [main] TestClasses - There is an error occured while perfoming searching query
+[INFO ] 2022-09-16 09:44:41.686 [main] TestClasses - Conflict. Specified resource already exists
+[INFO ] 2022-09-16 09:44:41.781 [main] TestClasses - Your APIs list has been returned
+[INFO ] 2022-09-16 09:45:42.343 [main] TestClasses - Conflict. Specified resource already exists
+[INFO ] 2022-09-16 09:45:42.406 [main] TestClasses - Your APIs list has been returned
+[INFO ] 2022-09-16 09:45:42.743 [main] TestClasses - There is an error occured while perfoming searching query
+[INFO ] 2022-09-16 09:45:42.816 [main] TestClasses - Lifecycle state data returned successfully
+[INFO ] 2022-09-16 09:45:42.816 [main] TestClasses - There is an error occured while perfoming searching query
+[INFO ] 2022-09-16 09:48:55.708 [main] TestClasses - [CREATE API] Conflict. Specified resource already exists
+[INFO ] 2022-09-16 09:48:55.793 [main] TestClasses - [SEARCH API] Your APIs list has been returned
+[INFO ] 2022-09-16 09:48:56.144 [main] TestClasses - [CHANGE API STATUS] There is an error occured while perfoming searching query
+[INFO ] 2022-09-16 09:48:56.197 [main] TestClasses - [GET API STATUS] Lifecycle state data returned successfully
+[INFO ] 2022-09-16 09:48:56.198 [main] TestClasses - [GET API STATUS] There is an error occured while perfoming searching query
+[INFO ] 2022-09-16 09:51:54.882 [main] TestClasses - [CREATE API] Conflict. Specified resource already exists
+[INFO ] 2022-09-16 09:51:55.010 [main] TestClasses - [SEARCH API] Your APIs list has been returned
+[INFO ] 2022-09-16 09:51:55.357 [main] TestClasses - [CHANGE API STATUS] There is an error occured while perfoming searching query
+[INFO ] 2022-09-16 09:51:55.413 [main] TestClasses - [GET API STATUS] Lifecycle state data returned successfully
+[INFO ] 2022-09-16 09:51:55.414 [main] TestClasses - [UPLOAD API THUMBNAIL] There is an error occured while perfoming searching query
+[INFO ] 2022-09-16 09:52:48.923 [main] TestClasses - [CREATE API] Conflict. Specified resource already exists
+[INFO ] 2022-09-16 09:52:48.995 [main] TestClasses - [SEARCH API] Your APIs list has been returned
+[INFO ] 2022-09-16 09:52:49.294 [main] TestClasses - [UPLOAD API THUMBNAIL] There is an error occured while perfoming searching query
+[INFO ] 2022-09-16 09:52:49.365 [main] TestClasses - [CHANGE API STATUS] There is an error occured while perfoming searching query
+[INFO ] 2022-09-16 09:52:49.422 [main] TestClasses - [GET API STATUS] Lifecycle state data returned successfully
+[INFO ] 2022-09-16 09:54:03.210 [main] TestClasses - [CREATE API] Conflict. Specified resource already exists
+[INFO ] 2022-09-16 09:54:03.279 [main] TestClasses - [SEARCH API] Your APIs list has been returned
+[INFO ] 2022-09-16 09:54:03.492 [main] TestClasses - [UPLOAD API THUMBNAIL] There is an error occured while perfoming searching query
+[INFO ] 2022-09-16 09:54:03.549 [main] TestClasses - [CHANGE API STATUS] There is an error occured while perfoming searching query
+[INFO ] 2022-09-16 09:54:03.602 [main] TestClasses - [GET API STATUS] Lifecycle state data returned successfully
+[INFO ] 2022-09-16 10:26:46.469 [main] TestClasses - [CREATE API] Conflict. Specified resource already exists
+[INFO ] 2022-09-16 10:26:46.882 [main] TestClasses - [SEARCH API] Your APIs list has been returned
+[INFO ] 2022-09-16 10:26:47.297 [main] TestClasses - [UPLOAD API THUMBNAIL] There is an error occured while perfoming searching query
+[INFO ] 2022-09-16 10:26:47.627 [main] TestClasses - [CHANGE API STATUS] There is an error occured while perfoming searching query
+[INFO ] 2022-09-16 10:26:47.764 [main] TestClasses - [GET API STATUS] Lifecycle state data returned successfully
+[INFO ] 2022-09-16 10:27:34.148 [main] TestClasses - [CREATE API] Conflict. Specified resource already exists
+[INFO ] 2022-09-16 10:27:34.241 [main] TestClasses - [SEARCH API] Your APIs list has been returned
+[INFO ] 2022-09-16 10:27:34.523 [main] TestClasses - [UPLOAD API THUMBNAIL] There is an error occured while perfoming searching query
+[INFO ] 2022-09-16 10:27:34.602 [main] TestClasses - [CHANGE API STATUS] There is an error occured while perfoming searching query
+[INFO ] 2022-09-16 10:27:34.663 [main] TestClasses - [GET API STATUS] Lifecycle state data returned successfully
+[INFO ] 2022-09-16 10:27:46.273 [main] TestClasses - [CREATE API] Conflict. Specified resource already exists
+[INFO ] 2022-09-16 10:27:46.358 [main] TestClasses - [SEARCH API] Your APIs list has been returned
+[INFO ] 2022-09-16 10:27:46.562 [main] TestClasses - [UPLOAD API THUMBNAIL] There is an error occured while perfoming searching query
+[INFO ] 2022-09-16 10:27:46.610 [main] TestClasses - [CHANGE API STATUS] There is an error occured while perfoming searching query
+[INFO ] 2022-09-16 10:27:46.654 [main] TestClasses - [GET API STATUS] Lifecycle state data returned successfully
+[INFO ] 2022-09-16 10:28:12.232 [main] TestClasses - [CREATE API] Conflict. Specified resource already exists
+[INFO ] 2022-09-16 10:28:12.309 [main] TestClasses - [SEARCH API] Your APIs list has been returned
+[INFO ] 2022-09-16 10:28:12.527 [main] TestClasses - [UPLOAD API THUMBNAIL] There is an error occured while perfoming searching query
+[INFO ] 2022-09-16 10:28:12.585 [main] TestClasses - [CHANGE API STATUS] There is an error occured while perfoming searching query
+[INFO ] 2022-09-16 10:28:12.631 [main] TestClasses - [GET API STATUS] Lifecycle state data returned successfully
+[INFO ] 2022-09-16 10:30:23.134 [main] TestClasses - The API already exists
+[INFO ] 2022-09-16 10:30:23.139 [main] TestClasses - [CREATE API] Conflict. Specified resource already exists
+[INFO ] 2022-09-16 10:30:23.200 [main] TestClasses - [SEARCH API] Your APIs list has been returned
+[INFO ] 2022-09-16 10:30:23.432 [main] TestClasses - [UPLOAD API THUMBNAIL] There is an error occured while perfoming searching query
+[INFO ] 2022-09-16 10:30:23.496 [main] TestClasses - [CHANGE API STATUS] There is an error occured while perfoming searching query
+[INFO ] 2022-09-16 10:30:23.560 [main] TestClasses - [GET API STATUS] Lifecycle state data returned successfully
+[INFO ] 2022-09-16 10:31:06.173 [main] TestClasses - The API already exists
+[INFO ] 2022-09-16 10:31:06.249 [main] TestClasses - null
+[INFO ] 2022-09-16 10:31:06.465 [main] TestClasses - [UPLOAD API THUMBNAIL] There is an error occured while perfoming searching query
+[INFO ] 2022-09-16 10:31:06.529 [main] TestClasses - [CHANGE API STATUS] There is an error occured while perfoming searching query
+[INFO ] 2022-09-16 10:31:06.584 [main] TestClasses - [GET API STATUS] Lifecycle state data returned successfully
+[INFO ] 2022-09-16 10:31:23.885 [main] TestClasses - {
+    "code": 900300,
+    "message": "The API already exists.",
+    "description": "The API already exists",
+    "moreInfo": "",
+    "error": [
+        
+    ]
+}
+[INFO ] 2022-09-16 10:31:23.968 [main] TestClasses - null
+[INFO ] 2022-09-16 10:31:24.201 [main] TestClasses - [UPLOAD API THUMBNAIL] There is an error occured while perfoming searching query
+[INFO ] 2022-09-16 10:31:24.259 [main] TestClasses - [CHANGE API STATUS] There is an error occured while perfoming searching query
+[INFO ] 2022-09-16 10:31:24.311 [main] TestClasses - [GET API STATUS] Lifecycle state data returned successfully
+[INFO ] 2022-09-16 10:31:45.882 [main] TestClasses - The API already exists
+[INFO ] 2022-09-16 10:31:45.981 [main] TestClasses - {
+    "count": 1,
+    "list": [
+        {
+            "id": "bca06246-81c6-447f-b887-ada9e2a97944",
+            "name": "PizzaShackAPI",
+            "description": "This is a simple API for Pizza Shack online pizza delivery store.",
+            "context": "/pizza",
+            "additionalProperties": [
+                
+            ],
+            "additionalPropertiesMap": {
+                
+            },
+            "version": "1.0.0",
+            "provider": "admin",
+            "type": "HTTP",
+            "audience": "PUBLIC",
+            "lifeCycleStatus": "CREATED",
+            "workflowStatus": null,
+            "hasThumbnail": true,
+            "securityScheme": [
+                
+            ],
+            "createdTime": "1663151773515",
+            "updatedTime": "1663152242896",
+            "gatewayVendor": null,
+            "advertiseOnly": true
+        }
+    ],
+    "pagination": {
+        "offset": 0,
+        "limit": 25,
+        "total": 1,
+        "next": "",
+        "previous": ""
+    }
+}
+[INFO ] 2022-09-16 10:31:46.277 [main] TestClasses - [UPLOAD API THUMBNAIL] There is an error occured while perfoming searching query
+[INFO ] 2022-09-16 10:31:46.420 [main] TestClasses - [CHANGE API STATUS] There is an error occured while perfoming searching query
+[INFO ] 2022-09-16 10:31:46.489 [main] TestClasses - [GET API STATUS] Lifecycle state data returned successfully
+[INFO ] 2022-09-16 10:32:46.237 [main] TestClasses - The API already exists
+[INFO ] 2022-09-16 10:32:46.292 [main] TestClasses - 200
+[INFO ] 2022-09-16 10:32:46.520 [main] TestClasses - [UPLOAD API THUMBNAIL] There is an error occured while perfoming searching query
+[INFO ] 2022-09-16 10:32:46.576 [main] TestClasses - [CHANGE API STATUS] There is an error occured while perfoming searching query
+[INFO ] 2022-09-16 10:32:46.636 [main] TestClasses - [GET API STATUS] Lifecycle state data returned successfully
+[INFO ] 2022-09-16 10:35:56.215 [main] TestClasses - [CREATE API] The API already exists
+[INFO ] 2022-09-16 10:35:56.270 [main] TestClasses - [SEARCH API] 200
+[INFO ] 2022-09-16 10:35:56.519 [main] TestClasses - [UPLOAD API THUMBNAIL] 201
+[INFO ] 2022-09-16 10:35:56.520 [main] TestClasses - [UPLOAD API THUMBNAIL] There is an error occured while perfoming searching query
+[INFO ] 2022-09-16 10:35:56.581 [main] TestClasses - [CHANGE API STATUS] There is an error occured while perfoming searching query
+[INFO ] 2022-09-16 10:35:56.638 [main] TestClasses - [GET API STATUS] Lifecycle state data returned successfully
+[INFO ] 2022-09-16 10:49:09.122 [main] TestClasses - [CREATE API] The API already exists
+[INFO ] 2022-09-16 10:49:09.233 [main] TestClasses - [SEARCH API] 200
+[INFO ] 2022-09-16 10:49:09.607 [main] TestClasses - [UPLOAD API THUMBNAIL] 201
+[INFO ] 2022-09-16 10:49:09.682 [main] TestClasses - [CHANGE API STATUS] There is an error occured while perfoming searching query
+[INFO ] 2022-09-16 10:49:09.729 [main] TestClasses - [GET API STATUS] Lifecycle state data returned successfully
+[INFO ] 2022-09-16 10:50:01.181 [main] TestClasses - [CREATE API] The API already exists
+[INFO ] 2022-09-16 10:50:01.259 [main] TestClasses - [SEARCH API] 200
+[INFO ] 2022-09-16 10:50:01.570 [main] TestClasses - [UPLOAD API THUMBNAIL] 201
+[INFO ] 2022-09-16 10:50:01.620 [main] TestClasses - [CHANGE API STATUS] 500
+[INFO ] 2022-09-16 10:50:01.666 [main] TestClasses - [GET API STATUS] Lifecycle state data returned successfully
+[INFO ] 2022-09-16 10:51:11.309 [main] TestClasses - [CREATE API] The API already exists
+[INFO ] 2022-09-16 10:51:11.387 [main] TestClasses - [SEARCH API] 200
+[INFO ] 2022-09-16 10:51:11.682 [main] TestClasses - [UPLOAD API THUMBNAIL] 201
+[INFO ] 2022-09-16 10:51:11.743 [main] TestClasses - [CHANGE API STATUS] 500
+[INFO ] 2022-09-16 10:51:11.790 [main] TestClasses - [GET API STATUS] 200
+[INFO ] 2022-09-16 10:51:11.854 [main] TestClasses - [GET API THUMBNAIL] 200
+[INFO ] 2022-09-16 10:51:42.352 [main] TestClasses - [CREATE API] 409
+[INFO ] 2022-09-16 10:51:42.409 [main] TestClasses - [SEARCH API] 200
+[INFO ] 2022-09-16 10:51:42.644 [main] TestClasses - [UPLOAD API THUMBNAIL] 201
+[INFO ] 2022-09-16 10:51:42.701 [main] TestClasses - [CHANGE API STATUS] 500
+[INFO ] 2022-09-16 10:51:42.743 [main] TestClasses - [GET API STATUS] 200
+[INFO ] 2022-09-16 10:51:42.819 [main] TestClasses - [GET API THUMBNAIL] 200
+[INFO ] 2022-09-16 10:52:47.884 [main] TestClasses - Status Code [CREATE API]: 409
+[INFO ] 2022-09-16 10:52:47.946 [main] TestClasses - Status Code [SEARCH API]: 200
+[INFO ] 2022-09-16 10:52:48.213 [main] TestClasses - Status Code [UPLOAD API THUMBNAIL]: 201
+[INFO ] 2022-09-16 10:52:48.278 [main] TestClasses - Status Code [CHANGE API STATUS]: 500
+[INFO ] 2022-09-16 10:52:48.356 [main] TestClasses - Status Code [GET API STATUS]: 200
+[INFO ] 2022-09-16 10:52:48.432 [main] TestClasses - Status Code [GET API THUMBNAIL]: 200
+[INFO ] 2022-09-16 10:54:55.502 [main] TestClasses - Status Code [CREATE API]: 409
+[INFO ] 2022-09-16 10:54:55.559 [main] TestClasses - Status Code [SEARCH API]: 200
+[INFO ] 2022-09-16 10:54:55.810 [main] TestClasses - Status Code [UPLOAD API THUMBNAIL]: 201
+[INFO ] 2022-09-16 10:54:55.873 [main] TestClasses - Status Code [CHANGE API STATUS]: 500
+[INFO ] 2022-09-16 10:54:55.924 [main] TestClasses - Status Code [GET API STATUS]: 200
+[INFO ] 2022-09-16 10:54:56.000 [main] TestClasses - Status Code [GET API THUMBNAIL]: 200
+[INFO ] 2022-09-16 10:54:56.042 [main] TestClasses - Status Code [SEARCH API PRODUCT]: 200
+[INFO ] 2022-09-16 10:54:56.122 [main] TestClasses - Status Code [CREATE API PRODUCT]: 500
+[INFO ] 2022-09-16 10:56:43.958 [main] TestClasses - Status Code [CREATE API]: 409
+[INFO ] 2022-09-16 10:56:44.028 [main] TestClasses - Status Code [SEARCH API]: 200
+[INFO ] 2022-09-16 10:56:44.297 [main] TestClasses - Status Code [UPLOAD API THUMBNAIL]: 201
+[INFO ] 2022-09-16 10:56:44.358 [main] TestClasses - Status Code [CHANGE API STATUS]: 500
+[INFO ] 2022-09-16 10:56:44.406 [main] TestClasses - Status Code [GET API STATUS]: 200
+[INFO ] 2022-09-16 10:56:44.497 [main] TestClasses - Status Code [GET API THUMBNAIL]: 200
+[INFO ] 2022-09-16 10:56:44.540 [main] TestClasses - Status Code [SEARCH API PRODUCT]: 200
+[INFO ] 2022-09-16 10:56:44.597 [main] TestClasses - Status Code [CREATE API PRODUCT]: 500
+[INFO ] 2022-09-16 10:56:44.835 [main] TestClasses - Status Code [UPDATE API PRODUCT]: 200
+[INFO ] 2022-09-16 10:56:44.940 [main] TestClasses - Status Code [UPDATE API PRODUCT THUMBNAIL]: 201
+[INFO ] 2022-09-16 10:57:05.616 [main] TestClasses - Status Code [CREATE API]: 409
+[INFO ] 2022-09-16 10:57:05.675 [main] TestClasses - Status Code [SEARCH API]: 200
+[INFO ] 2022-09-16 10:57:05.910 [main] TestClasses - Status Code [UPLOAD API THUMBNAIL]: 201
+[INFO ] 2022-09-16 10:57:05.957 [main] TestClasses - Status Code [CHANGE API STATUS]: 500
+[INFO ] 2022-09-16 10:57:05.995 [main] TestClasses - Status Code [GET API STATUS]: 200
+[INFO ] 2022-09-16 10:57:06.066 [main] TestClasses - Status Code [GET API THUMBNAIL]: 200
+[INFO ] 2022-09-16 10:57:06.103 [main] TestClasses - Status Code [SEARCH API PRODUCT]: 200
+[INFO ] 2022-09-16 10:57:06.164 [main] TestClasses - Status Code [CREATE API PRODUCT]: 500
+[INFO ] 2022-09-16 10:57:06.394 [main] TestClasses - Status Code [UPDATE API PRODUCT]: 200
+[INFO ] 2022-09-16 10:57:06.495 [main] TestClasses - Status Code [UPDATE API PRODUCT THUMBNAIL]: 201
+[INFO ] 2022-09-16 10:59:09.827 [main] TestClasses - Status Code [CREATE API]: 409
+[INFO ] 2022-09-16 10:59:09.894 [main] TestClasses - Status Code [SEARCH API]: 200
+[INFO ] 2022-09-16 10:59:10.155 [main] TestClasses - Status Code [UPLOAD API THUMBNAIL]: 201
+[INFO ] 2022-09-16 10:59:10.209 [main] TestClasses - Status Code [CHANGE API STATUS]: 500
+[INFO ] 2022-09-16 10:59:10.274 [main] TestClasses - Status Code [GET API STATUS]: 200
+[INFO ] 2022-09-16 10:59:10.371 [main] TestClasses - Status Code [GET API THUMBNAIL]: 200
+[INFO ] 2022-09-16 10:59:10.426 [main] TestClasses - Status Code [SEARCH API PRODUCT]: 200
+[INFO ] 2022-09-16 10:59:10.514 [main] TestClasses - Status Code [CREATE API PRODUCT]: 500
+[INFO ] 2022-09-16 10:59:10.848 [main] TestClasses - Status Code [UPDATE API PRODUCT]: 200
+[INFO ] 2022-09-16 10:59:10.935 [main] TestClasses - Status Code [UPDATE API PRODUCT THUMBNAIL]: 201
+[INFO ] 2022-09-16 10:59:10.971 [main] TestClasses - Status Code [SEARCH API]: 200
+[INFO ] 2022-09-16 10:59:11.017 [main] TestClasses - Status Code [GET APIS DETAILS]: 200
+[INFO ] 2022-09-16 10:59:11.064 [main] TestClasses - Status Code [GET API THUMBNAIL]: 200
+[INFO ] 2022-09-16 10:59:11.107 [main] TestClasses - Status Code [GET API STATUS]: 200
+[INFO ] 2022-09-16 10:59:44.036 [main] TestClasses - Status Code [CREATE API]: 409
+[INFO ] 2022-09-16 10:59:44.113 [main] TestClasses - Status Code [SEARCH API]: 200
+[INFO ] 2022-09-16 10:59:44.358 [main] TestClasses - Status Code [UPLOAD API THUMBNAIL]: 201
+[INFO ] 2022-09-16 10:59:44.426 [main] TestClasses - Status Code [CHANGE API STATUS]: 500
+[INFO ] 2022-09-16 10:59:44.471 [main] TestClasses - Status Code [GET API STATUS]: 200
+[INFO ] 2022-09-16 10:59:44.558 [main] TestClasses - Status Code [GET API THUMBNAIL]: 200
+[INFO ] 2022-09-16 10:59:44.609 [main] TestClasses - Status Code [SEARCH API PRODUCT]: 200
+[INFO ] 2022-09-16 10:59:44.672 [main] TestClasses - Status Code [CREATE API PRODUCT]: 500
+[INFO ] 2022-09-16 10:59:45.141 [main] TestClasses - Status Code [UPDATE API PRODUCT]: 200
+[INFO ] 2022-09-16 10:59:45.278 [main] TestClasses - Status Code [UPDATE API PRODUCT THUMBNAIL]: 201
+[INFO ] 2022-09-16 10:59:45.321 [main] TestClasses - Status Code [SEARCH API]: 200
+[INFO ] 2022-09-16 10:59:45.377 [main] TestClasses - Status Code [GET APIS DETAILS]: 200
+[INFO ] 2022-09-16 10:59:45.440 [main] TestClasses - Status Code [GET API THUMBNAIL]: 200
+[INFO ] 2022-09-16 10:59:45.482 [main] TestClasses - Status Code [GET API STATUS]: 200
+[INFO ] 2022-09-16 11:02:10.573 [main] TestClasses - Status Code [CREATE API]: 409
+[INFO ] 2022-09-16 11:02:10.650 [main] TestClasses - Status Code [SEARCH API]: 200
+[INFO ] 2022-09-16 11:02:10.930 [main] TestClasses - Status Code [UPLOAD API THUMBNAIL]: 201
+[INFO ] 2022-09-16 11:02:10.986 [main] TestClasses - Status Code [CHANGE API STATUS]: 500
+[INFO ] 2022-09-16 11:02:11.030 [main] TestClasses - Status Code [GET API STATUS]: 200
+[INFO ] 2022-09-16 11:02:11.091 [main] TestClasses - Status Code [GET API THUMBNAIL]: 200
+[INFO ] 2022-09-16 11:02:11.133 [main] TestClasses - Status Code [SEARCH API PRODUCT]: 200
+[INFO ] 2022-09-16 11:02:11.180 [main] TestClasses - Status Code [CREATE API PRODUCT]: 500
+[INFO ] 2022-09-16 11:02:11.413 [main] TestClasses - Status Code [UPDATE API PRODUCT]: 200
+[INFO ] 2022-09-16 11:02:11.531 [main] TestClasses - Status Code [UPDATE API PRODUCT THUMBNAIL]: 201
+[INFO ] 2022-09-16 11:02:11.574 [main] TestClasses - Status Code [SEARCH API]: 200
+[INFO ] 2022-09-16 11:02:11.631 [main] TestClasses - Status Code [GET APIS DETAILS]: 200
+[INFO ] 2022-09-16 11:02:11.690 [main] TestClasses - Status Code [GET API THUMBNAIL]: 200
+[INFO ] 2022-09-16 11:02:11.736 [main] TestClasses - Status Code [GET API STATUS]: 200
+[INFO ] 2022-09-16 11:02:11.762 [main] TestClasses - Status Code [SEARCH API PRODUCTS]: 200
+[INFO ] 2022-09-16 11:02:11.824 [main] TestClasses - Status Code [GET DETAILS OF API PRODUCT]: 200
+[INFO ] 2022-09-16 11:02:11.874 [main] TestClasses - Status Code [GET THUMBNAIL OF API PRODUCT]: 200
+[INFO ] 2022-09-16 11:05:13.257 [main] TestClasses - Status Code [CREATE API]: 404
+[INFO ] 2022-09-16 11:05:13.300 [main] TestClasses - Status Code [SEARCH API]: 404
+[INFO ] 2022-09-16 11:05:15.770 [main] TestClasses - Status Code [SEARCH API]: 200
+[INFO ] 2022-09-16 11:05:16.212 [main] TestClasses - Status Code [GET APIS DETAILS]: 200
+[INFO ] 2022-09-16 11:05:16.407 [main] TestClasses - Status Code [GET API THUMBNAIL]: 200
+[INFO ] 2022-09-16 11:05:16.597 [main] TestClasses - Status Code [GET API STATUS]: 200
+[INFO ] 2022-09-16 11:05:16.717 [main] TestClasses - Status Code [SEARCH API PRODUCTS]: 200
+[INFO ] 2022-09-16 11:05:16.840 [main] TestClasses - Status Code [GET DETAILS OF API PRODUCT]: 200
+[INFO ] 2022-09-16 11:05:16.990 [main] TestClasses - Status Code [GET THUMBNAIL OF API PRODUCT]: 200
+[INFO ] 2022-09-16 11:05:38.930 [main] TestClasses - Status Code [CREATE API]: 404
+[INFO ] 2022-09-16 11:05:38.978 [main] TestClasses - Status Code [SEARCH API]: 404
+[INFO ] 2022-09-16 11:05:39.052 [main] TestClasses - Status Code [SEARCH API]: 200
+[INFO ] 2022-09-16 11:05:39.237 [main] TestClasses - Status Code [GET APIS DETAILS]: 200
+[INFO ] 2022-09-16 11:05:39.410 [main] TestClasses - Status Code [GET API THUMBNAIL]: 200
+[INFO ] 2022-09-16 11:05:39.462 [main] TestClasses - Status Code [GET API STATUS]: 200
+[INFO ] 2022-09-16 11:05:39.543 [main] TestClasses - Status Code [SEARCH API PRODUCTS]: 200
+[INFO ] 2022-09-16 11:05:39.653 [main] TestClasses - Status Code [GET DETAILS OF API PRODUCT]: 200
+[INFO ] 2022-09-16 11:05:39.769 [main] TestClasses - Status Code [GET THUMBNAIL OF API PRODUCT]: 200
+[INFO ] 2022-09-16 11:06:07.646 [main] TestClasses - Status Code [CREATE API]: 404
+[INFO ] 2022-09-16 11:06:07.710 [main] TestClasses - Status Code [SEARCH API]: 404
+[INFO ] 2022-09-16 11:06:07.811 [main] TestClasses - Status Code [SEARCH API]: 200
+[INFO ] 2022-09-16 11:06:07.971 [main] TestClasses - Status Code [GET APIS DETAILS]: 200
+[INFO ] 2022-09-16 11:06:08.178 [main] TestClasses - Status Code [GET API THUMBNAIL]: 200
+[INFO ] 2022-09-16 11:06:08.227 [main] TestClasses - Status Code [GET API STATUS]: 200
+[INFO ] 2022-09-16 11:06:08.280 [main] TestClasses - Status Code [SEARCH API PRODUCTS]: 200
+[INFO ] 2022-09-16 11:06:08.380 [main] TestClasses - Status Code [GET DETAILS OF API PRODUCT]: 200
+[INFO ] 2022-09-16 11:06:08.471 [main] TestClasses - Status Code [GET THUMBNAIL OF API PRODUCT]: 200
+[INFO ] 2022-09-16 11:07:40.695 [main] TestClasses - Status Code [CREATE API]: 404
+[INFO ] 2022-09-16 11:07:40.744 [main] TestClasses - Status Code [SEARCH API]: 404
+[INFO ] 2022-09-16 11:07:40.825 [main] TestClasses - Status Code [SEARCH API]: 200
+[INFO ] 2022-09-16 11:07:40.955 [main] TestClasses - Status Code [GET APIS DETAILS]: 200
+[INFO ] 2022-09-16 11:07:41.057 [main] TestClasses - Status Code [GET API THUMBNAIL]: 200
+[INFO ] 2022-09-16 11:07:41.094 [main] TestClasses - Status Code [GET API STATUS]: 200
+[INFO ] 2022-09-16 11:07:41.141 [main] TestClasses - Status Code [SEARCH API PRODUCTS]: 200
+[INFO ] 2022-09-16 11:07:41.219 [main] TestClasses - Status Code [GET DETAILS OF API PRODUCT]: 200
+[INFO ] 2022-09-16 11:07:41.318 [main] TestClasses - Status Code [GET THUMBNAIL OF API PRODUCT]: 200
+[INFO ] 2022-09-16 11:08:53.492 [main] TestClasses - Status Code [CREATE API]: 404
+[INFO ] 2022-09-16 11:08:53.549 [main] TestClasses - Status Code [SEARCH API]: 404
+[INFO ] 2022-09-16 11:08:53.615 [main] TestClasses - Status Code [SEARCH API]: 200
+[INFO ] 2022-09-16 11:08:53.789 [main] TestClasses - Status Code [GET APIS DETAILS]: 200
+[INFO ] 2022-09-16 11:08:53.875 [main] TestClasses - Status Code [GET API THUMBNAIL]: 200
+[INFO ] 2022-09-16 11:08:53.922 [main] TestClasses - Status Code [GET API STATUS]: 200
+[INFO ] 2022-09-16 11:08:54.001 [main] TestClasses - Status Code [SEARCH API PRODUCTS]: 200
+[INFO ] 2022-09-16 11:08:54.152 [main] TestClasses - Status Code [GET DETAILS OF API PRODUCT]: 200
+[INFO ] 2022-09-16 11:08:54.229 [main] TestClasses - Status Code [GET THUMBNAIL OF API PRODUCT]: 200
+[INFO ] 2022-09-16 11:10:45.364 [main] TestClasses - Status Code [CREATE API]: 409
+[INFO ] 2022-09-16 11:10:45.414 [main] TestClasses - Status Code [SEARCH API]: 200
+[INFO ] 2022-09-16 11:10:47.555 [main] TestClasses - Status Code [UPLOAD API THUMBNAIL]: 201
+[INFO ] 2022-09-16 11:10:48.555 [main] TestClasses - Status Code [CHANGE API STATUS]: 200
+[INFO ] 2022-09-16 11:10:48.608 [main] TestClasses - Status Code [GET API STATUS]: 200
+[INFO ] 2022-09-16 11:10:48.811 [main] TestClasses - Status Code [GET API THUMBNAIL]: 200
+[INFO ] 2022-09-16 11:10:48.907 [main] TestClasses - Status Code [SEARCH API PRODUCT]: 200
+[INFO ] 2022-09-16 11:10:49.089 [main] TestClasses - Status Code [CREATE API PRODUCT]: 400
+[INFO ] 2022-09-16 11:10:49.182 [main] TestClasses - Status Code [UPDATE API PRODUCT]: 400
+[INFO ] 2022-09-16 11:10:49.424 [main] TestClasses - Status Code [UPDATE API PRODUCT THUMBNAIL]: 201
+[INFO ] 2022-09-16 11:10:49.478 [main] TestClasses - Status Code [SEARCH API]: 200
+[INFO ] 2022-09-16 11:10:49.564 [main] TestClasses - Status Code [GET APIS DETAILS]: 200
+[INFO ] 2022-09-16 11:10:49.630 [main] TestClasses - Status Code [GET API THUMBNAIL]: 200
+[INFO ] 2022-09-16 11:10:49.665 [main] TestClasses - Status Code [GET API STATUS]: 200
+[INFO ] 2022-09-16 11:10:49.702 [main] TestClasses - Status Code [SEARCH API PRODUCTS]: 200
+[INFO ] 2022-09-16 11:10:49.753 [main] TestClasses - Status Code [GET DETAILS OF API PRODUCT]: 200
+[INFO ] 2022-09-16 11:10:49.841 [main] TestClasses - Status Code [GET THUMBNAIL OF API PRODUCT]: 200
+[INFO ] 2022-09-16 11:13:49.506 [main] TestClasses - Status Code [CREATE API]: 409
+[INFO ] 2022-09-16 11:13:49.579 [main] TestClasses - [SEARCHED API ID]: 200
+[INFO ] 2022-09-16 11:13:49.647 [main] TestClasses - Status Code [SEARCH API]: 200
+[INFO ] 2022-09-16 11:13:50.229 [main] TestClasses - Status Code [UPLOAD API THUMBNAIL]: 201
+[INFO ] 2022-09-16 11:13:50.531 [main] TestClasses - Status Code [CHANGE API STATUS]: 200
+[INFO ] 2022-09-16 11:13:50.569 [main] TestClasses - Status Code [GET API STATUS]: 200
+[INFO ] 2022-09-16 11:13:50.644 [main] TestClasses - Status Code [GET API THUMBNAIL]: 200
+[INFO ] 2022-09-16 11:13:50.702 [main] TestClasses - Status Code [SEARCH API PRODUCT]: 200
+[INFO ] 2022-09-16 11:13:50.775 [main] TestClasses - Status Code [CREATE API PRODUCT]: 400
+[INFO ] 2022-09-16 11:13:50.851 [main] TestClasses - Status Code [SEARCH API]: 200
+[INFO ] 2022-09-16 11:13:50.952 [main] TestClasses - Status Code [GET APIS DETAILS]: 200
+[INFO ] 2022-09-16 11:13:51.073 [main] TestClasses - Status Code [GET API THUMBNAIL]: 200
+[INFO ] 2022-09-16 11:13:51.140 [main] TestClasses - Status Code [GET API STATUS]: 200
+[INFO ] 2022-09-16 11:13:51.237 [main] TestClasses - Status Code [SEARCH API PRODUCTS]: 200
+[INFO ] 2022-09-16 11:13:51.344 [main] TestClasses - Status Code [GET DETAILS OF API PRODUCT]: 200
+[INFO ] 2022-09-16 11:13:51.427 [main] TestClasses - Status Code [GET THUMBNAIL OF API PRODUCT]: 200
+[INFO ] 2022-09-16 11:14:47.894 [main] TestClasses - Status Code [CREATE API]: 409
+[INFO ] 2022-09-16 11:14:47.961 [main] TestClasses - [SEARCHED API ID]: 200
+[INFO ] 2022-09-16 11:14:48.008 [main] TestClasses - Status Code [SEARCH API]: 40e5de53-7781-414d-a614-5e6a247dda80
+[INFO ] 2022-09-16 11:14:48.855 [main] TestClasses - Status Code [UPLOAD API THUMBNAIL]: 201
+[INFO ] 2022-09-16 11:14:49.140 [main] TestClasses - Status Code [CHANGE API STATUS]: 200
+[INFO ] 2022-09-16 11:14:49.180 [main] TestClasses - Status Code [GET API STATUS]: 200
+[INFO ] 2022-09-16 11:14:49.251 [main] TestClasses - Status Code [GET API THUMBNAIL]: 200
+[INFO ] 2022-09-16 11:14:49.292 [main] TestClasses - Status Code [SEARCH API PRODUCT]: 200
+[INFO ] 2022-09-16 11:14:49.375 [main] TestClasses - Status Code [CREATE API PRODUCT]: 400
+[INFO ] 2022-09-16 11:14:49.450 [main] TestClasses - Status Code [UPDATE API PRODUCT]: 500
+[INFO ] 2022-09-16 11:14:49.630 [main] TestClasses - Status Code [UPDATE API PRODUCT THUMBNAIL]: 201
+[INFO ] 2022-09-16 11:14:49.682 [main] TestClasses - Status Code [SEARCH API]: 200
+[INFO ] 2022-09-16 11:14:49.743 [main] TestClasses - Status Code [GET APIS DETAILS]: 200
+[INFO ] 2022-09-16 11:14:49.797 [main] TestClasses - Status Code [GET API THUMBNAIL]: 200
+[INFO ] 2022-09-16 11:14:49.838 [main] TestClasses - Status Code [GET API STATUS]: 200
+[INFO ] 2022-09-16 11:14:49.889 [main] TestClasses - Status Code [SEARCH API PRODUCTS]: 200
+[INFO ] 2022-09-16 11:14:49.961 [main] TestClasses - Status Code [GET DETAILS OF API PRODUCT]: 200
+[INFO ] 2022-09-16 11:14:50.022 [main] TestClasses - Status Code [GET THUMBNAIL OF API PRODUCT]: 200
+[INFO ] 2022-09-16 11:15:24.161 [main] TestClasses - Status Code [CREATE API]: 409
+[INFO ] 2022-09-16 11:15:24.218 [main] TestClasses - [SEARCHED API ID]: 200
+[INFO ] 2022-09-16 11:15:24.267 [main] TestClasses - Status Code [SEARCH API]: 40e5de53-7781-414d-a614-5e6a247dda80
+[INFO ] 2022-09-16 11:15:24.910 [main] TestClasses - Status Code [UPLOAD API THUMBNAIL]: 201
+[INFO ] 2022-09-16 11:15:25.172 [main] TestClasses - Status Code [CHANGE API STATUS]: 200
+[INFO ] 2022-09-16 11:15:25.204 [main] TestClasses - Status Code [GET API STATUS]: 200
+[INFO ] 2022-09-16 11:15:25.300 [main] TestClasses - Status Code [GET API THUMBNAIL]: 200
+[INFO ] 2022-09-16 11:15:25.354 [main] TestClasses - Status Code [SEARCH API PRODUCT]: 200
+[INFO ] 2022-09-16 11:15:25.411 [main] TestClasses - Status Code [CREATE API PRODUCT]: 400
+[INFO ] 2022-09-16 11:15:25.750 [main] TestClasses - Status Code [UPDATE API PRODUCT]: 200
+[INFO ] 2022-09-16 11:15:25.949 [main] TestClasses - Status Code [UPDATE API PRODUCT THUMBNAIL]: 201
+[INFO ] 2022-09-16 11:15:26.009 [main] TestClasses - Status Code [SEARCH API]: 200
+[INFO ] 2022-09-16 11:15:26.074 [main] TestClasses - Status Code [GET APIS DETAILS]: 200
+[INFO ] 2022-09-16 11:15:26.117 [main] TestClasses - Status Code [GET API THUMBNAIL]: 200
+[INFO ] 2022-09-16 11:15:26.156 [main] TestClasses - Status Code [GET API STATUS]: 200
+[INFO ] 2022-09-16 11:15:26.190 [main] TestClasses - Status Code [SEARCH API PRODUCTS]: 200
+[INFO ] 2022-09-16 11:15:26.243 [main] TestClasses - Status Code [GET DETAILS OF API PRODUCT]: 200
+[INFO ] 2022-09-16 11:15:26.297 [main] TestClasses - Status Code [GET THUMBNAIL OF API PRODUCT]: 200
+[INFO ] 2022-09-16 11:17:00.808 [main] TestClasses - Status Code [CREATE API]: 409
+[INFO ] 2022-09-16 11:17:00.871 [main] TestClasses - [SEARCHED API ID]: 200
+[INFO ] 2022-09-16 11:17:00.927 [main] TestClasses - Status Code [SEARCH API]: 40e5de53-7781-414d-a614-5e6a247dda80
+[INFO ] 2022-09-16 11:17:01.523 [main] TestClasses - Status Code [UPLOAD API THUMBNAIL]: 201
+[INFO ] 2022-09-16 11:17:01.806 [main] TestClasses - Status Code [CHANGE API STATUS]: 200
+[INFO ] 2022-09-16 11:17:01.847 [main] TestClasses - Status Code [GET API STATUS]: 200
+[INFO ] 2022-09-16 11:17:01.913 [main] TestClasses - Status Code [GET API THUMBNAIL]: 200
+[INFO ] 2022-09-16 11:17:01.958 [main] TestClasses - Status Code [SEARCH API PRODUCT]: 200
+[INFO ] 2022-09-16 11:17:02.020 [main] TestClasses - Status Code [CREATE API PRODUCT]: 400
+[INFO ] 2022-09-16 11:17:02.322 [main] TestClasses - Status Code [UPDATE API PRODUCT]: 200
+[INFO ] 2022-09-16 11:17:02.601 [main] TestClasses - Status Code [UPDATE API PRODUCT THUMBNAIL]: 201
+[INFO ] 2022-09-16 11:17:02.658 [main] TestClasses - Status Code [SEARCH API]: 200
+[INFO ] 2022-09-16 11:17:02.814 [main] TestClasses - Status Code [GET APIS DETAILS]: 200
+[INFO ] 2022-09-16 11:17:02.860 [main] TestClasses - Status Code [GET API THUMBNAIL]: 200
+[INFO ] 2022-09-16 11:17:02.896 [main] TestClasses - Status Code [GET API STATUS]: 200
+[INFO ] 2022-09-16 11:17:02.938 [main] TestClasses - Status Code [SEARCH API PRODUCTS]: 200
+[INFO ] 2022-09-16 11:17:02.989 [main] TestClasses - Status Code [GET DETAILS OF API PRODUCT]: 200
+[INFO ] 2022-09-16 11:17:03.058 [main] TestClasses - Status Code [GET THUMBNAIL OF API PRODUCT]: 200
+[INFO ] 2022-09-16 11:20:16.976 [main] TestClasses - Status Code [CREATE API]: 409
+[INFO ] 2022-09-16 11:20:17.040 [main] TestClasses - [SEARCHED API ID]: 200
+[INFO ] 2022-09-16 11:20:17.089 [main] TestClasses - Status Code [SEARCH API]: 40e5de53-7781-414d-a614-5e6a247dda80
+[INFO ] 2022-09-16 11:20:17.630 [main] TestClasses - Status Code [UPLOAD API THUMBNAIL]: 201
+[INFO ] 2022-09-16 11:20:17.861 [main] TestClasses - Status Code [CHANGE API STATUS]: 200
+[INFO ] 2022-09-16 11:20:17.897 [main] TestClasses - Status Code [GET API STATUS]: 200
+[INFO ] 2022-09-16 11:20:17.962 [main] TestClasses - Status Code [GET API THUMBNAIL]: 200
+[INFO ] 2022-09-16 11:20:18.003 [main] TestClasses - Status Code [SEARCH API PRODUCT]: 200
+[INFO ] 2022-09-16 11:20:18.063 [main] TestClasses - Status Code [CREATE API PRODUCT]: {
+    "code": 400,
+    "message": "Bad Request",
+    "description": "Error occurred while adding API Product. API Product with the context /pizzaproduct already exists.",
+    "moreInfo": "",
+    "error": [
+        
+    ]
+}
+[INFO ] 2022-09-16 11:20:18.311 [main] TestClasses - Status Code [UPDATE API PRODUCT]: 200
+[INFO ] 2022-09-16 11:20:18.488 [main] TestClasses - Status Code [UPDATE API PRODUCT THUMBNAIL]: 201
+[INFO ] 2022-09-16 11:20:18.539 [main] TestClasses - Status Code [SEARCH API]: 200
+[INFO ] 2022-09-16 11:20:18.613 [main] TestClasses - Status Code [GET APIS DETAILS]: 200
+[INFO ] 2022-09-16 11:20:18.680 [main] TestClasses - Status Code [GET API THUMBNAIL]: 200
+[INFO ] 2022-09-16 11:20:18.725 [main] TestClasses - Status Code [GET API STATUS]: 200
+[INFO ] 2022-09-16 11:20:18.762 [main] TestClasses - Status Code [SEARCH API PRODUCTS]: 200
+[INFO ] 2022-09-16 11:20:18.814 [main] TestClasses - Status Code [GET DETAILS OF API PRODUCT]: 200
+[INFO ] 2022-09-16 11:20:18.913 [main] TestClasses - Status Code [GET THUMBNAIL OF API PRODUCT]: 200
+[INFO ] 2022-09-16 11:20:44.813 [main] TestClasses - Status Code [CREATE API]: 409
+[INFO ] 2022-09-16 11:20:44.865 [main] TestClasses - [SEARCHED API ID]: 200
+[INFO ] 2022-09-16 11:20:44.912 [main] TestClasses - Status Code [SEARCH API]: 40e5de53-7781-414d-a614-5e6a247dda80
+[INFO ] 2022-09-16 11:20:45.405 [main] TestClasses - Status Code [UPLOAD API THUMBNAIL]: 201
+[INFO ] 2022-09-16 11:20:45.619 [main] TestClasses - Status Code [CHANGE API STATUS]: 200
+[INFO ] 2022-09-16 11:20:45.654 [main] TestClasses - Status Code [GET API STATUS]: 200
+[INFO ] 2022-09-16 11:20:45.712 [main] TestClasses - Status Code [GET API THUMBNAIL]: 200
+[INFO ] 2022-09-16 11:20:45.749 [main] TestClasses - Status Code [SEARCH API PRODUCT]: 200
+[INFO ] 2022-09-16 11:20:46.113 [main] TestClasses - Status Code [CREATE API PRODUCT]: 201
+[INFO ] 2022-09-16 11:20:46.150 [main] TestClasses - Status Code [UPDATE API PRODUCT]: 500
+[INFO ] 2022-09-16 11:20:46.242 [main] TestClasses - Status Code [UPDATE API PRODUCT THUMBNAIL]: 500
+[INFO ] 2022-09-16 11:20:46.287 [main] TestClasses - Status Code [SEARCH API]: 200
+[INFO ] 2022-09-16 11:20:46.345 [main] TestClasses - Status Code [GET APIS DETAILS]: 200
+[INFO ] 2022-09-16 11:20:46.414 [main] TestClasses - Status Code [GET API THUMBNAIL]: 200
+[INFO ] 2022-09-16 11:20:46.474 [main] TestClasses - Status Code [GET API STATUS]: 200
+[INFO ] 2022-09-16 11:20:46.510 [main] TestClasses - Status Code [SEARCH API PRODUCTS]: 200
+[INFO ] 2022-09-16 11:20:46.565 [main] TestClasses - Status Code [GET DETAILS OF API PRODUCT]: 200
+[INFO ] 2022-09-16 11:20:46.621 [main] TestClasses - Status Code [GET THUMBNAIL OF API PRODUCT]: 200
+[INFO ] 2022-09-16 11:21:01.968 [main] TestClasses - Status Code [CREATE API]: 409
+[INFO ] 2022-09-16 11:21:02.030 [main] TestClasses - [SEARCHED API ID]: 200
+[INFO ] 2022-09-16 11:21:02.081 [main] TestClasses - Status Code [SEARCH API]: 40e5de53-7781-414d-a614-5e6a247dda80
+[INFO ] 2022-09-16 11:21:02.585 [main] TestClasses - Status Code [UPLOAD API THUMBNAIL]: 201
+[INFO ] 2022-09-16 11:21:02.788 [main] TestClasses - Status Code [CHANGE API STATUS]: 200
+[INFO ] 2022-09-16 11:21:02.815 [main] TestClasses - Status Code [GET API STATUS]: 200
+[INFO ] 2022-09-16 11:21:02.875 [main] TestClasses - Status Code [GET API THUMBNAIL]: 200
+[INFO ] 2022-09-16 11:21:02.920 [main] TestClasses - Status Code [SEARCH API PRODUCT]: 200
+[INFO ] 2022-09-16 11:21:02.966 [main] TestClasses - Status Code [CREATE API PRODUCT]: 400
+[INFO ] 2022-09-16 11:21:03.114 [main] TestClasses - Status Code [UPDATE API PRODUCT]: 200
+[INFO ] 2022-09-16 11:21:03.263 [main] TestClasses - Status Code [UPDATE API PRODUCT THUMBNAIL]: 201
+[INFO ] 2022-09-16 11:21:03.333 [main] TestClasses - Status Code [SEARCH API]: 200
+[INFO ] 2022-09-16 11:21:03.396 [main] TestClasses - Status Code [GET APIS DETAILS]: 200
+[INFO ] 2022-09-16 11:21:03.450 [main] TestClasses - Status Code [GET API THUMBNAIL]: 200
+[INFO ] 2022-09-16 11:21:03.491 [main] TestClasses - Status Code [GET API STATUS]: 200
+[INFO ] 2022-09-16 11:21:03.552 [main] TestClasses - Status Code [SEARCH API PRODUCTS]: 200
+[INFO ] 2022-09-16 11:21:03.609 [main] TestClasses - Status Code [GET DETAILS OF API PRODUCT]: 200
+[INFO ] 2022-09-16 11:21:03.665 [main] TestClasses - Status Code [GET THUMBNAIL OF API PRODUCT]: 200
+[INFO ] 2022-09-16 11:23:15.687 [main] TestClasses - Status Code [CREATE API]: 409
+[INFO ] 2022-09-16 11:23:15.766 [main] TestClasses - Status Code [SEARCH API]: 200
+[INFO ] 2022-09-16 11:23:15.828 [main] TestClasses - [SEARCHED API ID]: 40e5de53-7781-414d-a614-5e6a247dda80
+[INFO ] 2022-09-16 11:23:16.334 [main] TestClasses - Status Code [UPLOAD API THUMBNAIL]: 201
+[INFO ] 2022-09-16 11:23:16.560 [main] TestClasses - Status Code [CHANGE API STATUS]: 200
+[INFO ] 2022-09-16 11:23:16.595 [main] TestClasses - Status Code [GET API STATUS]: 200
+[INFO ] 2022-09-16 11:23:16.668 [main] TestClasses - Status Code [GET API THUMBNAIL]: 200
+[INFO ] 2022-09-16 11:23:16.716 [main] TestClasses - Status Code [SEARCH API PRODUCT]: 200
+[INFO ] 2022-09-16 11:23:16.763 [main] TestClasses - Status Code [CREATE API PRODUCT]: 400
+[INFO ] 2022-09-16 11:23:16.955 [main] TestClasses - Status Code [UPDATE API PRODUCT]: 200
+[INFO ] 2022-09-16 11:23:17.116 [main] TestClasses - Status Code [UPDATE API PRODUCT THUMBNAIL]: 201
+[INFO ] 2022-09-16 11:23:17.200 [main] TestClasses - Status Code [SEARCH API]: 200
+[INFO ] 2022-09-16 11:23:17.258 [main] TestClasses - Status Code [GET APIS DETAILS]: 200
+[INFO ] 2022-09-16 11:23:17.314 [main] TestClasses - Status Code [GET API THUMBNAIL]: 200
+[INFO ] 2022-09-16 11:23:17.358 [main] TestClasses - Status Code [GET API STATUS]: 200
+[INFO ] 2022-09-16 11:23:17.391 [main] TestClasses - Status Code [SEARCH API PRODUCTS]: 200
+[INFO ] 2022-09-16 11:23:17.443 [main] TestClasses - Status Code [GET DETAILS OF API PRODUCT]: 200
+[INFO ] 2022-09-16 11:23:17.517 [main] TestClasses - Status Code [GET THUMBNAIL OF API PRODUCT]: 200
+[INFO ] 2022-09-16 11:23:33.909 [main] TestClasses - Status Code [CREATE API]: 409
+[INFO ] 2022-09-16 11:23:33.968 [main] TestClasses - Status Code [SEARCH API]: 200
+[INFO ] 2022-09-16 11:23:34.609 [main] TestClasses - Status Code [UPLOAD API THUMBNAIL]: 201
+[INFO ] 2022-09-16 11:23:34.817 [main] TestClasses - Status Code [CHANGE API STATUS]: 200
+[INFO ] 2022-09-16 11:23:34.856 [main] TestClasses - Status Code [GET API STATUS]: 200
+[INFO ] 2022-09-16 11:23:34.931 [main] TestClasses - Status Code [GET API THUMBNAIL]: 200
+[INFO ] 2022-09-16 11:23:34.981 [main] TestClasses - Status Code [SEARCH API PRODUCT]: 200
+[INFO ] 2022-09-16 11:23:35.036 [main] TestClasses - Status Code [CREATE API PRODUCT]: 400
+[INFO ] 2022-09-16 11:23:35.215 [main] TestClasses - Status Code [UPDATE API PRODUCT]: 200
+[INFO ] 2022-09-16 11:23:35.352 [main] TestClasses - Status Code [UPDATE API PRODUCT THUMBNAIL]: 201
+[INFO ] 2022-09-16 11:23:35.392 [main] TestClasses - Status Code [SEARCH API]: 200
+[INFO ] 2022-09-16 11:23:35.452 [main] TestClasses - Status Code [GET APIS DETAILS]: 200
+[INFO ] 2022-09-16 11:23:35.494 [main] TestClasses - Status Code [GET API THUMBNAIL]: 200
+[INFO ] 2022-09-16 11:23:35.530 [main] TestClasses - Status Code [GET API STATUS]: 200
+[INFO ] 2022-09-16 11:23:35.565 [main] TestClasses - Status Code [SEARCH API PRODUCTS]: 200
+[INFO ] 2022-09-16 11:23:35.631 [main] TestClasses - Status Code [GET DETAILS OF API PRODUCT]: 200
+[INFO ] 2022-09-16 11:23:35.757 [main] TestClasses - Status Code [GET THUMBNAIL OF API PRODUCT]: 200

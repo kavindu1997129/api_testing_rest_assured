@@ -25,6 +25,7 @@ public class PublisherApiProducts {
     String apiProductUpdatePayloadString;
 
     String publisherApisProductString = "/api-products";
+    String resouseParentPath = "./src/test/payloads/";
 
     public PublisherApiProducts(String accessToken, ApimVersions version){
         this.accessToken = accessToken;
@@ -62,7 +63,7 @@ public class PublisherApiProducts {
     public Response createApiProduct(String contentType, String jsonPayloadPath){
 
         try {
-            createApiProductPayloadJson = Files.readAllBytes(Paths.get(jsonPayloadPath));
+            createApiProductPayloadJson = Files.readAllBytes(Paths.get(resouseParentPath+jsonPayloadPath));
 		    createApiProductPayloadString = new String(createApiProductPayloadJson);
 
             createApiProductResponse  = RestAssured.given()
@@ -114,7 +115,7 @@ public class PublisherApiProducts {
     public Response updateApiProduct(String apiProductId, String contentType,  String jsonPayloadPath){
 
         try {
-            apiProductUpdatePayloadJson = Files.readAllBytes(Paths.get(jsonPayloadPath));
+            apiProductUpdatePayloadJson = Files.readAllBytes(Paths.get(resouseParentPath+jsonPayloadPath));
 		    apiProductUpdatePayloadString = new String(apiProductUpdatePayloadJson);
         } catch (Exception e) {
         }
@@ -148,7 +149,7 @@ public class PublisherApiProducts {
 				.auth()
 				.oauth2(accessToken)
                 .contentType(ContentTypes.MULTIPART_FORMDATA)
-				.multiPart(new File(imagePath))
+				.multiPart(new File(resouseParentPath+imagePath))
 				.put(endPoint+publisherApisProductString+"/"+apiProductId+"/thumbnail");
 
         return uploadProductThumbnailResponse;

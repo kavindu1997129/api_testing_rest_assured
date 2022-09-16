@@ -35,6 +35,7 @@ public class PublisherApis {
     String updateApiPayloadString;
 
     String publisherApisString = "/apis";
+    String resourceParenPath = "./src/test/payloads/";
 
     public PublisherApis(String accessToken, ApimVersions version){
         this.accessToken = accessToken;
@@ -76,7 +77,7 @@ public class PublisherApis {
     public Response createApi(String contentType, String jsonPayloadPath){
 
         try {
-            apiCreationPayloadJson = Files.readAllBytes(Paths.get(jsonPayloadPath));
+            apiCreationPayloadJson = Files.readAllBytes(Paths.get(resourceParenPath+jsonPayloadPath));
 		    apiCreationPayloadString = new String(apiCreationPayloadJson);
 
         createApiResponse  = RestAssured.given()
@@ -121,7 +122,7 @@ public class PublisherApis {
     public Response updateApi(String contentType, String apiId, String jsonPayloadPath){
 
         try {
-            updateApiPayloadJson = Files.readAllBytes(Paths.get(jsonPayloadPath));
+            updateApiPayloadJson = Files.readAllBytes(Paths.get(resourceParenPath+jsonPayloadPath));
 		    updateApiPayloadString = new String(updateApiPayloadJson);
 
             updateApiResponse  = RestAssured.given()
@@ -188,7 +189,7 @@ public class PublisherApis {
 				.relaxedHTTPSValidation()
 				.auth()
 				.oauth2(accessToken)
-				.multiPart(new File(imagePath))
+				.multiPart(new File(resourceParenPath+imagePath))
 				.put(endPoint+publisherApisString+"/"+apiId+"/thumbnail");
 
         return uploadThumbnailImageResponse;
@@ -222,7 +223,6 @@ public class PublisherApis {
         .oauth2(accessToken)
         .contentType(ContentTypes.APPLICATION_JSON)
         .post(endPoint+publisherApisString+"/change-lifecycle?apiId="+apiId+"&action="+action);
-        System.out.println(endPoint+publisherApisString+"?apiId="+apiId+"&action="+action);
 
         return changeApiStatusResponse;
     }

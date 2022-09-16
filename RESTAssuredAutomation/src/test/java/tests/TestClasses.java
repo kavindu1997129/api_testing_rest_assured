@@ -1,5 +1,7 @@
 package tests;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.testng.annotations.Test;
 
 import io.restassured.http.ContentType;
@@ -9,6 +11,7 @@ import restapi.ApimVersions;
 import restapi.Authentication;
 import restapi.AuthenticationObject;
 import restapi.ContentTypes;
+import restapi.ErrorHandling;
 import restapi.GrantTypes;
 import restapi.Scopes;
 import restapi.devportal.DevportalApis;
@@ -18,6 +21,8 @@ import restapi.publisher.PublisherApis;
 
 public class TestClasses {
 	String accessToken;
+        private static Logger logger = LogManager.getLogger(TestClasses.class);
+
 	@Test
 	public void dataGeneration() {
 
@@ -25,102 +30,117 @@ public class TestClasses {
         authenticationObject.setUsername("admin");
         authenticationObject.setUserpassword("admin");
         authenticationObject.setEndpoint("https://localhost:9443/client-registration/v0.17/register");
-        // authenticationObject.setTokenUrl("https://localhost:8243/token"); //For API-M 3.2.0
-        authenticationObject.setTokenUrl("https://localhost:9443/oauth2/token"); //For API-M 4.1.0
+        authenticationObject.setTokenUrl("https://localhost:8243/token"); //For API-M 3.2.0
+        // authenticationObject.setTokenUrl("https://localhost:9443/oauth2/token"); //For API-M 4.1.0
         authenticationObject.setPayloadPath("./src/test/payloads/payload.json");
         authenticationObject.setScopes(Scopes.API_PUBLISH, Scopes.API_CREATE, Scopes.API_VIEW, Scopes.API_IMPORT_EXPORT, Scopes.API_MANAGE);
         authenticationObject.setContentType(ContentTypes.APPLICATION_JSON);
         authenticationObject.setGrantType(GrantTypes.PASSSWORD);
 
-
-
         Authentication authentication = new Authentication(authenticationObject);
         accessToken = authentication.getAccessToken();
 
-        PublisherApis api = new PublisherApis(accessToken, ApimVersions.APIM_4_1);
-        Response createApiRes = api.createApi(ContentTypes.APPLICATION_JSON, "./src/test/payloads/apicretion_payload.json");
-        String apiId = api.searchApis().jsonPath().get("list[0]['id']");
-        System.out.println(apiId);
-        Response uploadApiThumbnailRes = api.uploadThumbnailImage("./src/test/payloads/thumbnail.jpg", apiId);
+        //API
+        PublisherApis api = new PublisherApis(accessToken, ApimVersions.APIM_3_2);
+
+        Response createApiRes = api.createApi(ContentTypes.APPLICATION_JSON, "apicretion_payload.json");
+        logger.info("Status Code [CREATE API]: "+createApiRes.statusCode());
+
+        Response searchApiRes = api.searchApis();
+        logger.info("Status Code [SEARCH API]: "+searchApiRes.statusCode());
+        
+        String apiId = searchApiRes.jsonPath().get("list[0]['id']");
+        // logger.info("[SEARCHED API ID]: "+apiId);
+
+        Response uploadApiThumbnailRes = api.uploadThumbnailImage("thumbnail.jpg", apiId);
+        logger.info("Status Code [UPLOAD API THUMBNAIL]: "+uploadApiThumbnailRes.statusCode());
+       
         Response changeApiStatusRes = api.changeApiStatus(apiId, "Publish");
+        logger.info("Status Code [CHANGE API STATUS]: "+changeApiStatusRes.statusCode());
+
         Response getApiStatusRes = api.getApiStatus(apiId);
-        // Response createNewApiVersioRes = api.createNewApiVersion(apiId, "2.0.1", false);
-        // Response getComplexityRelatedDetailsOfApiRes = api.getComplexityRelatedDetailsOfApi(apiId);
+        logger.info("Status Code [GET API STATUS]: "+getApiStatusRes.statusCode());
 
         Response getApiThumbnailRes = api.getThumbnailImage(apiId);
+        logger.info("Status Code [GET API THUMBNAIL]: "+getApiThumbnailRes.statusCode());
         
-        System.out.println("createApiRes: "+createApiRes.statusCode());
-        System.out.println("apiId: "+apiId);
-        System.out.println("changeApiStatusRes: "+changeApiStatusRes.statusCode());
-        System.out.println("getApiStatusRes: "+getApiStatusRes.statusCode());
-        System.out.println("uploadApiThumbnailRes: "+uploadApiThumbnailRes.statusCode());
-        // System.out.println("getComplexityRelatedDetailsOfApiRes: "+getComplexityRelatedDetailsOfApiRes.statusCode());
+        //API Product 
+        PublisherApiProducts apiProd = new PublisherApiProducts(accessToken,ApimVersions.APIM_3_2);
 
-        //System.out.println(getApiThumbnailRes.statusCode());
-        
-        PublisherApiProducts apiProd = new PublisherApiProducts(accessToken,ApimVersions.APIM_4_1);
         Response searchApiProductRes = apiProd.searchApiProduct();
+        logger.info("Status Code [SEARCH API PRODUCT]: "+searchApiProductRes.statusCode());
         String apiProductId = searchApiProductRes.jsonPath().get("list[0]['id']");
-        Response createApiProductRes = apiProd.createApiProduct(ContentTypes.APPLICATION_JSON, "./src/test/payloads/apiproduct_creation_4_1.json");
-        Response updateApiProductRes = apiProd.updateApiProduct(apiProductId, ContentTypes.APPLICATION_JSON, "./src/test/payloads/updateApiProductPayload_4_1.json");
-        Response uploadProductThumbnailRes = apiProd.uploadProductThumbnail("./src/test/payloads/thumbnail.jpg", apiProductId);
-        
-        System.out.println("createApiProductRes: "+createApiProductRes.statusCode());
-        System.out.println("updateApiProductRes: " +updateApiProductRes.statusCode());
-        System.out.println("uploadProductThumbnailRes: "+ uploadProductThumbnailRes.statusCode());
+
+        Response createApiProductRes = apiProd.createApiProduct(ContentTypes.APPLICATION_JSON, "apiproduct_creation_3_2.json");
+        logger.info("Status Code [CREATE API PRODUCT]: "+createApiProductRes.statusCode());
+
+        Response updateApiProductRes = apiProd.updateApiProduct(apiProductId, ContentTypes.APPLICATION_JSON, "updateApiProductPayload_3_2.json");
+        logger.info("Status Code [UPDATE API PRODUCT]: "+updateApiProductRes.statusCode());
+
+        Response uploadProductThumbnailRes = apiProd.uploadProductThumbnail("thumbnail.jpg", apiProductId);
+        logger.info("Status Code [UPDATE API PRODUCT THUMBNAIL]: "+uploadProductThumbnailRes.statusCode());
 
 }
 
-        // @Test
-        // public void validateDataAPIM_3_2(){
-        //         PublisherApis api = new PublisherApis(accessToken, ApimVersions.APIM_3_2);
-        //         Response searchApi = api.searchApis();
-        //         String apiId = searchApi.jsonPath().get("list[0]['id']");
-        //         Response getApiDetails = api.getApiDetails(apiId);
-        //         Response getApiThumbnail = api.getThumbnailImage(apiId);
-        //         Response getApiStatus = api.getApiStatus(apiId);
-
-        //         System.out.println("Search APIs: "+searchApi.statusCode());
-        //         System.out.println("Get API details: "+getApiDetails.statusCode());
-        //         System.out.println("Get API Thumbnail: "+getApiThumbnail.statusCode());
-        //         System.out.println("Get API status: "+getApiStatus.statusCode());
-
-        //         PublisherApiProducts apiProd = new PublisherApiProducts(accessToken);
-        //         Response searchApiProdsRes = apiProd.searchApiProduct();
-        //         String apiProductId  = searchApiProdsRes.jsonPath().get("list[0]['id']");
-        //         Response getDetailsOfApiProdRes = apiProd.getDetailsOfApiProduct(apiProductId);
-        //         Response getThumbnailOfApiprodRes = apiProd.getProductThumbnail(apiProductId);
-
-        //         System.out.println("Search Api Product: "+ searchApiProdsRes.statusCode());
-        //         System.out.println("Get details of API product: "+ getDetailsOfApiProdRes.statusCode());
-        //         System.out.println("Get thumbnail of API product: "+ getThumbnailOfApiprodRes.statusCode());
-
-        // }
-
         @Test
-        public void validateDataAPIM_4_1(){
-                PublisherApis api = new PublisherApis(accessToken,ApimVersions.APIM_4_1);
+        public void validateDataAPIM_3_2(){
+                PublisherApis api = new PublisherApis(accessToken,ApimVersions.APIM_3_2);
+                
                 Response searchApi = api.searchApis();
+                logger.info("Status Code [SEARCH API]: "+searchApi.statusCode());
                 String apiId = searchApi.jsonPath().get("list[0]['id']");
+
                 Response getApiDetails = api.getApiDetails(apiId);
+                logger.info("Status Code [GET APIS DETAILS]: "+getApiDetails.statusCode());
+
                 Response getApiThumbnail = api.getThumbnailImage(apiId);
+                logger.info("Status Code [GET API THUMBNAIL]: "+getApiThumbnail.statusCode());
+
                 Response getApiStatus = api.getApiStatus(apiId);
+                logger.info("Status Code [GET API STATUS]: "+getApiStatus.statusCode());
 
-                System.out.println("Search APIs: "+searchApi.statusCode());
-                System.out.println("Get API details: "+getApiDetails.statusCode());
-                System.out.println("Get API Thumbnail: "+getApiThumbnail.statusCode());
-                System.out.println("Get API status: "+getApiStatus.statusCode());
-
-                PublisherApiProducts apiProd = new PublisherApiProducts(accessToken, ApimVersions.APIM_4_1);
+                PublisherApiProducts apiProd = new PublisherApiProducts(accessToken, ApimVersions.APIM_3_2);
                 Response searchApiProdsRes = apiProd.searchApiProduct();
+                logger.info("Status Code [SEARCH API PRODUCTS]: "+searchApiProdsRes.statusCode());
                 String apiProductId  = searchApiProdsRes.jsonPath().get("list[0]['id']");
+                
                 Response getDetailsOfApiProdRes = apiProd.getDetailsOfApiProduct(apiProductId);
+                logger.info("Status Code [GET DETAILS OF API PRODUCT]: "+getDetailsOfApiProdRes.statusCode());
+                
                 Response getThumbnailOfApiprodRes = apiProd.getProductThumbnail(apiProductId);
+                logger.info("Status Code [GET THUMBNAIL OF API PRODUCT]: "+getThumbnailOfApiprodRes.statusCode());
 
-                System.out.println("Search Api Product: "+ searchApiProdsRes.statusCode());
-                System.out.println("Get details of API product: "+ getDetailsOfApiProdRes.statusCode());
-                System.out.println("Get thumbnail of API product: "+ getThumbnailOfApiprodRes.statusCode());
 
         }
+
+        // @Test
+        // public void validateDataAPIM_4_1(){
+        //         PublisherApis api = new PublisherApis(accessToken,ApimVersions.APIM_4_1);
+                
+        //         Response searchApi = api.searchApis();
+        //         logger.info("Status Code [SEARCH API]: "+searchApi.statusCode());
+        //         String apiId = searchApi.jsonPath().get("list[0]['id']");
+
+        //         Response getApiDetails = api.getApiDetails(apiId);
+        //         logger.info("Status Code [GET APIS DETAILS]: "+getApiDetails.statusCode());
+
+        //         Response getApiThumbnail = api.getThumbnailImage(apiId);
+        //         logger.info("Status Code [GET API THUMBNAIL]: "+getApiThumbnail.statusCode());
+
+        //         Response getApiStatus = api.getApiStatus(apiId);
+        //         logger.info("Status Code [GET API STATUS]: "+getApiStatus.statusCode());
+
+        //         PublisherApiProducts apiProd = new PublisherApiProducts(accessToken, ApimVersions.APIM_4_1);
+        //         Response searchApiProdsRes = apiProd.searchApiProduct();
+        //         logger.info("Status Code [SEARCH API PRODUCTS]: "+searchApiProdsRes.statusCode());
+        //         String apiProductId  = searchApiProdsRes.jsonPath().get("list[0]['id']");
+                
+        //         Response getDetailsOfApiProdRes = apiProd.getDetailsOfApiProduct(apiProductId);
+        //         logger.info("Status Code [GET DETAILS OF API PRODUCT]: "+getDetailsOfApiProdRes.statusCode());
+                
+        //         Response getThumbnailOfApiprodRes = apiProd.getProductThumbnail(apiProductId);
+        //         logger.info("Status Code [GET THUMBNAIL OF API PRODUCT]: "+getThumbnailOfApiprodRes.statusCode());
+
+        // }
     
 }
