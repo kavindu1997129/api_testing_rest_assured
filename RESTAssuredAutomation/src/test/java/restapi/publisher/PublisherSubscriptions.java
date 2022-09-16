@@ -77,7 +77,16 @@ public class PublisherSubscriptions {
 
     }
 
+    public Response getDetailsOfSubscriber(String subscriptionId){
+        Response getDetailsOfSubscriberRes = RestAssured.given()
+            .relaxedHTTPSValidation()
+            .auth()
+            .oauth2(accessToken)
+            .contentType(ContentTypes.APPLICATION_JSON)
+            .get(endPoint+publisherApisString+"/"+subscriptionId+"/subscriber-info");
 
+        return getDetailsOfSubscriberRes;
+    }
 
     
 }

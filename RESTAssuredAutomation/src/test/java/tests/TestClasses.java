@@ -114,6 +114,9 @@ public class TestClasses {
                 Response unblockSubs = subs.unblockSubscription(subscriptionId);
                 logger.info("Status Code [UNBLOCK SUBSCRIPTIONS]: "+unblockSubs.statusCode());
 
+                Response getDetailsOfSubscriber = subs.getDetailsOfSubscriber(subscriptionId);
+                logger.info("Status Code [GET DETAILS OF A SUBSCRIBER]: "+getDetailsOfSubscriber.statusCode());
+
                 Response getApiThumbnailRes = api.getThumbnailImage(apiId);
                 logger.info("Status Code [GET API THUMBNAIL]: "+getApiThumbnailRes.statusCode());
 

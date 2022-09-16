@@ -1567,3 +1567,81 @@
 [INFO ] 2022-09-16 15:27:04.515 [main] TestClasses - Status Code [SEARCH API PRODUCTS]: 200
 [INFO ] 2022-09-16 15:27:04.557 [main] TestClasses - Status Code [GET DETAILS OF API PRODUCT]: 200
 [INFO ] 2022-09-16 15:27:04.610 [main] TestClasses - Status Code [GET THUMBNAIL OF API PRODUCT]: 200
+[INFO ] 2022-09-16 15:36:32.864 [main] TestClasses - Status Code [CREATE API]: 409
+[INFO ] 2022-09-16 15:36:32.924 [main] TestClasses - Status Code [SEARCH API]: 200
+[INFO ] 2022-09-16 15:36:33.476 [main] TestClasses - Status Code [UPLOAD API THUMBNAIL]: 201
+[INFO ] 2022-09-16 15:36:33.699 [main] TestClasses - Status Code [CHANGE API STATUS]: 200
+[INFO ] 2022-09-16 15:36:33.750 [main] TestClasses - Status Code [SEARCH API PRODUCT]: 200
+[INFO ] 2022-09-16 15:36:33.821 [main] TestClasses - Status Code [CREATE API PRODUCT]: 400
+[INFO ] 2022-09-16 15:36:34.002 [main] TestClasses - Status Code [UPDATE API PRODUCT]: 200
+[INFO ] 2022-09-16 15:36:34.231 [main] TestClasses - Status Code [UPDATE API PRODUCT THUMBNAIL]: 201
+[INFO ] 2022-09-16 15:36:34.265 [main] TestClasses - Status Code [DELETE API PRODUCT LIFECYCLE]: 200
+[INFO ] 2022-09-16 15:36:34.321 [main] TestClasses - Status Code [SEARCH API]: 200
+[INFO ] 2022-09-16 15:36:34.398 [main] TestClasses - Status Code [GET APIS DETAILS]: 200
+[INFO ] 2022-09-16 15:36:34.459 [main] TestClasses - Status Code [GET API THUMBNAIL]: 200
+[INFO ] 2022-09-16 15:36:34.498 [main] TestClasses - Status Code [GET API STATUS]: 200
+[INFO ] 2022-09-16 15:36:34.551 [main] TestClasses - Status Code [GET API STATUS]: 200
+[INFO ] 2022-09-16 15:36:34.633 [main] TestClasses - Status Code [GET STATE DATA OF API]: 200
+[INFO ] 2022-09-16 15:36:34.667 [main] TestClasses - Status Code [GET ALL SUBSCRIPTIONS]: 200
+[INFO ] 2022-09-16 15:36:34.679 [main] TestClasses - [SUBSCRIPTIONS ID]: 1e90c55d-b44c-4c73-9f78-7127ac433917
+[INFO ] 2022-09-16 15:36:34.710 [main] TestClasses - Status Code [BLOCK SUBSCRIPTIONS]: 200
+[INFO ] 2022-09-16 15:36:34.739 [main] TestClasses - Status Code [UNBLOCK SUBSCRIPTIONS]: 200
+[INFO ] 2022-09-16 15:36:34.778 [main] TestClasses - Status Code [UNBLOCK SUBSCRIPTIONS]: {
+    "name": "admin",
+    "claims": [
+        {
+            "name": "Organization",
+            "value": null,
+            "URI": "http://wso2.org/claims/organization"
+        },
+        {
+            "name": "Email",
+            "value": null,
+            "URI": "http://wso2.org/claims/emailaddress"
+        },
+        {
+            "name": "Last Name",
+            "value": null,
+            "URI": "http://wso2.org/claims/lastname"
+        },
+        {
+            "name": "First Name",
+            "value": null,
+            "URI": "http://wso2.org/claims/givenname"
+        }
+    ]
+}
+[INFO ] 2022-09-16 15:36:34.835 [main] TestClasses - Status Code [GET API THUMBNAIL]: 200
+[INFO ] 2022-09-16 15:36:34.868 [main] TestClasses - Status Code [GET RESOURCE PATH OF API]: 200
+[INFO ] 2022-09-16 15:36:34.897 [main] TestClasses - Status Code [GET RESOURCE POLICY DEFINITION API]: 400
+[INFO ] 2022-09-16 15:36:34.926 [main] TestClasses - Status Code [GET RESOURCE POLICY FOR RESOURCE IDENTIFIER]: 400
+[INFO ] 2022-09-16 15:36:34.963 [main] TestClasses - Status Code [SEARCH API PRODUCTS]: 200
+[INFO ] 2022-09-16 15:36:35.011 [main] TestClasses - Status Code [GET DETAILS OF API PRODUCT]: 200
+[INFO ] 2022-09-16 15:36:35.078 [main] TestClasses - Status Code [GET THUMBNAIL OF API PRODUCT]: 200
+[INFO ] 2022-09-16 15:37:35.254 [main] TestClasses - Status Code [CREATE API]: 409
+[INFO ] 2022-09-16 15:37:35.312 [main] TestClasses - Status Code [SEARCH API]: 200
+[INFO ] 2022-09-16 15:37:35.948 [main] TestClasses - Status Code [UPLOAD API THUMBNAIL]: 201
+[INFO ] 2022-09-16 15:37:36.151 [main] TestClasses - Status Code [CHANGE API STATUS]: 200
+[INFO ] 2022-09-16 15:37:36.194 [main] TestClasses - Status Code [SEARCH API PRODUCT]: 200
+[INFO ] 2022-09-16 15:37:36.261 [main] TestClasses - Status Code [CREATE API PRODUCT]: 400
+[INFO ] 2022-09-16 15:37:36.417 [main] TestClasses - Status Code [UPDATE API PRODUCT]: 200
+[INFO ] 2022-09-16 15:37:36.625 [main] TestClasses - Status Code [UPDATE API PRODUCT THUMBNAIL]: 201
+[INFO ] 2022-09-16 15:37:36.656 [main] TestClasses - Status Code [DELETE API PRODUCT LIFECYCLE]: 200
+[INFO ] 2022-09-16 15:37:36.691 [main] TestClasses - Status Code [SEARCH API]: 200
+[INFO ] 2022-09-16 15:37:36.807 [main] TestClasses - Status Code [GET APIS DETAILS]: 200
+[INFO ] 2022-09-16 15:37:36.902 [main] TestClasses - Status Code [GET API THUMBNAIL]: 200
+[INFO ] 2022-09-16 15:37:36.941 [main] TestClasses - Status Code [GET API STATUS]: 200
+[INFO ] 2022-09-16 15:37:36.986 [main] TestClasses - Status Code [GET API STATUS]: 200
+[INFO ] 2022-09-16 15:37:37.036 [main] TestClasses - Status Code [GET STATE DATA OF API]: 200
+[INFO ] 2022-09-16 15:37:37.067 [main] TestClasses - Status Code [GET ALL SUBSCRIPTIONS]: 200
+[INFO ] 2022-09-16 15:37:37.080 [main] TestClasses - [SUBSCRIPTIONS ID]: 1e90c55d-b44c-4c73-9f78-7127ac433917
+[INFO ] 2022-09-16 15:37:37.121 [main] TestClasses - Status Code [BLOCK SUBSCRIPTIONS]: 200
+[INFO ] 2022-09-16 15:37:37.153 [main] TestClasses - Status Code [UNBLOCK SUBSCRIPTIONS]: 200
+[INFO ] 2022-09-16 15:37:37.181 [main] TestClasses - Status Code [GET DETAILS OF A SUBSCRIBER]: 200
+[INFO ] 2022-09-16 15:37:37.243 [main] TestClasses - Status Code [GET API THUMBNAIL]: 200
+[INFO ] 2022-09-16 15:37:37.275 [main] TestClasses - Status Code [GET RESOURCE PATH OF API]: 200
+[INFO ] 2022-09-16 15:37:37.306 [main] TestClasses - Status Code [GET RESOURCE POLICY DEFINITION API]: 400
+[INFO ] 2022-09-16 15:37:37.335 [main] TestClasses - Status Code [GET RESOURCE POLICY FOR RESOURCE IDENTIFIER]: 400
+[INFO ] 2022-09-16 15:37:37.377 [main] TestClasses - Status Code [SEARCH API PRODUCTS]: 200
+[INFO ] 2022-09-16 15:37:37.421 [main] TestClasses - Status Code [GET DETAILS OF API PRODUCT]: 200
+[INFO ] 2022-09-16 15:37:37.475 [main] TestClasses - Status Code [GET THUMBNAIL OF API PRODUCT]: 200
