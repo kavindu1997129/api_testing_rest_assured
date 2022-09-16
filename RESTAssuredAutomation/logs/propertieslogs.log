@@ -731,3 +731,146 @@
 [INFO ] 2022-09-16 14:11:16.753 [main] TestClasses - Status Code [SEARCH API PRODUCTS]: 200
 [INFO ] 2022-09-16 14:11:16.818 [main] TestClasses - Status Code [GET DETAILS OF API PRODUCT]: 200
 [INFO ] 2022-09-16 14:11:16.885 [main] TestClasses - Status Code [GET THUMBNAIL OF API PRODUCT]: 200
+[INFO ] 2022-09-16 14:23:40.561 [main] TestClasses - Status Code [CREATE API]: 409
+[INFO ] 2022-09-16 14:23:40.615 [main] TestClasses - Status Code [SEARCH API]: 200
+[INFO ] 2022-09-16 14:23:41.423 [main] TestClasses - Status Code [UPLOAD API THUMBNAIL]: 201
+[INFO ] 2022-09-16 14:23:41.922 [main] TestClasses - Status Code [CHANGE API STATUS]: 200
+[INFO ] 2022-09-16 14:23:41.989 [main] TestClasses - Status Code [GET API STATUS]: 200
+[INFO ] 2022-09-16 14:23:42.070 [main] TestClasses - Status Code [GET API THUMBNAIL]: 200
+[INFO ] 2022-09-16 14:23:42.112 [main] TestClasses - Status Code [GET RESOURCE PATH OF API]: 200
+[INFO ] 2022-09-16 14:23:42.154 [main] TestClasses - Status Code [GET RESOURCE POLICY DEFINITION API]: 400
+[INFO ] 2022-09-16 14:23:42.192 [main] TestClasses - Status Code [GET RESOURCE POLICY FOR RESOURCE IDENTIFIER]: 400
+[INFO ] 2022-09-16 14:23:42.244 [main] TestClasses - Status Code [SEARCH API PRODUCT]: 200
+[INFO ] 2022-09-16 14:23:42.325 [main] TestClasses - Status Code [CREATE API PRODUCT]: 400
+[INFO ] 2022-09-16 14:23:42.534 [main] TestClasses - Status Code [UPDATE API PRODUCT]: 200
+[INFO ] 2022-09-16 14:23:42.674 [main] TestClasses - Status Code [UPDATE API PRODUCT THUMBNAIL]: 201
+[INFO ] 2022-09-16 14:23:42.719 [main] TestClasses - Status Code [SEARCH API]: 200
+[INFO ] 2022-09-16 14:23:42.776 [main] TestClasses - Status Code [GET APIS DETAILS]: 200
+[INFO ] 2022-09-16 14:23:42.827 [main] TestClasses - Status Code [GET API THUMBNAIL]: 200
+[INFO ] 2022-09-16 14:23:42.857 [main] TestClasses - Status Code [GET API STATUS]: 200
+[INFO ] 2022-09-16 14:23:42.895 [main] TestClasses - Status Code [SEARCH API PRODUCTS]: 200
+[INFO ] 2022-09-16 14:23:42.948 [main] TestClasses - Status Code [GET DETAILS OF API PRODUCT]: 200
+[INFO ] 2022-09-16 14:23:42.998 [main] TestClasses - Status Code [GET THUMBNAIL OF API PRODUCT]: 200
+[INFO ] 2022-09-16 14:23:53.996 [main] TestClasses - Status Code [CREATE API]: 409
+[INFO ] 2022-09-16 14:23:54.060 [main] TestClasses - Status Code [SEARCH API]: 200
+[INFO ] 2022-09-16 14:23:54.677 [main] TestClasses - Status Code [UPLOAD API THUMBNAIL]: 201
+[INFO ] 2022-09-16 14:23:55.163 [main] TestClasses - Status Code [CHANGE API STATUS]: 200
+[INFO ] 2022-09-16 14:23:55.239 [main] TestClasses - Status Code [GET API STATUS]: 200
+[INFO ] 2022-09-16 14:23:55.355 [main] TestClasses - Status Code [GET API THUMBNAIL]: 200
+[INFO ] 2022-09-16 14:23:55.410 [main] TestClasses - Status Code [GET RESOURCE PATH OF API]: 200
+[INFO ] 2022-09-16 14:23:55.449 [main] TestClasses - Status Code [GET RESOURCE POLICY DEFINITION API]: 400
+[INFO ] 2022-09-16 14:23:55.488 [main] TestClasses - Status Code [GET RESOURCE POLICY FOR RESOURCE IDENTIFIER]: 400
+[INFO ] 2022-09-16 14:23:55.545 [main] TestClasses - Status Code [SEARCH API PRODUCT]: 200
+[INFO ] 2022-09-16 14:23:55.653 [main] TestClasses - Status Code [CREATE API PRODUCT]: 400
+[INFO ] 2022-09-16 14:23:55.899 [main] TestClasses - Status Code [UPDATE API PRODUCT]: 200
+[INFO ] 2022-09-16 14:23:56.072 [main] TestClasses - Status Code [UPDATE API PRODUCT THUMBNAIL]: 201
+[INFO ] 2022-09-16 14:23:56.116 [main] TestClasses - Status Code [SEARCH API]: 200
+[INFO ] 2022-09-16 14:23:56.172 [main] TestClasses - Status Code [GET APIS DETAILS]: 200
+[INFO ] 2022-09-16 14:23:56.221 [main] TestClasses - Status Code [GET API THUMBNAIL]: 200
+[INFO ] 2022-09-16 14:23:56.257 [main] TestClasses - Status Code [GET API STATUS]: 200
+[INFO ] 2022-09-16 14:23:56.299 [main] TestClasses - Status Code [SEARCH API PRODUCTS]: 200
+[INFO ] 2022-09-16 14:23:56.353 [main] TestClasses - Status Code [GET DETAILS OF API PRODUCT]: 200
+[INFO ] 2022-09-16 14:23:56.404 [main] TestClasses - Status Code [GET THUMBNAIL OF API PRODUCT]: 200
+[INFO ] 2022-09-16 14:24:55.458 [main] TestClasses - Status Code [CREATE API]: 409
+[INFO ] 2022-09-16 14:24:55.530 [main] TestClasses - Status Code [SEARCH API]: 200
+[INFO ] 2022-09-16 14:24:56.148 [main] TestClasses - Status Code [UPLOAD API THUMBNAIL]: 201
+[INFO ] 2022-09-16 14:24:56.256 [main] TestClasses - Status Code [GET API THUMBNAIL]: 200
+[INFO ] 2022-09-16 14:24:56.299 [main] TestClasses - Status Code [GET RESOURCE PATH OF API]: 200
+[INFO ] 2022-09-16 14:24:56.350 [main] TestClasses - Status Code [GET RESOURCE POLICY DEFINITION API]: 400
+[INFO ] 2022-09-16 14:24:56.390 [main] TestClasses - Status Code [GET RESOURCE POLICY FOR RESOURCE IDENTIFIER]: 400
+[INFO ] 2022-09-16 14:24:56.437 [main] TestClasses - Status Code [SEARCH API PRODUCT]: 200
+[INFO ] 2022-09-16 14:24:56.491 [main] TestClasses - Status Code [CREATE API PRODUCT]: 400
+[INFO ] 2022-09-16 14:24:56.699 [main] TestClasses - Status Code [UPDATE API PRODUCT]: 200
+[INFO ] 2022-09-16 14:24:56.884 [main] TestClasses - Status Code [UPDATE API PRODUCT THUMBNAIL]: 201
+[INFO ] 2022-09-16 14:24:57.101 [main] TestClasses - Status Code [CHANGE API STATUS]: 200
+[INFO ] 2022-09-16 14:24:57.131 [main] TestClasses - Status Code [GET API STATUS]: 200
+[INFO ] 2022-09-16 14:24:57.181 [main] TestClasses - Status Code [SEARCH API]: 200
+[INFO ] 2022-09-16 14:24:57.245 [main] TestClasses - Status Code [GET APIS DETAILS]: 200
+[INFO ] 2022-09-16 14:24:57.306 [main] TestClasses - Status Code [GET API THUMBNAIL]: 200
+[INFO ] 2022-09-16 14:24:57.343 [main] TestClasses - Status Code [GET API STATUS]: 200
+[INFO ] 2022-09-16 14:24:57.386 [main] TestClasses - Status Code [SEARCH API PRODUCTS]: 200
+[INFO ] 2022-09-16 14:24:57.440 [main] TestClasses - Status Code [GET DETAILS OF API PRODUCT]: 200
+[INFO ] 2022-09-16 14:24:57.556 [main] TestClasses - Status Code [GET THUMBNAIL OF API PRODUCT]: 200
+[INFO ] 2022-09-16 14:25:56.434 [main] TestClasses - Status Code [CREATE API]: 409
+[INFO ] 2022-09-16 14:25:56.501 [main] TestClasses - Status Code [SEARCH API]: 200
+[INFO ] 2022-09-16 14:25:57.097 [main] TestClasses - Status Code [UPLOAD API THUMBNAIL]: 201
+[INFO ] 2022-09-16 14:25:57.163 [main] TestClasses - Status Code [GET API THUMBNAIL]: 200
+[INFO ] 2022-09-16 14:25:57.205 [main] TestClasses - Status Code [GET RESOURCE PATH OF API]: 200
+[INFO ] 2022-09-16 14:25:57.259 [main] TestClasses - Status Code [GET RESOURCE POLICY DEFINITION API]: 400
+[INFO ] 2022-09-16 14:25:57.300 [main] TestClasses - Status Code [GET RESOURCE POLICY FOR RESOURCE IDENTIFIER]: 400
+[INFO ] 2022-09-16 14:25:57.352 [main] TestClasses - Status Code [SEARCH API PRODUCT]: 200
+[INFO ] 2022-09-16 14:25:57.410 [main] TestClasses - Status Code [CREATE API PRODUCT]: 400
+[INFO ] 2022-09-16 14:25:57.629 [main] TestClasses - Status Code [UPDATE API PRODUCT]: 200
+[INFO ] 2022-09-16 14:25:57.783 [main] TestClasses - Status Code [UPDATE API PRODUCT THUMBNAIL]: 201
+[INFO ] 2022-09-16 14:25:58.060 [main] TestClasses - Status Code [CHANGE API STATUS]: 200
+[INFO ] 2022-09-16 14:25:58.097 [main] TestClasses - Status Code [GET API STATUS]: 200
+[INFO ] 2022-09-16 14:25:58.176 [main] TestClasses - Status Code [SEARCH API]: 200
+[INFO ] 2022-09-16 14:25:58.297 [main] TestClasses - Status Code [GET APIS DETAILS]: 200
+[INFO ] 2022-09-16 14:25:58.355 [main] TestClasses - Status Code [GET API THUMBNAIL]: 200
+[INFO ] 2022-09-16 14:25:58.383 [main] TestClasses - Status Code [GET API STATUS]: 200
+[INFO ] 2022-09-16 14:25:58.424 [main] TestClasses - Status Code [SEARCH API PRODUCTS]: 200
+[INFO ] 2022-09-16 14:25:58.478 [main] TestClasses - Status Code [GET DETAILS OF API PRODUCT]: 200
+[INFO ] 2022-09-16 14:25:58.563 [main] TestClasses - Status Code [GET THUMBNAIL OF API PRODUCT]: 200
+[INFO ] 2022-09-16 14:26:41.137 [main] TestClasses - Status Code [CREATE API]: 409
+[INFO ] 2022-09-16 14:26:41.207 [main] TestClasses - Status Code [SEARCH API]: 200
+[INFO ] 2022-09-16 14:26:41.973 [main] TestClasses - Status Code [UPLOAD API THUMBNAIL]: 201
+[INFO ] 2022-09-16 14:26:42.107 [main] TestClasses - Status Code [GET API THUMBNAIL]: 200
+[INFO ] 2022-09-16 14:26:42.164 [main] TestClasses - Status Code [GET RESOURCE PATH OF API]: 200
+[INFO ] 2022-09-16 14:26:42.213 [main] TestClasses - Status Code [GET RESOURCE POLICY DEFINITION API]: 400
+[INFO ] 2022-09-16 14:26:42.246 [main] TestClasses - Status Code [GET RESOURCE POLICY FOR RESOURCE IDENTIFIER]: 400
+[INFO ] 2022-09-16 14:26:42.515 [main] TestClasses - Status Code [CHANGE API STATUS]: 200
+[INFO ] 2022-09-16 14:26:42.551 [main] TestClasses - Status Code [GET API STATUS]: 200
+[INFO ] 2022-09-16 14:26:42.602 [main] TestClasses - Status Code [SEARCH API PRODUCT]: 200
+[INFO ] 2022-09-16 14:26:42.650 [main] TestClasses - Status Code [CREATE API PRODUCT]: 400
+[INFO ] 2022-09-16 14:26:42.861 [main] TestClasses - Status Code [UPDATE API PRODUCT]: 200
+[INFO ] 2022-09-16 14:26:43.019 [main] TestClasses - Status Code [UPDATE API PRODUCT THUMBNAIL]: 201
+[INFO ] 2022-09-16 14:26:43.073 [main] TestClasses - Status Code [SEARCH API]: 200
+[INFO ] 2022-09-16 14:26:43.189 [main] TestClasses - Status Code [GET APIS DETAILS]: 200
+[INFO ] 2022-09-16 14:26:43.276 [main] TestClasses - Status Code [GET API THUMBNAIL]: 200
+[INFO ] 2022-09-16 14:26:43.303 [main] TestClasses - Status Code [GET API STATUS]: 200
+[INFO ] 2022-09-16 14:26:43.337 [main] TestClasses - Status Code [SEARCH API PRODUCTS]: 200
+[INFO ] 2022-09-16 14:26:43.384 [main] TestClasses - Status Code [GET DETAILS OF API PRODUCT]: 200
+[INFO ] 2022-09-16 14:26:43.451 [main] TestClasses - Status Code [GET THUMBNAIL OF API PRODUCT]: 200
+[INFO ] 2022-09-16 14:28:54.677 [main] TestClasses - Status Code [CREATE API]: 409
+[INFO ] 2022-09-16 14:28:54.739 [main] TestClasses - Status Code [SEARCH API]: 200
+[INFO ] 2022-09-16 14:28:55.382 [main] TestClasses - Status Code [UPLOAD API THUMBNAIL]: 201
+[INFO ] 2022-09-16 14:28:55.473 [main] TestClasses - Status Code [GET API THUMBNAIL]: 200
+[INFO ] 2022-09-16 14:28:55.534 [main] TestClasses - Status Code [GET RESOURCE PATH OF API]: 200
+[INFO ] 2022-09-16 14:28:55.596 [main] TestClasses - Status Code [GET RESOURCE POLICY DEFINITION API]: 400
+[INFO ] 2022-09-16 14:28:55.645 [main] TestClasses - Status Code [GET RESOURCE POLICY FOR RESOURCE IDENTIFIER]: 400
+[INFO ] 2022-09-16 14:28:55.947 [main] TestClasses - Status Code [CHANGE API STATUS]: 200
+[INFO ] 2022-09-16 14:28:55.980 [main] TestClasses - Status Code [GET API STATUS]: 200
+[INFO ] 2022-09-16 14:28:56.044 [main] TestClasses - Status Code [GET STATE DATA OF API]: 200
+[INFO ] 2022-09-16 14:28:56.083 [main] TestClasses - Status Code [SEARCH API PRODUCT]: 200
+[INFO ] 2022-09-16 14:28:56.127 [main] TestClasses - Status Code [CREATE API PRODUCT]: 400
+[INFO ] 2022-09-16 14:28:56.341 [main] TestClasses - Status Code [UPDATE API PRODUCT]: 200
+[INFO ] 2022-09-16 14:28:56.579 [main] TestClasses - Status Code [UPDATE API PRODUCT THUMBNAIL]: 201
+[INFO ] 2022-09-16 14:28:56.616 [main] TestClasses - Status Code [SEARCH API]: 200
+[INFO ] 2022-09-16 14:28:56.670 [main] TestClasses - Status Code [GET APIS DETAILS]: 200
+[INFO ] 2022-09-16 14:28:56.722 [main] TestClasses - Status Code [GET API THUMBNAIL]: 200
+[INFO ] 2022-09-16 14:28:56.753 [main] TestClasses - Status Code [GET API STATUS]: 200
+[INFO ] 2022-09-16 14:28:56.794 [main] TestClasses - Status Code [SEARCH API PRODUCTS]: 200
+[INFO ] 2022-09-16 14:28:56.853 [main] TestClasses - Status Code [GET DETAILS OF API PRODUCT]: 200
+[INFO ] 2022-09-16 14:28:56.928 [main] TestClasses - Status Code [GET THUMBNAIL OF API PRODUCT]: 200
+[INFO ] 2022-09-16 14:33:03.317 [main] TestClasses - Status Code [CREATE API]: 409
+[INFO ] 2022-09-16 14:33:03.379 [main] TestClasses - Status Code [SEARCH API]: 200
+[INFO ] 2022-09-16 14:33:03.977 [main] TestClasses - Status Code [UPLOAD API THUMBNAIL]: 201
+[INFO ] 2022-09-16 14:33:04.035 [main] TestClasses - Status Code [GET API THUMBNAIL]: 200
+[INFO ] 2022-09-16 14:33:04.075 [main] TestClasses - Status Code [GET RESOURCE PATH OF API]: 200
+[INFO ] 2022-09-16 14:33:04.144 [main] TestClasses - Status Code [GET RESOURCE POLICY DEFINITION API]: 400
+[INFO ] 2022-09-16 14:33:04.200 [main] TestClasses - Status Code [GET RESOURCE POLICY FOR RESOURCE IDENTIFIER]: 400
+[INFO ] 2022-09-16 14:33:04.445 [main] TestClasses - Status Code [CHANGE API STATUS]: 200
+[INFO ] 2022-09-16 14:33:04.478 [main] TestClasses - Status Code [GET API STATUS]: 200
+[INFO ] 2022-09-16 14:33:04.529 [main] TestClasses - Status Code [GET STATE DATA OF API]: 200
+[INFO ] 2022-09-16 14:33:04.570 [main] TestClasses - Status Code [SEARCH API PRODUCT]: 200
+[INFO ] 2022-09-16 14:33:04.624 [main] TestClasses - Status Code [CREATE API PRODUCT]: 400
+[INFO ] 2022-09-16 14:33:04.795 [main] TestClasses - Status Code [UPDATE API PRODUCT]: 200
+[INFO ] 2022-09-16 14:33:04.998 [main] TestClasses - Status Code [UPDATE API PRODUCT THUMBNAIL]: 201
+[INFO ] 2022-09-16 14:33:05.107 [main] TestClasses - Status Code [DELETE API PRODUCT LIFECYCLE]: 200
+[INFO ] 2022-09-16 14:33:05.206 [main] TestClasses - Status Code [SEARCH API]: 200
+[INFO ] 2022-09-16 14:33:05.281 [main] TestClasses - Status Code [GET APIS DETAILS]: 200
+[INFO ] 2022-09-16 14:33:05.330 [main] TestClasses - Status Code [GET API THUMBNAIL]: 200
+[INFO ] 2022-09-16 14:33:05.363 [main] TestClasses - Status Code [GET API STATUS]: 200
+[INFO ] 2022-09-16 14:33:05.406 [main] TestClasses - Status Code [SEARCH API PRODUCTS]: 200
+[INFO ] 2022-09-16 14:33:05.461 [main] TestClasses - Status Code [GET DETAILS OF API PRODUCT]: 200
+[INFO ] 2022-09-16 14:33:05.513 [main] TestClasses - Status Code [GET THUMBNAIL OF API PRODUCT]: 200

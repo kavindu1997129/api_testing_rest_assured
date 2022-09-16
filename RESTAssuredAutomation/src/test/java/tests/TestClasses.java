@@ -54,12 +54,6 @@ public class TestClasses {
 
         Response uploadApiThumbnailRes = api.uploadThumbnailImage("thumbnail.jpg", apiId);
         logger.info("Status Code [UPLOAD API THUMBNAIL]: "+uploadApiThumbnailRes.statusCode());
-       
-        Response changeApiStatusRes = api.changeApiStatus(apiId, "Publish");
-        logger.info("Status Code [CHANGE API STATUS]: "+changeApiStatusRes.statusCode());
-
-        Response getApiStatusRes = api.getApiStatus(apiId);
-        logger.info("Status Code [GET API STATUS]: "+getApiStatusRes.statusCode());
 
         Response getApiThumbnailRes = api.getThumbnailImage(apiId);
         logger.info("Status Code [GET API THUMBNAIL]: "+getApiThumbnailRes.statusCode());
@@ -72,7 +66,16 @@ public class TestClasses {
 
         Response getResourcePolicyForResourceIdentifierRes = api.getResourcePolicyForResourceIdentifier(apiId,"178");
         logger.info("Status Code [GET RESOURCE POLICY FOR RESOURCE IDENTIFIER]: "+getResourcePolicyForResourceIdentifierRes.statusCode());
-        
+
+        Response changeApiStatusRes = api.changeApiStatus(apiId, "Publish");
+        logger.info("Status Code [CHANGE API STATUS]: "+changeApiStatusRes.statusCode());
+
+        Response getApiStatusRes = api.getApiStatus(apiId);
+        logger.info("Status Code [GET API STATUS]: "+getApiStatusRes.statusCode());
+
+        Response getLifecycleStateDataOfApiRes = api.getLifecycleStateDataOfApi(apiId);
+        logger.info("Status Code [GET STATE DATA OF API]: "+getLifecycleStateDataOfApiRes.statusCode());
+
         //API Product 
         PublisherApiProducts apiProd = new PublisherApiProducts(accessToken,ApimVersions.APIM_3_2);
 
@@ -89,6 +92,8 @@ public class TestClasses {
         Response uploadProductThumbnailRes = apiProd.uploadProductThumbnail("thumbnail.jpg", apiProductId);
         logger.info("Status Code [UPDATE API PRODUCT THUMBNAIL]: "+uploadProductThumbnailRes.statusCode());
 
+        Response deletePendingLifecycleStateChangeTasksRes = api.deletePendingLifecycleStateChangeTasks(apiId);
+        logger.info("Status Code [DELETE API PRODUCT LIFECYCLE]: "+deletePendingLifecycleStateChangeTasksRes.statusCode());
 }
 
         @Test

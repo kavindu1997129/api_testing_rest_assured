@@ -68,6 +68,8 @@ public class PublisherApis {
         
     }
 
+    //-----------------------------------------------------------------------------------------------------------------
+
     public Response searchApis(){
         try {
             searchApisResponse = RestAssured.given()
@@ -234,30 +236,6 @@ public class PublisherApis {
         return getSubscriptionThrotllingResponse;
     }
 
-    //API Lifecycle relaated methods
-    public Response changeApiStatus(String apiId, String action){
-        Response changeApiStatusResponse  = RestAssured.given()
-        .relaxedHTTPSValidation()
-        .auth()
-        .oauth2(accessToken)
-        .contentType(ContentTypes.APPLICATION_JSON)
-        .post(endPoint+publisherApisString+"/change-lifecycle?apiId="+apiId+"&action="+action);
-
-        return changeApiStatusResponse;
-    }
-
-    public Response getApiStatus(String apiId){
-        Response changeApiStatusResponse  = RestAssured.given()
-        .relaxedHTTPSValidation()
-        .auth()
-        .oauth2(accessToken)
-        .contentType(ContentTypes.APPLICATION_JSON)
-        .get(endPoint+publisherApisString+"/"+apiId+"/lifecycle-history");
-        //System.out.println(endPoint+publisherApiLifecycleString+"?apiId="+apiId+"&action="+action);
-
-        return changeApiStatusResponse;
-    }
-
     public Response getComplexityRelatedDetailsOfApi(String apiId){
         Response getComplexityRelatedDetailsOfApiResponse = RestAssured.given()
         .relaxedHTTPSValidation()
@@ -354,6 +332,11 @@ public class PublisherApis {
         return getResourcePathsofApiRes;
     }
 
+    //-----------------------------------------------------------------------------------------------------------------
+
+
+    //-----------------------------------------------------------------------------------------------------------------
+
     public Response getResourcePolicyDefinitions(String apiId){
         // OAuth2Security (apim:api_view)
         Response getResourcePolicyDefinitionsRes = RestAssured.given()
@@ -395,6 +378,55 @@ public class PublisherApis {
 
         return updateResourcePolicyForResourceIdentifierRes;
 
+    }
+
+    //-----------------------------------------------------------------------------------------------------------------
+
+    //-----------------------------------------------------------------------------------------------------------------
+
+    //API Lifecycle relaated methods
+    public Response changeApiStatus(String apiId, String action){
+        Response changeApiStatusResponse  = RestAssured.given()
+        .relaxedHTTPSValidation()
+        .auth()
+        .oauth2(accessToken)
+        .contentType(ContentTypes.APPLICATION_JSON)
+        .post(endPoint+publisherApisString+"/change-lifecycle?apiId="+apiId+"&action="+action);
+
+        return changeApiStatusResponse;
+    }
+
+    public Response getApiStatus(String apiId){
+        Response changeApiStatusResponse  = RestAssured.given()
+        .relaxedHTTPSValidation()
+        .auth()
+        .oauth2(accessToken)
+        .contentType(ContentTypes.APPLICATION_JSON)
+        .get(endPoint+publisherApisString+"/"+apiId+"/lifecycle-history");
+
+        return changeApiStatusResponse;
+    }
+
+    public Response getLifecycleStateDataOfApi(String apiId){
+        Response getLifecycleStateDataOfApiResponse  = RestAssured.given()
+        .relaxedHTTPSValidation()
+        .auth()
+        .oauth2(accessToken)
+        .contentType(ContentTypes.APPLICATION_JSON)
+        .get(endPoint+publisherApisString+"/"+apiId+"/lifecycle-state");
+
+        return getLifecycleStateDataOfApiResponse;
+    }
+
+    public Response deletePendingLifecycleStateChangeTasks(String apiId){
+        Response deletePendingLifecycleStateChangeTasksResponse  = RestAssured.given()
+        .relaxedHTTPSValidation()
+        .auth()
+        .oauth2(accessToken)
+        .contentType(ContentTypes.APPLICATION_JSON)
+        .delete(endPoint+publisherApisString+"/"+apiId+"/lifecycle-state/pending-tasks");
+
+        return deletePendingLifecycleStateChangeTasksResponse;
     }
     
 }
