@@ -7,6 +7,7 @@ import java.nio.file.Paths;
 import java.util.Properties;
 
 import io.restassured.RestAssured;
+import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import restapi.ApimVersions;
 import restapi.ContentTypes;
@@ -33,6 +34,12 @@ public class PublisherApis {
 
     byte[] updateApiPayloadJson;
     String updateApiPayloadString;
+
+    byte[] payloadplj1;
+    String payloadpls1;
+
+    byte[] payloadplj2;
+    String payloadpls2;
 
     String publisherApisString = "/apis";
     String resourceParenPath = "./src/test/payloads/";
@@ -159,6 +166,18 @@ public class PublisherApis {
         return getSwaggerDefinitionResponse;
     }
 
+    public Response updateSwaggerDefinition(String apiId){
+        Response updateSwaggerDefinitionRes = RestAssured.given()
+        .relaxedHTTPSValidation()
+        .auth()
+        .oauth2(accessToken)
+        .body(updateApiPayloadString)
+        .contentType(ContentTypes.APPLICATION_JSON)
+        .put(endPoint+publisherApisString+"/"+apiId+"/swagger");
+
+        return updateSwaggerDefinitionRes;
+    }
+
 
     public Response generateMockResponsePayloads(String apiId){
         Response generateMockResponsePayloadsResponse = RestAssured.given()
@@ -250,6 +269,132 @@ public class PublisherApis {
         return getComplexityRelatedDetailsOfApiResponse;
     }
 
+    public Response imporOpenAPIDefinition(String apiId, String openApiJsonPath, String dataPath){
 
+        Response imporOpenAPIDefinitionRes = RestAssured.given()
+        .relaxedHTTPSValidation()
+        .auth()
+        .oauth2(accessToken)
+        .contentType(ContentTypes.APPLICATION_JSON)
+        .multiPart(new File(resourceParenPath+openApiJsonPath))
+        .multiPart(new File(resourceParenPath+dataPath))
+        .post(endPoint+publisherApisString+"/import-openapi");
+
+        return imporOpenAPIDefinitionRes;
+    }
+
+    public Response importWSDLDefinition(String apiId, String apiWSDL, String dataPath){
+        Response importWSDLDefinitionRes = RestAssured.given()
+        .relaxedHTTPSValidation()
+        .auth()
+        .oauth2(accessToken)
+        .contentType(ContentTypes.APPLICATION_JSON)
+        .multiPart(new File(resourceParenPath+apiWSDL))
+        .multiPart(new File(resourceParenPath+dataPath))
+        .post(endPoint+publisherApisString+"/import-wsdl");
+
+        return importWSDLDefinitionRes;
+    }
+
+    public Response importAPIDefinition(String apiId, String schemaGraphGl, String dataPath){
+        Response importAPIDefinitionRes = RestAssured.given()
+        .relaxedHTTPSValidation()
+        .auth()
+        .oauth2(accessToken)
+        .contentType(ContentTypes.APPLICATION_JSON)
+        .multiPart(new File(resourceParenPath+schemaGraphGl))
+        .multiPart(new File(resourceParenPath+dataPath))
+        .post(endPoint+publisherApisString+"/import-graphql-schema");
+
+        return importAPIDefinitionRes;
+    }
+
+    public Response getWsdlMetaInformation(String apiId){
+        Response getWSDLMetaInformationRes = RestAssured.given()
+        .relaxedHTTPSValidation()
+        .auth()
+        .oauth2(accessToken)
+        .contentType(ContentTypes.APPLICATION_JSON)
+        .get(endPoint+publisherApisString+"/"+apiId+"/wsdl-info");
+
+        return getWSDLMetaInformationRes;
+    }
+
+    public Response getWsdlDefinition(String apiId){
+        Response getWsdlDefinitionRes = RestAssured.given()
+        .relaxedHTTPSValidation()
+        .auth()
+        .oauth2(accessToken)
+        .contentType(ContentTypes.APPLICATION_JSON)
+        .get(endPoint+publisherApisString+"/"+apiId+"/wsdl");
+
+        return getWsdlDefinitionRes;
+    }
+
+    public Response updateWSDLDefinition(String apiId, String apiWSDL){
+        Response updateWSDLDefinitionRes = RestAssured.given()
+        .relaxedHTTPSValidation()
+        .auth()
+        .oauth2(accessToken)
+        .contentType(ContentTypes.APPLICATION_JSON)
+        .multiPart(new File(resourceParenPath+apiWSDL))
+        .put(endPoint+publisherApisString+"/wsdl");
+
+        return updateWSDLDefinitionRes;
+    }
+
+    public Response getResourcePathsofApi(String apiId){
+        Response getResourcePathsofApiRes = RestAssured.given()
+        .relaxedHTTPSValidation()
+        .auth()
+        .oauth2(accessToken)
+        .contentType(ContentTypes.APPLICATION_JSON)
+        .get(endPoint+publisherApisString+"/"+apiId+"/resource-paths");
+
+        return getResourcePathsofApiRes;
+    }
+
+    public Response getResourcePolicyDefinitions(String apiId){
+        // OAuth2Security (apim:api_view)
+        Response getResourcePolicyDefinitionsRes = RestAssured.given()
+        .relaxedHTTPSValidation()
+        .auth()
+        .oauth2(accessToken)
+        .contentType(ContentTypes.APPLICATION_JSON)
+        .get(endPoint+publisherApisString+"/"+apiId+"/resource-policies?resourcePath=checkPhoneNumber&verb=post&sequenceType=in");
+
+        return getResourcePolicyDefinitionsRes;
+    }
+
+    public Response getResourcePolicyForResourceIdentifier(String apiId, String policyId){
+        Response getResourcePolicyForResourceIdentifierRes = RestAssured.given()
+        .relaxedHTTPSValidation()
+        .auth()
+        .oauth2(accessToken)
+        .contentType(ContentTypes.APPLICATION_JSON)
+        .get(endPoint+publisherApisString+"/"+apiId+"/resource-policies/"+policyId);
+
+        return getResourcePolicyForResourceIdentifierRes;
+    }
+
+    public Response updateResourcePolicyForResourceIdentifier(String apiId, String policyId, String dataPath){
+
+        try {
+            payloadplj1 = Files.readAllBytes(Paths.get(resourceParenPath+dataPath));
+		    payloadpls1 = new String(payloadplj1);
+        } catch (Exception e) {
+        }
+
+        Response updateResourcePolicyForResourceIdentifierRes = RestAssured.given()
+        .relaxedHTTPSValidation()
+        .auth()
+        .oauth2(accessToken)
+        .body(payloadpls1)
+        .contentType(ContentTypes.APPLICATION_JSON)
+        .put(endPoint+publisherApisString+"/"+apiId+"/resource-policies/"+policyId);
+
+        return updateResourcePolicyForResourceIdentifierRes;
+
+    }
     
 }

@@ -63,6 +63,15 @@ public class TestClasses {
 
         Response getApiThumbnailRes = api.getThumbnailImage(apiId);
         logger.info("Status Code [GET API THUMBNAIL]: "+getApiThumbnailRes.statusCode());
+
+        Response getResourcePathsofApiRes = api.getResourcePathsofApi(apiId);
+        logger.info("Status Code [GET RESOURCE PATH OF API]: "+getResourcePathsofApiRes.statusCode());
+
+        Response getResourcePolicyDefinitionsRes = api.getResourcePolicyDefinitions(apiId);
+        logger.info("Status Code [GET RESOURCE POLICY DEFINITION API]: "+getResourcePolicyDefinitionsRes.statusCode());
+
+        Response getResourcePolicyForResourceIdentifierRes = api.getResourcePolicyForResourceIdentifier(apiId,"178");
+        logger.info("Status Code [GET RESOURCE POLICY FOR RESOURCE IDENTIFIER]: "+getResourcePolicyForResourceIdentifierRes.statusCode());
         
         //API Product 
         PublisherApiProducts apiProd = new PublisherApiProducts(accessToken,ApimVersions.APIM_3_2);
