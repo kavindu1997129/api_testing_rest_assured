@@ -18,7 +18,9 @@ import restapi.devportal.DevportalApis;
 import restapi.publisher.PublisherApiLifecycle;
 import restapi.publisher.PublisherApiProducts;
 import restapi.publisher.PublisherApis;
+import restapi.publisher.PublisherGlobalMediationPolicies;
 import restapi.publisher.PublisherSubscriptions;
+import restapi.publisher.ThrottlingPolicies;
 
 public class TestClasses {
 	String accessToken;
@@ -140,6 +142,19 @@ public class TestClasses {
                 Response getThumbnailOfApiprodRes = apiProd.getProductThumbnail(apiProductId);
                 logger.info("Status Code [GET THUMBNAIL OF API PRODUCT]: "+getThumbnailOfApiprodRes.statusCode());
 
+                ThrottlingPolicies policies = new ThrottlingPolicies(accessToken, ApimVersions.APIM_3_2);
+                Response getAllPolicies = policies.getThrottlingPoliciesForGivenType("api");
+                logger.info("Status Code [GET THROTTLING POLICIES]: "+getAllPolicies.statusCode());
+
+                String policyLevel = getAllPolicies.jsonPath().get("list[3]['policyLevel']");
+                String policyName = getAllPolicies.jsonPath().get("list[3]['name']");
+
+                Response getDetaisOfPolicy = policies.getDetailsOfPolicy(policyLevel, policyName);
+                logger.info("Status Code [GET DETAILS OF A POLICY]: "+getDetaisOfPolicy.statusCode());
+
+                PublisherGlobalMediationPolicies gPolicies = new PublisherGlobalMediationPolicies(accessToken, ApimVersions.APIM_3_2);
+                Response getGlobalMediationPolicyRes = gPolicies.getGlobalMediationPolicies();
+                logger.info("Status Code [GET GLOBAL MEDIATION POLICY]: "+getGlobalMediationPolicyRes.statusCode());
 
         }
 
