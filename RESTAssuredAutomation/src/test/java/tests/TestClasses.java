@@ -18,6 +18,7 @@ import restapi.devportal.DevportalApis;
 import restapi.publisher.PublisherApiLifecycle;
 import restapi.publisher.PublisherApiProducts;
 import restapi.publisher.PublisherApis;
+import restapi.publisher.PublisherSubscriptions;
 
 public class TestClasses {
 	String accessToken;
@@ -33,7 +34,7 @@ public class TestClasses {
         authenticationObject.setTokenUrl("https://localhost:8243/token"); //For API-M 3.2.0
         // authenticationObject.setTokenUrl("https://localhost:9443/oauth2/token"); //For API-M 4.1.0
         authenticationObject.setPayloadPath("./src/test/payloads/payload.json");
-        authenticationObject.setScopes(Scopes.API_PUBLISH, Scopes.API_CREATE, Scopes.API_VIEW, Scopes.API_IMPORT_EXPORT, Scopes.API_MANAGE);
+        authenticationObject.setScopes(Scopes.API_PUBLISH, Scopes.API_CREATE, Scopes.API_VIEW, Scopes.API_IMPORT_EXPORT, Scopes.API_MANAGE, Scopes.SUBSCRIPTION_VIEW, Scopes.SUBSCRIPTION_BLOCK);
         authenticationObject.setContentType(ContentTypes.APPLICATION_JSON);
         authenticationObject.setGrantType(GrantTypes.PASSSWORD);
 
@@ -55,26 +56,8 @@ public class TestClasses {
         Response uploadApiThumbnailRes = api.uploadThumbnailImage("thumbnail.jpg", apiId);
         logger.info("Status Code [UPLOAD API THUMBNAIL]: "+uploadApiThumbnailRes.statusCode());
 
-        Response getApiThumbnailRes = api.getThumbnailImage(apiId);
-        logger.info("Status Code [GET API THUMBNAIL]: "+getApiThumbnailRes.statusCode());
-
-        Response getResourcePathsofApiRes = api.getResourcePathsofApi(apiId);
-        logger.info("Status Code [GET RESOURCE PATH OF API]: "+getResourcePathsofApiRes.statusCode());
-
-        Response getResourcePolicyDefinitionsRes = api.getResourcePolicyDefinitions(apiId);
-        logger.info("Status Code [GET RESOURCE POLICY DEFINITION API]: "+getResourcePolicyDefinitionsRes.statusCode());
-
-        Response getResourcePolicyForResourceIdentifierRes = api.getResourcePolicyForResourceIdentifier(apiId,"178");
-        logger.info("Status Code [GET RESOURCE POLICY FOR RESOURCE IDENTIFIER]: "+getResourcePolicyForResourceIdentifierRes.statusCode());
-
         Response changeApiStatusRes = api.changeApiStatus(apiId, "Publish");
         logger.info("Status Code [CHANGE API STATUS]: "+changeApiStatusRes.statusCode());
-
-        Response getApiStatusRes = api.getApiStatus(apiId);
-        logger.info("Status Code [GET API STATUS]: "+getApiStatusRes.statusCode());
-
-        Response getLifecycleStateDataOfApiRes = api.getLifecycleStateDataOfApi(apiId);
-        logger.info("Status Code [GET STATE DATA OF API]: "+getLifecycleStateDataOfApiRes.statusCode());
 
         //API Product 
         PublisherApiProducts apiProd = new PublisherApiProducts(accessToken,ApimVersions.APIM_3_2);
@@ -112,6 +95,36 @@ public class TestClasses {
 
                 Response getApiStatus = api.getApiStatus(apiId);
                 logger.info("Status Code [GET API STATUS]: "+getApiStatus.statusCode());
+
+                Response getApiStatusRes = api.getApiStatus(apiId);
+                logger.info("Status Code [GET API STATUS]: "+getApiStatusRes.statusCode());
+
+                Response getLifecycleStateDataOfApiRes = api.getLifecycleStateDataOfApi(apiId);
+                logger.info("Status Code [GET STATE DATA OF API]: "+getLifecycleStateDataOfApiRes.statusCode());
+
+                PublisherSubscriptions subs = new PublisherSubscriptions(accessToken, ApimVersions.APIM_3_2);
+                Response getAllSubs = subs.getAllSubscriptions(apiId);
+                logger.info("Status Code [GET ALL SUBSCRIPTIONS]: "+getAllSubs.statusCode());
+                String subscriptionId  = getAllSubs.jsonPath().get("list[0]['subscriptionId']");
+                logger.info("[SUBSCRIPTIONS ID]: "+subscriptionId);
+
+                Response blockSubs = subs.blockSubscription(subscriptionId, "BLOCKED");
+                logger.info("Status Code [BLOCK SUBSCRIPTIONS]: "+blockSubs.statusCode());
+
+                Response unblockSubs = subs.unblockSubscription(subscriptionId);
+                logger.info("Status Code [UNBLOCK SUBSCRIPTIONS]: "+unblockSubs.statusCode());
+
+                Response getApiThumbnailRes = api.getThumbnailImage(apiId);
+                logger.info("Status Code [GET API THUMBNAIL]: "+getApiThumbnailRes.statusCode());
+
+                Response getResourcePathsofApiRes = api.getResourcePathsofApi(apiId);
+                logger.info("Status Code [GET RESOURCE PATH OF API]: "+getResourcePathsofApiRes.statusCode());
+
+                Response getResourcePolicyDefinitionsRes = api.getResourcePolicyDefinitions(apiId);
+                logger.info("Status Code [GET RESOURCE POLICY DEFINITION API]: "+getResourcePolicyDefinitionsRes.statusCode());
+
+                Response getResourcePolicyForResourceIdentifierRes = api.getResourcePolicyForResourceIdentifier(apiId,"178");
+                logger.info("Status Code [GET RESOURCE POLICY FOR RESOURCE IDENTIFIER]: "+getResourcePolicyForResourceIdentifierRes.statusCode());
 
                 PublisherApiProducts apiProd = new PublisherApiProducts(accessToken, ApimVersions.APIM_3_2);
                 Response searchApiProdsRes = apiProd.searchApiProduct();
