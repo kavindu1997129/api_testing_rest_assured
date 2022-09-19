@@ -15,7 +15,6 @@ import restapi.ErrorHandling;
 import restapi.GrantTypes;
 import restapi.Scopes;
 import restapi.devportal.DevportalApis;
-import restapi.publisher.PublisherApiLifecycle;
 import restapi.publisher.PublisherApiProducts;
 import restapi.publisher.PublisherApis;
 

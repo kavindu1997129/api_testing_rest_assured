@@ -15,7 +15,6 @@ import restapi.ErrorHandling;
 import restapi.GrantTypes;
 import restapi.Scopes;
 import restapi.devportal.DevportalApis;
-import restapi.publisher.PublisherApiLifecycle;
 import restapi.publisher.PublisherApiProducts;
 import restapi.publisher.PublisherApis;
 import restapi.publisher.PublisherGlobalMediationPolicies;
@@ -135,12 +134,26 @@ public class TestClasses {
                 Response searchApiProdsRes = apiProd.searchApiProduct();
                 logger.info("Status Code [SEARCH API PRODUCTS]: "+searchApiProdsRes.statusCode());
                 String apiProductId  = searchApiProdsRes.jsonPath().get("list[0]['id']");
-                
+
                 Response getDetailsOfApiProdRes = apiProd.getDetailsOfApiProduct(apiProductId);
                 logger.info("Status Code [GET DETAILS OF API PRODUCT]: "+getDetailsOfApiProdRes.statusCode());
                 
                 Response getThumbnailOfApiprodRes = apiProd.getProductThumbnail(apiProductId);
                 logger.info("Status Code [GET THUMBNAIL OF API PRODUCT]: "+getThumbnailOfApiprodRes.statusCode());
+
+                Response getApiDocumentationRes = apiProd.getDocumentsOfApiProduct(apiProductId);
+                logger.info("Status Code [GET DOC OF API PRODUCTS]: "+getApiDocumentationRes.statusCode());
+                String documentationId = getApiDocumentationRes.jsonPath().get("list[0]['documentId']");
+                logger.info("[DOCUMENTATION ID]: "+documentationId);
+
+                Response updateDocumentsOFApiProductRes = apiProd.updateDocumentsOfApiProduct(apiProductId, documentationId, "uploadApiProductDoc_payload.json");
+                logger.info("Status Code [UPDATE DOC OF API PRODUCTS]: "+updateDocumentsOFApiProductRes.statusCode());
+
+                // Response deleteDocumentsOFApiProductRes = apiProd.deleteDocumentsOfApiProduct(apiProductId, documentationId);
+                // logger.info("Status Code [DELETE DOC OF API PRODUCTS]: "+deleteDocumentsOFApiProductRes.statusCode());
+
+                Response getContentOfDocumentsOFApiProductRes = apiProd.getContentOfDocumentsOfApiProduct(apiProductId, documentationId);
+                logger.info("Status Code [GET CONTENT OF DOC OF API PRODUCTS]: "+getContentOfDocumentsOFApiProductRes.statusCode());
 
                 ThrottlingPolicies policies = new ThrottlingPolicies(accessToken, ApimVersions.APIM_3_2);
                 Response getAllPolicies = policies.getThrottlingPoliciesForGivenType("api");

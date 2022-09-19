@@ -7,6 +7,7 @@ import java.nio.file.Paths;
 import java.util.Properties;
 
 import io.restassured.RestAssured;
+import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import restapi.ApimVersions;
 import restapi.ContentTypes;
@@ -25,6 +26,10 @@ public class PublisherApiProducts {
     String apiProductUpdatePayloadString;
 
     String publisherApisProductString = "/api-products";
+
+    byte[] payloadJson1;
+    String payloadString1;
+
     String resouseParentPath = "./src/test/payloads/";
 
     public PublisherApiProducts(String accessToken, ApimVersions version){
@@ -164,6 +169,73 @@ public class PublisherApiProducts {
 
         return isApiProductOutdatedResponse;
     }
-    
+
+    //API PRODUCT DOCUMENTATION RELATED
+    public Response getDocumentsOfApiProduct(String apiProductId){
+
+        Response getDocumentsOFApiProductRes = RestAssured.given()
+        .relaxedHTTPSValidation()
+        .auth()
+        .oauth2(accessToken)
+        .get(endPoint+publisherApisProductString+"/"+apiProductId+"/documents"); 
+
+        return getDocumentsOFApiProductRes;
+    }
+
+    public Response updateDocumentsOfApiProduct(String apiProductId, String documentId, String jsonPayloadPath){
+
+        try {
+            payloadJson1 = Files.readAllBytes(Paths.get(resouseParentPath+jsonPayloadPath));
+		    payloadString1 = new String(payloadJson1);
+        } catch (Exception e) {
+        }
+
+        Response updateDocumentsOFApiProductRes = RestAssured.given()
+        .relaxedHTTPSValidation()
+        .auth()
+        .oauth2(accessToken)
+        .contentType(ContentTypes.APPLICATION_JSON)
+        .body(payloadString1)
+        .put(endPoint+publisherApisProductString+"/"+apiProductId+"/documents/"+documentId); 
+
+        return updateDocumentsOFApiProductRes;
+    }
+
+    public Response deleteDocumentsOfApiProduct(String apiProductId, String documentId){
+
+        Response deleteDocumentsOFApiProductRes = RestAssured.given()
+        .relaxedHTTPSValidation()
+        .auth()
+        .oauth2(accessToken)
+        .contentType(ContentTypes.APPLICATION_JSON)
+        .delete(endPoint+publisherApisProductString+"/"+apiProductId+"/documents/"+documentId); 
+
+        return deleteDocumentsOFApiProductRes;
+    }
+
+    public Response getContentOfDocumentsOfApiProduct(String apiProductId, String documentId){
+
+        Response deleteDocumentsOFApiProductRes = RestAssured.given()
+        .relaxedHTTPSValidation()
+        .auth()
+        .oauth2(accessToken)
+        .contentType(ContentTypes.APPLICATION_JSON)
+        .get(endPoint+publisherApisProductString+"/"+apiProductId+"/documents/"+documentId+"/content"); 
+
+        return deleteDocumentsOFApiProductRes;
+    }
+
+    public Response uploadContentOfDocumentsOfApiProduct(String apiProductId, String documentId, String imagePath){
+
+        Response uploadContentOfDocumentsOfApiProductRes = RestAssured.given()
+        .relaxedHTTPSValidation()
+        .auth()
+        .oauth2(accessToken)
+        .contentType(ContentTypes.MULTIPART_FORMDATA)
+		.multiPart(new File(resouseParentPath+imagePath))
+        .post(endPoint+publisherApisProductString+"/"+apiProductId+"/documents/"+documentId+"/content"); 
+
+        return uploadContentOfDocumentsOfApiProductRes;
+    }
     
 }
