@@ -3,18 +3,13 @@ package tests;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.testng.annotations.Test;
-
-import io.restassured.http.ContentType;
-import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import restapi.ApimVersions;
 import restapi.Authentication;
 import restapi.AuthenticationObject;
 import restapi.ContentTypes;
-import restapi.ErrorHandling;
 import restapi.GrantTypes;
 import restapi.Scopes;
-import restapi.devportal.DevportalApis;
 import restapi.publisher.PublisherApiProducts;
 import restapi.publisher.PublisherApis;
 import restapi.publisher.PublisherGlobalMediationPolicies;
@@ -28,56 +23,59 @@ public class TestClasses {
 	@Test
 	public void dataGeneration() {
 
-        AuthenticationObject authenticationObject = new AuthenticationObject();
-        authenticationObject.setUsername("admin");
-        authenticationObject.setUserpassword("admin");
-        authenticationObject.setEndpoint("https://localhost:9443/client-registration/v0.17/register");
-        authenticationObject.setTokenUrl("https://localhost:8243/token"); //For API-M 3.2.0
-        // authenticationObject.setTokenUrl("https://localhost:9443/oauth2/token"); //For API-M 4.1.0
-        authenticationObject.setPayloadPath("./src/test/payloads/payload.json");
-        authenticationObject.setScopes(Scopes.API_PUBLISH, Scopes.API_CREATE, Scopes.API_VIEW, Scopes.API_IMPORT_EXPORT, Scopes.API_MANAGE, Scopes.SUBSCRIPTION_VIEW, Scopes.SUBSCRIPTION_BLOCK);
-        authenticationObject.setContentType(ContentTypes.APPLICATION_JSON);
-        authenticationObject.setGrantType(GrantTypes.PASSSWORD);
+                AuthenticationObject authenticationObject = new AuthenticationObject();
+                authenticationObject.setUsername("admin");
+                authenticationObject.setUserpassword("admin");
+                authenticationObject.setEndpoint("https://localhost:9443/client-registration/v0.17/register");
+                authenticationObject.setTokenUrl("https://localhost:8243/token"); //For API-M 3.2.0
+                // authenticationObject.setTokenUrl("https://localhost:9443/oauth2/token"); //For API-M 4.1.0
+                authenticationObject.setPayloadPath("./src/test/payloads/payload.json");
+                authenticationObject.setScopes(Scopes.API_PUBLISH, Scopes.API_CREATE, Scopes.API_VIEW, Scopes.API_IMPORT_EXPORT, Scopes.API_MANAGE, Scopes.SUBSCRIPTION_VIEW, Scopes.SUBSCRIPTION_BLOCK, Scopes.CLIENT_CERTIFICAE_VIEW);
+                authenticationObject.setContentType(ContentTypes.APPLICATION_JSON);
+                authenticationObject.setGrantType(GrantTypes.PASSSWORD);
 
-        Authentication authentication = new Authentication(authenticationObject);
-        accessToken = authentication.getAccessToken();
+                Authentication authentication = new Authentication(authenticationObject);
+                accessToken = authentication.getAccessToken();
 
-        //API
-        PublisherApis api = new PublisherApis(accessToken, ApimVersions.APIM_3_2);
+                //API
+                PublisherApis api = new PublisherApis(accessToken, ApimVersions.APIM_3_2);
 
-        Response createApiRes = api.createApi(ContentTypes.APPLICATION_JSON, "apicretion_payload.json");
-        logger.info("Status Code [CREATE API]: "+createApiRes.statusCode());
+                Response createApiRes = api.createApi(ContentTypes.APPLICATION_JSON, "apicretion_payload.json");
+                logger.info("Status Code [CREATE API]: "+createApiRes.statusCode());
 
-        Response searchApiRes = api.searchApis();
-        logger.info("Status Code [SEARCH API]: "+searchApiRes.statusCode());
-        
-        String apiId = searchApiRes.jsonPath().get("list[0]['id']");
-        // logger.info("[SEARCHED API ID]: "+apiId);
+                Response searchApiRes = api.searchApis();
+                logger.info("Status Code [SEARCH API]: "+searchApiRes.statusCode());
+                
+                String apiId = searchApiRes.jsonPath().get("list[0]['id']");
+                // logger.info("[SEARCHED API ID]: "+apiId);
 
-        Response uploadApiThumbnailRes = api.uploadThumbnailImage("thumbnail.jpg", apiId);
-        logger.info("Status Code [UPLOAD API THUMBNAIL]: "+uploadApiThumbnailRes.statusCode());
+                Response uploadApiThumbnailRes = api.uploadThumbnailImage("thumbnail.jpg", apiId);
+                logger.info("Status Code [UPLOAD API THUMBNAIL]: "+uploadApiThumbnailRes.statusCode());
 
-        Response changeApiStatusRes = api.changeApiStatus(apiId, "Publish");
-        logger.info("Status Code [CHANGE API STATUS]: "+changeApiStatusRes.statusCode());
+                Response changeApiStatusRes = api.changeApiStatus(apiId, "Publish");
+                logger.info("Status Code [CHANGE API STATUS]: "+changeApiStatusRes.statusCode());
 
-        //API Product 
-        PublisherApiProducts apiProd = new PublisherApiProducts(accessToken,ApimVersions.APIM_3_2);
+                Response searchUploadedClientCertificateRes = api.searchUploadedClientCertificate(apiId);
+                logger.info("Status Code [SEARCH UPLOADED CLIENT CERTIFICATE]: "+searchUploadedClientCertificateRes.statusCode());
 
-        Response searchApiProductRes = apiProd.searchApiProduct();
-        logger.info("Status Code [SEARCH API PRODUCT]: "+searchApiProductRes.statusCode());
-        String apiProductId = searchApiProductRes.jsonPath().get("list[0]['id']");
+                //API Product 
+                PublisherApiProducts apiProd = new PublisherApiProducts(accessToken,ApimVersions.APIM_3_2);
 
-        Response createApiProductRes = apiProd.createApiProduct(ContentTypes.APPLICATION_JSON, "apiproduct_creation_3_2.json");
-        logger.info("Status Code [CREATE API PRODUCT]: "+createApiProductRes.statusCode());
+                Response searchApiProductRes = apiProd.searchApiProduct();
+                logger.info("Status Code [SEARCH API PRODUCT]: "+searchApiProductRes.statusCode());
+                String apiProductId = searchApiProductRes.jsonPath().get("list[0]['id']");
 
-        Response updateApiProductRes = apiProd.updateApiProduct(apiProductId, ContentTypes.APPLICATION_JSON, "updateApiProductPayload_3_2.json");
-        logger.info("Status Code [UPDATE API PRODUCT]: "+updateApiProductRes.statusCode());
+                Response createApiProductRes = apiProd.createApiProduct(ContentTypes.APPLICATION_JSON, "apiproduct_creation_3_2.json");
+                logger.info("Status Code [CREATE API PRODUCT]: "+createApiProductRes.statusCode());
 
-        Response uploadProductThumbnailRes = apiProd.uploadProductThumbnail("thumbnail.jpg", apiProductId);
-        logger.info("Status Code [UPDATE API PRODUCT THUMBNAIL]: "+uploadProductThumbnailRes.statusCode());
+                Response updateApiProductRes = apiProd.updateApiProduct(apiProductId, ContentTypes.APPLICATION_JSON, "updateApiProductPayload_3_2.json");
+                logger.info("Status Code [UPDATE API PRODUCT]: "+updateApiProductRes.statusCode());
 
-        Response deletePendingLifecycleStateChangeTasksRes = api.deletePendingLifecycleStateChangeTasks(apiId);
-        logger.info("Status Code [DELETE API PRODUCT LIFECYCLE]: "+deletePendingLifecycleStateChangeTasksRes.statusCode());
+                Response uploadProductThumbnailRes = apiProd.uploadProductThumbnail("thumbnail.jpg", apiProductId);
+                logger.info("Status Code [UPDATE API PRODUCT THUMBNAIL]: "+uploadProductThumbnailRes.statusCode());
+
+                Response deletePendingLifecycleStateChangeTasksRes = api.deletePendingLifecycleStateChangeTasks(apiId);
+                logger.info("Status Code [DELETE API PRODUCT LIFECYCLE]: "+deletePendingLifecycleStateChangeTasksRes.statusCode());
 }
 
         @Test

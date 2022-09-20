@@ -428,5 +428,18 @@ public class PublisherApis {
 
         return deletePendingLifecycleStateChangeTasksResponse;
     }
-    
+
+    //Client Certificate 
+    public Response searchUploadedClientCertificate(String apiId){
+        Response searchUploadedClientCertificateResponse  = RestAssured.given()
+        .relaxedHTTPSValidation()
+        .auth()
+        .oauth2(accessToken)
+        .contentType(ContentTypes.APPLICATION_JSON)
+        .get(endPoint+publisherApisString+"/"+apiId+"/client-certificates?alias=wso2carbon");
+
+        return searchUploadedClientCertificateResponse;
+    }
+
+
 }
