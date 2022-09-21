@@ -16,6 +16,7 @@ import restapi.publisher.PublisherDeployements;
 import restapi.publisher.PublisherGlobalMediationPolicies;
 import restapi.publisher.PublisherKeyManager;
 import restapi.publisher.PublisherScopes;
+import restapi.publisher.PublisherSettings;
 import restapi.publisher.PublisherSubscriptions;
 import restapi.publisher.ThrottlingPolicies;
 
@@ -33,7 +34,7 @@ public class TestClasses {
                 authenticationObject.setTokenUrl("https://localhost:8243/token"); //For API-M 3.2.0
                 // authenticationObject.setTokenUrl("https://localhost:9443/oauth2/token"); //For API-M 4.1.0
                 authenticationObject.setPayloadPath("./src/test/payloads/payload.json");
-                authenticationObject.setScopes(Scopes.API_PUBLISH, Scopes.API_CREATE, Scopes.API_VIEW, Scopes.API_IMPORT_EXPORT, Scopes.API_MANAGE, Scopes.SUBSCRIPTION_VIEW, Scopes.SUBSCRIPTION_BLOCK, Scopes.CLIENT_CERTIFICAE_VIEW, Scopes.SHARED_SCOPE_MANAGE);
+                authenticationObject.setScopes(Scopes.API_PUBLISH, Scopes.API_CREATE, Scopes.API_VIEW, Scopes.API_IMPORT_EXPORT, Scopes.API_MANAGE, Scopes.SUBSCRIPTION_VIEW, Scopes.SUBSCRIPTION_BLOCK, Scopes.CLIENT_CERTIFICAE_VIEW, Scopes.SHARED_SCOPE_MANAGE, Scopes.PUBLISHER_SETTINGS);
                 authenticationObject.setContentType(ContentTypes.APPLICATION_JSON);
                 authenticationObject.setGrantType(GrantTypes.PASSSWORD);
 
@@ -123,6 +124,15 @@ public class TestClasses {
 
                 Response pKeyManagerRes = pKeyManager.getAllKeyManagers();
                 logger.info("Status Code [GET ALL KEY MANAGERS]: " + pKeyManagerRes.statusCode());
+
+                //Settings
+                PublisherSettings pSettings = new PublisherSettings(accessToken, ApimVersions.APIM_3_2);
+                
+                Response getPublisherSettingsRes = pSettings.getPublisherSetting();
+                logger.info("Status Code [GET PUBLISHER SETTING]: " + getPublisherSettingsRes.statusCode()); 
+
+                Response getAllGatewayEnviromentsRes = pSettings.getPublisherSetting();
+                logger.info("Status Code [GET ALL GATEWAY ENVIRONMENTS]: " + getAllGatewayEnviromentsRes.statusCode()); 
 
                 logger.info("Data creation has been done-------------------------");
 

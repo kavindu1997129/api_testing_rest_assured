@@ -12,6 +12,7 @@ public abstract class Scopes {
     public static final String SUBSCRIPTION_BLOCK = "apim:subscription_block";
     public static final String CLIENT_CERTIFICAE_VIEW = "apim:client_certificates_view";
     public static final String SHARED_SCOPE_MANAGE = "apim:shared_scope_manage";
+    public static final String PUBLISHER_SETTINGS = "apim:publisher_settings";
 
     //"apim:api_publish apim:api_admin apim:api_import_export apim:api_view apim:api_create apim:api_product_import_export apim:api_product_create"
 
