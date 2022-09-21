@@ -18,6 +18,7 @@ import restapi.publisher.PublisherKeyManager;
 import restapi.publisher.PublisherScopes;
 import restapi.publisher.PublisherSettings;
 import restapi.publisher.PublisherSubscriptions;
+import restapi.publisher.PublisherTenants;
 import restapi.publisher.ThrottlingPolicies;
 
 public class TestClasses {
@@ -133,6 +134,13 @@ public class TestClasses {
 
                 Response getAllGatewayEnviromentsRes = pSettings.getPublisherSetting();
                 logger.info("Status Code [GET ALL GATEWAY ENVIRONMENTS]: " + getAllGatewayEnviromentsRes.statusCode()); 
+
+                //Tenants
+                PublisherTenants pTenants = new PublisherTenants(accessToken, ApimVersions.APIM_3_2);
+
+                Response getTenantsByStateRes = pTenants.getTenantsByState("active");
+                logger.info("Status Code [GET TENANTS]: " + getTenantsByStateRes.jsonPath().prettify()); 
+
 
                 logger.info("Data creation has been done-------------------------");
 
