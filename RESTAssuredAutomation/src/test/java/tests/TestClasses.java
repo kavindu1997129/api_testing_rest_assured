@@ -12,7 +12,9 @@ import restapi.GrantTypes;
 import restapi.Scopes;
 import restapi.publisher.PublisherApiProducts;
 import restapi.publisher.PublisherApis;
+import restapi.publisher.PublisherDeployements;
 import restapi.publisher.PublisherGlobalMediationPolicies;
+import restapi.publisher.PublisherKeyManager;
 import restapi.publisher.PublisherScopes;
 import restapi.publisher.PublisherSubscriptions;
 import restapi.publisher.ThrottlingPolicies;
@@ -61,6 +63,9 @@ public class TestClasses {
 
                 Response getCertficateInformationRes = api.getCertficateInformation(apiId);
                 logger.info("Status Code [GET CERTIFICATE INFORMATION]: "+getCertficateInformationRes.statusCode());
+
+                Response getDeploymentStatusRes = api.getDeploymentStatus(apiId);
+                logger.info("Status Code [GET DEPLOYMENT STATUS]: "+getDeploymentStatusRes.statusCode());
                 
                 //API Product 
                 PublisherApiProducts apiProd = new PublisherApiProducts(accessToken,ApimVersions.APIM_3_2);
@@ -106,6 +111,18 @@ public class TestClasses {
 
                 Response getUsageRes = pScopes.getUsageOfSharedScope(scopeId);
                 logger.info("Status Code [GET USAGE OF SHARED SCOPES]: " + getUsageRes.statusCode());
+
+                //Deployments 
+                PublisherDeployements pDeployement = new PublisherDeployements(accessToken, ApimVersions.APIM_3_2);
+
+                Response getDeploymentEnvironmentDetailsRes = pDeployement.getDeploymentEnvironmentDetails();
+                logger.info("Status Code [GET DEPLOYMENTS ENVIROMENT DETAILS]: " + getDeploymentEnvironmentDetailsRes.statusCode());
+
+                //Key Manager
+                PublisherKeyManager pKeyManager = new PublisherKeyManager(accessToken, ApimVersions.APIM_3_2);
+
+                Response pKeyManagerRes = pKeyManager.getAllKeyManagers();
+                logger.info("Status Code [GET ALL KEY MANAGERS]: " + pKeyManagerRes.statusCode());
 
                 logger.info("Data creation has been done-------------------------");
 

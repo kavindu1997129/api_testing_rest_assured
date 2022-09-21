@@ -464,6 +464,19 @@ public class PublisherApis {
 
         return getCertficateInformationRes;
     }
+    
+    //Deployments
+    public Response getDeploymentStatus(String apiId){
+        Response getDeploymentStatusRes  = RestAssured.given()
+        .relaxedHTTPSValidation()
+        .auth()
+        .oauth2(accessToken)
+        .contentType(ContentTypes.APPLICATION_JSON)
+        .get(endPoint+publisherApisString+"/"+apiId+"/deployments");
+
+        return getDeploymentStatusRes;
+    }
+
 
 
 
