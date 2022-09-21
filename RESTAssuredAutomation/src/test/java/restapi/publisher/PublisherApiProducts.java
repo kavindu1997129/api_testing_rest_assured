@@ -7,7 +7,6 @@ import java.nio.file.Paths;
 import java.util.Properties;
 
 import io.restassured.RestAssured;
-import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import restapi.ApimVersions;
 import restapi.ContentTypes;

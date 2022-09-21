@@ -133,14 +133,14 @@ public class PublisherAlerts {
 
     public Response deleteAbnormalRequests(String alertType, String configurationId){
 
-        Response addAbnormalRequestsResponse  = RestAssured.given()
+        Response deleteAbnormalRequestsResponse  = RestAssured.given()
         .relaxedHTTPSValidation()
         .auth()
         .oauth2(accessToken)
         .contentType(ContentTypes.APPLICATION_JSON)
         .delete(endPoint+"/alerts/"+alertType+"/configurations/"+configurationId);
 
-        return addAbnormalRequestsResponse;
+        return deleteAbnormalRequestsResponse;
     }
    
 }

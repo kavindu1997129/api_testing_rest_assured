@@ -15,6 +15,7 @@ import restapi.publisher.PublisherApis;
 import restapi.publisher.PublisherDeployements;
 import restapi.publisher.PublisherGlobalMediationPolicies;
 import restapi.publisher.PublisherKeyManager;
+import restapi.publisher.PublisherLabels;
 import restapi.publisher.PublisherScopes;
 import restapi.publisher.PublisherSettings;
 import restapi.publisher.PublisherSubscriptions;
@@ -139,7 +140,13 @@ public class TestClasses {
                 PublisherTenants pTenants = new PublisherTenants(accessToken, ApimVersions.APIM_3_2);
 
                 Response getTenantsByStateRes = pTenants.getTenantsByState("active");
-                logger.info("Status Code [GET TENANTS]: " + getTenantsByStateRes.jsonPath().prettify()); 
+                logger.info("Status Code [GET TENANTS]: " + getTenantsByStateRes.statusCode()); 
+
+                //Labels
+                PublisherLabels pLabels = new PublisherLabels(accessToken, ApimVersions.APIM_3_2);
+
+                Response getAllLabels = pLabels.getAllRegisteredLabels();
+                logger.info("Status Code [GET ALL LABELS]: " + getAllLabels.statusCode()); 
 
 
                 logger.info("Data creation has been done-------------------------");
