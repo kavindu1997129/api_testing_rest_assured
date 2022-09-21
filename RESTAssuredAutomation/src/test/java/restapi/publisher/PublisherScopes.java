@@ -67,6 +67,7 @@ public class PublisherScopes {
 
         } catch (Exception e) {
             
+
         }
 
         Response getAllSharedScopesResponse = RestAssured.given()
@@ -138,8 +139,6 @@ public class PublisherScopes {
         return checkGivenScopeAlreadyAvailableResponse;
     }
 
-
-
     public Response getUsageOfSharedScope(String scopeId){
 
         Response getUsageOfSharedScopeResponse = RestAssured.given()
@@ -150,8 +149,6 @@ public class PublisherScopes {
 
         return getUsageOfSharedScopeResponse;
     }
-
-
     
     
 }
