@@ -441,5 +441,30 @@ public class PublisherApis {
         return searchUploadedClientCertificateResponse;
     }
 
+            //Upload and udate certificate to be implemented
+
+    public Response deleteCertficate(String apiId){
+        Response deleteCertficateRes  = RestAssured.given()
+        .relaxedHTTPSValidation()
+        .auth()
+        .oauth2(accessToken)
+        .contentType(ContentTypes.APPLICATION_JSON)
+        .delete(endPoint+publisherApisString+"/"+apiId+"/client-certificates/wso2carbon");
+
+        return deleteCertficateRes;
+    }
+
+    public Response getCertficateInformation(String apiId){
+        Response getCertficateInformationRes  = RestAssured.given()
+        .relaxedHTTPSValidation()
+        .auth()
+        .oauth2(accessToken)
+        .contentType(ContentTypes.APPLICATION_JSON)
+        .delete(endPoint+publisherApisString+"/"+apiId+"/client-certificates/wso2carbon");
+
+        return getCertficateInformationRes;
+    }
+
+
 
 }

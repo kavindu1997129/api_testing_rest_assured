@@ -13,6 +13,7 @@ import restapi.Scopes;
 import restapi.publisher.PublisherApiProducts;
 import restapi.publisher.PublisherApis;
 import restapi.publisher.PublisherGlobalMediationPolicies;
+import restapi.publisher.PublisherScopes;
 import restapi.publisher.PublisherSubscriptions;
 import restapi.publisher.ThrottlingPolicies;
 
@@ -30,7 +31,7 @@ public class TestClasses {
                 authenticationObject.setTokenUrl("https://localhost:8243/token"); //For API-M 3.2.0
                 // authenticationObject.setTokenUrl("https://localhost:9443/oauth2/token"); //For API-M 4.1.0
                 authenticationObject.setPayloadPath("./src/test/payloads/payload.json");
-                authenticationObject.setScopes(Scopes.API_PUBLISH, Scopes.API_CREATE, Scopes.API_VIEW, Scopes.API_IMPORT_EXPORT, Scopes.API_MANAGE, Scopes.SUBSCRIPTION_VIEW, Scopes.SUBSCRIPTION_BLOCK, Scopes.CLIENT_CERTIFICAE_VIEW);
+                authenticationObject.setScopes(Scopes.API_PUBLISH, Scopes.API_CREATE, Scopes.API_VIEW, Scopes.API_IMPORT_EXPORT, Scopes.API_MANAGE, Scopes.SUBSCRIPTION_VIEW, Scopes.SUBSCRIPTION_BLOCK, Scopes.CLIENT_CERTIFICAE_VIEW, Scopes.SHARED_SCOPE_MANAGE);
                 authenticationObject.setContentType(ContentTypes.APPLICATION_JSON);
                 authenticationObject.setGrantType(GrantTypes.PASSSWORD);
 
@@ -47,7 +48,7 @@ public class TestClasses {
                 logger.info("Status Code [SEARCH API]: "+searchApiRes.statusCode());
                 
                 String apiId = searchApiRes.jsonPath().get("list[0]['id']");
-                // logger.info("[SEARCHED API ID]: "+apiId);
+                logger.info("[SEARCHED API ID]: "+apiId);
 
                 Response uploadApiThumbnailRes = api.uploadThumbnailImage("thumbnail.jpg", apiId);
                 logger.info("Status Code [UPLOAD API THUMBNAIL]: "+uploadApiThumbnailRes.statusCode());
@@ -58,6 +59,9 @@ public class TestClasses {
                 Response searchUploadedClientCertificateRes = api.searchUploadedClientCertificate(apiId);
                 logger.info("Status Code [SEARCH UPLOADED CLIENT CERTIFICATE]: "+searchUploadedClientCertificateRes.statusCode());
 
+                Response getCertficateInformationRes = api.getCertficateInformation(apiId);
+                logger.info("Status Code [GET CERTIFICATE INFORMATION]: "+getCertficateInformationRes.statusCode());
+                
                 //API Product 
                 PublisherApiProducts apiProd = new PublisherApiProducts(accessToken,ApimVersions.APIM_3_2);
 
@@ -76,6 +80,35 @@ public class TestClasses {
 
                 Response deletePendingLifecycleStateChangeTasksRes = api.deletePendingLifecycleStateChangeTasks(apiId);
                 logger.info("Status Code [DELETE API PRODUCT LIFECYCLE]: "+deletePendingLifecycleStateChangeTasksRes.statusCode());
+
+                //Scopes
+                PublisherScopes pScopes = new PublisherScopes(accessToken, ApimVersions.APIM_3_2);
+
+                Response getSharedScopesrRes = pScopes.getAllSharedScopes();
+                logger.info("Status Code [GET ALL SHARED SCOPES]: "+getSharedScopesrRes.statusCode());
+
+                String scopeId = getSharedScopesrRes.jsonPath().get("list[0]['id']");
+
+                Response addNewSharedScopesrRes = pScopes.addNewSharedScopes("addNewSharedScopes.json");
+                logger.info("Status Code [ADD NEW SHARED SCOPES]: " + addNewSharedScopesrRes.statusCode());
+
+                Response getSharedScopeByIdRes = pScopes.getSharedScopeById(scopeId);
+                logger.info("Status Code [ADD NEW SHARED SCOPES]: " + getSharedScopeByIdRes.statusCode());
+
+                Response updateSharedScopeRes = pScopes.updateSharedScope(scopeId,"uploadSharedScope.json");
+                logger.info("Status Code [UPDATE SHARED SCOPES]: " + updateSharedScopeRes.statusCode());
+
+                // Response deleteSharedScopeRes = pScopes.deleteSharedScope(scopeId);
+                // logger.info("Status Code [DELETE SHARED SCOPES]: " + deleteSharedScopeRes.statusCode());
+
+                // Response checkGivenScopeAlreadyAvailableRes = pScopes.checkGivenScopeAlreadyAvailable(scopeId);
+                // logger.info("Status Code [DELETE SHARED SCOPES]: " + checkGivenScopeAlreadyAvailableRes.statusCode());
+
+                Response getUsageRes = pScopes.getUsageOfSharedScope(scopeId);
+                logger.info("Status Code [GET USAGE OF SHARED SCOPES]: " + getUsageRes.statusCode());
+
+                logger.info("Data creation has been done-------------------------");
+
 }
 
         @Test
