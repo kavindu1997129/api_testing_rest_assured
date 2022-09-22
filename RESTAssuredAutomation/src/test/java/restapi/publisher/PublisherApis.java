@@ -7,7 +7,6 @@ import java.nio.file.Paths;
 import java.util.Properties;
 
 import io.restassured.RestAssured;
-import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import restapi.ApimVersions;
 import restapi.ContentTypes;
@@ -338,7 +337,6 @@ public class PublisherApis {
     //-----------------------------------------------------------------------------------------------------------------
 
     public Response getResourcePolicyDefinitions(String apiId){
-        // OAuth2Security (apim:api_view)
         Response getResourcePolicyDefinitionsRes = RestAssured.given()
         .relaxedHTTPSValidation()
         .auth()
@@ -384,7 +382,7 @@ public class PublisherApis {
 
     //-----------------------------------------------------------------------------------------------------------------
 
-    //API Lifecycle relaated methods
+    //API Lifecycle related methods
     public Response changeApiStatus(String apiId, String action){
         Response changeApiStatusResponse  = RestAssured.given()
         .relaxedHTTPSValidation()
