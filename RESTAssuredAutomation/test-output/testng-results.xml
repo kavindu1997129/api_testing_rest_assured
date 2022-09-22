@@ -1,21 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-09-22T11:34:36 IST" name="Default suite" finished-at="2022-09-22T11:34:54 IST" duration-ms="17708">
+  <suite started-at="2022-09-22T16:12:24 IST" name="CreateData" finished-at="2022-09-22T16:12:28 IST" duration-ms="4215">
     <groups>
     </groups>
-    <test started-at="2022-09-22T11:34:36 IST" name="Default test" finished-at="2022-09-22T11:34:54 IST" duration-ms="17708">
-      <class name="tests.TestClasses">
-        <test-method signature="dataGeneration()[pri:0, instance:tests.TestClasses@1eb6749b]" started-at="2022-09-22T11:34:36 IST" name="dataGeneration" finished-at="2022-09-22T11:34:52 IST" duration-ms="15775" status="PASS">
+    <test started-at="2022-09-22T16:12:24 IST" name="CreateAPIs" finished-at="2022-09-22T16:12:28 IST" duration-ms="4215">
+      <class name="tests.CreateAPIs">
+        <test-method is-config="true" signature="initTest(java.lang.String,int)[pri:0, instance:tests.CreateAPIs@52af26ee]" started-at="2022-09-22T16:12:24 IST" name="initTest" finished-at="2022-09-22T16:12:26 IST" duration-ms="2204" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://localhost:9443/]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[5]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initTest -->
+        <test-method signature="dataGeneration()[pri:0, instance:tests.CreateAPIs@52af26ee]" started-at="2022-09-22T16:12:26 IST" name="dataGeneration" finished-at="2022-09-22T16:12:28 IST" duration-ms="1973" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- dataGeneration -->
-        <test-method signature="validateDataAPIM_3_2()[pri:0, instance:tests.TestClasses@1eb6749b]" started-at="2022-09-22T11:34:52 IST" name="validateDataAPIM_3_2" finished-at="2022-09-22T11:34:54 IST" duration-ms="1889" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateDataAPIM_3_2 -->
-      </class> <!-- tests.TestClasses -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- tests.CreateAPIs -->
+    </test> <!-- CreateAPIs -->
+  </suite> <!-- CreateData -->
 </testng-results>

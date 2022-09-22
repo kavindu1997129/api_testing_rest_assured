@@ -1,14 +1,18 @@
 package tests;
 
+import java.io.FileReader;
 import java.net.URISyntaxException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 
+import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import ataf.actions.BaseTest;
+import groovyjarjarantlr4.runtime.Parser;
 import io.restassured.RestAssured;
 import restapi.Authentication;
 import restapi.AuthenticationObject;
@@ -54,7 +58,7 @@ public class CreateAPIs extends BaseTest{
 	                .oauth2(accessToken)
 	                .body(getPayload(i))
 	                .contentType("application/json")
-	                .post("https://localhost:9443/api/am/publisher/v3/apis");
+	                .post("https://localhost:9443/api/am/publisher/v1/apis");
 	        
 	        JsonPath jsonPathEvaluator = createApiResponse.jsonPath();
 			String apiID = jsonPathEvaluator.get("id");
@@ -72,196 +76,18 @@ public class CreateAPIs extends BaseTest{
   String payload="";
 
   try {
+	  JSONParser parser = new JSONParser();
+	  Object obj = parser.parse(new FileReader("./src/test/payloads/apicretion_payload.json"));
+      JSONObject jsonObject = (JSONObject) obj;
+      jsonObject.put("name","PizzaShackAPI_"+String.valueOf(apiIndex));
+      jsonObject.put("context", "pizza_"+String.valueOf(apiIndex));
       payloadJson1 = Files.readAllBytes(Paths.get("./src/test/payloads/apicretion_payload.json"));
-      payload = new String(payloadJson1);
+      payload = jsonObject.toString();
   } catch (Exception e) {
+	  
   }
 
-// 	  String payload = """"
-// 	  		{
-//   "name": "PizzaShackAPI_%s",
-//   "description": "This is a simple API for Pizza Shack online pizza delivery store.",
-//   "context": "pizza_%s",
-//   "version": "1.0.0",
-//   "provider": "admin",
-//   "lifeCycleStatus": "CREATED",
-//   "wsdlInfo": {
-//     "type": "WSDL"
-//   },
-//   "responseCachingEnabled": true,
-//   "cacheTimeout": 300,
-//   "hasThumbnail": false,
-//   "isDefaultVersion": false,
-//   "isRevision": false,
-//   "revisionId": 1,
-//   "enableSchemaValidation": false,
-//   "type": "HTTP",
-//   "audience": "PUBLIC",
-//   "transport": [
-//     "http",
-//     "https"
-//   ],
-//   "tags": [
-//     "pizza",
-//     "food"
-//   ],
-//   "policies": [
-//     "Unlimited"
-//   ],
-//   "apiThrottlingPolicy": "Unlimited",
-//   "authorizationHeader": "Authorization",
-//   "securityScheme": [
-//     "oauth2"
-//   ],
-//   "maxTps": {
-//     "production": 1000,
-//     "sandbox": 1000
-//   },
-//   "visibility": "PUBLIC",
-//   "visibleRoles": [],
-//   "visibleTenants": [],
-//   "mediationPolicies": [
-//     {
-//       "name": "json_to_xml_in_message",
-//       "type": "in"
-//     },
-//     {
-//       "name": "xml_to_json_out_message",
-//       "type": "out"
-//     },
-//     {
-//       "name": "json_fault",
-//       "type": "fault"
-//     }
-//   ],
-//   "subscriptionAvailability": "CURRENT_TENANT",
-//   "subscriptionAvailableTenants": [],
-//   "additionalProperties": [
-//     {
-//       "name": "string",
-//       "value": "string",
-//       "display": true
-//     }
-//   ],
-//   "additionalPropertiesMap": {
-//     "property1": {
-//       "name": "string",
-//       "value": "string",
-//       "display": false
-//     },
-//     "property2": {
-//       "name": "string",
-//       "value": "string",
-//       "display": false
-//     }
-//   },
-//   "monetization": {
-//     "enabled": true,
-//     "properties": {
-//       "property1": "string",
-//       "property2": "string"
-//     }
-//   },
-//   "accessControl": "NONE",
-//   "accessControlRoles": [],
-//   "businessInformation": {
-//     "businessOwner": "businessowner",
-//     "businessOwnerEmail": "businessowner@wso2.com",
-//     "technicalOwner": "technicalowner",
-//     "technicalOwnerEmail": "technicalowner@wso2.com"
-//   },
-//   "corsConfiguration": {
-//     "corsConfigurationEnabled": false,
-//     "accessControlAllowOrigins": [
-//       "string"
-//     ],
-//     "accessControlAllowCredentials": false,
-//     "accessControlAllowHeaders": [
-//       "string"
-//     ],
-//     "accessControlAllowMethods": [
-//       "string"
-//     ]
-//   },
-//   "websubSubscriptionConfiguration": {
-//     "enable": false,
-//     "secret": "string",
-//     "signingAlgorithm": "string",
-//     "signatureHeader": "string"
-//   },
-//   "workflowStatus": "APPROVED",
-//   "createdTime": "string",
-//   "lastUpdatedTime": "string",
-//   "endpointConfig": {
-//     "endpoint_type": "http",
-//     "sandbox_endpoints": {
-//       "url": "https://localhost:9443/am/sample/pizzashack/v3/api/"
-//     },
-//     "production_endpoints": {
-//       "url": "https://localhost:9443/am/sample/pizzashack/v3/api/"
-//     }
-//   },
-//   "endpointImplementationType": "INLINE",
-//   "scopes": [
-//     {
-//       "scope": {
-//         "name": "apim:api_view",
-//         "displayName": "api_view",
-//         "description": "This Scope can used to view Apis",
-//         "bindings": [
-//           "admin",
-//           "Internal/creator",
-//           "Internal/publisher"
-//         ]
-//       },
-//       "shared": true
-//     }
-//   ],
-//   "operations": [
-//     {
-//       "target": "/order/{orderId}",
-//       "verb": "POST",
-//       "authType": "Application & Application User",
-//       "throttlingPolicy": "Unlimited"
-//     },
-//     {
-//       "target": "/menu",
-//       "verb": "GET",
-//       "authType": "Application & Application User",
-//       "throttlingPolicy": "Unlimited"
-//     }
-//   ],
-//   "threatProtectionPolicies": {
-//     "list": [
-//       {
-//         "policyId": "string",
-//         "priority": 0
-//       }
-//     ]
-//   },
-//   "categories": [],
-//   "serviceInfo": {
-//     "key": "PetStore-1.0.0",
-//     "name": "PetStore",
-//     "version": "1.0.0",
-//     "outdated": false
-//   },
-//   "advertiseInfo": {
-//     "advertised": true,
-//     "apiExternalProductionEndpoint": "https://localhost:9443/devportal",
-//     "apiExternalSandboxEndpoint": "https://localhost:9443/devportal",
-//     "originalDevPortalUrl": "https://localhost:9443/devportal",
-//     "apiOwner": "admin",
-//     "vendor": "WSO2"
-//   },
-//   "gatewayVendor": "wso2",
-//   "gatewayType": "wso2/synapse",
-//   "asyncTransportProtocols": [
-//     "http",
-//     "https"
-//   ]
-// }
-//  """;
+
 	  
 	  return String.format(payload, apiIndex,apiIndex);
 	  
