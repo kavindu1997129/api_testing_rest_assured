@@ -14,18 +14,24 @@ import org.testng.annotations.Test;
 import ataf.actions.BaseTest;
 import groovyjarjarantlr4.runtime.Parser;
 import io.restassured.RestAssured;
+import restapi.ApimVersions;
 import restapi.Authentication;
 import restapi.AuthenticationObject;
 import restapi.ContentTypes;
 import restapi.GrantTypes;
 import restapi.Scopes;
+import restapi.publisher.PublisherApis;
 import io.restassured.response.Response;
 import io.restassured.path.json.JsonPath;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 public class CreateAPIs extends BaseTest{
 	String accessToken;
 	int apiCount;
+	
+	private static Logger logger = LogManager.getLogger(TestClasses.class);
 	
 	@BeforeTest
 	@Parameters({"baseURL","apiCount"})	
@@ -43,7 +49,6 @@ public class CreateAPIs extends BaseTest{
         
         Authentication authentication = new Authentication(authenticationObject);
         accessToken = authentication.getAccessToken();
-        System.out.println(accessToken);
         
         this.apiCount = apiCount;
 	}
@@ -52,33 +57,29 @@ public class CreateAPIs extends BaseTest{
 	public void dataGeneration() {
 		System.out.println(this.apiCount);
 		for(int i=1 ; i<=apiCount ; i++) {
-	        Response createApiResponse  = RestAssured.given()
-	                .relaxedHTTPSValidation()
-	                .auth()
-	                .oauth2(accessToken)
-	                .body(getPayload(i))
-	                .contentType("application/json")
-	                .post("https://localhost:9443/api/am/publisher/v1/apis");
-	        
+			PublisherApis  pApi = new PublisherApis(accessToken, ApimVersions.APIM_3_2);
+			Response createApiResponse  = pApi.createApiParseJSON(getPayload(i));
 	        JsonPath jsonPathEvaluator = createApiResponse.jsonPath();
 			String apiID = jsonPathEvaluator.get("id");
-	        System.out.println("API " + i + " : "+ createApiResponse.statusCode() + " | " + apiID);
-	        //System.out.println(createApiResponse.body().prettyPrint());
+//	        System.out.println("API " + i + " : "+ createApiResponse.statusCode() + " | " + apiID);
+	        
+	        logger.info("[API " +i+ " CREATED]: API ID ==>> "+apiID);
+	        logger.info("Status Code [CREATE API " +i+ "]: "+createApiResponse.statusCode());
 		}
-
 	}
 	
 	
-  static String getPayload(int apiIndex) {
+  static JSONObject getPayload(int apiIndex) {
 
   byte[] payloadJson1;
   String payloadString1;
   String payload="";
+  JSONObject jsonObject = new JSONObject();
 
   try {
 	  JSONParser parser = new JSONParser();
 	  Object obj = parser.parse(new FileReader("./src/test/payloads/apicretion_payload.json"));
-      JSONObject jsonObject = (JSONObject) obj;
+      jsonObject = (JSONObject) obj;
       jsonObject.put("name","PizzaShackAPI_"+String.valueOf(apiIndex));
       jsonObject.put("context", "pizza_"+String.valueOf(apiIndex));
       payloadJson1 = Files.readAllBytes(Paths.get("./src/test/payloads/apicretion_payload.json"));
@@ -86,10 +87,7 @@ public class CreateAPIs extends BaseTest{
   } catch (Exception e) {
 	  
   }
-
-
-	  
-	  return String.format(payload, apiIndex,apiIndex);
+	  return jsonObject;
 	  
 	}
 }

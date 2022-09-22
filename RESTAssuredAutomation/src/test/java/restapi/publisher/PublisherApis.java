@@ -6,10 +6,14 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.Properties;
 
+import org.json.simple.JSONObject;
+
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import restapi.ApimVersions;
 import restapi.ContentTypes;
+
+
 
 public class PublisherApis {
 
@@ -99,6 +103,22 @@ public class PublisherApis {
         } catch (Exception e) {
             
         }
+
+        return createApiResponse;
+
+    } 
+    
+    public Response createApiParseJSON(JSONObject json){
+
+        createApiResponse  = RestAssured.given()
+            .relaxedHTTPSValidation()
+            .auth()
+            .oauth2(accessToken)
+            .body(json.toString())
+            .contentType(ContentTypes.APPLICATION_JSON)
+            .post(endPoint+publisherApisString);
+
+        
 
         return createApiResponse;
 

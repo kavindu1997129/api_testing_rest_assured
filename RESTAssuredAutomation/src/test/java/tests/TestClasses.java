@@ -24,7 +24,7 @@ import restapi.publisher.ThrottlingPolicies;
 
 public class TestClasses {
 	String accessToken;
-        private static Logger logger = LogManager.getLogger(TestClasses.class);
+    private static Logger logger = LogManager.getLogger(TestClasses.class);
 
 	@Test
 	public void dataGeneration() {
