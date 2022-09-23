@@ -71,7 +71,7 @@ public class PublisherApis {
         
     }
 
-    //-----------------------------------------------------------------------------------------------------------------
+    //APIs Section-----------------------------------------------------------------------------------------------
 
     public Response searchApis(){
         try {
@@ -103,22 +103,6 @@ public class PublisherApis {
         } catch (Exception e) {
             
         }
-
-        return createApiResponse;
-
-    } 
-    
-    public Response createApiParseJSON(JSONObject json){
-
-        createApiResponse  = RestAssured.given()
-            .relaxedHTTPSValidation()
-            .auth()
-            .oauth2(accessToken)
-            .body(json.toString())
-            .contentType(ContentTypes.APPLICATION_JSON)
-            .post(endPoint+publisherApisString);
-
-        
 
         return createApiResponse;
 
@@ -223,17 +207,6 @@ public class PublisherApis {
         return getGeneratedMockResponsePayloadsResponse;
         
     }
-
-    public Response uploadThumbnailImage(String imagePath,  String apiId){
-        Response uploadThumbnailImageResponse= RestAssured.given()
-				.relaxedHTTPSValidation()
-				.auth()
-				.oauth2(accessToken)
-				.multiPart(new File(resourceParenPath+imagePath))
-				.put(endPoint+publisherApisString+"/"+apiId+"/thumbnail");
-
-        return uploadThumbnailImageResponse;
-    }
     
     public Response getThumbnailImage(String apiId){
         Response getThumbnailImageResponse= RestAssured.given()
@@ -243,6 +216,17 @@ public class PublisherApis {
 				.get(endPoint+publisherApisString+"/"+apiId+"/thumbnail");
 
         return getThumbnailImageResponse;
+    }
+    
+    public Response uploadThumbnailImage(String imagePath,  String apiId){
+        Response uploadThumbnailImageResponse= RestAssured.given()
+				.relaxedHTTPSValidation()
+				.auth()
+				.oauth2(accessToken)
+				.multiPart(new File(resourceParenPath+imagePath))
+				.put(endPoint+publisherApisString+"/"+apiId+"/thumbnail");
+
+        return uploadThumbnailImageResponse;
     }
 
     public Response getSubscriptionThrotlling(String apiId){
@@ -254,17 +238,22 @@ public class PublisherApis {
 
         return getSubscriptionThrotllingResponse;
     }
+    
+    public Response createApiParseJSON(JSONObject json){
 
-    public Response getComplexityRelatedDetailsOfApi(String apiId){
-        Response getComplexityRelatedDetailsOfApiResponse = RestAssured.given()
-        .relaxedHTTPSValidation()
-        .auth()
-        .oauth2(accessToken)
-        .contentType(ContentTypes.APPLICATION_JSON)
-        .get(endPoint+publisherApisString+"/"+apiId+"/graphql-policies/complexity");
+        createApiResponse  = RestAssured.given()
+            .relaxedHTTPSValidation()
+            .auth()
+            .oauth2(accessToken)
+            .body(json.toString())
+            .contentType(ContentTypes.APPLICATION_JSON)
+            .post(endPoint+publisherApisString);
 
-        return getComplexityRelatedDetailsOfApiResponse;
-    }
+        
+
+        return createApiResponse;
+
+    } 
 
     public Response imporOpenAPIDefinition(String apiId, String openApiJsonPath, String dataPath){
 
@@ -352,9 +341,21 @@ public class PublisherApis {
     }
 
     //-----------------------------------------------------------------------------------------------------------------
+    
+    public Response getComplexityRelatedDetailsOfApi(String apiId){
+        Response getComplexityRelatedDetailsOfApiResponse = RestAssured.given()
+        .relaxedHTTPSValidation()
+        .auth()
+        .oauth2(accessToken)
+        .contentType(ContentTypes.APPLICATION_JSON)
+        .get(endPoint+publisherApisString+"/"+apiId+"/graphql-policies/complexity");
+
+        return getComplexityRelatedDetailsOfApiResponse;
+    }
 
 
-    //-----------------------------------------------------------------------------------------------------------------
+
+    //API Resource Policies-----------------------------------------------------------------------------------------------------------------
 
     public Response getResourcePolicyDefinitions(String apiId){
         Response getResourcePolicyDefinitionsRes = RestAssured.given()
@@ -400,9 +401,8 @@ public class PublisherApis {
 
     //-----------------------------------------------------------------------------------------------------------------
 
-    //-----------------------------------------------------------------------------------------------------------------
+    //API Lifecycle Section------------------------------------------------------------------------------------------------
 
-    //API Lifecycle related methods
     public Response changeApiStatus(String apiId, String action){
         Response changeApiStatusResponse  = RestAssured.given()
         .relaxedHTTPSValidation()
@@ -446,8 +446,107 @@ public class PublisherApis {
 
         return deletePendingLifecycleStateChangeTasksResponse;
     }
+    //API Documents Section---------------------------------------------------------------------------------
+    public Response getListOfDocOfApi(String apiId){
+        Response getListOfDocOfApiResponse  = RestAssured.given()
+        .relaxedHTTPSValidation()
+        .auth()
+        .oauth2(accessToken)
+        .contentType(ContentTypes.APPLICATION_JSON)
+        .get(endPoint+publisherApisString+"/"+apiId+"/documents");
 
-    //Client Certificate 
+        return getListOfDocOfApiResponse;
+    }
+    
+    public Response addNewDocToApi(String apiId, String jsonPayloadPath){
+    	
+    	try {
+    		payloadplj1 = Files.readAllBytes(Paths.get(resourceParenPath+jsonPayloadPath));
+    		payloadpls1 = new String(payloadplj1);
+
+        } catch (Exception e) {
+        }
+    	
+        Response addNewDocToApiResponse  = RestAssured.given()
+        .relaxedHTTPSValidation()
+        .auth()
+        .oauth2(accessToken)
+        .contentType(ContentTypes.APPLICATION_JSON)
+        .body(payloadpls1)
+        .post(endPoint+publisherApisString+"/"+apiId+"/documents");
+
+        return addNewDocToApiResponse;
+    }
+    
+    public Response getDocOfApi(String apiId, String documenetId){
+        Response getDocOfApiResponse  = RestAssured.given()
+        .relaxedHTTPSValidation()
+        .auth()
+        .oauth2(accessToken)
+        .contentType(ContentTypes.APPLICATION_JSON)
+        .get(endPoint+publisherApisString+"/"+apiId+"/documents/"+documenetId);
+
+        return getDocOfApiResponse;
+    }
+    
+    public Response updateDocOfApi(String apiId, String documenetId){
+        Response updateDocOfApiResponse  = RestAssured.given()
+        .relaxedHTTPSValidation()
+        .auth()
+        .oauth2(accessToken)
+        .contentType(ContentTypes.APPLICATION_JSON)
+        .put(endPoint+publisherApisString+"/"+apiId+"/documents/"+documenetId);
+
+        return updateDocOfApiResponse;
+    }
+    
+    public Response deleteDocOfApi(String apiId, String documenetId){
+        Response deleteDocOfApiResponse  = RestAssured.given()
+        .relaxedHTTPSValidation()
+        .auth()
+        .oauth2(accessToken)
+        .contentType(ContentTypes.APPLICATION_JSON)
+        .delete(endPoint+publisherApisString+"/"+apiId+"/documents/"+documenetId);
+
+        return deleteDocOfApiResponse;
+    }
+    
+    public Response getContentOfDocOfApi(String apiId, String documenetId){
+        Response getContentOfDocOfApiResponse  = RestAssured.given()
+        .relaxedHTTPSValidation()
+        .auth()
+        .oauth2(accessToken)
+        .contentType(ContentTypes.APPLICATION_JSON)
+        .get(endPoint+publisherApisString+"/"+apiId+"/documents/"+documenetId+"/content");
+
+        return getContentOfDocOfApiResponse;
+    }
+    
+    public Response uploadContentOfDocOfApi(String apiId, String documenetId, String dataPath){
+        Response uploadContentOfDocOfApiResponse  = RestAssured.given()
+        .relaxedHTTPSValidation()
+        .auth()
+        .oauth2(accessToken)
+        .contentType(ContentTypes.APPLICATION_JSON)
+        .multiPart(new File(resourceParenPath+dataPath))
+        .post(endPoint+publisherApisString+"/"+apiId+"/documents/"+documenetId+"/content");
+
+        return uploadContentOfDocOfApiResponse;
+    }
+    
+    public Response checkDocExistsByName(String apiId, String documenetId, String docName){
+        Response checkDocExistsByNameResponse  = RestAssured.given()
+        .relaxedHTTPSValidation()
+        .auth()
+        .oauth2(accessToken)
+        .contentType(ContentTypes.APPLICATION_JSON)
+        .post(endPoint+publisherApisString+"/"+apiId+"/documents/"+documenetId+"/validate?name="+docName);
+
+        return checkDocExistsByNameResponse;
+    }
+    
+
+    //Client Certificate Section---------------------------------------------------------------------------- 
     public Response searchUploadedClientCertificate(String apiId){
         Response searchUploadedClientCertificateResponse  = RestAssured.given()
         .relaxedHTTPSValidation()
@@ -483,19 +582,88 @@ public class PublisherApis {
         return getCertficateInformationRes;
     }
     
-    //Deployments
+    //API mediation Policies Section-----------------------------------------------------------------------
+    public Response getAllMediationPoliciesOfAPI(String apiId){
+        Response getAllMediationPoliciesOfAPIRes  = RestAssured.given()
+        .relaxedHTTPSValidation()
+        .auth() 
+        .oauth2(accessToken)  
+        .contentType(ContentTypes.APPLICATION_JSON)   
+        .get(endPoint+publisherApisString+"/"+apiId+"/mediation-policies");   
+ 
+        return getAllMediationPoliciesOfAPIRes; 
+    }
+    
+    public Response addApiSpecificMediationPolicy(String apiId){
+        Response addApiSpecificMediationPolicyRes  = RestAssured.given()
+        .relaxedHTTPSValidation()
+        .auth() 
+        .oauth2(accessToken)  
+        .contentType(ContentTypes.APPLICATION_JSON)   
+        .post(endPoint+publisherApisString+"/"+apiId+"/mediation-policies");   
+ 
+        return addApiSpecificMediationPolicyRes; 
+    }
+    
+    //API mediation Policy Section--------------------------------------------------------------------------
+    public Response getApiSpecificMediationPolicy(String apiId, String policyId){
+        Response getApiSpecificMediationPolicyRes  = RestAssured.given()
+        .relaxedHTTPSValidation()
+        .auth() 
+        .oauth2(accessToken)  
+        .contentType(ContentTypes.APPLICATION_JSON)   
+        .get(endPoint+publisherApisString+"/"+apiId+"/mediation-policies/"+policyId);   
+ 
+        return getApiSpecificMediationPolicyRes; 
+    }
+    
+    public Response deleteApiSpecificMediationPolicy(String apiId, String policyId){
+        Response deleteApiSpecificMediationPolicyRes  = RestAssured.given()
+        .relaxedHTTPSValidation()
+        .auth() 
+        .oauth2(accessToken)  
+        .contentType(ContentTypes.APPLICATION_JSON)   
+        .delete(endPoint+publisherApisString+"/"+apiId+"/mediation-policies/"+policyId);   
+ 
+        return deleteApiSpecificMediationPolicyRes; 
+    }
+    
+    public Response downloadApiSpecificMediationPolicy(String apiId, String policyId){
+        Response downloadApiSpecificMediationPolicyRes  = RestAssured.given()
+        .relaxedHTTPSValidation()
+        .auth() 
+        .oauth2(accessToken)  
+        .contentType(ContentTypes.APPLICATION_JSON)   
+        .get(endPoint+publisherApisString+"/"+apiId+"/mediation-policies/"+policyId+"/content");   
+ 
+        return downloadApiSpecificMediationPolicyRes; 
+    }
+    
+    public Response updateApiSpecificMediationPolicy(String apiId, String policyId, String tokenExchangeXmlPath, String typeTxtPath){
+        Response downloadApiSpecificMediationPolicyRes  = RestAssured.given()
+        .relaxedHTTPSValidation()
+        .auth() 
+        .oauth2(accessToken)  
+        .multiPart("file", new File(resourceParenPath+tokenExchangeXmlPath))
+        .multiPart("type", new File(resourceParenPath+typeTxtPath))
+        .contentType(ContentTypes.APPLICATION_JSON)   
+        .put(endPoint+publisherApisString+"/"+apiId+"/mediation-policies/"+policyId+"/content");   
+ 
+        return downloadApiSpecificMediationPolicyRes; 
+    }
+    //gjkgjkhgkjhbkhbhn
+    
+    
+    //Deployments Section-----------------------------------------------------------------------------------
     public Response getDeploymentStatus(String apiId){
         Response getDeploymentStatusRes  = RestAssured.given()
         .relaxedHTTPSValidation()
-        .auth()
-        .oauth2(accessToken)
-        .contentType(ContentTypes.APPLICATION_JSON)
-        .get(endPoint+publisherApisString+"/"+apiId+"/deployments");
-
-        return getDeploymentStatusRes;
+        .auth() 
+        .oauth2(accessToken)  
+        .contentType(ContentTypes.APPLICATION_JSON)   
+        .get(endPoint+publisherApisString+"/"+apiId+"/deployments");   
+ 
+        return getDeploymentStatusRes; 
     }
-
-
-
-
+    public void test() {}
 }

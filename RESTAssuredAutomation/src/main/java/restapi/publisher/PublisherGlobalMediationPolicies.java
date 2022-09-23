@@ -19,7 +19,7 @@ public class PublisherGlobalMediationPolicies {
     String resourceParenPath = "./src/test/payloads/";
 
     public PublisherGlobalMediationPolicies(String accessToken, ApimVersions version){
-        this.accessToken = accessToken;
+        this.accessToken = accessToken; 
         this.version = version;
 
         FileInputStream input;
@@ -52,6 +52,17 @@ public class PublisherGlobalMediationPolicies {
             .get(endPoint+publisherApisString);
 
         return getGlobalMediationPoliciesRes;
+    }
+    
+    public Response downloadGlobalMediationPolicies(){
+        Response downloadGlobalMediationPoliciesRes = RestAssured.given()
+            .relaxedHTTPSValidation()
+            .auth()
+            .oauth2(accessToken)
+            .contentType(ContentTypes.APPLICATION_JSON)
+            .get(endPoint+publisherApisString);
+
+        return downloadGlobalMediationPoliciesRes;
     }
     
 }

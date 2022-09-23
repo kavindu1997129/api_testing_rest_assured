@@ -17,7 +17,7 @@ public class PublisherAlerts {
     ApimVersions version;
 
     String publisherAlertsString = "/settings";
-
+ 
     byte[] payloadJson1;
     String payloadString1;
 

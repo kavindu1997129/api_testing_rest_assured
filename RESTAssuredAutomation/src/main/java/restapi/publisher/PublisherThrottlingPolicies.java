@@ -7,7 +7,7 @@ import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import restapi.ApimVersions;
 
-public class ThrottlingPolicies {
+public class PublisherThrottlingPolicies {
 
     String accessToken = "";
     ApimVersions version;
@@ -16,7 +16,7 @@ public class ThrottlingPolicies {
     String publisherApisString = "/throttling-policies";
     String resourceParenPath = "./src/test/payloads/";
 
-    public ThrottlingPolicies(String accessToken, ApimVersions version){
+    public PublisherThrottlingPolicies(String accessToken, ApimVersions version){
         this.accessToken = accessToken;
         this.version = version;
 
@@ -24,7 +24,7 @@ public class ThrottlingPolicies {
 	    Properties properties;
 
 
-        try {
+        try { 
             String path =  "./src/test/resources/config.properties";
 			properties = new Properties();
 			input = new FileInputStream(path);
