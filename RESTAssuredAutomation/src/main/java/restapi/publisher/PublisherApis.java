@@ -513,6 +513,78 @@ public class PublisherApis {
 	      return addSchemaOfGraphQlApiRes; 
 	}
 	
+	//AWS Lambda (Individual)-------------------------------------------------------------------------------
+	public Response getArnOfAwsLambdaFunction(String apiId){
+	      Response getArnOfAwsLambdaFunctionRes  = RestAssured.given()
+	      .relaxedHTTPSValidation()
+	      .auth() 
+	      .oauth2(accessToken)  
+	      .body(apiCreationPayloadJson)
+	      .get(endPoint+publisherApisString+"/"+apiId+"/amznResourceNames");   
+	
+	      return getArnOfAwsLambdaFunctionRes; 
+	}
+	
+	//API Monetization--------------------------------------------------------------------------------------
+	public Response configureMonatizationForGivenApi(String apiId, String dataPath){
+		
+		try {
+            payloadplj1 = Files.readAllBytes(Paths.get(resourceParenPath+dataPath));
+		    payloadpls1 = new String(payloadplj1);
+        } catch (Exception e) {
+        }
+		
+	      Response configureMonatizationForGivenApiRes  = RestAssured.given()
+	      .relaxedHTTPSValidation()
+	      .auth() 
+	      .oauth2(accessToken)    
+	      .contentType(ContentTypes.APPLICATION_JSON)
+	      .body(payloadpls1)
+	      .post(endPoint+publisherApisString+"/"+apiId+"/monetize");   
+	
+	      return configureMonatizationForGivenApiRes; 
+	}
+	
+	public Response getMonatizationStatusOfEachTierGivenApi(String apiId){
+			
+			
+	      Response getMonatizationStatusOfEachTierGivenApiRes  = RestAssured.given()
+	      .relaxedHTTPSValidation()
+	      .auth() 
+	      .oauth2(accessToken)    
+	      .contentType(ContentTypes.APPLICATION_JSON)
+	      .get(endPoint+publisherApisString+"/"+apiId+"/monetize");   
+	
+	      return getMonatizationStatusOfEachTierGivenApiRes; 
+	}
+	
+	public Response getTotalRevenueDetailsOfGivenMonatizesApiWithMeteredBill(String apiId){
+		
+		
+	      Response getTotalRevenueDetailsOfGivenMonatizesApiWithMeteredBillRes  = RestAssured.given()
+	      .relaxedHTTPSValidation()
+	      .auth() 
+	      .oauth2(accessToken)    
+	      .contentType(ContentTypes.APPLICATION_JSON)
+	      .get(endPoint+publisherApisString+"/"+apiId+"/revenue");   
+	
+	      return getTotalRevenueDetailsOfGivenMonatizesApiWithMeteredBillRes; 
+	}
+	
+	public Response getDetailsOfPendingInvoiceForMonatizedSubscription(String apiId){
+		
+		
+	      Response getDetailsOfPendingInvoiceForMonatizedSubscriptionRes  = RestAssured.given()
+	      .relaxedHTTPSValidation()
+	      .auth() 
+	      .oauth2(accessToken)    
+	      .contentType(ContentTypes.APPLICATION_JSON)
+	      .get(endPoint+publisherApisString+"/"+apiId+"/usage");   
+	
+	      return getDetailsOfPendingInvoiceForMonatizedSubscriptionRes; 
+	}
+	
+	
     
     
     //API Documents Section---------------------------------------------------------------------------------
