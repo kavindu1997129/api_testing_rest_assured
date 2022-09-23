@@ -6,6 +6,7 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.Properties;
 
+import org.apache.logging.log4j.util.StringBuilderFormattable;
 import org.json.simple.JSONObject;
 
 import io.restassured.RestAssured;
@@ -434,6 +435,62 @@ public class PublisherApis {
 
         return deletePendingLifecycleStateChangeTasksResponse;
     }
+    
+    //Validation Section------------------------------------------------------------------------------------
+	public Response validateOpenApiDefinition(String openApiJsonPath){
+	      Response downloadApiSpecificMediationPolicyRes  = RestAssured.given()
+	      .relaxedHTTPSValidation()
+	      .auth() 
+	      .oauth2(accessToken)  
+	      .multiPart("file", new File(resourceParenPath+openApiJsonPath))
+	      .post(endPoint+publisherApisString+"/validate-openapi");   
+	
+	      return downloadApiSpecificMediationPolicyRes; 
+	}
+	
+	public Response checkGivenEndpointIsValid(String apiId, String endpointUrl){
+	      Response checkGivenEndpointIsValidRes  = RestAssured.given()
+	      .relaxedHTTPSValidation()
+	      .auth() 
+	      .oauth2(accessToken)     
+	      .post(endPoint+publisherApisString+"/validate-endpoint?apiId="+apiId+"&endpointUrl="+endpointUrl);   
+	
+	      return checkGivenEndpointIsValidRes; 
+	}
+	
+	public Response checkGivenApiContextNameExists(String apiName){
+	      Response checkGivenApiContextNameExistsRes  = RestAssured.given()
+	      .relaxedHTTPSValidation()
+	      .auth() 
+	      .oauth2(accessToken)    
+	      .post(endPoint+publisherApisString+"/validate?query="+apiName);   
+	
+	      return checkGivenApiContextNameExistsRes; 
+	}
+	
+	public Response validateWsdlDefinition(String apiWsdlPath){
+	      Response validateWsdlDefinitionRes  = RestAssured.given()
+	      .relaxedHTTPSValidation()
+	      .auth() 
+	      .oauth2(accessToken)    
+	      .multiPart("file", new File(resourceParenPath+apiWsdlPath))
+	      .post(endPoint+publisherApisString+"/validate-wsdl");   
+	
+	      return validateWsdlDefinitionRes; 
+	}
+	
+	public Response validateGraphQlApiDefinitionAndGetSummary(String schemaGraphQlPath){
+	      Response validateGraphQlApiDefinitionAndGetSummaryRes  = RestAssured.given()
+	      .relaxedHTTPSValidation()
+	      .auth() 
+	      .oauth2(accessToken)    
+	      .multiPart("file", new File(resourceParenPath+schemaGraphQlPath))
+	      .post(endPoint+publisherApisString+"/validate-graphql-schema");   
+	
+	      return validateGraphQlApiDefinitionAndGetSummaryRes; 
+	}
+    
+    
     //API Documents Section---------------------------------------------------------------------------------
     public Response getListOfDocOfApi(String apiId){
         Response getListOfDocOfApiResponse  = RestAssured.given()
@@ -682,11 +739,18 @@ public class PublisherApis {
 
         return getTypesAndFieldsOfGraphQlSchemaResponse;
     }
+    
+    //API Audit Section---------------------------------------------------------------------------------------
+    public Response getSecurityAuditReportOfAuditApi(String apiId){
+        Response getSecurityAuditReportOfAuditApiResponse = RestAssured.given()
+        .relaxedHTTPSValidation()
+        .auth()
+        .oauth2(accessToken)
+        .contentType(ContentTypes.APPLICATION_JSON)
+        .get(endPoint+publisherApisString+"/"+apiId+"/auditapi");
 
-
-    
-    
-    
+        return getSecurityAuditReportOfAuditApiResponse;
+    }   
     
     //Deployments Section-----------------------------------------------------------------------------------
     public Response getDeploymentStatus(String apiId){
