@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-09-22T16:12:24 IST" name="CreateData" finished-at="2022-09-22T16:12:28 IST" duration-ms="4215">
+  <suite started-at="2022-09-23T11:40:39 IST" name="CreateData" finished-at="2022-09-23T11:40:39 IST" duration-ms="347">
     <groups>
     </groups>
-    <test started-at="2022-09-22T16:12:24 IST" name="CreateAPIs" finished-at="2022-09-22T16:12:28 IST" duration-ms="4215">
+    <test started-at="2022-09-23T11:40:39 IST" name="CreateAPIs" finished-at="2022-09-23T11:40:39 IST" duration-ms="347">
       <class name="tests.CreateAPIs">
-        <test-method is-config="true" signature="initTest(java.lang.String,int)[pri:0, instance:tests.CreateAPIs@52af26ee]" started-at="2022-09-22T16:12:24 IST" name="initTest" finished-at="2022-09-22T16:12:26 IST" duration-ms="2204" status="PASS">
+        <test-method is-config="true" signature="initiaization(java.lang.String,int)[pri:0, instance:tests.CreateAPIs@72445aba]" started-at="2022-09-23T11:40:37 IST" name="initiaization" finished-at="2022-09-23T11:40:39 IST" duration-ms="2525" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -22,8 +22,8 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- initTest -->
-        <test-method signature="dataGeneration()[pri:0, instance:tests.CreateAPIs@52af26ee]" started-at="2022-09-22T16:12:26 IST" name="dataGeneration" finished-at="2022-09-22T16:12:28 IST" duration-ms="1973" status="PASS">
+        </test-method> <!-- initiaization -->
+        <test-method signature="dataGeneration()[pri:0, instance:tests.CreateAPIs@72445aba]" started-at="2022-09-23T11:40:39 IST" name="dataGeneration" finished-at="2022-09-23T11:40:39 IST" duration-ms="324" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- dataGeneration -->

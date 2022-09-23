@@ -20,7 +20,7 @@ import restapi.publisher.PublisherScopes;
 import restapi.publisher.PublisherSettings;
 import restapi.publisher.PublisherSubscriptions;
 import restapi.publisher.PublisherTenants;
-import restapi.publisher.ThrottlingPolicies;
+import restapi.publisher.PublisherThrottlingPolicies;
 
 public class TestClasses {
 	String accessToken;
@@ -98,7 +98,7 @@ public class TestClasses {
                 String scopeId = getSharedScopesrRes.jsonPath().get("list[0]['id']");
 
                 Response addNewSharedScopesrRes = pScopes.addNewSharedScopes("addNewSharedScopes.json");
-                logger.info("Status Code [ADD NEW SHARED SCOPES]: " + addNewSharedScopesrRes.statusCode());
+                logger.info("Status Code [ADD NEW SHARED SCOPES]: " + addNewSharedScopesrRes.statusCode()); 
 
                 Response getSharedScopeByIdRes = pScopes.getSharedScopeById(scopeId);
                 logger.info("Status Code [ADD NEW SHARED SCOPES]: " + getSharedScopeByIdRes.statusCode());
@@ -228,7 +228,7 @@ public class TestClasses {
                 Response getContentOfDocumentsOFApiProductRes = apiProd.getContentOfDocumentsOfApiProduct(apiProductId, documentationId);
                 logger.info("Status Code [GET CONTENT OF DOC OF API PRODUCTS]: "+getContentOfDocumentsOFApiProductRes.statusCode());
 
-                ThrottlingPolicies policies = new ThrottlingPolicies(accessToken, ApimVersions.APIM_3_2);
+                PublisherThrottlingPolicies policies = new PublisherThrottlingPolicies(accessToken, ApimVersions.APIM_3_2);
                 Response getAllPolicies = policies.getThrottlingPoliciesForGivenType("api");
                 logger.info("Status Code [GET THROTTLING POLICIES]: "+getAllPolicies.statusCode());
 

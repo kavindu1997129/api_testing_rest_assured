@@ -28,30 +28,8 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 public class CreateAPIs extends BaseTest{
-	String accessToken;
-	int apiCount;
-	
+
 	private static Logger logger = LogManager.getLogger(TestClasses.class);
-	
-	@BeforeTest
-	@Parameters({"baseURL","apiCount"})	
-	public void initTest(String baseurlParm, int apiCount) throws URISyntaxException {
-		bindBaseURL(baseurlParm);
-        AuthenticationObject authenticationObject = new AuthenticationObject();
-        authenticationObject.setUsername("admin");
-        authenticationObject.setUserpassword("admin");
-        authenticationObject.setEndpoint(baseURL.resolve("client-registration/v0.17/register").toString());
-        authenticationObject.setTokenUrl(baseURL.resolve("oauth2/token").toString());
-        authenticationObject.setPayloadPath("./src/test/payloads/payload.json");
-        authenticationObject.setScopes(Scopes.API_PUBLISH, Scopes.API_CREATE, Scopes.API_VIEW, Scopes.API_IMPORT_EXPORT);
-        authenticationObject.setContentType(ContentTypes.APPLICATION_JSON);
-        authenticationObject.setGrantType(GrantTypes.PASSSWORD);
-        
-        Authentication authentication = new Authentication(authenticationObject);
-        accessToken = authentication.getAccessToken();
-        
-        this.apiCount = apiCount;
-	}
 	
 	@Test
 	public void dataGeneration() {
@@ -82,7 +60,6 @@ public class CreateAPIs extends BaseTest{
       jsonObject = (JSONObject) obj;
       jsonObject.put("name","PizzaShackAPI_"+String.valueOf(apiIndex));
       jsonObject.put("context", "pizza_"+String.valueOf(apiIndex));
-      payloadJson1 = Files.readAllBytes(Paths.get("./src/test/payloads/apicretion_payload.json"));
       payload = jsonObject.toString();
   } catch (Exception e) {
 	  

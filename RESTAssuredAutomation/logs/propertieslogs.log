@@ -6649,3 +6649,133 @@
 [INFO ] 2022-09-22 11:34:54.376 [main] TestClasses - Status Code [GET THROTTLING POLICIES]: 200
 [INFO ] 2022-09-22 11:34:54.450 [main] TestClasses - Status Code [GET DETAILS OF A POLICY]: 200
 [INFO ] 2022-09-22 11:34:54.511 [main] TestClasses - Status Code [GET GLOBAL MEDIATION POLICY]: 200
+[INFO ] 2022-09-22 17:32:16.541 [TestNG-tests-1] TestClasses - [API 1 CREATED]: API ID ==>> null
+[INFO ] 2022-09-22 17:32:16.545 [TestNG-tests-1] TestClasses - Status Code [CREATE API 1]: 409
+[INFO ] 2022-09-22 17:32:16.610 [TestNG-tests-1] TestClasses - [API 2 CREATED]: API ID ==>> null
+[INFO ] 2022-09-22 17:32:16.610 [TestNG-tests-1] TestClasses - Status Code [CREATE API 2]: 409
+[INFO ] 2022-09-22 17:32:16.669 [TestNG-tests-1] TestClasses - [API 3 CREATED]: API ID ==>> null
+[INFO ] 2022-09-22 17:32:16.669 [TestNG-tests-1] TestClasses - Status Code [CREATE API 3]: 409
+[INFO ] 2022-09-22 17:32:16.729 [TestNG-tests-1] TestClasses - [API 4 CREATED]: API ID ==>> null
+[INFO ] 2022-09-22 17:32:16.729 [TestNG-tests-1] TestClasses - Status Code [CREATE API 4]: 409
+[INFO ] 2022-09-22 17:32:16.787 [TestNG-tests-1] TestClasses - [API 5 CREATED]: API ID ==>> null
+[INFO ] 2022-09-22 17:32:16.787 [TestNG-tests-1] TestClasses - Status Code [CREATE API 5]: 409
+[INFO ] 2022-09-22 17:33:03.059 [TestNG-tests-1] TestClasses - [API 1 CREATED]: API ID ==>> dc0c225a-bc77-4c0a-8ebe-ceb0530176fc
+[INFO ] 2022-09-22 17:33:03.061 [TestNG-tests-1] TestClasses - Status Code [CREATE API 1]: 201
+[INFO ] 2022-09-22 17:33:03.394 [TestNG-tests-1] TestClasses - [API 2 CREATED]: API ID ==>> f781d749-b489-4ad4-9ef8-bd03f5ee2991
+[INFO ] 2022-09-22 17:33:03.394 [TestNG-tests-1] TestClasses - Status Code [CREATE API 2]: 201
+[INFO ] 2022-09-22 17:33:03.672 [TestNG-tests-1] TestClasses - [API 3 CREATED]: API ID ==>> 7b2572a0-d381-486f-9232-64dcbac932fb
+[INFO ] 2022-09-22 17:33:03.673 [TestNG-tests-1] TestClasses - Status Code [CREATE API 3]: 201
+[INFO ] 2022-09-22 17:33:03.963 [TestNG-tests-1] TestClasses - [API 4 CREATED]: API ID ==>> 874d42d4-c0f7-480c-a542-a56403b5f31a
+[INFO ] 2022-09-22 17:33:03.964 [TestNG-tests-1] TestClasses - Status Code [CREATE API 4]: 201
+[INFO ] 2022-09-22 17:33:04.289 [TestNG-tests-1] TestClasses - [API 5 CREATED]: API ID ==>> 6d8e7d78-ba03-4c86-a4a5-6f6102b0b01a
+[INFO ] 2022-09-22 17:33:04.289 [TestNG-tests-1] TestClasses - Status Code [CREATE API 5]: 201
+[INFO ] 2022-09-22 17:33:31.387 [TestNG-tests-1] TestClasses - [API 1 CREATED]: API ID ==>> null
+[INFO ] 2022-09-22 17:33:31.389 [TestNG-tests-1] TestClasses - Status Code [CREATE API 1]: 409
+[INFO ] 2022-09-22 17:33:31.438 [TestNG-tests-1] TestClasses - [API 2 CREATED]: API ID ==>> null
+[INFO ] 2022-09-22 17:33:31.439 [TestNG-tests-1] TestClasses - Status Code [CREATE API 2]: 409
+[INFO ] 2022-09-22 17:33:31.495 [TestNG-tests-1] TestClasses - [API 3 CREATED]: API ID ==>> null
+[INFO ] 2022-09-22 17:33:31.496 [TestNG-tests-1] TestClasses - Status Code [CREATE API 3]: 409
+[INFO ] 2022-09-22 17:33:31.546 [TestNG-tests-1] TestClasses - [API 4 CREATED]: API ID ==>> null
+[INFO ] 2022-09-22 17:33:31.546 [TestNG-tests-1] TestClasses - Status Code [CREATE API 4]: 409
+[INFO ] 2022-09-22 17:33:31.599 [TestNG-tests-1] TestClasses - [API 5 CREATED]: API ID ==>> null
+[INFO ] 2022-09-22 17:33:31.599 [TestNG-tests-1] TestClasses - Status Code [CREATE API 5]: 409
+[INFO ] 2022-09-22 17:34:22.978 [TestNG-tests-1] TestClasses - [API 1 CREATED]: API ID ==>> null
+[INFO ] 2022-09-22 17:34:22.981 [TestNG-tests-1] TestClasses - Status Code [CREATE API 1]: 409
+[INFO ] 2022-09-22 17:34:23.040 [TestNG-tests-1] TestClasses - [API 2 CREATED]: API ID ==>> null
+[INFO ] 2022-09-22 17:34:23.041 [TestNG-tests-1] TestClasses - Status Code [CREATE API 2]: 409
+[INFO ] 2022-09-22 17:34:23.091 [TestNG-tests-1] TestClasses - [API 3 CREATED]: API ID ==>> null
+[INFO ] 2022-09-22 17:34:23.091 [TestNG-tests-1] TestClasses - Status Code [CREATE API 3]: 409
+[INFO ] 2022-09-22 17:34:23.143 [TestNG-tests-1] TestClasses - [API 4 CREATED]: API ID ==>> null
+[INFO ] 2022-09-22 17:34:23.144 [TestNG-tests-1] TestClasses - Status Code [CREATE API 4]: 409
+[INFO ] 2022-09-22 17:34:23.193 [TestNG-tests-1] TestClasses - [API 5 CREATED]: API ID ==>> null
+[INFO ] 2022-09-22 17:34:23.193 [TestNG-tests-1] TestClasses - Status Code [CREATE API 5]: 409
+[INFO ] 2022-09-22 17:34:47.351 [TestNG-tests-1] TestClasses - [API 1 CREATED]: API ID ==>> 801489ba-bdcb-4126-a9be-0b50f7dcf8f0
+[INFO ] 2022-09-22 17:34:47.355 [TestNG-tests-1] TestClasses - Status Code [CREATE API 1]: 201
+[INFO ] 2022-09-22 17:34:47.611 [TestNG-tests-1] TestClasses - [API 2 CREATED]: API ID ==>> 3f22c9fd-16f8-4e19-8da7-2e03f1bbab66
+[INFO ] 2022-09-22 17:34:47.611 [TestNG-tests-1] TestClasses - Status Code [CREATE API 2]: 201
+[INFO ] 2022-09-22 17:34:47.896 [TestNG-tests-1] TestClasses - [API 3 CREATED]: API ID ==>> dd2b9ebc-4ef9-4a99-ae78-57de037fd8d4
+[INFO ] 2022-09-22 17:34:47.896 [TestNG-tests-1] TestClasses - Status Code [CREATE API 3]: 201
+[INFO ] 2022-09-22 17:34:48.141 [TestNG-tests-1] TestClasses - [API 4 CREATED]: API ID ==>> 75f93bef-e740-48da-ac83-b5788b0a383d
+[INFO ] 2022-09-22 17:34:48.142 [TestNG-tests-1] TestClasses - Status Code [CREATE API 4]: 201
+[INFO ] 2022-09-22 17:34:48.381 [TestNG-tests-1] TestClasses - [API 5 CREATED]: API ID ==>> 4a004f05-d724-468d-b0ad-bcde9c6ce3be
+[INFO ] 2022-09-22 17:34:48.381 [TestNG-tests-1] TestClasses - Status Code [CREATE API 5]: 201
+[INFO ] 2022-09-23 09:20:26.202 [TestNG-tests-1] TestClasses - [API 1 CREATED]: API ID ==>> null
+[INFO ] 2022-09-23 09:20:26.205 [TestNG-tests-1] TestClasses - Status Code [CREATE API 1]: 409
+[INFO ] 2022-09-23 09:20:26.277 [TestNG-tests-1] TestClasses - [API 2 CREATED]: API ID ==>> null
+[INFO ] 2022-09-23 09:20:26.277 [TestNG-tests-1] TestClasses - Status Code [CREATE API 2]: 409
+[INFO ] 2022-09-23 09:20:26.326 [TestNG-tests-1] TestClasses - [API 3 CREATED]: API ID ==>> null
+[INFO ] 2022-09-23 09:20:26.326 [TestNG-tests-1] TestClasses - Status Code [CREATE API 3]: 409
+[INFO ] 2022-09-23 09:20:26.383 [TestNG-tests-1] TestClasses - [API 4 CREATED]: API ID ==>> null
+[INFO ] 2022-09-23 09:20:26.383 [TestNG-tests-1] TestClasses - Status Code [CREATE API 4]: 409
+[INFO ] 2022-09-23 09:20:26.453 [TestNG-tests-1] TestClasses - [API 5 CREATED]: API ID ==>> null
+[INFO ] 2022-09-23 09:20:26.454 [TestNG-tests-1] TestClasses - Status Code [CREATE API 5]: 409
+[INFO ] 2022-09-23 09:28:31.658 [TestNG-tests-1] TestClasses - [API 1 CREATED]: API ID ==>> null
+[INFO ] 2022-09-23 09:28:31.662 [TestNG-tests-1] TestClasses - Status Code [CREATE API 1]: 409
+[INFO ] 2022-09-23 09:28:31.741 [TestNG-tests-1] TestClasses - [API 2 CREATED]: API ID ==>> null
+[INFO ] 2022-09-23 09:28:31.742 [TestNG-tests-1] TestClasses - Status Code [CREATE API 2]: 409
+[INFO ] 2022-09-23 09:28:31.821 [TestNG-tests-1] TestClasses - [API 3 CREATED]: API ID ==>> null
+[INFO ] 2022-09-23 09:28:31.822 [TestNG-tests-1] TestClasses - Status Code [CREATE API 3]: 409
+[INFO ] 2022-09-23 09:28:31.896 [TestNG-tests-1] TestClasses - [API 4 CREATED]: API ID ==>> null
+[INFO ] 2022-09-23 09:28:31.896 [TestNG-tests-1] TestClasses - Status Code [CREATE API 4]: 409
+[INFO ] 2022-09-23 09:28:31.960 [TestNG-tests-1] TestClasses - [API 5 CREATED]: API ID ==>> null
+[INFO ] 2022-09-23 09:28:31.960 [TestNG-tests-1] TestClasses - Status Code [CREATE API 5]: 409
+[INFO ] 2022-09-23 09:28:47.655 [TestNG-tests-1] TestClasses - [API 1 CREATED]: API ID ==>> null
+[INFO ] 2022-09-23 09:28:47.658 [TestNG-tests-1] TestClasses - Status Code [CREATE API 1]: 409
+[INFO ] 2022-09-23 09:28:47.720 [TestNG-tests-1] TestClasses - [API 2 CREATED]: API ID ==>> null
+[INFO ] 2022-09-23 09:28:47.720 [TestNG-tests-1] TestClasses - Status Code [CREATE API 2]: 409
+[INFO ] 2022-09-23 09:28:47.790 [TestNG-tests-1] TestClasses - [API 3 CREATED]: API ID ==>> null
+[INFO ] 2022-09-23 09:28:47.790 [TestNG-tests-1] TestClasses - Status Code [CREATE API 3]: 409
+[INFO ] 2022-09-23 09:28:47.872 [TestNG-tests-1] TestClasses - [API 4 CREATED]: API ID ==>> null
+[INFO ] 2022-09-23 09:28:47.872 [TestNG-tests-1] TestClasses - Status Code [CREATE API 4]: 409
+[INFO ] 2022-09-23 09:28:47.943 [TestNG-tests-1] TestClasses - [API 5 CREATED]: API ID ==>> null
+[INFO ] 2022-09-23 09:28:47.943 [TestNG-tests-1] TestClasses - Status Code [CREATE API 5]: 409
+[INFO ] 2022-09-23 09:30:47.667 [TestNG-tests-1] TestClasses - [API 1 CREATED]: API ID ==>> null
+[INFO ] 2022-09-23 09:30:47.670 [TestNG-tests-1] TestClasses - Status Code [CREATE API 1]: 409
+[INFO ] 2022-09-23 09:30:47.738 [TestNG-tests-1] TestClasses - [API 2 CREATED]: API ID ==>> null
+[INFO ] 2022-09-23 09:30:47.738 [TestNG-tests-1] TestClasses - Status Code [CREATE API 2]: 409
+[INFO ] 2022-09-23 09:30:47.805 [TestNG-tests-1] TestClasses - [API 3 CREATED]: API ID ==>> null
+[INFO ] 2022-09-23 09:30:47.806 [TestNG-tests-1] TestClasses - Status Code [CREATE API 3]: 409
+[INFO ] 2022-09-23 09:30:47.911 [TestNG-tests-1] TestClasses - [API 4 CREATED]: API ID ==>> null
+[INFO ] 2022-09-23 09:30:47.911 [TestNG-tests-1] TestClasses - Status Code [CREATE API 4]: 409
+[INFO ] 2022-09-23 09:30:48.008 [TestNG-tests-1] TestClasses - [API 5 CREATED]: API ID ==>> null
+[INFO ] 2022-09-23 09:30:48.008 [TestNG-tests-1] TestClasses - Status Code [CREATE API 5]: 409
+[INFO ] 2022-09-23 09:53:39.564 [TestNG-tests-1] TestClasses - [API 1 CREATED]: API ID ==>> null
+[INFO ] 2022-09-23 09:53:39.569 [TestNG-tests-1] TestClasses - Status Code [CREATE API 1]: 409
+[INFO ] 2022-09-23 09:53:39.646 [TestNG-tests-1] TestClasses - [API 2 CREATED]: API ID ==>> null
+[INFO ] 2022-09-23 09:53:39.646 [TestNG-tests-1] TestClasses - Status Code [CREATE API 2]: 409
+[INFO ] 2022-09-23 09:53:39.703 [TestNG-tests-1] TestClasses - [API 3 CREATED]: API ID ==>> null
+[INFO ] 2022-09-23 09:53:39.703 [TestNG-tests-1] TestClasses - Status Code [CREATE API 3]: 409
+[INFO ] 2022-09-23 09:53:39.765 [TestNG-tests-1] TestClasses - [API 4 CREATED]: API ID ==>> null
+[INFO ] 2022-09-23 09:53:39.765 [TestNG-tests-1] TestClasses - Status Code [CREATE API 4]: 409
+[INFO ] 2022-09-23 09:53:39.832 [TestNG-tests-1] TestClasses - [API 5 CREATED]: API ID ==>> null
+[INFO ] 2022-09-23 09:53:39.832 [TestNG-tests-1] TestClasses - Status Code [CREATE API 5]: 409
+[INFO ] 2022-09-23 10:50:10.883 [TestNG-tests-1] TestClasses - [API 1 CREATED]: API ID ==>> null
+[INFO ] 2022-09-23 10:50:10.886 [TestNG-tests-1] TestClasses - Status Code [CREATE API 1]: 409
+[INFO ] 2022-09-23 10:50:10.959 [TestNG-tests-1] TestClasses - [API 2 CREATED]: API ID ==>> null
+[INFO ] 2022-09-23 10:50:10.959 [TestNG-tests-1] TestClasses - Status Code [CREATE API 2]: 409
+[INFO ] 2022-09-23 10:50:11.031 [TestNG-tests-1] TestClasses - [API 3 CREATED]: API ID ==>> null
+[INFO ] 2022-09-23 10:50:11.031 [TestNG-tests-1] TestClasses - Status Code [CREATE API 3]: 409
+[INFO ] 2022-09-23 10:50:11.120 [TestNG-tests-1] TestClasses - [API 4 CREATED]: API ID ==>> null
+[INFO ] 2022-09-23 10:50:11.120 [TestNG-tests-1] TestClasses - Status Code [CREATE API 4]: 409
+[INFO ] 2022-09-23 10:50:11.188 [TestNG-tests-1] TestClasses - [API 5 CREATED]: API ID ==>> null
+[INFO ] 2022-09-23 10:50:11.188 [TestNG-tests-1] TestClasses - Status Code [CREATE API 5]: 409
+[INFO ] 2022-09-23 11:31:46.050 [TestNG-tests-1] TestClasses - [API 1 CREATED]: API ID ==>> null
+[INFO ] 2022-09-23 11:31:46.054 [TestNG-tests-1] TestClasses - Status Code [CREATE API 1]: 409
+[INFO ] 2022-09-23 11:31:46.150 [TestNG-tests-1] TestClasses - [API 2 CREATED]: API ID ==>> null
+[INFO ] 2022-09-23 11:31:46.150 [TestNG-tests-1] TestClasses - Status Code [CREATE API 2]: 409
+[INFO ] 2022-09-23 11:31:46.208 [TestNG-tests-1] TestClasses - [API 3 CREATED]: API ID ==>> null
+[INFO ] 2022-09-23 11:31:46.208 [TestNG-tests-1] TestClasses - Status Code [CREATE API 3]: 409
+[INFO ] 2022-09-23 11:31:46.269 [TestNG-tests-1] TestClasses - [API 4 CREATED]: API ID ==>> null
+[INFO ] 2022-09-23 11:31:46.269 [TestNG-tests-1] TestClasses - Status Code [CREATE API 4]: 409
+[INFO ] 2022-09-23 11:31:46.337 [TestNG-tests-1] TestClasses - [API 5 CREATED]: API ID ==>> null
+[INFO ] 2022-09-23 11:31:46.337 [TestNG-tests-1] TestClasses - Status Code [CREATE API 5]: 409
+[INFO ] 2022-09-23 11:40:39.712 [TestNG-tests-1] TestClasses - [API 1 CREATED]: API ID ==>> null
+[INFO ] 2022-09-23 11:40:39.714 [TestNG-tests-1] TestClasses - Status Code [CREATE API 1]: 409
+[INFO ] 2022-09-23 11:40:39.780 [TestNG-tests-1] TestClasses - [API 2 CREATED]: API ID ==>> null
+[INFO ] 2022-09-23 11:40:39.780 [TestNG-tests-1] TestClasses - Status Code [CREATE API 2]: 409
+[INFO ] 2022-09-23 11:40:39.829 [TestNG-tests-1] TestClasses - [API 3 CREATED]: API ID ==>> null
+[INFO ] 2022-09-23 11:40:39.829 [TestNG-tests-1] TestClasses - Status Code [CREATE API 3]: 409
+[INFO ] 2022-09-23 11:40:39.884 [TestNG-tests-1] TestClasses - [API 4 CREATED]: API ID ==>> null
+[INFO ] 2022-09-23 11:40:39.884 [TestNG-tests-1] TestClasses - Status Code [CREATE API 4]: 409
+[INFO ] 2022-09-23 11:40:39.945 [TestNG-tests-1] TestClasses - [API 5 CREATED]: API ID ==>> null
+[INFO ] 2022-09-23 11:40:39.945 [TestNG-tests-1] TestClasses - Status Code [CREATE API 5]: 409

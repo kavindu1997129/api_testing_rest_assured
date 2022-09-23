@@ -21,7 +21,7 @@ public class RunTests{
 	@Test
 	public void dataGeneration() {
 
-        AuthenticationObject authenticationObject = new AuthenticationObject();
+        AuthenticationObject authenticationObject = new AuthenticationObject(); 
         authenticationObject.setUsername("admin");
         authenticationObject.setUserpassword("admin");
         authenticationObject.setEndpoint("https://localhost:9443/client-registration/v0.17/register");
