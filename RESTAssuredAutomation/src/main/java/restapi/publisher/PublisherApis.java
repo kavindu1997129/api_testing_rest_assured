@@ -821,13 +821,13 @@ public class PublisherApis {
         return getListOfExternalStoresWhichApiPublishedResponse;
     }
     
-    public Response publishApiToExternalStore(String apiId){
+    public Response publishApiToExternalStore(String apiId, String storeName){
         Response publishApiToExternalStoreResponse = RestAssured.given()
         .relaxedHTTPSValidation()
         .auth()
         .oauth2(accessToken)
         .contentType(ContentTypes.APPLICATION_JSON)
-        .post(endPoint+publisherApisString+"/external-stores");
+        .post(endPoint+publisherApisString+"/publish-to-external-stores?externalStoreId="+storeName);
 
         return publishApiToExternalStoreResponse;
     }
@@ -841,6 +841,18 @@ public class PublisherApis {
         .post(endPoint+publisherApisString+"/"+apiId+"/external-stores");
 
         return getExternalStoresListToPublishApiResponse;
+    }
+    
+    //Import Export Section-------------------------------------------------------------------------------
+    public Response exportAnApi(String apiId, String apiName, String version,String provider, String format){
+        Response exportAnApiResponse = RestAssured.given()
+        .relaxedHTTPSValidation()
+        .auth()
+        .oauth2(accessToken)
+        .contentType(ContentTypes.APPLICATION_JSON)
+        .post(endPoint+publisherApisString+"/export?apiId="+apiId+"&name="+apiName+"&version="+version+"&provider="+provider+"&format="+format);
+
+        return exportAnApiResponse;
     }
 
     //Client Certificate Section---------------------------------------------------------------------------- 
