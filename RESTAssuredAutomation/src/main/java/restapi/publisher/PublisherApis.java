@@ -489,6 +489,30 @@ public class PublisherApis {
 	
 	      return validateGraphQlApiDefinitionAndGetSummaryRes; 
 	}
+	
+	//GraphQL Schema (Individual) Section-------------------------------------------------------------------
+	public Response getSchemaOfGraphQlApi(String apiId){
+	      Response getSchemaOfGraphQlApiRes  = RestAssured.given()
+	      .relaxedHTTPSValidation()
+	      .auth() 
+	      .oauth2(accessToken)    
+	      .get(endPoint+publisherApisString+"/"+apiId+"/graphql-schema");   
+	
+	      return getSchemaOfGraphQlApiRes; 
+	}
+	
+	//GraphQL Schema Section--------------------------------------------------------------------------------
+	public Response addSchemaOfGraphQlApi(String apiId, String schemaGraphQlPath){
+	      Response addSchemaOfGraphQlApiRes  = RestAssured.given()
+	      .relaxedHTTPSValidation()
+	      .auth() 
+	      .oauth2(accessToken)    
+	      .multiPart("schemaDefinition", new File(resourceParenPath+schemaGraphQlPath))
+	      .put(endPoint+publisherApisString+"/"+apiId+"/graphql-schema");   
+	
+	      return addSchemaOfGraphQlApiRes; 
+	}
+	
     
     
     //API Documents Section---------------------------------------------------------------------------------
