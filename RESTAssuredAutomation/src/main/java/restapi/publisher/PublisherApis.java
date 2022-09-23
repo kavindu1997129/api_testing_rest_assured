@@ -584,8 +584,6 @@ public class PublisherApis {
 	      return getDetailsOfPendingInvoiceForMonatizedSubscriptionRes; 
 	}
 	
-	
-    
     
     //API Documents Section---------------------------------------------------------------------------------
     public Response getListOfDocOfApi(String apiId){
@@ -686,44 +684,7 @@ public class PublisherApis {
         return checkDocExistsByNameResponse;
     }
     
-
-    //Client Certificate Section---------------------------------------------------------------------------- 
-    public Response searchUploadedClientCertificate(String apiId){
-        Response searchUploadedClientCertificateResponse  = RestAssured.given()
-        .relaxedHTTPSValidation()
-        .auth()
-        .oauth2(accessToken)
-        .contentType(ContentTypes.APPLICATION_JSON)
-        .get(endPoint+publisherApisString+"/"+apiId+"/client-certificates?alias=wso2carbon");
-
-        return searchUploadedClientCertificateResponse;
-    }
-
-            //Upload and udate certificate to be implemented
-
-    public Response deleteCertficate(String apiId){
-        Response deleteCertficateRes  = RestAssured.given()
-        .relaxedHTTPSValidation()
-        .auth()
-        .oauth2(accessToken)
-        .contentType(ContentTypes.APPLICATION_JSON)
-        .delete(endPoint+publisherApisString+"/"+apiId+"/client-certificates/wso2carbon");
-
-        return deleteCertficateRes;
-    }
-
-    public Response getCertficateInformation(String apiId){
-        Response getCertficateInformationRes  = RestAssured.given()
-        .relaxedHTTPSValidation()
-        .auth()
-        .oauth2(accessToken)
-        .contentType(ContentTypes.APPLICATION_JSON)
-        .delete(endPoint+publisherApisString+"/"+apiId+"/client-certificates/wso2carbon");
-
-        return getCertficateInformationRes;
-    }
-    
-    //API mediation Policies Section-----------------------------------------------------------------------
+  //API mediation Policies Section-----------------------------------------------------------------------
     public Response getAllMediationPoliciesOfAPI(String apiId){
         Response getAllMediationPoliciesOfAPIRes  = RestAssured.given()
         .relaxedHTTPSValidation()
@@ -847,6 +808,76 @@ public class PublisherApis {
 
         return getSecurityAuditReportOfAuditApiResponse;
     }   
+    
+    //External Stores Section-------------------------------------------------------------------------------
+    public Response getListOfExternalStoresWhichApiPublished(String apiId){
+        Response getListOfExternalStoresWhichApiPublishedResponse = RestAssured.given()
+        .relaxedHTTPSValidation()
+        .auth()
+        .oauth2(accessToken)
+        .contentType(ContentTypes.APPLICATION_JSON)
+        .get(endPoint+publisherApisString+"/"+apiId+"/external-stores");
+
+        return getListOfExternalStoresWhichApiPublishedResponse;
+    }
+    
+    public Response publishApiToExternalStore(String apiId){
+        Response publishApiToExternalStoreResponse = RestAssured.given()
+        .relaxedHTTPSValidation()
+        .auth()
+        .oauth2(accessToken)
+        .contentType(ContentTypes.APPLICATION_JSON)
+        .post(endPoint+publisherApisString+"/external-stores");
+
+        return publishApiToExternalStoreResponse;
+    }
+    
+    public Response getExternalStoresListToPublishApi(String apiId){
+        Response getExternalStoresListToPublishApiResponse = RestAssured.given()
+        .relaxedHTTPSValidation()
+        .auth()
+        .oauth2(accessToken)
+        .contentType(ContentTypes.APPLICATION_JSON)
+        .post(endPoint+publisherApisString+"/"+apiId+"/external-stores");
+
+        return getExternalStoresListToPublishApiResponse;
+    }
+
+    //Client Certificate Section---------------------------------------------------------------------------- 
+    public Response searchUploadedClientCertificate(String apiId){
+        Response searchUploadedClientCertificateResponse  = RestAssured.given()
+        .relaxedHTTPSValidation()
+        .auth()
+        .oauth2(accessToken)
+        .contentType(ContentTypes.APPLICATION_JSON)
+        .get(endPoint+publisherApisString+"/"+apiId+"/client-certificates?alias=wso2carbon");
+
+        return searchUploadedClientCertificateResponse;
+    }
+
+            //Upload and udate certificate to be implemented
+
+    public Response deleteCertficate(String apiId){
+        Response deleteCertficateRes  = RestAssured.given()
+        .relaxedHTTPSValidation()
+        .auth()
+        .oauth2(accessToken)
+        .contentType(ContentTypes.APPLICATION_JSON)
+        .delete(endPoint+publisherApisString+"/"+apiId+"/client-certificates/wso2carbon");
+
+        return deleteCertficateRes;
+    }
+
+    public Response getCertficateInformation(String apiId){
+        Response getCertficateInformationRes  = RestAssured.given()
+        .relaxedHTTPSValidation()
+        .auth()
+        .oauth2(accessToken)
+        .contentType(ContentTypes.APPLICATION_JSON)
+        .delete(endPoint+publisherApisString+"/"+apiId+"/client-certificates/wso2carbon");
+
+        return getCertficateInformationRes;
+    }
     
     //Deployments Section-----------------------------------------------------------------------------------
     public Response getDeploymentStatus(String apiId){
