@@ -5,10 +5,32 @@
   <parameter name="apiCount" value="param-val-not-found"/>
   <test thread-count="5" name="Default test(failed)">
     <classes>
+      <class name="tests.RunTests">
+        <methods>
+          <include name="validateDataAPIM_3_2"/>
+          <include name="dataGeneration"/>
+        </methods>
+      </class> <!-- tests.RunTests -->
+      <class name="tests.Wso2_Apim">
+        <methods>
+          <include name="oauth2"/>
+        </methods>
+      </class> <!-- tests.Wso2_Apim -->
+      <class name="tests.TestClasses">
+        <methods>
+          <include name="validateDataAPIM_3_2"/>
+          <include name="dataGeneration"/>
+        </methods>
+      </class> <!-- tests.TestClasses -->
+      <class name="ataf.actions.BaseTest">
+        <methods>
+          <include name="initiaization"/>
+        </methods>
+      </class> <!-- ataf.actions.BaseTest -->
       <class name="tests.CreateAPIs">
         <methods>
           <include name="dataGeneration"/>
-          <include name="initTest"/>
+          <include name="initiaization"/>
         </methods>
       </class> <!-- tests.CreateAPIs -->
     </classes>

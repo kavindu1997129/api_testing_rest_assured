@@ -6779,3 +6779,13 @@
 [INFO ] 2022-09-23 11:40:39.884 [TestNG-tests-1] TestClasses - Status Code [CREATE API 4]: 409
 [INFO ] 2022-09-23 11:40:39.945 [TestNG-tests-1] TestClasses - [API 5 CREATED]: API ID ==>> null
 [INFO ] 2022-09-23 11:40:39.945 [TestNG-tests-1] TestClasses - Status Code [CREATE API 5]: 409
+[INFO ] 2022-09-23 14:54:12.492 [TestNG-tests-1] TestClasses - [API 1 CREATED]: API ID ==>> null
+[INFO ] 2022-09-23 14:54:12.496 [TestNG-tests-1] TestClasses - Status Code [CREATE API 1]: 409
+[INFO ] 2022-09-23 14:54:12.562 [TestNG-tests-1] TestClasses - [API 2 CREATED]: API ID ==>> null
+[INFO ] 2022-09-23 14:54:12.562 [TestNG-tests-1] TestClasses - Status Code [CREATE API 2]: 409
+[INFO ] 2022-09-23 14:54:12.612 [TestNG-tests-1] TestClasses - [API 3 CREATED]: API ID ==>> null
+[INFO ] 2022-09-23 14:54:12.612 [TestNG-tests-1] TestClasses - Status Code [CREATE API 3]: 409
+[INFO ] 2022-09-23 14:54:12.674 [TestNG-tests-1] TestClasses - [API 4 CREATED]: API ID ==>> null
+[INFO ] 2022-09-23 14:54:12.674 [TestNG-tests-1] TestClasses - Status Code [CREATE API 4]: 409
+[INFO ] 2022-09-23 14:54:12.732 [TestNG-tests-1] TestClasses - [API 5 CREATED]: API ID ==>> null
+[INFO ] 2022-09-23 14:54:12.733 [TestNG-tests-1] TestClasses - Status Code [CREATE API 5]: 409

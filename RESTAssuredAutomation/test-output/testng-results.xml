@@ -1,33 +1,252 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="1" total="7" passed="0" failed="0" skipped="6">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-09-23T11:40:39 IST" name="CreateData" finished-at="2022-09-23T11:40:39 IST" duration-ms="347">
+  <suite started-at="2022-09-23T14:55:18 IST" name="Default suite" finished-at="2022-09-23T14:55:18 IST" duration-ms="62">
     <groups>
     </groups>
-    <test started-at="2022-09-23T11:40:39 IST" name="CreateAPIs" finished-at="2022-09-23T11:40:39 IST" duration-ms="347">
-      <class name="tests.CreateAPIs">
-        <test-method is-config="true" signature="initiaization(java.lang.String,int)[pri:0, instance:tests.CreateAPIs@72445aba]" started-at="2022-09-23T11:40:37 IST" name="initiaization" finished-at="2022-09-23T11:40:39 IST" duration-ms="2525" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[https://localhost:9443/]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[5]]>
-              </value>
-            </param>
-          </params>
+    <test started-at="2022-09-23T14:55:18 IST" name="Default test" finished-at="2022-09-23T14:55:18 IST" duration-ms="62">
+      <class name="ataf.actions.BaseTest">
+        <test-method is-config="true" signature="initiaization(java.lang.String,int)[pri:0, instance:ataf.actions.BaseTest@5b58ed3c]" started-at="2022-09-23T14:55:18 IST" name="initiaization" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1663925118088" status="FAIL">
+          <exception class="java.lang.NumberFormatException">
+            <message>
+              <![CDATA[For input string: "param-val-not-found"]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NumberFormatException: For input string: "param-val-not-found"
+at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67)
+at java.base/java.lang.Integer.parseInt(Integer.java:668)
+at java.base/java.lang.Integer.valueOf(Integer.java:999)
+at org.testng.internal.PropertyUtils.convertType(PropertyUtils.java:41)
+at org.testng.internal.Parameters.createParams(Parameters.java:270)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+at org.testng.internal.Parameters.createParameters(Parameters.java:684)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:277)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:372)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NumberFormatException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initiaization -->
-        <test-method signature="dataGeneration()[pri:0, instance:tests.CreateAPIs@72445aba]" started-at="2022-09-23T11:40:39 IST" name="dataGeneration" finished-at="2022-09-23T11:40:39 IST" duration-ms="324" status="PASS">
+      </class> <!-- ataf.actions.BaseTest -->
+      <class name="tests.RunTests">
+        <test-method signature="dataGeneration()[pri:0, instance:tests.RunTests@24faea88]" started-at="2022-09-23T14:55:18 IST" name="dataGeneration" finished-at="2022-09-23T14:55:18 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.NumberFormatException">
+            <message>
+              <![CDATA[For input string: "param-val-not-found"]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NumberFormatException: For input string: "param-val-not-found"
+at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67)
+at java.base/java.lang.Integer.parseInt(Integer.java:668)
+at java.base/java.lang.Integer.valueOf(Integer.java:999)
+at org.testng.internal.PropertyUtils.convertType(PropertyUtils.java:41)
+at org.testng.internal.Parameters.createParams(Parameters.java:270)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+at org.testng.internal.Parameters.createParameters(Parameters.java:684)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:277)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:372)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NumberFormatException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dataGeneration -->
+        <test-method signature="validateDataAPIM_3_2()[pri:0, instance:tests.RunTests@24faea88]" started-at="2022-09-23T14:55:18 IST" name="validateDataAPIM_3_2" finished-at="2022-09-23T14:55:18 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.NumberFormatException">
+            <message>
+              <![CDATA[For input string: "param-val-not-found"]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NumberFormatException: For input string: "param-val-not-found"
+at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67)
+at java.base/java.lang.Integer.parseInt(Integer.java:668)
+at java.base/java.lang.Integer.valueOf(Integer.java:999)
+at org.testng.internal.PropertyUtils.convertType(PropertyUtils.java:41)
+at org.testng.internal.Parameters.createParams(Parameters.java:270)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+at org.testng.internal.Parameters.createParameters(Parameters.java:684)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:277)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:372)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NumberFormatException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateDataAPIM_3_2 -->
+      </class> <!-- tests.RunTests -->
+      <class name="tests.CreateAPIs">
+        <test-method signature="dataGeneration()[pri:0, instance:tests.CreateAPIs@3a320ade]" started-at="2022-09-23T14:55:18 IST" name="dataGeneration" finished-at="2022-09-23T14:55:18 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.NumberFormatException">
+            <message>
+              <![CDATA[For input string: "param-val-not-found"]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NumberFormatException: For input string: "param-val-not-found"
+at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67)
+at java.base/java.lang.Integer.parseInt(Integer.java:668)
+at java.base/java.lang.Integer.valueOf(Integer.java:999)
+at org.testng.internal.PropertyUtils.convertType(PropertyUtils.java:41)
+at org.testng.internal.Parameters.createParams(Parameters.java:270)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+at org.testng.internal.Parameters.createParameters(Parameters.java:684)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:277)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:372)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NumberFormatException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- dataGeneration -->
       </class> <!-- tests.CreateAPIs -->
-    </test> <!-- CreateAPIs -->
-  </suite> <!-- CreateData -->
+      <class name="tests.TestClasses">
+        <test-method signature="dataGeneration()[pri:0, instance:tests.TestClasses@58670130]" started-at="2022-09-23T14:55:18 IST" name="dataGeneration" finished-at="2022-09-23T14:55:18 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.NumberFormatException">
+            <message>
+              <![CDATA[For input string: "param-val-not-found"]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NumberFormatException: For input string: "param-val-not-found"
+at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67)
+at java.base/java.lang.Integer.parseInt(Integer.java:668)
+at java.base/java.lang.Integer.valueOf(Integer.java:999)
+at org.testng.internal.PropertyUtils.convertType(PropertyUtils.java:41)
+at org.testng.internal.Parameters.createParams(Parameters.java:270)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+at org.testng.internal.Parameters.createParameters(Parameters.java:684)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:277)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:372)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NumberFormatException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dataGeneration -->
+        <test-method signature="validateDataAPIM_3_2()[pri:0, instance:tests.TestClasses@58670130]" started-at="2022-09-23T14:55:18 IST" name="validateDataAPIM_3_2" finished-at="2022-09-23T14:55:18 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.NumberFormatException">
+            <message>
+              <![CDATA[For input string: "param-val-not-found"]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NumberFormatException: For input string: "param-val-not-found"
+at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67)
+at java.base/java.lang.Integer.parseInt(Integer.java:668)
+at java.base/java.lang.Integer.valueOf(Integer.java:999)
+at org.testng.internal.PropertyUtils.convertType(PropertyUtils.java:41)
+at org.testng.internal.Parameters.createParams(Parameters.java:270)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+at org.testng.internal.Parameters.createParameters(Parameters.java:684)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:277)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:372)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NumberFormatException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateDataAPIM_3_2 -->
+      </class> <!-- tests.TestClasses -->
+      <class name="tests.Wso2_Apim">
+        <test-method signature="oauth2()[pri:0, instance:tests.Wso2_Apim@f74e835]" started-at="2022-09-23T14:55:18 IST" name="oauth2" finished-at="2022-09-23T14:55:18 IST" duration-ms="1" status="SKIP">
+          <exception class="java.lang.NumberFormatException">
+            <message>
+              <![CDATA[For input string: "param-val-not-found"]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NumberFormatException: For input string: "param-val-not-found"
+at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67)
+at java.base/java.lang.Integer.parseInt(Integer.java:668)
+at java.base/java.lang.Integer.valueOf(Integer.java:999)
+at org.testng.internal.PropertyUtils.convertType(PropertyUtils.java:41)
+at org.testng.internal.Parameters.createParams(Parameters.java:270)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+at org.testng.internal.Parameters.createParameters(Parameters.java:684)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:277)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:372)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NumberFormatException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- oauth2 -->
+      </class> <!-- tests.Wso2_Apim -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
