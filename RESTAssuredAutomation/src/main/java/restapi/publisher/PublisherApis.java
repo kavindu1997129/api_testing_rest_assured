@@ -342,18 +342,6 @@ public class PublisherApis {
 
     //-----------------------------------------------------------------------------------------------------------------
     
-    public Response getComplexityRelatedDetailsOfApi(String apiId){
-        Response getComplexityRelatedDetailsOfApiResponse = RestAssured.given()
-        .relaxedHTTPSValidation()
-        .auth()
-        .oauth2(accessToken)
-        .contentType(ContentTypes.APPLICATION_JSON)
-        .get(endPoint+publisherApisString+"/"+apiId+"/graphql-policies/complexity");
-
-        return getComplexityRelatedDetailsOfApiResponse;
-    }
-
-
 
     //API Resource Policies-----------------------------------------------------------------------------------------------------------------
 
@@ -651,7 +639,53 @@ public class PublisherApis {
  
         return downloadApiSpecificMediationPolicyRes; 
     }
-    //gjkgjkhgkjhbkhbhn
+   
+    //GraphQL Policies Section------------------------------------------------------------------------------
+    public Response getComplexityRelatedDetailsOfApi(String apiId){
+        Response getComplexityRelatedDetailsOfApiResponse = RestAssured.given()
+        .relaxedHTTPSValidation()
+        .auth()
+        .oauth2(accessToken)
+        .contentType(ContentTypes.APPLICATION_JSON)
+        .get(endPoint+publisherApisString+"/"+apiId+"/graphql-policies/complexity");
+
+        return getComplexityRelatedDetailsOfApiResponse;
+    }
+    
+    public Response updateComplexityRelatedDetailsOfApi(String apiId, String jsonPayloadPath){
+    	
+    	try {
+    		payloadplj1 = Files.readAllBytes(Paths.get(resourceParenPath+jsonPayloadPath));
+    		payloadpls1 = new String(payloadplj1);
+
+        } catch (Exception e) {
+        }
+    	
+        Response updateComplexityRelatedDetailsOfApiResponse = RestAssured.given()
+        .relaxedHTTPSValidation()
+        .auth()
+        .oauth2(accessToken)
+        .contentType(ContentTypes.APPLICATION_JSON)
+        .body(payloadpls1)
+        .put(endPoint+publisherApisString+"/"+apiId+"/graphql-policies/complexity");
+
+        return updateComplexityRelatedDetailsOfApiResponse;
+    }
+    
+    public Response getTypesAndFieldsOfGraphQlSchema(String apiId){
+        Response getTypesAndFieldsOfGraphQlSchemaResponse = RestAssured.given()
+        .relaxedHTTPSValidation()
+        .auth()
+        .oauth2(accessToken)
+        .contentType(ContentTypes.APPLICATION_JSON)
+        .get(endPoint+publisherApisString+"/"+apiId+"/graphql-policies/complexity/types");
+
+        return getTypesAndFieldsOfGraphQlSchemaResponse;
+    }
+
+
+    
+    
     
     
     //Deployments Section-----------------------------------------------------------------------------------
