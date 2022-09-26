@@ -10,6 +10,7 @@ import restapi.AuthenticationObject;
 import restapi.ContentTypes;
 import restapi.GrantTypes;
 import restapi.Scopes;
+import restapi.devportal.DevPortal;
 import restapi.publisher.PublisherApiProducts;
 import restapi.publisher.PublisherApis;
 import restapi.publisher.PublisherDeployements;
@@ -24,6 +25,7 @@ import restapi.publisher.PublisherThrottlingPolicies;
 
 public class TestClasses {
 	String accessToken;
+	String apiId="";
     private static Logger logger = LogManager.getLogger(TestClasses.class);
 
 	@Test
@@ -148,10 +150,36 @@ public class TestClasses {
                 Response getAllLabels = pLabels.getAllRegisteredLabels();
                 logger.info("Status Code [GET ALL LABELS]: " + getAllLabels.statusCode()); 
 
-
                 logger.info("Data creation has been done-------------------------");
-
+            
 }
+	
+		@Test
+		public void devPortalTest() {
+			AuthenticationObject authenticationObject = new AuthenticationObject();
+            authenticationObject.setUsername("admin");
+            authenticationObject.setUserpassword("admin");
+            authenticationObject.setEndpoint("https://localhost:9443/client-registration/v0.17/register");
+            authenticationObject.setTokenUrl("https://localhost:8243/token"); //For API-M 3.2.0
+            // authenticationObject.setTokenUrl("https://localhost:9443/oauth2/token"); //For API-M 4.1.0
+            authenticationObject.setPayloadPath("./src/test/payloads/payload.json");
+            authenticationObject.setScopes(Scopes.API_PUBLISH, Scopes.API_CREATE, Scopes.API_VIEW, Scopes.API_IMPORT_EXPORT, Scopes.API_MANAGE, Scopes.SUBSCRIPTION_VIEW, Scopes.SUBSCRIPTION_BLOCK, Scopes.CLIENT_CERTIFICAE_VIEW, Scopes.SHARED_SCOPE_MANAGE, Scopes.PUBLISHER_SETTINGS);
+            authenticationObject.setContentType(ContentTypes.APPLICATION_JSON);
+            authenticationObject.setGrantType(GrantTypes.PASSSWORD);
+
+            Authentication authentication = new Authentication(authenticationObject);
+            accessToken = authentication.getAccessToken();
+			
+			DevPortal devPortal = new DevPortal();
+            DevPortal.Apis dPortalApis = new DevPortal.Apis(accessToken,ApimVersions.APIM_3_2);
+            
+            Response searchApiRes = dPortalApis.searchApis();
+            
+            apiId = searchApiRes.jsonPath().get("list[0]['id']");
+            
+            Response dPortalResponse =  dPortalApis.getSwaggerDefinition();
+            logger.info("Status Code [SEARCH APIS DEVPORTAL]: " + dPortalResponse.statusCode());
+		}
 
         @Test
         public void validateDataAPIM_3_2(){

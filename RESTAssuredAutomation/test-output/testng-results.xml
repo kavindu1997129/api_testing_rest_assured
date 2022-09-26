@@ -1,33 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="2" total="3" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-09-23T16:07:08 IST" name="CreateData" finished-at="2022-09-23T16:07:08 IST" duration-ms="471">
+  <suite started-at="2022-09-26T16:05:31 IST" name="Default suite" finished-at="2022-09-26T16:05:33 IST" duration-ms="2270">
     <groups>
     </groups>
-    <test started-at="2022-09-23T16:07:08 IST" name="CreateAPIs" finished-at="2022-09-23T16:07:08 IST" duration-ms="471">
-      <class name="tests.CreateAPIs">
-        <test-method is-config="true" signature="initiaization(java.lang.String,int)[pri:0, instance:tests.CreateAPIs@72445aba]" started-at="2022-09-23T16:07:01 IST" name="initiaization" finished-at="2022-09-23T16:07:08 IST" duration-ms="6544" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[https://localhost:9443/]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[5]]>
-              </value>
-            </param>
-          </params>
+    <test started-at="2022-09-26T16:05:31 IST" name="Default test" finished-at="2022-09-26T16:05:33 IST" duration-ms="2270">
+      <class name="tests.TestClasses">
+        <test-method signature="devPortalTest()[pri:0, instance:tests.TestClasses@4c37b5b]" started-at="2022-09-26T16:05:31 IST" name="devPortalTest" finished-at="2022-09-26T16:05:33 IST" duration-ms="2229" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- initiaization -->
-        <test-method signature="dataGeneration()[pri:0, instance:tests.CreateAPIs@72445aba]" started-at="2022-09-23T16:07:08 IST" name="dataGeneration" finished-at="2022-09-23T16:07:08 IST" duration-ms="434" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- dataGeneration -->
-      </class> <!-- tests.CreateAPIs -->
-    </test> <!-- CreateAPIs -->
-  </suite> <!-- CreateData -->
+        </test-method> <!-- devPortalTest -->
+      </class> <!-- tests.TestClasses -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
