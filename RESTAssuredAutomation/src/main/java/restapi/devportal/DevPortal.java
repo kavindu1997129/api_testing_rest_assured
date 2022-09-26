@@ -532,11 +532,84 @@ public class DevPortal {
 
             return deleteApplicationResponse;
         }
-    	
-    	
-    	
+    }
+    
+    public class ApplicationKeys{
     	
     }
+    
+    public class ApplicationTokens{
+    	
+    }
+    
+    public class ApiKeys{
+    	
+    }
+    
+    public class Subscriptions{
+    	
+    }
+    
+    public class ApiMonetization{
+    	
+    }
+    
+    public class ThrottlingPolicies{
+    	
+    }
+    
+    public class Tags{
+    	
+    }
+    
+    public class UnfiedSearch{
+    	
+    }
+    
+    public class Settings{
+    	
+    }
+    
+    public class Tenants{
+    	
+    }
+    
+    public class Recommendations{
+    	
+    }
+    
+    public class Alerts{
+    	
+    }
+    
+    public class AlertSubscriptions{
+    	
+    }
+    
+    public class ApiConfigurations{
+    	
+    }
+    
+    public class ApiCategory_Collections{
+    	
+    }
+    
+    public class KeyManager_Collections{
+    	
+    }
+    
+    public class GraphQlPolicies{
+    	
+    }
+    
+    public class Users{
+    	
+    }
+    
+    
+    
+    
+    
 
     
     
