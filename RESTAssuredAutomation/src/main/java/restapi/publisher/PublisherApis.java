@@ -867,7 +867,36 @@ public class PublisherApis {
         return searchUploadedClientCertificateResponse;
     }
 
-            //Upload and udate certificate to be implemented
+    public Response uploadNewCertificate(String apiId, String certificate, String alias, String wso2Carbon, String tier){
+	      Response uploadNewCertificateRes  = RestAssured.given()
+	      .relaxedHTTPSValidation()
+	      .auth() 
+	      .oauth2(accessToken)    
+	      .multiPart("certificate", new File(resourceParenPath+certificate))
+	      .multiPart("alias", new File(resourceParenPath+alias))
+	      .multiPart("apiId", new File(resourceParenPath+apiId))
+	      .multiPart("tier", new File(resourceParenPath+tier))
+	      .contentType(ContentTypes.MULTIPART_FORMDATA)
+	      .post(endPoint+publisherApisString+"/"+apiId+"/client-certificates");   
+	
+	    
+	      return uploadNewCertificateRes; 
+	}
+    
+    public Response updateCertificate(String apiId, String certificate, String alias, String wso2Carbon, String tier){
+	      Response updateCertificateRes  = RestAssured.given()
+	      .relaxedHTTPSValidation()
+	      .auth() 
+	      .oauth2(accessToken)    
+	      .multiPart("certificate", new File(resourceParenPath+certificate))
+	      .multiPart("alias", new File(resourceParenPath+alias))
+	      .multiPart("apiId", new File(resourceParenPath+apiId))
+	      .multiPart("tier", new File(resourceParenPath+tier))
+	      .contentType(ContentTypes.MULTIPART_FORMDATA)
+	      .put(endPoint+publisherApisString+"/"+apiId+"/client-certificates/"+alias);   
+	
+	      return updateCertificateRes; 
+	}
 
     public Response deleteCertficate(String apiId){
         Response deleteCertficateRes  = RestAssured.given()
