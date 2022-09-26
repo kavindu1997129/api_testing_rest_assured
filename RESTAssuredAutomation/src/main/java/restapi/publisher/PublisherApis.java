@@ -883,7 +883,7 @@ public class PublisherApis {
 	      return uploadNewCertificateRes; 
 	}
     
-    public Response updateCertificate(String apiId, String certificate, String alias, String wso2Carbon, String tier){
+    public Response updateCertificate(String apiId, String certificate, String alias, String tier){
 	      Response updateCertificateRes  = RestAssured.given()
 	      .relaxedHTTPSValidation()
 	      .auth() 
@@ -931,5 +931,40 @@ public class PublisherApis {
  
         return getDeploymentStatusRes; 
     }
-    public void test() {}
+    
+    //Unified Search (/search)-------------------------------------------------------------------------------
+    public Response searchApiAndDocumentationByContent(String query){
+        Response searchApiAndDocumentationByContentRes  = RestAssured.given()
+        .relaxedHTTPSValidation()
+        .auth() 
+        .oauth2(accessToken)  
+        .contentType(ContentTypes.APPLICATION_JSON)   
+        .get(endPoint+"/search?query="+query);   
+ 
+        return searchApiAndDocumentationByContentRes; 
+    }
+    
+    //Roles (/roles)-------------------------------------------------------------------------------
+    public Response checkRoleAlreadyExists(String roleId){
+        Response checkRoleAlreadyExistsRes  = RestAssured.given()
+        .relaxedHTTPSValidation()
+        .auth() 
+        .oauth2(accessToken)  
+        .contentType(ContentTypes.APPLICATION_JSON)   
+        .head(endPoint+"/roles/"+roleId);   
+ 
+        return checkRoleAlreadyExistsRes; 
+    }
+    
+    public Response validateGivenUserHasGivenRole(String roleId){
+        Response validateGivenUserHasGivenRoleRes  = RestAssured.given()
+        .relaxedHTTPSValidation()
+        .auth() 
+        .oauth2(accessToken)  
+        .contentType(ContentTypes.APPLICATION_JSON)   
+        .get(endPoint+"/me/roles/"+roleId);   
+ 
+        return validateGivenUserHasGivenRoleRes; 
+    }
+    
 }
