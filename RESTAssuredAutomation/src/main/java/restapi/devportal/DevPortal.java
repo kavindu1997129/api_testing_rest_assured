@@ -428,6 +428,115 @@ public class DevPortal {
         }
     	
     }
+    
+    public static class Appilications{
+    	
+    	String accessToken;
+        String endPoint;
+        
+        String publisherApisString = "/apis";
+        String resourceParenPath = "./src/test/payloads/";
+        
+        byte[] payloadplj1;
+        String payloadpls1;
+        
+    	public Appilications(String accessToken, ApimVersions version) {
+    		this.accessToken = accessToken;
+            
+            FileInputStream input;
+    	    Properties properties;
+
+            try {
+                String path =  "./src/test/resources/config.properties";
+    			properties = new Properties();
+    			input = new FileInputStream(path);
+    			properties.load(input);
+                if(version == ApimVersions.APIM_3_2){
+                    this.endPoint = properties.getProperty("base_url")+properties.getProperty("devportal_url_3_2");
+                }
+                else{
+                    this.endPoint = properties.getProperty("base_url")+properties.getProperty("devportal_url_4_1");
+                }
+                
+            } catch (Exception e) {
+            }
+    	}
+    	
+    	public Response searchApplications(){
+            Response searchApplicationsResponse  = RestAssured.given()
+            .relaxedHTTPSValidation()
+            .auth()
+            .oauth2(accessToken)
+            .contentType(ContentTypes.APPLICATION_JSON)
+            .get(endPoint+publisherApisString+"/applications");
+
+            return searchApplicationsResponse;
+        }
+    	
+    	public Response createNewApplications(String jsonPayloadPath){
+    		
+    		try {
+        		payloadplj1 = Files.readAllBytes(Paths.get(resourceParenPath+jsonPayloadPath));
+        		payloadpls1 = new String(payloadplj1);
+            } catch (Exception e) {
+            }
+    		
+            Response createNewApplicationsResponse  = RestAssured.given()
+            .relaxedHTTPSValidation()
+            .auth()
+            .oauth2(accessToken)
+            .contentType(ContentTypes.APPLICATION_JSON)
+            .body(payloadplj1)
+            .post(endPoint+publisherApisString+"/applications");
+
+            return createNewApplicationsResponse;
+        }
+    	
+    	public Response getDetailsOfApplication(String  applicationId){
+            Response searchApplicationsResponse  = RestAssured.given()
+            .relaxedHTTPSValidation()
+            .auth()
+            .oauth2(accessToken)
+            .contentType(ContentTypes.APPLICATION_JSON)
+            .get(endPoint+publisherApisString+"/applications/"+applicationId);
+
+            return searchApplicationsResponse;
+        }
+    	
+    	public Response updateApplications(String applicationId,String jsonPayloadPath){
+    		
+    		try {
+        		payloadplj1 = Files.readAllBytes(Paths.get(resourceParenPath+jsonPayloadPath));
+        		payloadpls1 = new String(payloadplj1);
+            } catch (Exception e) {
+            }
+    		
+            Response updateApplicationsResponse  = RestAssured.given()
+            .relaxedHTTPSValidation()
+            .auth()
+            .oauth2(accessToken)
+            .contentType(ContentTypes.APPLICATION_JSON)
+            .body(payloadplj1)
+            .put(endPoint+publisherApisString+"/applications/"+applicationId);
+
+            return updateApplicationsResponse;
+        }
+    	
+    	public Response deleteApplication(String  applicationId){
+            Response deleteApplicationResponse  = RestAssured.given()
+            .relaxedHTTPSValidation()
+            .auth()
+            .oauth2(accessToken)
+            .contentType(ContentTypes.APPLICATION_JSON)
+            .get(endPoint+publisherApisString+"/applications/"+applicationId);
+
+            return deleteApplicationResponse;
+        }
+    	
+    	
+    	
+    	
+    }
 
     
     
