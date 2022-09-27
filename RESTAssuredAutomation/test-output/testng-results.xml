@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-09-27T15:44:45 IST" name="Default suite" finished-at="2022-09-27T15:45:05 IST" duration-ms="20641">
+  <suite started-at="2022-09-27T16:45:37 IST" name="Default suite" finished-at="2022-09-27T16:45:43 IST" duration-ms="6743">
     <groups>
     </groups>
-    <test started-at="2022-09-27T15:44:45 IST" name="Default test" finished-at="2022-09-27T15:45:05 IST" duration-ms="20641">
+    <test started-at="2022-09-27T16:45:37 IST" name="Default test" finished-at="2022-09-27T16:45:43 IST" duration-ms="6743">
       <class name="tests.TestClasses">
-        <test-method signature="dataGeneration()[pri:0, instance:tests.TestClasses@1e1d3956]" started-at="2022-09-27T15:44:45 IST" name="dataGeneration" finished-at="2022-09-27T15:45:01 IST" duration-ms="16535" status="PASS">
+        <test-method signature="dataGeneration()[pri:0, instance:tests.TestClasses@1e1d3956]" started-at="2022-09-27T16:45:37 IST" name="dataGeneration" finished-at="2022-09-27T16:45:42 IST" duration-ms="5362" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- dataGeneration -->
-        <test-method signature="devPortalTest()[pri:0, instance:tests.TestClasses@1e1d3956]" started-at="2022-09-27T15:45:01 IST" name="devPortalTest" finished-at="2022-09-27T15:45:03 IST" duration-ms="2116" status="PASS">
+        <test-method signature="devPortalTest()[pri:0, instance:tests.TestClasses@1e1d3956]" started-at="2022-09-27T16:45:42 IST" name="devPortalTest" finished-at="2022-09-27T16:45:42 IST" duration-ms="251" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- devPortalTest -->
-        <test-method signature="validateDataAPIM_3_2()[pri:0, instance:tests.TestClasses@1e1d3956]" started-at="2022-09-27T15:45:03 IST" name="validateDataAPIM_3_2" finished-at="2022-09-27T15:45:05 IST" duration-ms="1941" status="PASS">
+        <test-method signature="validateDataAPIM_3_2()[pri:0, instance:tests.TestClasses@1e1d3956]" started-at="2022-09-27T16:45:42 IST" name="validateDataAPIM_3_2" finished-at="2022-09-27T16:45:43 IST" duration-ms="1073" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateDataAPIM_3_2 -->
