@@ -801,6 +801,136 @@ public class DevPortal {
     
     public class Subscriptions{
     	
+    	String accessToken;
+        String endPoint;
+        
+        String publisherApisString = "/subscriptions";
+        String resourceParenPath = "./src/test/payloads/";
+        
+    	public Subscriptions(String accessToken, ApimVersions version) {
+    		this.accessToken = accessToken;
+            
+            FileInputStream input;
+    	    Properties properties;
+
+            try {
+                String path =  "./src/test/resources/config.properties";
+    			properties = new Properties();
+    			input = new FileInputStream(path);
+    			properties.load(input);
+                if(version == ApimVersions.APIM_3_2){
+                    this.endPoint = properties.getProperty("base_url")+properties.getProperty("devportal_url_3_2");
+                }
+                else{
+                    this.endPoint = properties.getProperty("base_url")+properties.getProperty("devportal_url_4_1");
+                }
+                
+            } catch (Exception e) {
+            }
+    	}
+    	
+    	public Response getAllSubscriptons(String apiId){
+    		
+            Response generateApiKeysResponse  = RestAssured.given()
+            .relaxedHTTPSValidation()
+            .auth()
+            .oauth2(accessToken)
+            .contentType(ContentTypes.APPLICATION_JSON)
+            .get(endPoint+publisherApisString+"?apiId="+apiId);
+
+            return generateApiKeysResponse;
+        }
+    	
+    	public Response addNesSubscription(String jsonPayloadPath){
+    		
+    		byte[] payloadplj1;
+            String payloadpls1="";
+    		
+    		try {
+        		payloadplj1 = Files.readAllBytes(Paths.get(resourceParenPath+jsonPayloadPath));
+        		payloadpls1 = new String(payloadplj1);
+            } catch (Exception e) {
+            }
+    		
+            Response addNesSubscriptionResponse  = RestAssured.given()
+            .relaxedHTTPSValidation()
+            .auth()
+            .oauth2(accessToken)
+            .contentType(ContentTypes.APPLICATION_JSON)
+            .body(payloadpls1)
+            .post(endPoint+publisherApisString);
+
+            return addNesSubscriptionResponse;
+        }
+    	
+    	public Response addNesSubscriptions(String jsonPayloadPath){
+    		
+    		byte[] payloadplj1;
+            String payloadpls1="";
+    		
+    		try {
+        		payloadplj1 = Files.readAllBytes(Paths.get(resourceParenPath+jsonPayloadPath));
+        		payloadpls1 = new String(payloadplj1);
+            } catch (Exception e) {
+            }
+    		
+            Response addNesSubscriptionResponse  = RestAssured.given()
+            .relaxedHTTPSValidation()
+            .auth()
+            .oauth2(accessToken)
+            .contentType(ContentTypes.APPLICATION_JSON)
+            .body(payloadpls1)
+            .post(endPoint+publisherApisString+"/multiple");
+
+            return addNesSubscriptionResponse;
+        }
+    	
+    	public Response getDetailsOfSubscription(String subscriptionId, String jsonPayloadPath){
+    	
+            Response addNesSubscriptionResponse  = RestAssured.given()
+            .relaxedHTTPSValidation()
+            .auth()
+            .oauth2(accessToken)
+            .contentType(ContentTypes.APPLICATION_JSON)
+            .get(endPoint+publisherApisString+"/"+subscriptionId);
+
+            return addNesSubscriptionResponse;
+        }
+    	
+    	public Response updateExisitingSubscription(String subscriptionId, String jsonPayloadPath){
+    		
+    		byte[] payloadplj1;
+            String payloadpls1="";
+    		
+    		try {
+        		payloadplj1 = Files.readAllBytes(Paths.get(resourceParenPath+jsonPayloadPath));
+        		payloadpls1 = new String(payloadplj1);
+            } catch (Exception e) {
+            }
+    		
+            Response updateExisitingSubscriptionResponse  = RestAssured.given()
+            .relaxedHTTPSValidation()
+            .auth()
+            .oauth2(accessToken)
+            .contentType(ContentTypes.APPLICATION_JSON)
+            .body(payloadpls1)
+            .put(endPoint+publisherApisString+"/"+subscriptionId);
+
+            return updateExisitingSubscriptionResponse;
+        }
+    	
+    	public Response removeSubscription(String subscriptionId){
+        	
+            Response removeSubscriptionResponse  = RestAssured.given()
+            .relaxedHTTPSValidation()
+            .auth()
+            .oauth2(accessToken)
+            .contentType(ContentTypes.APPLICATION_JSON)
+            .delete(endPoint+publisherApisString+"/"+subscriptionId);
+
+            return removeSubscriptionResponse;
+        }
+    	
     }
     
     public class ApiMonetization{
