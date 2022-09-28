@@ -402,7 +402,7 @@ public class DevPortal {
             .auth()
             .oauth2(accessToken)
             .contentType(ContentTypes.APPLICATION_JSON)
-            .body(payloadplj1)
+            .body(payloadpls1)
             .post(endPoint+publisherApisString+"/"+apiId+"/comments");
 
             return addApiCommentResponse;
@@ -1467,25 +1467,189 @@ public class DevPortal {
     
     public class ApiCategory_Collections{
     	
+    	String accessToken;
+        String endPoint;
+        
+        String publisherApisString = "/api-categories";
+        String resourceParenPath = "./src/test/payloads/";
+        
+    	public ApiCategory_Collections(String accessToken, ApimVersions version) {
+    		this.accessToken = accessToken;
+            
+            FileInputStream input;
+    	    Properties properties;
+
+            try {
+                String path =  "./src/test/resources/config.properties";
+    			properties = new Properties();
+    			input = new FileInputStream(path);
+    			properties.load(input);
+                if(version == ApimVersions.APIM_3_2){
+                    this.endPoint = properties.getProperty("base_url")+properties.getProperty("devportal_url_3_2");
+                }
+                else{
+                    this.endPoint = properties.getProperty("base_url")+properties.getProperty("devportal_url_4_1");
+                }
+                
+            } catch (Exception e) {
+            }
+    	}
+    	
+    	public Response getAllApiCategories(){
+        	
+            Response getAllApiCategoriesResponse  = RestAssured.given()
+            .relaxedHTTPSValidation()
+            .auth()
+            .oauth2(accessToken)
+            .contentType(ContentTypes.APPLICATION_JSON)
+            .get(endPoint+publisherApisString);
+
+            return getAllApiCategoriesResponse;
+        }
+    	
     }
     
     public class KeyManager_Collections{
+    	
+    	String accessToken;
+        String endPoint;
+        
+        String publisherApisString = "/key-managers";
+        String resourceParenPath = "./src/test/payloads/";
+        
+    	public KeyManager_Collections(String accessToken, ApimVersions version) {
+    		this.accessToken = accessToken;
+            
+            FileInputStream input;
+    	    Properties properties;
+
+            try {
+                String path =  "./src/test/resources/config.properties";
+    			properties = new Properties();
+    			input = new FileInputStream(path);
+    			properties.load(input);
+                if(version == ApimVersions.APIM_3_2){
+                    this.endPoint = properties.getProperty("base_url")+properties.getProperty("devportal_url_3_2");
+                }
+                else{
+                    this.endPoint = properties.getProperty("base_url")+properties.getProperty("devportal_url_4_1");
+                }
+                
+            } catch (Exception e) {
+            }
+    	}
+    	
+    	public Response getAllKeyManagers(){
+        	
+            Response getAllKeyManagersResponse  = RestAssured.given()
+            .relaxedHTTPSValidation()
+            .auth()
+            .oauth2(accessToken)
+            .contentType(ContentTypes.APPLICATION_JSON)
+            .get(endPoint+publisherApisString);
+
+            return getAllKeyManagersResponse;
+        }
     	
     }
     
     public class GraphQlPolicies{
     	
+    	String accessToken;
+        String endPoint;
+        
+        String publisherApisString = "/apis";
+        String resourceParenPath = "./src/test/payloads/";
+        
+    	public GraphQlPolicies(String accessToken, ApimVersions version) {
+    		this.accessToken = accessToken;
+            
+            FileInputStream input;
+    	    Properties properties;
+
+            try {
+                String path =  "./src/test/resources/config.properties";
+    			properties = new Properties();
+    			input = new FileInputStream(path);
+    			properties.load(input);
+                if(version == ApimVersions.APIM_3_2){
+                    this.endPoint = properties.getProperty("base_url")+properties.getProperty("devportal_url_3_2");
+                }
+                else{
+                    this.endPoint = properties.getProperty("base_url")+properties.getProperty("devportal_url_4_1");
+                }
+                
+            } catch (Exception e) {
+            }
+    	}
+    	
+    	public Response getComplexityRelatedDetailsOfAPI(String apiId){
+        	
+            Response getComplexityRelatedDetailsOfAPIResponse  = RestAssured.given()
+            .relaxedHTTPSValidation()
+            .auth()
+            .oauth2(accessToken)
+            .contentType(ContentTypes.APPLICATION_JSON)
+            .get(endPoint+publisherApisString+"/"+apiId+"/graphql-policies/complexity");
+
+            return getComplexityRelatedDetailsOfAPIResponse;
+        }
+    	
     }
     
     public class Users{
     	
-    }
-    
-    
-    
-    
-    
+    	String accessToken;
+        String endPoint;
+        
+        String publisherApisString = "/me";
+        String resourceParenPath = "./src/test/payloads/";
+        
+    	public Users(String accessToken, ApimVersions version) {
+    		this.accessToken = accessToken;
+            
+            FileInputStream input;
+    	    Properties properties;
 
+            try {
+                String path =  "./src/test/resources/config.properties";
+    			properties = new Properties();
+    			input = new FileInputStream(path);
+    			properties.load(input);
+                if(version == ApimVersions.APIM_3_2){
+                    this.endPoint = properties.getProperty("base_url")+properties.getProperty("devportal_url_3_2");
+                }
+                else{
+                    this.endPoint = properties.getProperty("base_url")+properties.getProperty("devportal_url_4_1");
+                }
+                
+            } catch (Exception e) {
+            }
+    	}
+    	
+    	public Response changePasswordOfUser(String jsonPayloadPath){
+    		
+    		byte[] payloadplj1;
+            String payloadpls1="";
+    		
+    		try {
+        		payloadplj1 = Files.readAllBytes(Paths.get(resourceParenPath+jsonPayloadPath));
+        		payloadpls1 = new String(payloadplj1);
+            } catch (Exception e) {
+            }
+        	
+            Response changePasswordOfUserResponse  = RestAssured.given()
+            .relaxedHTTPSValidation()
+            .auth()
+            .oauth2(accessToken)
+            .contentType(ContentTypes.APPLICATION_JSON)
+            .body(payloadpls1)
+            .post(endPoint+publisherApisString+"/change-password");
+
+            return changePasswordOfUserResponse;
+        }
+    	
+    }
     
     
 }
