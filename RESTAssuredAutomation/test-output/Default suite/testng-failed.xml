@@ -6,6 +6,8 @@
       <class name="tests.TestClasses">
         <methods>
           <include name="devPortalTest"/>
+          <include name="validateDataAPIM_3_2"/>
+          <include name="dataGeneration"/>
         </methods>
       </class> <!-- tests.TestClasses -->
     </classes>

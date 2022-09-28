@@ -163,7 +163,7 @@ public class DevPortal {
             return generateSDKForAPIResponse;
         }
     	
-    	public Response getListOfSupportedSDKLanguages(String apiId){
+    	public Response getListOfSupportedSDKLanguages(){
             Response getListOfSupportedSDKLanguagesResponse  = RestAssured.given()
             .relaxedHTTPSValidation()
             .auth()
