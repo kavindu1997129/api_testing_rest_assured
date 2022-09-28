@@ -885,7 +885,7 @@ public class DevPortal {
             return addNesSubscriptionResponse;
         }
     	
-    	public Response getDetailsOfSubscription(String subscriptionId, String jsonPayloadPath){
+    	public Response getDetailsOfSubscription(String subscriptionId){
     	
             Response addNesSubscriptionResponse  = RestAssured.given()
             .relaxedHTTPSValidation()
@@ -935,9 +935,101 @@ public class DevPortal {
     
     public class ApiMonetization{
     	
+    	String accessToken;
+        String endPoint;
+        
+        String publisherApisString = "/subscriptions";
+        String resourceParenPath = "./src/test/payloads/";
+        
+    	public ApiMonetization(String accessToken, ApimVersions version) {
+    		this.accessToken = accessToken;
+            
+            FileInputStream input;
+    	    Properties properties;
+
+            try {
+                String path =  "./src/test/resources/config.properties";
+    			properties = new Properties();
+    			input = new FileInputStream(path);
+    			properties.load(input);
+                if(version == ApimVersions.APIM_3_2){
+                    this.endPoint = properties.getProperty("base_url")+properties.getProperty("devportal_url_3_2");
+                }
+                else{
+                    this.endPoint = properties.getProperty("base_url")+properties.getProperty("devportal_url_4_1");
+                }
+                
+            } catch (Exception e) {
+            }
+    	}
+    	
+    	public Response getDetailsOfPendingInvoice(String subscriptionId){
+        	
+            Response getDetailsOfPendingInvoiceResponse  = RestAssured.given()
+            .relaxedHTTPSValidation()
+            .auth()
+            .oauth2(accessToken)
+            .contentType(ContentTypes.APPLICATION_JSON)
+            .get(endPoint+publisherApisString+"/"+subscriptionId+"/usage");
+
+            return getDetailsOfPendingInvoiceResponse;
+        }
+    	
     }
     
     public class ThrottlingPolicies{
+    	
+    	String accessToken;
+        String endPoint;
+        
+        String publisherApisString = "/throttling-policies";
+        String resourceParenPath = "./src/test/payloads/";
+        
+    	public ThrottlingPolicies(String accessToken, ApimVersions version) {
+    		this.accessToken = accessToken;
+            
+            FileInputStream input;
+    	    Properties properties;
+
+            try {
+                String path =  "./src/test/resources/config.properties";
+    			properties = new Properties();
+    			input = new FileInputStream(path);
+    			properties.load(input);
+                if(version == ApimVersions.APIM_3_2){
+                    this.endPoint = properties.getProperty("base_url")+properties.getProperty("devportal_url_3_2");
+                }
+                else{
+                    this.endPoint = properties.getProperty("base_url")+properties.getProperty("devportal_url_4_1");
+                }
+                
+            } catch (Exception e) {
+            }
+    	}
+    	
+    	public Response getAllAvailableThrottlingPolicies(String policyLevel){
+        	
+            Response getAllAvailableThrottlingPoliciesResponse  = RestAssured.given()
+            .relaxedHTTPSValidation()
+            .auth()
+            .oauth2(accessToken)
+            .contentType(ContentTypes.APPLICATION_JSON)
+            .get(endPoint+publisherApisString+"/"+policyLevel);
+
+            return getAllAvailableThrottlingPoliciesResponse;
+        }
+    	
+    	public Response getDetailsOfThrottlingPolicies(String policyLevel, String policyId){
+        	
+            Response getDetailsOfThrottlingPoliciesResponse  = RestAssured.given()
+            .relaxedHTTPSValidation()
+            .auth()
+            .oauth2(accessToken)
+            .contentType(ContentTypes.APPLICATION_JSON)
+            .get(endPoint+publisherApisString+"/"+policyLevel+"/"+policyId);
+
+            return getDetailsOfThrottlingPoliciesResponse;
+        }
     	
     }
     
