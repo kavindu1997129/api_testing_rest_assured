@@ -122,6 +122,60 @@ public class DevPortal {
     
     public static class Sdks{
     	
+    	String accessToken;
+        String endPoint;
+        
+        String publisherApisString = "/apis";
+        String resourceParenPath = "./src/test/payloads/";
+        
+        
+        
+    	public Sdks(String accessToken, ApimVersions version) {
+    		this.accessToken = accessToken;
+            
+            FileInputStream input;
+    	    Properties properties;
+
+            try {
+                String path =  "./src/test/resources/config.properties";
+    			properties = new Properties();
+    			input = new FileInputStream(path);
+    			properties.load(input);
+                if(version == ApimVersions.APIM_3_2){
+                    this.endPoint = properties.getProperty("base_url")+properties.getProperty("devportal_url_3_2");
+                }
+                else{
+                    this.endPoint = properties.getProperty("base_url")+properties.getProperty("devportal_url_4_1");
+                }
+                
+            } catch (Exception e) {
+            }
+    	}
+    	
+    	public Response generateSDKForAPI(String apiId){
+            Response generateSDKForAPIResponse  = RestAssured.given()
+            .relaxedHTTPSValidation()
+            .auth()
+            .oauth2(accessToken)
+            .contentType(ContentTypes.APPLICATION_JSON)
+            .get(endPoint+publisherApisString+"/"+apiId+"/sdks/java");
+
+            return generateSDKForAPIResponse;
+        }
+    	
+    	public Response getListOfSupportedSDKLanguages(String apiId){
+            Response getListOfSupportedSDKLanguagesResponse  = RestAssured.given()
+            .relaxedHTTPSValidation()
+            .auth()
+            .oauth2(accessToken)
+            .contentType(ContentTypes.APPLICATION_JSON)
+            .get(endPoint+"/sdk-gen/languages");
+
+            return getListOfSupportedSDKLanguagesResponse;
+        }
+    	
+    	
+    	
     }
     
     public static class ApiDocumentation{
@@ -540,7 +594,7 @@ public class DevPortal {
         }
     }
     
-    public class ApplicationKeys{
+    public static class ApplicationKeys{
     	
     	String accessToken;
         String endPoint;
@@ -670,7 +724,7 @@ public class DevPortal {
         }
     }
     
-    public class ApplicationTokens{
+    public static class ApplicationTokens{
     	
     	String accessToken;
         String endPoint;
@@ -723,7 +777,7 @@ public class DevPortal {
         }
     }
     
-    public class ApiKeys{
+    public static class ApiKeys{
     	
     	String accessToken;
         String endPoint;
@@ -799,7 +853,7 @@ public class DevPortal {
     	
     }
     
-    public class Subscriptions{
+    public static class Subscriptions{
     	
     	String accessToken;
         String endPoint;
@@ -933,7 +987,7 @@ public class DevPortal {
     	
     }
     
-    public class ApiMonetization{
+    public static class ApiMonetization{
     	
     	String accessToken;
         String endPoint;
@@ -977,7 +1031,7 @@ public class DevPortal {
     	
     }
     
-    public class ThrottlingPolicies{
+    public static class ThrottlingPolicies{
     	
     	String accessToken;
         String endPoint;
@@ -1033,7 +1087,7 @@ public class DevPortal {
     	
     }
     
-    public class Tags{
+    public static class Tags{
     	
     	String accessToken;
         String endPoint;
@@ -1077,7 +1131,7 @@ public class DevPortal {
     	
     }
     
-    public class UnfiedSearch{
+    public static class UnfiedSearch{
     	
     	String accessToken;
         String endPoint;
@@ -1121,7 +1175,7 @@ public class DevPortal {
     	
     }
     
-    public class Settings{
+    public static class Settings{
     	
     	String accessToken;
         String endPoint;
@@ -1177,7 +1231,7 @@ public class DevPortal {
     	
     }
     
-    public class Tenants{
+    public static class Tenants{
     	
     	String accessToken;
         String endPoint;
@@ -1221,7 +1275,7 @@ public class DevPortal {
     	
     }
     
-    public class Recommendations{
+    public static class Recommendations{
     	
     	String accessToken;
         String endPoint;
@@ -1265,7 +1319,7 @@ public class DevPortal {
     	
     }
     
-    public class Alerts{
+    public static class Alerts{
     	
     	String accessToken;
         String endPoint;
@@ -1309,7 +1363,7 @@ public class DevPortal {
     	
     }
     
-    public class AlertSubscriptions{
+    public static class AlertSubscriptions{
     	
     	String accessToken;
         String endPoint;
@@ -1387,7 +1441,7 @@ public class DevPortal {
     	
     }
     
-    public class ApiConfigurations{
+    public static class ApiConfigurations{
     	
     	String accessToken;
         String endPoint;
@@ -1465,7 +1519,7 @@ public class DevPortal {
     	
     }
     
-    public class ApiCategory_Collections{
+    public static class ApiCategory_Collections{
     	
     	String accessToken;
         String endPoint;
@@ -1509,7 +1563,7 @@ public class DevPortal {
     	
     }
     
-    public class KeyManager_Collections{
+    public static class KeyManager_Collections{
     	
     	String accessToken;
         String endPoint;
@@ -1553,7 +1607,7 @@ public class DevPortal {
     	
     }
     
-    public class GraphQlPolicies{
+    public static class GraphQlPolicies{
     	
     	String accessToken;
         String endPoint;
@@ -1597,7 +1651,7 @@ public class DevPortal {
     	
     }
     
-    public class Users{
+    public static class Users{
     	
     	String accessToken;
         String endPoint;

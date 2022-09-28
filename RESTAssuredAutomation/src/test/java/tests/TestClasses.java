@@ -11,6 +11,9 @@ import restapi.ContentTypes;
 import restapi.GrantTypes;
 import restapi.Scopes;
 import restapi.devportal.DevPortal;
+import restapi.devportal.DevPortal.ApiMonetization;
+import restapi.devportal.DevPortal.GraphQlPolicies;
+import restapi.devportal.DevPortal.KeyManager_Collections;
 import restapi.publisher.PublisherApiProducts;
 import restapi.publisher.PublisherApis;
 import restapi.publisher.PublisherDeployements;
@@ -163,22 +166,29 @@ public class TestClasses {
             authenticationObject.setTokenUrl("https://localhost:8243/token"); //For API-M 3.2.0
             // authenticationObject.setTokenUrl("https://localhost:9443/oauth2/token"); //For API-M 4.1.0
             authenticationObject.setPayloadPath("./src/test/payloads/payload.json");
-            authenticationObject.setScopes(Scopes.API_PUBLISH, Scopes.API_CREATE, Scopes.API_VIEW, Scopes.API_IMPORT_EXPORT, Scopes.API_MANAGE, Scopes.SUBSCRIPTION_VIEW, Scopes.SUBSCRIPTION_BLOCK, Scopes.CLIENT_CERTIFICAE_VIEW, Scopes.SHARED_SCOPE_MANAGE, Scopes.PUBLISHER_SETTINGS);
+            authenticationObject.setScopes(Scopes.API_PUBLISH, Scopes.API_CREATE, Scopes.API_VIEW, Scopes.API_IMPORT_EXPORT, Scopes.API_MANAGE, Scopes.SUBSCRIPTION_VIEW, Scopes.SUBSCRIPTION_BLOCK, Scopes.CLIENT_CERTIFICAE_VIEW, Scopes.SHARED_SCOPE_MANAGE, Scopes.PUBLISHER_SETTINGS, Scopes.SUBSCRIBE);
             authenticationObject.setContentType(ContentTypes.APPLICATION_JSON);
             authenticationObject.setGrantType(GrantTypes.PASSSWORD);
 
             Authentication authentication = new Authentication(authenticationObject);
             accessToken = authentication.getAccessToken();
+            
+            DevPortal devPortal = new DevPortal();
 			
-			DevPortal devPortal = new DevPortal();
-            DevPortal.Apis dPortalApis = new DevPortal.Apis(accessToken,ApimVersions.APIM_3_2);
+			DevPortal.Apis dPortalApis = new DevPortal.Apis(accessToken,ApimVersions.APIM_3_2);
             
             Response searchApiRes = dPortalApis.searchApis();
-            
+           
             apiId = searchApiRes.jsonPath().get("list[0]['id']");
             
             Response dPortalResponse =  dPortalApis.getSwaggerDefinition();
             logger.info("Status Code [SEARCH APIS DEVPORTAL]: " + dPortalResponse.statusCode());
+            
+            KeyManager_Collections dGraphQlPolicies  =  new DevPortal.KeyManager_Collections(accessToken, ApimVersions.APIM_3_2);
+            Response dGraphQlPoliciesResponse = dGraphQlPolicies.getAllKeyManagers();
+            logger.info("Status Code [DEV ALL KEY MANAGERS]: " + dGraphQlPoliciesResponse.statusCode());
+            
+            
 		}
 
         @Test
