@@ -1035,21 +1035,233 @@ public class DevPortal {
     
     public class Tags{
     	
+    	String accessToken;
+        String endPoint;
+        
+        String publisherApisString = "/tags";
+        String resourceParenPath = "./src/test/payloads/";
+        
+    	public Tags(String accessToken, ApimVersions version) {
+    		this.accessToken = accessToken;
+            
+            FileInputStream input;
+    	    Properties properties;
+
+            try {
+                String path =  "./src/test/resources/config.properties";
+    			properties = new Properties();
+    			input = new FileInputStream(path);
+    			properties.load(input);
+                if(version == ApimVersions.APIM_3_2){
+                    this.endPoint = properties.getProperty("base_url")+properties.getProperty("devportal_url_3_2");
+                }
+                else{
+                    this.endPoint = properties.getProperty("base_url")+properties.getProperty("devportal_url_4_1");
+                }
+                
+            } catch (Exception e) {
+            }
+    	}
+    	
+    	public Response getAllTags(){
+        	
+            Response getAllTagsResponse  = RestAssured.given()
+            .relaxedHTTPSValidation()
+            .auth()
+            .oauth2(accessToken)
+            .contentType(ContentTypes.APPLICATION_JSON)
+            .get(endPoint+publisherApisString);
+
+            return getAllTagsResponse;
+        }
+    	
     }
     
     public class UnfiedSearch{
+    	
+    	String accessToken;
+        String endPoint;
+        
+        String publisherApisString = "/search";
+        String resourceParenPath = "./src/test/payloads/";
+        
+    	public UnfiedSearch(String accessToken, ApimVersions version) {
+    		this.accessToken = accessToken;
+            
+            FileInputStream input;
+    	    Properties properties;
+
+            try {
+                String path =  "./src/test/resources/config.properties";
+    			properties = new Properties();
+    			input = new FileInputStream(path);
+    			properties.load(input);
+                if(version == ApimVersions.APIM_3_2){
+                    this.endPoint = properties.getProperty("base_url")+properties.getProperty("devportal_url_3_2");
+                }
+                else{
+                    this.endPoint = properties.getProperty("base_url")+properties.getProperty("devportal_url_4_1");
+                }
+                
+            } catch (Exception e) {
+            }
+    	}
+    	
+    	public Response getApiAndApiDocumentByContent(String query){
+        	
+            Response getApiAndApiDocumentByContentResponse  = RestAssured.given()
+            .relaxedHTTPSValidation()
+            .auth()
+            .oauth2(accessToken)
+            .contentType(ContentTypes.APPLICATION_JSON)
+            .get(endPoint+publisherApisString+"?query="+query);
+
+            return getApiAndApiDocumentByContentResponse;
+        }
     	
     }
     
     public class Settings{
     	
+    	String accessToken;
+        String endPoint;
+        
+        String publisherApisString = "/settings";
+        String resourceParenPath = "./src/test/payloads/";
+        
+    	public Settings(String accessToken, ApimVersions version) {
+    		this.accessToken = accessToken;
+            
+            FileInputStream input;
+    	    Properties properties;
+
+            try {
+                String path =  "./src/test/resources/config.properties";
+    			properties = new Properties();
+    			input = new FileInputStream(path);
+    			properties.load(input);
+                if(version == ApimVersions.APIM_3_2){
+                    this.endPoint = properties.getProperty("base_url")+properties.getProperty("devportal_url_3_2");
+                }
+                else{
+                    this.endPoint = properties.getProperty("base_url")+properties.getProperty("devportal_url_4_1");
+                }
+                
+            } catch (Exception e) {
+            }
+    	}
+    	
+    	public Response getStoreSetting(){
+        	
+            Response getStoreSettingResponse  = RestAssured.given()
+            .relaxedHTTPSValidation()
+            .auth()
+            .oauth2(accessToken)
+            .contentType(ContentTypes.APPLICATION_JSON)
+            .get(endPoint+publisherApisString);
+
+            return getStoreSettingResponse;
+        }
+    	
+    	public Response getAllApplicationAttributesFromConfiguration(){
+        	
+            Response getAllApplicationAttributesFromConfigurationResponse  = RestAssured.given()
+            .relaxedHTTPSValidation()
+            .auth()
+            .oauth2(accessToken)
+            .contentType(ContentTypes.APPLICATION_JSON)
+            .get(endPoint+publisherApisString+"/application-attributes");
+
+            return getAllApplicationAttributesFromConfigurationResponse;
+        }
+    	
     }
     
     public class Tenants{
     	
+    	String accessToken;
+        String endPoint;
+        
+        String publisherApisString = "/tenants";
+        String resourceParenPath = "./src/test/payloads/";
+        
+    	public Tenants(String accessToken, ApimVersions version) {
+    		this.accessToken = accessToken;
+            
+            FileInputStream input;
+    	    Properties properties;
+
+            try {
+                String path =  "./src/test/resources/config.properties";
+    			properties = new Properties();
+    			input = new FileInputStream(path);
+    			properties.load(input);
+                if(version == ApimVersions.APIM_3_2){
+                    this.endPoint = properties.getProperty("base_url")+properties.getProperty("devportal_url_3_2");
+                }
+                else{
+                    this.endPoint = properties.getProperty("base_url")+properties.getProperty("devportal_url_4_1");
+                }
+                
+            } catch (Exception e) {
+            }
+    	}
+    	
+    	public Response getTenantByState(){
+        	
+            Response getTenantByStateResponse  = RestAssured.given()
+            .relaxedHTTPSValidation()
+            .auth()
+            .oauth2(accessToken)
+            .contentType(ContentTypes.APPLICATION_JSON)
+            .get(endPoint+publisherApisString);
+
+            return getTenantByStateResponse;
+        }
+    	
     }
     
     public class Recommendations{
+    	
+    	String accessToken;
+        String endPoint;
+        
+        String publisherApisString = "/recommendations";
+        String resourceParenPath = "./src/test/payloads/";
+        
+    	public Recommendations(String accessToken, ApimVersions version) {
+    		this.accessToken = accessToken;
+            
+            FileInputStream input;
+    	    Properties properties;
+
+            try {
+                String path =  "./src/test/resources/config.properties";
+    			properties = new Properties();
+    			input = new FileInputStream(path);
+    			properties.load(input);
+                if(version == ApimVersions.APIM_3_2){
+                    this.endPoint = properties.getProperty("base_url")+properties.getProperty("devportal_url_3_2");
+                }
+                else{
+                    this.endPoint = properties.getProperty("base_url")+properties.getProperty("devportal_url_4_1");
+                }
+                
+            } catch (Exception e) {
+            }
+    	}
+    	
+    	public Response giveApiRecommendationsForUser(){
+        	
+            Response giveApiRecommendationsForUserResponse  = RestAssured.given()
+            .relaxedHTTPSValidation()
+            .auth()
+            .oauth2(accessToken)
+            .contentType(ContentTypes.APPLICATION_JSON)
+            .get(endPoint+publisherApisString);
+
+            return giveApiRecommendationsForUserResponse;
+        }
     	
     }
     
