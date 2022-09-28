@@ -173,7 +173,7 @@ public class TestClasses {
             Authentication authentication = new Authentication(authenticationObject);
             accessToken = authentication.getAccessToken();
             
-            DevPortal devPortal = new DevPortal();
+//            DevPortal devPortal = new DevPortal();
 			
 			DevPortal.Apis dPortalApis = new DevPortal.Apis(accessToken,ApimVersions.APIM_3_2);
             
