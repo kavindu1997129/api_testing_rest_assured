@@ -1267,13 +1267,201 @@ public class DevPortal {
     
     public class Alerts{
     	
+    	String accessToken;
+        String endPoint;
+        
+        String publisherApisString = "/alert-types";
+        String resourceParenPath = "./src/test/payloads/";
+        
+    	public Alerts(String accessToken, ApimVersions version) {
+    		this.accessToken = accessToken;
+            
+            FileInputStream input;
+    	    Properties properties;
+
+            try {
+                String path =  "./src/test/resources/config.properties";
+    			properties = new Properties();
+    			input = new FileInputStream(path);
+    			properties.load(input);
+                if(version == ApimVersions.APIM_3_2){
+                    this.endPoint = properties.getProperty("base_url")+properties.getProperty("devportal_url_3_2");
+                }
+                else{
+                    this.endPoint = properties.getProperty("base_url")+properties.getProperty("devportal_url_4_1");
+                }
+                
+            } catch (Exception e) {
+            }
+    	}
+    	
+    	public Response getListOfApiDeveloperPortalAlertTypes(){
+        	
+            Response getListOfApiDeveloperPortalAlertTypesResponse  = RestAssured.given()
+            .relaxedHTTPSValidation()
+            .auth()
+            .oauth2(accessToken)
+            .contentType(ContentTypes.APPLICATION_JSON)
+            .get(endPoint+publisherApisString);
+
+            return getListOfApiDeveloperPortalAlertTypesResponse;
+        }
+    	
     }
     
     public class AlertSubscriptions{
     	
+    	String accessToken;
+        String endPoint;
+        
+        String publisherApisString = "/alert-subscriptions";
+        String resourceParenPath = "./src/test/payloads/";
+        
+    	public AlertSubscriptions(String accessToken, ApimVersions version) {
+    		this.accessToken = accessToken;
+            
+            FileInputStream input;
+    	    Properties properties;
+
+            try {
+                String path =  "./src/test/resources/config.properties";
+    			properties = new Properties();
+    			input = new FileInputStream(path);
+    			properties.load(input);
+                if(version == ApimVersions.APIM_3_2){
+                    this.endPoint = properties.getProperty("base_url")+properties.getProperty("devportal_url_3_2");
+                }
+                else{
+                    this.endPoint = properties.getProperty("base_url")+properties.getProperty("devportal_url_4_1");
+                }
+                
+            } catch (Exception e) {
+            }
+    	}
+    	
+    	public Response getListOfApiDeveloperPortalAlertTypesSubscribedByUser(){
+        	
+            Response getListOfApiDeveloperPortalAlertTypesSubscribedByUserResponse  = RestAssured.given()
+            .relaxedHTTPSValidation()
+            .auth()
+            .oauth2(accessToken)
+            .contentType(ContentTypes.APPLICATION_JSON)
+            .get(endPoint+publisherApisString);
+
+            return getListOfApiDeveloperPortalAlertTypesSubscribedByUserResponse;
+        }
+    	
+    	public Response subscribeToSelectedAlertTypesByUser(String jsonPayloadPath){
+    		
+    		byte[] payloadplj1;
+            String payloadpls1="";
+    		
+    		try {
+        		payloadplj1 = Files.readAllBytes(Paths.get(resourceParenPath+jsonPayloadPath));
+        		payloadpls1 = new String(payloadplj1);
+            } catch (Exception e) {
+            }
+        	
+            Response subscribeToSelectedAlertTypesByUserResponse  = RestAssured.given()
+            .relaxedHTTPSValidation()
+            .auth()
+            .oauth2(accessToken)
+            .contentType(ContentTypes.APPLICATION_JSON)
+            .body(payloadpls1)
+            .put(endPoint+publisherApisString);
+
+            return subscribeToSelectedAlertTypesByUserResponse;
+        }
+    	
+    	public Response unsubscribeUserFromAllAlertTypes(){
+        	
+            Response unsubscribeUserFromAllAlertTypesResponse  = RestAssured.given()
+            .relaxedHTTPSValidation()
+            .auth()
+            .oauth2(accessToken)
+            .contentType(ContentTypes.APPLICATION_JSON)
+            .delete(endPoint+publisherApisString);
+
+            return unsubscribeUserFromAllAlertTypesResponse;
+        }
+    	
     }
     
     public class ApiConfigurations{
+    	
+    	String accessToken;
+        String endPoint;
+        
+        String publisherApisString = "/alerts";
+        String resourceParenPath = "./src/test/payloads/";
+        
+    	public ApiConfigurations(String accessToken, ApimVersions version) {
+    		this.accessToken = accessToken;
+            
+            FileInputStream input;
+    	    Properties properties;
+
+            try {
+                String path =  "./src/test/resources/config.properties";
+    			properties = new Properties();
+    			input = new FileInputStream(path);
+    			properties.load(input);
+                if(version == ApimVersions.APIM_3_2){
+                    this.endPoint = properties.getProperty("base_url")+properties.getProperty("devportal_url_3_2");
+                }
+                else{
+                    this.endPoint = properties.getProperty("base_url")+properties.getProperty("devportal_url_4_1");
+                }
+                
+            } catch (Exception e) {
+            }
+    	}
+    	
+    	public Response getAllAbnormalRequestsPerMinAlertConfigurations(String alertType){
+        	
+            Response getAllAbnormalRequestsPerMinAlertConfigurationsResponse  = RestAssured.given()
+            .relaxedHTTPSValidation()
+            .auth()
+            .oauth2(accessToken)
+            .contentType(ContentTypes.APPLICATION_JSON)
+            .get(endPoint+publisherApisString+"/"+alertType+"/configurations");
+
+            return getAllAbnormalRequestsPerMinAlertConfigurationsResponse;
+        }
+    	
+    	public Response addAbnormalRequestsPerMinAlertConfigurations(String alertType, String configurationId, String jsonPayloadPath){
+    		
+    		byte[] payloadplj1;
+            String payloadpls1="";
+    		
+    		try {
+        		payloadplj1 = Files.readAllBytes(Paths.get(resourceParenPath+jsonPayloadPath));
+        		payloadpls1 = new String(payloadplj1);
+            } catch (Exception e) {
+            }
+        	
+            Response addAbnormalRequestsPerMinAlertConfigurationsResponse  = RestAssured.given()
+            .relaxedHTTPSValidation()
+            .auth()
+            .oauth2(accessToken)
+            .contentType(ContentTypes.APPLICATION_JSON)
+            .body(payloadpls1)
+            .put(endPoint+publisherApisString+"/"+alertType+"/configurations/"+configurationId);
+
+            return addAbnormalRequestsPerMinAlertConfigurationsResponse;
+        }
+    	
+    	public Response deleteSelectedConfigurationFromAbnormalRequestsPerMinAlertType(String alertType, String configurationId){
+        	
+            Response deleteSelectedConfigurationFromAbnormalRequestsPerMinAlertTypeResponse  = RestAssured.given()
+            .relaxedHTTPSValidation()
+            .auth()
+            .oauth2(accessToken)
+            .contentType(ContentTypes.APPLICATION_JSON)
+            .delete(endPoint+publisherApisString+"/"+alertType+"/configurations/"+configurationId);
+
+            return deleteSelectedConfigurationFromAbnormalRequestsPerMinAlertTypeResponse;
+        }
     	
     }
     
