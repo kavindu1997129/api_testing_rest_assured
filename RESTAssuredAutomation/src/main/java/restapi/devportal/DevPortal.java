@@ -9,6 +9,7 @@ import java.util.Properties;
 import org.apache.logging.log4j.util.StringBuilderFormattable;
 
 import io.restassured.RestAssured;
+import io.restassured.config.ParamConfig.UpdateStrategy;
 import io.restassured.response.Response;
 import restapi.ApimVersions;
 import restapi.ContentTypes;
@@ -131,8 +132,7 @@ public class DevPortal {
         String publisherApisString = "/apis";
         String resourceParenPath = "./src/test/payloads/";
         
-        byte[] payloadplj1;
-        String payloadpls1;
+        
         
     	public ApiDocumentation(String accessToken, ApimVersions version) {
     		this.accessToken = accessToken;
@@ -168,6 +168,9 @@ public class DevPortal {
         }
         
         public Response addNewDocToApi(String apiId, String jsonPayloadPath){
+        	
+        	byte[] payloadplj1;
+            String payloadpls1="";
         	
         	try {
         		payloadplj1 = Files.readAllBytes(Paths.get(resourceParenPath+jsonPayloadPath));
@@ -264,9 +267,6 @@ public class DevPortal {
         String publisherApisString = "/apis";
         String resourceParenPath = "./src/test/payloads/";
         
-        byte[] payloadplj1;
-        String payloadpls1;
-        
     	public Rating(String accessToken, ApimVersions version) {
     		this.accessToken = accessToken;
             
@@ -313,6 +313,9 @@ public class DevPortal {
     	
     	public Response addOrUpdateLoggedUserRatingOfApi(String apiId, String jsonPayloadPath){
     		
+    		byte[] payloadplj1;
+            String payloadpls1="";
+    		
     		try {
         		payloadplj1 = Files.readAllBytes(Paths.get(resourceParenPath+jsonPayloadPath));
         		payloadpls1 = new String(payloadplj1);
@@ -324,7 +327,7 @@ public class DevPortal {
             .auth()
             .oauth2(accessToken)
             .contentType(ContentTypes.APPLICATION_JSON)
-            .body(payloadplj1)
+            .body(payloadpls1)
             .put(endPoint+publisherApisString+"/"+apiId+"/user-rating");
 
             return addOrUpdateLoggedUserRatingOfApiResponse;
@@ -349,9 +352,6 @@ public class DevPortal {
         
         String publisherApisString = "/apis";
         String resourceParenPath = "./src/test/payloads/";
-        
-        byte[] payloadplj1;
-        String payloadpls1;
         
     	public Comments(String accessToken, ApimVersions version) {
     		this.accessToken = accessToken;
@@ -387,6 +387,9 @@ public class DevPortal {
         }
     	
     	public Response addApiComment(String apiId, String jsonPayloadPath){
+    		
+    		byte[] payloadplj1;
+            String payloadpls1="";
     		
     		try {
         		payloadplj1 = Files.readAllBytes(Paths.get(resourceParenPath+jsonPayloadPath));
@@ -437,9 +440,6 @@ public class DevPortal {
         String publisherApisString = "/apis";
         String resourceParenPath = "./src/test/payloads/";
         
-        byte[] payloadplj1;
-        String payloadpls1;
-        
     	public Appilications(String accessToken, ApimVersions version) {
     		this.accessToken = accessToken;
             
@@ -475,6 +475,9 @@ public class DevPortal {
     	
     	public Response createNewApplications(String jsonPayloadPath){
     		
+    		byte[] payloadplj1;
+            String payloadpls1="";
+    		
     		try {
         		payloadplj1 = Files.readAllBytes(Paths.get(resourceParenPath+jsonPayloadPath));
         		payloadpls1 = new String(payloadplj1);
@@ -486,7 +489,7 @@ public class DevPortal {
             .auth()
             .oauth2(accessToken)
             .contentType(ContentTypes.APPLICATION_JSON)
-            .body(payloadplj1)
+            .body(payloadpls1)
             .post(endPoint+publisherApisString+"/applications");
 
             return createNewApplicationsResponse;
@@ -505,6 +508,9 @@ public class DevPortal {
     	
     	public Response updateApplications(String applicationId,String jsonPayloadPath){
     		
+    		byte[] payloadplj1;
+            String payloadpls1="";
+    		
     		try {
         		payloadplj1 = Files.readAllBytes(Paths.get(resourceParenPath+jsonPayloadPath));
         		payloadpls1 = new String(payloadplj1);
@@ -516,7 +522,7 @@ public class DevPortal {
             .auth()
             .oauth2(accessToken)
             .contentType(ContentTypes.APPLICATION_JSON)
-            .body(payloadplj1)
+            .body(payloadpls1)
             .put(endPoint+publisherApisString+"/applications/"+applicationId);
 
             return updateApplicationsResponse;
@@ -542,9 +548,6 @@ public class DevPortal {
         String publisherApisString = "/applications";
         String resourceParenPath = "./src/test/payloads/";
         
-        byte[] payloadplj1;
-        String payloadpls1;
-        
     	public ApplicationKeys(String accessToken, ApimVersions version) {
     		this.accessToken = accessToken;
             
@@ -569,6 +572,9 @@ public class DevPortal {
     	
     	public Response generateApplicationKeys(String appclicationId, String jsonPayloadPath){
     		
+    		byte[] payloadplj1;
+            String payloadpls1="";
+    		
     		try {
         		payloadplj1 = Files.readAllBytes(Paths.get(resourceParenPath+jsonPayloadPath));
         		payloadpls1 = new String(payloadplj1);
@@ -580,13 +586,16 @@ public class DevPortal {
             .auth()
             .oauth2(accessToken)
             .contentType(ContentTypes.APPLICATION_JSON)
-            .body(payloadplj1)
+            .body(payloadpls1)
             .post(endPoint+publisherApisString+"/"+appclicationId+"/generate-keys");
 
             return generateApplicationKeysResponse;
         }
 
     	public Response mapApplicationKeys(String appclicationId, String jsonPayloadPath){
+    		
+    		byte[] payloadplj1;
+            String payloadpls1="";
     		
     		try {
         		payloadplj1 = Files.readAllBytes(Paths.get(resourceParenPath+jsonPayloadPath));
@@ -599,7 +608,7 @@ public class DevPortal {
             .auth()
             .oauth2(accessToken)
             .contentType(ContentTypes.APPLICATION_JSON)
-            .body(payloadplj1)
+            .body(payloadpls1)
             .post(endPoint+publisherApisString+"/"+appclicationId+"/map-keys");
 
             return mapApplicationKeysResponse;
@@ -615,13 +624,178 @@ public class DevPortal {
 
             return getAllApplicationKeysResponse;
         }
+    	
+    	public Response getKeyDetailsOfGivenType(String  applicationId, String keyMappingId){
+            Response getKeyDetailsOfGivenTypeResponse  = RestAssured.given()
+            .relaxedHTTPSValidation()
+            .auth()
+            .oauth2(accessToken)
+            .contentType(ContentTypes.APPLICATION_JSON)
+            .get(endPoint+publisherApisString+"/"+applicationId+"/oauth-keys/"+keyMappingId);
+
+            return getKeyDetailsOfGivenTypeResponse;
+        }
+    	
+    	public Response updateGrantTypesAndCallbackUrlOfApplication(String applicationId, String keyMappingId){
+            Response updateGrantTypesAndCallbackUrlOfApplicationResponse  = RestAssured.given()
+            .relaxedHTTPSValidation()
+            .auth()
+            .oauth2(accessToken)
+            .contentType(ContentTypes.APPLICATION_JSON)
+            .put(endPoint+publisherApisString+"/"+applicationId+"/oauth-keys/"+keyMappingId);
+
+            return updateGrantTypesAndCallbackUrlOfApplicationResponse;
+        }
+    	
+    	public Response regenerateConsumerSecret(String applicationId, String keyMappingId){
+            Response regenerateConsumerSecretResponse  = RestAssured.given()
+            .relaxedHTTPSValidation()
+            .auth()
+            .oauth2(accessToken)
+            .contentType(ContentTypes.APPLICATION_JSON)
+            .put(endPoint+publisherApisString+"/"+applicationId+"/oauth-keys/"+keyMappingId+"/regenerate-secret");
+
+            return regenerateConsumerSecretResponse;
+        }
+    	
+    	public Response cleanUpApplicationKeys(String applicationId, String keyMappingId){
+            Response cleanUpApplicationKeysResponse  = RestAssured.given()
+            .relaxedHTTPSValidation()
+            .auth()
+            .oauth2(accessToken)
+            .contentType(ContentTypes.APPLICATION_JSON)
+            .put(endPoint+publisherApisString+"/"+applicationId+"/oauth-keys/"+keyMappingId+"/clean-up");
+
+            return cleanUpApplicationKeysResponse;
+        }
     }
     
     public class ApplicationTokens{
     	
+    	String accessToken;
+        String endPoint;
+        
+        String publisherApisString = "/applications";
+        String resourceParenPath = "./src/test/payloads/";
+        
+    	public ApplicationTokens(String accessToken, ApimVersions version) {
+    		this.accessToken = accessToken;
+            
+            FileInputStream input;
+    	    Properties properties;
+
+            try {
+                String path =  "./src/test/resources/config.properties";
+    			properties = new Properties();
+    			input = new FileInputStream(path);
+    			properties.load(input);
+                if(version == ApimVersions.APIM_3_2){
+                    this.endPoint = properties.getProperty("base_url")+properties.getProperty("devportal_url_3_2");
+                }
+                else{
+                    this.endPoint = properties.getProperty("base_url")+properties.getProperty("devportal_url_4_1");
+                }
+                
+            } catch (Exception e) {
+            }
+    	}
+    	
+    	public Response generateApplicationTokens(String appclicationId, String keyMappingId, String jsonPayloadPath){
+    		
+    		byte[] payloadplj1;
+            String payloadpls1="";
+    		
+    		try {
+        		payloadplj1 = Files.readAllBytes(Paths.get(resourceParenPath+jsonPayloadPath));
+        		payloadpls1 = new String(payloadplj1);
+            } catch (Exception e) {
+            }
+    		
+            Response generateApplicationTokensResponse  = RestAssured.given()
+            .relaxedHTTPSValidation()
+            .auth()
+            .oauth2(accessToken)
+            .contentType(ContentTypes.APPLICATION_JSON)
+            .body(payloadpls1)
+            .post(endPoint+publisherApisString+"/"+appclicationId+"/oauth-keys/"+keyMappingId+"/generate-token");
+
+            return generateApplicationTokensResponse;
+        }
     }
     
     public class ApiKeys{
+    	
+    	String accessToken;
+        String endPoint;
+        
+        String publisherApisString = "/applications";
+        String resourceParenPath = "./src/test/payloads/";
+        
+    	public ApiKeys(String accessToken, ApimVersions version) {
+    		this.accessToken = accessToken;
+            
+            FileInputStream input;
+    	    Properties properties;
+
+            try {
+                String path =  "./src/test/resources/config.properties";
+    			properties = new Properties();
+    			input = new FileInputStream(path);
+    			properties.load(input);
+                if(version == ApimVersions.APIM_3_2){
+                    this.endPoint = properties.getProperty("base_url")+properties.getProperty("devportal_url_3_2");
+                }
+                else{
+                    this.endPoint = properties.getProperty("base_url")+properties.getProperty("devportal_url_4_1");
+                }
+                
+            } catch (Exception e) {
+            }
+    	}
+    	
+    	public Response generateApiKeys(String appclicationId, String keyType, String jsonPayloadPath){
+    		
+    		byte[] payloadplj1;
+            String payloadpls1="";
+    		
+    		try {
+        		payloadplj1 = Files.readAllBytes(Paths.get(resourceParenPath+jsonPayloadPath));
+        		payloadpls1 = new String(payloadplj1);
+            } catch (Exception e) {
+            }
+    		
+            Response generateApiKeysResponse  = RestAssured.given()
+            .relaxedHTTPSValidation()
+            .auth()
+            .oauth2(accessToken)
+            .contentType(ContentTypes.APPLICATION_JSON)
+            .body(payloadpls1)
+            .post(endPoint+publisherApisString+"/"+appclicationId+"/api-keys/"+keyType+"/generate");
+
+            return generateApiKeysResponse;
+        }
+    	
+    	public Response revokeApiKeys(String appclicationId, String keyType, String jsonPayloadPath){
+    		
+    		byte[] payloadplj1;
+            String payloadpls1="";
+    		
+    		try {
+        		payloadplj1 = Files.readAllBytes(Paths.get(resourceParenPath+jsonPayloadPath));
+        		payloadpls1 = new String(payloadplj1);
+            } catch (Exception e) {
+            }
+    		
+            Response revokeApiKeysResponse  = RestAssured.given()
+            .relaxedHTTPSValidation()
+            .auth()
+            .oauth2(accessToken)
+            .contentType(ContentTypes.APPLICATION_JSON)
+            .body(payloadpls1)
+            .post(endPoint+publisherApisString+"/"+appclicationId+"/api-keys/"+keyType+"/revoke");
+
+            return revokeApiKeysResponse;
+        }
     	
     }
     
