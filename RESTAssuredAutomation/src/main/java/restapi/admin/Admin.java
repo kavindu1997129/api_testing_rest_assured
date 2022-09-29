@@ -888,8 +888,8 @@ public class Admin {
 
             } catch (Exception e) {
             }
-    		
-            Response updateCustomRuleResponse  = RestAssured.given()
+    		Response updateCustomRuleResponse  = RestAssured.given()
+            
             .relaxedHTTPSValidation()
             .auth()
             .oauth2(accessToken)
@@ -1619,40 +1619,707 @@ public class Admin {
 	
 	public static class ApiCategory_Collection{
 		
+		String accessToken;
+        String endPoint;
+        
+        String publisherApisString = "/api-categories";
+        String resourceParenPath = "./src/test/payloads/";
+        
+    	public ApiCategory_Collection(String accessToken, ApimVersions version) {
+    		this.accessToken = accessToken;
+            
+            FileInputStream input;
+    	    Properties properties;
+
+            try {
+                String path =  "./src/test/resources/config.properties";
+    			properties = new Properties();
+    			input = new FileInputStream(path);
+    			properties.load(input);
+                if(version == ApimVersions.APIM_3_2){
+                    this.endPoint = properties.getProperty("base_url")+properties.getProperty("admin_url_3_2");
+                }
+                else{
+                    this.endPoint = properties.getProperty("base_url")+properties.getProperty("admin_url_4_1");
+                }
+                
+            } catch (Exception e) {
+            }
+
+    	}
+		
+    	public Response getAllApiCategories(){
+    		
+            Response getAllApiCategoriesResponse  = RestAssured.given()
+            .relaxedHTTPSValidation()
+            .auth()
+            .oauth2(accessToken)
+            .contentType(ContentTypes.APPLICATION_JSON)
+            .get(endPoint+publisherApisString);
+
+            return getAllApiCategoriesResponse;
+        }
+		
+		
 	}
 	
 	public static class ApiCategory_Individual{
+		
+		String accessToken;
+        String endPoint;
+        
+        String publisherApisString = "/api-categories";
+        String resourceParenPath = "./src/test/payloads/";
+        
+    	public ApiCategory_Individual(String accessToken, ApimVersions version) {
+    		this.accessToken = accessToken;
+            
+            FileInputStream input;
+    	    Properties properties;
+
+            try {
+                String path =  "./src/test/resources/config.properties";
+    			properties = new Properties();
+    			input = new FileInputStream(path);
+    			properties.load(input);
+                if(version == ApimVersions.APIM_3_2){
+                    this.endPoint = properties.getProperty("base_url")+properties.getProperty("admin_url_3_2");
+                }
+                else{
+                    this.endPoint = properties.getProperty("base_url")+properties.getProperty("admin_url_4_1");
+                }
+                
+            } catch (Exception e) {
+            }
+
+    	}
+    	
+    	public Response addApiCategories(String jsonPayloadPath){
+    		
+    		byte[] payloadplj1;
+            String payloadpls1="";
+        	
+        	try {
+        		payloadplj1 = Files.readAllBytes(Paths.get(resourceParenPath+jsonPayloadPath));
+        		payloadpls1 = new String(payloadplj1);
+
+            } catch (Exception e) {
+            }
+    		
+            Response addApiCategoriesResponse  = RestAssured.given()
+            .relaxedHTTPSValidation()
+            .auth()
+            .oauth2(accessToken)
+            .body(payloadpls1)
+            .contentType(ContentTypes.APPLICATION_JSON)
+            .post(endPoint+publisherApisString);
+
+            return addApiCategoriesResponse;
+        }
+    	
+    	public Response updateApiCategory(String jsonPayloadPath, String apiCategoryId){
+    		
+    		byte[] payloadplj1;
+            String payloadpls1="";
+        	
+        	try {
+        		payloadplj1 = Files.readAllBytes(Paths.get(resourceParenPath+jsonPayloadPath));
+        		payloadpls1 = new String(payloadplj1);
+
+            } catch (Exception e) {
+            }
+    		
+            Response updateApiCategoryResponse  = RestAssured.given()
+            .relaxedHTTPSValidation()
+            .auth()
+            .oauth2(accessToken)
+            .body(payloadpls1)
+            .contentType(ContentTypes.APPLICATION_JSON)
+            .put(endPoint+publisherApisString+"/"+apiCategoryId);
+
+            return updateApiCategoryResponse;
+        }
+    	
+    	public Response deleteApiCategory(String apiCategoryId){
+    		
+            Response deleteApiCategoryResponse  = RestAssured.given()
+            .relaxedHTTPSValidation()
+            .auth()
+            .oauth2(accessToken)
+            .contentType(ContentTypes.APPLICATION_JSON)
+            .delete(endPoint+publisherApisString+"/"+apiCategoryId);
+
+            return deleteApiCategoryResponse;
+        }
 		
 	}
 	
 	public static class Settings{
 		
+		String accessToken;
+        String endPoint;
+        
+        String publisherApisString = "/settings";
+        String resourceParenPath = "./src/test/payloads/";
+        
+    	public Settings(String accessToken, ApimVersions version) {
+    		this.accessToken = accessToken;
+            
+            FileInputStream input;
+    	    Properties properties;
+
+            try {
+                String path =  "./src/test/resources/config.properties";
+    			properties = new Properties();
+    			input = new FileInputStream(path);
+    			properties.load(input);
+                if(version == ApimVersions.APIM_3_2){
+                    this.endPoint = properties.getProperty("base_url")+properties.getProperty("admin_url_3_2");
+                }
+                else{
+                    this.endPoint = properties.getProperty("base_url")+properties.getProperty("admin_url_4_1");
+                }
+                
+            } catch (Exception e) {
+            }
+
+    	}
+		
+    	public Response getAdminSetting(){
+    		
+            Response getAdminSettingResponse  = RestAssured.given()
+            .relaxedHTTPSValidation()
+            .auth()
+            .oauth2(accessToken)
+            .contentType(ContentTypes.APPLICATION_JSON)
+            .get(endPoint+publisherApisString);
+
+            return getAdminSettingResponse;
+        }
+		
 	}
 	
 	public static class Alerts{
+		
+		String accessToken;
+        String endPoint;
+        
+        String publisherApisString = "/alert-types";
+        String resourceParenPath = "./src/test/payloads/";
+        
+    	public Alerts(String accessToken, ApimVersions version) {
+    		this.accessToken = accessToken;
+            
+            FileInputStream input;
+    	    Properties properties;
+
+            try {
+                String path =  "./src/test/resources/config.properties";
+    			properties = new Properties();
+    			input = new FileInputStream(path);
+    			properties.load(input);
+                if(version == ApimVersions.APIM_3_2){
+                    this.endPoint = properties.getProperty("base_url")+properties.getProperty("admin_url_3_2");
+                }
+                else{
+                    this.endPoint = properties.getProperty("base_url")+properties.getProperty("admin_url_4_1");
+                }
+                
+            } catch (Exception e) {
+            }
+
+    	}
+		
+    	public Response getAllAdminAlertTypes(){
+    		
+            Response getAllAdminAlertTypesResponse  = RestAssured.given()
+            .relaxedHTTPSValidation()
+            .auth()
+            .oauth2(accessToken)
+            .contentType(ContentTypes.APPLICATION_JSON)
+            .get(endPoint+publisherApisString);
+
+            return getAllAdminAlertTypesResponse;
+        }
 		
 	}
 	
 	public static class AlertSubscriptions{
 		
+		String accessToken;
+        String endPoint;
+        
+        String publisherApisString = "/alert-subscriptions";
+        String resourceParenPath = "./src/test/payloads/";
+        
+    	public AlertSubscriptions(String accessToken, ApimVersions version) {
+    		this.accessToken = accessToken;
+            
+            FileInputStream input;
+    	    Properties properties;
+
+            try {
+                String path =  "./src/test/resources/config.properties";
+    			properties = new Properties();
+    			input = new FileInputStream(path);
+    			properties.load(input);
+                if(version == ApimVersions.APIM_3_2){
+                    this.endPoint = properties.getProperty("base_url")+properties.getProperty("admin_url_3_2");
+                }
+                else{
+                    this.endPoint = properties.getProperty("base_url")+properties.getProperty("admin_url_4_1");
+                }
+                
+            } catch (Exception e) {
+            }
+
+    	}
+		
+    	public Response getSubscribedAlertTypes(){
+    		
+            Response getCustomRuleResponse  = RestAssured.given()
+            .relaxedHTTPSValidation()
+            .auth()
+            .oauth2(accessToken)
+            .contentType(ContentTypes.APPLICATION_JSON)
+            .get(endPoint+publisherApisString);
+
+            return getCustomRuleResponse;
+        }
+    	
+    	public Response subscribeToAdminAlert(String conditionId, String jsonPayloadPath){
+    		
+    		byte[] payloadplj1;
+            String payloadpls1="";
+        	
+        	try {
+        		payloadplj1 = Files.readAllBytes(Paths.get(resourceParenPath+jsonPayloadPath));
+        		payloadpls1 = new String(payloadplj1);
+
+            } catch (Exception e) {
+            }
+    		
+            Response subscribeToAdminAlertResponse  = RestAssured.given()
+            .relaxedHTTPSValidation()
+            .auth()
+            .oauth2(accessToken)
+            .basePath(payloadpls1)
+            .contentType(ContentTypes.APPLICATION_JSON)
+            .put(endPoint+publisherApisString);
+
+            return subscribeToAdminAlertResponse;
+        }
+    	
+    	public Response unsubscribeUserFromAllAdminAlerts(){
+    		
+            Response unsubscribeUserFromAllAdminAlertsResponse  = RestAssured.given()
+            .relaxedHTTPSValidation()
+            .auth()
+            .oauth2(accessToken)
+            .contentType(ContentTypes.APPLICATION_JSON)
+            .delete(endPoint+publisherApisString);
+
+            return unsubscribeUserFromAllAdminAlertsResponse;
+        }
+		
 	}	
 	public static class BotDetectionAlertSubscriptions{
+		
+		String accessToken;
+        String endPoint;
+        
+        String publisherApisString = "/alert-subscriptions/bot-detection";
+        String resourceParenPath = "./src/test/payloads/";
+        
+    	public BotDetectionAlertSubscriptions(String accessToken, ApimVersions version) {
+    		this.accessToken = accessToken;
+            
+            FileInputStream input;
+    	    Properties properties;
+
+            try {
+                String path =  "./src/test/resources/config.properties";
+    			properties = new Properties();
+    			input = new FileInputStream(path);
+    			properties.load(input);
+                if(version == ApimVersions.APIM_3_2){
+                    this.endPoint = properties.getProperty("base_url")+properties.getProperty("admin_url_3_2");
+                }
+                else{
+                    this.endPoint = properties.getProperty("base_url")+properties.getProperty("admin_url_4_1");
+                }
+                
+            } catch (Exception e) {
+            }
+
+    	}
+		
+    	public Response getSubscriptionsForBotDetection(){
+    		
+            Response getSubscriptionsForBotDetectionResponse  = RestAssured.given()
+            .relaxedHTTPSValidation()
+            .auth()
+            .oauth2(accessToken)
+            .contentType(ContentTypes.APPLICATION_JSON)
+            .get(endPoint+publisherApisString);
+
+            return getSubscriptionsForBotDetectionResponse;
+        }
+    	
+    	public Response subscribeForBotDetectionAlerts(String jsonPayloadPath){
+    		
+    		byte[] payloadplj1;
+            String payloadpls1="";
+        	
+        	try {
+        		payloadplj1 = Files.readAllBytes(Paths.get(resourceParenPath+jsonPayloadPath));
+        		payloadpls1 = new String(payloadplj1);
+
+            } catch (Exception e) {
+            }
+    		
+            Response subscribeForBotDetectionAlertsResponse  = RestAssured.given()
+            .relaxedHTTPSValidation()
+            .auth()
+            .oauth2(accessToken)
+            .basePath(payloadpls1)
+            .contentType(ContentTypes.APPLICATION_JSON)
+            .post(endPoint+publisherApisString);
+
+            return subscribeForBotDetectionAlertsResponse;
+        }
+    	
+    	public Response unsubscribeFromBotDetectionAlerts(String uuid){
+    		
+            Response unsubscribeFromBotDetectionAlertsResponse  = RestAssured.given()
+            .relaxedHTTPSValidation()
+            .auth()
+            .oauth2(accessToken)
+            .contentType(ContentTypes.APPLICATION_JSON)
+            .delete(endPoint+publisherApisString+"/"+uuid);
+
+            return unsubscribeFromBotDetectionAlertsResponse;
+        }
 		
 	}
 	
 	public static class SystemScopes{
 		
+		String accessToken;
+        String endPoint;
+        
+        String publisherApisString = "/system-scopes";
+        String resourceParenPath = "./src/test/payloads/";
+        
+    	public SystemScopes(String accessToken, ApimVersions version) {
+    		this.accessToken = accessToken;
+            
+            FileInputStream input;
+    	    Properties properties;
+
+            try {
+                String path =  "./src/test/resources/config.properties";
+    			properties = new Properties();
+    			input = new FileInputStream(path);
+    			properties.load(input);
+                if(version == ApimVersions.APIM_3_2){
+                    this.endPoint = properties.getProperty("base_url")+properties.getProperty("admin_url_3_2");
+                }
+                else{
+                    this.endPoint = properties.getProperty("base_url")+properties.getProperty("admin_url_4_1");
+                }
+                
+            } catch (Exception e) {
+            }
+
+    	}
+		
+    	public Response getScopesForParticularUser(String scopeName, String userName){
+    		
+            Response getScopesForParticularUserResponse  = RestAssured.given()
+            .relaxedHTTPSValidation()
+            .auth()
+            .oauth2(accessToken)
+            .contentType(ContentTypes.APPLICATION_JSON)
+            .get(endPoint+publisherApisString+"/"+scopeName+"?username="+userName);
+
+            return getScopesForParticularUserResponse;
+        }
+    	
+    	public Response getRoleScopeMappings(){
+    		
+            Response getRoleScopeMappingsResponse  = RestAssured.given()
+            .relaxedHTTPSValidation()
+            .auth()
+            .oauth2(accessToken)
+            .contentType(ContentTypes.APPLICATION_JSON)
+            .get(endPoint+publisherApisString);
+
+            return getRoleScopeMappingsResponse;
+        }
+    	
+    	public Response updateRolesForScope(String jsonPayloadPath){
+    		
+    		byte[] payloadplj1;
+            String payloadpls1="";
+        	
+        	try {
+        		payloadplj1 = Files.readAllBytes(Paths.get(resourceParenPath+jsonPayloadPath));
+        		payloadpls1 = new String(payloadplj1);
+
+            } catch (Exception e) {
+            }
+    		
+            Response updateRolesForScopeResponse  = RestAssured.given()
+            .relaxedHTTPSValidation()
+            .auth()
+            .oauth2(accessToken)
+            .basePath(payloadpls1)
+            .contentType(ContentTypes.APPLICATION_JSON)
+            .put(endPoint+publisherApisString);
+
+            return updateRolesForScopeResponse;
+        }
+    	
+    	public Response getRoleAliasMappings(){
+    		
+            Response getRoleAliasMappingsResponse  = RestAssured.given()
+            .relaxedHTTPSValidation()
+            .auth()
+            .oauth2(accessToken)
+            .contentType(ContentTypes.APPLICATION_JSON)
+            .get(endPoint+publisherApisString+"/role-aliases");
+
+            return getRoleAliasMappingsResponse;
+        }
+    	
+    	public Response addNewRoleAlias(String jsonPayloadPath){
+    		
+    		byte[] payloadplj1;
+            String payloadpls1="";
+        	
+        	try {
+        		payloadplj1 = Files.readAllBytes(Paths.get(resourceParenPath+jsonPayloadPath));
+        		payloadpls1 = new String(payloadplj1);
+
+            } catch (Exception e) {
+            }
+    		
+            Response addNewRoleAliasResponse  = RestAssured.given()
+            .relaxedHTTPSValidation()
+            .auth()
+            .oauth2(accessToken)
+            .basePath(payloadpls1)
+            .contentType(ContentTypes.APPLICATION_JSON)
+            .put(endPoint+publisherApisString+"/role-aliases");
+
+            return addNewRoleAliasResponse;
+        }
+		
 	}
 	
 	public static class TenantTheme{
+		
+		String accessToken;
+        String endPoint;
+        
+        String publisherApisString = "/tenant-theme";
+        String resourceParenPath = "./src/test/payloads/";
+        
+    	public TenantTheme(String accessToken, ApimVersions version) {
+    		this.accessToken = accessToken;
+            
+            FileInputStream input;
+    	    Properties properties;
+
+            try {
+                String path =  "./src/test/resources/config.properties";
+    			properties = new Properties();
+    			input = new FileInputStream(path);
+    			properties.load(input);
+                if(version == ApimVersions.APIM_3_2){
+                    this.endPoint = properties.getProperty("base_url")+properties.getProperty("admin_url_3_2");
+                }
+                else{
+                    this.endPoint = properties.getProperty("base_url")+properties.getProperty("admin_url_4_1");
+                }
+                
+            } catch (Exception e) {
+            }
+
+    	}
+		
+    	public Response exportDevPortalTenantTheme(){
+    		
+            Response exportDevPortalTenantThemeResponse  = RestAssured.given()
+            .relaxedHTTPSValidation()
+            .auth()
+            .oauth2(accessToken)
+            .contentType(ContentTypes.APPLICATION_JSON)
+            .get(endPoint+publisherApisString);
+
+            return exportDevPortalTenantThemeResponse;
+        }
+    	
+    	public Response importDevPortalTenantTheme(String themeZipPath){
+    		
+            Response importDevPortalTenantThemeResponse  = RestAssured.given()
+            .relaxedHTTPSValidation()
+            .auth()
+            .oauth2(accessToken)
+            .multiPart("file",new File(resourceParenPath+themeZipPath))
+            .put(endPoint+publisherApisString);
+
+            return importDevPortalTenantThemeResponse;
+        }
 		
 	}
 	
 	public static class KeyManager_Collection{
 		
+		String accessToken;
+        String endPoint;
+        
+        String publisherApisString = "/key-managers";
+        String resourceParenPath = "./src/test/payloads/";
+        
+    	public KeyManager_Collection(String accessToken, ApimVersions version) {
+    		this.accessToken = accessToken;
+            
+            FileInputStream input;
+    	    Properties properties;
+
+            try {
+                String path =  "./src/test/resources/config.properties";
+    			properties = new Properties();
+    			input = new FileInputStream(path);
+    			properties.load(input);
+                if(version == ApimVersions.APIM_3_2){
+                    this.endPoint = properties.getProperty("base_url")+properties.getProperty("admin_url_3_2");
+                }
+                else{
+                    this.endPoint = properties.getProperty("base_url")+properties.getProperty("admin_url_4_1");
+                }
+                
+            } catch (Exception e) {
+            }
+
+    	}
+    	
+    	public Response getAllKeyManagers(){
+    		
+            Response getAllKeyManagersResponse  = RestAssured.given()
+            .relaxedHTTPSValidation()
+            .auth()
+            .oauth2(accessToken)
+            .contentType(ContentTypes.APPLICATION_JSON)
+            .get(endPoint+publisherApisString);
+
+            return getAllKeyManagersResponse;
+        }
+    	
+    	public Response addNewApiKeyManager(String jsonPayloadPath){
+    		
+    		byte[] payloadplj1;
+            String payloadpls1="";
+        	
+        	try {
+        		payloadplj1 = Files.readAllBytes(Paths.get(resourceParenPath+jsonPayloadPath));
+        		payloadpls1 = new String(payloadplj1);
+
+            } catch (Exception e) {
+            }
+    		
+            Response addNewApiKeyManagerResponse  = RestAssured.given()
+            .relaxedHTTPSValidation()
+            .auth()
+            .oauth2(accessToken)
+            .basePath(payloadpls1)
+            .contentType(ContentTypes.APPLICATION_JSON)
+            .post(endPoint+publisherApisString);
+
+            return addNewApiKeyManagerResponse;
+        }
+		
 	}
 	
 	public static class KeyManager_Individual{
+		
+		String accessToken;
+        String endPoint;
+        
+        String publisherApisString = "/key-managers";
+        String resourceParenPath = "./src/test/payloads/";
+        
+    	public KeyManager_Individual(String accessToken, ApimVersions version) {
+    		this.accessToken = accessToken;
+            
+            FileInputStream input;
+    	    Properties properties;
+
+            try {
+                String path =  "./src/test/resources/config.properties";
+    			properties = new Properties();
+    			input = new FileInputStream(path);
+    			properties.load(input);
+                if(version == ApimVersions.APIM_3_2){
+                    this.endPoint = properties.getProperty("base_url")+properties.getProperty("admin_url_3_2");
+                }
+                else{
+                    this.endPoint = properties.getProperty("base_url")+properties.getProperty("admin_url_4_1");
+                }
+                
+            } catch (Exception e) {
+            }
+
+    	}
+    	
+    	public Response getKeyManagerConfiguration(String keyManagerId){
+    		
+            Response getKeyManagerConfigurationResponse  = RestAssured.given()
+            .relaxedHTTPSValidation()
+            .auth()
+            .oauth2(accessToken)
+            .contentType(ContentTypes.APPLICATION_JSON)
+            .get(endPoint+publisherApisString+"/"+keyManagerId);
+
+            return getKeyManagerConfigurationResponse;
+        }
+    	
+    	public Response updateKeyManager(String keyManagerId, String jsonPayloadPath){
+    		
+    		byte[] payloadplj1;
+            String payloadpls1="";
+        	
+        	try {
+        		payloadplj1 = Files.readAllBytes(Paths.get(resourceParenPath+jsonPayloadPath));
+        		payloadpls1 = new String(payloadplj1);
+
+            } catch (Exception e) {
+            }
+    		
+            Response updateKeyManagerResponse  = RestAssured.given()
+            .relaxedHTTPSValidation()
+            .auth()
+            .oauth2(accessToken)
+            .basePath(payloadpls1)
+            .contentType(ContentTypes.APPLICATION_JSON)
+            .put(endPoint+publisherApisString+"/"+keyManagerId);
+
+            return updateKeyManagerResponse;
+        }
+    	
+    	public Response deleteKeyManager(String keyManagerId, String jsonPayloadPath){
+    		
+            Response deleteKeyManagerResponse  = RestAssured.given()
+            .relaxedHTTPSValidation()
+            .auth()
+            .oauth2(accessToken)
+            .contentType(ContentTypes.APPLICATION_JSON)
+            .delete(endPoint+publisherApisString+"/"+keyManagerId);
+
+            return deleteKeyManagerResponse;
+        }
 		
 	}
 	
