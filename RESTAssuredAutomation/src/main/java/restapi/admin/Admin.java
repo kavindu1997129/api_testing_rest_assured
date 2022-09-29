@@ -1447,15 +1447,173 @@ public class Admin {
 		
 	}
 	
-	public static class Workflow_Individual{
+	public static class Workflow_Collection{
+		
+		String accessToken;
+        String endPoint;
+        
+        String publisherApisString = "/workflows";
+        String resourceParenPath = "./src/test/payloads/";
+        
+    	public Workflow_Collection(String accessToken, ApimVersions version) {
+    		this.accessToken = accessToken;
+            
+            FileInputStream input;
+    	    Properties properties;
+
+            try {
+                String path =  "./src/test/resources/config.properties";
+    			properties = new Properties();
+    			input = new FileInputStream(path);
+    			properties.load(input);
+                if(version == ApimVersions.APIM_3_2){
+                    this.endPoint = properties.getProperty("base_url")+properties.getProperty("admin_url_3_2");
+                }
+                else{
+                    this.endPoint = properties.getProperty("base_url")+properties.getProperty("admin_url_4_1");
+                }
+                
+            } catch (Exception e) {
+            }
+
+    	}
+		
+    	public Response getAllPendingWorkflowProcesses(){
+    		
+            Response getAllPendingWorkflowProcessesResponse  = RestAssured.given()
+            .relaxedHTTPSValidation()
+            .auth()
+            .oauth2(accessToken)
+            .contentType(ContentTypes.APPLICATION_JSON)
+            .get(endPoint+publisherApisString);
+
+            return getAllPendingWorkflowProcessesResponse;
+        }
 		
 	}
 	
-	public static class Workflow_Collection{
+	public static class Workflow_Individual{
+		
+		String accessToken;
+        String endPoint;
+        
+        String publisherApisString = "/workflows";
+        String resourceParenPath = "./src/test/payloads/";
+        
+    	public Workflow_Individual(String accessToken, ApimVersions version) {
+    		this.accessToken = accessToken;
+            
+            FileInputStream input;
+    	    Properties properties;
+
+            try {
+                String path =  "./src/test/resources/config.properties";
+    			properties = new Properties();
+    			input = new FileInputStream(path);
+    			properties.load(input);
+                if(version == ApimVersions.APIM_3_2){
+                    this.endPoint = properties.getProperty("base_url")+properties.getProperty("admin_url_3_2");
+                }
+                else{
+                    this.endPoint = properties.getProperty("base_url")+properties.getProperty("admin_url_4_1");
+                }
+                
+            } catch (Exception e) {
+            }
+
+    	}
+		
+    	public Response getPendingWorkflowDetails(String externalWorkflowRef){
+    		
+            Response getPendingWorkflowDetailsResponse  = RestAssured.given()
+            .relaxedHTTPSValidation()
+            .auth()
+            .oauth2(accessToken)
+            .contentType(ContentTypes.APPLICATION_JSON)
+            .get(endPoint+publisherApisString+"/"+externalWorkflowRef);
+
+            return getPendingWorkflowDetailsResponse;
+        }
+    	
+    	public Response updateWorkflowStatus(String externalWorkflowRef, String workflowReferenceId, String jsonPayloadPath){
+    		
+    		byte[] payloadplj1;
+            String payloadpls1="";
+        	
+        	try {
+        		payloadplj1 = Files.readAllBytes(Paths.get(resourceParenPath+jsonPayloadPath));
+        		payloadpls1 = new String(payloadplj1);
+
+            } catch (Exception e) {
+            }
+    		
+            Response updateWorkflowStatusResponse  = RestAssured.given()
+            .relaxedHTTPSValidation()
+            .auth()
+            .oauth2(accessToken)
+            .contentType(ContentTypes.APPLICATION_JSON)
+            .body(payloadpls1)
+            .post(endPoint+publisherApisString+"/update-workflow-status?workflowReferenceId="+workflowReferenceId);
+
+            return updateWorkflowStatusResponse;
+        }
 		
 	}
 	
 	public static class Tenants{
+		
+		String accessToken;
+        String endPoint;
+        
+        String publisherApisString = "/tenant-info";
+        String resourceParenPath = "./src/test/payloads/";
+        
+    	public Tenants(String accessToken, ApimVersions version) {
+    		this.accessToken = accessToken;
+            
+            FileInputStream input;
+    	    Properties properties;
+
+            try {
+                String path =  "./src/test/resources/config.properties";
+    			properties = new Properties();
+    			input = new FileInputStream(path);
+    			properties.load(input);
+                if(version == ApimVersions.APIM_3_2){
+                    this.endPoint = properties.getProperty("base_url")+properties.getProperty("admin_url_3_2");
+                }
+                else{
+                    this.endPoint = properties.getProperty("base_url")+properties.getProperty("admin_url_4_1");
+                }
+                
+            } catch (Exception e) {
+            }
+
+    	}
+		
+    	public Response getTenantIdOfUser(String userName){
+    		
+            Response getTenantIdOfUserResponse  = RestAssured.given()
+            .relaxedHTTPSValidation()
+            .auth()
+            .oauth2(accessToken)
+            .contentType(ContentTypes.APPLICATION_JSON)
+            .get(endPoint+publisherApisString+"/"+userName);
+
+            return getTenantIdOfUserResponse;
+        }
+    	
+    	public Response getCustomUrlInfoOfTenantDomain(String tenantDomain){
+    		
+            Response getCustomUrlInfoOfTenantDomainResponse  = RestAssured.given()
+            .relaxedHTTPSValidation()
+            .auth()
+            .oauth2(accessToken)
+            .contentType(ContentTypes.APPLICATION_JSON)
+            .get(endPoint+"/custom-urls/"+tenantDomain);
+
+            return getCustomUrlInfoOfTenantDomainResponse;
+        }
 		
 	}
 	
