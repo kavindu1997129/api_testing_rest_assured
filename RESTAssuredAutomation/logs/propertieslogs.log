@@ -7523,3 +7523,55 @@
 [INFO ] 2022-09-29 09:40:57.359 [main] TestClasses - Status Code [GET THROTTLING POLICIES]: 200
 [INFO ] 2022-09-29 09:40:57.411 [main] TestClasses - Status Code [GET DETAILS OF A POLICY]: 200
 [INFO ] 2022-09-29 09:40:57.463 [main] TestClasses - Status Code [GET GLOBAL MEDIATION POLICY]: 200
+[INFO ] 2022-09-30 09:04:55.054 [main] TestClasses - Status Code [CREATE API]: 409
+[INFO ] 2022-09-30 09:04:55.264 [main] TestClasses - Status Code [SEARCH API]: 200
+[INFO ] 2022-09-30 09:04:55.321 [main] TestClasses - [SEARCHED API ID]: ce3c564d-3b97-4918-b823-76aae785f44f
+[INFO ] 2022-09-30 09:04:57.978 [main] TestClasses - Status Code [UPLOAD API THUMBNAIL]: 201
+[INFO ] 2022-09-30 09:04:58.947 [main] TestClasses - Status Code [CHANGE API STATUS]: 200
+[INFO ] 2022-09-30 09:04:59.001 [main] TestClasses - Status Code [SEARCH UPLOADED CLIENT CERTIFICATE]: 200
+[INFO ] 2022-09-30 09:04:59.062 [main] TestClasses - Status Code [GET CERTIFICATE INFORMATION]: 404
+[INFO ] 2022-09-30 09:04:59.125 [main] TestClasses - Status Code [GET DEPLOYMENT STATUS]: 200
+[INFO ] 2022-09-30 09:04:59.238 [main] TestClasses - Status Code [SEARCH API PRODUCT]: 200
+[INFO ] 2022-09-30 09:04:59.339 [main] TestClasses - Status Code [CREATE API PRODUCT]: 400
+[INFO ] 2022-09-30 09:04:59.755 [main] TestClasses - Status Code [UPDATE API PRODUCT]: 200
+[INFO ] 2022-09-30 09:04:59.988 [main] TestClasses - Status Code [UPDATE API PRODUCT THUMBNAIL]: 201
+[INFO ] 2022-09-30 09:05:00.092 [main] TestClasses - Status Code [DELETE API PRODUCT LIFECYCLE]: 200
+[INFO ] 2022-09-30 09:05:00.136 [main] TestClasses - Status Code [GET ALL SHARED SCOPES]: 200
+[INFO ] 2022-09-30 09:05:00.231 [main] TestClasses - Status Code [ADD NEW SHARED SCOPES]: 409
+[INFO ] 2022-09-30 09:05:00.283 [main] TestClasses - Status Code [ADD NEW SHARED SCOPES]: 200
+[INFO ] 2022-09-30 09:05:01.550 [main] TestClasses - Status Code [UPDATE SHARED SCOPES]: 200
+[INFO ] 2022-09-30 09:05:01.606 [main] TestClasses - Status Code [GET USAGE OF SHARED SCOPES]: 200
+[INFO ] 2022-09-30 09:05:01.660 [main] TestClasses - Status Code [GET DEPLOYMENTS ENVIROMENT DETAILS]: 200
+[INFO ] 2022-09-30 09:05:01.745 [main] TestClasses - Status Code [GET ALL KEY MANAGERS]: 200
+[INFO ] 2022-09-30 09:05:02.305 [main] TestClasses - Status Code [GET PUBLISHER SETTING]: 200
+[INFO ] 2022-09-30 09:05:02.572 [main] TestClasses - Status Code [GET ALL GATEWAY ENVIRONMENTS]: 200
+[INFO ] 2022-09-30 09:05:02.621 [main] TestClasses - Status Code [GET TENANTS]: 200
+[INFO ] 2022-09-30 09:05:02.669 [main] TestClasses - Status Code [GET ALL LABELS]: 200
+[INFO ] 2022-09-30 09:05:02.669 [main] TestClasses - Data creation has been done-------------------------
+[INFO ] 2022-09-30 09:05:04.144 [main] TestClasses - Status Code [SEARCH APIS DEVPORTAL]: 200
+[INFO ] 2022-09-30 09:05:04.262 [main] TestClasses - Status Code [DEV ALL KEY MANAGERS]: 200
+[INFO ] 2022-09-30 09:05:04.317 [main] TestClasses - Status Code [SEARCH API]: 200
+[INFO ] 2022-09-30 09:05:04.409 [main] TestClasses - Status Code [GET APIS DETAILS]: 200
+[INFO ] 2022-09-30 09:05:04.482 [main] TestClasses - Status Code [GET API THUMBNAIL]: 200
+[INFO ] 2022-09-30 09:05:04.577 [main] TestClasses - Status Code [GET API STATUS]: 200
+[INFO ] 2022-09-30 09:05:04.610 [main] TestClasses - Status Code [GET API STATUS]: 200
+[INFO ] 2022-09-30 09:05:04.689 [main] TestClasses - Status Code [GET STATE DATA OF API]: 200
+[INFO ] 2022-09-30 09:05:04.760 [main] TestClasses - Status Code [GET ALL SUBSCRIPTIONS]: 200
+[INFO ] 2022-09-30 09:05:04.776 [main] TestClasses - [SUBSCRIPTIONS ID]: 3a3dc801-0528-482b-95bf-41094fab7918
+[INFO ] 2022-09-30 09:05:04.873 [main] TestClasses - Status Code [BLOCK SUBSCRIPTIONS]: 200
+[INFO ] 2022-09-30 09:05:04.928 [main] TestClasses - Status Code [UNBLOCK SUBSCRIPTIONS]: 200
+[INFO ] 2022-09-30 09:05:04.970 [main] TestClasses - Status Code [GET DETAILS OF A SUBSCRIBER]: 200
+[INFO ] 2022-09-30 09:05:05.056 [main] TestClasses - Status Code [GET API THUMBNAIL]: 200
+[INFO ] 2022-09-30 09:05:05.097 [main] TestClasses - Status Code [GET RESOURCE PATH OF API]: 200
+[INFO ] 2022-09-30 09:05:05.185 [main] TestClasses - Status Code [GET RESOURCE POLICY DEFINITION API]: 400
+[INFO ] 2022-09-30 09:05:05.217 [main] TestClasses - Status Code [GET RESOURCE POLICY FOR RESOURCE IDENTIFIER]: 400
+[INFO ] 2022-09-30 09:05:05.276 [main] TestClasses - Status Code [SEARCH API PRODUCTS]: 200
+[INFO ] 2022-09-30 09:05:05.340 [main] TestClasses - Status Code [GET DETAILS OF API PRODUCT]: 200
+[INFO ] 2022-09-30 09:05:05.434 [main] TestClasses - Status Code [GET THUMBNAIL OF API PRODUCT]: 200
+[INFO ] 2022-09-30 09:05:05.493 [main] TestClasses - Status Code [GET DOC OF API PRODUCTS]: 200
+[INFO ] 2022-09-30 09:05:05.505 [main] TestClasses - [DOCUMENTATION ID]: 866107b1-fbb0-487a-812c-eecdd7ebc4d1
+[INFO ] 2022-09-30 09:05:05.591 [main] TestClasses - Status Code [UPDATE DOC OF API PRODUCTS]: 200
+[INFO ] 2022-09-30 09:05:05.638 [main] TestClasses - Status Code [GET CONTENT OF DOC OF API PRODUCTS]: 200
+[INFO ] 2022-09-30 09:05:05.680 [main] TestClasses - Status Code [GET THROTTLING POLICIES]: 200
+[INFO ] 2022-09-30 09:05:05.735 [main] TestClasses - Status Code [GET DETAILS OF A POLICY]: 200
+[INFO ] 2022-09-30 09:05:05.786 [main] TestClasses - Status Code [GET GLOBAL MEDIATION POLICY]: 200
