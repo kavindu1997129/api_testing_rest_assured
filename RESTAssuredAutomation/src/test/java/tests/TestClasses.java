@@ -12,8 +12,6 @@ import restapi.ContentTypes;
 import restapi.GrantTypes;
 import restapi.Scopes;
 import restapi.devportal.DevPortal;
-import restapi.devportal.DevPortal.ApiMonetization;
-import restapi.devportal.DevPortal.GraphQlPolicies;
 import restapi.devportal.DevPortal.KeyManager_Collections;
 import restapi.publisher.Publisher;
 
@@ -269,7 +267,7 @@ public class TestClasses {
                 Response getDetaisOfPolicy = policies.getDetailsOfPolicy(policyLevel, policyName);
                 logger.info("Status Code [GET DETAILS OF A POLICY]: "+getDetaisOfPolicy.statusCode());
 
-                Publisher.GlobalMediationPolicies gPolicies = new PublisherGlobalMediationPolicies(accessToken, ApimVersions.APIM_3_2);
+                Publisher.GlobalMediationPolicies gPolicies = new Publisher.GlobalMediationPolicies(accessToken, ApimVersions.APIM_3_2);
                 Response getGlobalMediationPolicyRes = gPolicies.getGlobalMediationPolicies();
                 logger.info("Status Code [GET GLOBAL MEDIATION POLICY]: "+getGlobalMediationPolicyRes.statusCode());
 

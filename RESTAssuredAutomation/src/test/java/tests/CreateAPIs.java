@@ -1,26 +1,14 @@
 package tests;
 
 import java.io.FileReader;
-import java.net.URISyntaxException;
-import java.nio.file.Files;
-import java.nio.file.Paths;
 
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import ataf.actions.BaseTest;
-import groovyjarjarantlr4.runtime.Parser;
-import io.restassured.RestAssured;
 import restapi.ApimVersions;
-import restapi.Authentication;
-import restapi.AuthenticationObject;
-import restapi.ContentTypes;
-import restapi.GrantTypes;
-import restapi.Scopes;
-import restapi.publisher.PublisherApis;
+import restapi.publisher.Publisher;
 import io.restassured.response.Response;
 import io.restassured.path.json.JsonPath;
 
@@ -35,7 +23,7 @@ public class CreateAPIs extends BaseTest{
 	public void dataGeneration() {
 		System.out.println(this.apiCount);
 		for(int i=1 ; i<=apiCount ; i++) {
-			PublisherApis  pApi = new PublisherApis(accessToken, ApimVersions.APIM_3_2);
+			Publisher.Apis  pApi = new Publisher.Apis(accessToken, ApimVersions.APIM_3_2);
 			Response createApiResponse  = pApi.createApiParseJSON(getPayload(i));
 	        JsonPath jsonPathEvaluator = createApiResponse.jsonPath();
 			String apiID = jsonPathEvaluator.get("id");

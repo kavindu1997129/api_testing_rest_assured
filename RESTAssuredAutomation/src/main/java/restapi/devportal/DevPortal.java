@@ -6,10 +6,7 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.Properties;
 
-import org.apache.logging.log4j.util.StringBuilderFormattable;
-
 import io.restassured.RestAssured;
-import io.restassured.config.ParamConfig.UpdateStrategy;
 import io.restassured.response.Response;
 import restapi.ApimVersions;
 import restapi.ContentTypes;

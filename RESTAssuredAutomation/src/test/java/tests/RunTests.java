@@ -11,8 +11,7 @@ import restapi.AuthenticationObject;
 import restapi.ContentTypes;
 import restapi.GrantTypes;
 import restapi.Scopes;
-import restapi.publisher.PublisherApiProducts;
-import restapi.publisher.PublisherApis;
+import restapi.publisher.Publisher;
 
 public class RunTests{
 	String accessToken;
@@ -35,7 +34,7 @@ public class RunTests{
         accessToken = authentication.getAccessToken();
 
         //API
-        PublisherApis api = new PublisherApis(accessToken, ApimVersions.APIM_3_2);
+        Publisher.Apis api = new Publisher.Apis(accessToken, ApimVersions.APIM_3_2);
 
         Response createApiRes = api.createApi(ContentTypes.APPLICATION_JSON, "apicretion_payload.json");
         logger.info("Status Code [CREATE API]: "+createApiRes.statusCode());
@@ -76,7 +75,7 @@ public class RunTests{
 
         @Test
         public void validateDataAPIM_3_2(){
-                PublisherApis api = new PublisherApis(accessToken,ApimVersions.APIM_3_2);
+                Publisher.Apis api = new Publisher.Apis(accessToken,ApimVersions.APIM_3_2);
                 
                 Response searchApi = api.searchApis();
                 logger.info("Status Code [SEARCH API]: "+searchApi.statusCode());
