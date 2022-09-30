@@ -1,5 +1,6 @@
 package tests;
 
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.testng.annotations.Test;
@@ -14,17 +15,7 @@ import restapi.devportal.DevPortal;
 import restapi.devportal.DevPortal.ApiMonetization;
 import restapi.devportal.DevPortal.GraphQlPolicies;
 import restapi.devportal.DevPortal.KeyManager_Collections;
-import restapi.publisher.PublisherApiProducts;
-import restapi.publisher.PublisherApis;
-import restapi.publisher.PublisherDeployements;
-import restapi.publisher.PublisherGlobalMediationPolicies;
-import restapi.publisher.PublisherKeyManager;
-import restapi.publisher.PublisherLabels;
-import restapi.publisher.PublisherScopes;
-import restapi.publisher.PublisherSettings;
-import restapi.publisher.PublisherSubscriptions;
-import restapi.publisher.PublisherTenants;
-import restapi.publisher.PublisherThrottlingPolicies;
+import restapi.publisher.Publisher;
 
 public class TestClasses {
 	String accessToken;
@@ -33,7 +24,7 @@ public class TestClasses {
 
 	@Test
 	public void dataGeneration() {
-
+				
                 AuthenticationObject authenticationObject = new AuthenticationObject();
                 authenticationObject.setUsername("admin");
                 authenticationObject.setUserpassword("admin");
@@ -49,8 +40,9 @@ public class TestClasses {
                 accessToken = authentication.getAccessToken();
 
                 //API
-                PublisherApis api = new PublisherApis(accessToken, ApimVersions.APIM_3_2);
-
+                //PublisherApis api = new PublisherApis(accessToken, ApimVersions.APIM_3_2);
+                Publisher.Apis api = new Publisher.Apis(accessToken, ApimVersions.APIM_3_2);
+                
                 Response createApiRes = api.createApi(ContentTypes.APPLICATION_JSON, "apicretion_payload.json");
                 logger.info("Status Code [CREATE API]: "+createApiRes.statusCode());
 
@@ -76,8 +68,9 @@ public class TestClasses {
                 logger.info("Status Code [GET DEPLOYMENT STATUS]: "+getDeploymentStatusRes.statusCode());
                 
                 //API Product 
-                PublisherApiProducts apiProd = new PublisherApiProducts(accessToken,ApimVersions.APIM_3_2);
-
+                Publisher.ApiProducts apiProd = new Publisher.ApiProducts(accessToken,ApimVersions.APIM_3_2);
+                
+                
                 Response searchApiProductRes = apiProd.searchApiProduct();
                 logger.info("Status Code [SEARCH API PRODUCT]: "+searchApiProductRes.statusCode());
                 String apiProductId = searchApiProductRes.jsonPath().get("list[0]['id']");
@@ -95,7 +88,7 @@ public class TestClasses {
                 logger.info("Status Code [DELETE API PRODUCT LIFECYCLE]: "+deletePendingLifecycleStateChangeTasksRes.statusCode());
 
                 //Scopes
-                PublisherScopes pScopes = new PublisherScopes(accessToken, ApimVersions.APIM_3_2);
+                Publisher.Scopes pScopes = new Publisher.Scopes(accessToken, ApimVersions.APIM_3_2);
 
                 Response getSharedScopesrRes = pScopes.getAllSharedScopes();
                 logger.info("Status Code [GET ALL SHARED SCOPES]: "+getSharedScopesrRes.statusCode());
@@ -121,19 +114,19 @@ public class TestClasses {
                 logger.info("Status Code [GET USAGE OF SHARED SCOPES]: " + getUsageRes.statusCode());
 
                 //Deployments 
-                PublisherDeployements pDeployement = new PublisherDeployements(accessToken, ApimVersions.APIM_3_2);
+                Publisher.Deployements pDeployement = new Publisher.Deployements(accessToken, ApimVersions.APIM_3_2);
 
                 Response getDeploymentEnvironmentDetailsRes = pDeployement.getDeploymentEnvironmentDetails();
                 logger.info("Status Code [GET DEPLOYMENTS ENVIROMENT DETAILS]: " + getDeploymentEnvironmentDetailsRes.statusCode());
 
                 //Key Manager
-                PublisherKeyManager pKeyManager = new PublisherKeyManager(accessToken, ApimVersions.APIM_3_2);
+                Publisher.KeyManager pKeyManager = new Publisher.KeyManager(accessToken, ApimVersions.APIM_3_2);
 
                 Response pKeyManagerRes = pKeyManager.getAllKeyManagers();
                 logger.info("Status Code [GET ALL KEY MANAGERS]: " + pKeyManagerRes.statusCode());
 
                 //Settings
-                PublisherSettings pSettings = new PublisherSettings(accessToken, ApimVersions.APIM_3_2);
+                Publisher.Settings pSettings = new Publisher.Settings(accessToken, ApimVersions.APIM_3_2);
                 
                 Response getPublisherSettingsRes = pSettings.getPublisherSetting();
                 logger.info("Status Code [GET PUBLISHER SETTING]: " + getPublisherSettingsRes.statusCode()); 
@@ -142,13 +135,13 @@ public class TestClasses {
                 logger.info("Status Code [GET ALL GATEWAY ENVIRONMENTS]: " + getAllGatewayEnviromentsRes.statusCode()); 
 
                 //Tenants
-                PublisherTenants pTenants = new PublisherTenants(accessToken, ApimVersions.APIM_3_2);
+                Publisher.Tenants pTenants = new Publisher.Tenants(accessToken, ApimVersions.APIM_3_2);
 
                 Response getTenantsByStateRes = pTenants.getTenantsByState("active");
                 logger.info("Status Code [GET TENANTS]: " + getTenantsByStateRes.statusCode()); 
 
                 //Labels
-                PublisherLabels pLabels = new PublisherLabels(accessToken, ApimVersions.APIM_3_2);
+                Publisher.Labels pLabels = new Publisher.Labels(accessToken, ApimVersions.APIM_3_2);
 
                 Response getAllLabels = pLabels.getAllRegisteredLabels();
                 logger.info("Status Code [GET ALL LABELS]: " + getAllLabels.statusCode()); 
@@ -193,7 +186,7 @@ public class TestClasses {
 
         @Test
         public void validateDataAPIM_3_2(){
-                PublisherApis api = new PublisherApis(accessToken,ApimVersions.APIM_3_2);
+                Publisher.Apis api = new Publisher.Apis(accessToken,ApimVersions.APIM_3_2);
                 
                 Response searchApi = api.searchApis();
                 logger.info("Status Code [SEARCH API]: "+searchApi.statusCode());
@@ -214,7 +207,7 @@ public class TestClasses {
                 Response getLifecycleStateDataOfApiRes = api.getLifecycleStateDataOfApi(apiId);
                 logger.info("Status Code [GET STATE DATA OF API]: "+getLifecycleStateDataOfApiRes.statusCode());
 
-                PublisherSubscriptions subs = new PublisherSubscriptions(accessToken, ApimVersions.APIM_3_2);
+                Publisher.Subscriptions subs = new Publisher.Subscriptions(accessToken, ApimVersions.APIM_3_2);
                 Response getAllSubs = subs.getAllSubscriptions(apiId);
                 logger.info("Status Code [GET ALL SUBSCRIPTIONS]: "+getAllSubs.statusCode());
                 String subscriptionId  = getAllSubs.jsonPath().get("list[0]['subscriptionId']");
@@ -241,7 +234,7 @@ public class TestClasses {
                 Response getResourcePolicyForResourceIdentifierRes = api.getResourcePolicyForResourceIdentifier(apiId,"178");
                 logger.info("Status Code [GET RESOURCE POLICY FOR RESOURCE IDENTIFIER]: "+getResourcePolicyForResourceIdentifierRes.statusCode());
 
-                PublisherApiProducts apiProd = new PublisherApiProducts(accessToken, ApimVersions.APIM_3_2);
+                Publisher.ApiProducts apiProd = new Publisher.ApiProducts(accessToken, ApimVersions.APIM_3_2);
                 Response searchApiProdsRes = apiProd.searchApiProduct();
                 logger.info("Status Code [SEARCH API PRODUCTS]: "+searchApiProdsRes.statusCode());
                 String apiProductId  = searchApiProdsRes.jsonPath().get("list[0]['id']");
@@ -266,7 +259,7 @@ public class TestClasses {
                 Response getContentOfDocumentsOFApiProductRes = apiProd.getContentOfDocumentsOfApiProduct(apiProductId, documentationId);
                 logger.info("Status Code [GET CONTENT OF DOC OF API PRODUCTS]: "+getContentOfDocumentsOFApiProductRes.statusCode());
 
-                PublisherThrottlingPolicies policies = new PublisherThrottlingPolicies(accessToken, ApimVersions.APIM_3_2);
+                Publisher.ThrottlingPolicies policies = new Publisher.ThrottlingPolicies(accessToken, ApimVersions.APIM_3_2);
                 Response getAllPolicies = policies.getThrottlingPoliciesForGivenType("api");
                 logger.info("Status Code [GET THROTTLING POLICIES]: "+getAllPolicies.statusCode());
 
@@ -276,7 +269,7 @@ public class TestClasses {
                 Response getDetaisOfPolicy = policies.getDetailsOfPolicy(policyLevel, policyName);
                 logger.info("Status Code [GET DETAILS OF A POLICY]: "+getDetaisOfPolicy.statusCode());
 
-                PublisherGlobalMediationPolicies gPolicies = new PublisherGlobalMediationPolicies(accessToken, ApimVersions.APIM_3_2);
+                Publisher.GlobalMediationPolicies gPolicies = new PublisherGlobalMediationPolicies(accessToken, ApimVersions.APIM_3_2);
                 Response getGlobalMediationPolicyRes = gPolicies.getGlobalMediationPolicies();
                 logger.info("Status Code [GET GLOBAL MEDIATION POLICY]: "+getGlobalMediationPolicyRes.statusCode());
 
@@ -284,7 +277,7 @@ public class TestClasses {
 
         // @Test
         // public void validateDataAPIM_4_1(){
-        //         PublisherApis api = new PublisherApis(accessToken,ApimVersions.APIM_4_1);
+        //         Publisher.Apis api = new Publisher.Apis(accessToken,ApimVersions.APIM_4_1);
                 
         //         Response searchApi = api.searchApis();
         //         logger.info("Status Code [SEARCH API]: "+searchApi.statusCode());
@@ -299,7 +292,7 @@ public class TestClasses {
         //         Response getApiStatus = api.getApiStatus(apiId);
         //         logger.info("Status Code [GET API STATUS]: "+getApiStatus.statusCode());
 
-        //         PublisherApiProducts apiProd = new PublisherApiProducts(accessToken, ApimVersions.APIM_4_1);
+        //         Publisher.ApiProducts apiProd = new Publisher.ApiProducts(accessToken, ApimVersions.APIM_4_1);
         //         Response searchApiProdsRes = apiProd.searchApiProduct();
         //         logger.info("Status Code [SEARCH API PRODUCTS]: "+searchApiProdsRes.statusCode());
         //         String apiProductId  = searchApiProdsRes.jsonPath().get("list[0]['id']");
