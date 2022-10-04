@@ -23,7 +23,6 @@ public class DevPortal {
         
     	public Apis(String accessToken, ApimVersions version) {
     		this.accessToken = accessToken;
-            this.endPoint = endPoint;
             
             FileInputStream input;
     	    Properties properties;
