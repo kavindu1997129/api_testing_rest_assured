@@ -5,9 +5,9 @@
  <parameter name="baseURL" value="https://localhost:9443/" />
  <parameter name="apiCount" value="5" />
  
-   <test name = "CreateAPIs">
+   <test name = "DataPopulations">
       <classes>
-         <class name = "tests.CreateAPIs" />
+         <class name = "tests.DataPopulations" />
       </classes>
    </test>
    
