@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-10-03T10:33:05 IST" name="CreateData" finished-at="2022-10-03T10:33:08 IST" duration-ms="2768">
+  <suite started-at="2022-10-13T12:39:25 IST" name="CreateData" finished-at="2022-10-13T12:39:26 IST" duration-ms="648">
     <groups>
     </groups>
-    <test started-at="2022-10-03T10:33:05 IST" name="CreateAPIs" finished-at="2022-10-03T10:33:08 IST" duration-ms="2768">
-      <class name="tests.CreateAPIs">
-        <test-method is-config="true" signature="initiaization(java.lang.String,int)[pri:0, instance:tests.CreateAPIs@72445aba]" started-at="2022-10-03T10:33:02 IST" name="initiaization" finished-at="2022-10-03T10:33:05 IST" duration-ms="2587" status="PASS">
+    <test started-at="2022-10-13T12:39:25 IST" name="DataPopulations" finished-at="2022-10-13T12:39:26 IST" duration-ms="648">
+      <class name="tests.DataPopulations">
+        <test-method is-config="true" signature="initiaization(java.lang.String,int)[pri:0, instance:tests.DataPopulations@9ed238c]" started-at="2022-10-13T12:39:24 IST" name="initiaization" finished-at="2022-10-13T12:39:25 IST" duration-ms="1753" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -16,18 +16,38 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[5]]>
+                <![CDATA[2]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initiaization -->
-        <test-method signature="dataGeneration()[pri:0, instance:tests.CreateAPIs@72445aba]" started-at="2022-10-03T10:33:05 IST" name="dataGeneration" finished-at="2022-10-03T10:33:08 IST" duration-ms="2729" status="PASS">
+        <test-method signature="changeLifecycle()[pri:0, instance:tests.DataPopulations@9ed238c]" started-at="2022-10-13T12:39:25 IST" name="changeLifecycle" finished-at="2022-10-13T12:39:26 IST" duration-ms="148" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- changeLifecycle -->
+        <test-method signature="createLifecycle()[pri:0, instance:tests.DataPopulations@9ed238c]" started-at="2022-10-13T12:39:26 IST" name="createLifecycle" finished-at="2022-10-13T12:39:26 IST" duration-ms="84" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createLifecycle -->
+        <test-method signature="createTenants()[pri:0, instance:tests.DataPopulations@9ed238c]" started-at="2022-10-13T12:39:26 IST" name="createTenants" finished-at="2022-10-13T12:39:26 IST" duration-ms="66" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createTenants -->
+        <test-method signature="dataGeneration()[pri:0, instance:tests.DataPopulations@9ed238c]" started-at="2022-10-13T12:39:26 IST" name="dataGeneration" finished-at="2022-10-13T12:39:26 IST" duration-ms="157" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- dataGeneration -->
-      </class> <!-- tests.CreateAPIs -->
-    </test> <!-- CreateAPIs -->
+        <test-method signature="deactvateTenants()[pri:0, instance:tests.DataPopulations@9ed238c]" started-at="2022-10-13T12:39:26 IST" name="deactvateTenants" finished-at="2022-10-13T12:39:26 IST" duration-ms="78" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deactvateTenants -->
+        <test-method signature="deleteTenants()[pri:0, instance:tests.DataPopulations@9ed238c]" started-at="2022-10-13T12:39:26 IST" name="deleteTenants" finished-at="2022-10-13T12:39:26 IST" duration-ms="75" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteTenants -->
+      </class> <!-- tests.DataPopulations -->
+    </test> <!-- DataPopulations -->
   </suite> <!-- CreateData -->
 </testng-results>

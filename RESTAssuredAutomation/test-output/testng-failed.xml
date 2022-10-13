@@ -3,14 +3,14 @@
 <suite thread-count="1" parallel="tests" name="Failed suite [CreateData]" guice-stage="DEVELOPMENT">
   <parameter name="baseURL" value="https://localhost:9443/"/>
   <parameter name="apiCount" value="5"/>
-  <test thread-count="1" parallel="tests" name="CreateAPIs(failed)">
+  <test thread-count="1" parallel="tests" name="DataPopulations(failed)">
     <classes>
-      <class name="tests.CreateAPIs">
+      <class name="tests.DataPopulations">
         <methods>
-          <include name="dataGeneration"/>
+          <include name="postMethod"/>
           <include name="initiaization"/>
         </methods>
-      </class> <!-- tests.CreateAPIs -->
+      </class> <!-- tests.DataPopulations -->
     </classes>
-  </test> <!-- CreateAPIs(failed) -->
+  </test> <!-- DataPopulations(failed) -->
 </suite> <!-- Failed suite [CreateData] -->

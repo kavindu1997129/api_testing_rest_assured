@@ -3,7 +3,7 @@
 <suite name = "CreateData" parallel="tests" thread-count="1" verbose="1">
 
  <parameter name="baseURL" value="https://localhost:9443/" />
- <parameter name="apiCount" value="5" />
+ <parameter name="apiCount" value="2" />
  
    <test name = "DataPopulations">
       <classes>
