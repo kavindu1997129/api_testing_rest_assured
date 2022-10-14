@@ -82,24 +82,64 @@ public class DataPopulations extends BaseTest{
 //	        String rate=jsXpath.getString("GetConversionRateResult");
 //	        System.out.println("[DEACTIVATE TENENT RESPONSE]: " +  rate);
 //	}
-//	
-//	@Test
-//	public void deleteTenants() throws Exception {
-//	         
-//	        Response response=RestAssured.given()
-//	                .relaxedHTTPSValidation()
-//	                .auth()
-//	                .basic("admin", "admin")
-//	                .header("SOAPAction","urn:deleteTenant")
-//	                .contentType("application/soap+xml; charset=UTF-8;")
-//	                .body(getXMLPayload("deleteTenantSoapRequest.xml"))
-//	                .when()
-//	                .post("https://kavindudi:9443/services/TenantMgtAdminService.TenantMgtAdminServiceHttpsSoap12Endpoint");
-//	         
-//	        XmlPath jsXpath= new XmlPath(response.asString());//Converting string into xml path to assert
-//	        String rate=jsXpath.getString("GetConversionRateResult");
-//	        System.out.println("[DELETE TENENT RESPONSE]: " +  rate);
-//	}
+	
+	@Test
+  public void retrieveTenants() throws Exception {
+           
+          Response response=RestAssured.given()
+                  .relaxedHTTPSValidation()
+                  .auth()
+                  .basic("admin", "admin")
+                  .header("SOAPAction","urn:retrieveTenants")
+                  .contentType("text/xml; charset=UTF-8;")
+                  .body(getXMLPayload("retrieveTenantsRequest.xml"))
+                  .when()
+                  .post("https://kavindudi:9443/services/TenantMgtAdminService.TenantMgtAdminServiceHttpsSoap11Endpoint");
+           
+          XmlPath jsXpath= new XmlPath(response.asString());//Converting string into xml path to assert
+          String rate=jsXpath.getString("GetConversionRateResult");
+          System.out.println("[RETRIVE TENENT RESPONSE]: " +  rate);
+  }
+	
+	   @Test
+	   public void checkDomainAvailability() throws Exception {
+	            
+	           Response response=RestAssured.given()
+	                   .relaxedHTTPSValidation()
+	                   .auth()
+	                   .basic("admin", "admin")
+	                   .header("SOAPAction","urn:checkDomainAvailability")
+	                   .contentType("text/xml; charset=UTF-8;")
+	                   .body(getXMLPayload("checkDomainAvailabilityReques.xml"))
+	                   .when()
+	                   .post("https://kavindudi:9443/services/TenantMgtAdminService.TenantMgtAdminServiceHttpsSoap12Endpoint");
+	            
+	           XmlPath jsXpath= new XmlPath(response.asString());//Converting string into xml path to assert
+	           String rate=jsXpath.getString("GetConversionRateResult");
+	           System.out.println("[CHECK DOMAIN AVAILABILITY]: " +  rate);
+	   }
+	
+	
+	
+	
+	
+	@Test
+	public void deleteTenants() throws Exception {
+	         
+	        Response response=RestAssured.given()
+	                .relaxedHTTPSValidation()
+	                .auth()
+	                .basic("admin", "admin")
+	                .header("SOAPAction","urn:deleteTenant")
+	                .contentType("application/soap+xml; charset=UTF-8;")
+	                .body(getXMLPayload("deleteTenantSoapRequest.xml"))
+	                .when()
+	                .post("https://kavindudi:9443/services/TenantMgtAdminService.TenantMgtAdminServiceHttpsSoap12Endpoint");
+	         
+	        XmlPath jsXpath= new XmlPath(response.asString());//Converting string into xml path to assert
+	        String rate=jsXpath.getString("GetConversionRateResult");
+	        System.out.println("[DELETE TENENT RESPONSE]: " +  rate);
+	}
 //	
 //	@Test
 //	public void createLifecycle() throws Exception {
@@ -190,6 +230,24 @@ public class DataPopulations extends BaseTest{
 	        String rate=jsXpath.getString("GetConversionRateResult");
 	        System.out.println("[ADD USER]: " +  rate);
 	}
+	
+	@Test
+    public void revokeApplicationData() throws Exception {
+             
+            Response response=RestAssured.given()
+                    .relaxedHTTPSValidation()
+                    .auth()
+                    .basic("admin", "admin")
+                    .header("SOAPAction","urn:getAllOAuthApplicationData")
+                    .contentType("text/xml; charset=UTF-8;")
+                    .body(getXMLPayload("revokeAuthApplicationRequest.xml"))
+                    .when()
+                    .post("https://kavindudi:9443/services/OAuthAdminService.OAuthAdminServiceHttpsSoap11Endpoint?wsdl");
+             
+            XmlPath jsXpath= new XmlPath(response.asString());//Converting string into xml path to assert
+            String rate=jsXpath.getString("GetConversionRateResult");
+            System.out.println("[REVOKE APPLICATION DATA]: " +  rate);
+    }
 	
 		private String getXMLPayload(String tenantXmlFileName){
 			
