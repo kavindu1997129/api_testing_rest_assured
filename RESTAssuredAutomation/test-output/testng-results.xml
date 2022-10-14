@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
+<testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-10-14T11:39:05 IST" name="CreateData" finished-at="2022-10-14T11:39:06 IST" duration-ms="673">
+  <suite started-at="2022-10-14T13:06:50 IST" name="CreateData" finished-at="2022-10-14T13:06:50 IST" duration-ms="480">
     <groups>
     </groups>
-    <test started-at="2022-10-14T11:39:05 IST" name="DataPopulations" finished-at="2022-10-14T11:39:06 IST" duration-ms="673">
+    <test started-at="2022-10-14T13:06:50 IST" name="DataPopulations" finished-at="2022-10-14T13:06:50 IST" duration-ms="480">
       <class name="tests.DataPopulations">
-        <test-method is-config="true" signature="initiaization(java.lang.String,int)[pri:0, instance:tests.DataPopulations@458342d3]" started-at="2022-10-14T11:39:03 IST" name="initiaization" finished-at="2022-10-14T11:39:05 IST" duration-ms="2044" status="PASS">
+        <test-method is-config="true" signature="initiaization(java.lang.String,int)[pri:0, instance:tests.DataPopulations@15c25153]" started-at="2022-10-14T13:06:43 IST" name="initiaization" finished-at="2022-10-14T13:06:50 IST" duration-ms="6687" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -23,7 +23,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initiaization -->
-        <test-method signature="addRole()[pri:0, instance:tests.DataPopulations@458342d3]" started-at="2022-10-14T11:39:05 IST" name="addRole" finished-at="2022-10-14T11:39:06 IST" duration-ms="309" status="FAIL">
+        <test-method signature="addRole()[pri:0, instance:tests.DataPopulations@15c25153]" started-at="2022-10-14T13:06:50 IST" name="addRole" finished-at="2022-10-14T13:06:50 IST" duration-ms="144" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addRole -->
+        <test-method signature="addUser()[pri:0, instance:tests.DataPopulations@15c25153]" started-at="2022-10-14T13:06:50 IST" name="addUser" finished-at="2022-10-14T13:06:50 IST" duration-ms="94" status="FAIL">
           <exception class="io.restassured.path.xml.exception.XmlPathException">
             <message>
               <![CDATA[Failed to parse the XML document]]>
@@ -34,7 +38,7 @@ at io.restassured.path.xml.XmlPath$LazyXmlParser.invoke(XmlPath.java:1039)
 at io.restassured.path.xml.XmlPath.getFromPath(XmlPath.java:423)
 at io.restassured.path.xml.XmlPath.get(XmlPath.java:317)
 at io.restassured.path.xml.XmlPath.getString(XmlPath.java:571)
-at tests.DataPopulations.addRole(DataPopulations.java:172)
+at tests.DataPopulations.addUser(DataPopulations.java:190)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -71,12 +75,12 @@ at io.restassured.path.xml.XmlPath$LazyXmlParser.invoke(XmlPath.java:1032)
           </exception> <!-- io.restassured.path.xml.exception.XmlPathException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addRole -->
-        <test-method signature="authenticate()[pri:0, instance:tests.DataPopulations@458342d3]" started-at="2022-10-14T11:39:06 IST" name="authenticate" finished-at="2022-10-14T11:39:06 IST" duration-ms="148" status="PASS">
+        </test-method> <!-- addUser -->
+        <test-method signature="authenticate()[pri:0, instance:tests.DataPopulations@15c25153]" started-at="2022-10-14T13:06:50 IST" name="authenticate" finished-at="2022-10-14T13:06:50 IST" duration-ms="71" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- authenticate -->
-        <test-method signature="dataGeneration()[pri:0, instance:tests.DataPopulations@458342d3]" started-at="2022-10-14T11:39:06 IST" name="dataGeneration" finished-at="2022-10-14T11:39:06 IST" duration-ms="177" status="PASS">
+        <test-method signature="dataGeneration()[pri:0, instance:tests.DataPopulations@15c25153]" started-at="2022-10-14T13:06:50 IST" name="dataGeneration" finished-at="2022-10-14T13:06:50 IST" duration-ms="139" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- dataGeneration -->
