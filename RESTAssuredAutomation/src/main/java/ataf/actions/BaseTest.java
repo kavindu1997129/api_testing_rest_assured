@@ -22,7 +22,7 @@ public class BaseTest {
 	
 	@BeforeSuite
 	@Parameters({"baseURL","apiCount"})	
-	public void initiaization(String baseurlParm, int apiCount) {
+	public void initiaization(String baseurlParm, int apiCount) throws URISyntaxException {
 		AuthenticationObject authenticationObject = new AuthenticationObject(); 
         authenticationObject.setUsername("admin");
         authenticationObject.setUserpassword("admin");
@@ -37,6 +37,8 @@ public class BaseTest {
         accessToken = authentication.getAccessToken();
 		
         this.apiCount = apiCount;
+        
+        bindBaseURL(baseurlParm);
 		
 	}
 
