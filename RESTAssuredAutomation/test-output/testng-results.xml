@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-10-14T13:06:50 IST" name="CreateData" finished-at="2022-10-14T13:06:50 IST" duration-ms="480">
+  <suite started-at="2022-10-17T12:36:36 IST" name="CreateData" finished-at="2022-10-17T12:36:36 IST" duration-ms="39">
     <groups>
     </groups>
-    <test started-at="2022-10-14T13:06:50 IST" name="DataPopulations" finished-at="2022-10-14T13:06:50 IST" duration-ms="480">
+    <test started-at="2022-10-17T12:36:36 IST" name="DataPopulations" finished-at="2022-10-17T12:36:36 IST" duration-ms="39">
       <class name="tests.DataPopulations">
-        <test-method is-config="true" signature="initiaization(java.lang.String,int)[pri:0, instance:tests.DataPopulations@15c25153]" started-at="2022-10-14T13:06:43 IST" name="initiaization" finished-at="2022-10-14T13:06:50 IST" duration-ms="6687" status="PASS">
+        <test-method is-config="true" signature="initiaization(java.lang.String,int)[pri:0, instance:tests.DataPopulations@2f9a01c1]" started-at="2022-10-17T12:36:29 IST" name="initiaization" finished-at="2022-10-17T12:36:36 IST" duration-ms="6467" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -23,22 +23,14 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initiaization -->
-        <test-method signature="addRole()[pri:0, instance:tests.DataPopulations@15c25153]" started-at="2022-10-14T13:06:50 IST" name="addRole" finished-at="2022-10-14T13:06:50 IST" duration-ms="144" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addRole -->
-        <test-method signature="addUser()[pri:0, instance:tests.DataPopulations@15c25153]" started-at="2022-10-14T13:06:50 IST" name="addUser" finished-at="2022-10-14T13:06:50 IST" duration-ms="94" status="FAIL">
-          <exception class="io.restassured.path.xml.exception.XmlPathException">
+        <test-method signature="tenantsManagement()[pri:0, instance:tests.DataPopulations@2f9a01c1]" started-at="2022-10-17T12:36:36 IST" name="tenantsManagement" finished-at="2022-10-17T12:36:36 IST" duration-ms="6" status="FAIL">
+          <exception class="java.lang.NullPointerException">
             <message>
-              <![CDATA[Failed to parse the XML document]]>
+              <![CDATA[Cannot invoke "java.net.URI.toString()" because "this.baseURL" is null]]>
             </message>
             <full-stacktrace>
-              <![CDATA[io.restassured.path.xml.exception.XmlPathException: Failed to parse the XML document
-at io.restassured.path.xml.XmlPath$LazyXmlParser.invoke(XmlPath.java:1039)
-at io.restassured.path.xml.XmlPath.getFromPath(XmlPath.java:423)
-at io.restassured.path.xml.XmlPath.get(XmlPath.java:317)
-at io.restassured.path.xml.XmlPath.getString(XmlPath.java:571)
-at tests.DataPopulations.addUser(DataPopulations.java:190)
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "java.net.URI.toString()" because "this.baseURL" is null
+at tests.DataPopulations.tenantsManagement(DataPopulations.java:95)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -61,29 +53,12 @@ at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
 at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 at java.base/java.lang.Thread.run(Thread.java:833)
-Caused by: org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.
-at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1251)
-at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:637)
-at groovy.xml.XmlSlurper.parse(XmlSlurper.java:205)
-at groovy.xml.XmlSlurper.parse(XmlSlurper.java:258)
-at groovy.xml.XmlSlurper.parseText(XmlSlurper.java:288)
-at io.restassured.path.xml.XmlPath$1.method(XmlPath.java:840)
-at io.restassured.path.xml.XmlPath$LazyXmlParser.invoke(XmlPath.java:1032)
-... 26 more
 ]]>
             </full-stacktrace>
-          </exception> <!-- io.restassured.path.xml.exception.XmlPathException -->
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addUser -->
-        <test-method signature="authenticate()[pri:0, instance:tests.DataPopulations@15c25153]" started-at="2022-10-14T13:06:50 IST" name="authenticate" finished-at="2022-10-14T13:06:50 IST" duration-ms="71" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- authenticate -->
-        <test-method signature="dataGeneration()[pri:0, instance:tests.DataPopulations@15c25153]" started-at="2022-10-14T13:06:50 IST" name="dataGeneration" finished-at="2022-10-14T13:06:50 IST" duration-ms="139" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- dataGeneration -->
+        </test-method> <!-- tenantsManagement -->
       </class> <!-- tests.DataPopulations -->
     </test> <!-- DataPopulations -->
   </suite> <!-- CreateData -->
