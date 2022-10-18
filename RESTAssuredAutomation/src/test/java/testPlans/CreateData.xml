@@ -2,8 +2,21 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name = "CreateData" parallel="tests" thread-count="1" verbose="1">
 
+ <!--BASIC DATA-->
  <parameter name="baseURL" value="https://localhost:9443/" />
  <parameter name="apiCount" value="2" />
+ 
+ <!--USER AND ROLE CREATION RELATED DATA-->
+ <parameter name="authenticateRequest" value="authenticateRequest.xml" />
+ <parameter name="addRoleRequest" value="addRoleRequest_Creator.xml" />
+ <parameter name="addUserRequest" value="addUserRequest_Creator.xml" />
+ 
+ <!--TENENTS RELATED DATA-->
+ <parameter name="createTenantRequest" value="request.xml" />
+ <parameter name="deactivateTenantRequest" value="deactivateTenantSoapRequest.xml" />
+ <parameter name="retrieveTenantsRequest" value="retrieveTenantsRequest.xml" />
+ <parameter name="checkDomainAvailabilityRequest" value="checkDomainAvailabilityRequest.xml" />
+ <parameter name="deleteTenantSoapRequest" value="deleteTenantSoapRequest.xml" />
  
    <test name = "DataPopulations">
       <classes>

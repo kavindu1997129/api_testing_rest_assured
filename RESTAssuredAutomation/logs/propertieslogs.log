@@ -8143,3 +8143,35 @@
 [INFO ] 2022-10-17 11:49:36.912 [TestNG-tests-1] TestClasses - Status Code [CREATE API 1]: 409
 [INFO ] 2022-10-17 11:49:37.051 [TestNG-tests-1] TestClasses - [API 2 CREATED]: API ID ==>> null
 [INFO ] 2022-10-17 11:49:37.052 [TestNG-tests-1] TestClasses - Status Code [CREATE API 2]: 409
+[INFO ] 2022-10-17 13:44:44.221 [TestNG-tests-1] TestClasses - [USER STORE]: User store related tests were completed
+[INFO ] 2022-10-17 13:44:44.555 [TestNG-tests-1] TestClasses - [TENANT MANAGMENT]: Tenant management related tests were completed
+[INFO ] 2022-10-17 13:45:20.638 [TestNG-tests-1] TestClasses - [USER STORE]: User store related tests were completed
+[INFO ] 2022-10-17 13:45:20.992 [TestNG-tests-1] TestClasses - [TENANT MANAGMENT]: Tenant management related tests were completed
+[INFO ] 2022-10-17 13:48:07.975 [TestNG-tests-1] TestClasses - [USER STORE]: User store related tests were completed
+[INFO ] 2022-10-17 13:48:08.319 [TestNG-tests-1] TestClasses - [TENANT MANAGMENT]: Tenant management related tests were completed
+[INFO ] 2022-10-17 13:49:00.387 [TestNG-tests-1] TestClasses - [USER STORE]: User store related tests were completed
+[INFO ] 2022-10-17 13:49:00.776 [TestNG-tests-1] TestClasses - [TENANT MANAGMENT]: Tenant management related tests were completed
+[INFO ] 2022-10-17 13:53:47.043 [TestNG-tests-1] TestClasses - [USER STORE]: User store related tests were completed
+[INFO ] 2022-10-17 13:53:47.401 [TestNG-tests-1] TestClasses - [TENANT MANAGMENT]: Tenant management related tests were completed
+[INFO ] 2022-10-17 13:56:19.607 [TestNG-tests-1] TestClasses - [USER STORE]: User store related tests were completed
+[INFO ] 2022-10-17 13:56:19.958 [TestNG-tests-1] TestClasses - [TENANT MANAGMENT]: Tenant management related tests were completed
+[INFO ] 2022-10-18 10:28:53.631 [TestNG-tests-1] TestClasses - [USER STORE]: User store related tests were completed
+[INFO ] 2022-10-18 10:28:54.075 [TestNG-tests-1] TestClasses - [TENANT MANAGMENT]: Tenant management related tests were completed
+[INFO ] 2022-10-18 10:30:44.305 [TestNG-tests-1] TestClasses - [USER STORE]: User store related tests were completed
+[INFO ] 2022-10-18 10:30:44.690 [TestNG-tests-1] TestClasses - [TENANT MANAGMENT]: Tenant management related tests were completed
+[INFO ] 2022-10-18 10:42:06.289 [TestNG-tests-1] TestClasses - [USER STORE]: User store related tests were completed
+[INFO ] 2022-10-18 10:42:06.744 [TestNG-tests-1] TestClasses - [TENANT MANAGMENT]: Tenant management related tests were completed
+[INFO ] 2022-10-18 10:43:30.237 [TestNG-tests-1] TestClasses - [USER STORE]: User store related tests were completed
+[INFO ] 2022-10-18 10:43:30.658 [TestNG-tests-1] TestClasses - [TENANT MANAGMENT]: Tenant management related tests were completed
+[INFO ] 2022-10-18 10:51:55.283 [TestNG-tests-1] TestClasses - [TENANT MANAGMENT]: Tenant management related tests were completed
+[INFO ] 2022-10-18 10:54:04.467 [TestNG-tests-1] TestClasses - [USER STORE]: User store related tests were completed
+[INFO ] 2022-10-18 10:54:04.784 [TestNG-tests-1] TestClasses - [TENANT MANAGMENT]: Tenant management related tests were completed
+[INFO ] 2022-10-18 10:55:31.332 [TestNG-tests-1] TestClasses - [USER STORE]: User store related tests were completed
+[INFO ] 2022-10-18 10:55:31.626 [TestNG-tests-1] TestClasses - [TENANT MANAGMENT]: Tenant management related tests were completed
+[INFO ] 2022-10-18 10:57:14.776 [TestNG-tests-1] TestClasses - [TENANT MANAGMENT]: Tenant management related tests were completed
+[INFO ] 2022-10-18 11:01:06.755 [TestNG-tests-1] TestClasses - [USER STORE]: User store related tests were completed
+[INFO ] 2022-10-18 11:01:07.105 [TestNG-tests-1] TestClasses - [TENANT MANAGMENT]: Tenant management related tests were completed
+[INFO ] 2022-10-18 11:03:39.632 [TestNG-tests-1] TestClasses - [TENANT MANAGMENT]: Tenant management related tests were completed
+[INFO ] 2022-10-18 11:04:13.497 [TestNG-tests-1] TestClasses - [TENANT MANAGMENT]: Tenant management related tests were completed
+[INFO ] 2022-10-18 11:04:43.795 [TestNG-tests-1] TestClasses - [USER STORE]: User store related tests were completed
+[INFO ] 2022-10-18 11:04:44.177 [TestNG-tests-1] TestClasses - [TENANT MANAGMENT]: Tenant management related tests were completed
