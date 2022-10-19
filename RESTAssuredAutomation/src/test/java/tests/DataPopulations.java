@@ -8,6 +8,7 @@ import io.restassured.response.Response;
 import restapi.ApimVersions;
 import restapi.Authentication;
 import restapi.ContentTypes;
+import restapi.JsonReadWrite;
 import restapi.TenantAdmin;
 import restapi.devportal.DevPortal;
 import restapi.publisher.Publisher;
@@ -102,22 +103,50 @@ public class DataPopulations extends BaseTest{
       Response createApiOpenApiDefinitionRes = api.imporOpenAPIDefinition(createApiOpenApiDefinition, apiCreationPayload);
       logger.info("Status Code [CREATE OPEN API DEFINITION]: "+createApiOpenApiDefinitionRes.statusCode());
       String apiId = createApiOpenApiDefinitionRes.jsonPath().get("id");
-      
-      JSONObject employeeDetails = new JSONObject();
-      if(apiId != null) employeeDetails.put("apiId", apiId);
-      saveRuntimeData(employeeDetails);
-      
+      if(apiId != null) JsonReadWrite.addApiToJson(apiId);
       
       Response searchApiRes = api.searchApis();
       logger.info("Status Code [SEARCH API]: "+searchApiRes.statusCode());
 
-      Response uploadApiThumbnailRes = api.uploadThumbnailImage(thumbnailImage, apiId);
+      Response uploadApiThumbnailRes = api.uploadThumbnailImage(thumbnailImage, JsonReadWrite.readApiId(0));
       logger.info("Status Code [UPLOAD API THUMBNAIL]: "+uploadApiThumbnailRes.statusCode());
 
-      Response changeApiStatusRes = api.changeApiStatus(apiId, apiLifecycleStatusAction);
+      Response changeApiStatusRes = api.changeApiStatus(JsonReadWrite.readApiId(0), apiLifecycleStatusAction);
       logger.info("Status Code [CHANGE API STATUS]: "+changeApiStatusRes.statusCode());
       
       logger.info("[PUBLISHER PORTAL]: Dev Portal tests were completed");
+      
+  }
+  
+  
+  
+  @Test
+  public void DevPortal() {
+      
+      authenticationObject.setUsername("creator1_Test@test1_tenant.com");
+      authenticationObject.setUserpassword("creator1_Test");
+      
+      
+      Authentication authentication = new Authentication(authenticationObject);
+      accessToken = authentication.getAccessToken();
+      
+      DevPortal.UnfiedSearch dSearch = new DevPortal.UnfiedSearch(accessToken, ApimVersions.APIM_3_2);
+      
+//      Response searchApiByName = dSearch.getApiAndApiDocumentByContent("ABC");
+//      logger.info("Status Code [SEARCHED API BY NAME]: "+searchApiByName.jsonPath().prettify());
+      
+      DevPortal.Applications applications = new DevPortal.Applications(accessToken, ApimVersions.APIM_3_2);
+      
+      Response searchApplicationRes = applications.searchApplications();
+      logger.info("Status Code [SEARCH APPLICATION]: "+searchApplicationRes.statusCode());
+      
+      Response createNewApplicationRes = applications.createNewApplications("createNewApplication.json");
+      logger.info("Status Code [CREATE NEW APPLICATION]: "+createNewApplicationRes.statusCode());
+      String appId = createNewApplicationRes.jsonPath().get("applicationId");    
+      if(appId != null) JsonReadWrite.addAppToJson(appId);
+      
+      logger.info("[DEV PORTAL]: Dev Portal tests were completed");
+      
       
   }
   
@@ -131,37 +160,10 @@ public class DataPopulations extends BaseTest{
           e.printStackTrace();
       }
       
+      
+      
   }
   
-//  @Test
-//  public void DevPortal() {
-//      
-//      authenticationObject.setUsername("creator1_Test@test1_tenant.com");
-//      authenticationObject.setUserpassword("creator1_Test");
-//      
-////      authenticationObject.setUsername("admin");
-////      authenticationObject.setUserpassword("admin");
-//      
-//      Authentication authentication = new Authentication(authenticationObject);
-//      accessToken = authentication.getAccessToken();
-//      
-//      DevPortal.UnfiedSearch dSearch = new DevPortal.UnfiedSearch(accessToken, ApimVersions.APIM_3_2);
-//      
-//      Response searchApiByName = dSearch.getApiAndApiDocumentByContent("ABC");
-////      String searchApiByNameRes = searchApiByName.jsonPath().prettify();
-//      logger.info("Status Code [SEARCHED API BY NAME]: "+searchApiByName.jsonPath().prettify());
-//      
-//      DevPortal.Applications applications = new DevPortal.Applications(accessToken, ApimVersions.APIM_3_2);
-//      
-//      Response searchApplicationRes = applications.searchApplications();
-//      logger.info("Status Code [SEARCH APPLICATION]: "+searchApplicationRes.statusCode());
-//      
-//      Response createNewApplicationRes = applications.createNewApplications("createNewApplication.json");
-//      logger.info("Status Code [CREATE NEW APPLICATION]: "+createNewApplicationRes.statusCode());
-//      
-//      logger.info("[DEV PORTAL]: Dev Portal tests were completed");
-//      
-//      
-//  }
-	 
 }
+
+
