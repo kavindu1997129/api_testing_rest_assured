@@ -15,6 +15,10 @@ public abstract class Scopes {
     public static final String PUBLISHER_SETTINGS = "apim:publisher_settings";
     public static final String DOCUMENT_MANAGE = "apim:document_manage";
     public static final String SUBSCRIBE = "apim:subscribe";
+    public static final String APP_MANAGE = "apim:app_manage";
+    public static final String APP_IMPORT_EXPORT = "apim:app_import_export";
+    
+
     
     //"apim:api_publish apim:api_admin apim:api_import_export apim:api_view apim:api_create apim:api_product_import_export apim:api_product_create"
 

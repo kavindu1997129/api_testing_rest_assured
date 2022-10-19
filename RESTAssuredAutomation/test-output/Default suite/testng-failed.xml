@@ -5,8 +5,7 @@
     <classes>
       <class name="tests.DataPopulations">
         <methods>
-          <include name="dataGeneration"/>
-          <include name="postMethod"/>
+          <include name="publisherPortal"/>
           <include name="initiaization"/>
         </methods>
       </class> <!-- tests.DataPopulations -->

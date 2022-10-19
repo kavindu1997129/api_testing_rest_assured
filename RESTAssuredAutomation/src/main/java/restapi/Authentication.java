@@ -44,7 +44,7 @@ public class Authentication {
 				.relaxedHTTPSValidation()
 				.auth()
 				.preemptive()
-				.basic(username,userpassword)
+				.basic("admin","admin")
 				.body(authPlayloadString)
 				.contentType(contentType)
 				.post(endpoint);

@@ -41,7 +41,7 @@ public class TestClasses {
                 //PublisherApis api = new PublisherApis(accessToken, ApimVersions.APIM_3_2);
                 Publisher.Apis api = new Publisher.Apis(accessToken, ApimVersions.APIM_3_2);
                 
-                Response createApiRes = api.createApi(ContentTypes.APPLICATION_JSON, "apicretion_payload.json");
+                Response createApiRes = api.createApi(ContentTypes.APPLICATION_JSON, "apicretion_payload_TestClasses.json");
                 logger.info("Status Code [CREATE API]: "+createApiRes.statusCode());
 
                 Response searchApiRes = api.searchApis();

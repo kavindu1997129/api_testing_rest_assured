@@ -482,15 +482,15 @@ public class DevPortal {
     	
     }
     
-    public static class Appilications{
+    public static class Applications{
     	
     	String accessToken;
         String endPoint;
         
-        String publisherApisString = "/apis";
+        String publisherApisString = "";
         String resourceParenPath = "./src/test/payloads/";
         
-    	public Appilications(String accessToken, ApimVersions version) {
+    	public Applications(String accessToken, ApimVersions version) {
     		this.accessToken = accessToken;
             
             FileInputStream input;
@@ -519,6 +519,7 @@ public class DevPortal {
             .oauth2(accessToken)
             .contentType(ContentTypes.APPLICATION_JSON)
             .get(endPoint+publisherApisString+"/applications");
+            System.out.println(endPoint+publisherApisString+"/applications");
 
             return searchApplicationsResponse;
         }
