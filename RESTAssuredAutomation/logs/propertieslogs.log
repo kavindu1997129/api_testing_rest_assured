@@ -9630,3 +9630,519 @@
 [INFO ] 2022-10-19 16:08:22.003 [TestNG-tests-1] DataPopulations - Status Code [UPLOAD API THUMBNAIL]: 201
 [INFO ] 2022-10-19 16:08:22.575 [TestNG-tests-1] DataPopulations - Status Code [CHANGE API STATUS]: 200
 [INFO ] 2022-10-19 16:08:22.575 [TestNG-tests-1] DataPopulations - [PUBLISHER PORTAL]: Dev Portal tests were completed
+[INFO ] 2022-10-19 16:41:29.902 [TestNG-tests-1] DataPopulations - Status Code [CREATE API]: 409
+[INFO ] 2022-10-19 16:41:30.048 [TestNG-tests-1] DataPopulations - Status Code [CREATE OPEN API DEFINITION]: 409
+[INFO ] 2022-10-19 16:41:30.145 [TestNG-tests-1] DataPopulations - Status Code [SEARCH API]: 200
+[INFO ] 2022-10-19 16:41:30.233 [TestNG-tests-1] DataPopulations - [SEARCHED API ID]: 110307a9-4e3d-441c-82a5-fa30b6c32da0
+[INFO ] 2022-10-19 16:41:30.932 [TestNG-tests-1] DataPopulations - Status Code [UPLOAD API THUMBNAIL]: 201
+[INFO ] 2022-10-19 16:41:31.526 [TestNG-tests-1] DataPopulations - Status Code [CHANGE API STATUS]: 200
+[INFO ] 2022-10-19 16:41:31.526 [TestNG-tests-1] DataPopulations - [PUBLISHER PORTAL]: Dev Portal tests were completed
+[INFO ] 2022-10-19 16:42:49.826 [TestNG-tests-1] DataPopulations - Status Code [CREATE OPEN API DEFINITION]: {
+    "id": "71a4c566-68bb-46b3-93a1-9b31868aa73e",
+    "name": "Test API 1",
+    "description": null,
+    "context": "/t/test1_tenant.com/testapi1",
+    "version": "1.0.0",
+    "provider": "creator1_Test@test1_tenant.com",
+    "lifeCycleStatus": "CREATED",
+    "wsdlInfo": null,
+    "wsdlUrl": null,
+    "testKey": null,
+    "responseCachingEnabled": false,
+    "cacheTimeout": 300,
+    "destinationStatsEnabled": null,
+    "hasThumbnail": null,
+    "isDefaultVersion": false,
+    "enableSchemaValidation": false,
+    "enableStore": true,
+    "type": "HTTP",
+    "transport": [
+        "http",
+        "https"
+    ],
+    "tags": [
+        
+    ],
+    "policies": [
+        "Unlimited"
+    ],
+    "apiThrottlingPolicy": null,
+    "authorizationHeader": null,
+    "securityScheme": [
+        "oauth2",
+        "oauth_basic_auth_api_key_mandatory"
+    ],
+    "maxTps": null,
+    "visibility": "PUBLIC",
+    "visibleRoles": [
+        
+    ],
+    "visibleTenants": [
+        
+    ],
+    "endpointSecurity": null,
+    "gatewayEnvironments": [
+        "Production and Sandbox"
+    ],
+    "deploymentEnvironments": [
+        
+    ],
+    "labels": [
+        
+    ],
+    "mediationPolicies": [
+        
+    ],
+    "subscriptionAvailability": "CURRENT_TENANT",
+    "subscriptionAvailableTenants": [
+        
+    ],
+    "additionalProperties": {
+        
+    },
+    "monetization": null,
+    "accessControl": "NONE",
+    "accessControlRoles": [
+        
+    ],
+    "businessInformation": {
+        "businessOwner": null,
+        "businessOwnerEmail": null,
+        "technicalOwner": null,
+        "technicalOwnerEmail": null
+    },
+    "corsConfiguration": {
+        "corsConfigurationEnabled": false,
+        "accessControlAllowOrigins": [
+            "*"
+        ],
+        "accessControlAllowCredentials": false,
+        "accessControlAllowHeaders": [
+            "authorization",
+            "Access-Control-Allow-Origin",
+            "Content-Type",
+            "SOAPAction",
+            "apikey",
+            "testKey"
+        ],
+        "accessControlAllowMethods": [
+            "GET",
+            "PUT",
+            "POST",
+            "DELETE",
+            "PATCH",
+            "OPTIONS"
+        ]
+    },
+    "workflowStatus": null,
+    "createdTime": "2022-10-19T11:12:49.651Z",
+    "lastUpdatedTime": "2022-10-19T11:12:49.768Z",
+    "endpointConfig": {
+        "endpoint_type": "http",
+        "sandbox_endpoints": {
+            "url": "https://localhost:9443/am/sample/pizzashack/v1/api/"
+        },
+        "endpoint_security": {
+            "sandbox": {
+                "customParameters": null
+            },
+            "production": {
+                "customParameters": null
+            }
+        },
+        "production_endpoints": {
+            "url": "https://localhost:9443/am/sample/pizzashack/v1/api/"
+        }
+    },
+    "endpointImplementationType": "ENDPOINT",
+    "scopes": [
+        
+    ],
+    "operations": [
+        {
+            "id": "",
+            "target": "/*",
+            "verb": "GET",
+            "authType": "Application & Application User",
+            "throttlingPolicy": "Unlimited",
+            "scopes": [
+                
+            ],
+            "usedProductIds": [
+                
+            ],
+            "amznResourceName": null,
+            "amznResourceTimeout": null
+        },
+        {
+            "id": "",
+            "target": "/*",
+            "verb": "PUT",
+            "authType": "Application & Application User",
+            "throttlingPolicy": "Unlimited",
+            "scopes": [
+                
+            ],
+            "usedProductIds": [
+                
+            ],
+            "amznResourceName": null,
+            "amznResourceTimeout": null
+        },
+        {
+            "id": "",
+            "target": "/*",
+            "verb": "POST",
+            "authType": "Application & Application User",
+            "throttlingPolicy": "Unlimited",
+            "scopes": [
+                
+            ],
+            "usedProductIds": [
+                
+            ],
+            "amznResourceName": null,
+            "amznResourceTimeout": null
+        },
+        {
+            "id": "",
+            "target": "/*",
+            "verb": "DELETE",
+            "authType": "Application & Application User",
+            "throttlingPolicy": "Unlimited",
+            "scopes": [
+                
+            ],
+            "usedProductIds": [
+                
+            ],
+            "amznResourceName": null,
+            "amznResourceTimeout": null
+        },
+        {
+            "id": "",
+            "target": "/*",
+            "verb": "PATCH",
+            "authType": "Application & Application User",
+            "throttlingPolicy": "Unlimited",
+            "scopes": [
+                
+            ],
+            "usedProductIds": [
+                
+            ],
+            "amznResourceName": null,
+            "amznResourceTimeout": null
+        }
+    ],
+    "threatProtectionPolicies": null,
+    "categories": [
+        
+    ],
+    "keyManagers": [
+        "all"
+    ]
+}
+[INFO ] 2022-10-19 16:42:49.887 [TestNG-tests-1] DataPopulations - Status Code [SEARCH API]: 200
+[INFO ] 2022-10-19 16:42:49.949 [TestNG-tests-1] DataPopulations - [SEARCHED API ID]: 929d7c43-bfb4-498d-a009-775261e7bd1c
+[INFO ] 2022-10-19 16:42:50.528 [TestNG-tests-1] DataPopulations - Status Code [UPLOAD API THUMBNAIL]: 201
+[INFO ] 2022-10-19 16:42:50.955 [TestNG-tests-1] DataPopulations - Status Code [CHANGE API STATUS]: 500
+[INFO ] 2022-10-19 16:42:50.955 [TestNG-tests-1] DataPopulations - [PUBLISHER PORTAL]: Dev Portal tests were completed
+[INFO ] 2022-10-19 16:44:15.431 [TestNG-tests-1] DataPopulations - Status Code [CREATE OPEN API DEFINITION]: 409
+[INFO ] 2022-10-19 16:44:15.509 [TestNG-tests-1] DataPopulations - Status Code [SEARCH API]: 200
+[INFO ] 2022-10-19 16:44:15.565 [TestNG-tests-1] DataPopulations - Status Code [UPLOAD API THUMBNAIL]: 404
+[INFO ] 2022-10-19 16:44:15.619 [TestNG-tests-1] DataPopulations - Status Code [CHANGE API STATUS]: 404
+[INFO ] 2022-10-19 16:44:15.619 [TestNG-tests-1] DataPopulations - [PUBLISHER PORTAL]: Dev Portal tests were completed
+[INFO ] 2022-10-19 16:44:40.438 [TestNG-tests-1] DataPopulations - Status Code [CREATE OPEN API DEFINITION]: 409
+[INFO ] 2022-10-19 16:44:40.541 [TestNG-tests-1] DataPopulations - Status Code [SEARCH API]: 200
+[INFO ] 2022-10-19 16:44:40.621 [TestNG-tests-1] DataPopulations - Status Code [UPLOAD API THUMBNAIL]: 404
+[INFO ] 2022-10-19 16:44:40.696 [TestNG-tests-1] DataPopulations - Status Code [CHANGE API STATUS]: 404
+[INFO ] 2022-10-19 16:44:40.696 [TestNG-tests-1] DataPopulations - [PUBLISHER PORTAL]: Dev Portal tests were completed
+[INFO ] 2022-10-19 16:45:15.106 [TestNG-tests-1] DataPopulations - Status Code [CREATE OPEN API DEFINITION]: {
+    "code": 409,
+    "message": "Resource Already Exists",
+    "description": "Error occurred while adding the API. A duplicate API already exists for /testapi1",
+    "moreInfo": "",
+    "error": [
+        
+    ]
+}
+[INFO ] 2022-10-19 16:45:15.254 [TestNG-tests-1] DataPopulations - Status Code [SEARCH API]: 200
+[INFO ] 2022-10-19 16:45:15.353 [TestNG-tests-1] DataPopulations - Status Code [UPLOAD API THUMBNAIL]: 404
+[INFO ] 2022-10-19 16:45:15.438 [TestNG-tests-1] DataPopulations - Status Code [CHANGE API STATUS]: 404
+[INFO ] 2022-10-19 16:45:15.438 [TestNG-tests-1] DataPopulations - [PUBLISHER PORTAL]: Dev Portal tests were completed
+[INFO ] 2022-10-19 16:45:40.140 [TestNG-tests-1] DataPopulations - Status Code [CREATE OPEN API DEFINITION]: {
+    "id": "cae865fa-b50d-4a7c-bd6c-bccb7c5cb154",
+    "name": "Test API 1",
+    "description": null,
+    "context": "/t/test1_tenant.com/testapi1",
+    "version": "1.0.0",
+    "provider": "creator1_Test@test1_tenant.com",
+    "lifeCycleStatus": "CREATED",
+    "wsdlInfo": null,
+    "wsdlUrl": null,
+    "testKey": null,
+    "responseCachingEnabled": false,
+    "cacheTimeout": 300,
+    "destinationStatsEnabled": null,
+    "hasThumbnail": null,
+    "isDefaultVersion": false,
+    "enableSchemaValidation": false,
+    "enableStore": true,
+    "type": "HTTP",
+    "transport": [
+        "http",
+        "https"
+    ],
+    "tags": [
+        
+    ],
+    "policies": [
+        "Unlimited"
+    ],
+    "apiThrottlingPolicy": null,
+    "authorizationHeader": null,
+    "securityScheme": [
+        "oauth2",
+        "oauth_basic_auth_api_key_mandatory"
+    ],
+    "maxTps": null,
+    "visibility": "PUBLIC",
+    "visibleRoles": [
+        
+    ],
+    "visibleTenants": [
+        
+    ],
+    "endpointSecurity": null,
+    "gatewayEnvironments": [
+        "Production and Sandbox"
+    ],
+    "deploymentEnvironments": [
+        
+    ],
+    "labels": [
+        
+    ],
+    "mediationPolicies": [
+        
+    ],
+    "subscriptionAvailability": "CURRENT_TENANT",
+    "subscriptionAvailableTenants": [
+        
+    ],
+    "additionalProperties": {
+        
+    },
+    "monetization": null,
+    "accessControl": "NONE",
+    "accessControlRoles": [
+        
+    ],
+    "businessInformation": {
+        "businessOwner": null,
+        "businessOwnerEmail": null,
+        "technicalOwner": null,
+        "technicalOwnerEmail": null
+    },
+    "corsConfiguration": {
+        "corsConfigurationEnabled": false,
+        "accessControlAllowOrigins": [
+            "*"
+        ],
+        "accessControlAllowCredentials": false,
+        "accessControlAllowHeaders": [
+            "authorization",
+            "Access-Control-Allow-Origin",
+            "Content-Type",
+            "SOAPAction",
+            "apikey",
+            "testKey"
+        ],
+        "accessControlAllowMethods": [
+            "GET",
+            "PUT",
+            "POST",
+            "DELETE",
+            "PATCH",
+            "OPTIONS"
+        ]
+    },
+    "workflowStatus": null,
+    "createdTime": "2022-10-19T11:15:39.726Z",
+    "lastUpdatedTime": "2022-10-19T11:15:40.026Z",
+    "endpointConfig": {
+        "endpoint_type": "http",
+        "sandbox_endpoints": {
+            "url": "https://localhost:9443/am/sample/pizzashack/v1/api/"
+        },
+        "endpoint_security": {
+            "sandbox": {
+                "customParameters": null
+            },
+            "production": {
+                "customParameters": null
+            }
+        },
+        "production_endpoints": {
+            "url": "https://localhost:9443/am/sample/pizzashack/v1/api/"
+        }
+    },
+    "endpointImplementationType": "ENDPOINT",
+    "scopes": [
+        
+    ],
+    "operations": [
+        {
+            "id": "",
+            "target": "/*",
+            "verb": "GET",
+            "authType": "Application & Application User",
+            "throttlingPolicy": "Unlimited",
+            "scopes": [
+                
+            ],
+            "usedProductIds": [
+                
+            ],
+            "amznResourceName": null,
+            "amznResourceTimeout": null
+        },
+        {
+            "id": "",
+            "target": "/*",
+            "verb": "PUT",
+            "authType": "Application & Application User",
+            "throttlingPolicy": "Unlimited",
+            "scopes": [
+                
+            ],
+            "usedProductIds": [
+                
+            ],
+            "amznResourceName": null,
+            "amznResourceTimeout": null
+        },
+        {
+            "id": "",
+            "target": "/*",
+            "verb": "POST",
+            "authType": "Application & Application User",
+            "throttlingPolicy": "Unlimited",
+            "scopes": [
+                
+            ],
+            "usedProductIds": [
+                
+            ],
+            "amznResourceName": null,
+            "amznResourceTimeout": null
+        },
+        {
+            "id": "",
+            "target": "/*",
+            "verb": "DELETE",
+            "authType": "Application & Application User",
+            "throttlingPolicy": "Unlimited",
+            "scopes": [
+                
+            ],
+            "usedProductIds": [
+                
+            ],
+            "amznResourceName": null,
+            "amznResourceTimeout": null
+        },
+        {
+            "id": "",
+            "target": "/*",
+            "verb": "PATCH",
+            "authType": "Application & Application User",
+            "throttlingPolicy": "Unlimited",
+            "scopes": [
+                
+            ],
+            "usedProductIds": [
+                
+            ],
+            "amznResourceName": null,
+            "amznResourceTimeout": null
+        }
+    ],
+    "threatProtectionPolicies": null,
+    "categories": [
+        
+    ],
+    "keyManagers": [
+        "all"
+    ]
+}
+[INFO ] 2022-10-19 16:45:40.281 [TestNG-tests-1] DataPopulations - Status Code [SEARCH API]: 200
+[INFO ] 2022-10-19 16:45:40.668 [TestNG-tests-1] DataPopulations - Status Code [UPLOAD API THUMBNAIL]: 201
+[INFO ] 2022-10-19 16:45:41.149 [TestNG-tests-1] DataPopulations - Status Code [CHANGE API STATUS]: 200
+[INFO ] 2022-10-19 16:45:41.149 [TestNG-tests-1] DataPopulations - [PUBLISHER PORTAL]: Dev Portal tests were completed
+[INFO ] 2022-10-19 17:14:50.823 [TestNG-tests-1] DataPopulations - Status Code [CREATE OPEN API DEFINITION]: 409
+[INFO ] 2022-10-19 17:14:50.974 [TestNG-tests-1] DataPopulations - Status Code [SEARCH API]: 200
+[INFO ] 2022-10-19 17:14:51.053 [TestNG-tests-1] DataPopulations - Status Code [UPLOAD API THUMBNAIL]: 404
+[INFO ] 2022-10-19 17:14:51.128 [TestNG-tests-1] DataPopulations - Status Code [CHANGE API STATUS]: 404
+[INFO ] 2022-10-19 17:14:51.128 [TestNG-tests-1] DataPopulations - [PUBLISHER PORTAL]: Dev Portal tests were completed
+[INFO ] 2022-10-19 17:18:58.323 [TestNG-tests-1] DataPopulations - Status Code [CREATE OPEN API DEFINITION]: 409
+[INFO ] 2022-10-19 17:18:58.460 [TestNG-tests-1] DataPopulations - Status Code [SEARCH API]: 200
+[INFO ] 2022-10-19 17:18:58.549 [TestNG-tests-1] DataPopulations - Status Code [UPLOAD API THUMBNAIL]: 404
+[INFO ] 2022-10-19 17:18:58.642 [TestNG-tests-1] DataPopulations - Status Code [CHANGE API STATUS]: 404
+[INFO ] 2022-10-19 17:18:58.643 [TestNG-tests-1] DataPopulations - [PUBLISHER PORTAL]: Dev Portal tests were completed
+[INFO ] 2022-10-19 17:19:32.419 [TestNG-tests-1] DataPopulations - Status Code [CREATE OPEN API DEFINITION]: 201
+[INFO ] 2022-10-19 17:19:32.551 [TestNG-tests-1] DataPopulations - Status Code [SEARCH API]: 200
+[INFO ] 2022-10-19 17:19:32.928 [TestNG-tests-1] DataPopulations - Status Code [UPLOAD API THUMBNAIL]: 201
+[INFO ] 2022-10-19 17:19:33.512 [TestNG-tests-1] DataPopulations - Status Code [CHANGE API STATUS]: 200
+[INFO ] 2022-10-19 17:19:33.512 [TestNG-tests-1] DataPopulations - [PUBLISHER PORTAL]: Dev Portal tests were completed
+[INFO ] 2022-10-19 17:20:31.875 [TestNG-tests-1] DataPopulations - Status Code [CREATE OPEN API DEFINITION]: 409
+[INFO ] 2022-10-19 17:20:31.959 [TestNG-tests-1] DataPopulations - Status Code [SEARCH API]: 200
+[INFO ] 2022-10-19 17:20:32.014 [TestNG-tests-1] DataPopulations - Status Code [UPLOAD API THUMBNAIL]: 404
+[INFO ] 2022-10-19 17:20:32.061 [TestNG-tests-1] DataPopulations - Status Code [CHANGE API STATUS]: 404
+[INFO ] 2022-10-19 17:20:32.062 [TestNG-tests-1] DataPopulations - [PUBLISHER PORTAL]: Dev Portal tests were completed
+[INFO ] 2022-10-19 17:21:09.310 [TestNG-tests-1] DataPopulations - Status Code [CREATE OPEN API DEFINITION]: 409
+[INFO ] 2022-10-19 17:21:09.433 [TestNG-tests-1] DataPopulations - Status Code [SEARCH API]: 200
+[INFO ] 2022-10-19 17:21:09.517 [TestNG-tests-1] DataPopulations - Status Code [UPLOAD API THUMBNAIL]: 404
+[INFO ] 2022-10-19 17:21:09.595 [TestNG-tests-1] DataPopulations - Status Code [CHANGE API STATUS]: 404
+[INFO ] 2022-10-19 17:21:09.596 [TestNG-tests-1] DataPopulations - [PUBLISHER PORTAL]: Dev Portal tests were completed
+[INFO ] 2022-10-19 17:22:45.101 [TestNG-tests-1] DataPopulations - Status Code [CREATE OPEN API DEFINITION]: 409
+[INFO ] 2022-10-19 17:22:45.183 [TestNG-tests-1] DataPopulations - Status Code [SEARCH API]: 200
+[INFO ] 2022-10-19 17:22:45.236 [TestNG-tests-1] DataPopulations - Status Code [UPLOAD API THUMBNAIL]: 404
+[INFO ] 2022-10-19 17:22:45.286 [TestNG-tests-1] DataPopulations - Status Code [CHANGE API STATUS]: 404
+[INFO ] 2022-10-19 17:22:45.287 [TestNG-tests-1] DataPopulations - [PUBLISHER PORTAL]: Dev Portal tests were completed
+[INFO ] 2022-10-19 17:23:11.793 [TestNG-tests-1] DataPopulations - Status Code [CREATE OPEN API DEFINITION]: 409
+[INFO ] 2022-10-19 17:23:11.864 [TestNG-tests-1] DataPopulations - Status Code [SEARCH API]: 200
+[INFO ] 2022-10-19 17:23:11.912 [TestNG-tests-1] DataPopulations - Status Code [UPLOAD API THUMBNAIL]: 404
+[INFO ] 2022-10-19 17:23:11.955 [TestNG-tests-1] DataPopulations - Status Code [CHANGE API STATUS]: 404
+[INFO ] 2022-10-19 17:23:11.955 [TestNG-tests-1] DataPopulations - [PUBLISHER PORTAL]: Dev Portal tests were completed
+[INFO ] 2022-10-19 17:23:45.896 [TestNG-tests-1] DataPopulations - Status Code [CREATE OPEN API DEFINITION]: 201
+[INFO ] 2022-10-19 17:23:46.015 [TestNG-tests-1] DataPopulations - Status Code [SEARCH API]: 200
+[INFO ] 2022-10-19 17:23:46.402 [TestNG-tests-1] DataPopulations - Status Code [UPLOAD API THUMBNAIL]: 201
+[INFO ] 2022-10-19 17:23:46.861 [TestNG-tests-1] DataPopulations - Status Code [CHANGE API STATUS]: 200
+[INFO ] 2022-10-19 17:23:46.861 [TestNG-tests-1] DataPopulations - [PUBLISHER PORTAL]: Dev Portal tests were completed
+[INFO ] 2022-10-19 17:27:59.281 [TestNG-tests-1] DataPopulations - Status Code [CREATE OPEN API DEFINITION]: 409
+[INFO ] 2022-10-19 17:27:59.373 [TestNG-tests-1] DataPopulations - Status Code [SEARCH API]: 200
+[INFO ] 2022-10-19 17:27:59.416 [TestNG-tests-1] DataPopulations - Status Code [UPLOAD API THUMBNAIL]: 404
+[INFO ] 2022-10-19 17:27:59.469 [TestNG-tests-1] DataPopulations - Status Code [CHANGE API STATUS]: 404
+[INFO ] 2022-10-19 17:27:59.470 [TestNG-tests-1] DataPopulations - [PUBLISHER PORTAL]: Dev Portal tests were completed
+[INFO ] 2022-10-19 17:28:56.511 [TestNG-tests-1] DataPopulations - Status Code [CREATE OPEN API DEFINITION]: 201
+[INFO ] 2022-10-19 17:28:56.581 [TestNG-tests-1] DataPopulations - Status Code [SEARCH API]: 200
+[INFO ] 2022-10-19 17:28:56.772 [TestNG-tests-1] DataPopulations - Status Code [UPLOAD API THUMBNAIL]: 201
+[INFO ] 2022-10-19 17:28:57.057 [TestNG-tests-1] DataPopulations - Status Code [CHANGE API STATUS]: 200
+[INFO ] 2022-10-19 17:28:57.057 [TestNG-tests-1] DataPopulations - [PUBLISHER PORTAL]: Dev Portal tests were completed
+[INFO ] 2022-10-19 17:29:36.712 [TestNG-tests-1] DataPopulations - Status Code [CREATE OPEN API DEFINITION]: 409
+[INFO ] 2022-10-19 17:29:36.854 [TestNG-tests-1] DataPopulations - Status Code [SEARCH API]: 200
+[INFO ] 2022-10-19 17:29:36.949 [TestNG-tests-1] DataPopulations - Status Code [UPLOAD API THUMBNAIL]: 404
+[INFO ] 2022-10-19 17:29:37.037 [TestNG-tests-1] DataPopulations - Status Code [CHANGE API STATUS]: 404
+[INFO ] 2022-10-19 17:29:37.037 [TestNG-tests-1] DataPopulations - [PUBLISHER PORTAL]: Dev Portal tests were completed
+[INFO ] 2022-10-19 17:35:54.262 [TestNG-tests-1] DataPopulations - Status Code [CREATE OPEN API DEFINITION]: 201
+[INFO ] 2022-10-19 17:35:54.329 [TestNG-tests-1] DataPopulations - Status Code [SEARCH API]: 200
+[INFO ] 2022-10-19 17:35:54.541 [TestNG-tests-1] DataPopulations - Status Code [UPLOAD API THUMBNAIL]: 201
+[INFO ] 2022-10-19 17:35:54.828 [TestNG-tests-1] DataPopulations - Status Code [CHANGE API STATUS]: 200
+[INFO ] 2022-10-19 17:35:54.829 [TestNG-tests-1] DataPopulations - [PUBLISHER PORTAL]: Dev Portal tests were completed
+[INFO ] 2022-10-19 17:36:11.860 [TestNG-tests-1] DataPopulations - Status Code [CREATE OPEN API DEFINITION]: 409
+[INFO ] 2022-10-19 17:36:11.974 [TestNG-tests-1] DataPopulations - Status Code [SEARCH API]: 200
+[INFO ] 2022-10-19 17:36:12.049 [TestNG-tests-1] DataPopulations - Status Code [UPLOAD API THUMBNAIL]: 404
+[INFO ] 2022-10-19 17:36:12.122 [TestNG-tests-1] DataPopulations - Status Code [CHANGE API STATUS]: 404
+[INFO ] 2022-10-19 17:36:12.122 [TestNG-tests-1] DataPopulations - [PUBLISHER PORTAL]: Dev Portal tests were completed

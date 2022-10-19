@@ -14,10 +14,14 @@ import restapi.publisher.Publisher;
 import soapapi.remoteuserstore.RemoteUserStore;
 import soapapi.tenantmanagemant.TenantManagement;
 
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
 
 public class DataPopulations extends BaseTest{
     
@@ -77,37 +81,55 @@ public class DataPopulations extends BaseTest{
 //  }
   
   @Test
-  public void publisherPortal() throws InterruptedException {
+  @Parameters({"tenantAdminUser","tenantAdminUserPassword", "apiCreationPayload",
+      "createApiOpenApiDefinition","thumbnailImage","apiLifecycleStatusAction"})  
+  public void publisherPortal(
+          String tenantAdminUser, String tenantAdminUserPassword, String apiCreationPayload,
+          String createApiOpenApiDefinition, String thumbnailImage, String apiLifecycleStatusAction
+          ) throws InterruptedException {
       
-      authenticationObject.setUsername("creator1_Test@test1_tenant.com");
-      authenticationObject.setUserpassword("creator1_Test");
+      authenticationObject.setUsername(tenantAdminUser);
+      authenticationObject.setUserpassword(tenantAdminUserPassword);
       
-//      authenticationObject.setUsername("admin");
-//      authenticationObject.setUserpassword("admin");
       Authentication authentication = new Authentication(authenticationObject);
       String accessToken1 = authentication.getAccessToken();
       
       Publisher.Apis api = new Publisher.Apis(accessToken1, ApimVersions.APIM_3_2);
       
-      Response createApiRes = api.createApi(ContentTypes.APPLICATION_JSON, "apicretion_payload.json");
-      logger.info("Status Code [CREATE API]: "+createApiRes.statusCode());
+//      Response createApiRes = api.createApi(ContentTypes.APPLICATION_JSON, apiCreationPayload);
+//      logger.info("Status Code [CREATE API]: "+createApiRes.statusCode());
+       
+      Response createApiOpenApiDefinitionRes = api.imporOpenAPIDefinition(createApiOpenApiDefinition, apiCreationPayload);
+      logger.info("Status Code [CREATE OPEN API DEFINITION]: "+createApiOpenApiDefinitionRes.statusCode());
+      String apiId = createApiOpenApiDefinitionRes.jsonPath().get("id");
       
-//      Response createApiOpenApiDefinitionRes = api.imporOpenAPIDefinition("createApiOpenApiDefinition.json", "apicretion_payload.json");
-//      logger.info("Status Code [CREATE OPEN API DEFINITION]: "+createApiOpenApiDefinitionRes.statusCode());
+      JSONObject employeeDetails = new JSONObject();
+      if(apiId != null) employeeDetails.put("apiId", apiId);
+      saveRuntimeData(employeeDetails);
+      
       
       Response searchApiRes = api.searchApis();
       logger.info("Status Code [SEARCH API]: "+searchApiRes.statusCode());
-      
-      String apiId = searchApiRes.jsonPath().get("list[-2]['id']");
-      logger.info("[SEARCHED API ID]: "+apiId);
 
-      Response uploadApiThumbnailRes = api.uploadThumbnailImage("thumbnail2.jpg", apiId);
+      Response uploadApiThumbnailRes = api.uploadThumbnailImage(thumbnailImage, apiId);
       logger.info("Status Code [UPLOAD API THUMBNAIL]: "+uploadApiThumbnailRes.statusCode());
 
-      Response changeApiStatusRes = api.changeApiStatus(apiId, "Publish");
+      Response changeApiStatusRes = api.changeApiStatus(apiId, apiLifecycleStatusAction);
       logger.info("Status Code [CHANGE API STATUS]: "+changeApiStatusRes.statusCode());
       
       logger.info("[PUBLISHER PORTAL]: Dev Portal tests were completed");
+      
+  }
+  
+  public void saveRuntimeData(JSONObject jsonDataObject) {
+      
+      try (FileWriter file = new FileWriter("./src/test/runtimeData/runtime.json")) {
+          file.write(jsonDataObject.toJSONString()); 
+          file.flush();
+
+      } catch (IOException e) {
+          e.printStackTrace();
+      }
       
   }
   

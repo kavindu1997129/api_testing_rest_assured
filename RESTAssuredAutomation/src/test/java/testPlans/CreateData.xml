@@ -18,6 +18,15 @@
  <parameter name="checkDomainAvailabilityRequest" value="checkDomainAvailabilityRequest.xml" />
  <parameter name="deleteTenantSoapRequest" value="deleteTenantSoapRequest.xml" />
  
+ <!--PUBLISHER PORTAL RELATED DATA-->
+ <parameter name="tenantAdminUser" value="creator1_Test@test1_tenant.com" />
+ <parameter name="tenantAdminUserPassword" value="creator1_Test" />
+ <parameter name="apiCreationPayload" value="apicretion_payload.json" />
+ <parameter name="createApiOpenApiDefinition" value="createApiOpenApiDefinition.json" />
+ <parameter name="thumbnailImage" value="thumbnail2.jpg" />
+  <parameter name="apiLifecycleStatusAction" value="Publish" />
+ 
+ 
    <test name = "DataPopulations">
       <classes>
          <class name = "tests.DataPopulations" />
