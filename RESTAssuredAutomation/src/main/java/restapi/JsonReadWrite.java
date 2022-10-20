@@ -6,8 +6,14 @@ import java.io.IOException;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
+import org.json.simple.parser.ParseException;
+
+import groovy.json.JsonException;
+import io.restassured.path.json.JsonPath;
 
 public class JsonReadWrite {
+    
+    public static String runtimeJsonPath = "./src/test/runtimeData/runtime.json";
     
     public static void addApiToJson(String apiId) {
         
@@ -18,12 +24,12 @@ public class JsonReadWrite {
           apiIdToJson.put("apiId", apiId);  
             
           JSONParser parser = new JSONParser();
-          Object obj = parser.parse(new FileReader("./src/test/runtimeData/runtime.json"));
+          Object obj = parser.parse(new FileReader(runtimeJsonPath));
             jsonObject = (JSONObject) obj;
             JSONArray apisList = (JSONArray)jsonObject.get("apis");
             apisList.add(apiIdToJson);
             jsonObject.put("apis", apisList);
-            try (FileWriter file = new FileWriter("./src/test/runtimeData/runtime.json")) {
+            try (FileWriter file = new FileWriter(runtimeJsonPath)) {
               file.write(jsonObject.toJSONString()); 
               file.flush();
    
@@ -41,7 +47,7 @@ public class JsonReadWrite {
        JSONObject jsonObject = new JSONObject();
        JSONParser parser = new JSONParser();
        try {
-           Object obj = parser.parse(new FileReader("./src/test/runtimeData/runtime.json"));
+           Object obj = parser.parse(new FileReader(runtimeJsonPath));
            jsonObject = (JSONObject) obj;
         } catch (Exception e) {
             e.printStackTrace();
@@ -61,14 +67,14 @@ public class JsonReadWrite {
        try {
          JSONObject apiIdToJson = new JSONObject();
          apiIdToJson.put("appId", appId);  
-           
          JSONParser parser = new JSONParser();
-         Object obj = parser.parse(new FileReader("./src/test/runtimeData/runtime.json"));
+         Object obj = parser.parse(new FileReader(runtimeJsonPath));
            jsonObject = (JSONObject) obj;
-           JSONArray apisList = (JSONArray)jsonObject.get("apps");
-           apisList.add(apiIdToJson);
-           jsonObject.put("apps", apisList);
-           try (FileWriter file = new FileWriter("./src/test/runtimeData/runtime.json")) {
+           JSONArray appsList = (JSONArray)jsonObject.get("apps");
+           appsList.add(apiIdToJson);
+           jsonObject.put("apps", appsList);
+           
+           try (FileWriter file = new FileWriter(runtimeJsonPath)) {
              file.write(jsonObject.toJSONString()); 
              file.flush();
   
@@ -86,7 +92,7 @@ public class JsonReadWrite {
        JSONObject jsonObject = new JSONObject();
        JSONParser parser = new JSONParser();
        try {
-           Object obj = parser.parse(new FileReader("./src/test/runtimeData/runtime.json"));
+           Object obj = parser.parse(new FileReader(runtimeJsonPath));
            jsonObject = (JSONObject) obj;
         } catch (Exception e) {
             e.printStackTrace();
@@ -97,6 +103,50 @@ public class JsonReadWrite {
        String getAppId = (String)getApp.get("appId");
        
        return getAppId;
+   }
+   
+   public static void addKeys(String appId, String keyType, String keyObject) {
+       
+       JSONObject jsonObject = new JSONObject();
+       JSONParser parser = new JSONParser();
+       try {
+           Object obj = parser.parse(new FileReader(runtimeJsonPath));
+           jsonObject = (JSONObject) obj;
+           JSONArray apisList = (JSONArray)jsonObject.get("apps");
+           
+           int i = 0;
+           JSONArray apps = (JSONArray) jsonObject.get("apps");
+           JSONObject getApp = (JSONObject)apps.get(i);
+           String getAppId = "";
+           
+           while(!getAppId.trim().equals(appId.trim())) {
+               
+               getApp = (JSONObject)apps.get(i);
+               getAppId = (String)getApp.get("appId");
+               
+               if(getAppId.trim().equals(appId.trim())) {
+                   JSONParser parser2 = new JSONParser();
+                   JSONObject jsonKeyObject = (JSONObject) parser2.parse(keyObject);
+                   getApp.put(keyType, jsonKeyObject);
+                   break;
+               }
+               i += 1;
+           }
+           
+           try (FileWriter file = new FileWriter(runtimeJsonPath)) {
+               file.write(jsonObject.toJSONString()); 
+               file.flush();
+
+           } catch (IOException e) {
+               e.printStackTrace();
+           }
+        } catch (Exception e) {
+            // TODO: handle exception
+        }
+       
+       
+       
+       
    }
   
    

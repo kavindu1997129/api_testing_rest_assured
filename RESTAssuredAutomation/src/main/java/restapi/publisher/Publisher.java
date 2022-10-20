@@ -269,7 +269,7 @@ public class Publisher {
 	        return imporOpenAPIDefinitionRes;
 	    }
 
-	    public Response importWSDLDefinition(String apiId, String apiWSDL, String dataPath){
+	    public Response importWSDLDefinition(String apiWSDL, String dataPath){
 	        Response importWSDLDefinitionRes = RestAssured.given()
 	        .relaxedHTTPSValidation()
 	        .auth()
@@ -282,7 +282,7 @@ public class Publisher {
 	        return importWSDLDefinitionRes;
 	    }
 
-	    public Response importAPIDefinition(String apiId, String schemaGraphGl, String dataPath){
+	    public Response importAPIDefinition(String schemaGraphGl, String dataPath){
 	        Response importAPIDefinitionRes = RestAssured.given()
 	        .relaxedHTTPSValidation()
 	        .auth()
@@ -317,7 +317,7 @@ public class Publisher {
 	        return getWsdlDefinitionRes;
 	    }
 
-	    public Response updateWSDLDefinition(String apiId, String apiWSDL){
+	    public Response updateWSDLDefinition(String apiWSDL){
 	        Response updateWSDLDefinitionRes = RestAssured.given()
 	        .relaxedHTTPSValidation()
 	        .auth()

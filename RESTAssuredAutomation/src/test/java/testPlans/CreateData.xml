@@ -24,7 +24,14 @@
  <parameter name="apiCreationPayload" value="apicretion_payload.json" />
  <parameter name="createApiOpenApiDefinition" value="createApiOpenApiDefinition.json" />
  <parameter name="thumbnailImage" value="thumbnail2.jpg" />
-  <parameter name="apiLifecycleStatusAction" value="Publish" />
+ <parameter name="apiLifecycleStatusAction" value="Publish" />
+  
+ <!--DEV PORTAL RELATED DATA-->
+ <parameter name="tenantAdminUser" value="creator1_Test@test1_tenant.com" />
+ <parameter name="tenantAdminUserPassword" value="creator1_Test" />
+ <parameter name="apiSearchingKeyWord" value="TEST API 1" />
+ <parameter name="appPayloadListAsString" value="createNewApplication1.json,createNewApplication2.json,createNewApplication3.json" />
+ <parameter name="genarateKeyPayloadListAsString" value="generateSandboxKey.json,generateProdKey.json,generateProdKey.json" />
  
  
    <test name = "DataPopulations">

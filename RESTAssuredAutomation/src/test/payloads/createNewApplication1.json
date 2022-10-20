@@ -1,5 +1,5 @@
 {
-    "name": "CalculatorApp",
+    "name": "TestingApp1",
     "throttlingPolicy": "Unlimited",
     "description": "Sample calculator application",
     "tokenType": "JWT",

@@ -11,12 +11,16 @@ import restapi.ContentTypes;
 import restapi.JsonReadWrite;
 import restapi.TenantAdmin;
 import restapi.devportal.DevPortal;
+import restapi.devportal.DevPortal.GraphQlPolicies;
 import restapi.publisher.Publisher;
 import soapapi.remoteuserstore.RemoteUserStore;
 import soapapi.tenantmanagemant.TenantManagement;
 
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.logging.log4j.LogManager;
@@ -52,7 +56,7 @@ public class DataPopulations extends BaseTest{
 //      logger.info("[USER STORE]: User store related tests were completed");
 //      
 //  }
-	
+//	
 //  @Test
 //  @Parameters({"createTenantRequest","deactivateTenantRequest", "retrieveTenantsRequest", "checkDomainAvailabilityRequest", "deleteTenantSoapRequest"})
 //  public void tenantsManagement(
@@ -69,6 +73,7 @@ public class DataPopulations extends BaseTest{
 //      accessToken = authentication.getAccessToken();
 //      
 //      TenantManagement tManager = new TenantManagement(accessToken,baseURL);
+//      
 //      TenantAdmin tenantAdmin = new TenantAdmin("admin", "admin");
 //      
 //      tManager.createTenants(createTenantRequest,tenantAdmin);
@@ -103,7 +108,15 @@ public class DataPopulations extends BaseTest{
       Response createApiOpenApiDefinitionRes = api.imporOpenAPIDefinition(createApiOpenApiDefinition, apiCreationPayload);
       logger.info("Status Code [CREATE OPEN API DEFINITION]: "+createApiOpenApiDefinitionRes.statusCode());
       String apiId = createApiOpenApiDefinitionRes.jsonPath().get("id");
-      if(apiId != null) JsonReadWrite.addApiToJson(apiId);
+      if(apiId != null && createApiOpenApiDefinitionRes.statusCode()==201) JsonReadWrite.addApiToJson(apiId);
+      
+      Response createGraphQlApiRes = api.importAPIDefinition("schema_graphql.graphql", "apicretion_payload_graphQL.json");
+      logger.info("Status Code [CREATE GRAPHQL API]: "+createGraphQlApiRes.statusCode());
+      String apiIdGraphQL = createGraphQlApiRes.jsonPath().get("id");
+      if(apiIdGraphQL != null && createGraphQlApiRes.statusCode()==201) JsonReadWrite.addApiToJson(apiIdGraphQL);
+      
+      Response changeGraphQlApiStatusRes = api.changeApiStatus(JsonReadWrite.readApiId(1), apiLifecycleStatusAction);
+      logger.info("Status Code [CHANGE GRAPHQL API STATUS]: "+changeGraphQlApiStatusRes.statusCode());
       
       Response searchApiRes = api.searchApis();
       logger.info("Status Code [SEARCH API]: "+searchApiRes.statusCode());
@@ -121,54 +134,53 @@ public class DataPopulations extends BaseTest{
   
   
   @Test
-  public void DevPortal() {
+  @Parameters({"tenantAdminUser","tenantAdminUserPassword","apiSearchingKeyWord",
+      "appPayloadListAsString", "genarateKeyPayloadListAsString"})  
+  public void DevPortal(
+          String tenantAdminUser, String tenantAdminUserPassword,String apiSearchingKeyWord, 
+          String appPayloadListAsString, String genarateKeyPayloadListAsString) {
+     
+      ArrayList<String> appPayloadList = new ArrayList<String>(Arrays.asList(appPayloadListAsString.split(",")));
+      ArrayList<String> genarateKeyPayload = new ArrayList<String>(Arrays.asList(genarateKeyPayloadListAsString.split(",")));
       
-      authenticationObject.setUsername("creator1_Test@test1_tenant.com");
-      authenticationObject.setUserpassword("creator1_Test");
-      
+      authenticationObject.setUsername(tenantAdminUser);
+      authenticationObject.setUserpassword(tenantAdminUserPassword);
       
       Authentication authentication = new Authentication(authenticationObject);
       accessToken = authentication.getAccessToken();
       
       DevPortal.UnfiedSearch dSearch = new DevPortal.UnfiedSearch(accessToken, ApimVersions.APIM_3_2);
-      
-//      Response searchApiByName = dSearch.getApiAndApiDocumentByContent("ABC");
-//      logger.info("Status Code [SEARCHED API BY NAME]: "+searchApiByName.jsonPath().prettify());
+      Response searchApiByName = dSearch.getApiAndApiDocumentByContent(apiSearchingKeyWord);
+      logger.info("Status Code [SEARCHED API BY NAME]: "+searchApiByName.statusCode());
       
       DevPortal.Applications applications = new DevPortal.Applications(accessToken, ApimVersions.APIM_3_2);
-      
-      Response searchApplicationRes = applications.searchApplications();
-      logger.info("Status Code [SEARCH APPLICATION]: "+searchApplicationRes.statusCode());
-      
-      Response createNewApplicationRes = applications.createNewApplications("createNewApplication.json");
-      logger.info("Status Code [CREATE NEW APPLICATION]: "+createNewApplicationRes.statusCode());
-      String appId = createNewApplicationRes.jsonPath().get("applicationId");    
-      if(appId != null) JsonReadWrite.addAppToJson(appId);
-      
-      System.out.println(JsonReadWrite.readAppId(0));
-      
+      DevPortal.ApplicationKeys appKeys = new DevPortal.ApplicationKeys(accessToken, ApimVersions.APIM_3_2);
       DevPortal.Subscriptions subscription = new DevPortal.Subscriptions(accessToken, ApimVersions.APIM_3_2);
-      Response subscribeRes = subscription.addNewSubscription("subscribeToApp.json",JsonReadWrite.readApiId(0),JsonReadWrite.readAppId(0));
-      logger.info("Status Code [SCSUBSCRIBE TO API]: "+subscribeRes.statusCode());
+      
+      for(int i = 0 ; i < 3 ; i++) {
+          
+          Response createNewApplicationRes = applications.createNewApplications(appPayloadList.get(i));
+          logger.info("Status Code [CREATE NEW APPLICATION "+(i+1)+"]: "+createNewApplicationRes.statusCode());
+          String appId = createNewApplicationRes.jsonPath().get("applicationId"); 
+          if(appId != null && createNewApplicationRes.statusCode()==201) JsonReadWrite.addAppToJson(appId);
+          
+          Response subscribeRes = subscription.addNewSubscription("subscribeToApp.json",JsonReadWrite.readApiId(0),JsonReadWrite.readAppId(i));
+          logger.info("Status Code [SUBSCRIBE TO API "+(i+1)+"]: "+subscribeRes.statusCode());
+          
+          Response subscribeGraphQlRes = subscription.addNewSubscription("subscribeToApp.json",JsonReadWrite.readApiId(1),JsonReadWrite.readAppId(i));
+          logger.info("Status Code [SUBSCRIBE TO GRAPHQL API "+(i+1)+"]: "+subscribeGraphQlRes.statusCode());
+        
+          Response genSandboxKeyRes = appKeys.generateApplicationKeys(JsonReadWrite.readAppId(i), genarateKeyPayload.get(i));
+          logger.info("Status Code [GENERATE ACCESS TOKEN "+(i+1)+"]: "+genSandboxKeyRes.statusCode());
+          JsonReadWrite.addKeys(JsonReadWrite.readAppId(i), "sandbox", genSandboxKeyRes.jsonPath().prettify());
+      }
       
       logger.info("[DEV PORTAL]: Dev Portal tests were completed");
       
       
   }
   
-  public void saveRuntimeData(JSONObject jsonDataObject) {
-      
-      try (FileWriter file = new FileWriter("./src/test/runtimeData/runtime.json")) {
-          file.write(jsonDataObject.toJSONString()); 
-          file.flush();
 
-      } catch (IOException e) {
-          e.printStackTrace();
-      }
-      
-      
-      
-  }
   
 }
 
