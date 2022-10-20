@@ -88,10 +88,12 @@ public class DataPopulations extends BaseTest{
   
   @Test
   @Parameters({"tenantAdminUser","tenantAdminUserPassword", "apiCreationPayload",
-      "createApiOpenApiDefinition","thumbnailImage","apiLifecycleStatusAction"})  
+      "createApiOpenApiDefinition","thumbnailImage","apiLifecycleStatusAction",
+      "schemaGraphQlPayload","apiCretionPayloadGraphQL"})  
   public void publisherPortal(
           String tenantAdminUser, String tenantAdminUserPassword, String apiCreationPayload,
-          String createApiOpenApiDefinition, String thumbnailImage, String apiLifecycleStatusAction
+          String createApiOpenApiDefinition, String thumbnailImage, String apiLifecycleStatusAction,
+          String schemaGraphQlPayload, String apiCretionPayloadGraphQL
           ) throws InterruptedException {
       
       authenticationObject.setUsername(tenantAdminUser);
@@ -110,7 +112,7 @@ public class DataPopulations extends BaseTest{
       String apiId = createApiOpenApiDefinitionRes.jsonPath().get("id");
       if(apiId != null && createApiOpenApiDefinitionRes.statusCode()==201) JsonReadWrite.addApiToJson(apiId);
       
-      Response createGraphQlApiRes = api.importAPIDefinition("schema_graphql.graphql", "apicretion_payload_graphQL.json");
+      Response createGraphQlApiRes = api.importAPIDefinition(schemaGraphQlPayload, apiCretionPayloadGraphQL);
       logger.info("Status Code [CREATE GRAPHQL API]: "+createGraphQlApiRes.statusCode());
       String apiIdGraphQL = createGraphQlApiRes.jsonPath().get("id");
       if(apiIdGraphQL != null && createGraphQlApiRes.statusCode()==201) JsonReadWrite.addApiToJson(apiIdGraphQL);
@@ -172,7 +174,7 @@ public class DataPopulations extends BaseTest{
         
           Response genSandboxKeyRes = appKeys.generateApplicationKeys(JsonReadWrite.readAppId(i), genarateKeyPayload.get(i));
           logger.info("Status Code [GENERATE ACCESS TOKEN "+(i+1)+"]: "+genSandboxKeyRes.statusCode());
-          JsonReadWrite.addKeys(JsonReadWrite.readAppId(i), "sandbox", genSandboxKeyRes.jsonPath().prettify());
+          if(genSandboxKeyRes.statusCode()==200) JsonReadWrite.addKeys(JsonReadWrite.readAppId(i), "sandbox", genSandboxKeyRes.jsonPath().prettify());
       }
       
       logger.info("[DEV PORTAL]: Dev Portal tests were completed");

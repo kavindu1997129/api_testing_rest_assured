@@ -25,6 +25,8 @@
  <parameter name="createApiOpenApiDefinition" value="createApiOpenApiDefinition.json" />
  <parameter name="thumbnailImage" value="thumbnail2.jpg" />
  <parameter name="apiLifecycleStatusAction" value="Publish" />
+ <parameter name="schemaGraphQlPayload" value="schema_graphql.graphql" />
+ <parameter name="apiCretionPayloadGraphQL" value="apicretion_payload_graphQL.json" />
   
  <!--DEV PORTAL RELATED DATA-->
  <parameter name="tenantAdminUser" value="creator1_Test@test1_tenant.com" />
