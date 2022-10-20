@@ -2,9 +2,16 @@ package restapi.devportal;
 
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.Properties;
+
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
 
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
@@ -892,7 +899,27 @@ public class DevPortal {
             return generateApiKeysResponse;
         }
     	
-    	public Response addNesSubscription(String jsonPayloadPath){
+    	public Response addNewSubscription(String jsonPayloadPath, String apiId, String appId){
+    	    
+    	    JSONObject jsonObject = new JSONObject();
+    	       
+    	       try {
+    	           
+    	         JSONParser parser = new JSONParser();
+    	         Object obj = parser.parse(new FileReader(resourceParenPath+jsonPayloadPath));
+    	           jsonObject = (JSONObject) obj;
+    	           jsonObject.put("apiId", apiId);
+    	           jsonObject.put("applicationId", appId);
+    	           try (FileWriter file = new FileWriter(resourceParenPath+jsonPayloadPath)) {
+    	             file.write(jsonObject.toJSONString()); 
+    	             file.flush();
+    	  
+    	         } catch (IOException e) {
+    	             e.printStackTrace();
+    	         }
+    	       } catch (Exception e) {
+    	         
+    	       }
     		
     		byte[] payloadplj1;
             String payloadpls1="";

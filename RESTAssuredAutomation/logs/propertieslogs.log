@@ -10146,3 +10146,195 @@
 [INFO ] 2022-10-19 17:36:12.049 [TestNG-tests-1] DataPopulations - Status Code [UPLOAD API THUMBNAIL]: 404
 [INFO ] 2022-10-19 17:36:12.122 [TestNG-tests-1] DataPopulations - Status Code [CHANGE API STATUS]: 404
 [INFO ] 2022-10-19 17:36:12.122 [TestNG-tests-1] DataPopulations - [PUBLISHER PORTAL]: Dev Portal tests were completed
+[INFO ] 2022-10-19 22:34:22.371 [TestNG-tests-1] DataPopulations - Status Code [CREATE OPEN API DEFINITION]: 201
+[INFO ] 2022-10-19 22:34:22.443 [TestNG-tests-1] DataPopulations - Status Code [SEARCH API]: 200
+[INFO ] 2022-10-19 22:34:22.635 [TestNG-tests-1] DataPopulations - Status Code [UPLOAD API THUMBNAIL]: 201
+[INFO ] 2022-10-19 22:34:23.027 [TestNG-tests-1] DataPopulations - Status Code [CHANGE API STATUS]: 200
+[INFO ] 2022-10-19 22:34:23.027 [TestNG-tests-1] DataPopulations - [PUBLISHER PORTAL]: Dev Portal tests were completed
+[INFO ] 2022-10-19 22:34:42.703 [TestNG-tests-1] DataPopulations - Status Code [CREATE OPEN API DEFINITION]: 409
+[INFO ] 2022-10-19 22:34:42.785 [TestNG-tests-1] DataPopulations - Status Code [SEARCH API]: 200
+[INFO ] 2022-10-19 22:34:42.842 [TestNG-tests-1] DataPopulations - Status Code [UPLOAD API THUMBNAIL]: 404
+[INFO ] 2022-10-19 22:34:42.894 [TestNG-tests-1] DataPopulations - Status Code [CHANGE API STATUS]: 404
+[INFO ] 2022-10-19 22:34:42.894 [TestNG-tests-1] DataPopulations - [PUBLISHER PORTAL]: Dev Portal tests were completed
+[INFO ] 2022-10-19 22:36:13.498 [TestNG-tests-1] DataPopulations - Status Code [SEARCH APPLICATION]: 200
+[INFO ] 2022-10-19 22:36:13.565 [TestNG-tests-1] DataPopulations - Status Code [CREATE NEW APPLICATION]: {
+    "code": 409,
+    "message": "Resource Already Exists",
+    "description": "An application already exists with name CalculatorApp",
+    "moreInfo": "",
+    "error": [
+        
+    ]
+}
+[INFO ] 2022-10-19 22:36:13.566 [TestNG-tests-1] DataPopulations - [DEV PORTAL]: Dev Portal tests were completed
+[INFO ] 2022-10-19 22:36:13.766 [TestNG-tests-1] DataPopulations - Status Code [CREATE OPEN API DEFINITION]: 409
+[INFO ] 2022-10-19 22:36:13.816 [TestNG-tests-1] DataPopulations - Status Code [SEARCH API]: 200
+[INFO ] 2022-10-19 22:36:13.862 [TestNG-tests-1] DataPopulations - Status Code [UPLOAD API THUMBNAIL]: 404
+[INFO ] 2022-10-19 22:36:13.905 [TestNG-tests-1] DataPopulations - Status Code [CHANGE API STATUS]: 404
+[INFO ] 2022-10-19 22:36:13.905 [TestNG-tests-1] DataPopulations - [PUBLISHER PORTAL]: Dev Portal tests were completed
+[INFO ] 2022-10-19 22:36:50.127 [TestNG-tests-1] DataPopulations - Status Code [SEARCH APPLICATION]: 200
+[INFO ] 2022-10-19 22:36:50.199 [TestNG-tests-1] DataPopulations - Status Code [CREATE NEW APPLICATION]: {
+    "applicationId": "3096f782-7b7c-4941-858d-c1ec0cfaf651",
+    "name": "CalculatorApp",
+    "throttlingPolicy": "Unlimited",
+    "description": "Sample calculator application",
+    "tokenType": "JWT",
+    "status": "APPROVED",
+    "groups": [
+        
+    ],
+    "subscriptionCount": 0,
+    "keys": [
+        
+    ],
+    "attributes": {
+        
+    },
+    "subscriptionScopes": [
+        
+    ],
+    "owner": "creator1_Test@test1_tenant.com",
+    "hashEnabled": null
+}
+[INFO ] 2022-10-19 22:36:50.199 [TestNG-tests-1] DataPopulations - [DEV PORTAL]: Dev Portal tests were completed
+[INFO ] 2022-10-19 22:36:50.456 [TestNG-tests-1] DataPopulations - Status Code [CREATE OPEN API DEFINITION]: 409
+[INFO ] 2022-10-19 22:36:50.509 [TestNG-tests-1] DataPopulations - Status Code [SEARCH API]: 200
+[INFO ] 2022-10-19 22:36:50.550 [TestNG-tests-1] DataPopulations - Status Code [UPLOAD API THUMBNAIL]: 404
+[INFO ] 2022-10-19 22:36:50.590 [TestNG-tests-1] DataPopulations - Status Code [CHANGE API STATUS]: 404
+[INFO ] 2022-10-19 22:36:50.590 [TestNG-tests-1] DataPopulations - [PUBLISHER PORTAL]: Dev Portal tests were completed
+[INFO ] 2022-10-19 22:40:50.016 [TestNG-tests-1] DataPopulations - Status Code [SEARCH APPLICATION]: 200
+[INFO ] 2022-10-19 22:40:50.079 [TestNG-tests-1] DataPopulations - Status Code [CREATE NEW APPLICATION]: 201
+[INFO ] 2022-10-19 22:40:50.102 [TestNG-tests-1] DataPopulations - [DEV PORTAL]: Dev Portal tests were completed
+[INFO ] 2022-10-19 22:40:50.352 [TestNG-tests-1] DataPopulations - Status Code [CREATE OPEN API DEFINITION]: 409
+[INFO ] 2022-10-19 22:40:50.423 [TestNG-tests-1] DataPopulations - Status Code [SEARCH API]: 200
+[INFO ] 2022-10-19 22:40:50.472 [TestNG-tests-1] DataPopulations - Status Code [UPLOAD API THUMBNAIL]: 404
+[INFO ] 2022-10-19 22:40:50.517 [TestNG-tests-1] DataPopulations - Status Code [CHANGE API STATUS]: 404
+[INFO ] 2022-10-19 22:40:50.518 [TestNG-tests-1] DataPopulations - [PUBLISHER PORTAL]: Dev Portal tests were completed
+[INFO ] 2022-10-19 22:46:10.530 [TestNG-tests-1] DataPopulations - Status Code [SEARCH APPLICATION]: 200
+[INFO ] 2022-10-19 22:46:10.593 [TestNG-tests-1] DataPopulations - Status Code [CREATE NEW APPLICATION]: 409
+[INFO ] 2022-10-19 22:46:10.606 [TestNG-tests-1] DataPopulations - [DEV PORTAL]: Dev Portal tests were completed
+[INFO ] 2022-10-19 22:46:10.878 [TestNG-tests-1] DataPopulations - Status Code [CREATE OPEN API DEFINITION]: 409
+[INFO ] 2022-10-19 22:48:36.896 [TestNG-tests-1] DataPopulations - Status Code [SEARCH APPLICATION]: 200
+[INFO ] 2022-10-19 22:48:36.945 [TestNG-tests-1] DataPopulations - Status Code [CREATE NEW APPLICATION]: 409
+[INFO ] 2022-10-19 22:48:36.958 [TestNG-tests-1] DataPopulations - [DEV PORTAL]: Dev Portal tests were completed
+[INFO ] 2022-10-19 22:48:37.179 [TestNG-tests-1] DataPopulations - Status Code [CREATE OPEN API DEFINITION]: 409
+[INFO ] 2022-10-19 22:48:37.249 [TestNG-tests-1] DataPopulations - Status Code [SEARCH API]: 200
+[INFO ] 2022-10-19 22:48:37.297 [TestNG-tests-1] DataPopulations - Status Code [UPLOAD API THUMBNAIL]: 404
+[INFO ] 2022-10-19 22:48:37.338 [TestNG-tests-1] DataPopulations - Status Code [CHANGE API STATUS]: 404
+[INFO ] 2022-10-19 22:48:37.338 [TestNG-tests-1] DataPopulations - [PUBLISHER PORTAL]: Dev Portal tests were completed
+[INFO ] 2022-10-19 22:49:18.194 [TestNG-tests-1] DataPopulations - Status Code [SEARCH APPLICATION]: 200
+[INFO ] 2022-10-19 22:49:18.245 [TestNG-tests-1] DataPopulations - Status Code [CREATE NEW APPLICATION]: 409
+[INFO ] 2022-10-19 22:49:18.254 [TestNG-tests-1] DataPopulations - [DEV PORTAL]: Dev Portal tests were completed
+[INFO ] 2022-10-19 22:49:18.468 [TestNG-tests-1] DataPopulations - Status Code [CREATE OPEN API DEFINITION]: 409
+[INFO ] 2022-10-19 22:49:39.835 [TestNG-tests-1] DataPopulations - Status Code [SEARCH APPLICATION]: 200
+[INFO ] 2022-10-19 22:49:39.890 [TestNG-tests-1] DataPopulations - Status Code [CREATE NEW APPLICATION]: 409
+[INFO ] 2022-10-19 22:49:39.902 [TestNG-tests-1] DataPopulations - [DEV PORTAL]: Dev Portal tests were completed
+[INFO ] 2022-10-19 22:49:40.161 [TestNG-tests-1] DataPopulations - Status Code [CREATE OPEN API DEFINITION]: 409
+[INFO ] 2022-10-19 22:50:17.467 [TestNG-tests-1] DataPopulations - Status Code [SEARCH APPLICATION]: 200
+[INFO ] 2022-10-19 22:50:17.512 [TestNG-tests-1] DataPopulations - Status Code [CREATE NEW APPLICATION]: 409
+[INFO ] 2022-10-19 22:50:17.524 [TestNG-tests-1] DataPopulations - [DEV PORTAL]: Dev Portal tests were completed
+[INFO ] 2022-10-19 22:50:17.734 [TestNG-tests-1] DataPopulations - Status Code [CREATE OPEN API DEFINITION]: 409
+[INFO ] 2022-10-19 22:50:44.435 [TestNG-tests-1] DataPopulations - Status Code [SEARCH APPLICATION]: 200
+[INFO ] 2022-10-19 22:50:44.480 [TestNG-tests-1] DataPopulations - Status Code [CREATE NEW APPLICATION]: 409
+[INFO ] 2022-10-19 22:50:44.493 [TestNG-tests-1] DataPopulations - [DEV PORTAL]: Dev Portal tests were completed
+[INFO ] 2022-10-19 22:50:44.702 [TestNG-tests-1] DataPopulations - Status Code [CREATE OPEN API DEFINITION]: 409
+[INFO ] 2022-10-19 22:50:44.793 [TestNG-tests-1] DataPopulations - Status Code [SEARCH API]: 200
+[INFO ] 2022-10-19 22:50:44.835 [TestNG-tests-1] DataPopulations - Status Code [UPLOAD API THUMBNAIL]: 404
+[INFO ] 2022-10-19 22:50:44.876 [TestNG-tests-1] DataPopulations - Status Code [CHANGE API STATUS]: 404
+[INFO ] 2022-10-19 22:50:44.876 [TestNG-tests-1] DataPopulations - [PUBLISHER PORTAL]: Dev Portal tests were completed
+[INFO ] 2022-10-19 22:51:02.442 [TestNG-tests-1] DataPopulations - Status Code [SEARCH APPLICATION]: 200
+[INFO ] 2022-10-19 22:51:02.491 [TestNG-tests-1] DataPopulations - Status Code [CREATE NEW APPLICATION]: 409
+[INFO ] 2022-10-19 22:51:02.501 [TestNG-tests-1] DataPopulations - [DEV PORTAL]: Dev Portal tests were completed
+[INFO ] 2022-10-19 22:51:02.708 [TestNG-tests-1] DataPopulations - Status Code [CREATE OPEN API DEFINITION]: 409
+[INFO ] 2022-10-19 22:52:55.286 [TestNG-tests-1] DataPopulations - Status Code [SEARCH APPLICATION]: 200
+[INFO ] 2022-10-19 22:52:55.352 [TestNG-tests-1] DataPopulations - Status Code [CREATE NEW APPLICATION]: 409
+[INFO ] 2022-10-19 22:52:55.365 [TestNG-tests-1] DataPopulations - [DEV PORTAL]: Dev Portal tests were completed
+[INFO ] 2022-10-19 22:52:55.609 [TestNG-tests-1] DataPopulations - Status Code [CREATE OPEN API DEFINITION]: 409
+[INFO ] 2022-10-19 22:53:20.598 [TestNG-tests-1] DataPopulations - Status Code [SEARCH APPLICATION]: 200
+[INFO ] 2022-10-19 22:53:20.641 [TestNG-tests-1] DataPopulations - Status Code [CREATE NEW APPLICATION]: 409
+[INFO ] 2022-10-19 22:53:20.652 [TestNG-tests-1] DataPopulations - [DEV PORTAL]: Dev Portal tests were completed
+[INFO ] 2022-10-19 22:53:20.875 [TestNG-tests-1] DataPopulations - Status Code [CREATE OPEN API DEFINITION]: 409
+[INFO ] 2022-10-19 22:53:42.626 [TestNG-tests-1] DataPopulations - Status Code [SEARCH APPLICATION]: 200
+[INFO ] 2022-10-19 22:53:42.687 [TestNG-tests-1] DataPopulations - Status Code [CREATE NEW APPLICATION]: 409
+[INFO ] 2022-10-19 22:53:42.698 [TestNG-tests-1] DataPopulations - [DEV PORTAL]: Dev Portal tests were completed
+[INFO ] 2022-10-19 22:53:42.919 [TestNG-tests-1] DataPopulations - Status Code [CREATE OPEN API DEFINITION]: 409
+[INFO ] 2022-10-19 22:53:42.986 [TestNG-tests-1] DataPopulations - Status Code [SEARCH API]: 200
+[INFO ] 2022-10-19 22:53:43.031 [TestNG-tests-1] DataPopulations - Status Code [UPLOAD API THUMBNAIL]: 404
+[INFO ] 2022-10-19 22:53:43.075 [TestNG-tests-1] DataPopulations - Status Code [CHANGE API STATUS]: 404
+[INFO ] 2022-10-19 22:53:43.075 [TestNG-tests-1] DataPopulations - [PUBLISHER PORTAL]: Dev Portal tests were completed
+[INFO ] 2022-10-19 22:54:38.992 [TestNG-tests-1] DataPopulations - Status Code [SEARCH APPLICATION]: 200
+[INFO ] 2022-10-19 22:54:39.055 [TestNG-tests-1] DataPopulations - Status Code [CREATE NEW APPLICATION]: 409
+[INFO ] 2022-10-19 22:54:39.067 [TestNG-tests-1] DataPopulations - [DEV PORTAL]: Dev Portal tests were completed
+[INFO ] 2022-10-19 22:54:39.342 [TestNG-tests-1] DataPopulations - Status Code [CREATE OPEN API DEFINITION]: 409
+[INFO ] 2022-10-19 23:03:57.888 [TestNG-tests-1] DataPopulations - Status Code [SEARCH APPLICATION]: 200
+[INFO ] 2022-10-19 23:03:57.942 [TestNG-tests-1] DataPopulations - Status Code [CREATE NEW APPLICATION]: 409
+[INFO ] 2022-10-19 23:03:57.954 [TestNG-tests-1] DataPopulations - [DEV PORTAL]: Dev Portal tests were completed
+[INFO ] 2022-10-19 23:03:58.180 [TestNG-tests-1] DataPopulations - Status Code [CREATE OPEN API DEFINITION]: 409
+[INFO ] 2022-10-19 23:03:58.248 [TestNG-tests-1] DataPopulations - Status Code [SEARCH API]: 200
+[INFO ] 2022-10-19 23:03:58.290 [TestNG-tests-1] DataPopulations - Status Code [UPLOAD API THUMBNAIL]: 404
+[INFO ] 2022-10-19 23:03:58.349 [TestNG-tests-1] DataPopulations - Status Code [CHANGE API STATUS]: 404
+[INFO ] 2022-10-19 23:03:58.350 [TestNG-tests-1] DataPopulations - [PUBLISHER PORTAL]: Dev Portal tests were completed
+[INFO ] 2022-10-19 23:06:11.872 [TestNG-tests-1] DataPopulations - Status Code [SEARCH APPLICATION]: 200
+[INFO ] 2022-10-19 23:06:11.921 [TestNG-tests-1] DataPopulations - Status Code [CREATE NEW APPLICATION]: 409
+[INFO ] 2022-10-19 23:06:11.934 [TestNG-tests-1] DataPopulations - [DEV PORTAL]: Dev Portal tests were completed
+[INFO ] 2022-10-19 23:06:12.161 [TestNG-tests-1] DataPopulations - Status Code [CREATE OPEN API DEFINITION]: 409
+[INFO ] 2022-10-19 23:06:12.231 [TestNG-tests-1] DataPopulations - Status Code [SEARCH API]: 200
+[INFO ] 2022-10-19 23:06:12.275 [TestNG-tests-1] DataPopulations - Status Code [UPLOAD API THUMBNAIL]: 404
+[INFO ] 2022-10-19 23:06:12.314 [TestNG-tests-1] DataPopulations - Status Code [CHANGE API STATUS]: 404
+[INFO ] 2022-10-19 23:06:12.315 [TestNG-tests-1] DataPopulations - [PUBLISHER PORTAL]: Dev Portal tests were completed
+[INFO ] 2022-10-19 23:08:28.598 [TestNG-tests-1] DataPopulations - Status Code [SEARCH APPLICATION]: 200
+[INFO ] 2022-10-19 23:08:28.655 [TestNG-tests-1] DataPopulations - Status Code [CREATE NEW APPLICATION]: 409
+[INFO ] 2022-10-19 23:08:28.665 [TestNG-tests-1] DataPopulations - [DEV PORTAL]: Dev Portal tests were completed
+[INFO ] 2022-10-19 23:08:28.945 [TestNG-tests-1] DataPopulations - Status Code [CREATE OPEN API DEFINITION]: 409
+[INFO ] 2022-10-19 23:08:29.009 [TestNG-tests-1] DataPopulations - Status Code [SEARCH API]: 200
+[INFO ] 2022-10-19 23:08:29.057 [TestNG-tests-1] DataPopulations - Status Code [UPLOAD API THUMBNAIL]: 404
+[INFO ] 2022-10-19 23:08:29.099 [TestNG-tests-1] DataPopulations - Status Code [CHANGE API STATUS]: 404
+[INFO ] 2022-10-19 23:08:29.100 [TestNG-tests-1] DataPopulations - [PUBLISHER PORTAL]: Dev Portal tests were completed
+[INFO ] 2022-10-19 23:08:46.395 [TestNG-tests-1] DataPopulations - Status Code [SEARCH APPLICATION]: 200
+[INFO ] 2022-10-19 23:08:46.444 [TestNG-tests-1] DataPopulations - Status Code [CREATE NEW APPLICATION]: 409
+[INFO ] 2022-10-19 23:08:46.455 [TestNG-tests-1] DataPopulations - [DEV PORTAL]: Dev Portal tests were completed
+[INFO ] 2022-10-19 23:08:46.721 [TestNG-tests-1] DataPopulations - Status Code [CREATE OPEN API DEFINITION]: 409
+[INFO ] 2022-10-19 23:08:46.782 [TestNG-tests-1] DataPopulations - Status Code [SEARCH API]: 200
+[INFO ] 2022-10-19 23:08:46.829 [TestNG-tests-1] DataPopulations - Status Code [UPLOAD API THUMBNAIL]: 404
+[INFO ] 2022-10-19 23:08:46.871 [TestNG-tests-1] DataPopulations - Status Code [CHANGE API STATUS]: 404
+[INFO ] 2022-10-19 23:08:46.871 [TestNG-tests-1] DataPopulations - [PUBLISHER PORTAL]: Dev Portal tests were completed
+[INFO ] 2022-10-19 23:09:49.466 [TestNG-tests-1] DataPopulations - Status Code [SEARCH APPLICATION]: 200
+[INFO ] 2022-10-19 23:09:49.526 [TestNG-tests-1] DataPopulations - Status Code [CREATE NEW APPLICATION]: 409
+[INFO ] 2022-10-19 23:09:49.539 [TestNG-tests-1] DataPopulations - [DEV PORTAL]: Dev Portal tests were completed
+[INFO ] 2022-10-19 23:09:49.819 [TestNG-tests-1] DataPopulations - Status Code [CREATE OPEN API DEFINITION]: 409
+[INFO ] 2022-10-19 23:09:49.911 [TestNG-tests-1] DataPopulations - Status Code [SEARCH API]: 200
+[INFO ] 2022-10-19 23:09:50.374 [TestNG-tests-1] DataPopulations - Status Code [UPLOAD API THUMBNAIL]: 201
+[INFO ] 2022-10-19 23:09:50.669 [TestNG-tests-1] DataPopulations - Status Code [CHANGE API STATUS]: 200
+[INFO ] 2022-10-19 23:09:50.670 [TestNG-tests-1] DataPopulations - [PUBLISHER PORTAL]: Dev Portal tests were completed
+[INFO ] 2022-10-19 23:12:45.711 [TestNG-tests-1] DataPopulations - Status Code [SEARCH APPLICATION]: 200
+[INFO ] 2022-10-19 23:12:45.771 [TestNG-tests-1] DataPopulations - Status Code [CREATE NEW APPLICATION]: 409
+[INFO ] 2022-10-19 23:12:45.787 [TestNG-tests-1] DataPopulations - [DEV PORTAL]: Dev Portal tests were completed
+[INFO ] 2022-10-19 23:12:46.045 [TestNG-tests-1] DataPopulations - Status Code [CREATE OPEN API DEFINITION]: 409
+[INFO ] 2022-10-19 23:12:46.108 [TestNG-tests-1] DataPopulations - Status Code [SEARCH API]: 200
+[INFO ] 2022-10-19 23:12:46.555 [TestNG-tests-1] DataPopulations - Status Code [UPLOAD API THUMBNAIL]: 201
+[INFO ] 2022-10-19 23:12:46.813 [TestNG-tests-1] DataPopulations - Status Code [CHANGE API STATUS]: 200
+[INFO ] 2022-10-19 23:12:46.813 [TestNG-tests-1] DataPopulations - [PUBLISHER PORTAL]: Dev Portal tests were completed
+[INFO ] 2022-10-19 23:47:36.268 [TestNG-tests-1] DataPopulations - Status Code [SEARCH APPLICATION]: 200
+[INFO ] 2022-10-19 23:47:36.338 [TestNG-tests-1] DataPopulations - Status Code [CREATE NEW APPLICATION]: 409
+[INFO ] 2022-10-19 23:47:36.476 [TestNG-tests-1] DataPopulations - Status Code [SCSUBSCRIBE TO API]: 409
+[INFO ] 2022-10-19 23:47:36.477 [TestNG-tests-1] DataPopulations - [DEV PORTAL]: Dev Portal tests were completed
+[INFO ] 2022-10-19 23:47:36.744 [TestNG-tests-1] DataPopulations - Status Code [CREATE OPEN API DEFINITION]: 409
+[INFO ] 2022-10-19 23:47:36.811 [TestNG-tests-1] DataPopulations - Status Code [SEARCH API]: 200
+[INFO ] 2022-10-19 23:47:37.257 [TestNG-tests-1] DataPopulations - Status Code [UPLOAD API THUMBNAIL]: 201
+[INFO ] 2022-10-19 23:47:37.661 [TestNG-tests-1] DataPopulations - Status Code [CHANGE API STATUS]: 200
+[INFO ] 2022-10-19 23:47:37.661 [TestNG-tests-1] DataPopulations - [PUBLISHER PORTAL]: Dev Portal tests were completed
+[INFO ] 2022-10-19 23:54:40.069 [TestNG-tests-1] DataPopulations - Status Code [SEARCH APPLICATION]: 200
+[INFO ] 2022-10-19 23:54:40.124 [TestNG-tests-1] DataPopulations - Status Code [CREATE NEW APPLICATION]: 409
+[INFO ] 2022-10-19 23:54:40.213 [TestNG-tests-1] DataPopulations - Status Code [SCSUBSCRIBE TO API]: 404
+[INFO ] 2022-10-19 23:54:40.213 [TestNG-tests-1] DataPopulations - [DEV PORTAL]: Dev Portal tests were completed
+[INFO ] 2022-10-19 23:54:40.461 [TestNG-tests-1] DataPopulations - Status Code [CREATE OPEN API DEFINITION]: 409
+[INFO ] 2022-10-19 23:54:40.525 [TestNG-tests-1] DataPopulations - Status Code [SEARCH API]: 200
+[INFO ] 2022-10-19 23:55:59.574 [TestNG-tests-1] DataPopulations - Status Code [SEARCH APPLICATION]: 200
+[INFO ] 2022-10-19 23:55:59.629 [TestNG-tests-1] DataPopulations - Status Code [CREATE NEW APPLICATION]: 409
+[INFO ] 2022-10-19 23:55:59.730 [TestNG-tests-1] DataPopulations - Status Code [SCSUBSCRIBE TO API]: 201
+[INFO ] 2022-10-19 23:55:59.730 [TestNG-tests-1] DataPopulations - [DEV PORTAL]: Dev Portal tests were completed
+[INFO ] 2022-10-19 23:55:59.978 [TestNG-tests-1] DataPopulations - Status Code [CREATE OPEN API DEFINITION]: 409
+[INFO ] 2022-10-19 23:56:00.032 [TestNG-tests-1] DataPopulations - Status Code [SEARCH API]: 200
+[INFO ] 2022-10-19 23:56:00.493 [TestNG-tests-1] DataPopulations - Status Code [UPLOAD API THUMBNAIL]: 201
+[INFO ] 2022-10-19 23:56:00.712 [TestNG-tests-1] DataPopulations - Status Code [CHANGE API STATUS]: 200
+[INFO ] 2022-10-19 23:56:00.712 [TestNG-tests-1] DataPopulations - [PUBLISHER PORTAL]: Dev Portal tests were completed

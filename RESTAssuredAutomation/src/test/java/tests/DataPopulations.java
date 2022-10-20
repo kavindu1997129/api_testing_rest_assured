@@ -145,6 +145,12 @@ public class DataPopulations extends BaseTest{
       String appId = createNewApplicationRes.jsonPath().get("applicationId");    
       if(appId != null) JsonReadWrite.addAppToJson(appId);
       
+      System.out.println(JsonReadWrite.readAppId(0));
+      
+      DevPortal.Subscriptions subscription = new DevPortal.Subscriptions(accessToken, ApimVersions.APIM_3_2);
+      Response subscribeRes = subscription.addNewSubscription("subscribeToApp.json",JsonReadWrite.readApiId(0),JsonReadWrite.readAppId(0));
+      logger.info("Status Code [SCSUBSCRIBE TO API]: "+subscribeRes.statusCode());
+      
       logger.info("[DEV PORTAL]: Dev Portal tests were completed");
       
       
