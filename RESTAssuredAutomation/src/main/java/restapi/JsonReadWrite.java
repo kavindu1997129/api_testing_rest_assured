@@ -144,9 +144,38 @@ public class JsonReadWrite {
             // TODO: handle exception
         }
        
+   }
+   
+   public static String getAccessTokenOfApiFromApp(String appId) {
        
-       
-       
+       JSONObject jsonObject = new JSONObject();
+       JSONParser parser = new JSONParser();
+       String getAccessToken = "";
+       try {
+           Object obj = parser.parse(new FileReader(runtimeJsonPath));
+           jsonObject = (JSONObject) obj;
+           
+           int i = 0;
+           JSONArray apps = (JSONArray) jsonObject.get("apps");
+           JSONObject getApp = (JSONObject)apps.get(i);
+           String getAppId = "";
+           int appsArraySize = apps.size();
+           
+           while(!getAppId.trim().equals(appId.trim()) && i < appsArraySize) {
+               
+               getApp = (JSONObject)apps.get(i);
+               JSONObject getSandbox = (JSONObject)getApp.get("sandbox");
+               JSONObject getToken = (JSONObject)getSandbox.get("token");
+               getAccessToken = (String)getToken.get("accessToken");
+               
+               i += 1;
+               return getAccessToken;
+           }
+           
+        } catch (Exception e) {
+            // TODO: handle exception
+        }
+       return getAccessToken;
    }
   
    
