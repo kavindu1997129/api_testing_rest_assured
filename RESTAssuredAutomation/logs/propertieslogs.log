@@ -11549,3 +11549,2144 @@
 [INFO ] 2022-10-21 11:07:36.916 [TestNG-tests-1] DataValidation - Status Code [AVAILABILITY OF APPLICATION 2]: 200
 [INFO ] 2022-10-21 11:07:36.964 [TestNG-tests-1] DataValidation - Status Code [AVAILABILITY OF APPLICATION 3]: 200
 [INFO ] 2022-10-21 11:07:37.042 [TestNG-tests-1] DataValidation - Status Code [SEARCHED API BY NAME]: 200
+[INFO ] 2022-10-21 11:56:21.909 [TestNG-tests-1] DataValidation - Status Code [AVAILABILITY OF APPLICATION 1]: 200
+[INFO ] 2022-10-21 11:56:21.965 [TestNG-tests-1] DataValidation - Status Code [AVAILABILITY OF APPLICATION 2]: 200
+[INFO ] 2022-10-21 11:56:22.011 [TestNG-tests-1] DataValidation - Status Code [AVAILABILITY OF APPLICATION 3]: 200
+[INFO ] 2022-10-21 11:56:22.082 [TestNG-tests-1] DataValidation - Status Code [SEARCHED API BY NAME]: 200
+[INFO ] 2022-10-21 14:03:53.852 [TestNG-tests-1] DataValidation - Status Code [AVAILABILITY OF APPLICATION 1]: 200
+[INFO ] 2022-10-21 14:03:53.909 [TestNG-tests-1] DataValidation - Status Code [AVAILABILITY OF APPLICATION 2]: 200
+[INFO ] 2022-10-21 14:03:53.952 [TestNG-tests-1] DataValidation - Status Code [AVAILABILITY OF APPLICATION 3]: 200
+[INFO ] 2022-10-21 14:03:54.010 [TestNG-tests-1] DataValidation - Status Code [SEARCHED API BY NAME]: 200
+[INFO ] 2022-10-21 14:08:19.058 [TestNG-tests-1] DataValidation - Status Code [AVAILABILITY OF APPLICATION 1]: 200
+[INFO ] 2022-10-21 14:08:19.108 [TestNG-tests-1] DataValidation - Status Code [AVAILABILITY OF APPLICATION 2]: 200
+[INFO ] 2022-10-21 14:08:19.170 [TestNG-tests-1] DataValidation - Status Code [AVAILABILITY OF APPLICATION 3]: 200
+[INFO ] 2022-10-21 14:08:19.231 [TestNG-tests-1] DataValidation - Status Code [SEARCHED API BY NAME]: 200
+[INFO ] 2022-10-21 14:44:58.855 [TestNG-tests-1] DataPopulations - Status Code [SEARCHED API BY NAME]: 200
+[INFO ] 2022-10-21 14:44:58.921 [TestNG-tests-1] DataPopulations - Status Code [CREATE NEW APPLICATION 1]: 201
+[INFO ] 2022-10-21 14:44:59.048 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO API 1]: 201
+[INFO ] 2022-10-21 14:44:59.153 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO GRAPHQL API 1]: 201
+[INFO ] 2022-10-21 14:44:59.383 [TestNG-tests-1] DataPopulations - Status Code [GENERATE ACCESS TOKEN 1]: 200
+[INFO ] 2022-10-21 14:44:59.445 [TestNG-tests-1] DataPopulations - Status Code [CREATE NEW APPLICATION 2]: 201
+[INFO ] 2022-10-21 14:44:59.544 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO API 2]: 201
+[INFO ] 2022-10-21 14:44:59.601 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO GRAPHQL API 2]: 201
+[INFO ] 2022-10-21 14:44:59.688 [TestNG-tests-1] DataPopulations - Status Code [GENERATE ACCESS TOKEN 2]: 200
+[INFO ] 2022-10-21 14:44:59.741 [TestNG-tests-1] DataPopulations - Status Code [CREATE NEW APPLICATION 3]: 201
+[INFO ] 2022-10-21 14:44:59.823 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO API 3]: 201
+[INFO ] 2022-10-21 14:44:59.870 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO GRAPHQL API 3]: 201
+[INFO ] 2022-10-21 14:44:59.937 [TestNG-tests-1] DataPopulations - Status Code [GENERATE ACCESS TOKEN 3]: 200
+[INFO ] 2022-10-21 14:44:59.942 [TestNG-tests-1] DataPopulations - [DEV PORTAL]: Dev Portal tests were completed
+[INFO ] 2022-10-21 14:45:00.324 [TestNG-tests-1] DataPopulations - Status Code [CREATE OPEN API DEFINITION]: 409
+[INFO ] 2022-10-21 14:45:00.368 [TestNG-tests-1] DataPopulations - Status Code [CREATE GRAPHQL API]: 409
+[INFO ] 2022-10-21 14:45:00.771 [TestNG-tests-1] DataPopulations - Status Code [CHANGE GRAPHQL API STATUS]: 200
+[INFO ] 2022-10-21 14:45:00.814 [TestNG-tests-1] DataPopulations - Status Code [SEARCH API]: 200
+[INFO ] 2022-10-21 14:45:01.229 [TestNG-tests-1] DataPopulations - Status Code [UPLOAD API THUMBNAIL]: 201
+[INFO ] 2022-10-21 14:45:01.411 [TestNG-tests-1] DataPopulations - Status Code [CHANGE API STATUS]: 200
+[INFO ] 2022-10-21 14:45:01.411 [TestNG-tests-1] DataPopulations - [PUBLISHER PORTAL]: Dev Portal tests were completed
+[INFO ] 2022-10-21 14:46:18.487 [TestNG-tests-1] DataValidation - Status Code [AVAILABILITY OF APPLICATION 1]: 200
+[INFO ] 2022-10-21 14:46:18.540 [TestNG-tests-1] DataValidation - Status Code [AVAILABILITY OF APPLICATION 2]: 200
+[INFO ] 2022-10-21 14:46:18.584 [TestNG-tests-1] DataValidation - Status Code [AVAILABILITY OF APPLICATION 3]: 200
+[INFO ] 2022-10-21 14:46:18.649 [TestNG-tests-1] DataValidation - Status Code [SEARCHED API BY NAME]: 200
+[INFO ] 2022-10-21 14:48:50.416 [TestNG-tests-1] DataValidation - Status Code [AVAILABILITY OF APPLICATION 1]: 200
+[INFO ] 2022-10-21 14:48:50.475 [TestNG-tests-1] DataValidation - Status Code [AVAILABILITY OF APPLICATION 2]: 200
+[INFO ] 2022-10-21 14:48:50.518 [TestNG-tests-1] DataValidation - Status Code [AVAILABILITY OF APPLICATION 3]: 200
+[INFO ] 2022-10-21 14:48:50.558 [TestNG-tests-1] DataValidation - Status Code [INVOKE REST API]: 200
+[INFO ] 2022-10-21 14:48:50.610 [TestNG-tests-1] DataValidation - Status Code [SEARCHED API BY NAME]: 200
+[INFO ] 2022-10-21 14:49:32.402 [TestNG-tests-1] DataPopulations - Status Code [SEARCHED API BY NAME]: 200
+[INFO ] 2022-10-21 14:49:32.465 [TestNG-tests-1] DataPopulations - Status Code [CREATE NEW APPLICATION 1]: 409
+[INFO ] 2022-10-21 14:49:32.544 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO API 1]: 409
+[INFO ] 2022-10-21 14:49:32.604 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO GRAPHQL API 1]: 409
+[INFO ] 2022-10-21 14:49:32.646 [TestNG-tests-1] DataPopulations - Status Code [GENERATE ACCESS TOKEN 1]: 409
+[INFO ] 2022-10-21 14:49:32.685 [TestNG-tests-1] DataPopulations - Status Code [CREATE NEW APPLICATION 2]: 409
+[INFO ] 2022-10-21 14:49:32.751 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO API 2]: 409
+[INFO ] 2022-10-21 14:49:32.801 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO GRAPHQL API 2]: 409
+[INFO ] 2022-10-21 14:49:32.841 [TestNG-tests-1] DataPopulations - Status Code [GENERATE ACCESS TOKEN 2]: 409
+[INFO ] 2022-10-21 14:49:32.881 [TestNG-tests-1] DataPopulations - Status Code [CREATE NEW APPLICATION 3]: 409
+[INFO ] 2022-10-21 14:49:32.939 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO API 3]: 409
+[INFO ] 2022-10-21 14:49:32.993 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO GRAPHQL API 3]: 409
+[INFO ] 2022-10-21 14:49:33.036 [TestNG-tests-1] DataPopulations - Status Code [GENERATE ACCESS TOKEN 3]: 409
+[INFO ] 2022-10-21 14:49:33.037 [TestNG-tests-1] DataPopulations - [DEV PORTAL]: Dev Portal tests were completed
+[INFO ] 2022-10-21 14:49:33.294 [TestNG-tests-1] DataPopulations - Status Code [CREATE OPEN API DEFINITION]: 409
+[INFO ] 2022-10-21 14:49:33.355 [TestNG-tests-1] DataPopulations - Status Code [CREATE GRAPHQL API]: 409
+[INFO ] 2022-10-21 14:49:33.727 [TestNG-tests-1] DataPopulations - Status Code [CHANGE GRAPHQL API STATUS]: 200
+[INFO ] 2022-10-21 14:49:33.759 [TestNG-tests-1] DataPopulations - Status Code [SEARCH API]: 200
+[INFO ] 2022-10-21 14:49:34.187 [TestNG-tests-1] DataPopulations - Status Code [UPLOAD API THUMBNAIL]: 201
+[INFO ] 2022-10-21 14:49:34.414 [TestNG-tests-1] DataPopulations - Status Code [CHANGE API STATUS]: 200
+[INFO ] 2022-10-21 14:49:34.414 [TestNG-tests-1] DataPopulations - [PUBLISHER PORTAL]: Dev Portal tests were completed
+[INFO ] 2022-10-21 14:49:41.796 [TestNG-tests-1] DataValidation - Status Code [AVAILABILITY OF APPLICATION 1]: 200
+[INFO ] 2022-10-21 14:49:41.836 [TestNG-tests-1] DataValidation - Status Code [AVAILABILITY OF APPLICATION 2]: 200
+[INFO ] 2022-10-21 14:49:41.872 [TestNG-tests-1] DataValidation - Status Code [AVAILABILITY OF APPLICATION 3]: 200
+[INFO ] 2022-10-21 14:49:41.898 [TestNG-tests-1] DataValidation - Status Code [INVOKE REST API]: 200
+[INFO ] 2022-10-21 14:49:41.960 [TestNG-tests-1] DataValidation - Status Code [SEARCHED API BY NAME]: 200
+[INFO ] 2022-10-21 15:12:37.360 [TestNG-tests-1] DataValidation - Status Code [AVAILABILITY OF APPLICATION 1]: 200
+[INFO ] 2022-10-21 15:12:37.419 [TestNG-tests-1] DataValidation - Status Code [AVAILABILITY OF APPLICATION 2]: 200
+[INFO ] 2022-10-21 15:12:37.461 [TestNG-tests-1] DataValidation - Status Code [AVAILABILITY OF APPLICATION 3]: 200
+[INFO ] 2022-10-21 15:12:37.513 [TestNG-tests-1] DataValidation - Status Code [INVOKE REST API]: 200
+[INFO ] 2022-10-21 15:12:37.574 [TestNG-tests-1] DataValidation - Status Code [SEARCHED API BY NAME]: 200
+[INFO ] 2022-10-21 15:12:37.638 [TestNG-tests-1] DataValidation - Status Code [APP SCOPES]: {
+    "count": 2,
+    "list": [
+        {
+            "id": "4178445e-26b0-4ad2-88d5-2ad42aa58434",
+            "name": "GraphQL_Test_API_1",
+            "type": "API",
+            "transportType": "GRAPHQL",
+            "description": null,
+            "context": "/t/test1_tenant.com/graphqltestapi",
+            "version": "1.0.0",
+            "provider": "creator1_Test@test1_tenant.com",
+            "status": "PUBLISHED",
+            "thumbnailUri": null,
+            "businessInformation": {
+                "businessOwner": null,
+                "businessOwnerEmail": null,
+                "technicalOwner": null,
+                "technicalOwnerEmail": null
+            },
+            "avgRating": "0.0"
+        },
+        {
+            "id": "e29343f4-6531-444f-9713-81568f9601f3",
+            "name": "Test API 1",
+            "type": "API",
+            "transportType": "HTTP",
+            "description": null,
+            "context": "/t/test1_tenant.com/testapi1",
+            "version": "1.0.0",
+            "provider": "creator1_Test@test1_tenant.com",
+            "status": "PUBLISHED",
+            "thumbnailUri": "/t/test1_tenant.com/t/test1_tenant.com/registry/resource/_system/governance/apimgt/applicationdata/icons/creator1_Test-AT-test1_tenant.com/Test API 1/1.0.0/icon",
+            "businessInformation": {
+                "businessOwner": null,
+                "businessOwnerEmail": null,
+                "technicalOwner": null,
+                "technicalOwnerEmail": null
+            },
+            "avgRating": "0.0"
+        }
+    ],
+    "pagination": {
+        "offset": 0,
+        "limit": 25,
+        "total": 2,
+        "next": "",
+        "previous": ""
+    }
+}
+[INFO ] 2022-10-21 16:03:37.015 [TestNG-tests-1] DataValidation - Status Code [AVAILABILITY OF APPLICATION 1]: 200
+[INFO ] 2022-10-21 16:03:37.073 [TestNG-tests-1] DataValidation - Status Code [AVAILABILITY OF APPLICATION 2]: 200
+[INFO ] 2022-10-21 16:03:37.108 [TestNG-tests-1] DataValidation - Status Code [AVAILABILITY OF APPLICATION 3]: 200
+[INFO ] 2022-10-21 16:03:37.130 [TestNG-tests-1] DataValidation - Status Code [INVOKE REST API]: 401
+[INFO ] 2022-10-21 16:03:37.183 [TestNG-tests-1] DataValidation - Status Code [SEARCHED API BY NAME]: 200
+[INFO ] 2022-10-21 16:03:37.257 [TestNG-tests-1] DataValidation - Status Code [GET ALL SUBSCRIPTION]: {
+    "code": 404,
+    "message": "Not Found",
+    "description": "Requested API with Id 'e8c8fa2d-28f9-4c66-b6fc-67c67ff4b084' not found",
+    "moreInfo": "",
+    "error": [
+        
+    ]
+}
+[INFO ] 2022-10-21 16:09:31.377 [TestNG-tests-1] DataValidation - Status Code [AVAILABILITY OF APPLICATION 1]: 200
+[INFO ] 2022-10-21 16:09:31.472 [TestNG-tests-1] DataValidation - Status Code [AVAILABILITY OF APPLICATION 2]: 200
+[INFO ] 2022-10-21 16:09:31.510 [TestNG-tests-1] DataValidation - Status Code [AVAILABILITY OF APPLICATION 3]: 200
+[INFO ] 2022-10-21 16:09:31.528 [TestNG-tests-1] DataValidation - Status Code [INVOKE REST API]: 401
+[INFO ] 2022-10-21 16:09:31.584 [TestNG-tests-1] DataValidation - Status Code [SEARCHED API BY NAME]: 200
+[INFO ] 2022-10-21 16:09:31.648 [TestNG-tests-1] DataValidation - Status Code [GET ALL SUBSCRIPTION]: {
+    "code": 404,
+    "message": "Not Found",
+    "description": "Requested API with Id 'e8c8fa2d-28f9-4c66-b6fc-67c67ff4b084' not found",
+    "moreInfo": "",
+    "error": [
+        
+    ]
+}
+[INFO ] 2022-10-21 16:10:20.465 [TestNG-tests-1] DataPopulations - Status Code [SEARCHED API BY NAME]: 200
+[INFO ] 2022-10-21 16:10:20.521 [TestNG-tests-1] DataPopulations - Status Code [CREATE NEW APPLICATION 1]: 201
+[INFO ] 2022-10-21 16:10:20.672 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO API 1]: {
+    "subscriptionId": "e876025f-456c-4367-b281-61b28d399822",
+    "applicationId": "4339b67d-74fe-4710-bca9-88c3e3f02783",
+    "apiId": "e29343f4-6531-444f-9713-81568f9601f3",
+    "apiInfo": {
+        "id": "e29343f4-6531-444f-9713-81568f9601f3",
+        "name": "Test API 1",
+        "description": null,
+        "context": "/t/test1_tenant.com/testapi1",
+        "version": "1.0.0",
+        "type": null,
+        "provider": "creator1_Test@test1_tenant.com",
+        "lifeCycleStatus": "PUBLISHED",
+        "thumbnailUri": "/t/test1_tenant.com/t/test1_tenant.com/registry/resource/_system/governance/apimgt/applicationdata/icons/creator1_Test-AT-test1_tenant.com/Test API 1/1.0.0/icon",
+        "avgRating": "0.0",
+        "throttlingPolicies": [
+            
+        ],
+        "advertiseInfo": {
+            "advertised": false,
+            "originalStoreUrl": null,
+            "apiOwner": null
+        },
+        "businessInformation": {
+            "businessOwner": null,
+            "businessOwnerEmail": null,
+            "technicalOwner": null,
+            "technicalOwnerEmail": null
+        },
+        "isSubscriptionAvailable": true,
+        "monetizationLabel": null
+    },
+    "applicationInfo": {
+        "applicationId": "4339b67d-74fe-4710-bca9-88c3e3f02783",
+        "name": "TestingApp1",
+        "throttlingPolicy": "Unlimited",
+        "description": "Sample calculator application",
+        "status": "APPROVED",
+        "groups": [
+            "Intuit"
+        ],
+        "subscriptionCount": 1,
+        "attributes": {
+            
+        },
+        "owner": "creator1_Test@test1_tenant.com",
+        "tokenType": "JWT"
+    },
+    "throttlingPolicy": "Unlimited",
+    "requestedThrottlingPolicy": "Unlimited",
+    "status": "UNBLOCKED",
+    "redirectionParams": null
+}
+[INFO ] 2022-10-21 16:10:20.777 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO GRAPHQL API 1]: {
+    "subscriptionId": "9ef120bb-1b4a-4901-84c1-df75cea94ea8",
+    "applicationId": "4339b67d-74fe-4710-bca9-88c3e3f02783",
+    "apiId": "4178445e-26b0-4ad2-88d5-2ad42aa58434",
+    "apiInfo": {
+        "id": "4178445e-26b0-4ad2-88d5-2ad42aa58434",
+        "name": "GraphQL_Test_API_1",
+        "description": null,
+        "context": "/t/test1_tenant.com/graphqltestapi",
+        "version": "1.0.0",
+        "type": null,
+        "provider": "creator1_Test@test1_tenant.com",
+        "lifeCycleStatus": "PUBLISHED",
+        "thumbnailUri": null,
+        "avgRating": "0.0",
+        "throttlingPolicies": [
+            
+        ],
+        "advertiseInfo": {
+            "advertised": false,
+            "originalStoreUrl": null,
+            "apiOwner": null
+        },
+        "businessInformation": {
+            "businessOwner": null,
+            "businessOwnerEmail": null,
+            "technicalOwner": null,
+            "technicalOwnerEmail": null
+        },
+        "isSubscriptionAvailable": true,
+        "monetizationLabel": null
+    },
+    "applicationInfo": {
+        "applicationId": "4339b67d-74fe-4710-bca9-88c3e3f02783",
+        "name": "TestingApp1",
+        "throttlingPolicy": "Unlimited",
+        "description": "Sample calculator application",
+        "status": "APPROVED",
+        "groups": [
+            "Intuit"
+        ],
+        "subscriptionCount": 2,
+        "attributes": {
+            
+        },
+        "owner": "creator1_Test@test1_tenant.com",
+        "tokenType": "JWT"
+    },
+    "throttlingPolicy": "Unlimited",
+    "requestedThrottlingPolicy": "Unlimited",
+    "status": "UNBLOCKED",
+    "redirectionParams": null
+}
+[INFO ] 2022-10-21 16:10:20.875 [TestNG-tests-1] DataPopulations - Status Code [GENERATE ACCESS TOKEN 1]: 200
+[INFO ] 2022-10-21 16:10:20.919 [TestNG-tests-1] DataPopulations - Status Code [CREATE NEW APPLICATION 2]: 201
+[INFO ] 2022-10-21 16:10:20.996 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO API 2]: {
+    "subscriptionId": "29e2eb59-acf1-461f-93ea-4b502a050fb9",
+    "applicationId": "4a99a038-95dc-4fe2-8e57-d3b3a313daf8",
+    "apiId": "e29343f4-6531-444f-9713-81568f9601f3",
+    "apiInfo": {
+        "id": "e29343f4-6531-444f-9713-81568f9601f3",
+        "name": "Test API 1",
+        "description": null,
+        "context": "/t/test1_tenant.com/testapi1",
+        "version": "1.0.0",
+        "type": null,
+        "provider": "creator1_Test@test1_tenant.com",
+        "lifeCycleStatus": "PUBLISHED",
+        "thumbnailUri": "/t/test1_tenant.com/t/test1_tenant.com/registry/resource/_system/governance/apimgt/applicationdata/icons/creator1_Test-AT-test1_tenant.com/Test API 1/1.0.0/icon",
+        "avgRating": "0.0",
+        "throttlingPolicies": [
+            
+        ],
+        "advertiseInfo": {
+            "advertised": false,
+            "originalStoreUrl": null,
+            "apiOwner": null
+        },
+        "businessInformation": {
+            "businessOwner": null,
+            "businessOwnerEmail": null,
+            "technicalOwner": null,
+            "technicalOwnerEmail": null
+        },
+        "isSubscriptionAvailable": true,
+        "monetizationLabel": null
+    },
+    "applicationInfo": {
+        "applicationId": "4a99a038-95dc-4fe2-8e57-d3b3a313daf8",
+        "name": "TestingApp2",
+        "throttlingPolicy": "Unlimited",
+        "description": "Sample calculator application",
+        "status": "APPROVED",
+        "groups": [
+            
+        ],
+        "subscriptionCount": 1,
+        "attributes": {
+            
+        },
+        "owner": "creator1_Test@test1_tenant.com",
+        "tokenType": "JWT"
+    },
+    "throttlingPolicy": "Unlimited",
+    "requestedThrottlingPolicy": "Unlimited",
+    "status": "UNBLOCKED",
+    "redirectionParams": null
+}
+[INFO ] 2022-10-21 16:10:21.063 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO GRAPHQL API 2]: {
+    "subscriptionId": "0ed6fdfb-30f3-4658-a78e-60937aec90a8",
+    "applicationId": "4a99a038-95dc-4fe2-8e57-d3b3a313daf8",
+    "apiId": "4178445e-26b0-4ad2-88d5-2ad42aa58434",
+    "apiInfo": {
+        "id": "4178445e-26b0-4ad2-88d5-2ad42aa58434",
+        "name": "GraphQL_Test_API_1",
+        "description": null,
+        "context": "/t/test1_tenant.com/graphqltestapi",
+        "version": "1.0.0",
+        "type": null,
+        "provider": "creator1_Test@test1_tenant.com",
+        "lifeCycleStatus": "PUBLISHED",
+        "thumbnailUri": null,
+        "avgRating": "0.0",
+        "throttlingPolicies": [
+            
+        ],
+        "advertiseInfo": {
+            "advertised": false,
+            "originalStoreUrl": null,
+            "apiOwner": null
+        },
+        "businessInformation": {
+            "businessOwner": null,
+            "businessOwnerEmail": null,
+            "technicalOwner": null,
+            "technicalOwnerEmail": null
+        },
+        "isSubscriptionAvailable": true,
+        "monetizationLabel": null
+    },
+    "applicationInfo": {
+        "applicationId": "4a99a038-95dc-4fe2-8e57-d3b3a313daf8",
+        "name": "TestingApp2",
+        "throttlingPolicy": "Unlimited",
+        "description": "Sample calculator application",
+        "status": "APPROVED",
+        "groups": [
+            
+        ],
+        "subscriptionCount": 2,
+        "attributes": {
+            
+        },
+        "owner": "creator1_Test@test1_tenant.com",
+        "tokenType": "JWT"
+    },
+    "throttlingPolicy": "Unlimited",
+    "requestedThrottlingPolicy": "Unlimited",
+    "status": "UNBLOCKED",
+    "redirectionParams": null
+}
+[INFO ] 2022-10-21 16:10:21.119 [TestNG-tests-1] DataPopulations - Status Code [GENERATE ACCESS TOKEN 2]: 200
+[INFO ] 2022-10-21 16:10:21.169 [TestNG-tests-1] DataPopulations - Status Code [CREATE NEW APPLICATION 3]: 201
+[INFO ] 2022-10-21 16:10:21.249 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO API 3]: {
+    "subscriptionId": "0196f35d-5a50-446b-b689-0fa7080467a6",
+    "applicationId": "729bcea8-bea4-4335-a917-a681452c7ba8",
+    "apiId": "e29343f4-6531-444f-9713-81568f9601f3",
+    "apiInfo": {
+        "id": "e29343f4-6531-444f-9713-81568f9601f3",
+        "name": "Test API 1",
+        "description": null,
+        "context": "/t/test1_tenant.com/testapi1",
+        "version": "1.0.0",
+        "type": null,
+        "provider": "creator1_Test@test1_tenant.com",
+        "lifeCycleStatus": "PUBLISHED",
+        "thumbnailUri": "/t/test1_tenant.com/t/test1_tenant.com/registry/resource/_system/governance/apimgt/applicationdata/icons/creator1_Test-AT-test1_tenant.com/Test API 1/1.0.0/icon",
+        "avgRating": "0.0",
+        "throttlingPolicies": [
+            
+        ],
+        "advertiseInfo": {
+            "advertised": false,
+            "originalStoreUrl": null,
+            "apiOwner": null
+        },
+        "businessInformation": {
+            "businessOwner": null,
+            "businessOwnerEmail": null,
+            "technicalOwner": null,
+            "technicalOwnerEmail": null
+        },
+        "isSubscriptionAvailable": true,
+        "monetizationLabel": null
+    },
+    "applicationInfo": {
+        "applicationId": "729bcea8-bea4-4335-a917-a681452c7ba8",
+        "name": "TestingApp3",
+        "throttlingPolicy": "Unlimited",
+        "description": "Sample calculator application",
+        "status": "APPROVED",
+        "groups": [
+            
+        ],
+        "subscriptionCount": 1,
+        "attributes": {
+            
+        },
+        "owner": "creator1_Test@test1_tenant.com",
+        "tokenType": "JWT"
+    },
+    "throttlingPolicy": "Unlimited",
+    "requestedThrottlingPolicy": "Unlimited",
+    "status": "UNBLOCKED",
+    "redirectionParams": null
+}
+[INFO ] 2022-10-21 16:10:21.322 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO GRAPHQL API 3]: {
+    "subscriptionId": "75003645-89de-4539-afba-36fbeb334989",
+    "applicationId": "729bcea8-bea4-4335-a917-a681452c7ba8",
+    "apiId": "4178445e-26b0-4ad2-88d5-2ad42aa58434",
+    "apiInfo": {
+        "id": "4178445e-26b0-4ad2-88d5-2ad42aa58434",
+        "name": "GraphQL_Test_API_1",
+        "description": null,
+        "context": "/t/test1_tenant.com/graphqltestapi",
+        "version": "1.0.0",
+        "type": null,
+        "provider": "creator1_Test@test1_tenant.com",
+        "lifeCycleStatus": "PUBLISHED",
+        "thumbnailUri": null,
+        "avgRating": "0.0",
+        "throttlingPolicies": [
+            
+        ],
+        "advertiseInfo": {
+            "advertised": false,
+            "originalStoreUrl": null,
+            "apiOwner": null
+        },
+        "businessInformation": {
+            "businessOwner": null,
+            "businessOwnerEmail": null,
+            "technicalOwner": null,
+            "technicalOwnerEmail": null
+        },
+        "isSubscriptionAvailable": true,
+        "monetizationLabel": null
+    },
+    "applicationInfo": {
+        "applicationId": "729bcea8-bea4-4335-a917-a681452c7ba8",
+        "name": "TestingApp3",
+        "throttlingPolicy": "Unlimited",
+        "description": "Sample calculator application",
+        "status": "APPROVED",
+        "groups": [
+            
+        ],
+        "subscriptionCount": 2,
+        "attributes": {
+            
+        },
+        "owner": "creator1_Test@test1_tenant.com",
+        "tokenType": "JWT"
+    },
+    "throttlingPolicy": "Unlimited",
+    "requestedThrottlingPolicy": "Unlimited",
+    "status": "UNBLOCKED",
+    "redirectionParams": null
+}
+[INFO ] 2022-10-21 16:10:21.376 [TestNG-tests-1] DataPopulations - Status Code [GENERATE ACCESS TOKEN 3]: 200
+[INFO ] 2022-10-21 16:10:21.379 [TestNG-tests-1] DataPopulations - [DEV PORTAL]: Dev Portal tests were completed
+[INFO ] 2022-10-21 16:10:21.699 [TestNG-tests-1] DataPopulations - Status Code [CREATE OPEN API DEFINITION]: 409
+[INFO ] 2022-10-21 16:10:21.761 [TestNG-tests-1] DataPopulations - Status Code [CREATE GRAPHQL API]: 409
+[INFO ] 2022-10-21 16:10:22.166 [TestNG-tests-1] DataPopulations - Status Code [CHANGE GRAPHQL API STATUS]: 200
+[INFO ] 2022-10-21 16:10:22.204 [TestNG-tests-1] DataPopulations - Status Code [SEARCH API]: 200
+[INFO ] 2022-10-21 16:10:22.605 [TestNG-tests-1] DataPopulations - Status Code [UPLOAD API THUMBNAIL]: 201
+[INFO ] 2022-10-21 16:10:22.943 [TestNG-tests-1] DataPopulations - Status Code [CHANGE API STATUS]: 200
+[INFO ] 2022-10-21 16:10:22.943 [TestNG-tests-1] DataPopulations - [PUBLISHER PORTAL]: Dev Portal tests were completed
+[INFO ] 2022-10-21 17:48:12.124 [TestNG-tests-1] DataPopulations - Status Code [SEARCHED API BY NAME]: 200
+[INFO ] 2022-10-21 17:48:12.187 [TestNG-tests-1] DataPopulations - Status Code [CREATE NEW APPLICATION 1]: 201
+[INFO ] 2022-10-21 17:48:12.276 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO API 1]: {
+    "code": 404,
+    "message": "Not Found",
+    "description": "Requested application with Id '4339b67d-74fe-4710-bca9-88c3e3f02783' not found",
+    "moreInfo": "",
+    "error": [
+        
+    ]
+}
+[INFO ] 2022-10-21 17:48:12.372 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO GRAPHQL API 1]: {
+    "code": 404,
+    "message": "Not Found",
+    "description": "Requested application with Id '4339b67d-74fe-4710-bca9-88c3e3f02783' not found",
+    "moreInfo": "",
+    "error": [
+        
+    ]
+}
+[INFO ] 2022-10-21 17:48:12.421 [TestNG-tests-1] DataPopulations - Status Code [GENERATE ACCESS TOKEN 1]: 404
+[INFO ] 2022-10-21 17:48:12.474 [TestNG-tests-1] DataPopulations - Status Code [CREATE NEW APPLICATION 2]: 201
+[INFO ] 2022-10-21 17:48:12.542 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO API 2]: {
+    "code": 404,
+    "message": "Not Found",
+    "description": "Requested application with Id '4a99a038-95dc-4fe2-8e57-d3b3a313daf8' not found",
+    "moreInfo": "",
+    "error": [
+        
+    ]
+}
+[INFO ] 2022-10-21 17:48:12.592 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO GRAPHQL API 2]: {
+    "code": 404,
+    "message": "Not Found",
+    "description": "Requested application with Id '4a99a038-95dc-4fe2-8e57-d3b3a313daf8' not found",
+    "moreInfo": "",
+    "error": [
+        
+    ]
+}
+[INFO ] 2022-10-21 17:48:12.639 [TestNG-tests-1] DataPopulations - Status Code [GENERATE ACCESS TOKEN 2]: 404
+[INFO ] 2022-10-21 17:48:12.690 [TestNG-tests-1] DataPopulations - Status Code [CREATE NEW APPLICATION 3]: 201
+[INFO ] 2022-10-21 17:48:12.750 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO API 3]: {
+    "code": 404,
+    "message": "Not Found",
+    "description": "Requested application with Id '729bcea8-bea4-4335-a917-a681452c7ba8' not found",
+    "moreInfo": "",
+    "error": [
+        
+    ]
+}
+[INFO ] 2022-10-21 17:48:12.799 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO GRAPHQL API 3]: {
+    "code": 404,
+    "message": "Not Found",
+    "description": "Requested application with Id '729bcea8-bea4-4335-a917-a681452c7ba8' not found",
+    "moreInfo": "",
+    "error": [
+        
+    ]
+}
+[INFO ] 2022-10-21 17:48:12.842 [TestNG-tests-1] DataPopulations - Status Code [GENERATE ACCESS TOKEN 3]: 404
+[INFO ] 2022-10-21 17:48:12.843 [TestNG-tests-1] DataPopulations - [DEV PORTAL]: Dev Portal tests were completed
+[INFO ] 2022-10-21 17:48:13.182 [TestNG-tests-1] DataPopulations - Status Code [CREATE OPEN API DEFINITION]: 409
+[INFO ] 2022-10-21 17:48:13.250 [TestNG-tests-1] DataPopulations - Status Code [CREATE GRAPHQL API]: 409
+[INFO ] 2022-10-21 17:48:13.737 [TestNG-tests-1] DataPopulations - Status Code [CHANGE GRAPHQL API STATUS]: 200
+[INFO ] 2022-10-21 17:48:13.789 [TestNG-tests-1] DataPopulations - Status Code [SEARCH API]: 200
+[INFO ] 2022-10-21 17:48:14.296 [TestNG-tests-1] DataPopulations - Status Code [UPLOAD API THUMBNAIL]: 201
+[INFO ] 2022-10-21 17:48:14.513 [TestNG-tests-1] DataPopulations - Status Code [CHANGE API STATUS]: 200
+[INFO ] 2022-10-21 17:48:14.513 [TestNG-tests-1] DataPopulations - [PUBLISHER PORTAL]: Dev Portal tests were completed
+[INFO ] 2022-10-21 17:49:09.452 [TestNG-tests-1] DataPopulations - Status Code [SEARCHED API BY NAME]: 200
+[INFO ] 2022-10-21 17:49:09.507 [TestNG-tests-1] DataPopulations - Status Code [CREATE NEW APPLICATION 1]: 201
+[INFO ] 2022-10-21 17:49:09.634 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO API 1]: {
+    "subscriptionId": "a6ca3729-62aa-4785-9648-b50a76c2a470",
+    "applicationId": "d388af50-d4c7-4975-8fba-690ce4141239",
+    "apiId": "e29343f4-6531-444f-9713-81568f9601f3",
+    "apiInfo": {
+        "id": "e29343f4-6531-444f-9713-81568f9601f3",
+        "name": "Test API 1",
+        "description": null,
+        "context": "/t/test1_tenant.com/testapi1",
+        "version": "1.0.0",
+        "type": null,
+        "provider": "creator1_Test@test1_tenant.com",
+        "lifeCycleStatus": "PUBLISHED",
+        "thumbnailUri": "/t/test1_tenant.com/t/test1_tenant.com/registry/resource/_system/governance/apimgt/applicationdata/icons/creator1_Test-AT-test1_tenant.com/Test API 1/1.0.0/icon",
+        "avgRating": "0.0",
+        "throttlingPolicies": [
+            
+        ],
+        "advertiseInfo": {
+            "advertised": false,
+            "originalStoreUrl": null,
+            "apiOwner": null
+        },
+        "businessInformation": {
+            "businessOwner": null,
+            "businessOwnerEmail": null,
+            "technicalOwner": null,
+            "technicalOwnerEmail": null
+        },
+        "isSubscriptionAvailable": true,
+        "monetizationLabel": null
+    },
+    "applicationInfo": {
+        "applicationId": "d388af50-d4c7-4975-8fba-690ce4141239",
+        "name": "TestingApp1",
+        "throttlingPolicy": "Unlimited",
+        "description": "Sample calculator application",
+        "status": "APPROVED",
+        "groups": [
+            "Intuit"
+        ],
+        "subscriptionCount": 1,
+        "attributes": {
+            
+        },
+        "owner": "creator1_Test@test1_tenant.com",
+        "tokenType": "JWT"
+    },
+    "throttlingPolicy": "Unlimited",
+    "requestedThrottlingPolicy": "Unlimited",
+    "status": "UNBLOCKED",
+    "redirectionParams": null
+}
+[INFO ] 2022-10-21 17:49:09.734 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO GRAPHQL API 1]: {
+    "subscriptionId": "14555b32-d421-4a01-a6c6-5b15178ba49b",
+    "applicationId": "d388af50-d4c7-4975-8fba-690ce4141239",
+    "apiId": "4178445e-26b0-4ad2-88d5-2ad42aa58434",
+    "apiInfo": {
+        "id": "4178445e-26b0-4ad2-88d5-2ad42aa58434",
+        "name": "GraphQL_Test_API_1",
+        "description": null,
+        "context": "/t/test1_tenant.com/graphqltestapi",
+        "version": "1.0.0",
+        "type": null,
+        "provider": "creator1_Test@test1_tenant.com",
+        "lifeCycleStatus": "PUBLISHED",
+        "thumbnailUri": null,
+        "avgRating": "0.0",
+        "throttlingPolicies": [
+            
+        ],
+        "advertiseInfo": {
+            "advertised": false,
+            "originalStoreUrl": null,
+            "apiOwner": null
+        },
+        "businessInformation": {
+            "businessOwner": null,
+            "businessOwnerEmail": null,
+            "technicalOwner": null,
+            "technicalOwnerEmail": null
+        },
+        "isSubscriptionAvailable": true,
+        "monetizationLabel": null
+    },
+    "applicationInfo": {
+        "applicationId": "d388af50-d4c7-4975-8fba-690ce4141239",
+        "name": "TestingApp1",
+        "throttlingPolicy": "Unlimited",
+        "description": "Sample calculator application",
+        "status": "APPROVED",
+        "groups": [
+            "Intuit"
+        ],
+        "subscriptionCount": 2,
+        "attributes": {
+            
+        },
+        "owner": "creator1_Test@test1_tenant.com",
+        "tokenType": "JWT"
+    },
+    "throttlingPolicy": "Unlimited",
+    "requestedThrottlingPolicy": "Unlimited",
+    "status": "UNBLOCKED",
+    "redirectionParams": null
+}
+[INFO ] 2022-10-21 17:49:09.832 [TestNG-tests-1] DataPopulations - Status Code [GENERATE ACCESS TOKEN 1]: 200
+[INFO ] 2022-10-21 17:49:09.888 [TestNG-tests-1] DataPopulations - Status Code [CREATE NEW APPLICATION 2]: 201
+[INFO ] 2022-10-21 17:49:09.982 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO API 2]: {
+    "subscriptionId": "68945740-35f4-43a6-af6a-c59d8505285d",
+    "applicationId": "d7aec096-c8e9-42a4-89fd-1f8f7bd887c1",
+    "apiId": "e29343f4-6531-444f-9713-81568f9601f3",
+    "apiInfo": {
+        "id": "e29343f4-6531-444f-9713-81568f9601f3",
+        "name": "Test API 1",
+        "description": null,
+        "context": "/t/test1_tenant.com/testapi1",
+        "version": "1.0.0",
+        "type": null,
+        "provider": "creator1_Test@test1_tenant.com",
+        "lifeCycleStatus": "PUBLISHED",
+        "thumbnailUri": "/t/test1_tenant.com/t/test1_tenant.com/registry/resource/_system/governance/apimgt/applicationdata/icons/creator1_Test-AT-test1_tenant.com/Test API 1/1.0.0/icon",
+        "avgRating": "0.0",
+        "throttlingPolicies": [
+            
+        ],
+        "advertiseInfo": {
+            "advertised": false,
+            "originalStoreUrl": null,
+            "apiOwner": null
+        },
+        "businessInformation": {
+            "businessOwner": null,
+            "businessOwnerEmail": null,
+            "technicalOwner": null,
+            "technicalOwnerEmail": null
+        },
+        "isSubscriptionAvailable": true,
+        "monetizationLabel": null
+    },
+    "applicationInfo": {
+        "applicationId": "d7aec096-c8e9-42a4-89fd-1f8f7bd887c1",
+        "name": "TestingApp2",
+        "throttlingPolicy": "Unlimited",
+        "description": "Sample calculator application",
+        "status": "APPROVED",
+        "groups": [
+            
+        ],
+        "subscriptionCount": 1,
+        "attributes": {
+            
+        },
+        "owner": "creator1_Test@test1_tenant.com",
+        "tokenType": "JWT"
+    },
+    "throttlingPolicy": "Unlimited",
+    "requestedThrottlingPolicy": "Unlimited",
+    "status": "UNBLOCKED",
+    "redirectionParams": null
+}
+[INFO ] 2022-10-21 17:49:10.038 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO GRAPHQL API 2]: {
+    "subscriptionId": "d04d604d-e933-4ade-a6f1-e2d92260573b",
+    "applicationId": "d7aec096-c8e9-42a4-89fd-1f8f7bd887c1",
+    "apiId": "4178445e-26b0-4ad2-88d5-2ad42aa58434",
+    "apiInfo": {
+        "id": "4178445e-26b0-4ad2-88d5-2ad42aa58434",
+        "name": "GraphQL_Test_API_1",
+        "description": null,
+        "context": "/t/test1_tenant.com/graphqltestapi",
+        "version": "1.0.0",
+        "type": null,
+        "provider": "creator1_Test@test1_tenant.com",
+        "lifeCycleStatus": "PUBLISHED",
+        "thumbnailUri": null,
+        "avgRating": "0.0",
+        "throttlingPolicies": [
+            
+        ],
+        "advertiseInfo": {
+            "advertised": false,
+            "originalStoreUrl": null,
+            "apiOwner": null
+        },
+        "businessInformation": {
+            "businessOwner": null,
+            "businessOwnerEmail": null,
+            "technicalOwner": null,
+            "technicalOwnerEmail": null
+        },
+        "isSubscriptionAvailable": true,
+        "monetizationLabel": null
+    },
+    "applicationInfo": {
+        "applicationId": "d7aec096-c8e9-42a4-89fd-1f8f7bd887c1",
+        "name": "TestingApp2",
+        "throttlingPolicy": "Unlimited",
+        "description": "Sample calculator application",
+        "status": "APPROVED",
+        "groups": [
+            
+        ],
+        "subscriptionCount": 2,
+        "attributes": {
+            
+        },
+        "owner": "creator1_Test@test1_tenant.com",
+        "tokenType": "JWT"
+    },
+    "throttlingPolicy": "Unlimited",
+    "requestedThrottlingPolicy": "Unlimited",
+    "status": "UNBLOCKED",
+    "redirectionParams": null
+}
+[INFO ] 2022-10-21 17:49:10.102 [TestNG-tests-1] DataPopulations - Status Code [GENERATE ACCESS TOKEN 2]: 200
+[INFO ] 2022-10-21 17:49:10.149 [TestNG-tests-1] DataPopulations - Status Code [CREATE NEW APPLICATION 3]: 201
+[INFO ] 2022-10-21 17:49:10.238 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO API 3]: {
+    "subscriptionId": "af8dea8a-e629-42b9-b64e-ee947994e552",
+    "applicationId": "13223015-6c0e-4c1f-bc43-87150ee7d7ed",
+    "apiId": "e29343f4-6531-444f-9713-81568f9601f3",
+    "apiInfo": {
+        "id": "e29343f4-6531-444f-9713-81568f9601f3",
+        "name": "Test API 1",
+        "description": null,
+        "context": "/t/test1_tenant.com/testapi1",
+        "version": "1.0.0",
+        "type": null,
+        "provider": "creator1_Test@test1_tenant.com",
+        "lifeCycleStatus": "PUBLISHED",
+        "thumbnailUri": "/t/test1_tenant.com/t/test1_tenant.com/registry/resource/_system/governance/apimgt/applicationdata/icons/creator1_Test-AT-test1_tenant.com/Test API 1/1.0.0/icon",
+        "avgRating": "0.0",
+        "throttlingPolicies": [
+            
+        ],
+        "advertiseInfo": {
+            "advertised": false,
+            "originalStoreUrl": null,
+            "apiOwner": null
+        },
+        "businessInformation": {
+            "businessOwner": null,
+            "businessOwnerEmail": null,
+            "technicalOwner": null,
+            "technicalOwnerEmail": null
+        },
+        "isSubscriptionAvailable": true,
+        "monetizationLabel": null
+    },
+    "applicationInfo": {
+        "applicationId": "13223015-6c0e-4c1f-bc43-87150ee7d7ed",
+        "name": "TestingApp3",
+        "throttlingPolicy": "Unlimited",
+        "description": "Sample calculator application",
+        "status": "APPROVED",
+        "groups": [
+            
+        ],
+        "subscriptionCount": 1,
+        "attributes": {
+            
+        },
+        "owner": "creator1_Test@test1_tenant.com",
+        "tokenType": "JWT"
+    },
+    "throttlingPolicy": "Unlimited",
+    "requestedThrottlingPolicy": "Unlimited",
+    "status": "UNBLOCKED",
+    "redirectionParams": null
+}
+[INFO ] 2022-10-21 17:49:10.303 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO GRAPHQL API 3]: {
+    "subscriptionId": "61cdb423-dbfb-45f6-a2a8-49c62703ae49",
+    "applicationId": "13223015-6c0e-4c1f-bc43-87150ee7d7ed",
+    "apiId": "4178445e-26b0-4ad2-88d5-2ad42aa58434",
+    "apiInfo": {
+        "id": "4178445e-26b0-4ad2-88d5-2ad42aa58434",
+        "name": "GraphQL_Test_API_1",
+        "description": null,
+        "context": "/t/test1_tenant.com/graphqltestapi",
+        "version": "1.0.0",
+        "type": null,
+        "provider": "creator1_Test@test1_tenant.com",
+        "lifeCycleStatus": "PUBLISHED",
+        "thumbnailUri": null,
+        "avgRating": "0.0",
+        "throttlingPolicies": [
+            
+        ],
+        "advertiseInfo": {
+            "advertised": false,
+            "originalStoreUrl": null,
+            "apiOwner": null
+        },
+        "businessInformation": {
+            "businessOwner": null,
+            "businessOwnerEmail": null,
+            "technicalOwner": null,
+            "technicalOwnerEmail": null
+        },
+        "isSubscriptionAvailable": true,
+        "monetizationLabel": null
+    },
+    "applicationInfo": {
+        "applicationId": "13223015-6c0e-4c1f-bc43-87150ee7d7ed",
+        "name": "TestingApp3",
+        "throttlingPolicy": "Unlimited",
+        "description": "Sample calculator application",
+        "status": "APPROVED",
+        "groups": [
+            
+        ],
+        "subscriptionCount": 2,
+        "attributes": {
+            
+        },
+        "owner": "creator1_Test@test1_tenant.com",
+        "tokenType": "JWT"
+    },
+    "throttlingPolicy": "Unlimited",
+    "requestedThrottlingPolicy": "Unlimited",
+    "status": "UNBLOCKED",
+    "redirectionParams": null
+}
+[INFO ] 2022-10-21 17:49:10.382 [TestNG-tests-1] DataPopulations - Status Code [GENERATE ACCESS TOKEN 3]: 200
+[INFO ] 2022-10-21 17:49:10.388 [TestNG-tests-1] DataPopulations - [DEV PORTAL]: Dev Portal tests were completed
+[INFO ] 2022-10-21 17:49:10.696 [TestNG-tests-1] DataPopulations - Status Code [CREATE OPEN API DEFINITION]: 409
+[INFO ] 2022-10-21 17:49:10.768 [TestNG-tests-1] DataPopulations - Status Code [CREATE GRAPHQL API]: 409
+[INFO ] 2022-10-21 17:49:11.207 [TestNG-tests-1] DataPopulations - Status Code [CHANGE GRAPHQL API STATUS]: 200
+[INFO ] 2022-10-21 17:49:11.246 [TestNG-tests-1] DataPopulations - Status Code [SEARCH API]: 200
+[INFO ] 2022-10-21 17:49:11.700 [TestNG-tests-1] DataPopulations - Status Code [UPLOAD API THUMBNAIL]: 201
+[INFO ] 2022-10-21 17:49:11.933 [TestNG-tests-1] DataPopulations - Status Code [CHANGE API STATUS]: 200
+[INFO ] 2022-10-21 17:49:11.933 [TestNG-tests-1] DataPopulations - [PUBLISHER PORTAL]: Dev Portal tests were completed
+[INFO ] 2022-10-21 18:21:34.215 [TestNG-tests-1] DataPopulations - Status Code [SEARCHED API BY NAME]: 200
+[INFO ] 2022-10-21 18:21:34.286 [TestNG-tests-1] DataPopulations - Status Code [CREATE NEW APPLICATION 1]: 201
+[INFO ] 2022-10-21 18:21:34.421 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO API 1]: {
+    "subscriptionId": "2c8f2181-685b-4dfb-bce0-a201c11f2668",
+    "applicationId": "6f77f082-e435-4a69-a651-45de0e60077b",
+    "apiId": "e29343f4-6531-444f-9713-81568f9601f3",
+    "apiInfo": {
+        "id": "e29343f4-6531-444f-9713-81568f9601f3",
+        "name": "Test API 1",
+        "description": null,
+        "context": "/t/test1_tenant.com/testapi1",
+        "version": "1.0.0",
+        "type": null,
+        "provider": "creator1_Test@test1_tenant.com",
+        "lifeCycleStatus": "PUBLISHED",
+        "thumbnailUri": "/t/test1_tenant.com/t/test1_tenant.com/registry/resource/_system/governance/apimgt/applicationdata/icons/creator1_Test-AT-test1_tenant.com/Test API 1/1.0.0/icon",
+        "avgRating": "0.0",
+        "throttlingPolicies": [
+            
+        ],
+        "advertiseInfo": {
+            "advertised": false,
+            "originalStoreUrl": null,
+            "apiOwner": null
+        },
+        "businessInformation": {
+            "businessOwner": null,
+            "businessOwnerEmail": null,
+            "technicalOwner": null,
+            "technicalOwnerEmail": null
+        },
+        "isSubscriptionAvailable": true,
+        "monetizationLabel": null
+    },
+    "applicationInfo": {
+        "applicationId": "6f77f082-e435-4a69-a651-45de0e60077b",
+        "name": "TestingApp1",
+        "throttlingPolicy": "Unlimited",
+        "description": "Sample calculator application",
+        "status": "APPROVED",
+        "groups": [
+            "Intuit"
+        ],
+        "subscriptionCount": 1,
+        "attributes": {
+            
+        },
+        "owner": "creator1_Test@test1_tenant.com",
+        "tokenType": "JWT"
+    },
+    "throttlingPolicy": "Unlimited",
+    "requestedThrottlingPolicy": "Unlimited",
+    "status": "UNBLOCKED",
+    "redirectionParams": null
+}
+[INFO ] 2022-10-21 18:21:34.492 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO GRAPHQL API 1]: {
+    "subscriptionId": "68763a32-e4e3-4a25-bf22-4a0974d407f2",
+    "applicationId": "6f77f082-e435-4a69-a651-45de0e60077b",
+    "apiId": "4178445e-26b0-4ad2-88d5-2ad42aa58434",
+    "apiInfo": {
+        "id": "4178445e-26b0-4ad2-88d5-2ad42aa58434",
+        "name": "GraphQL_Test_API_1",
+        "description": null,
+        "context": "/t/test1_tenant.com/graphqltestapi",
+        "version": "1.0.0",
+        "type": null,
+        "provider": "creator1_Test@test1_tenant.com",
+        "lifeCycleStatus": "PUBLISHED",
+        "thumbnailUri": null,
+        "avgRating": "0.0",
+        "throttlingPolicies": [
+            
+        ],
+        "advertiseInfo": {
+            "advertised": false,
+            "originalStoreUrl": null,
+            "apiOwner": null
+        },
+        "businessInformation": {
+            "businessOwner": null,
+            "businessOwnerEmail": null,
+            "technicalOwner": null,
+            "technicalOwnerEmail": null
+        },
+        "isSubscriptionAvailable": true,
+        "monetizationLabel": null
+    },
+    "applicationInfo": {
+        "applicationId": "6f77f082-e435-4a69-a651-45de0e60077b",
+        "name": "TestingApp1",
+        "throttlingPolicy": "Unlimited",
+        "description": "Sample calculator application",
+        "status": "APPROVED",
+        "groups": [
+            "Intuit"
+        ],
+        "subscriptionCount": 2,
+        "attributes": {
+            
+        },
+        "owner": "creator1_Test@test1_tenant.com",
+        "tokenType": "JWT"
+    },
+    "throttlingPolicy": "Unlimited",
+    "requestedThrottlingPolicy": "Unlimited",
+    "status": "UNBLOCKED",
+    "redirectionParams": null
+}
+[INFO ] 2022-10-21 18:21:34.598 [TestNG-tests-1] DataPopulations - Status Code [GENERATE ACCESS TOKEN 1]: 200
+[INFO ] 2022-10-21 18:21:34.642 [TestNG-tests-1] DataPopulations - Status Code [CREATE NEW APPLICATION 2]: 201
+[INFO ] 2022-10-21 18:21:34.745 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO API 2]: {
+    "subscriptionId": "e5eb1310-a999-44d1-a9b8-22c2ccab3d5d",
+    "applicationId": "55bb141b-a961-42ab-a5ca-1529e0b860d1",
+    "apiId": "e29343f4-6531-444f-9713-81568f9601f3",
+    "apiInfo": {
+        "id": "e29343f4-6531-444f-9713-81568f9601f3",
+        "name": "Test API 1",
+        "description": null,
+        "context": "/t/test1_tenant.com/testapi1",
+        "version": "1.0.0",
+        "type": null,
+        "provider": "creator1_Test@test1_tenant.com",
+        "lifeCycleStatus": "PUBLISHED",
+        "thumbnailUri": "/t/test1_tenant.com/t/test1_tenant.com/registry/resource/_system/governance/apimgt/applicationdata/icons/creator1_Test-AT-test1_tenant.com/Test API 1/1.0.0/icon",
+        "avgRating": "0.0",
+        "throttlingPolicies": [
+            
+        ],
+        "advertiseInfo": {
+            "advertised": false,
+            "originalStoreUrl": null,
+            "apiOwner": null
+        },
+        "businessInformation": {
+            "businessOwner": null,
+            "businessOwnerEmail": null,
+            "technicalOwner": null,
+            "technicalOwnerEmail": null
+        },
+        "isSubscriptionAvailable": true,
+        "monetizationLabel": null
+    },
+    "applicationInfo": {
+        "applicationId": "55bb141b-a961-42ab-a5ca-1529e0b860d1",
+        "name": "TestingApp2",
+        "throttlingPolicy": "Unlimited",
+        "description": "Sample calculator application",
+        "status": "APPROVED",
+        "groups": [
+            
+        ],
+        "subscriptionCount": 1,
+        "attributes": {
+            
+        },
+        "owner": "creator1_Test@test1_tenant.com",
+        "tokenType": "JWT"
+    },
+    "throttlingPolicy": "Unlimited",
+    "requestedThrottlingPolicy": "Unlimited",
+    "status": "UNBLOCKED",
+    "redirectionParams": null
+}
+[INFO ] 2022-10-21 18:21:34.801 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO GRAPHQL API 2]: {
+    "subscriptionId": "16c0576f-aedf-4e3e-8ce9-dbba2af4b5a5",
+    "applicationId": "55bb141b-a961-42ab-a5ca-1529e0b860d1",
+    "apiId": "4178445e-26b0-4ad2-88d5-2ad42aa58434",
+    "apiInfo": {
+        "id": "4178445e-26b0-4ad2-88d5-2ad42aa58434",
+        "name": "GraphQL_Test_API_1",
+        "description": null,
+        "context": "/t/test1_tenant.com/graphqltestapi",
+        "version": "1.0.0",
+        "type": null,
+        "provider": "creator1_Test@test1_tenant.com",
+        "lifeCycleStatus": "PUBLISHED",
+        "thumbnailUri": null,
+        "avgRating": "0.0",
+        "throttlingPolicies": [
+            
+        ],
+        "advertiseInfo": {
+            "advertised": false,
+            "originalStoreUrl": null,
+            "apiOwner": null
+        },
+        "businessInformation": {
+            "businessOwner": null,
+            "businessOwnerEmail": null,
+            "technicalOwner": null,
+            "technicalOwnerEmail": null
+        },
+        "isSubscriptionAvailable": true,
+        "monetizationLabel": null
+    },
+    "applicationInfo": {
+        "applicationId": "55bb141b-a961-42ab-a5ca-1529e0b860d1",
+        "name": "TestingApp2",
+        "throttlingPolicy": "Unlimited",
+        "description": "Sample calculator application",
+        "status": "APPROVED",
+        "groups": [
+            
+        ],
+        "subscriptionCount": 2,
+        "attributes": {
+            
+        },
+        "owner": "creator1_Test@test1_tenant.com",
+        "tokenType": "JWT"
+    },
+    "throttlingPolicy": "Unlimited",
+    "requestedThrottlingPolicy": "Unlimited",
+    "status": "UNBLOCKED",
+    "redirectionParams": null
+}
+[INFO ] 2022-10-21 18:21:34.855 [TestNG-tests-1] DataPopulations - Status Code [GENERATE ACCESS TOKEN 2]: 200
+[INFO ] 2022-10-21 18:21:34.902 [TestNG-tests-1] DataPopulations - Status Code [CREATE NEW APPLICATION 3]: 201
+[INFO ] 2022-10-21 18:21:34.990 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO API 3]: {
+    "subscriptionId": "94f8fe0c-e4e9-4fb6-961b-29c4c14b936d",
+    "applicationId": "ce9215fb-9bc7-4cdf-97e7-658e2992397b",
+    "apiId": "e29343f4-6531-444f-9713-81568f9601f3",
+    "apiInfo": {
+        "id": "e29343f4-6531-444f-9713-81568f9601f3",
+        "name": "Test API 1",
+        "description": null,
+        "context": "/t/test1_tenant.com/testapi1",
+        "version": "1.0.0",
+        "type": null,
+        "provider": "creator1_Test@test1_tenant.com",
+        "lifeCycleStatus": "PUBLISHED",
+        "thumbnailUri": "/t/test1_tenant.com/t/test1_tenant.com/registry/resource/_system/governance/apimgt/applicationdata/icons/creator1_Test-AT-test1_tenant.com/Test API 1/1.0.0/icon",
+        "avgRating": "0.0",
+        "throttlingPolicies": [
+            
+        ],
+        "advertiseInfo": {
+            "advertised": false,
+            "originalStoreUrl": null,
+            "apiOwner": null
+        },
+        "businessInformation": {
+            "businessOwner": null,
+            "businessOwnerEmail": null,
+            "technicalOwner": null,
+            "technicalOwnerEmail": null
+        },
+        "isSubscriptionAvailable": true,
+        "monetizationLabel": null
+    },
+    "applicationInfo": {
+        "applicationId": "ce9215fb-9bc7-4cdf-97e7-658e2992397b",
+        "name": "TestingApp3",
+        "throttlingPolicy": "Unlimited",
+        "description": "Sample calculator application",
+        "status": "APPROVED",
+        "groups": [
+            
+        ],
+        "subscriptionCount": 1,
+        "attributes": {
+            
+        },
+        "owner": "creator1_Test@test1_tenant.com",
+        "tokenType": "JWT"
+    },
+    "throttlingPolicy": "Unlimited",
+    "requestedThrottlingPolicy": "Unlimited",
+    "status": "UNBLOCKED",
+    "redirectionParams": null
+}
+[INFO ] 2022-10-21 18:21:35.065 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO GRAPHQL API 3]: {
+    "subscriptionId": "5df1538e-a659-4137-b288-1ccb2c82dc1c",
+    "applicationId": "ce9215fb-9bc7-4cdf-97e7-658e2992397b",
+    "apiId": "4178445e-26b0-4ad2-88d5-2ad42aa58434",
+    "apiInfo": {
+        "id": "4178445e-26b0-4ad2-88d5-2ad42aa58434",
+        "name": "GraphQL_Test_API_1",
+        "description": null,
+        "context": "/t/test1_tenant.com/graphqltestapi",
+        "version": "1.0.0",
+        "type": null,
+        "provider": "creator1_Test@test1_tenant.com",
+        "lifeCycleStatus": "PUBLISHED",
+        "thumbnailUri": null,
+        "avgRating": "0.0",
+        "throttlingPolicies": [
+            
+        ],
+        "advertiseInfo": {
+            "advertised": false,
+            "originalStoreUrl": null,
+            "apiOwner": null
+        },
+        "businessInformation": {
+            "businessOwner": null,
+            "businessOwnerEmail": null,
+            "technicalOwner": null,
+            "technicalOwnerEmail": null
+        },
+        "isSubscriptionAvailable": true,
+        "monetizationLabel": null
+    },
+    "applicationInfo": {
+        "applicationId": "ce9215fb-9bc7-4cdf-97e7-658e2992397b",
+        "name": "TestingApp3",
+        "throttlingPolicy": "Unlimited",
+        "description": "Sample calculator application",
+        "status": "APPROVED",
+        "groups": [
+            
+        ],
+        "subscriptionCount": 2,
+        "attributes": {
+            
+        },
+        "owner": "creator1_Test@test1_tenant.com",
+        "tokenType": "JWT"
+    },
+    "throttlingPolicy": "Unlimited",
+    "requestedThrottlingPolicy": "Unlimited",
+    "status": "UNBLOCKED",
+    "redirectionParams": null
+}
+[INFO ] 2022-10-21 18:21:35.124 [TestNG-tests-1] DataPopulations - Status Code [GENERATE ACCESS TOKEN 3]: 200
+[INFO ] 2022-10-21 18:21:35.128 [TestNG-tests-1] DataPopulations - [DEV PORTAL]: Dev Portal tests were completed
+[INFO ] 2022-10-21 18:21:35.470 [TestNG-tests-1] DataPopulations - Status Code [CREATE OPEN API DEFINITION]: 409
+[INFO ] 2022-10-21 18:21:35.520 [TestNG-tests-1] DataPopulations - Status Code [CREATE GRAPHQL API]: 409
+[INFO ] 2022-10-21 18:21:35.862 [TestNG-tests-1] DataPopulations - Status Code [CHANGE GRAPHQL API STATUS]: 200
+[INFO ] 2022-10-21 18:21:35.968 [TestNG-tests-1] DataPopulations - Status Code [SEARCH API]: 200
+[INFO ] 2022-10-21 18:21:36.316 [TestNG-tests-1] DataPopulations - Status Code [UPLOAD API THUMBNAIL]: 201
+[INFO ] 2022-10-21 18:21:36.526 [TestNG-tests-1] DataPopulations - Status Code [CHANGE API STATUS]: 200
+[INFO ] 2022-10-21 18:21:36.527 [TestNG-tests-1] DataPopulations - [PUBLISHER PORTAL]: Dev Portal tests were completed
+[INFO ] 2022-10-21 18:23:02.604 [TestNG-tests-1] DataPopulations - Status Code [SEARCHED API BY NAME]: 200
+[INFO ] 2022-10-21 18:23:02.653 [TestNG-tests-1] DataPopulations - Status Code [CREATE NEW APPLICATION 1]: 409
+[INFO ] 2022-10-21 18:23:02.780 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO API 1]: {
+    "code": 409,
+    "message": "Resource Already Exists",
+    "description": "Specified subscription already exists for API e29343f4-6531-444f-9713-81568f9601f3, for application 6f77f082-e435-4a69-a651-45de0e60077b",
+    "moreInfo": "",
+    "error": [
+        
+    ]
+}
+[INFO ] 2022-10-21 18:23:02.870 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO GRAPHQL API 1]: {
+    "code": 409,
+    "message": "Resource Already Exists",
+    "description": "Specified subscription already exists for API 4178445e-26b0-4ad2-88d5-2ad42aa58434, for application 6f77f082-e435-4a69-a651-45de0e60077b",
+    "moreInfo": "",
+    "error": [
+        
+    ]
+}
+[INFO ] 2022-10-21 18:23:02.920 [TestNG-tests-1] DataPopulations - Status Code [GENERATE ACCESS TOKEN 1]: 409
+[INFO ] 2022-10-21 18:23:02.965 [TestNG-tests-1] DataPopulations - Status Code [CREATE NEW APPLICATION 2]: 409
+[INFO ] 2022-10-21 18:23:03.035 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO API 2]: {
+    "code": 409,
+    "message": "Resource Already Exists",
+    "description": "Specified subscription already exists for API e29343f4-6531-444f-9713-81568f9601f3, for application 55bb141b-a961-42ab-a5ca-1529e0b860d1",
+    "moreInfo": "",
+    "error": [
+        
+    ]
+}
+[INFO ] 2022-10-21 18:23:03.094 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO GRAPHQL API 2]: {
+    "code": 409,
+    "message": "Resource Already Exists",
+    "description": "Specified subscription already exists for API 4178445e-26b0-4ad2-88d5-2ad42aa58434, for application 55bb141b-a961-42ab-a5ca-1529e0b860d1",
+    "moreInfo": "",
+    "error": [
+        
+    ]
+}
+[INFO ] 2022-10-21 18:23:03.136 [TestNG-tests-1] DataPopulations - Status Code [GENERATE ACCESS TOKEN 2]: 409
+[INFO ] 2022-10-21 18:23:03.180 [TestNG-tests-1] DataPopulations - Status Code [CREATE NEW APPLICATION 3]: 409
+[INFO ] 2022-10-21 18:23:03.252 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO API 3]: {
+    "code": 409,
+    "message": "Resource Already Exists",
+    "description": "Specified subscription already exists for API e29343f4-6531-444f-9713-81568f9601f3, for application ce9215fb-9bc7-4cdf-97e7-658e2992397b",
+    "moreInfo": "",
+    "error": [
+        
+    ]
+}
+[INFO ] 2022-10-21 18:23:03.312 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO GRAPHQL API 3]: {
+    "code": 409,
+    "message": "Resource Already Exists",
+    "description": "Specified subscription already exists for API 4178445e-26b0-4ad2-88d5-2ad42aa58434, for application ce9215fb-9bc7-4cdf-97e7-658e2992397b",
+    "moreInfo": "",
+    "error": [
+        
+    ]
+}
+[INFO ] 2022-10-21 18:23:03.357 [TestNG-tests-1] DataPopulations - Status Code [GENERATE ACCESS TOKEN 3]: 409
+[INFO ] 2022-10-21 18:23:03.358 [TestNG-tests-1] DataPopulations - [DEV PORTAL]: Dev Portal tests were completed
+[INFO ] 2022-10-21 18:23:03.601 [TestNG-tests-1] DataPopulations - Status Code [CREATE OPEN API DEFINITION]: 409
+[INFO ] 2022-10-21 18:23:03.651 [TestNG-tests-1] DataPopulations - Status Code [CREATE GRAPHQL API]: 409
+[INFO ] 2022-10-21 18:23:03.986 [TestNG-tests-1] DataPopulations - Status Code [CHANGE GRAPHQL API STATUS]: 200
+[INFO ] 2022-10-21 18:23:04.017 [TestNG-tests-1] DataPopulations - Status Code [SEARCH API]: 200
+[INFO ] 2022-10-21 18:23:04.385 [TestNG-tests-1] DataPopulations - Status Code [UPLOAD API THUMBNAIL]: 201
+[INFO ] 2022-10-21 18:23:04.583 [TestNG-tests-1] DataPopulations - Status Code [CHANGE API STATUS]: 200
+[INFO ] 2022-10-21 18:23:04.583 [TestNG-tests-1] DataPopulations - [PUBLISHER PORTAL]: Dev Portal tests were completed
+[INFO ] 2022-10-21 18:27:45.981 [TestNG-tests-1] DataPopulations - Status Code [SEARCHED API BY NAME]: 200
+[INFO ] 2022-10-21 18:27:46.025 [TestNG-tests-1] DataPopulations - Status Code [CREATE NEW APPLICATION 1]: 409
+[INFO ] 2022-10-21 18:27:46.110 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO API 1]: {
+    "code": 409,
+    "message": "Resource Already Exists",
+    "description": "Specified subscription already exists for API e29343f4-6531-444f-9713-81568f9601f3, for application 6f77f082-e435-4a69-a651-45de0e60077b",
+    "moreInfo": "",
+    "error": [
+        
+    ]
+}
+[INFO ] 2022-10-21 18:27:46.204 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO GRAPHQL API 1]: {
+    "code": 409,
+    "message": "Resource Already Exists",
+    "description": "Specified subscription already exists for API 4178445e-26b0-4ad2-88d5-2ad42aa58434, for application 55bb141b-a961-42ab-a5ca-1529e0b860d1",
+    "moreInfo": "",
+    "error": [
+        
+    ]
+}
+[INFO ] 2022-10-21 18:27:46.296 [TestNG-tests-1] DataPopulations - Status Code [GENERATE ACCESS TOKEN 1]: 200
+[INFO ] 2022-10-21 18:27:46.341 [TestNG-tests-1] DataPopulations - Status Code [CREATE NEW APPLICATION 2]: 409
+[INFO ] 2022-10-21 18:27:46.418 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO API 2]: {
+    "code": 409,
+    "message": "Resource Already Exists",
+    "description": "Specified subscription already exists for API e29343f4-6531-444f-9713-81568f9601f3, for application ce9215fb-9bc7-4cdf-97e7-658e2992397b",
+    "moreInfo": "",
+    "error": [
+        
+    ]
+}
+[INFO ] 2022-10-21 18:27:46.481 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO GRAPHQL API 2]: {
+    "code": 409,
+    "message": "Resource Already Exists",
+    "description": "Specified subscription already exists for API 4178445e-26b0-4ad2-88d5-2ad42aa58434, for application 6f77f082-e435-4a69-a651-45de0e60077b",
+    "moreInfo": "",
+    "error": [
+        
+    ]
+}
+[INFO ] 2022-10-21 18:27:46.554 [TestNG-tests-1] DataPopulations - Status Code [GENERATE ACCESS TOKEN 2]: 200
+[INFO ] 2022-10-21 18:27:46.607 [TestNG-tests-1] DataPopulations - Status Code [CREATE NEW APPLICATION 3]: 409
+[INFO ] 2022-10-21 18:27:46.678 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO API 3]: {
+    "code": 409,
+    "message": "Resource Already Exists",
+    "description": "Specified subscription already exists for API e29343f4-6531-444f-9713-81568f9601f3, for application ce9215fb-9bc7-4cdf-97e7-658e2992397b",
+    "moreInfo": "",
+    "error": [
+        
+    ]
+}
+[INFO ] 2022-10-21 18:27:46.728 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO GRAPHQL API 3]: {
+    "code": 409,
+    "message": "Resource Already Exists",
+    "description": "Specified subscription already exists for API 4178445e-26b0-4ad2-88d5-2ad42aa58434, for application ce9215fb-9bc7-4cdf-97e7-658e2992397b",
+    "moreInfo": "",
+    "error": [
+        
+    ]
+}
+[INFO ] 2022-10-21 18:27:46.776 [TestNG-tests-1] DataPopulations - Status Code [GENERATE ACCESS TOKEN 3]: 409
+[INFO ] 2022-10-21 18:27:46.776 [TestNG-tests-1] DataPopulations - [DEV PORTAL]: Dev Portal tests were completed
+[INFO ] 2022-10-21 18:27:47.021 [TestNG-tests-1] DataPopulations - Status Code [CREATE OPEN API DEFINITION]: 409
+[INFO ] 2022-10-21 18:27:47.087 [TestNG-tests-1] DataPopulations - Status Code [CREATE GRAPHQL API]: 409
+[INFO ] 2022-10-21 18:27:47.454 [TestNG-tests-1] DataPopulations - Status Code [CHANGE GRAPHQL API STATUS]: 200
+[INFO ] 2022-10-21 18:27:47.493 [TestNG-tests-1] DataPopulations - Status Code [SEARCH API]: 200
+[INFO ] 2022-10-21 18:27:47.898 [TestNG-tests-1] DataPopulations - Status Code [UPLOAD API THUMBNAIL]: 201
+[INFO ] 2022-10-21 18:27:48.082 [TestNG-tests-1] DataPopulations - Status Code [CHANGE API STATUS]: 200
+[INFO ] 2022-10-21 18:27:48.082 [TestNG-tests-1] DataPopulations - [PUBLISHER PORTAL]: Dev Portal tests were completed
+[INFO ] 2022-10-21 18:28:43.473 [TestNG-tests-1] DataPopulations - Status Code [SEARCHED API BY NAME]: 200
+[INFO ] 2022-10-21 18:28:43.519 [TestNG-tests-1] DataPopulations - Status Code [CREATE NEW APPLICATION 1]: 201
+[INFO ] 2022-10-21 18:28:43.619 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO API 1]: {
+    "subscriptionId": "10a58abf-015b-413c-8306-c8c0951daeea",
+    "applicationId": "f7eb5460-b291-482a-982d-7a3c1b26f429",
+    "apiId": "e29343f4-6531-444f-9713-81568f9601f3",
+    "apiInfo": {
+        "id": "e29343f4-6531-444f-9713-81568f9601f3",
+        "name": "Test API 1",
+        "description": null,
+        "context": "/t/test1_tenant.com/testapi1",
+        "version": "1.0.0",
+        "type": null,
+        "provider": "creator1_Test@test1_tenant.com",
+        "lifeCycleStatus": "PUBLISHED",
+        "thumbnailUri": "/t/test1_tenant.com/t/test1_tenant.com/registry/resource/_system/governance/apimgt/applicationdata/icons/creator1_Test-AT-test1_tenant.com/Test API 1/1.0.0/icon",
+        "avgRating": "0.0",
+        "throttlingPolicies": [
+            
+        ],
+        "advertiseInfo": {
+            "advertised": false,
+            "originalStoreUrl": null,
+            "apiOwner": null
+        },
+        "businessInformation": {
+            "businessOwner": null,
+            "businessOwnerEmail": null,
+            "technicalOwner": null,
+            "technicalOwnerEmail": null
+        },
+        "isSubscriptionAvailable": true,
+        "monetizationLabel": null
+    },
+    "applicationInfo": {
+        "applicationId": "f7eb5460-b291-482a-982d-7a3c1b26f429",
+        "name": "TestingApp1",
+        "throttlingPolicy": "Unlimited",
+        "description": "Sample calculator application",
+        "status": "APPROVED",
+        "groups": [
+            "Intuit"
+        ],
+        "subscriptionCount": 1,
+        "attributes": {
+            
+        },
+        "owner": "creator1_Test@test1_tenant.com",
+        "tokenType": "JWT"
+    },
+    "throttlingPolicy": "Unlimited",
+    "requestedThrottlingPolicy": "Unlimited",
+    "status": "UNBLOCKED",
+    "redirectionParams": null
+}
+[INFO ] 2022-10-21 18:28:43.703 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO GRAPHQL API 1]: {
+    "subscriptionId": "86088317-1194-48a4-9fdd-ab3004cc6aac",
+    "applicationId": "f7eb5460-b291-482a-982d-7a3c1b26f429",
+    "apiId": "4178445e-26b0-4ad2-88d5-2ad42aa58434",
+    "apiInfo": {
+        "id": "4178445e-26b0-4ad2-88d5-2ad42aa58434",
+        "name": "GraphQL_Test_API_1",
+        "description": null,
+        "context": "/t/test1_tenant.com/graphqltestapi",
+        "version": "1.0.0",
+        "type": null,
+        "provider": "creator1_Test@test1_tenant.com",
+        "lifeCycleStatus": "PUBLISHED",
+        "thumbnailUri": null,
+        "avgRating": "0.0",
+        "throttlingPolicies": [
+            
+        ],
+        "advertiseInfo": {
+            "advertised": false,
+            "originalStoreUrl": null,
+            "apiOwner": null
+        },
+        "businessInformation": {
+            "businessOwner": null,
+            "businessOwnerEmail": null,
+            "technicalOwner": null,
+            "technicalOwnerEmail": null
+        },
+        "isSubscriptionAvailable": true,
+        "monetizationLabel": null
+    },
+    "applicationInfo": {
+        "applicationId": "f7eb5460-b291-482a-982d-7a3c1b26f429",
+        "name": "TestingApp1",
+        "throttlingPolicy": "Unlimited",
+        "description": "Sample calculator application",
+        "status": "APPROVED",
+        "groups": [
+            "Intuit"
+        ],
+        "subscriptionCount": 2,
+        "attributes": {
+            
+        },
+        "owner": "creator1_Test@test1_tenant.com",
+        "tokenType": "JWT"
+    },
+    "throttlingPolicy": "Unlimited",
+    "requestedThrottlingPolicy": "Unlimited",
+    "status": "UNBLOCKED",
+    "redirectionParams": null
+}
+[INFO ] 2022-10-21 18:28:43.781 [TestNG-tests-1] DataPopulations - Status Code [GENERATE ACCESS TOKEN 1]: 200
+[INFO ] 2022-10-21 18:28:43.821 [TestNG-tests-1] DataPopulations - Status Code [CREATE NEW APPLICATION 2]: 201
+[INFO ] 2022-10-21 18:28:43.887 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO API 2]: {
+    "subscriptionId": "2f01b91a-992b-44a6-ad8b-3c28c0c2c50e",
+    "applicationId": "d3939297-2902-4f24-84bd-91d0bd9741e0",
+    "apiId": "e29343f4-6531-444f-9713-81568f9601f3",
+    "apiInfo": {
+        "id": "e29343f4-6531-444f-9713-81568f9601f3",
+        "name": "Test API 1",
+        "description": null,
+        "context": "/t/test1_tenant.com/testapi1",
+        "version": "1.0.0",
+        "type": null,
+        "provider": "creator1_Test@test1_tenant.com",
+        "lifeCycleStatus": "PUBLISHED",
+        "thumbnailUri": "/t/test1_tenant.com/t/test1_tenant.com/registry/resource/_system/governance/apimgt/applicationdata/icons/creator1_Test-AT-test1_tenant.com/Test API 1/1.0.0/icon",
+        "avgRating": "0.0",
+        "throttlingPolicies": [
+            
+        ],
+        "advertiseInfo": {
+            "advertised": false,
+            "originalStoreUrl": null,
+            "apiOwner": null
+        },
+        "businessInformation": {
+            "businessOwner": null,
+            "businessOwnerEmail": null,
+            "technicalOwner": null,
+            "technicalOwnerEmail": null
+        },
+        "isSubscriptionAvailable": true,
+        "monetizationLabel": null
+    },
+    "applicationInfo": {
+        "applicationId": "d3939297-2902-4f24-84bd-91d0bd9741e0",
+        "name": "TestingApp2",
+        "throttlingPolicy": "Unlimited",
+        "description": "Sample calculator application",
+        "status": "APPROVED",
+        "groups": [
+            
+        ],
+        "subscriptionCount": 1,
+        "attributes": {
+            
+        },
+        "owner": "creator1_Test@test1_tenant.com",
+        "tokenType": "JWT"
+    },
+    "throttlingPolicy": "Unlimited",
+    "requestedThrottlingPolicy": "Unlimited",
+    "status": "UNBLOCKED",
+    "redirectionParams": null
+}
+[INFO ] 2022-10-21 18:28:43.958 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO GRAPHQL API 2]: {
+    "subscriptionId": "7d0477b3-7fa5-4b53-82f1-1b2314f2364c",
+    "applicationId": "d3939297-2902-4f24-84bd-91d0bd9741e0",
+    "apiId": "4178445e-26b0-4ad2-88d5-2ad42aa58434",
+    "apiInfo": {
+        "id": "4178445e-26b0-4ad2-88d5-2ad42aa58434",
+        "name": "GraphQL_Test_API_1",
+        "description": null,
+        "context": "/t/test1_tenant.com/graphqltestapi",
+        "version": "1.0.0",
+        "type": null,
+        "provider": "creator1_Test@test1_tenant.com",
+        "lifeCycleStatus": "PUBLISHED",
+        "thumbnailUri": null,
+        "avgRating": "0.0",
+        "throttlingPolicies": [
+            
+        ],
+        "advertiseInfo": {
+            "advertised": false,
+            "originalStoreUrl": null,
+            "apiOwner": null
+        },
+        "businessInformation": {
+            "businessOwner": null,
+            "businessOwnerEmail": null,
+            "technicalOwner": null,
+            "technicalOwnerEmail": null
+        },
+        "isSubscriptionAvailable": true,
+        "monetizationLabel": null
+    },
+    "applicationInfo": {
+        "applicationId": "d3939297-2902-4f24-84bd-91d0bd9741e0",
+        "name": "TestingApp2",
+        "throttlingPolicy": "Unlimited",
+        "description": "Sample calculator application",
+        "status": "APPROVED",
+        "groups": [
+            
+        ],
+        "subscriptionCount": 2,
+        "attributes": {
+            
+        },
+        "owner": "creator1_Test@test1_tenant.com",
+        "tokenType": "JWT"
+    },
+    "throttlingPolicy": "Unlimited",
+    "requestedThrottlingPolicy": "Unlimited",
+    "status": "UNBLOCKED",
+    "redirectionParams": null
+}
+[INFO ] 2022-10-21 18:28:44.013 [TestNG-tests-1] DataPopulations - Status Code [GENERATE ACCESS TOKEN 2]: 200
+[INFO ] 2022-10-21 18:28:44.060 [TestNG-tests-1] DataPopulations - Status Code [CREATE NEW APPLICATION 3]: 201
+[INFO ] 2022-10-21 18:28:44.156 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO API 3]: {
+    "subscriptionId": "89701d9b-00fa-4ced-8385-13e57a562960",
+    "applicationId": "5206a0c5-8546-488f-8772-0ecd2faac9c3",
+    "apiId": "e29343f4-6531-444f-9713-81568f9601f3",
+    "apiInfo": {
+        "id": "e29343f4-6531-444f-9713-81568f9601f3",
+        "name": "Test API 1",
+        "description": null,
+        "context": "/t/test1_tenant.com/testapi1",
+        "version": "1.0.0",
+        "type": null,
+        "provider": "creator1_Test@test1_tenant.com",
+        "lifeCycleStatus": "PUBLISHED",
+        "thumbnailUri": "/t/test1_tenant.com/t/test1_tenant.com/registry/resource/_system/governance/apimgt/applicationdata/icons/creator1_Test-AT-test1_tenant.com/Test API 1/1.0.0/icon",
+        "avgRating": "0.0",
+        "throttlingPolicies": [
+            
+        ],
+        "advertiseInfo": {
+            "advertised": false,
+            "originalStoreUrl": null,
+            "apiOwner": null
+        },
+        "businessInformation": {
+            "businessOwner": null,
+            "businessOwnerEmail": null,
+            "technicalOwner": null,
+            "technicalOwnerEmail": null
+        },
+        "isSubscriptionAvailable": true,
+        "monetizationLabel": null
+    },
+    "applicationInfo": {
+        "applicationId": "5206a0c5-8546-488f-8772-0ecd2faac9c3",
+        "name": "TestingApp3",
+        "throttlingPolicy": "Unlimited",
+        "description": "Sample calculator application",
+        "status": "APPROVED",
+        "groups": [
+            
+        ],
+        "subscriptionCount": 1,
+        "attributes": {
+            
+        },
+        "owner": "creator1_Test@test1_tenant.com",
+        "tokenType": "JWT"
+    },
+    "throttlingPolicy": "Unlimited",
+    "requestedThrottlingPolicy": "Unlimited",
+    "status": "UNBLOCKED",
+    "redirectionParams": null
+}
+[INFO ] 2022-10-21 18:28:44.244 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO GRAPHQL API 3]: {
+    "subscriptionId": "3deb21b5-13c6-429a-927a-5529137b98ab",
+    "applicationId": "5206a0c5-8546-488f-8772-0ecd2faac9c3",
+    "apiId": "4178445e-26b0-4ad2-88d5-2ad42aa58434",
+    "apiInfo": {
+        "id": "4178445e-26b0-4ad2-88d5-2ad42aa58434",
+        "name": "GraphQL_Test_API_1",
+        "description": null,
+        "context": "/t/test1_tenant.com/graphqltestapi",
+        "version": "1.0.0",
+        "type": null,
+        "provider": "creator1_Test@test1_tenant.com",
+        "lifeCycleStatus": "PUBLISHED",
+        "thumbnailUri": null,
+        "avgRating": "0.0",
+        "throttlingPolicies": [
+            
+        ],
+        "advertiseInfo": {
+            "advertised": false,
+            "originalStoreUrl": null,
+            "apiOwner": null
+        },
+        "businessInformation": {
+            "businessOwner": null,
+            "businessOwnerEmail": null,
+            "technicalOwner": null,
+            "technicalOwnerEmail": null
+        },
+        "isSubscriptionAvailable": true,
+        "monetizationLabel": null
+    },
+    "applicationInfo": {
+        "applicationId": "5206a0c5-8546-488f-8772-0ecd2faac9c3",
+        "name": "TestingApp3",
+        "throttlingPolicy": "Unlimited",
+        "description": "Sample calculator application",
+        "status": "APPROVED",
+        "groups": [
+            
+        ],
+        "subscriptionCount": 2,
+        "attributes": {
+            
+        },
+        "owner": "creator1_Test@test1_tenant.com",
+        "tokenType": "JWT"
+    },
+    "throttlingPolicy": "Unlimited",
+    "requestedThrottlingPolicy": "Unlimited",
+    "status": "UNBLOCKED",
+    "redirectionParams": null
+}
+[INFO ] 2022-10-21 18:28:44.306 [TestNG-tests-1] DataPopulations - Status Code [GENERATE ACCESS TOKEN 3]: 200
+[INFO ] 2022-10-21 18:28:44.315 [TestNG-tests-1] DataPopulations - [DEV PORTAL]: Dev Portal tests were completed
+[INFO ] 2022-10-21 18:28:44.626 [TestNG-tests-1] DataPopulations - Status Code [CREATE OPEN API DEFINITION]: 409
+[INFO ] 2022-10-21 18:28:44.714 [TestNG-tests-1] DataPopulations - Status Code [CREATE GRAPHQL API]: 409
+[INFO ] 2022-10-21 18:28:45.071 [TestNG-tests-1] DataPopulations - Status Code [CHANGE GRAPHQL API STATUS]: 200
+[INFO ] 2022-10-21 18:28:45.104 [TestNG-tests-1] DataPopulations - Status Code [SEARCH API]: 200
+[INFO ] 2022-10-21 18:28:45.451 [TestNG-tests-1] DataPopulations - Status Code [UPLOAD API THUMBNAIL]: 201
+[INFO ] 2022-10-21 18:28:45.749 [TestNG-tests-1] DataPopulations - Status Code [CHANGE API STATUS]: 200
+[INFO ] 2022-10-21 18:28:45.749 [TestNG-tests-1] DataPopulations - [PUBLISHER PORTAL]: Dev Portal tests were completed
+[INFO ] 2022-10-21 18:30:52.514 [TestNG-tests-1] DataPopulations - Status Code [SEARCHED API BY NAME]: 200
+[INFO ] 2022-10-21 18:30:52.568 [TestNG-tests-1] DataPopulations - Status Code [CREATE NEW APPLICATION 1]: 409
+[INFO ] 2022-10-21 18:30:52.667 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO API 1]: {
+    "code": 409,
+    "message": "Resource Already Exists",
+    "description": "Specified subscription already exists for API e29343f4-6531-444f-9713-81568f9601f3, for application f7eb5460-b291-482a-982d-7a3c1b26f429",
+    "moreInfo": "",
+    "error": [
+        
+    ]
+}
+[INFO ] 2022-10-21 18:30:52.747 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO GRAPHQL API 1]: {
+    "code": 409,
+    "message": "Resource Already Exists",
+    "description": "Specified subscription already exists for API 4178445e-26b0-4ad2-88d5-2ad42aa58434, for application f7eb5460-b291-482a-982d-7a3c1b26f429",
+    "moreInfo": "",
+    "error": [
+        
+    ]
+}
+[INFO ] 2022-10-21 18:30:52.792 [TestNG-tests-1] DataPopulations - Status Code [GENERATE ACCESS TOKEN 1]: 409
+[INFO ] 2022-10-21 18:30:52.840 [TestNG-tests-1] DataPopulations - Status Code [CREATE NEW APPLICATION 2]: 409
+[INFO ] 2022-10-21 18:30:52.907 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO API 2]: {
+    "code": 409,
+    "message": "Resource Already Exists",
+    "description": "Specified subscription already exists for API e29343f4-6531-444f-9713-81568f9601f3, for application d3939297-2902-4f24-84bd-91d0bd9741e0",
+    "moreInfo": "",
+    "error": [
+        
+    ]
+}
+[INFO ] 2022-10-21 18:30:52.966 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO GRAPHQL API 2]: {
+    "code": 409,
+    "message": "Resource Already Exists",
+    "description": "Specified subscription already exists for API 4178445e-26b0-4ad2-88d5-2ad42aa58434, for application d3939297-2902-4f24-84bd-91d0bd9741e0",
+    "moreInfo": "",
+    "error": [
+        
+    ]
+}
+[INFO ] 2022-10-21 18:30:53.017 [TestNG-tests-1] DataPopulations - Status Code [GENERATE ACCESS TOKEN 2]: 409
+[INFO ] 2022-10-21 18:30:53.062 [TestNG-tests-1] DataPopulations - Status Code [CREATE NEW APPLICATION 3]: 409
+[INFO ] 2022-10-21 18:30:53.118 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO API 3]: {
+    "code": 409,
+    "message": "Resource Already Exists",
+    "description": "Specified subscription already exists for API e29343f4-6531-444f-9713-81568f9601f3, for application 5206a0c5-8546-488f-8772-0ecd2faac9c3",
+    "moreInfo": "",
+    "error": [
+        
+    ]
+}
+[INFO ] 2022-10-21 18:30:53.164 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO GRAPHQL API 3]: {
+    "code": 409,
+    "message": "Resource Already Exists",
+    "description": "Specified subscription already exists for API 4178445e-26b0-4ad2-88d5-2ad42aa58434, for application 5206a0c5-8546-488f-8772-0ecd2faac9c3",
+    "moreInfo": "",
+    "error": [
+        
+    ]
+}
+[INFO ] 2022-10-21 18:30:53.198 [TestNG-tests-1] DataPopulations - Status Code [GENERATE ACCESS TOKEN 3]: 409
+[INFO ] 2022-10-21 18:30:53.198 [TestNG-tests-1] DataPopulations - [DEV PORTAL]: Dev Portal tests were completed
+[INFO ] 2022-10-21 18:30:53.451 [TestNG-tests-1] DataPopulations - Status Code [CREATE OPEN API DEFINITION]: 409
+[INFO ] 2022-10-21 18:30:53.501 [TestNG-tests-1] DataPopulations - Status Code [CREATE GRAPHQL API]: 409
+[INFO ] 2022-10-21 18:30:53.890 [TestNG-tests-1] DataPopulations - Status Code [CHANGE GRAPHQL API STATUS]: 200
+[INFO ] 2022-10-21 18:30:53.919 [TestNG-tests-1] DataPopulations - Status Code [SEARCH API]: 200
+[INFO ] 2022-10-21 18:30:54.266 [TestNG-tests-1] DataPopulations - Status Code [UPLOAD API THUMBNAIL]: 201
+[INFO ] 2022-10-21 18:30:54.505 [TestNG-tests-1] DataPopulations - Status Code [CHANGE API STATUS]: 200
+[INFO ] 2022-10-21 18:30:54.505 [TestNG-tests-1] DataPopulations - [PUBLISHER PORTAL]: Dev Portal tests were completed
+[INFO ] 2022-10-21 18:33:54.745 [TestNG-tests-1] DataPopulations - Status Code [SEARCHED API BY NAME]: 200
+[INFO ] 2022-10-21 18:33:54.825 [TestNG-tests-1] DataPopulations - Status Code [CREATE NEW APPLICATION 1]: 409
+[INFO ] 2022-10-21 18:33:54.938 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO API 1]: 409
+[INFO ] 2022-10-21 18:33:55.061 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO GRAPHQL API 1]: {
+    "code": 409,
+    "message": "Resource Already Exists",
+    "description": "Specified subscription already exists for API 4178445e-26b0-4ad2-88d5-2ad42aa58434, for application f7eb5460-b291-482a-982d-7a3c1b26f429",
+    "moreInfo": "",
+    "error": [
+        
+    ]
+}
+[INFO ] 2022-10-21 18:33:55.108 [TestNG-tests-1] DataPopulations - Status Code [GENERATE ACCESS TOKEN 1]: 409
+[INFO ] 2022-10-21 18:33:55.149 [TestNG-tests-1] DataPopulations - Status Code [CREATE NEW APPLICATION 2]: 409
+[INFO ] 2022-10-21 18:33:55.209 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO API 2]: 409
+[INFO ] 2022-10-21 18:33:55.269 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO GRAPHQL API 2]: {
+    "code": 409,
+    "message": "Resource Already Exists",
+    "description": "Specified subscription already exists for API 4178445e-26b0-4ad2-88d5-2ad42aa58434, for application d3939297-2902-4f24-84bd-91d0bd9741e0",
+    "moreInfo": "",
+    "error": [
+        
+    ]
+}
+[INFO ] 2022-10-21 18:33:55.319 [TestNG-tests-1] DataPopulations - Status Code [GENERATE ACCESS TOKEN 2]: 409
+[INFO ] 2022-10-21 18:33:55.366 [TestNG-tests-1] DataPopulations - Status Code [CREATE NEW APPLICATION 3]: 409
+[INFO ] 2022-10-21 18:33:55.443 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO API 3]: 409
+[INFO ] 2022-10-21 18:33:55.495 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO GRAPHQL API 3]: {
+    "code": 409,
+    "message": "Resource Already Exists",
+    "description": "Specified subscription already exists for API 4178445e-26b0-4ad2-88d5-2ad42aa58434, for application 5206a0c5-8546-488f-8772-0ecd2faac9c3",
+    "moreInfo": "",
+    "error": [
+        
+    ]
+}
+[INFO ] 2022-10-21 18:33:55.573 [TestNG-tests-1] DataPopulations - Status Code [GENERATE ACCESS TOKEN 3]: 409
+[INFO ] 2022-10-21 18:33:55.573 [TestNG-tests-1] DataPopulations - [DEV PORTAL]: Dev Portal tests were completed
+[INFO ] 2022-10-21 18:33:55.864 [TestNG-tests-1] DataPopulations - Status Code [CREATE OPEN API DEFINITION]: 409
+[INFO ] 2022-10-21 18:33:55.910 [TestNG-tests-1] DataPopulations - Status Code [CREATE GRAPHQL API]: 409
+[INFO ] 2022-10-21 18:33:56.247 [TestNG-tests-1] DataPopulations - Status Code [CHANGE GRAPHQL API STATUS]: 200
+[INFO ] 2022-10-21 18:33:56.282 [TestNG-tests-1] DataPopulations - Status Code [SEARCH API]: 200
+[INFO ] 2022-10-21 18:33:56.690 [TestNG-tests-1] DataPopulations - Status Code [UPLOAD API THUMBNAIL]: 201
+[INFO ] 2022-10-21 18:33:56.882 [TestNG-tests-1] DataPopulations - Status Code [CHANGE API STATUS]: 200
+[INFO ] 2022-10-21 18:33:56.882 [TestNG-tests-1] DataPopulations - [PUBLISHER PORTAL]: Dev Portal tests were completed
+[INFO ] 2022-10-21 18:35:17.217 [TestNG-tests-1] DataPopulations - Status Code [SEARCHED API BY NAME]: 200
+[INFO ] 2022-10-21 18:35:17.280 [TestNG-tests-1] DataPopulations - Status Code [CREATE NEW APPLICATION 1]: 409
+[INFO ] 2022-10-21 18:35:17.369 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO API 1]: 409
+[INFO ] 2022-10-21 18:35:17.454 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO GRAPHQL API 1]: {
+    "code": 409,
+    "message": "Resource Already Exists",
+    "description": "Specified subscription already exists for API 4178445e-26b0-4ad2-88d5-2ad42aa58434, for application f7eb5460-b291-482a-982d-7a3c1b26f429",
+    "moreInfo": "",
+    "error": [
+        
+    ]
+}
+[INFO ] 2022-10-21 18:35:17.504 [TestNG-tests-1] DataPopulations - Status Code [GENERATE ACCESS TOKEN 1]: 409
+[INFO ] 2022-10-21 18:35:17.549 [TestNG-tests-1] DataPopulations - Status Code [CREATE NEW APPLICATION 2]: 409
+[INFO ] 2022-10-21 18:35:17.607 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO API 2]: 409
+[INFO ] 2022-10-21 18:35:17.660 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO GRAPHQL API 2]: {
+    "code": 409,
+    "message": "Resource Already Exists",
+    "description": "Specified subscription already exists for API 4178445e-26b0-4ad2-88d5-2ad42aa58434, for application d3939297-2902-4f24-84bd-91d0bd9741e0",
+    "moreInfo": "",
+    "error": [
+        
+    ]
+}
+[INFO ] 2022-10-21 18:35:17.702 [TestNG-tests-1] DataPopulations - Status Code [GENERATE ACCESS TOKEN 2]: 409
+[INFO ] 2022-10-21 18:35:17.744 [TestNG-tests-1] DataPopulations - Status Code [CREATE NEW APPLICATION 3]: 409
+[INFO ] 2022-10-21 18:35:17.809 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO API 3]: 409
+[INFO ] 2022-10-21 18:35:17.861 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO GRAPHQL API 3]: {
+    "code": 409,
+    "message": "Resource Already Exists",
+    "description": "Specified subscription already exists for API 4178445e-26b0-4ad2-88d5-2ad42aa58434, for application 5206a0c5-8546-488f-8772-0ecd2faac9c3",
+    "moreInfo": "",
+    "error": [
+        
+    ]
+}
+[INFO ] 2022-10-21 18:35:17.899 [TestNG-tests-1] DataPopulations - Status Code [GENERATE ACCESS TOKEN 3]: 409
+[INFO ] 2022-10-21 18:35:17.899 [TestNG-tests-1] DataPopulations - [DEV PORTAL]: Dev Portal tests were completed
+[INFO ] 2022-10-21 18:35:18.126 [TestNG-tests-1] DataPopulations - Status Code [CREATE OPEN API DEFINITION]: 409
+[INFO ] 2022-10-21 18:35:18.177 [TestNG-tests-1] DataPopulations - Status Code [CREATE GRAPHQL API]: 409
+[INFO ] 2022-10-21 18:35:18.461 [TestNG-tests-1] DataPopulations - Status Code [CHANGE GRAPHQL API STATUS]: 200
+[INFO ] 2022-10-21 18:35:18.495 [TestNG-tests-1] DataPopulations - Status Code [SEARCH API]: 200
+[INFO ] 2022-10-21 18:35:18.966 [TestNG-tests-1] DataPopulations - Status Code [UPLOAD API THUMBNAIL]: 201
+[INFO ] 2022-10-21 18:35:19.195 [TestNG-tests-1] DataPopulations - Status Code [CHANGE API STATUS]: 200
+[INFO ] 2022-10-21 18:35:19.195 [TestNG-tests-1] DataPopulations - [PUBLISHER PORTAL]: Dev Portal tests were completed
+[INFO ] 2022-10-21 18:36:16.396 [TestNG-tests-1] DataPopulations - Status Code [SEARCHED API BY NAME]: 200
+[INFO ] 2022-10-21 18:36:16.459 [TestNG-tests-1] DataPopulations - Status Code [CREATE NEW APPLICATION 1]: 409
+[INFO ] 2022-10-21 18:36:16.562 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO API 1]: 409
+[INFO ] 2022-10-21 18:36:16.656 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO GRAPHQL API 1]: 409
+[INFO ] 2022-10-21 18:36:16.699 [TestNG-tests-1] DataPopulations - Status Code [GENERATE ACCESS TOKEN 1]: 409
+[INFO ] 2022-10-21 18:36:16.743 [TestNG-tests-1] DataPopulations - Status Code [CREATE NEW APPLICATION 2]: 409
+[INFO ] 2022-10-21 18:36:16.806 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO API 2]: 409
+[INFO ] 2022-10-21 18:36:16.861 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO GRAPHQL API 2]: 409
+[INFO ] 2022-10-21 18:36:16.900 [TestNG-tests-1] DataPopulations - Status Code [GENERATE ACCESS TOKEN 2]: 409
+[INFO ] 2022-10-21 18:36:16.940 [TestNG-tests-1] DataPopulations - Status Code [CREATE NEW APPLICATION 3]: 409
+[INFO ] 2022-10-21 18:36:17.009 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO API 3]: 409
+[INFO ] 2022-10-21 18:36:17.062 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO GRAPHQL API 3]: 409
+[INFO ] 2022-10-21 18:36:17.096 [TestNG-tests-1] DataPopulations - Status Code [GENERATE ACCESS TOKEN 3]: 409
+[INFO ] 2022-10-21 18:36:17.096 [TestNG-tests-1] DataPopulations - [DEV PORTAL]: Dev Portal tests were completed
+[INFO ] 2022-10-21 18:36:17.342 [TestNG-tests-1] DataPopulations - Status Code [CREATE OPEN API DEFINITION]: 409
+[INFO ] 2022-10-21 18:36:17.405 [TestNG-tests-1] DataPopulations - Status Code [CREATE GRAPHQL API]: 409
+[INFO ] 2022-10-21 18:36:17.843 [TestNG-tests-1] DataPopulations - Status Code [CHANGE GRAPHQL API STATUS]: 200
+[INFO ] 2022-10-21 18:36:17.889 [TestNG-tests-1] DataPopulations - Status Code [SEARCH API]: 200
+[INFO ] 2022-10-21 18:36:18.428 [TestNG-tests-1] DataPopulations - Status Code [UPLOAD API THUMBNAIL]: 201
+[INFO ] 2022-10-21 18:36:18.600 [TestNG-tests-1] DataPopulations - Status Code [CHANGE API STATUS]: 200
+[INFO ] 2022-10-21 18:36:18.600 [TestNG-tests-1] DataPopulations - [PUBLISHER PORTAL]: Dev Portal tests were completed
+[INFO ] 2022-10-21 18:47:48.435 [TestNG-tests-1] DataPopulations - Status Code [SEARCHED API BY NAME]: 200
+[INFO ] 2022-10-21 18:47:48.484 [TestNG-tests-1] DataPopulations - Status Code [CREATE NEW APPLICATION 1]: 409
+[INFO ] 2022-10-21 18:47:48.573 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO API 1]: 409
+[INFO ] 2022-10-21 18:47:48.643 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO GRAPHQL API 1]: 409
+[INFO ] 2022-10-21 18:47:48.684 [TestNG-tests-1] DataPopulations - Status Code [GENERATE ACCESS TOKEN 1]: 409
+[INFO ] 2022-10-21 18:47:48.726 [TestNG-tests-1] DataPopulations - Status Code [CREATE NEW APPLICATION 2]: 409
+[INFO ] 2022-10-21 18:47:48.788 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO API 2]: 409
+[INFO ] 2022-10-21 18:47:48.835 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO GRAPHQL API 2]: 409
+[INFO ] 2022-10-21 18:47:48.870 [TestNG-tests-1] DataPopulations - Status Code [GENERATE ACCESS TOKEN 2]: 409
+[INFO ] 2022-10-21 18:47:48.914 [TestNG-tests-1] DataPopulations - Status Code [CREATE NEW APPLICATION 3]: 409
+[INFO ] 2022-10-21 18:47:48.969 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO API 3]: 409
+[INFO ] 2022-10-21 18:47:49.019 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO GRAPHQL API 3]: 409
+[INFO ] 2022-10-21 18:47:49.062 [TestNG-tests-1] DataPopulations - Status Code [GENERATE ACCESS TOKEN 3]: 409
+[INFO ] 2022-10-21 18:47:49.063 [TestNG-tests-1] DataPopulations - [DEV PORTAL]: Dev Portal tests were completed
+[INFO ] 2022-10-21 18:47:49.315 [TestNG-tests-1] DataPopulations - Status Code [CREATE OPEN API DEFINITION]: 409
+[INFO ] 2022-10-21 18:47:49.363 [TestNG-tests-1] DataPopulations - Status Code [CREATE GRAPHQL API]: 409
+[INFO ] 2022-10-21 18:47:49.656 [TestNG-tests-1] DataPopulations - Status Code [CHANGE GRAPHQL API STATUS]: 200
+[INFO ] 2022-10-21 18:47:49.697 [TestNG-tests-1] DataPopulations - Status Code [SEARCH API]: 200
+[INFO ] 2022-10-21 18:47:50.054 [TestNG-tests-1] DataPopulations - Status Code [UPLOAD API THUMBNAIL]: 201
+[INFO ] 2022-10-21 18:47:50.324 [TestNG-tests-1] DataPopulations - Status Code [CHANGE API STATUS]: 200
+[INFO ] 2022-10-21 18:47:50.324 [TestNG-tests-1] DataPopulations - [PUBLISHER PORTAL]: Dev Portal tests were completed
+[INFO ] 2022-10-21 18:54:39.924 [TestNG-tests-1] DataPopulations - Status Code [SEARCHED API BY NAME]: 200
+[INFO ] 2022-10-21 18:54:39.978 [TestNG-tests-1] DataPopulations - Status Code [CREATE NEW APPLICATION 1]: 409
+[INFO ] 2022-10-21 18:54:40.052 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO API 1]: 409
+[INFO ] 2022-10-21 18:54:40.117 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO GRAPHQL API 1]: 409
+[INFO ] 2022-10-21 18:54:40.158 [TestNG-tests-1] DataPopulations - Status Code [GENERATE ACCESS TOKEN 1]: 409
+[INFO ] 2022-10-21 18:54:40.199 [TestNG-tests-1] DataPopulations - Status Code [CREATE NEW APPLICATION 2]: 409
+[INFO ] 2022-10-21 18:54:40.254 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO API 2]: 409
+[INFO ] 2022-10-21 18:54:40.312 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO GRAPHQL API 2]: 409
+[INFO ] 2022-10-21 18:54:40.356 [TestNG-tests-1] DataPopulations - Status Code [GENERATE ACCESS TOKEN 2]: 409
+[INFO ] 2022-10-21 18:54:40.398 [TestNG-tests-1] DataPopulations - Status Code [CREATE NEW APPLICATION 3]: 409
+[INFO ] 2022-10-21 18:54:40.466 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO API 3]: 409
+[INFO ] 2022-10-21 18:54:40.524 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO GRAPHQL API 3]: 409
+[INFO ] 2022-10-21 18:54:40.569 [TestNG-tests-1] DataPopulations - Status Code [GENERATE ACCESS TOKEN 3]: 409
+[INFO ] 2022-10-21 18:54:40.569 [TestNG-tests-1] DataPopulations - [DEV PORTAL]: Dev Portal tests were completed
+[INFO ] 2022-10-21 18:54:40.848 [TestNG-tests-1] DataPopulations - Status Code [CREATE OPEN API DEFINITION]: 409
+[INFO ] 2022-10-21 18:54:40.900 [TestNG-tests-1] DataPopulations - Status Code [CREATE GRAPHQL API]: 409
+[INFO ] 2022-10-21 18:54:41.273 [TestNG-tests-1] DataPopulations - Status Code [CHANGE GRAPHQL API STATUS]: 200
+[INFO ] 2022-10-21 18:54:41.309 [TestNG-tests-1] DataPopulations - Status Code [SEARCH API]: 200
+[INFO ] 2022-10-21 18:54:41.633 [TestNG-tests-1] DataPopulations - Status Code [UPLOAD API THUMBNAIL]: 201
+[INFO ] 2022-10-21 18:54:41.826 [TestNG-tests-1] DataPopulations - Status Code [CHANGE API STATUS]: 200
+[INFO ] 2022-10-21 18:54:41.827 [TestNG-tests-1] DataPopulations - [PUBLISHER PORTAL]: Dev Portal tests were completed
+[INFO ] 2022-10-21 18:55:06.846 [TestNG-tests-1] DataPopulations - Status Code [SEARCHED API BY NAME]: 200
+[INFO ] 2022-10-21 18:55:06.898 [TestNG-tests-1] DataPopulations - Status Code [CREATE NEW APPLICATION 1]: 409
+[INFO ] 2022-10-21 18:55:06.976 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO API 1]: 409
+[INFO ] 2022-10-21 18:55:07.050 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO GRAPHQL API 1]: 409
+[INFO ] 2022-10-21 18:55:07.092 [TestNG-tests-1] DataPopulations - Status Code [GENERATE ACCESS TOKEN 1]: 409
+[INFO ] 2022-10-21 18:55:07.131 [TestNG-tests-1] DataPopulations - Status Code [CREATE NEW APPLICATION 2]: 409
+[INFO ] 2022-10-21 18:55:07.195 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO API 2]: 409
+[INFO ] 2022-10-21 18:55:07.245 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO GRAPHQL API 2]: 409
+[INFO ] 2022-10-21 18:55:07.290 [TestNG-tests-1] DataPopulations - Status Code [GENERATE ACCESS TOKEN 2]: 409
+[INFO ] 2022-10-21 18:55:07.328 [TestNG-tests-1] DataPopulations - Status Code [CREATE NEW APPLICATION 3]: 409
+[INFO ] 2022-10-21 18:55:07.387 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO API 3]: 409
+[INFO ] 2022-10-21 18:55:07.437 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO GRAPHQL API 3]: 409
+[INFO ] 2022-10-21 18:55:07.484 [TestNG-tests-1] DataPopulations - Status Code [GENERATE ACCESS TOKEN 3]: 409
+[INFO ] 2022-10-21 18:55:07.484 [TestNG-tests-1] DataPopulations - [DEV PORTAL]: Dev Portal tests were completed
+[INFO ] 2022-10-21 18:55:07.730 [TestNG-tests-1] DataPopulations - Status Code [CREATE OPEN API DEFINITION]: 409
+[INFO ] 2022-10-21 18:55:07.777 [TestNG-tests-1] DataPopulations - Status Code [CREATE GRAPHQL API]: 409
+[INFO ] 2022-10-21 18:55:08.071 [TestNG-tests-1] DataPopulations - Status Code [CHANGE GRAPHQL API STATUS]: 200
+[INFO ] 2022-10-21 18:55:08.101 [TestNG-tests-1] DataPopulations - Status Code [SEARCH API]: 200
+[INFO ] 2022-10-21 18:55:08.425 [TestNG-tests-1] DataPopulations - Status Code [UPLOAD API THUMBNAIL]: 201
+[INFO ] 2022-10-21 18:55:08.589 [TestNG-tests-1] DataPopulations - Status Code [CHANGE API STATUS]: 200
+[INFO ] 2022-10-21 18:55:08.589 [TestNG-tests-1] DataPopulations - [PUBLISHER PORTAL]: Dev Portal tests were completed
+[INFO ] 2022-10-21 18:56:06.600 [TestNG-tests-1] DataValidation - Status Code [AVAILABILITY OF APPLICATION 1]: 200
+[INFO ] 2022-10-21 18:56:06.642 [TestNG-tests-1] DataValidation - Status Code [AVAILABILITY OF APPLICATION 2]: 200
+[INFO ] 2022-10-21 18:56:06.681 [TestNG-tests-1] DataValidation - Status Code [AVAILABILITY OF APPLICATION 3]: 200
+[INFO ] 2022-10-21 18:56:06.728 [TestNG-tests-1] DataValidation - Status Code [INVOKE REST API]: 200
+[INFO ] 2022-10-21 18:56:06.807 [TestNG-tests-1] DataValidation - Status Code [SEARCHED API BY NAME]: 200
+[INFO ] 2022-10-21 18:56:06.879 [TestNG-tests-1] DataValidation - Status Code [GET ALL SUBSCRIPTION]: {
+    "code": 404,
+    "message": "Not Found",
+    "description": "Requested API with Id 'f7eb5460-b291-482a-982d-7a3c1b26f429' not found",
+    "moreInfo": "",
+    "error": [
+        
+    ]
+}
+[INFO ] 2022-10-21 18:56:17.301 [TestNG-tests-1] DataPopulations - Status Code [SEARCHED API BY NAME]: 200
+[INFO ] 2022-10-21 18:56:17.350 [TestNG-tests-1] DataPopulations - Status Code [CREATE NEW APPLICATION 1]: 409
+[INFO ] 2022-10-21 18:56:17.440 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO API 1]: 409
+[INFO ] 2022-10-21 18:56:17.511 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO GRAPHQL API 1]: 409
+[INFO ] 2022-10-21 18:56:17.553 [TestNG-tests-1] DataPopulations - Status Code [GENERATE ACCESS TOKEN 1]: 409
+[INFO ] 2022-10-21 18:56:17.593 [TestNG-tests-1] DataPopulations - Status Code [CREATE NEW APPLICATION 2]: 409
+[INFO ] 2022-10-21 18:56:17.648 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO API 2]: 409
+[INFO ] 2022-10-21 18:56:17.703 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO GRAPHQL API 2]: 409
+[INFO ] 2022-10-21 18:56:17.745 [TestNG-tests-1] DataPopulations - Status Code [GENERATE ACCESS TOKEN 2]: 409
+[INFO ] 2022-10-21 18:56:17.787 [TestNG-tests-1] DataPopulations - Status Code [CREATE NEW APPLICATION 3]: 409
+[INFO ] 2022-10-21 18:56:17.842 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO API 3]: 409
+[INFO ] 2022-10-21 18:56:17.908 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO GRAPHQL API 3]: 409
+[INFO ] 2022-10-21 18:56:17.951 [TestNG-tests-1] DataPopulations - Status Code [GENERATE ACCESS TOKEN 3]: 409
+[INFO ] 2022-10-21 18:56:17.951 [TestNG-tests-1] DataPopulations - [DEV PORTAL]: Dev Portal tests were completed
+[INFO ] 2022-10-21 18:56:18.175 [TestNG-tests-1] DataPopulations - Status Code [CREATE OPEN API DEFINITION]: 409
+[INFO ] 2022-10-21 18:56:18.223 [TestNG-tests-1] DataPopulations - Status Code [CREATE GRAPHQL API]: 409
+[INFO ] 2022-10-21 18:56:18.523 [TestNG-tests-1] DataPopulations - Status Code [CHANGE GRAPHQL API STATUS]: 200
+[INFO ] 2022-10-21 18:56:18.556 [TestNG-tests-1] DataPopulations - Status Code [SEARCH API]: 200
+[INFO ] 2022-10-21 18:56:18.891 [TestNG-tests-1] DataPopulations - Status Code [UPLOAD API THUMBNAIL]: 201
+[INFO ] 2022-10-21 18:56:19.085 [TestNG-tests-1] DataPopulations - Status Code [CHANGE API STATUS]: 200
+[INFO ] 2022-10-21 18:56:19.085 [TestNG-tests-1] DataPopulations - [PUBLISHER PORTAL]: Dev Portal tests were completed
+[INFO ] 2022-10-21 18:58:18.696 [TestNG-tests-1] DataPopulations - Status Code [SEARCHED API BY NAME]: 200
+[INFO ] 2022-10-21 18:58:18.757 [TestNG-tests-1] DataPopulations - Status Code [CREATE NEW APPLICATION 1]: 409
+[INFO ] 2022-10-21 18:58:18.846 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO API 1]: 409
+[INFO ] 2022-10-21 18:58:18.918 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO GRAPHQL API 1]: 409
+[INFO ] 2022-10-21 18:58:18.961 [TestNG-tests-1] DataPopulations - Status Code [GENERATE ACCESS TOKEN 1]: 409
+[INFO ] 2022-10-21 18:58:19.003 [TestNG-tests-1] DataPopulations - Status Code [CREATE NEW APPLICATION 2]: 409
+[INFO ] 2022-10-21 18:58:19.059 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO API 2]: 409
+[INFO ] 2022-10-21 18:58:19.115 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO GRAPHQL API 2]: 409
+[INFO ] 2022-10-21 18:58:19.157 [TestNG-tests-1] DataPopulations - Status Code [GENERATE ACCESS TOKEN 2]: 409
+[INFO ] 2022-10-21 18:58:19.198 [TestNG-tests-1] DataPopulations - Status Code [CREATE NEW APPLICATION 3]: 409
+[INFO ] 2022-10-21 18:58:19.256 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO API 3]: 409
+[INFO ] 2022-10-21 18:58:19.313 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO GRAPHQL API 3]: 409
+[INFO ] 2022-10-21 18:58:19.356 [TestNG-tests-1] DataPopulations - Status Code [GENERATE ACCESS TOKEN 3]: 409
+[INFO ] 2022-10-21 18:58:19.356 [TestNG-tests-1] DataPopulations - [DEV PORTAL]: Dev Portal tests were completed
+[INFO ] 2022-10-21 18:58:19.574 [TestNG-tests-1] DataPopulations - Status Code [CREATE OPEN API DEFINITION]: 409
+[INFO ] 2022-10-21 18:58:19.621 [TestNG-tests-1] DataPopulations - Status Code [CREATE GRAPHQL API]: 409
+[INFO ] 2022-10-21 18:58:19.907 [TestNG-tests-1] DataPopulations - Status Code [CHANGE GRAPHQL API STATUS]: 200
+[INFO ] 2022-10-21 18:58:19.939 [TestNG-tests-1] DataPopulations - Status Code [SEARCH API]: 200
+[INFO ] 2022-10-21 18:58:20.495 [TestNG-tests-1] DataPopulations - Status Code [UPLOAD API THUMBNAIL]: 201
+[INFO ] 2022-10-21 18:58:20.760 [TestNG-tests-1] DataPopulations - Status Code [CHANGE API STATUS]: 200
+[INFO ] 2022-10-21 18:58:20.760 [TestNG-tests-1] DataPopulations - [PUBLISHER PORTAL]: Dev Portal tests were completed
+[INFO ] 2022-10-21 18:59:27.870 [TestNG-tests-1] DataPopulations - Status Code [SEARCHED API BY NAME]: 200
+[INFO ] 2022-10-21 18:59:27.920 [TestNG-tests-1] DataPopulations - Status Code [CREATE NEW APPLICATION 1]: 409
+[INFO ] 2022-10-21 18:59:27.997 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO API 1]: 409
+[INFO ] 2022-10-21 18:59:28.067 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO GRAPHQL API 1]: 409
+[INFO ] 2022-10-21 18:59:28.108 [TestNG-tests-1] DataPopulations - Status Code [GENERATE ACCESS TOKEN 1]: 409
+[INFO ] 2022-10-21 18:59:28.156 [TestNG-tests-1] DataPopulations - Status Code [CREATE NEW APPLICATION 2]: 409
+[INFO ] 2022-10-21 18:59:28.214 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO API 2]: 409
+[INFO ] 2022-10-21 18:59:28.272 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO GRAPHQL API 2]: 409
+[INFO ] 2022-10-21 18:59:28.325 [TestNG-tests-1] DataPopulations - Status Code [GENERATE ACCESS TOKEN 2]: 409
+[INFO ] 2022-10-21 18:59:28.368 [TestNG-tests-1] DataPopulations - Status Code [CREATE NEW APPLICATION 3]: 409
+[INFO ] 2022-10-21 18:59:28.436 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO API 3]: 409
+[INFO ] 2022-10-21 18:59:28.493 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO GRAPHQL API 3]: 409
+[INFO ] 2022-10-21 18:59:28.544 [TestNG-tests-1] DataPopulations - Status Code [GENERATE ACCESS TOKEN 3]: 409
+[INFO ] 2022-10-21 18:59:28.544 [TestNG-tests-1] DataPopulations - [DEV PORTAL]: Dev Portal tests were completed
+[INFO ] 2022-10-21 18:59:28.835 [TestNG-tests-1] DataPopulations - Status Code [CREATE OPEN API DEFINITION]: 409
+[INFO ] 2022-10-21 18:59:28.879 [TestNG-tests-1] DataPopulations - Status Code [CREATE GRAPHQL API]: 409
+[INFO ] 2022-10-21 18:59:29.268 [TestNG-tests-1] DataPopulations - Status Code [CHANGE GRAPHQL API STATUS]: 200
+[INFO ] 2022-10-21 18:59:29.307 [TestNG-tests-1] DataPopulations - Status Code [SEARCH API]: 200
+[INFO ] 2022-10-21 18:59:29.733 [TestNG-tests-1] DataPopulations - Status Code [UPLOAD API THUMBNAIL]: 201
+[INFO ] 2022-10-21 18:59:29.944 [TestNG-tests-1] DataPopulations - Status Code [CHANGE API STATUS]: 200
+[INFO ] 2022-10-21 18:59:29.944 [TestNG-tests-1] DataPopulations - [PUBLISHER PORTAL]: Dev Portal tests were completed
+[INFO ] 2022-10-21 19:01:52.375 [TestNG-tests-1] DataPopulations - Status Code [SEARCHED API BY NAME]: 200
+[INFO ] 2022-10-21 19:01:52.482 [TestNG-tests-1] DataPopulations - Status Code [CREATE NEW APPLICATION 1]: 409
+[INFO ] 2022-10-21 19:01:52.555 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO API 1]: 409
+[INFO ] 2022-10-21 19:01:52.613 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO GRAPHQL API 1]: 409
+[INFO ] 2022-10-21 19:01:52.649 [TestNG-tests-1] DataPopulations - Status Code [GENERATE ACCESS TOKEN 1]: 409
+[INFO ] 2022-10-21 19:01:52.690 [TestNG-tests-1] DataPopulations - Status Code [CREATE NEW APPLICATION 2]: 409
+[INFO ] 2022-10-21 19:01:52.747 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO API 2]: 409
+[INFO ] 2022-10-21 19:01:52.800 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO GRAPHQL API 2]: 409
+[INFO ] 2022-10-21 19:01:52.848 [TestNG-tests-1] DataPopulations - Status Code [GENERATE ACCESS TOKEN 2]: 409
+[INFO ] 2022-10-21 19:01:52.893 [TestNG-tests-1] DataPopulations - Status Code [CREATE NEW APPLICATION 3]: 409
+[INFO ] 2022-10-21 19:01:52.952 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO API 3]: 409
+[INFO ] 2022-10-21 19:01:53.009 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO GRAPHQL API 3]: 409
+[INFO ] 2022-10-21 19:01:53.052 [TestNG-tests-1] DataPopulations - Status Code [GENERATE ACCESS TOKEN 3]: 409
+[INFO ] 2022-10-21 19:01:53.097 [TestNG-tests-1] DataPopulations - Status Code [GENERATE ACCESS TOKEN 1]: 200
+[INFO ] 2022-10-21 19:01:53.097 [TestNG-tests-1] DataPopulations - [DEV PORTAL]: Dev Portal tests were completed
+[INFO ] 2022-10-21 19:01:53.311 [TestNG-tests-1] DataPopulations - Status Code [CREATE OPEN API DEFINITION]: 409
+[INFO ] 2022-10-21 19:01:53.358 [TestNG-tests-1] DataPopulations - Status Code [CREATE GRAPHQL API]: 409
+[INFO ] 2022-10-21 19:01:53.686 [TestNG-tests-1] DataPopulations - Status Code [CHANGE GRAPHQL API STATUS]: 200
+[INFO ] 2022-10-21 19:01:53.717 [TestNG-tests-1] DataPopulations - Status Code [SEARCH API]: 200
+[INFO ] 2022-10-21 19:01:54.036 [TestNG-tests-1] DataPopulations - Status Code [UPLOAD API THUMBNAIL]: 201
+[INFO ] 2022-10-21 19:01:54.222 [TestNG-tests-1] DataPopulations - Status Code [CHANGE API STATUS]: 200
+[INFO ] 2022-10-21 19:01:54.222 [TestNG-tests-1] DataPopulations - [PUBLISHER PORTAL]: Dev Portal tests were completed
+[INFO ] 2022-10-21 19:26:50.601 [TestNG-tests-1] DataPopulations - Status Code [SEARCHED API BY NAME]: 200
+[INFO ] 2022-10-21 19:26:50.664 [TestNG-tests-1] DataPopulations - Status Code [CREATE NEW APPLICATION 1]: 201
+[INFO ] 2022-10-21 19:26:50.752 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO API 1]: 201
+[INFO ] 2022-10-21 19:26:50.831 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO GRAPHQL API 1]: 201
+[INFO ] 2022-10-21 19:26:50.922 [TestNG-tests-1] DataPopulations - Status Code [GENERATE ACCESS TOKEN 1]: 200
+[INFO ] 2022-10-21 19:26:50.964 [TestNG-tests-1] DataPopulations - Status Code [CREATE NEW APPLICATION 2]: 201
+[INFO ] 2022-10-21 19:26:51.027 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO API 2]: 201
+[INFO ] 2022-10-21 19:26:51.080 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO GRAPHQL API 2]: 201
+[INFO ] 2022-10-21 19:26:51.128 [TestNG-tests-1] DataPopulations - Status Code [GENERATE ACCESS TOKEN 2]: 200
+[INFO ] 2022-10-21 19:26:51.171 [TestNG-tests-1] DataPopulations - Status Code [CREATE NEW APPLICATION 3]: 201
+[INFO ] 2022-10-21 19:26:51.236 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO API 3]: 201
+[INFO ] 2022-10-21 19:26:51.295 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO GRAPHQL API 3]: 201
+[INFO ] 2022-10-21 19:26:51.346 [TestNG-tests-1] DataPopulations - Status Code [GENERATE ACCESS TOKEN 3]: 200
+[INFO ] 2022-10-21 19:26:51.350 [TestNG-tests-1] DataPopulations - [DEV PORTAL]: Dev Portal tests were completed
+[INFO ] 2022-10-21 19:26:51.636 [TestNG-tests-1] DataPopulations - Status Code [CREATE OPEN API DEFINITION]: 409
+[INFO ] 2022-10-21 19:26:51.692 [TestNG-tests-1] DataPopulations - Status Code [CREATE GRAPHQL API]: 409
+[INFO ] 2022-10-21 19:26:51.989 [TestNG-tests-1] DataPopulations - Status Code [CHANGE GRAPHQL API STATUS]: 200
+[INFO ] 2022-10-21 19:26:52.023 [TestNG-tests-1] DataPopulations - Status Code [SEARCH API]: 200
+[INFO ] 2022-10-21 19:26:52.375 [TestNG-tests-1] DataPopulations - Status Code [UPLOAD API THUMBNAIL]: 201
+[INFO ] 2022-10-21 19:26:52.535 [TestNG-tests-1] DataPopulations - Status Code [CHANGE API STATUS]: 200
+[INFO ] 2022-10-21 19:26:52.535 [TestNG-tests-1] DataPopulations - [PUBLISHER PORTAL]: Dev Portal tests were completed
+[INFO ] 2022-10-21 19:47:41.172 [TestNG-tests-1] DataPopulations - Status Code [SEARCHED API BY NAME]: 200
+[INFO ] 2022-10-21 19:47:41.238 [TestNG-tests-1] DataPopulations - Status Code [CREATE NEW APPLICATION 1]: 201
+[INFO ] 2022-10-21 19:47:41.301 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO API 1]: 404
+[INFO ] 2022-10-21 19:47:41.347 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO GRAPHQL API 1]: 404
+[INFO ] 2022-10-21 19:47:41.381 [TestNG-tests-1] DataPopulations - Status Code [GENERATE ACCESS TOKEN 1]: 404
+[INFO ] 2022-10-21 19:47:41.419 [TestNG-tests-1] DataPopulations - Status Code [CREATE NEW APPLICATION 2]: 201
+[INFO ] 2022-10-21 19:47:41.466 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO API 2]: 404
+[INFO ] 2022-10-21 19:47:41.502 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO GRAPHQL API 2]: 404
+[INFO ] 2022-10-21 19:47:41.534 [TestNG-tests-1] DataPopulations - Status Code [GENERATE ACCESS TOKEN 2]: 404
+[INFO ] 2022-10-21 19:47:41.569 [TestNG-tests-1] DataPopulations - Status Code [CREATE NEW APPLICATION 3]: 201
+[INFO ] 2022-10-21 19:47:41.615 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO API 3]: 404
+[INFO ] 2022-10-21 19:47:41.648 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO GRAPHQL API 3]: 404
+[INFO ] 2022-10-21 19:47:41.683 [TestNG-tests-1] DataPopulations - Status Code [GENERATE ACCESS TOKEN 3]: 404
+[INFO ] 2022-10-21 19:47:41.729 [TestNG-tests-1] DataPopulations - Status Code [REMOVE SUSCRIPTION APP 1 OF API 1]: 404
+[INFO ] 2022-10-21 19:47:41.730 [TestNG-tests-1] DataPopulations - [DEV PORTAL]: Dev Portal tests were completed
+[INFO ] 2022-10-21 19:47:42.035 [TestNG-tests-1] DataPopulations - Status Code [CREATE OPEN API DEFINITION]: 409
+[INFO ] 2022-10-21 19:47:42.093 [TestNG-tests-1] DataPopulations - Status Code [CREATE GRAPHQL API]: 409
+[INFO ] 2022-10-21 19:47:42.482 [TestNG-tests-1] DataPopulations - Status Code [CHANGE GRAPHQL API STATUS]: 200
+[INFO ] 2022-10-21 19:47:42.514 [TestNG-tests-1] DataPopulations - Status Code [SEARCH API]: 200
+[INFO ] 2022-10-21 19:47:42.879 [TestNG-tests-1] DataPopulations - Status Code [UPLOAD API THUMBNAIL]: 201
+[INFO ] 2022-10-21 19:47:43.033 [TestNG-tests-1] DataPopulations - Status Code [CHANGE API STATUS]: 200
+[INFO ] 2022-10-21 19:47:43.033 [TestNG-tests-1] DataPopulations - [PUBLISHER PORTAL]: Dev Portal tests were completed
+[INFO ] 2022-10-21 19:48:14.233 [TestNG-tests-1] DataPopulations - Status Code [SEARCHED API BY NAME]: 200
+[INFO ] 2022-10-21 19:48:14.272 [TestNG-tests-1] DataPopulations - Status Code [CREATE NEW APPLICATION 1]: 201
+[INFO ] 2022-10-21 19:48:14.354 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO API 1]: 201
+[INFO ] 2022-10-21 19:48:14.441 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO GRAPHQL API 1]: 201
+[INFO ] 2022-10-21 19:48:14.543 [TestNG-tests-1] DataPopulations - Status Code [GENERATE ACCESS TOKEN 1]: 200
+[INFO ] 2022-10-21 19:48:14.584 [TestNG-tests-1] DataPopulations - Status Code [CREATE NEW APPLICATION 2]: 201
+[INFO ] 2022-10-21 19:48:14.661 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO API 2]: 201
+[INFO ] 2022-10-21 19:48:14.742 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO GRAPHQL API 2]: 201
+[INFO ] 2022-10-21 19:48:14.786 [TestNG-tests-1] DataPopulations - Status Code [GENERATE ACCESS TOKEN 2]: 200
+[INFO ] 2022-10-21 19:48:14.823 [TestNG-tests-1] DataPopulations - Status Code [CREATE NEW APPLICATION 3]: 201
+[INFO ] 2022-10-21 19:48:14.878 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO API 3]: 201
+[INFO ] 2022-10-21 19:48:14.933 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO GRAPHQL API 3]: 201
+[INFO ] 2022-10-21 19:48:14.983 [TestNG-tests-1] DataPopulations - Status Code [GENERATE ACCESS TOKEN 3]: 200
+[INFO ] 2022-10-21 19:48:15.035 [TestNG-tests-1] DataPopulations - Status Code [REMOVE SUSCRIPTION APP 1 OF API 1]: 200
+[INFO ] 2022-10-21 19:48:15.035 [TestNG-tests-1] DataPopulations - [DEV PORTAL]: Dev Portal tests were completed
+[INFO ] 2022-10-21 19:48:15.249 [TestNG-tests-1] DataPopulations - Status Code [CREATE OPEN API DEFINITION]: 409
+[INFO ] 2022-10-21 19:48:15.301 [TestNG-tests-1] DataPopulations - Status Code [CREATE GRAPHQL API]: 409
+[INFO ] 2022-10-21 19:48:15.597 [TestNG-tests-1] DataPopulations - Status Code [CHANGE GRAPHQL API STATUS]: 200
+[INFO ] 2022-10-21 19:48:15.635 [TestNG-tests-1] DataPopulations - Status Code [SEARCH API]: 200
+[INFO ] 2022-10-21 19:48:15.937 [TestNG-tests-1] DataPopulations - Status Code [UPLOAD API THUMBNAIL]: 201
+[INFO ] 2022-10-21 19:48:16.098 [TestNG-tests-1] DataPopulations - Status Code [CHANGE API STATUS]: 200
+[INFO ] 2022-10-21 19:48:16.098 [TestNG-tests-1] DataPopulations - [PUBLISHER PORTAL]: Dev Portal tests were completed
+[INFO ] 2022-10-21 19:51:49.583 [TestNG-tests-1] DataPopulations - Status Code [SEARCHED API BY NAME]: 200
+[INFO ] 2022-10-21 19:51:49.642 [TestNG-tests-1] DataPopulations - Status Code [CREATE NEW APPLICATION 1]: 201
+[INFO ] 2022-10-21 19:51:49.728 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO API 1]: 201
+[INFO ] 2022-10-21 19:51:49.804 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO GRAPHQL API 1]: 201
+[INFO ] 2022-10-21 19:51:49.906 [TestNG-tests-1] DataPopulations - Status Code [GENERATE ACCESS TOKEN 1]: 200
+[INFO ] 2022-10-21 19:51:49.944 [TestNG-tests-1] DataPopulations - Status Code [CREATE NEW APPLICATION 2]: 201
+[INFO ] 2022-10-21 19:51:50.006 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO API 2]: 201
+[INFO ] 2022-10-21 19:51:50.056 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO GRAPHQL API 2]: 201
+[INFO ] 2022-10-21 19:51:50.102 [TestNG-tests-1] DataPopulations - Status Code [GENERATE ACCESS TOKEN 2]: 200
+[INFO ] 2022-10-21 19:51:50.137 [TestNG-tests-1] DataPopulations - Status Code [CREATE NEW APPLICATION 3]: 201
+[INFO ] 2022-10-21 19:51:50.203 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO API 3]: 201
+[INFO ] 2022-10-21 19:51:50.262 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO GRAPHQL API 3]: 201
+[INFO ] 2022-10-21 19:51:50.327 [TestNG-tests-1] DataPopulations - Status Code [GENERATE ACCESS TOKEN 3]: 200
+[INFO ] 2022-10-21 19:51:50.386 [TestNG-tests-1] DataPopulations - Status Code [REMOVE SUSCRIPTION APP 1 OF API 1]: 200
+[INFO ] 2022-10-21 19:51:50.387 [TestNG-tests-1] DataPopulations - [DEV PORTAL]: Dev Portal tests were completed
+[INFO ] 2022-10-21 19:51:50.626 [TestNG-tests-1] DataPopulations - Status Code [CREATE OPEN API DEFINITION]: 409
+[INFO ] 2022-10-21 19:51:50.681 [TestNG-tests-1] DataPopulations - Status Code [CREATE GRAPHQL API]: 409
+[INFO ] 2022-10-21 19:51:51.021 [TestNG-tests-1] DataPopulations - Status Code [CHANGE GRAPHQL API STATUS]: 200
+[INFO ] 2022-10-21 19:51:51.055 [TestNG-tests-1] DataPopulations - Status Code [SEARCH API]: 200
+[INFO ] 2022-10-21 19:51:51.402 [TestNG-tests-1] DataPopulations - Status Code [UPLOAD API THUMBNAIL]: 201
+[INFO ] 2022-10-21 19:51:51.550 [TestNG-tests-1] DataPopulations - Status Code [CHANGE API STATUS]: 200
+[INFO ] 2022-10-21 19:51:51.550 [TestNG-tests-1] DataPopulations - [PUBLISHER PORTAL]: Dev Portal tests were completed
+[INFO ] 2022-10-21 20:03:27.880 [TestNG-tests-1] DataPopulations - Status Code [SEARCHED API BY NAME]: 200
+[INFO ] 2022-10-21 20:03:27.929 [TestNG-tests-1] DataPopulations - Status Code [CREATE NEW APPLICATION 1]: 201
+[INFO ] 2022-10-21 20:03:28.017 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO API 1]: 201
+[INFO ] 2022-10-21 20:03:28.116 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO GRAPHQL API 1]: 201
+[INFO ] 2022-10-21 20:03:28.182 [TestNG-tests-1] DataPopulations - Status Code [GENERATE ACCESS TOKEN 1]: 200
+[INFO ] 2022-10-21 20:03:28.241 [TestNG-tests-1] DataPopulations - Status Code [CREATE NEW APPLICATION 2]: 201
+[INFO ] 2022-10-21 20:03:28.313 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO API 2]: 201
+[INFO ] 2022-10-21 20:03:28.369 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO GRAPHQL API 2]: 201
+[INFO ] 2022-10-21 20:03:28.422 [TestNG-tests-1] DataPopulations - Status Code [GENERATE ACCESS TOKEN 2]: 200
+[INFO ] 2022-10-21 20:03:28.458 [TestNG-tests-1] DataPopulations - Status Code [CREATE NEW APPLICATION 3]: 201
+[INFO ] 2022-10-21 20:03:28.505 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO API 3]: 201
+[INFO ] 2022-10-21 20:03:28.556 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO GRAPHQL API 3]: 201
+[INFO ] 2022-10-21 20:03:28.610 [TestNG-tests-1] DataPopulations - Status Code [GENERATE ACCESS TOKEN 3]: 200
+[INFO ] 2022-10-21 20:03:28.666 [TestNG-tests-1] DataPopulations - Status Code [REMOVE SUSCRIPTION APP 1 OF API 1]: 200
+[INFO ] 2022-10-21 20:03:28.666 [TestNG-tests-1] DataPopulations - [DEV PORTAL]: Dev Portal tests were completed
+[INFO ] 2022-10-21 20:03:28.902 [TestNG-tests-1] DataPopulations - Status Code [CREATE OPEN API DEFINITION]: 409
+[INFO ] 2022-10-21 20:03:28.946 [TestNG-tests-1] DataPopulations - Status Code [CREATE GRAPHQL API]: 409
+[INFO ] 2022-10-21 20:03:29.282 [TestNG-tests-1] DataPopulations - Status Code [CHANGE GRAPHQL API STATUS]: 200
+[INFO ] 2022-10-21 20:03:29.323 [TestNG-tests-1] DataPopulations - Status Code [SEARCH API]: 200
+[INFO ] 2022-10-21 20:03:29.773 [TestNG-tests-1] DataPopulations - Status Code [UPLOAD API THUMBNAIL]: 201
+[INFO ] 2022-10-21 20:03:29.926 [TestNG-tests-1] DataPopulations - Status Code [CHANGE API STATUS]: 200
+[INFO ] 2022-10-21 20:03:29.926 [TestNG-tests-1] DataPopulations - [PUBLISHER PORTAL]: Dev Portal tests were completed

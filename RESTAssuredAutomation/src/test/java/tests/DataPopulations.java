@@ -166,6 +166,8 @@ public class DataPopulations extends BaseTest{
           
           Response subscribeRes = subscription.addNewSubscription("subscribeToApp.json",JsonReadWrite.readApiId(0),JsonReadWrite.readAppId(i));
           logger.info("Status Code [SUBSCRIBE TO API "+(i+1)+"]: "+subscribeRes.statusCode());
+          if(subscribeRes.statusCode()==201) JsonReadWrite.addSubscriptionData(JsonReadWrite.readAppId(i), subscribeRes.jsonPath().prettify() );
+//          System.out.println(JsonReadWrite.getSubscriptionData(JsonReadWrite.readAppId(i)));
           
           Response subscribeGraphQlRes = subscription.addNewSubscription("subscribeToApp.json",JsonReadWrite.readApiId(1),JsonReadWrite.readAppId(i));
           logger.info("Status Code [SUBSCRIBE TO GRAPHQL API "+(i+1)+"]: "+subscribeGraphQlRes.statusCode());
@@ -174,6 +176,10 @@ public class DataPopulations extends BaseTest{
           logger.info("Status Code [GENERATE ACCESS TOKEN "+(i+1)+"]: "+genSandboxKeyRes.statusCode());
           if(genSandboxKeyRes.statusCode()==200) JsonReadWrite.addKeys(JsonReadWrite.readAppId(i), "sandbox", genSandboxKeyRes.jsonPath().prettify());
       }
+      
+      Response removeSubscriptionRes = subscription.removeSubscription(JsonReadWrite.getSubscriptionId(JsonReadWrite.readAppId(0),0));
+      if(removeSubscriptionRes.statusCode() == 200) JsonReadWrite.removeSubscriptionData(JsonReadWrite.readAppId(0), JsonReadWrite.getSubscriptionId(JsonReadWrite.readAppId(0),0));
+      logger.info("Status Code [REMOVE SUSCRIPTION APP 1 OF API "+(1)+"]: "+removeSubscriptionRes.statusCode());
       
       logger.info("[DEV PORTAL]: Dev Portal tests were completed");
       

@@ -3,6 +3,10 @@ package restapi;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.concurrent.Flow.Subscription;
+
+import org.apache.logging.log4j.core.appender.mom.kafka.KafkaAppender;
+import org.codehaus.groovy.transform.sc.StaticCompilationVisitor;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
@@ -112,7 +116,6 @@ public class JsonReadWrite {
        try {
            Object obj = parser.parse(new FileReader(runtimeJsonPath));
            jsonObject = (JSONObject) obj;
-           JSONArray apisList = (JSONArray)jsonObject.get("apps");
            
            int i = 0;
            JSONArray apps = (JSONArray) jsonObject.get("apps");
@@ -164,6 +167,7 @@ public class JsonReadWrite {
            while(!getAppId.trim().equals(appId.trim()) && i < appsArraySize) {
                
                getApp = (JSONObject)apps.get(i);
+               getAppId = (String)getApp.get("appId");
                JSONObject getSandbox = (JSONObject)getApp.get("sandbox");
                JSONObject getToken = (JSONObject)getSandbox.get("token");
                getAccessToken = (String)getToken.get("accessToken");
@@ -177,6 +181,178 @@ public class JsonReadWrite {
         }
        return getAccessToken;
    }
+   
+   public static void addSubscriptionData(String appId, String subscriptionData) {
+       
+       JSONObject jsonObject = new JSONObject();
+       JSONParser parser = new JSONParser();
+       try {
+           Object obj = parser.parse(new FileReader(runtimeJsonPath));
+           jsonObject = (JSONObject) obj;
+           
+           int i = 0;
+           JSONArray apps = (JSONArray) jsonObject.get("apps");
+           JSONObject getApp = (JSONObject)apps.get(i);
+           String getAppId = "";
+           
+           while(!getAppId.trim().equals(appId.trim())) {
+               
+               getApp = (JSONObject)apps.get(i);
+               getAppId = (String)getApp.get("appId");
+               
+               JSONParser parser2 = new JSONParser();
+               JSONObject jsonKeyObject = (JSONObject) parser2.parse(subscriptionData);
+               
+               if(getAppId.trim().equals(appId.trim())) {
+                   
+                   if(getApp.get("subscription")==null) {
+                       JSONArray jsonKeyObjects = new JSONArray();
+                       jsonKeyObjects.add(jsonKeyObject);
+                       getApp.put("subscription", jsonKeyObjects);
+                       
+                   }
+                   else {
+                       JSONArray subscripionListArray = (JSONArray) getApp.get("subscription");
+                       subscripionListArray.add(jsonKeyObject);
+                       getApp.remove("subscription");
+                       getApp.put("subscription", subscripionListArray);
+                       
+                   }
+                   
+                   apps.remove(i);
+                   apps.add(getApp);
+                   jsonObject.remove("apps");
+                   jsonObject.put("apps", apps);
+                   
+                   
+                   break;
+               }
+               i += 1;
+           }
+           
+           try (FileWriter file = new FileWriter(runtimeJsonPath)) {
+               file.write(jsonObject.toJSONString()); 
+               file.flush();
+
+           } catch (IOException e) {
+               e.printStackTrace();
+           }
+        } catch (Exception e) {
+            // TODO: handle exception
+        }
+       
+   }
+   
+   public static String getSubscriptionId (String appId, int subscriptionIndex) {
+       
+       JSONObject jsonObject = new JSONObject();
+       JSONParser parser = new JSONParser();
+       
+       try {
+           Object obj = parser.parse(new FileReader(runtimeJsonPath));
+           jsonObject = (JSONObject) obj;
+           
+           int i = 0;
+           JSONArray apps = (JSONArray) jsonObject.get("apps");
+           JSONObject getApp = (JSONObject)apps.get(i);
+           String getAppId = "";
+           
+//           System.out.println(appId);
+//           System.out.println(getAppId);
+           while(!getAppId.trim().equals(appId.trim())) {
+               
+               getApp = (JSONObject)apps.get(i);
+               getAppId = (String)getApp.get("appId");
+               
+               if(getAppId.trim().equals(appId.trim())) {
+                   
+                   
+                   JSONArray subscriptionData = (JSONArray)getApp.get("subscription");
+                   JSONObject subscription = (JSONObject)subscriptionData.get(subscriptionIndex);
+                   String subscriptionId = (String)subscription.get("subscriptionId");
+                   
+                   return subscriptionId;
+                   
+               }
+               i += 1;
+           }
+        } catch (Exception e) {
+            // TODO: handle exception
+        }
+       return "";
+   } 
+
+   
+   
+   public static String removeSubscriptionData (String appId, String subscriptionId) {
+       
+       JSONObject jsonObject = new JSONObject();
+       JSONParser parser = new JSONParser();
+       
+       try {
+           Object obj = parser.parse(new FileReader(runtimeJsonPath));
+           jsonObject = (JSONObject) obj;
+           
+           int i = 0;
+           JSONArray apps = (JSONArray) jsonObject.get("apps");
+           JSONObject getApp = (JSONObject)apps.get(i);
+           String getAppId = "";
+           
+//           System.out.println(appId);
+//           System.out.println(getAppId);
+           while(!getAppId.trim().equals(appId.trim())) {
+               
+               getApp = (JSONObject)apps.get(i);
+               getAppId = (String)getApp.get("appId");
+               
+               System.out.println(1);
+               
+               if(getAppId.trim().equals(appId.trim())) {
+                   
+                   System.out.println(2);
+                   
+                   int k = 0;
+                   
+                   JSONArray subscriptionData = (JSONArray)getApp.get("subscription");
+                   JSONObject subscription = (JSONObject)subscriptionData.get(k);
+                   String getSubscriptionId = "";
+                   
+                   
+                   while(!getSubscriptionId.trim().equals(subscriptionId.trim())) {
+                       
+                       System.out.println(3);
+                       subscription = (JSONObject)subscriptionData.get(k);
+                       getSubscriptionId = (String)subscription.get("subscriptionId");
+                       
+                       if(getSubscriptionId.trim().equals(subscriptionId.trim())) {
+                           System.out.println(4);
+                           subscriptionData.remove(k);
+                           getApp.remove("subscription");
+                           getApp.put("subscription", subscriptionData);
+                           apps.remove(i);
+                           apps.add(getApp);
+                           jsonObject.remove("apps");
+                           jsonObject.put("apps", apps);
+                           
+                           break;
+                       }
+                       
+                       
+                       
+                       
+                       
+                       k += 1;
+                   }
+                   break;
+                   
+               }
+               i += 1;
+           }
+        } catch (Exception e) {
+            // TODO: handle exception
+        }
+       return "";
+   } 
   
    
 }
