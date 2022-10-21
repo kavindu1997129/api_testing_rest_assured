@@ -3,7 +3,7 @@
     "throttlingPolicy": "Unlimited",
     "description": "Sample calculator application",
     "tokenType": "JWT",
-    "groups": [],
+    "groups": ["Intuit"],
     "attributes": {},
     "subscriptionScopes": []
   }

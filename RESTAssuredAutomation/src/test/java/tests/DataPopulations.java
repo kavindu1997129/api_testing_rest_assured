@@ -50,7 +50,7 @@ public class DataPopulations extends BaseTest{
 //      RemoteUserStore rUserStore = new RemoteUserStore(accessToken,baseURL);
 //      
 //      TenantAdmin tenantAdmin = new TenantAdmin("test1_admin@test1_tenant.com", "test1_admin");
-//      rUserStore.addRole(addRoleRequest,tenantAdmin);
+////      rUserStore.addRole(addRoleRequest,tenantAdmin);
 //      rUserStore.addUser(addUserRequest,tenantAdmin);
 //      
 //      logger.info("[USER STORE]: User store related tests were completed");
@@ -133,8 +133,6 @@ public class DataPopulations extends BaseTest{
       
   }
   
-  
-  
   @Test
   @Parameters({"tenantAdminUser","tenantAdminUserPassword","apiSearchingKeyWord",
       "appPayloadListAsString", "genarateKeyPayloadListAsString"})  
@@ -159,7 +157,7 @@ public class DataPopulations extends BaseTest{
       DevPortal.ApplicationKeys appKeys = new DevPortal.ApplicationKeys(accessToken, ApimVersions.APIM_3_2);
       DevPortal.Subscriptions subscription = new DevPortal.Subscriptions(accessToken, ApimVersions.APIM_3_2);
       
-      for(int i = 0 ; i < 3 ; i++) {
+      for(int i = 0 ; i < appPayloadList.size() ; i++) {
           
           Response createNewApplicationRes = applications.createNewApplications(appPayloadList.get(i));
           logger.info("Status Code [CREATE NEW APPLICATION "+(i+1)+"]: "+createNewApplicationRes.statusCode());

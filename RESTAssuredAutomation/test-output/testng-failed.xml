@@ -1,19 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
-  <parameter name="checkDomainAvailabilityRequest" value="param-val-not-found"/>
-  <parameter name="retrieveTenantsRequest" value="param-val-not-found"/>
-  <parameter name="deactivateTenantRequest" value="param-val-not-found"/>
-  <parameter name="createTenantRequest" value="param-val-not-found"/>
-  <parameter name="deleteTenantSoapRequest" value="param-val-not-found"/>
-  <test thread-count="5" name="Default test(failed)">
+<suite thread-count="1" parallel="tests" name="Failed suite [CreateData]" guice-stage="DEVELOPMENT">
+  <parameter name="apiLifecycleStatusAction" value="Publish"/>
+  <parameter name="tenantAdminUser" value="creator1_Test@test1_tenant.com"/>
+  <parameter name="apiCount" value="2"/>
+  <parameter name="addRoleRequest" value="addRoleRequest_Creator.xml"/>
+  <parameter name="apiCreationPayload" value="apicretion_payload.json"/>
+  <parameter name="deactivateTenantRequest" value="deactivateTenantSoapRequest.xml"/>
+  <parameter name="deleteTenantSoapRequest" value="deleteTenantSoapRequest.xml"/>
+  <parameter name="authenticateRequest" value="authenticateRequest.xml"/>
+  <parameter name="schemaGraphQlPayload" value="schema_graphql.graphql"/>
+  <parameter name="apiSearchingKeyWord" value="TEST API 1"/>
+  <parameter name="checkDomainAvailabilityRequest" value="checkDomainAvailabilityRequest.xml"/>
+  <parameter name="baseURL" value="https://localhost:9443/"/>
+  <parameter name="addUserRequest" value="addUserRequest_Creator.xml"/>
+  <parameter name="retrieveTenantsRequest" value="retrieveTenantsRequest.xml"/>
+  <parameter name="genarateKeyPayloadListAsString" value="generateSandboxKey.json,generateProdKey.json,generateProdKey.json"/>
+  <parameter name="appPayloadListAsString" value="createNewApplication1.json,createNewApplication2.json,createNewApplication3.json"/>
+  <parameter name="createApiOpenApiDefinition" value="createApiOpenApiDefinition.json"/>
+  <parameter name="createTenantRequest" value="request.xml"/>
+  <parameter name="thumbnailImage" value="thumbnail2.jpg"/>
+  <parameter name="tenantAdminUserPassword" value="creator1_Test"/>
+  <parameter name="apiCretionPayloadGraphQL" value="apicretion_payload_graphQL.json"/>
+  <test thread-count="1" parallel="tests" name="DataPopulations(failed)">
     <classes>
       <class name="tests.DataPopulations">
         <methods>
-          <include name="tenantsManagement"/>
           <include name="initiaization"/>
+          <include name="remoteUserStore" invocation-numbers="0"/>
         </methods>
       </class> <!-- tests.DataPopulations -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- DataPopulations(failed) -->
+</suite> <!-- Failed suite [CreateData] -->

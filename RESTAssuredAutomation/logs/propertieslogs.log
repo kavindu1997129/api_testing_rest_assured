@@ -11346,3 +11346,206 @@
 [INFO ] 2022-10-20 23:20:59.153 [TestNG-tests-1] DataPopulations - Status Code [UPLOAD API THUMBNAIL]: 201
 [INFO ] 2022-10-20 23:20:59.310 [TestNG-tests-1] DataPopulations - Status Code [CHANGE API STATUS]: 200
 [INFO ] 2022-10-20 23:20:59.310 [TestNG-tests-1] DataPopulations - [PUBLISHER PORTAL]: Dev Portal tests were completed
+[INFO ] 2022-10-20 23:28:50.735 [TestNG-tests-1] DataPopulations - Status Code [SEARCHED API BY NAME]: 200
+[INFO ] 2022-10-20 23:28:50.775 [TestNG-tests-1] DataPopulations - Status Code [CREATE NEW APPLICATION 1]: 201
+[INFO ] 2022-10-20 23:28:50.841 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO API 1]: 201
+[INFO ] 2022-10-20 23:28:50.894 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO GRAPHQL API 1]: 201
+[INFO ] 2022-10-20 23:28:50.980 [TestNG-tests-1] DataPopulations - Status Code [GENERATE ACCESS TOKEN 1]: 200
+[INFO ] 2022-10-20 23:28:51.038 [TestNG-tests-1] DataPopulations - Status Code [CREATE NEW APPLICATION 2]: 201
+[INFO ] 2022-10-20 23:28:51.104 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO API 2]: 201
+[INFO ] 2022-10-20 23:28:51.163 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO GRAPHQL API 2]: 201
+[INFO ] 2022-10-20 23:28:51.251 [TestNG-tests-1] DataPopulations - Status Code [GENERATE ACCESS TOKEN 2]: 200
+[INFO ] 2022-10-20 23:28:51.299 [TestNG-tests-1] DataPopulations - Status Code [CREATE NEW APPLICATION 3]: 201
+[INFO ] 2022-10-20 23:28:51.356 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO API 3]: 201
+[INFO ] 2022-10-20 23:28:51.396 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO GRAPHQL API 3]: 201
+[INFO ] 2022-10-20 23:28:51.450 [TestNG-tests-1] DataPopulations - Status Code [GENERATE ACCESS TOKEN 3]: 200
+[INFO ] 2022-10-20 23:28:51.454 [TestNG-tests-1] DataPopulations - [DEV PORTAL]: Dev Portal tests were completed
+[INFO ] 2022-10-20 23:31:09.136 [TestNG-tests-1] DataPopulations - Status Code [SEARCHED API BY NAME]: 200
+[INFO ] 2022-10-20 23:31:09.203 [TestNG-tests-1] DataPopulations - Status Code [CREATE NEW APPLICATION 1]: 201
+[INFO ] 2022-10-20 23:31:09.277 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO API 1]: 201
+[INFO ] 2022-10-20 23:31:09.333 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO GRAPHQL API 1]: 201
+[INFO ] 2022-10-20 23:31:09.424 [TestNG-tests-1] DataPopulations - Status Code [GENERATE ACCESS TOKEN 1]: 200
+[INFO ] 2022-10-20 23:31:09.486 [TestNG-tests-1] DataPopulations - Status Code [CREATE NEW APPLICATION 2]: 201
+[INFO ] 2022-10-20 23:31:09.557 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO API 2]: 201
+[INFO ] 2022-10-20 23:31:09.599 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO GRAPHQL API 2]: 201
+[INFO ] 2022-10-20 23:31:09.672 [TestNG-tests-1] DataPopulations - Status Code [GENERATE ACCESS TOKEN 2]: 200
+[INFO ] 2022-10-20 23:31:09.719 [TestNG-tests-1] DataPopulations - Status Code [CREATE NEW APPLICATION 3]: 201
+[INFO ] 2022-10-20 23:31:09.781 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO API 3]: 201
+[INFO ] 2022-10-20 23:31:09.824 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO GRAPHQL API 3]: 201
+[INFO ] 2022-10-20 23:31:09.876 [TestNG-tests-1] DataPopulations - Status Code [GENERATE ACCESS TOKEN 3]: 200
+[INFO ] 2022-10-20 23:31:09.881 [TestNG-tests-1] DataPopulations - [DEV PORTAL]: Dev Portal tests were completed
+[INFO ] 2022-10-20 23:34:43.460 [TestNG-tests-1] DataPopulations - Status Code [SEARCHED API BY NAME]: 200
+[INFO ] 2022-10-20 23:34:43.525 [TestNG-tests-1] DataPopulations - Status Code [CREATE NEW APPLICATION 1]: 201
+[INFO ] 2022-10-20 23:34:43.605 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO API 1]: 201
+[INFO ] 2022-10-20 23:34:43.654 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO GRAPHQL API 1]: 201
+[INFO ] 2022-10-20 23:34:43.737 [TestNG-tests-1] DataPopulations - Status Code [GENERATE ACCESS TOKEN 1]: 200
+[INFO ] 2022-10-20 23:34:43.777 [TestNG-tests-1] DataPopulations - Status Code [CREATE NEW APPLICATION 2]: 201
+[INFO ] 2022-10-20 23:34:43.836 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO API 2]: 201
+[INFO ] 2022-10-20 23:34:43.889 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO GRAPHQL API 2]: 201
+[INFO ] 2022-10-20 23:34:44.025 [TestNG-tests-1] DataPopulations - Status Code [GENERATE ACCESS TOKEN 2]: 200
+[INFO ] 2022-10-20 23:34:44.077 [TestNG-tests-1] DataPopulations - Status Code [CREATE NEW APPLICATION 3]: 201
+[INFO ] 2022-10-20 23:34:44.150 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO API 3]: 201
+[INFO ] 2022-10-20 23:34:44.217 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO GRAPHQL API 3]: 201
+[INFO ] 2022-10-20 23:34:44.286 [TestNG-tests-1] DataPopulations - Status Code [GENERATE ACCESS TOKEN 3]: 200
+[INFO ] 2022-10-20 23:34:44.286 [TestNG-tests-1] DataPopulations - [DEV PORTAL]: Dev Portal tests were completed
+[INFO ] 2022-10-20 23:34:44.578 [TestNG-tests-1] DataPopulations - Status Code [CREATE OPEN API DEFINITION]: 409
+[INFO ] 2022-10-20 23:34:44.623 [TestNG-tests-1] DataPopulations - Status Code [CREATE GRAPHQL API]: 409
+[INFO ] 2022-10-20 23:34:44.994 [TestNG-tests-1] DataPopulations - Status Code [CHANGE GRAPHQL API STATUS]: 200
+[INFO ] 2022-10-20 23:34:45.075 [TestNG-tests-1] DataPopulations - Status Code [SEARCH API]: 200
+[INFO ] 2022-10-20 23:34:45.451 [TestNG-tests-1] DataPopulations - Status Code [UPLOAD API THUMBNAIL]: 201
+[INFO ] 2022-10-20 23:34:45.647 [TestNG-tests-1] DataPopulations - Status Code [CHANGE API STATUS]: 200
+[INFO ] 2022-10-20 23:34:45.648 [TestNG-tests-1] DataPopulations - [PUBLISHER PORTAL]: Dev Portal tests were completed
+[INFO ] 2022-10-20 23:35:52.356 [TestNG-tests-1] DataPopulations - Status Code [SEARCHED API BY NAME]: 200
+[INFO ] 2022-10-20 23:35:52.402 [TestNG-tests-1] DataPopulations - Status Code [CREATE NEW APPLICATION 1]: 201
+[INFO ] 2022-10-20 23:35:52.468 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO API 1]: 201
+[INFO ] 2022-10-20 23:35:52.519 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO GRAPHQL API 1]: 201
+[INFO ] 2022-10-20 23:35:52.591 [TestNG-tests-1] DataPopulations - Status Code [GENERATE ACCESS TOKEN 1]: 200
+[INFO ] 2022-10-20 23:35:52.646 [TestNG-tests-1] DataPopulations - Status Code [CREATE NEW APPLICATION 2]: 201
+[INFO ] 2022-10-20 23:35:52.699 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO API 2]: 201
+[INFO ] 2022-10-20 23:35:52.749 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO GRAPHQL API 2]: 201
+[INFO ] 2022-10-20 23:35:52.807 [TestNG-tests-1] DataPopulations - Status Code [GENERATE ACCESS TOKEN 2]: 200
+[INFO ] 2022-10-20 23:35:52.845 [TestNG-tests-1] DataPopulations - Status Code [CREATE NEW APPLICATION 3]: 201
+[INFO ] 2022-10-20 23:35:52.898 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO API 3]: 201
+[INFO ] 2022-10-20 23:35:52.947 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO GRAPHQL API 3]: 201
+[INFO ] 2022-10-20 23:35:53.008 [TestNG-tests-1] DataPopulations - Status Code [GENERATE ACCESS TOKEN 3]: 200
+[INFO ] 2022-10-20 23:35:53.015 [TestNG-tests-1] DataPopulations - [DEV PORTAL]: Dev Portal tests were completed
+[INFO ] 2022-10-20 23:35:53.252 [TestNG-tests-1] DataPopulations - Status Code [CREATE OPEN API DEFINITION]: 409
+[INFO ] 2022-10-20 23:35:53.297 [TestNG-tests-1] DataPopulations - Status Code [CREATE GRAPHQL API]: 409
+[INFO ] 2022-10-20 23:35:53.569 [TestNG-tests-1] DataPopulations - Status Code [CHANGE GRAPHQL API STATUS]: 200
+[INFO ] 2022-10-20 23:35:53.601 [TestNG-tests-1] DataPopulations - Status Code [SEARCH API]: 200
+[INFO ] 2022-10-20 23:35:53.973 [TestNG-tests-1] DataPopulations - Status Code [UPLOAD API THUMBNAIL]: 201
+[INFO ] 2022-10-20 23:35:54.246 [TestNG-tests-1] DataPopulations - Status Code [CHANGE API STATUS]: 200
+[INFO ] 2022-10-20 23:35:54.246 [TestNG-tests-1] DataPopulations - [PUBLISHER PORTAL]: Dev Portal tests were completed
+[INFO ] 2022-10-20 23:36:06.719 [TestNG-tests-1] DataPopulations - Status Code [SEARCHED API BY NAME]: 200
+[INFO ] 2022-10-20 23:36:06.765 [TestNG-tests-1] DataPopulations - Status Code [CREATE NEW APPLICATION 1]: 409
+[INFO ] 2022-10-20 23:36:06.840 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO API 1]: 409
+[INFO ] 2022-10-20 23:36:06.905 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO GRAPHQL API 1]: 409
+[INFO ] 2022-10-20 23:36:06.952 [TestNG-tests-1] DataPopulations - Status Code [GENERATE ACCESS TOKEN 1]: 409
+[INFO ] 2022-10-20 23:36:07.001 [TestNG-tests-1] DataPopulations - Status Code [CREATE NEW APPLICATION 2]: 409
+[INFO ] 2022-10-20 23:36:07.069 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO API 2]: 409
+[INFO ] 2022-10-20 23:36:07.152 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO GRAPHQL API 2]: 409
+[INFO ] 2022-10-20 23:36:07.191 [TestNG-tests-1] DataPopulations - Status Code [GENERATE ACCESS TOKEN 2]: 409
+[INFO ] 2022-10-20 23:36:07.232 [TestNG-tests-1] DataPopulations - Status Code [CREATE NEW APPLICATION 3]: 409
+[INFO ] 2022-10-20 23:36:07.290 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO API 3]: 409
+[INFO ] 2022-10-20 23:36:07.333 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO GRAPHQL API 3]: 409
+[INFO ] 2022-10-20 23:36:07.375 [TestNG-tests-1] DataPopulations - Status Code [GENERATE ACCESS TOKEN 3]: 409
+[INFO ] 2022-10-20 23:36:07.376 [TestNG-tests-1] DataPopulations - [DEV PORTAL]: Dev Portal tests were completed
+[INFO ] 2022-10-20 23:36:07.594 [TestNG-tests-1] DataPopulations - Status Code [CREATE OPEN API DEFINITION]: 409
+[INFO ] 2022-10-20 23:36:07.644 [TestNG-tests-1] DataPopulations - Status Code [CREATE GRAPHQL API]: 409
+[INFO ] 2022-10-20 23:36:07.876 [TestNG-tests-1] DataPopulations - Status Code [CHANGE GRAPHQL API STATUS]: 200
+[INFO ] 2022-10-20 23:36:07.903 [TestNG-tests-1] DataPopulations - Status Code [SEARCH API]: 200
+[INFO ] 2022-10-20 23:36:08.329 [TestNG-tests-1] DataPopulations - Status Code [UPLOAD API THUMBNAIL]: 201
+[INFO ] 2022-10-20 23:36:08.583 [TestNG-tests-1] DataPopulations - Status Code [CHANGE API STATUS]: 200
+[INFO ] 2022-10-20 23:36:08.583 [TestNG-tests-1] DataPopulations - [PUBLISHER PORTAL]: Dev Portal tests were completed
+[INFO ] 2022-10-21 00:58:02.071 [TestNG-tests-1] DataPopulations - Status Code [SEARCHED API BY NAME]: 200
+[INFO ] 2022-10-21 00:58:02.353 [TestNG-tests-1] DataPopulations - Status Code [CREATE NEW APPLICATION 1]: 201
+[INFO ] 2022-10-21 00:58:02.507 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO API 1]: 201
+[INFO ] 2022-10-21 00:58:02.621 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO GRAPHQL API 1]: 201
+[INFO ] 2022-10-21 00:58:03.644 [TestNG-tests-1] DataPopulations - Status Code [GENERATE ACCESS TOKEN 1]: 200
+[INFO ] 2022-10-21 00:58:03.707 [TestNG-tests-1] DataPopulations - Status Code [CREATE NEW APPLICATION 2]: 201
+[INFO ] 2022-10-21 00:58:03.814 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO API 2]: 201
+[INFO ] 2022-10-21 00:58:03.892 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO GRAPHQL API 2]: 201
+[INFO ] 2022-10-21 00:58:03.971 [TestNG-tests-1] DataPopulations - Status Code [GENERATE ACCESS TOKEN 2]: 200
+[INFO ] 2022-10-21 00:58:04.035 [TestNG-tests-1] DataPopulations - Status Code [CREATE NEW APPLICATION 3]: 201
+[INFO ] 2022-10-21 00:58:04.149 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO API 3]: 201
+[INFO ] 2022-10-21 00:58:04.221 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO GRAPHQL API 3]: 201
+[INFO ] 2022-10-21 00:58:04.309 [TestNG-tests-1] DataPopulations - Status Code [GENERATE ACCESS TOKEN 3]: 200
+[INFO ] 2022-10-21 00:58:04.316 [TestNG-tests-1] DataPopulations - [DEV PORTAL]: Dev Portal tests were completed
+[INFO ] 2022-10-21 00:58:06.309 [TestNG-tests-1] DataPopulations - Status Code [CREATE OPEN API DEFINITION]: 409
+[INFO ] 2022-10-21 00:58:06.371 [TestNG-tests-1] DataPopulations - Status Code [CREATE GRAPHQL API]: 409
+[INFO ] 2022-10-21 00:58:08.415 [TestNG-tests-1] DataPopulations - Status Code [CHANGE GRAPHQL API STATUS]: 200
+[INFO ] 2022-10-21 00:58:08.526 [TestNG-tests-1] DataPopulations - Status Code [SEARCH API]: 200
+[INFO ] 2022-10-21 00:58:09.126 [TestNG-tests-1] DataPopulations - Status Code [UPLOAD API THUMBNAIL]: 201
+[INFO ] 2022-10-21 00:58:09.517 [TestNG-tests-1] DataPopulations - Status Code [CHANGE API STATUS]: 200
+[INFO ] 2022-10-21 00:58:09.517 [TestNG-tests-1] DataPopulations - [PUBLISHER PORTAL]: Dev Portal tests were completed
+[INFO ] 2022-10-21 02:19:43.895 [TestNG-tests-1] DataPopulations - Status Code [SEARCHED API BY NAME]: 200
+[INFO ] 2022-10-21 02:19:44.009 [TestNG-tests-1] DataPopulations - Status Code [CREATE NEW APPLICATION 1]: 409
+[INFO ] 2022-10-21 02:19:44.128 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO API 1]: 409
+[INFO ] 2022-10-21 02:19:44.199 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO GRAPHQL API 1]: 409
+[INFO ] 2022-10-21 02:19:44.269 [TestNG-tests-1] DataPopulations - Status Code [GENERATE ACCESS TOKEN 1]: 409
+[INFO ] 2022-10-21 02:19:44.316 [TestNG-tests-1] DataPopulations - Status Code [CREATE NEW APPLICATION 2]: 409
+[INFO ] 2022-10-21 02:19:44.379 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO API 2]: 409
+[INFO ] 2022-10-21 02:19:44.430 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO GRAPHQL API 2]: 409
+[INFO ] 2022-10-21 02:19:44.473 [TestNG-tests-1] DataPopulations - Status Code [GENERATE ACCESS TOKEN 2]: 409
+[INFO ] 2022-10-21 02:19:44.518 [TestNG-tests-1] DataPopulations - Status Code [CREATE NEW APPLICATION 3]: 409
+[INFO ] 2022-10-21 02:19:44.583 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO API 3]: 409
+[INFO ] 2022-10-21 02:19:44.645 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO GRAPHQL API 3]: 409
+[INFO ] 2022-10-21 02:19:44.697 [TestNG-tests-1] DataPopulations - Status Code [GENERATE ACCESS TOKEN 3]: 409
+[INFO ] 2022-10-21 02:19:44.697 [TestNG-tests-1] DataPopulations - [DEV PORTAL]: Dev Portal tests were completed
+[INFO ] 2022-10-21 02:19:46.535 [TestNG-tests-1] DataPopulations - Status Code [CREATE OPEN API DEFINITION]: 409
+[INFO ] 2022-10-21 02:19:46.597 [TestNG-tests-1] DataPopulations - Status Code [CREATE GRAPHQL API]: 409
+[INFO ] 2022-10-21 02:19:48.243 [TestNG-tests-1] DataPopulations - Status Code [CHANGE GRAPHQL API STATUS]: 200
+[INFO ] 2022-10-21 02:19:48.314 [TestNG-tests-1] DataPopulations - Status Code [SEARCH API]: 200
+[INFO ] 2022-10-21 02:19:48.959 [TestNG-tests-1] DataPopulations - Status Code [UPLOAD API THUMBNAIL]: 201
+[INFO ] 2022-10-21 02:19:49.382 [TestNG-tests-1] DataPopulations - Status Code [CHANGE API STATUS]: 200
+[INFO ] 2022-10-21 02:19:49.382 [TestNG-tests-1] DataPopulations - [PUBLISHER PORTAL]: Dev Portal tests were completed
+[INFO ] 2022-10-21 02:21:35.934 [TestNG-tests-1] DataPopulations - Status Code [SEARCHED API BY NAME]: 200
+[INFO ] 2022-10-21 02:21:36.004 [TestNG-tests-1] DataPopulations - Status Code [CREATE NEW APPLICATION 1]: 409
+[INFO ] 2022-10-21 02:21:36.113 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO API 1]: 409
+[INFO ] 2022-10-21 02:21:36.227 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO GRAPHQL API 1]: 409
+[INFO ] 2022-10-21 02:21:36.301 [TestNG-tests-1] DataPopulations - Status Code [GENERATE ACCESS TOKEN 1]: 409
+[INFO ] 2022-10-21 02:21:36.362 [TestNG-tests-1] DataPopulations - Status Code [CREATE NEW APPLICATION 2]: 409
+[INFO ] 2022-10-21 02:21:36.440 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO API 2]: 409
+[INFO ] 2022-10-21 02:21:36.503 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO GRAPHQL API 2]: 409
+[INFO ] 2022-10-21 02:21:36.555 [TestNG-tests-1] DataPopulations - Status Code [GENERATE ACCESS TOKEN 2]: 409
+[INFO ] 2022-10-21 02:21:36.604 [TestNG-tests-1] DataPopulations - Status Code [CREATE NEW APPLICATION 3]: 409
+[INFO ] 2022-10-21 02:21:36.674 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO API 3]: 409
+[INFO ] 2022-10-21 02:21:36.743 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO GRAPHQL API 3]: 409
+[INFO ] 2022-10-21 02:21:36.797 [TestNG-tests-1] DataPopulations - Status Code [GENERATE ACCESS TOKEN 3]: 409
+[INFO ] 2022-10-21 02:21:36.797 [TestNG-tests-1] DataPopulations - [DEV PORTAL]: Dev Portal tests were completed
+[INFO ] 2022-10-21 02:21:37.105 [TestNG-tests-1] DataPopulations - Status Code [CREATE OPEN API DEFINITION]: 409
+[INFO ] 2022-10-21 02:21:37.217 [TestNG-tests-1] DataPopulations - Status Code [CREATE GRAPHQL API]: 409
+[INFO ] 2022-10-21 02:21:37.705 [TestNG-tests-1] DataPopulations - Status Code [CHANGE GRAPHQL API STATUS]: 200
+[INFO ] 2022-10-21 02:21:37.758 [TestNG-tests-1] DataPopulations - Status Code [SEARCH API]: 200
+[INFO ] 2022-10-21 02:21:38.236 [TestNG-tests-1] DataPopulations - Status Code [UPLOAD API THUMBNAIL]: 201
+[INFO ] 2022-10-21 02:21:38.526 [TestNG-tests-1] DataPopulations - Status Code [CHANGE API STATUS]: 200
+[INFO ] 2022-10-21 02:21:38.526 [TestNG-tests-1] DataPopulations - [PUBLISHER PORTAL]: Dev Portal tests were completed
+[INFO ] 2022-10-21 02:21:55.095 [TestNG-tests-1] DataPopulations - Status Code [SEARCHED API BY NAME]: 200
+[INFO ] 2022-10-21 02:21:55.159 [TestNG-tests-1] DataPopulations - Status Code [CREATE NEW APPLICATION 1]: 409
+[INFO ] 2022-10-21 02:21:55.245 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO API 1]: 409
+[INFO ] 2022-10-21 02:21:55.313 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO GRAPHQL API 1]: 409
+[INFO ] 2022-10-21 02:21:55.361 [TestNG-tests-1] DataPopulations - Status Code [GENERATE ACCESS TOKEN 1]: 409
+[INFO ] 2022-10-21 02:21:55.400 [TestNG-tests-1] DataPopulations - Status Code [CREATE NEW APPLICATION 2]: 409
+[INFO ] 2022-10-21 02:21:55.471 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO API 2]: 409
+[INFO ] 2022-10-21 02:21:55.531 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO GRAPHQL API 2]: 409
+[INFO ] 2022-10-21 02:21:55.583 [TestNG-tests-1] DataPopulations - Status Code [GENERATE ACCESS TOKEN 2]: 409
+[INFO ] 2022-10-21 02:21:55.624 [TestNG-tests-1] DataPopulations - Status Code [CREATE NEW APPLICATION 3]: 409
+[INFO ] 2022-10-21 02:21:55.701 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO API 3]: 409
+[INFO ] 2022-10-21 02:21:55.764 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO GRAPHQL API 3]: 409
+[INFO ] 2022-10-21 02:21:55.810 [TestNG-tests-1] DataPopulations - Status Code [GENERATE ACCESS TOKEN 3]: 409
+[INFO ] 2022-10-21 02:21:55.810 [TestNG-tests-1] DataPopulations - [DEV PORTAL]: Dev Portal tests were completed
+[INFO ] 2022-10-21 02:21:56.032 [TestNG-tests-1] DataPopulations - Status Code [CREATE OPEN API DEFINITION]: 409
+[INFO ] 2022-10-21 02:21:56.096 [TestNG-tests-1] DataPopulations - Status Code [CREATE GRAPHQL API]: 409
+[INFO ] 2022-10-21 02:21:56.559 [TestNG-tests-1] DataPopulations - Status Code [CHANGE GRAPHQL API STATUS]: 200
+[INFO ] 2022-10-21 02:21:56.614 [TestNG-tests-1] DataPopulations - Status Code [SEARCH API]: 200
+[INFO ] 2022-10-21 02:21:57.253 [TestNG-tests-1] DataPopulations - Status Code [UPLOAD API THUMBNAIL]: 201
+[INFO ] 2022-10-21 02:21:57.480 [TestNG-tests-1] DataPopulations - Status Code [CHANGE API STATUS]: 200
+[INFO ] 2022-10-21 02:21:57.481 [TestNG-tests-1] DataPopulations - [PUBLISHER PORTAL]: Dev Portal tests were completed
+[INFO ] 2022-10-21 10:30:07.344 [TestNG-tests-1] DataPopulations - Status Code [SEARCHED API BY NAME]: 200
+[INFO ] 2022-10-21 10:30:07.662 [TestNG-tests-1] DataPopulations - Status Code [CREATE NEW APPLICATION 1]: 409
+[INFO ] 2022-10-21 10:30:08.366 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO API 1]: 409
+[INFO ] 2022-10-21 10:30:08.439 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO GRAPHQL API 1]: 409
+[INFO ] 2022-10-21 10:30:08.530 [TestNG-tests-1] DataPopulations - Status Code [GENERATE ACCESS TOKEN 1]: 409
+[INFO ] 2022-10-21 10:30:08.585 [TestNG-tests-1] DataPopulations - Status Code [CREATE NEW APPLICATION 2]: 409
+[INFO ] 2022-10-21 10:30:08.686 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO API 2]: 409
+[INFO ] 2022-10-21 10:30:08.770 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO GRAPHQL API 2]: 409
+[INFO ] 2022-10-21 10:30:08.822 [TestNG-tests-1] DataPopulations - Status Code [GENERATE ACCESS TOKEN 2]: 409
+[INFO ] 2022-10-21 10:30:08.867 [TestNG-tests-1] DataPopulations - Status Code [CREATE NEW APPLICATION 3]: 409
+[INFO ] 2022-10-21 10:30:08.939 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO API 3]: 409
+[INFO ] 2022-10-21 10:30:09.012 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO GRAPHQL API 3]: 409
+[INFO ] 2022-10-21 10:30:09.101 [TestNG-tests-1] DataPopulations - Status Code [GENERATE ACCESS TOKEN 3]: 409
+[INFO ] 2022-10-21 10:30:09.101 [TestNG-tests-1] DataPopulations - [DEV PORTAL]: Dev Portal tests were completed
+[INFO ] 2022-10-21 10:30:11.119 [TestNG-tests-1] DataPopulations - Status Code [CREATE OPEN API DEFINITION]: 409
+[INFO ] 2022-10-21 10:30:11.225 [TestNG-tests-1] DataPopulations - Status Code [CREATE GRAPHQL API]: 409
+[INFO ] 2022-10-21 10:30:13.081 [TestNG-tests-1] DataPopulations - Status Code [CHANGE GRAPHQL API STATUS]: 200
+[INFO ] 2022-10-21 10:30:13.142 [TestNG-tests-1] DataPopulations - Status Code [SEARCH API]: 200
+[INFO ] 2022-10-21 10:30:13.774 [TestNG-tests-1] DataPopulations - Status Code [UPLOAD API THUMBNAIL]: 201
+[INFO ] 2022-10-21 10:30:14.046 [TestNG-tests-1] DataPopulations - Status Code [CHANGE API STATUS]: 200
+[INFO ] 2022-10-21 10:30:14.046 [TestNG-tests-1] DataPopulations - [PUBLISHER PORTAL]: Dev Portal tests were completed
+[INFO ] 2022-10-21 10:30:14.465 [TestNG-tests-1] DataPopulations - [USER STORE]: User store related tests were completed
+[INFO ] 2022-10-21 10:30:14.950 [TestNG-tests-1] DataPopulations - [TENANT MANAGMENT]: Tenant management related tests were completed
+[INFO ] 2022-10-21 10:40:02.060 [TestNG-tests-1] DataValidation - Status Code [SEARCHED API BY NAME]: 200
+[INFO ] 2022-10-21 11:07:36.851 [TestNG-tests-1] DataValidation - Status Code [AVAILABILITY OF APPLICATION 1]: 200
+[INFO ] 2022-10-21 11:07:36.916 [TestNG-tests-1] DataValidation - Status Code [AVAILABILITY OF APPLICATION 2]: 200
+[INFO ] 2022-10-21 11:07:36.964 [TestNG-tests-1] DataValidation - Status Code [AVAILABILITY OF APPLICATION 3]: 200
+[INFO ] 2022-10-21 11:07:37.042 [TestNG-tests-1] DataValidation - Status Code [SEARCHED API BY NAME]: 200

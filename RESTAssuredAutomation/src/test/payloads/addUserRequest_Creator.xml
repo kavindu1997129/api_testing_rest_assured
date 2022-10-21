@@ -3,9 +3,9 @@
    <soapenv:Body>
       <ser:addUser>
          <!--Optional:-->
-         <ser:userName>creator1_Test</ser:userName>
+         <ser:userName>creator2_Test</ser:userName>
          <!--Optional:-->
-         <ser:credential>creator1_Test</ser:credential>
+         <ser:credential>creator2_Test</ser:credential>
          <!--Zero or more repetitions:-->
          <ser:roleList>creatorTest</ser:roleList>
          <!--Zero or more repetitions:-->
@@ -22,7 +22,7 @@
             <xsd:value>Intuit</xsd:value>
          </ser:claims>
          <!--Optional:-->
-         <ser:profileName>creator1_Test_ProfileName</ser:profileName>
+         <ser:profileName>creator2_Test_ProfileName</ser:profileName>
          <!--Optional:-->
          <ser:requirePasswordChange>false</ser:requirePasswordChange>
       </ser:addUser>

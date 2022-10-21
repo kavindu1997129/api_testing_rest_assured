@@ -42,4 +42,13 @@
       </classes>
    </test>
    
+   
+   
+   
+   <test name = "DataValidation">
+      <classes>
+         <class name = "tests.DataValidation" />
+      </classes>
+   </test>
+   
 </suite>

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-10-20T23:20:50 IST" name="CreateData" finished-at="2022-10-20T23:20:59 IST" duration-ms="8566">
+  <suite started-at="2022-10-21T11:07:29 IST" name="ValidateDataAfterMigration" finished-at="2022-10-21T11:07:37 IST" duration-ms="7287">
     <groups>
     </groups>
-    <test started-at="2022-10-20T23:20:50 IST" name="DataPopulations" finished-at="2022-10-20T23:20:59 IST" duration-ms="8566">
-      <class name="tests.DataPopulations">
-        <test-method is-config="true" signature="initiaization(java.lang.String,int)[pri:0, instance:tests.DataPopulations@2611b9a3]" started-at="2022-10-20T23:20:50 IST" name="initiaization" finished-at="2022-10-20T23:20:50 IST" duration-ms="11" status="PASS">
+    <test started-at="2022-10-21T11:07:29 IST" name="DataValidation" finished-at="2022-10-21T11:07:37 IST" duration-ms="7287">
+      <class name="tests.DataValidation">
+        <test-method is-config="true" signature="initiaization(java.lang.String,int)[pri:0, instance:tests.DataValidation@2f9a01c1]" started-at="2022-10-21T11:07:29 IST" name="initiaization" finished-at="2022-10-21T11:07:29 IST" duration-ms="18" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -23,7 +23,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initiaization -->
-        <test-method signature="DevPortal(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.DataPopulations@2611b9a3]" started-at="2022-10-20T23:20:50 IST" name="DevPortal" finished-at="2022-10-20T23:20:58 IST" duration-ms="7329" status="PASS">
+        <test-method signature="testDataValidation(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.DataValidation@2f9a01c1]" started-at="2022-10-21T11:07:29 IST" name="testDataValidation" finished-at="2022-10-21T11:07:37 IST" duration-ms="7262" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -53,44 +53,8 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- DevPortal -->
-        <test-method signature="publisherPortal(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.DataPopulations@2611b9a3]" started-at="2022-10-20T23:20:58 IST" name="publisherPortal" finished-at="2022-10-20T23:20:59 IST" duration-ms="1211" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[creator1_Test@test1_tenant.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[creator1_Test]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[apicretion_payload.json]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[createApiOpenApiDefinition.json]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[thumbnail2.jpg]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[Publish]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- publisherPortal -->
-      </class> <!-- tests.DataPopulations -->
-    </test> <!-- DataPopulations -->
-  </suite> <!-- CreateData -->
+        </test-method> <!-- testDataValidation -->
+      </class> <!-- tests.DataValidation -->
+    </test> <!-- DataValidation -->
+  </suite> <!-- ValidateDataAfterMigration -->
 </testng-results>
