@@ -11,9 +11,9 @@
             <!--Optional:-->
             <xsd:admin>wso2user</xsd:admin>
             <!--Optional:-->
-            <xsd:adminPassword>wso2123</xsd:adminPassword>
+            <xsd:adminPassword>wso2user</xsd:adminPassword>
             <!--Optional:-->
-            <xsd:email>wso2user@test2_wso2.com</xsd:email>
+            <xsd:email>wso2user@test3_wso2.com</xsd:email>
             <!--Optional:-->
             <xsd:firstname>wso2</xsd:firstname>
             <!--Optional:-->
@@ -21,9 +21,9 @@
             <!--Optional:-->
             <xsd:successKey>true</xsd:successKey>
             <!--Optional:-->
-            <xsd:tenantDomain>test2_wso2.com</xsd:tenantDomain>
+            <xsd:tenantDomain>test3_wso2.com</xsd:tenantDomain>
             <!--Optional:-->
-            <xsd:tenantId>4</xsd:tenantId>
+            <xsd:tenantId>5</xsd:tenantId>
             <!--Optional:-->
             <xsd:usagePlan>demo</xsd:usagePlan>
          </ser:tenantInfoBean>

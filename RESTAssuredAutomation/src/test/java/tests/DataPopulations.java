@@ -34,34 +34,34 @@ public class DataPopulations extends BaseTest{
   private static Logger logger = LogManager.getLogger(DataPopulations.class);
   
     
-  @Test
-  @Parameters({"authenticateRequest","addRoleRequest", 
-      "addUserRequest", "adminUserName", "adminPassword",
-      "tenantAdminUserName","tenantAdminPassword"})   
-  public void remoteUserStore(
-          String authenticateRequest, 
-          String addRoleRequest, 
-          String addUserRequest,
-          String adminUserName,
-          String adminPassword,
-          String tenantAdminUsername,
-          String tenantAdminPassword
-          ) throws Exception {
-      
-      authenticationObject.setUsername(adminUserName);
-      authenticationObject.setUserpassword(adminPassword);
-      Authentication authentication = new Authentication(authenticationObject);
-      accessToken = authentication.getAccessToken();
-      
-      RemoteUserStore rUserStore = new RemoteUserStore(accessToken,baseURL);
-      
-      TenantAdmin tenantAdmin = new TenantAdmin(tenantAdminUsername, tenantAdminPassword);
-//      rUserStore.addRole(addRoleRequest,tenantAdmin);
-//      rUserStore.addUser(addUserRequest,tenantAdmin);
-      
-      logger.info("[USER STORE]: User store related tests were completed");
-      
-  }
+//  @Test
+//  @Parameters({"authenticateRequest","addRoleRequest", 
+//      "addUserRequest", "adminUserName", "adminPassword",
+//      "tenantAdminUserName","tenantAdminPassword"})   
+//  public void remoteUserStore(
+//          String authenticateRequest, 
+//          String addRoleRequest, 
+//          String addUserRequest,
+//          String adminUserName,
+//          String adminPassword,
+//          String tenantAdminUsername,
+//          String tenantAdminPassword
+//          ) throws Exception {
+//      
+//      authenticationObject.setUsername(adminUserName);
+//      authenticationObject.setUserpassword(adminPassword);
+//      Authentication authentication = new Authentication(authenticationObject);
+//      accessToken = authentication.getAccessToken();
+//      
+//      RemoteUserStore rUserStore = new RemoteUserStore(accessToken,baseURL);
+//      
+//      TenantAdmin tenantAdmin = new TenantAdmin(tenantAdminUsername, tenantAdminPassword);
+////      rUserStore.addRole(addRoleRequest,tenantAdmin);
+////      rUserStore.addUser(addUserRequest,tenantAdmin);
+//      
+//      logger.info("[USER STORE]: User store related tests were completed");
+//      
+//  }
 	
   @Test
   @Parameters({"createTenantRequest","deactivateTenantRequest", 
@@ -83,13 +83,12 @@ public class DataPopulations extends BaseTest{
       accessToken = authentication.getAccessToken();
       
       TenantManagement tManager = new TenantManagement(accessToken,baseURL);
-      
       TenantAdmin tenantAdmin = new TenantAdmin(adminUserName, adminPassword);
       
       tManager.createTenants(createTenantRequest,tenantAdmin);
-      tManager.deactivateTenants(deactivateTenantRequest,tenantAdmin);
-      tManager.retrieveTenants(retrieveTenantsRequest,tenantAdmin);
-      tManager.checkDomainAvailability(checkDomainAvailabilityRequest,tenantAdmin);
+//      tManager.deactivateTenants(deactivateTenantRequest,tenantAdmin);
+//      tManager.retrieveTenants(retrieveTenantsRequest,tenantAdmin);
+//      tManager.checkDomainAvailability(checkDomainAvailabilityRequest,tenantAdmin);
       
       logger.info("[TENANT MANAGMENT]: Tenant management related tests were completed");
       

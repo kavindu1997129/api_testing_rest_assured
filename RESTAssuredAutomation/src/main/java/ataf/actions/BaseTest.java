@@ -16,15 +16,13 @@ import restapi.Scopes;
 public class BaseTest {
 
 	protected URI baseURL;
-	protected int apiCount;
 	protected AuthenticationObject authenticationObject;
 	
 	
 	@BeforeSuite
-	@Parameters({"baseURL","apiCount"})	
-	public void initiaization(String baseurlParm, int apiCount) throws URISyntaxException {
+	@Parameters({"baseURL"})	
+	public void initiaization(String baseurlParm) throws URISyntaxException {
 		authenticationObject = new AuthenticationObject(); 
-        this.apiCount = apiCount;
         bindBaseURL(baseurlParm);
 		
 	}

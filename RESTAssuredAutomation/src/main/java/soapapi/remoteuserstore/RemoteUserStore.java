@@ -52,9 +52,9 @@ public class RemoteUserStore{
                     .when()
                     .post(endPointUrl);
              
-            XmlPath jsXpath= new XmlPath(response.asString());
-            String rate=jsXpath.getString("GetConversionRateResult");
-            logger.info("[ADD ROLE]: "+rate);
+//            XmlPath jsXpath= new XmlPath(response.asString());
+//            String rate=jsXpath.getString("GetConversionRateResult");
+//            logger.info("[ADD ROLE]: "+rate);
     }
     
     public void addUser(String tenantXmlFileName, TenantAdmin tenantAdmin) throws Exception {
@@ -69,9 +69,9 @@ public class RemoteUserStore{
                     .when()
                     .post(endPointUrl);
              
-            XmlPath jsXpath= new XmlPath(response.asString());
-            String rate=jsXpath.getString("GetConversionRateResult");
-            logger.info("[ADD USER]: "+rate);
+//            XmlPath jsXpath= new XmlPath(response.asString());
+//            String rate=jsXpath.getString("GetConversionRateResult");
+//            logger.info("[ADD USER]: "+rate);
     }
     
     private String getXMLPayload(String tenantXmlFileName){
