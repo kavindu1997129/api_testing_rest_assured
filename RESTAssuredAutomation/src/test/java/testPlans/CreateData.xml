@@ -4,7 +4,6 @@
 
  <!--BASIC DATA-->
  <parameter name="baseURL" value="https://localhost:9443/" />
- <parameter name="apiCount" value="2" />
  <parameter name="adminUserName" value="admin" />
  <parameter name="adminPassword" value="admin" />
  
@@ -22,15 +21,15 @@
  <parameter name="deleteTenantSoapRequest" value="deleteTenantSoapRequest.xml" />
  
  <!--PUBLISHER PORTAL RELATED DATA-->
- <!--parameter name="tenantAdminUserName" value="test1_admin@test1_tenant.com" />
+ <parameter name="tenantAdminUserName" value="test1_admin@test1_tenant.com" />
  <parameter name="tenantAdminPassword" value="test1_admin" />
- <parameter name="tenantAdminUser1" value="creator1_Test@test1_tenant.com" />
- <parameter name="tenantAdminUser1Password" value="creator1_Test" /-->
+ <parameter name="tenantAdminUser" value="creator1_Test@test1_tenant.com" />
+ <parameter name="tenantAdminUserPassword" value="creator1_Test" />
  
- <parameter name="tenantAdminUserName" value="wso2user" />
+ <!--parameter name="tenantAdminUserName" value="wso2user" />
  <parameter name="tenantAdminPassword" value="wso2user" />
- <parameter name="tenantAdminUser1" value="wso2user_creator1@test3_wso2.com" />
- <parameter name="tenantAdminUser1Password" value="wso2user_creator1" />
+ <parameter name="tenantAdminUser1" value="wso2user_creator1@test2_wso2.com" />
+ <parameter name="tenantAdminUser1Password" value="wso2user_creator1" /-->
  <parameter name="apiCreationPayload" value="apicretion_payload.json" />
  <parameter name="createApiOpenApiDefinition" value="createApiOpenApiDefinition.json" />
  <parameter name="thumbnailImage" value="thumbnail2.jpg" />

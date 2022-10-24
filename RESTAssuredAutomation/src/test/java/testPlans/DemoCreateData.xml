@@ -16,23 +16,21 @@
  <parameter name="createTenantRequest" value="demoCreateTenantRequest.xml" />
  
  <!--PUBLISHER PORTAL RELATED DATA-->
- <parameter name="tenantAdminUserName" value="wso2admin@test5_wso2.com" />
+ <parameter name="tenantAdminUserName" value="wso2admin@test7_wso2.com" />
  <parameter name="tenantAdminPassword" value="wso2admin" />
- <parameter name="tenantUser" value="wso2user@test5_wso2.com" />
- <parameter name="tenantUserPassword" value="wso2user" />
- <parameter name="apiCreationPayload" value="apicretion_payload.json" />
- <parameter name="createApiOpenApiDefinition" value="createApiOpenApiDefinition.json" />
+ <parameter name="tenantUserPublisher" value="wso2user@test7_wso2.com" />
+ <parameter name="tenantUserPasswordPublisher" value="wso2user" />
+ <parameter name="apiCreationPayload" value="demoApiCretionPayload.json" />
+ <parameter name="createApiOpenApiDefinition" value="demoCreateApiOpenApiDefinition.json" />
  <parameter name="thumbnailImage" value="thumbnail2.jpg" />
  <parameter name="apiLifecycleStatusAction" value="Publish" />
- <parameter name="schemaGraphQlPayload" value="schema_graphql.graphql" />
- <parameter name="apiCretionPayloadGraphQL" value="apicretion_payload_graphQL.json" />
   
  <!--DEV PORTAL RELATED DATA-->
- <parameter name="tenantUser" value="creator1_Test@test1_tenant.com" />
- <parameter name="tenantUserPassword" value="creator1_Test" />
+ <parameter name="tenantUserCreator" value="wso2user@test7_wso2.com" />
+ <parameter name="tenantUserCreatorPassword" value="wso2user" />
  <parameter name="apiSearchingKeyWord" value="TEST API 1" />
- <parameter name="appPayloadListAsString" value="createNewApplication1.json,createNewApplication2.json,createNewApplication3.json" />
- <parameter name="genarateKeyPayloadListAsString" value="generateSandboxKey.json,generateProdKey.json,generateProdKey.json" />
+ <parameter name="appPayloadListAsString" value="createNewApplication1.json" />
+ <parameter name="genarateKeyPayloadListAsString" value="generateSandboxKey.json" />
  
  
    <test name = "DemoDataPopulation">
