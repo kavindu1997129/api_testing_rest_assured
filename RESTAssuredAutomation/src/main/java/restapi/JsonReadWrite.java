@@ -276,6 +276,8 @@ public class JsonReadWrite {
                }
                i += 1;
            }
+           
+           
         } catch (Exception e) {
             // TODO: handle exception
         }
@@ -298,18 +300,12 @@ public class JsonReadWrite {
            JSONObject getApp = (JSONObject)apps.get(i);
            String getAppId = "";
            
-//           System.out.println(appId);
-//           System.out.println(getAppId);
            while(!getAppId.trim().equals(appId.trim())) {
                
                getApp = (JSONObject)apps.get(i);
                getAppId = (String)getApp.get("appId");
                
-               System.out.println(1);
-               
                if(getAppId.trim().equals(appId.trim())) {
-                   
-                   System.out.println(2);
                    
                    int k = 0;
                    
@@ -320,12 +316,10 @@ public class JsonReadWrite {
                    
                    while(!getSubscriptionId.trim().equals(subscriptionId.trim())) {
                        
-                       System.out.println(3);
                        subscription = (JSONObject)subscriptionData.get(k);
                        getSubscriptionId = (String)subscription.get("subscriptionId");
                        
                        if(getSubscriptionId.trim().equals(subscriptionId.trim())) {
-                           System.out.println(4);
                            subscriptionData.remove(k);
                            getApp.remove("subscription");
                            getApp.put("subscription", subscriptionData);
@@ -334,12 +328,16 @@ public class JsonReadWrite {
                            jsonObject.remove("apps");
                            jsonObject.put("apps", apps);
                            
+                           try (FileWriter file = new FileWriter(runtimeJsonPath)) {
+                               file.write(jsonObject.toJSONString()); 
+                               file.flush();
+
+                           } catch (IOException e) {
+                               e.printStackTrace();
+                           }
+                           
                            break;
                        }
-                       
-                       
-                       
-                       
                        
                        k += 1;
                    }
@@ -347,6 +345,7 @@ public class JsonReadWrite {
                    
                }
                i += 1;
+               
            }
         } catch (Exception e) {
             // TODO: handle exception

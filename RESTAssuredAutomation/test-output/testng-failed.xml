@@ -26,8 +26,8 @@
     <classes>
       <class name="tests.DataPopulations">
         <methods>
+          <include name="DevPortal" invocation-numbers="0"/>
           <include name="initiaization"/>
-          <include name="remoteUserStore" invocation-numbers="0"/>
         </methods>
       </class> <!-- tests.DataPopulations -->
     </classes>

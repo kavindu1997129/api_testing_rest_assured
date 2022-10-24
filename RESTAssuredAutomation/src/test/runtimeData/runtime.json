@@ -1,1 +1,185 @@
-{"apis":[{"apiId":"e29343f4-6531-444f-9713-81568f9601f3"},{"apiId":"4178445e-26b0-4ad2-88d5-2ad42aa58434"}],"apps":[{"appId":"cd3ca7a7-c811-4411-948f-8a58d9266186","sandbox":{"mode":"CREATED","consumerSecret":"UWbk_tArpS5WAcQoOmYr9Xf0zNUa","keyMappingId":"1368fb5d-4a07-46a6-b142-2fc883dc5c99","supportedGrantTypes":["client_credentials"],"keyState":"APPROVED","groupId":null,"callbackUrl":"http:\/\/sample.com\/callback\/url","additionalProperties":{"id_token_expiry_time":3600,"application_access_token_expiry_time":3600,"user_access_token_expiry_time":3600,"refresh_token_expiry_time":86400},"consumerKey":"p1LLD2CAHqic1zOhRG60T9rnC_Ea","keyType":"SANDBOX","keyManager":"Resident Key Manager","token":{"validityTime":3600,"tokenScopes":["default"],"accessToken":"eyJ4NXQiOiJOelV5TmpSbU4yVTROR1UzT0Rjek1XSXhNelUyWXpVek9EVmxORFprTkRZelpXTTRNbUZtTWpRNVlqTTRNV1UzWlRSaVkyTTNOelpqT0RnM1lUSTBaZyIsImtpZCI6Ik56VXlOalJtTjJVNE5HVTNPRGN6TVdJeE16VTJZelV6T0RWbE5EWmtORFl6WldNNE1tRm1NalE1WWpNNE1XVTNaVFJpWTJNM056WmpPRGczWVRJMFpnX1JTMjU2IiwiYWxnIjoiUlMyNTYifQ.eyJzdWIiOiJjcmVhdG9yMV9UZXN0IiwiYXV0IjoiQVBQTElDQVRJT04iLCJhdWQiOiJwMUxMRDJDQUhxaWMxek9oUkc2MFQ5cm5DX0VhIiwibmJmIjoxNjY2MzYyODA4LCJhenAiOiJwMUxMRDJDQUhxaWMxek9oUkc2MFQ5cm5DX0VhIiwic2NvcGUiOiJkZWZhdWx0IiwiaXNzIjoiaHR0cHM6XC9cL2xvY2FsaG9zdDo5NDQzXC9vYXV0aDJcL3Rva2VuIiwiZXhwIjoxNjY2MzY2NDA4LCJpYXQiOjE2NjYzNjI4MDgsImp0aSI6IjkwNTJlMWRkLWEyOWUtNGFhMi05ZTY3LWIyN2NiNzQ3MzU2MSJ9.Ia4HUVGpbCu4LlM8GyGauZeksaFoU9VV9IOfP8Of2AcdfqKdFQqkhTDccccjQGYZ3yKMcyBB3RwB9ALou18FjHX7jd6rUWxc0j2axo_3fWNYNlAwuisKwbWz49L_dTngLs-fDKlJ0bNL6mE8Xy3rBIuTQm1RUEHcDC8PL5VCj5QExEet8le0EhXWVPmOLR4pGz1RbZ-XGsY0k6VGyWyZJQsGE2CCDWdIQEeQ1PiFy1IQHszxEFlZg5uDkmFKp4SPvgg7fhuoqgrSCPZPUFbNu1bfQWSVdsFg0_DyhebkKA0KX38eHi7zLDgXFr8jYuHz6MNz7XC_-F9ETZ15SdeSpQ"}},"subscription":[{"requestedThrottlingPolicy":"Unlimited","redirectionParams":null,"throttlingPolicy":"Unlimited","subscriptionId":"b81317ec-945b-4d41-8aae-6c36b6f2859d","applicationId":"cd3ca7a7-c811-4411-948f-8a58d9266186","apiInfo":{"monetizationLabel":null,"description":null,"throttlingPolicies":[],"type":null,"version":"1.0.0","isSubscriptionAvailable":true,"provider":"creator1_Test@test1_tenant.com","businessInformation":{"technicalOwnerEmail":null,"businessOwnerEmail":null,"businessOwner":null,"technicalOwner":null},"name":"Test API 1","context":"\/t\/test1_tenant.com\/testapi1","advertiseInfo":{"apiOwner":null,"originalStoreUrl":null,"advertised":false},"avgRating":"0.0","id":"e29343f4-6531-444f-9713-81568f9601f3","thumbnailUri":"\/t\/test1_tenant.com\/t\/test1_tenant.com\/registry\/resource\/_system\/governance\/apimgt\/applicationdata\/icons\/creator1_Test-AT-test1_tenant.com\/Test API 1\/1.0.0\/icon","lifeCycleStatus":"PUBLISHED"},"applicationInfo":{"owner":"creator1_Test@test1_tenant.com","name":"TestingApp1","subscriptionCount":1,"description":"Sample calculator application","groups":["Intuit"],"attributes":{},"throttlingPolicy":"Unlimited","applicationId":"cd3ca7a7-c811-4411-948f-8a58d9266186","tokenType":"JWT","status":"APPROVED"},"apiId":"e29343f4-6531-444f-9713-81568f9601f3","status":"UNBLOCKED"}]},{"appId":"ac2378bd-7b87-4fda-a24d-e6305788c7a9","sandbox":{"mode":"CREATED","consumerSecret":"wtSBVrmJiR_kLoFppaYxYU8fKZ4a","keyMappingId":"7226fcb4-9274-4459-a2fd-f04c09cc46b7","supportedGrantTypes":["password"],"keyState":"APPROVED","groupId":null,"callbackUrl":"http:\/\/sample.com\/callback\/url","additionalProperties":{"id_token_expiry_time":3600,"application_access_token_expiry_time":3600,"user_access_token_expiry_time":3600,"refresh_token_expiry_time":86400},"consumerKey":"1Goru9gYdUfV2LUG2lBTa9pAOOwa","keyType":"PRODUCTION","keyManager":"Resident Key Manager","token":{"validityTime":0,"tokenScopes":["N\/A"],"accessToken":""}},"subscription":[{"requestedThrottlingPolicy":"Unlimited","redirectionParams":null,"throttlingPolicy":"Unlimited","subscriptionId":"5f567afa-1c1f-4ce1-81ab-83072d584ad7","applicationId":"ac2378bd-7b87-4fda-a24d-e6305788c7a9","apiInfo":{"monetizationLabel":null,"description":null,"throttlingPolicies":[],"type":null,"version":"1.0.0","isSubscriptionAvailable":true,"provider":"creator1_Test@test1_tenant.com","businessInformation":{"technicalOwnerEmail":null,"businessOwnerEmail":null,"businessOwner":null,"technicalOwner":null},"name":"Test API 1","context":"\/t\/test1_tenant.com\/testapi1","advertiseInfo":{"apiOwner":null,"originalStoreUrl":null,"advertised":false},"avgRating":"0.0","id":"e29343f4-6531-444f-9713-81568f9601f3","thumbnailUri":"\/t\/test1_tenant.com\/t\/test1_tenant.com\/registry\/resource\/_system\/governance\/apimgt\/applicationdata\/icons\/creator1_Test-AT-test1_tenant.com\/Test API 1\/1.0.0\/icon","lifeCycleStatus":"PUBLISHED"},"applicationInfo":{"owner":"creator1_Test@test1_tenant.com","name":"TestingApp2","subscriptionCount":1,"description":"Sample calculator application","groups":[],"attributes":{},"throttlingPolicy":"Unlimited","applicationId":"ac2378bd-7b87-4fda-a24d-e6305788c7a9","tokenType":"JWT","status":"APPROVED"},"apiId":"e29343f4-6531-444f-9713-81568f9601f3","status":"UNBLOCKED"}]},{"appId":"8490feb7-6ebd-4a98-8af6-637e8239523a","sandbox":{"mode":"CREATED","consumerSecret":"WVhszrAYJ1v9MvpStXQA0M1Oiuka","keyMappingId":"b64aa48e-e2d9-4e1a-afdf-8adb18a17554","supportedGrantTypes":["password"],"keyState":"APPROVED","groupId":null,"callbackUrl":"http:\/\/sample.com\/callback\/url","additionalProperties":{"id_token_expiry_time":3600,"application_access_token_expiry_time":3600,"user_access_token_expiry_time":3600,"refresh_token_expiry_time":86400},"consumerKey":"zg88WUVzABcp57UqfKCqNO1rjfYa","keyType":"PRODUCTION","keyManager":"Resident Key Manager","token":{"validityTime":0,"tokenScopes":["N\/A"],"accessToken":""}},"subscription":[{"requestedThrottlingPolicy":"Unlimited","redirectionParams":null,"throttlingPolicy":"Unlimited","subscriptionId":"a7e6b12a-8bc6-4606-a74c-0417a6c7d0fe","applicationId":"8490feb7-6ebd-4a98-8af6-637e8239523a","apiInfo":{"monetizationLabel":null,"description":null,"throttlingPolicies":[],"type":null,"version":"1.0.0","isSubscriptionAvailable":true,"provider":"creator1_Test@test1_tenant.com","businessInformation":{"technicalOwnerEmail":null,"businessOwnerEmail":null,"businessOwner":null,"technicalOwner":null},"name":"Test API 1","context":"\/t\/test1_tenant.com\/testapi1","advertiseInfo":{"apiOwner":null,"originalStoreUrl":null,"advertised":false},"avgRating":"0.0","id":"e29343f4-6531-444f-9713-81568f9601f3","thumbnailUri":"\/t\/test1_tenant.com\/t\/test1_tenant.com\/registry\/resource\/_system\/governance\/apimgt\/applicationdata\/icons\/creator1_Test-AT-test1_tenant.com\/Test API 1\/1.0.0\/icon","lifeCycleStatus":"PUBLISHED"},"applicationInfo":{"owner":"creator1_Test@test1_tenant.com","name":"TestingApp3","subscriptionCount":1,"description":"Sample calculator application","groups":[],"attributes":{},"throttlingPolicy":"Unlimited","applicationId":"8490feb7-6ebd-4a98-8af6-637e8239523a","tokenType":"JWT","status":"APPROVED"},"apiId":"e29343f4-6531-444f-9713-81568f9601f3","status":"UNBLOCKED"}]}]}
+{
+  "apis": [
+    { "apiId": "e29343f4-6531-444f-9713-81568f9601f3" },
+    { "apiId": "4178445e-26b0-4ad2-88d5-2ad42aa58434" }
+  ],
+  "apps": [
+    {
+      "appId": "c1a563a5-33c6-4625-8087-4c0470c27b1d",
+      "sandbox": {
+        "mode": "CREATED",
+        "consumerSecret": "6zAWm4VCmyozbuRcxJheh_Z848ca",
+        "keyMappingId": "f9dff1d6-9c06-40e5-aa62-6d8af8eac65a",
+        "supportedGrantTypes": ["password"],
+        "keyState": "APPROVED",
+        "groupId": null,
+        "callbackUrl": "http://sample.com/callback/url",
+        "additionalProperties": {
+          "id_token_expiry_time": 3600,
+          "application_access_token_expiry_time": 3600,
+          "user_access_token_expiry_time": 3600,
+          "refresh_token_expiry_time": 86400
+        },
+        "consumerKey": "uvrsNNFBf5c0cCDdYKNPYCf_mMga",
+        "keyType": "PRODUCTION",
+        "keyManager": "Resident Key Manager",
+        "token": {
+          "validityTime": 0,
+          "tokenScopes": ["N/A"],
+          "accessToken": ""
+        }
+      },
+      "subscription": [
+        {
+          "requestedThrottlingPolicy": "Unlimited",
+          "redirectionParams": null,
+          "throttlingPolicy": "Unlimited",
+          "subscriptionId": "85e694c6-bb63-4438-9d83-9bf7df023936",
+          "applicationId": "c1a563a5-33c6-4625-8087-4c0470c27b1d",
+          "apiInfo": {
+            "monetizationLabel": null,
+            "description": null,
+            "throttlingPolicies": [],
+            "type": null,
+            "version": "1.0.0",
+            "isSubscriptionAvailable": true,
+            "provider": "creator1_Test@test1_tenant.com",
+            "businessInformation": {
+              "technicalOwnerEmail": null,
+              "businessOwnerEmail": null,
+              "businessOwner": null,
+              "technicalOwner": null
+            },
+            "name": "Test API 1",
+            "context": "/t/test1_tenant.com/testapi1",
+            "advertiseInfo": {
+              "apiOwner": null,
+              "originalStoreUrl": null,
+              "advertised": false
+            },
+            "avgRating": "0.0",
+            "id": "e29343f4-6531-444f-9713-81568f9601f3",
+            "thumbnailUri": "/t/test1_tenant.com/t/test1_tenant.com/registry/resource/_system/governance/apimgt/applicationdata/icons/creator1_Test-AT-test1_tenant.com/Test API 1/1.0.0/icon",
+            "lifeCycleStatus": "PUBLISHED"
+          },
+          "applicationInfo": {
+            "owner": "creator1_Test@test1_tenant.com",
+            "name": "TestingApp2",
+            "subscriptionCount": 1,
+            "description": "Sample calculator application",
+            "groups": [],
+            "attributes": {},
+            "throttlingPolicy": "Unlimited",
+            "applicationId": "c1a563a5-33c6-4625-8087-4c0470c27b1d",
+            "tokenType": "JWT",
+            "status": "APPROVED"
+          },
+          "apiId": "e29343f4-6531-444f-9713-81568f9601f3",
+          "status": "UNBLOCKED"
+        }
+      ]
+    },
+    {
+      "appId": "640a7a34-ae0f-4159-8f7d-0f0179df88e5",
+      "sandbox": {
+        "mode": "CREATED",
+        "consumerSecret": "kXYyaKZ6sSJdcOoEQd3ftcdE11Qa",
+        "keyMappingId": "f102fa78-7add-4e76-a0b1-2681fe1d0c0e",
+        "supportedGrantTypes": ["password"],
+        "keyState": "APPROVED",
+        "groupId": null,
+        "callbackUrl": "http://sample.com/callback/url",
+        "additionalProperties": {
+          "id_token_expiry_time": 3600,
+          "application_access_token_expiry_time": 3600,
+          "user_access_token_expiry_time": 3600,
+          "refresh_token_expiry_time": 86400
+        },
+        "consumerKey": "g8tfgUqR2bAvoYKWWSC523heGMca",
+        "keyType": "PRODUCTION",
+        "keyManager": "Resident Key Manager",
+        "token": {
+          "validityTime": 0,
+          "tokenScopes": ["N/A"],
+          "accessToken": ""
+        }
+      },
+      "subscription": [
+        {
+          "requestedThrottlingPolicy": "Unlimited",
+          "redirectionParams": null,
+          "throttlingPolicy": "Unlimited",
+          "subscriptionId": "1e53f1a8-0f30-489a-8e1a-a449d5c8e5f0",
+          "applicationId": "640a7a34-ae0f-4159-8f7d-0f0179df88e5",
+          "apiInfo": {
+            "monetizationLabel": null,
+            "description": null,
+            "throttlingPolicies": [],
+            "type": null,
+            "version": "1.0.0",
+            "isSubscriptionAvailable": true,
+            "provider": "creator1_Test@test1_tenant.com",
+            "businessInformation": {
+              "technicalOwnerEmail": null,
+              "businessOwnerEmail": null,
+              "businessOwner": null,
+              "technicalOwner": null
+            },
+            "name": "Test API 1",
+            "context": "/t/test1_tenant.com/testapi1",
+            "advertiseInfo": {
+              "apiOwner": null,
+              "originalStoreUrl": null,
+              "advertised": false
+            },
+            "avgRating": "0.0",
+            "id": "e29343f4-6531-444f-9713-81568f9601f3",
+            "thumbnailUri": "/t/test1_tenant.com/t/test1_tenant.com/registry/resource/_system/governance/apimgt/applicationdata/icons/creator1_Test-AT-test1_tenant.com/Test API 1/1.0.0/icon",
+            "lifeCycleStatus": "PUBLISHED"
+          },
+          "applicationInfo": {
+            "owner": "creator1_Test@test1_tenant.com",
+            "name": "TestingApp3",
+            "subscriptionCount": 1,
+            "description": "Sample calculator application",
+            "groups": [],
+            "attributes": {},
+            "throttlingPolicy": "Unlimited",
+            "applicationId": "640a7a34-ae0f-4159-8f7d-0f0179df88e5",
+            "tokenType": "JWT",
+            "status": "APPROVED"
+          },
+          "apiId": "e29343f4-6531-444f-9713-81568f9601f3",
+          "status": "UNBLOCKED"
+        }
+      ]
+    },
+    {
+      "appId": "c31b26d4-6d55-44c5-b1a1-cca1e4c14be8",
+      "sandbox": {
+        "mode": "CREATED",
+        "consumerSecret": "Pfpi2LaykeXYIX45yW7rwlkYT1wa",
+        "keyMappingId": "f2654700-4aa9-4566-a8b4-dac08a0eca8f",
+        "supportedGrantTypes": ["client_credentials"],
+        "keyState": "APPROVED",
+        "groupId": null,
+        "callbackUrl": "http://sample.com/callback/url",
+        "additionalProperties": {
+          "id_token_expiry_time": 3600,
+          "application_access_token_expiry_time": 3600,
+          "user_access_token_expiry_time": 3600,
+          "refresh_token_expiry_time": 86400
+        },
+        "consumerKey": "Kp_rMlWADXQEZfp2gX8hPISzZ8Ia",
+        "keyType": "SANDBOX",
+        "keyManager": "Resident Key Manager",
+        "token": {
+          "validityTime": 3600,
+          "tokenScopes": ["default"],
+          "accessToken": "eyJ4NXQiOiJOelV5TmpSbU4yVTROR1UzT0Rjek1XSXhNelUyWXpVek9EVmxORFprTkRZelpXTTRNbUZtTWpRNVlqTTRNV1UzWlRSaVkyTTNOelpqT0RnM1lUSTBaZyIsImtpZCI6Ik56VXlOalJtTjJVNE5HVTNPRGN6TVdJeE16VTJZelV6T0RWbE5EWmtORFl6WldNNE1tRm1NalE1WWpNNE1XVTNaVFJpWTJNM056WmpPRGczWVRJMFpnX1JTMjU2IiwiYWxnIjoiUlMyNTYifQ.eyJzdWIiOiJjcmVhdG9yMV9UZXN0IiwiYXV0IjoiQVBQTElDQVRJT04iLCJhdWQiOiJLcF9yTWxXQURYUUVaZnAyZ1g4aFBJU3paOElhIiwibmJmIjoxNjY2NjI4MzQ2LCJhenAiOiJLcF9yTWxXQURYUUVaZnAyZ1g4aFBJU3paOElhIiwic2NvcGUiOiJkZWZhdWx0IiwiaXNzIjoiaHR0cHM6XC9cL2xvY2FsaG9zdDo5NDQzXC9vYXV0aDJcL3Rva2VuIiwiZXhwIjoxNjY2NjMxOTQ2LCJpYXQiOjE2NjY2MjgzNDYsImp0aSI6IjUwZTYwZWQyLTFkNjgtNDY1ZC05Y2Q3LTM5MTAxNGU1YzQyYiJ9.oLgGf-UBv8wwZ6jwNb2V-9m-kDLYHTsfpKHfgquPEuhBIzc3-uX2fCjUPsd-8F1ZDcfBKo-f4PpG-KpWOiWDxjI3htPqZnl9qC9IAg5BNHmrAe_M7LnThZZgDPaxjcxvcQn5ubIzXIagYS3mENlwAyh9hs7ipoFb7cSdsJbx7J2KDnANwwaKVl6DllG0nYIXRbNZvAn2tsFgy4hRTCt5tnCC2JFDUEpigZ4iz-YrlRlT_T6QF3i_8yrffd_ZutmU0bRU6ej5Rok0s7yWaXc3eX2qWSemF985xCX7EFD503sas54Jo3idRBoaCd1KAuogk3u7R1Fs229HdirWXLFVhg"
+        }
+      },
+      "subscription": []
+    }
+  ]
+}
