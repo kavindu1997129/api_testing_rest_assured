@@ -1,0 +1,24 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name = "ValidateDataAfterMigration" parallel="tests" thread-count="1" verbose="1">
+
+ <!--BASIC DATA-->
+ <parameter name="baseURL" value="https://localhost:9443/" />
+ <parameter name="apiCount" value="2" />
+  
+ <!--DEV PORTAL RELATED DATA-->
+ <parameter name="tenantAdminUser" value="creator1_Test@test1_tenant.com" />
+ <parameter name="tenantAdminUserPassword" value="creator1_Test" />
+ <parameter name="apiSearchingKeyWord" value="TEST API 1" />
+ <parameter name="appPayloadListAsString" value="createNewApplication1.json,createNewApplication2.json,createNewApplication3.json" />
+ <parameter name="genarateKeyPayloadListAsString" value="generateSandboxKey.json,generateProdKey.json,generateProdKey.json" />
+ <parameter name="restApiEndpoint" value="http://localhost:8280/t/test1_tenant.com/testapi1/1.0.0/menu" />
+ <parameter name="graphQlApiEndpoint" value="http://localhost:8080/graphql" />
+ 
+   <test name = "DemoDataValidation">
+      <classes>
+         <class name = "tests.DemoDataValidation" />
+      </classes>
+   </test>
+   
+</suite>
