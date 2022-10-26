@@ -81,6 +81,7 @@ public class DemoDataPopulation extends BaseTest{
       rUserStore.addUser(addUserRequest,tenantAdmin);
       
       logger.info("[USER STORE]: User store related tests were completed");
+      TimeUnit.SECONDS.sleep(4);
       
   }
   
@@ -99,7 +100,7 @@ public class DemoDataPopulation extends BaseTest{
       String accessToken1 = authentication.getAccessToken();
       
       Publisher.Apis api = new Publisher.Apis(accessToken1, ApimVersions.APIM_3_2);
-       
+      
       Response createApiOpenApiDefinitionRes = api.imporOpenAPIDefinition(createApiOpenApiDefinition, apiCreationPayload);
       logger.info("Status Code [CREATE OPEN API DEFINITION]: "+createApiOpenApiDefinitionRes.statusCode());
       String apiId = createApiOpenApiDefinitionRes.jsonPath().get("id");
@@ -114,7 +115,7 @@ public class DemoDataPopulation extends BaseTest{
       Response searchApiRes = api.searchApis();
       logger.info("Status Code [SEARCH API]: "+searchApiRes.statusCode());
       
-      logger.info("[PUBLISHER PORTAL]: Dev Portal tests were completed");
+      logger.info("[PUBLISHER PORTAL]: Publisher Portal tests were completed");
       
   }
   
@@ -146,28 +147,20 @@ public class DemoDataPopulation extends BaseTest{
           
           Response createNewApplicationRes = applications.createNewApplications(appPayloadList.get(i));
           String appId = createNewApplicationRes.jsonPath().get("applicationId"); 
-          if(appId != null && createNewApplicationRes.statusCode()==201) {
-              logger.info("Status Code [CREATE NEW APPLICATION "+(i+1)+"]: "+createNewApplicationRes.statusCode());
-              JsonReadWrite.addAppToJson(appId); 
-              Response subscribeRes = subscription.addNewSubscription("subscribeToApp.json",JsonReadWrite.readApiId(0),JsonReadWrite.readAppId(i));
-              logger.info("Status Code [SUBSCRIBE TO API "+(i+1)+"]: "+subscribeRes.statusCode());
-              if(subscribeRes.statusCode()==201) JsonReadWrite.addSubscriptionData(JsonReadWrite.readAppId(i), subscribeRes.jsonPath().prettify());
-            
-              Response genSandboxKeyRes = appKeys.generateApplicationKeys(JsonReadWrite.readAppId(i), genarateKeyPayload.get(i));
-              logger.info("Status Code [GENERATE ACCESS TOKEN "+(i+1)+"]: "+genSandboxKeyRes.statusCode());
-              if(genSandboxKeyRes.statusCode()==200) JsonReadWrite.addKeys(JsonReadWrite.readAppId(i), "sandbox", genSandboxKeyRes.jsonPath().prettify());        
-          } 
-          else {
-              logger.info("Status Code [CREATE NEW APPLICATION "+(i+1)+"]: API creation failed");
-          }
+          logger.info("Status Code [CREATE NEW APPLICATION "+(i+1)+"]: "+createNewApplicationRes.statusCode());
+          if(appId != null && createNewApplicationRes.statusCode()==201) JsonReadWrite.addAppToJson(appId); 
+                   
+          Response subscribeRes = subscription.addNewSubscription("subscribeToApp.json",JsonReadWrite.readApiId(0),JsonReadWrite.readAppId(i));
+          logger.info("Status Code [SUBSCRIBE TO API "+(i+1)+"]: "+subscribeRes.statusCode());
+          if(subscribeRes.statusCode()==201) JsonReadWrite.addSubscriptionData(JsonReadWrite.readAppId(i), subscribeRes.jsonPath().prettify());
+        
+          Response genSandboxKeyRes = appKeys.generateApplicationKeys(JsonReadWrite.readAppId(i), genarateKeyPayload.get(i));
+          logger.info("Status Code [GENERATE ACCESS TOKEN "+(i+1)+"]: "+genSandboxKeyRes.statusCode());
+          if(genSandboxKeyRes.statusCode()==200) JsonReadWrite.addKeys(JsonReadWrite.readAppId(i), "sandbox", genSandboxKeyRes.jsonPath().prettify());   
            
       }
       
-      Response removeSubscriptionRes = subscription.removeSubscription(JsonReadWrite.getSubscriptionId(JsonReadWrite.readAppId(0),0));
-      if(removeSubscriptionRes.statusCode() == 200) JsonReadWrite.removeSubscriptionData(JsonReadWrite.readAppId(0), JsonReadWrite.getSubscriptionId(JsonReadWrite.readAppId(0),0));
-      logger.info("Status Code [REMOVE SUSCRIPTION APP 3 OF API "+(1)+"]: "+removeSubscriptionRes.statusCode());
-      
-      logger.info("[DEV PORTAL]: Dev Portal tests were completed");
+      logger.info("[DEV PORTAL]: Developer Portal tests were completed");
       
       
   }

@@ -1,33 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-10-25T00:51:18 IST" name="CreateData" finished-at="2022-10-25T00:51:22 IST" duration-ms="3714">
+  <suite started-at="2022-10-26T11:20:24 IST" name="ValidateDataAfterMigration" finished-at="2022-10-26T11:20:29 IST" duration-ms="5079">
     <groups>
     </groups>
-    <test started-at="2022-10-25T00:51:18 IST" name="DataPopulations" finished-at="2022-10-25T00:51:22 IST" duration-ms="3714">
-      <class name="tests.DataPopulations">
-        <test-method is-config="true" signature="initiaization(java.lang.String)[pri:0, instance:tests.DataPopulations@2611b9a3]" started-at="2022-10-25T00:51:18 IST" name="initiaization" finished-at="2022-10-25T00:51:18 IST" duration-ms="11" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[https://localhost:9443/]]>
-              </value>
-            </param>
-          </params>
+    <test started-at="2022-10-26T11:20:24 IST" name="DemoDataValidation" finished-at="2022-10-26T11:20:29 IST" duration-ms="5079">
+      <class name="tests.DemoDataValidation">
+        <test-method is-config="true" signature="initiaization()[pri:0, instance:tests.DemoDataValidation@b968a76]" started-at="2022-10-26T11:20:24 IST" name="initiaization" finished-at="2022-10-26T11:20:24 IST" duration-ms="21" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initiaization -->
-        <test-method signature="DevPortal(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.DataPopulations@2611b9a3]" started-at="2022-10-25T00:51:18 IST" name="DevPortal" finished-at="2022-10-25T00:51:21 IST" duration-ms="2725" status="PASS">
+        <test-method signature="testDataValidation(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.DemoDataValidation@b968a76]" started-at="2022-10-26T11:20:24 IST" name="testDataValidation" finished-at="2022-10-26T11:20:29 IST" duration-ms="5045" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[creator1_Test@test1_tenant.com]]>
+                <![CDATA[creator2_Test@test16_wso2.com]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[creator1_Test]]>
+                <![CDATA[creator2_Test]]>
               </value>
             </param>
             <param index="2">
@@ -37,65 +30,14 @@
             </param>
             <param index="3">
               <value>
-                <![CDATA[createNewApplication1.json,createNewApplication2.json,createNewApplication3.json]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[generateSandboxKey.json,generateProdKey.json,generateProdKey.json]]>
+                <![CDATA[http://localhost:8280/t/test16_wso2.com/test16/1.0.0/menu]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- DevPortal -->
-        <test-method signature="publisherPortal(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.DataPopulations@2611b9a3]" started-at="2022-10-25T00:51:21 IST" name="publisherPortal" finished-at="2022-10-25T00:51:22 IST" duration-ms="960" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[creator1_Test@test1_tenant.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[creator1_Test]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[apicretion_payload.json]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[createApiOpenApiDefinition.json]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[thumbnail2.jpg]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[Publish]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[schema_graphql.graphql]]>
-              </value>
-            </param>
-            <param index="7">
-              <value>
-                <![CDATA[apicretion_payload_graphQL.json]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- publisherPortal -->
-      </class> <!-- tests.DataPopulations -->
-    </test> <!-- DataPopulations -->
-  </suite> <!-- CreateData -->
+        </test-method> <!-- testDataValidation -->
+      </class> <!-- tests.DemoDataValidation -->
+    </test> <!-- DemoDataValidation -->
+  </suite> <!-- ValidateDataAfterMigration -->
 </testng-results>

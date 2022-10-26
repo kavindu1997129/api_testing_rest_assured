@@ -7,6 +7,7 @@
          <!--Optional:-->
          <ser:credential>creator2_Test</ser:credential>
          <!--Zero or more repetitions:-->
+         <ser:roleList>admin</ser:roleList>
          <ser:roleList>creatorTest</ser:roleList>
          <!--Zero or more repetitions:-->
          <ser:claims>

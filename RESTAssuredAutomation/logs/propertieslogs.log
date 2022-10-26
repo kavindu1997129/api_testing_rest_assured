@@ -14381,3 +14381,393 @@
 [INFO ] 2022-10-25 00:51:21.969 [TestNG-tests-1] DataPopulations - Status Code [UPLOAD API THUMBNAIL]: 201
 [INFO ] 2022-10-25 00:51:22.132 [TestNG-tests-1] DataPopulations - Status Code [CHANGE API STATUS]: 200
 [INFO ] 2022-10-25 00:51:22.132 [TestNG-tests-1] DataPopulations - [PUBLISHER PORTAL]: Dev Portal tests were completed
+[INFO ] 2022-10-25 00:54:44.603 [TestNG-tests-1] DataPopulations - [TENANT MANAGMENT]: Tenant management related tests were completed
+[INFO ] 2022-10-25 00:54:44.830 [TestNG-tests-1] DataPopulations - [USER STORE]: User store related tests were completed
+[INFO ] 2022-10-25 00:56:04.629 [TestNG-tests-1] DataPopulations - [TENANT MANAGMENT]: Tenant management related tests were completed
+[INFO ] 2022-10-25 00:56:04.896 [TestNG-tests-1] DataPopulations - [USER STORE]: User store related tests were completed
+[INFO ] 2022-10-25 01:13:47.011 [TestNG-tests-1] DataPopulations - [USER STORE]: User store related tests were completed
+[INFO ] 2022-10-25 01:17:18.669 [TestNG-tests-1] DataPopulations - [USER STORE]: User store related tests were completed
+[INFO ] 2022-10-25 01:18:27.853 [TestNG-tests-1] DataPopulations - [USER STORE]: User store related tests were completed
+[INFO ] 2022-10-25 01:19:22.906 [TestNG-tests-1] DataPopulations - [USER STORE]: User store related tests were completed
+[INFO ] 2022-10-25 01:19:57.333 [TestNG-tests-1] DataPopulations - Status Code [SEARCHED API BY NAME]: 200
+[INFO ] 2022-10-25 01:19:57.451 [TestNG-tests-1] DataPopulations - Status Code [CREATE NEW APPLICATION 1]: 409
+[INFO ] 2022-10-25 01:19:57.794 [TestNG-tests-1] DataPopulations - Status Code [CREATE OPEN API DEFINITION]: 409
+[INFO ] 2022-10-25 01:19:57.854 [TestNG-tests-1] DataPopulations - Status Code [CREATE GRAPHQL API]: 409
+[INFO ] 2022-10-25 01:23:28.796 [TestNG-tests-1] DataPopulations - Status Code [CREATE OPEN API DEFINITION]: 401
+[INFO ] 2022-10-25 01:43:06.558 [TestNG-tests-1] DataPopulations - Status Code [CREATE OPEN API DEFINITION]: 401
+[INFO ] 2022-10-25 01:44:27.136 [TestNG-tests-1] DataPopulations - Status Code [CREATE OPEN API DEFINITION]: 401
+[INFO ] 2022-10-25 01:45:40.038 [TestNG-tests-1] DataPopulations - Status Code [CREATE OPEN API DEFINITION]: 401
+[INFO ] 2022-10-25 01:46:20.828 [TestNG-tests-1] DataPopulations - Status Code [CREATE OPEN API DEFINITION]: 401
+[INFO ] 2022-10-25 01:48:02.919 [TestNG-tests-1] DataPopulations - Status Code [CREATE OPEN API DEFINITION]: 401
+[INFO ] 2022-10-25 01:48:42.006 [TestNG-tests-1] DataPopulations - Status Code [CREATE OPEN API DEFINITION]: 401
+[INFO ] 2022-10-25 01:49:34.021 [TestNG-tests-1] DataPopulations - Status Code [CREATE OPEN API DEFINITION]: 401
+[INFO ] 2022-10-25 01:50:39.010 [TestNG-tests-1] DataPopulations - Status Code [CREATE OPEN API DEFINITION]: 401
+[INFO ] 2022-10-25 01:52:54.497 [TestNG-tests-1] DataPopulations - Status Code [CREATE OPEN API DEFINITION]: 401
+[INFO ] 2022-10-25 01:55:15.117 [TestNG-tests-1] DataPopulations - Status Code [CREATE OPEN API DEFINITION]: 401
+[INFO ] 2022-10-25 01:58:39.526 [TestNG-tests-1] DataPopulations - Status Code [CREATE OPEN API DEFINITION]: 201
+[INFO ] 2022-10-25 01:58:39.785 [TestNG-tests-1] DataPopulations - Status Code [UPLOAD API THUMBNAIL]: 201
+[INFO ] 2022-10-25 01:58:40.139 [TestNG-tests-1] DataPopulations - Status Code [CHANGE API STATUS]: 200
+[INFO ] 2022-10-25 01:58:40.176 [TestNG-tests-1] DataPopulations - Status Code [SEARCH API]: 200
+[INFO ] 2022-10-25 01:58:40.176 [TestNG-tests-1] DataPopulations - [PUBLISHER PORTAL]: Dev Portal tests were completed
+[INFO ] 2022-10-25 02:02:47.393 [TestNG-tests-1] DataPopulations - [USER STORE]: User store related tests were completed
+[INFO ] 2022-10-25 02:02:47.651 [TestNG-tests-1] DataPopulations - Status Code [CREATE OPEN API DEFINITION]: 409
+[INFO ] 2022-10-25 02:03:52.632 [TestNG-tests-1] DataPopulations - [USER STORE]: User store related tests were completed
+[INFO ] 2022-10-25 02:03:53.077 [TestNG-tests-1] DataPopulations - Status Code [CREATE OPEN API DEFINITION]: 201
+[INFO ] 2022-10-25 02:03:53.331 [TestNG-tests-1] DataPopulations - Status Code [UPLOAD API THUMBNAIL]: 201
+[INFO ] 2022-10-25 02:03:53.651 [TestNG-tests-1] DataPopulations - Status Code [CHANGE API STATUS]: 200
+[INFO ] 2022-10-25 02:03:53.676 [TestNG-tests-1] DataPopulations - Status Code [SEARCH API]: 200
+[INFO ] 2022-10-25 02:03:53.677 [TestNG-tests-1] DataPopulations - [PUBLISHER PORTAL]: Dev Portal tests were completed
+[INFO ] 2022-10-25 02:09:33.409 [TestNG-tests-1] DataPopulations - [TENANT MANAGMENT]: Tenant management related tests were completed
+[INFO ] 2022-10-25 02:09:34.714 [TestNG-tests-1] DataPopulations - [USER STORE]: User store related tests were completed
+[INFO ] 2022-10-25 02:09:35.257 [TestNG-tests-1] DataPopulations - Status Code [CREATE OPEN API DEFINITION]: 500
+[INFO ] 2022-10-25 02:10:15.002 [TestNG-tests-1] DataPopulations - [TENANT MANAGMENT]: Tenant management related tests were completed
+[INFO ] 2022-10-25 02:10:15.237 [TestNG-tests-1] DataPopulations - [USER STORE]: User store related tests were completed
+[INFO ] 2022-10-25 02:10:15.707 [TestNG-tests-1] DataPopulations - Status Code [CREATE OPEN API DEFINITION]: 201
+[INFO ] 2022-10-25 02:10:15.970 [TestNG-tests-1] DataPopulations - Status Code [UPLOAD API THUMBNAIL]: 201
+[INFO ] 2022-10-25 02:10:16.258 [TestNG-tests-1] DataPopulations - Status Code [CHANGE API STATUS]: 200
+[INFO ] 2022-10-25 02:10:16.287 [TestNG-tests-1] DataPopulations - Status Code [SEARCH API]: 200
+[INFO ] 2022-10-25 02:10:16.288 [TestNG-tests-1] DataPopulations - [PUBLISHER PORTAL]: Dev Portal tests were completed
+[INFO ] 2022-10-25 02:11:41.405 [TestNG-tests-1] DataPopulations - [TENANT MANAGMENT]: Tenant management related tests were completed
+[INFO ] 2022-10-25 02:11:41.613 [TestNG-tests-1] DataPopulations - [USER STORE]: User store related tests were completed
+[INFO ] 2022-10-25 02:11:41.849 [TestNG-tests-1] DataPopulations - Status Code [CREATE OPEN API DEFINITION]: 409
+[INFO ] 2022-10-25 02:11:42.331 [TestNG-tests-1] DataPopulations - Status Code [UPLOAD API THUMBNAIL]: 201
+[INFO ] 2022-10-25 02:11:42.574 [TestNG-tests-1] DataPopulations - Status Code [CHANGE API STATUS]: 200
+[INFO ] 2022-10-25 02:11:42.640 [TestNG-tests-1] DataPopulations - Status Code [SEARCH API]: 200
+[INFO ] 2022-10-25 02:11:42.640 [TestNG-tests-1] DataPopulations - [PUBLISHER PORTAL]: Dev Portal tests were completed
+[INFO ] 2022-10-25 02:11:42.880 [TestNG-tests-1] DataPopulations - Status Code [SEARCHED API BY NAME]: 200
+[INFO ] 2022-10-25 02:11:42.929 [TestNG-tests-1] DataPopulations - Status Code [CREATE NEW APPLICATION 1]: 201
+[INFO ] 2022-10-25 02:11:42.991 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO API 1]: 201
+[INFO ] 2022-10-25 02:11:43.117 [TestNG-tests-1] DataPopulations - Status Code [GENERATE ACCESS TOKEN 1]: 200
+[INFO ] 2022-10-25 02:11:43.150 [TestNG-tests-1] DataPopulations - Status Code [REMOVE SUSCRIPTION APP 3 OF API 1]: 200
+[INFO ] 2022-10-25 02:11:43.151 [TestNG-tests-1] DataPopulations - [DEV PORTAL]: Dev Portal tests were completed
+[INFO ] 2022-10-25 02:15:51.699 [TestNG-tests-1] DataPopulations - [TENANT MANAGMENT]: Tenant management related tests were completed
+[INFO ] 2022-10-25 02:15:51.934 [TestNG-tests-1] DataPopulations - [USER STORE]: User store related tests were completed
+[INFO ] 2022-10-25 02:15:52.163 [TestNG-tests-1] DataPopulations - Status Code [CREATE OPEN API DEFINITION]: 409
+[INFO ] 2022-10-25 02:15:52.622 [TestNG-tests-1] DataPopulations - Status Code [UPLOAD API THUMBNAIL]: 201
+[INFO ] 2022-10-25 02:15:52.892 [TestNG-tests-1] DataPopulations - Status Code [CHANGE API STATUS]: 200
+[INFO ] 2022-10-25 02:15:52.982 [TestNG-tests-1] DataPopulations - Status Code [SEARCH API]: 200
+[INFO ] 2022-10-25 02:15:52.982 [TestNG-tests-1] DataPopulations - [PUBLISHER PORTAL]: Dev Portal tests were completed
+[INFO ] 2022-10-25 02:15:53.132 [TestNG-tests-1] DataPopulations - Status Code [SEARCHED API BY NAME]: 200
+[INFO ] 2022-10-25 02:15:53.215 [TestNG-tests-1] DataPopulations - Status Code [CREATE NEW APPLICATION 1]: API creation failed
+[INFO ] 2022-10-25 02:15:53.252 [TestNG-tests-1] DataPopulations - Status Code [REMOVE SUSCRIPTION APP 3 OF API 1]: 405
+[INFO ] 2022-10-25 02:15:53.252 [TestNG-tests-1] DataPopulations - [DEV PORTAL]: Dev Portal tests were completed
+[INFO ] 2022-10-25 02:16:50.076 [TestNG-tests-1] DemoDataValidation - Status Code [AVAILABILITY OF APPLICATION 1]: 200
+[INFO ] 2022-10-25 02:16:50.217 [TestNG-tests-1] DemoDataValidation - Status Code [INVOKE REST API]: 500
+[INFO ] 2022-10-25 02:16:50.309 [TestNG-tests-1] DemoDataValidation - Status Code [SEARCHED API BY NAME]: 200
+[INFO ] 2022-10-25 02:16:50.377 [TestNG-tests-1] DemoDataValidation - Status Code [GET ALL SUBSCRIPTION]: {
+    "code": 404,
+    "message": "Not Found",
+    "description": "Requested API with Id '1162ed4b-e27a-4353-b630-16c7d7e21c92' not found",
+    "moreInfo": "",
+    "error": [
+        
+    ]
+}
+[INFO ] 2022-10-25 08:09:59.642 [TestNG-tests-1] DataPopulations - [TENANT MANAGMENT]: Tenant management related tests were completed
+[INFO ] 2022-10-25 08:10:02.659 [TestNG-tests-1] DataPopulations - [USER STORE]: User store related tests were completed
+[INFO ] 2022-10-25 08:10:06.930 [TestNG-tests-1] DataPopulations - Status Code [CREATE OPEN API DEFINITION]: 409
+[INFO ] 2022-10-25 08:10:09.722 [TestNG-tests-1] DataPopulations - Status Code [UPLOAD API THUMBNAIL]: 201
+[INFO ] 2022-10-25 08:10:11.194 [TestNG-tests-1] DataPopulations - Status Code [CHANGE API STATUS]: 200
+[INFO ] 2022-10-25 08:10:11.415 [TestNG-tests-1] DataPopulations - Status Code [SEARCH API]: 200
+[INFO ] 2022-10-25 08:10:11.415 [TestNG-tests-1] DataPopulations - [PUBLISHER PORTAL]: Dev Portal tests were completed
+[INFO ] 2022-10-25 08:10:13.619 [TestNG-tests-1] DataPopulations - Status Code [SEARCHED API BY NAME]: 200
+[INFO ] 2022-10-25 08:10:13.950 [TestNG-tests-1] DataPopulations - Status Code [CREATE NEW APPLICATION 1]: 201
+[INFO ] 2022-10-25 08:10:14.084 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO API 1]: 201
+[INFO ] 2022-10-25 08:10:15.580 [TestNG-tests-1] DataPopulations - Status Code [GENERATE ACCESS TOKEN 1]: 200
+[INFO ] 2022-10-25 08:10:15.589 [TestNG-tests-1] DataPopulations - [DEV PORTAL]: Dev Portal tests were completed
+[INFO ] 2022-10-25 08:11:35.986 [TestNG-tests-1] DemoDataValidation - Status Code [AVAILABILITY OF APPLICATION 1]: 200
+[INFO ] 2022-10-25 08:11:37.062 [TestNG-tests-1] DemoDataValidation - Status Code [INVOKE REST API]: 500
+[INFO ] 2022-10-25 08:11:37.163 [TestNG-tests-1] DemoDataValidation - Status Code [SEARCHED API BY NAME]: 200
+[INFO ] 2022-10-25 08:11:37.320 [TestNG-tests-1] DemoDataValidation - Status Code [GET ALL SUBSCRIPTION]: {
+    "code": 404,
+    "message": "Not Found",
+    "description": "Requested API with Id '01252acd-a0c9-4464-9432-ddd379de86b7' not found",
+    "moreInfo": "",
+    "error": [
+        
+    ]
+}
+[INFO ] 2022-10-25 08:13:06.487 [TestNG-tests-1] DemoDataValidation - Status Code [AVAILABILITY OF APPLICATION 1]: 200
+[INFO ] 2022-10-25 08:13:06.530 [TestNG-tests-1] DemoDataValidation - Status Code [INVOKE REST API]: 500
+[INFO ] 2022-10-25 08:13:06.602 [TestNG-tests-1] DemoDataValidation - Status Code [SEARCHED API BY NAME]: 200
+[INFO ] 2022-10-25 08:13:06.675 [TestNG-tests-1] DemoDataValidation - Status Code [GET ALL SUBSCRIPTION]: {
+    "code": 404,
+    "message": "Not Found",
+    "description": "Requested API with Id '01252acd-a0c9-4464-9432-ddd379de86b7' not found",
+    "moreInfo": "",
+    "error": [
+        
+    ]
+}
+[INFO ] 2022-10-25 08:17:25.849 [TestNG-tests-1] DataPopulations - Status Code [CREATE OPEN API DEFINITION]: 409
+[INFO ] 2022-10-25 08:17:26.494 [TestNG-tests-1] DataPopulations - Status Code [UPLOAD API THUMBNAIL]: 201
+[INFO ] 2022-10-25 08:17:26.869 [TestNG-tests-1] DataPopulations - Status Code [CHANGE API STATUS]: 200
+[INFO ] 2022-10-25 08:17:26.911 [TestNG-tests-1] DataPopulations - Status Code [SEARCH API]: 200
+[INFO ] 2022-10-25 08:17:26.912 [TestNG-tests-1] DataPopulations - [PUBLISHER PORTAL]: Dev Portal tests were completed
+[INFO ] 2022-10-25 08:17:27.096 [TestNG-tests-1] DataPopulations - Status Code [SEARCHED API BY NAME]: 200
+[INFO ] 2022-10-25 08:17:27.164 [TestNG-tests-1] DataPopulations - Status Code [CREATE NEW APPLICATION 1]: API creation failed
+[INFO ] 2022-10-25 08:17:27.165 [TestNG-tests-1] DataPopulations - [DEV PORTAL]: Dev Portal tests were completed
+[INFO ] 2022-10-25 08:21:34.516 [TestNG-tests-1] DataPopulations - [TENANT MANAGMENT]: Tenant management related tests were completed
+[INFO ] 2022-10-25 08:21:34.765 [TestNG-tests-1] DataPopulations - [USER STORE]: User store related tests were completed
+[INFO ] 2022-10-25 08:21:35.049 [TestNG-tests-1] DataPopulations - Status Code [CREATE OPEN API DEFINITION]: 409
+[INFO ] 2022-10-25 08:21:35.763 [TestNG-tests-1] DataPopulations - Status Code [UPLOAD API THUMBNAIL]: 201
+[INFO ] 2022-10-25 08:21:36.139 [TestNG-tests-1] DataPopulations - Status Code [CHANGE API STATUS]: 200
+[INFO ] 2022-10-25 08:21:36.193 [TestNG-tests-1] DataPopulations - Status Code [SEARCH API]: 200
+[INFO ] 2022-10-25 08:21:36.193 [TestNG-tests-1] DataPopulations - [PUBLISHER PORTAL]: Dev Portal tests were completed
+[INFO ] 2022-10-25 08:21:36.368 [TestNG-tests-1] DataPopulations - Status Code [SEARCHED API BY NAME]: 200
+[INFO ] 2022-10-25 08:21:36.432 [TestNG-tests-1] DataPopulations - Status Code [CREATE NEW APPLICATION 1]: API creation failed
+[INFO ] 2022-10-25 08:21:36.432 [TestNG-tests-1] DataPopulations - [DEV PORTAL]: Dev Portal tests were completed
+[INFO ] 2022-10-25 08:24:28.344 [TestNG-tests-1] DataPopulations - Status Code [CREATE OPEN API DEFINITION]: 409
+[INFO ] 2022-10-25 08:24:29.166 [TestNG-tests-1] DataPopulations - Status Code [UPLOAD API THUMBNAIL]: 201
+[INFO ] 2022-10-25 08:24:29.699 [TestNG-tests-1] DataPopulations - Status Code [CHANGE API STATUS]: 200
+[INFO ] 2022-10-25 08:24:29.774 [TestNG-tests-1] DataPopulations - Status Code [SEARCH API]: 200
+[INFO ] 2022-10-25 08:24:29.774 [TestNG-tests-1] DataPopulations - [PUBLISHER PORTAL]: Dev Portal tests were completed
+[INFO ] 2022-10-25 08:24:30.050 [TestNG-tests-1] DataPopulations - Status Code [SEARCHED API BY NAME]: 200
+[INFO ] 2022-10-25 08:24:30.147 [TestNG-tests-1] DataPopulations - Status Code [CREATE NEW APPLICATION 1]: API creation failed
+[INFO ] 2022-10-25 08:24:30.147 [TestNG-tests-1] DataPopulations - [DEV PORTAL]: Dev Portal tests were completed
+[INFO ] 2022-10-25 08:26:26.581 [TestNG-tests-1] DataPopulations - [TENANT MANAGMENT]: Tenant management related tests were completed
+[INFO ] 2022-10-25 08:26:26.879 [TestNG-tests-1] DataPopulations - [USER STORE]: User store related tests were completed
+[INFO ] 2022-10-25 08:26:27.187 [TestNG-tests-1] DataPopulations - Status Code [CREATE OPEN API DEFINITION]: 409
+[INFO ] 2022-10-25 08:26:28.012 [TestNG-tests-1] DataPopulations - Status Code [UPLOAD API THUMBNAIL]: 201
+[INFO ] 2022-10-25 08:26:28.350 [TestNG-tests-1] DataPopulations - Status Code [CHANGE API STATUS]: 200
+[INFO ] 2022-10-25 08:26:28.399 [TestNG-tests-1] DataPopulations - Status Code [SEARCH API]: 200
+[INFO ] 2022-10-25 08:26:28.399 [TestNG-tests-1] DataPopulations - [PUBLISHER PORTAL]: Dev Portal tests were completed
+[INFO ] 2022-10-25 08:26:28.603 [TestNG-tests-1] DataPopulations - Status Code [SEARCHED API BY NAME]: 200
+[INFO ] 2022-10-25 08:26:28.664 [TestNG-tests-1] DataPopulations - Status Code [CREATE NEW APPLICATION 1]: API creation failed
+[INFO ] 2022-10-25 08:26:28.664 [TestNG-tests-1] DataPopulations - [DEV PORTAL]: Dev Portal tests were completed
+[INFO ] 2022-10-25 08:27:43.992 [TestNG-tests-1] DataPopulations - [TENANT MANAGMENT]: Tenant management related tests were completed
+[INFO ] 2022-10-25 08:27:44.306 [TestNG-tests-1] DataPopulations - [USER STORE]: User store related tests were completed
+[INFO ] 2022-10-25 08:27:44.596 [TestNG-tests-1] DataPopulations - Status Code [CREATE OPEN API DEFINITION]: 409
+[INFO ] 2022-10-25 08:27:45.173 [TestNG-tests-1] DataPopulations - Status Code [UPLOAD API THUMBNAIL]: 201
+[INFO ] 2022-10-25 08:27:45.484 [TestNG-tests-1] DataPopulations - Status Code [CHANGE API STATUS]: 200
+[INFO ] 2022-10-25 08:27:45.530 [TestNG-tests-1] DataPopulations - Status Code [SEARCH API]: 200
+[INFO ] 2022-10-25 08:27:45.530 [TestNG-tests-1] DataPopulations - [PUBLISHER PORTAL]: Publisher Portal tests were completed
+[INFO ] 2022-10-25 08:27:45.700 [TestNG-tests-1] DataPopulations - Status Code [SEARCHED API BY NAME]: 200
+[INFO ] 2022-10-25 08:27:45.761 [TestNG-tests-1] DataPopulations - Status Code [CREATE NEW APPLICATION 1]: API creation failed
+[INFO ] 2022-10-25 08:27:45.761 [TestNG-tests-1] DataPopulations - [DEV PORTAL]: Developer Portal tests were completed
+[INFO ] 2022-10-25 08:29:14.857 [TestNG-tests-1] DataPopulations - [TENANT MANAGMENT]: Tenant management related tests were completed
+[INFO ] 2022-10-25 08:29:15.140 [TestNG-tests-1] DataPopulations - [USER STORE]: User store related tests were completed
+[INFO ] 2022-10-25 08:29:15.384 [TestNG-tests-1] DataPopulations - Status Code [CREATE OPEN API DEFINITION]: 409
+[INFO ] 2022-10-25 08:29:15.802 [TestNG-tests-1] DataPopulations - Status Code [UPLOAD API THUMBNAIL]: 201
+[INFO ] 2022-10-25 08:29:16.043 [TestNG-tests-1] DataPopulations - Status Code [CHANGE API STATUS]: 200
+[INFO ] 2022-10-25 08:29:16.085 [TestNG-tests-1] DataPopulations - Status Code [SEARCH API]: 200
+[INFO ] 2022-10-25 08:29:16.085 [TestNG-tests-1] DataPopulations - [PUBLISHER PORTAL]: Publisher Portal tests were completed
+[INFO ] 2022-10-25 08:29:16.262 [TestNG-tests-1] DataPopulations - Status Code [SEARCHED API BY NAME]: 200
+[INFO ] 2022-10-25 08:29:16.310 [TestNG-tests-1] DataPopulations - Status Code [CREATE NEW APPLICATION 1]: API creation failed
+[INFO ] 2022-10-25 08:29:16.310 [TestNG-tests-1] DataPopulations - [DEV PORTAL]: Developer Portal tests were completed
+[INFO ] 2022-10-25 08:31:06.202 [TestNG-tests-1] DataPopulations - [TENANT MANAGMENT]: Tenant management related tests were completed
+[INFO ] 2022-10-25 08:31:06.445 [TestNG-tests-1] DataPopulations - [USER STORE]: User store related tests were completed
+[INFO ] 2022-10-25 08:31:37.230 [TestNG-tests-1] DataPopulations - [TENANT MANAGMENT]: Tenant management related tests were completed
+[INFO ] 2022-10-25 08:31:40.034 [TestNG-tests-1] DataPopulations - [USER STORE]: User store related tests were completed
+[INFO ] 2022-10-25 08:31:40.839 [TestNG-tests-1] DataPopulations - Status Code [CREATE OPEN API DEFINITION]: 400
+[INFO ] 2022-10-25 08:31:41.380 [TestNG-tests-1] DataPopulations - Status Code [SEARCHED API BY NAME]: 200
+[INFO ] 2022-10-25 08:31:41.491 [TestNG-tests-1] DataPopulations - Status Code [CREATE NEW APPLICATION 1]: 201
+[INFO ] 2022-10-25 08:34:13.566 [TestNG-tests-1] DataPopulations - [TENANT MANAGMENT]: Tenant management related tests were completed
+[INFO ] 2022-10-25 08:34:13.803 [TestNG-tests-1] DataPopulations - [USER STORE]: User store related tests were completed
+[INFO ] 2022-10-25 08:34:14.436 [TestNG-tests-1] DataPopulations - Status Code [CREATE OPEN API DEFINITION]: 201
+[INFO ] 2022-10-25 08:34:14.776 [TestNG-tests-1] DataPopulations - Status Code [UPLOAD API THUMBNAIL]: 201
+[INFO ] 2022-10-25 08:34:15.108 [TestNG-tests-1] DataPopulations - Status Code [CHANGE API STATUS]: 200
+[INFO ] 2022-10-25 08:34:15.143 [TestNG-tests-1] DataPopulations - Status Code [SEARCH API]: 200
+[INFO ] 2022-10-25 08:34:15.143 [TestNG-tests-1] DataPopulations - [PUBLISHER PORTAL]: Publisher Portal tests were completed
+[INFO ] 2022-10-25 08:34:15.319 [TestNG-tests-1] DataPopulations - Status Code [SEARCHED API BY NAME]: 200
+[INFO ] 2022-10-25 08:34:15.363 [TestNG-tests-1] DataPopulations - Status Code [CREATE NEW APPLICATION 1]: API creation failed
+[INFO ] 2022-10-25 08:34:15.363 [TestNG-tests-1] DataPopulations - [DEV PORTAL]: Developer Portal tests were completed
+[INFO ] 2022-10-25 08:36:42.859 [TestNG-tests-1] DataPopulations - [TENANT MANAGMENT]: Tenant management related tests were completed
+[INFO ] 2022-10-25 08:36:43.113 [TestNG-tests-1] DataPopulations - [USER STORE]: User store related tests were completed
+[INFO ] 2022-10-25 08:36:43.349 [TestNG-tests-1] DataPopulations - Status Code [CREATE OPEN API DEFINITION]: 409
+[INFO ] 2022-10-25 08:36:43.861 [TestNG-tests-1] DataPopulations - Status Code [UPLOAD API THUMBNAIL]: 201
+[INFO ] 2022-10-25 08:36:44.101 [TestNG-tests-1] DataPopulations - Status Code [CHANGE API STATUS]: 200
+[INFO ] 2022-10-25 08:36:44.138 [TestNG-tests-1] DataPopulations - Status Code [SEARCH API]: 200
+[INFO ] 2022-10-25 08:36:44.138 [TestNG-tests-1] DataPopulations - [PUBLISHER PORTAL]: Publisher Portal tests were completed
+[INFO ] 2022-10-25 08:36:44.300 [TestNG-tests-1] DataPopulations - Status Code [SEARCHED API BY NAME]: 200
+[INFO ] 2022-10-25 08:36:44.350 [TestNG-tests-1] DataPopulations - Status Code [CREATE NEW APPLICATION 1]: 409
+[INFO ] 2022-10-25 08:36:44.430 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO API 1]: 201
+[INFO ] 2022-10-25 08:36:44.590 [TestNG-tests-1] DataPopulations - Status Code [GENERATE ACCESS TOKEN 1]: 200
+[INFO ] 2022-10-25 08:36:44.596 [TestNG-tests-1] DataPopulations - [DEV PORTAL]: Developer Portal tests were completed
+[INFO ] 2022-10-25 08:37:09.388 [TestNG-tests-1] DemoDataValidation - Status Code [AVAILABILITY OF APPLICATION 1]: 200
+[INFO ] 2022-10-25 08:37:09.444 [TestNG-tests-1] DemoDataValidation - Status Code [INVOKE REST API]: 500
+[INFO ] 2022-10-25 08:37:09.505 [TestNG-tests-1] DemoDataValidation - Status Code [SEARCHED API BY NAME]: 200
+[INFO ] 2022-10-25 08:38:21.952 [TestNG-tests-1] DemoDataValidation - Status Code [SEARCHED API BY NAME]: 200
+[INFO ] 2022-10-25 08:38:22.019 [TestNG-tests-1] DemoDataValidation - Status Code [AVAILABILITY OF APPLICATION 1]: 200
+[INFO ] 2022-10-25 08:38:22.059 [TestNG-tests-1] DemoDataValidation - Status Code [INVOKE REST API]: 500
+[INFO ] 2022-10-25 08:45:49.305 [TestNG-tests-1] DataPopulations - [TENANT MANAGMENT]: Tenant management related tests were completed
+[INFO ] 2022-10-25 08:45:50.834 [TestNG-tests-1] DataPopulations - [USER STORE]: User store related tests were completed
+[INFO ] 2022-10-25 08:45:51.334 [TestNG-tests-1] DataPopulations - Status Code [CREATE OPEN API DEFINITION]: 500
+[INFO ] 2022-10-25 08:45:51.469 [TestNG-tests-1] DataPopulations - Status Code [UPLOAD API THUMBNAIL]: 404
+[INFO ] 2022-10-25 08:45:51.534 [TestNG-tests-1] DataPopulations - Status Code [CHANGE API STATUS]: 404
+[INFO ] 2022-10-25 08:45:51.586 [TestNG-tests-1] DataPopulations - Status Code [SEARCH API]: 200
+[INFO ] 2022-10-25 08:45:51.586 [TestNG-tests-1] DataPopulations - [PUBLISHER PORTAL]: Publisher Portal tests were completed
+[INFO ] 2022-10-25 08:45:51.793 [TestNG-tests-1] DataPopulations - Status Code [SEARCHED API BY NAME]: 200
+[INFO ] 2022-10-25 08:45:51.853 [TestNG-tests-1] DataPopulations - Status Code [CREATE NEW APPLICATION 1]: 201
+[INFO ] 2022-10-25 08:45:51.902 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO API 1]: 404
+[INFO ] 2022-10-25 08:45:51.939 [TestNG-tests-1] DataPopulations - Status Code [GENERATE ACCESS TOKEN 1]: 403
+[INFO ] 2022-10-25 08:45:51.940 [TestNG-tests-1] DataPopulations - [DEV PORTAL]: Developer Portal tests were completed
+[INFO ] 2022-10-25 08:46:15.577 [TestNG-tests-1] DataPopulations - [TENANT MANAGMENT]: Tenant management related tests were completed
+[INFO ] 2022-10-25 08:46:15.808 [TestNG-tests-1] DataPopulations - [USER STORE]: User store related tests were completed
+[INFO ] 2022-10-25 08:46:16.318 [TestNG-tests-1] DataPopulations - Status Code [CREATE OPEN API DEFINITION]: 201
+[INFO ] 2022-10-25 08:46:16.424 [TestNG-tests-1] DataPopulations - Status Code [UPLOAD API THUMBNAIL]: 404
+[INFO ] 2022-10-25 08:46:16.486 [TestNG-tests-1] DataPopulations - Status Code [CHANGE API STATUS]: 404
+[INFO ] 2022-10-25 08:46:16.544 [TestNG-tests-1] DataPopulations - Status Code [SEARCH API]: 200
+[INFO ] 2022-10-25 08:46:16.544 [TestNG-tests-1] DataPopulations - [PUBLISHER PORTAL]: Publisher Portal tests were completed
+[INFO ] 2022-10-25 08:46:16.815 [TestNG-tests-1] DataPopulations - Status Code [SEARCHED API BY NAME]: 200
+[INFO ] 2022-10-25 08:46:16.907 [TestNG-tests-1] DataPopulations - Status Code [CREATE NEW APPLICATION 1]: 409
+[INFO ] 2022-10-25 08:46:16.978 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO API 1]: 404
+[INFO ] 2022-10-25 08:46:17.037 [TestNG-tests-1] DataPopulations - Status Code [GENERATE ACCESS TOKEN 1]: 403
+[INFO ] 2022-10-25 08:46:17.037 [TestNG-tests-1] DataPopulations - [DEV PORTAL]: Developer Portal tests were completed
+[INFO ] 2022-10-25 08:48:38.453 [TestNG-tests-1] DataPopulations - [TENANT MANAGMENT]: Tenant management related tests were completed
+[INFO ] 2022-10-25 08:48:40.062 [TestNG-tests-1] DataPopulations - [USER STORE]: User store related tests were completed
+[INFO ] 2022-10-25 08:48:40.529 [TestNG-tests-1] DataPopulations - Status Code [CREATE OPEN API DEFINITION]: 500
+[INFO ] 2022-10-25 08:48:40.623 [TestNG-tests-1] DataPopulations - Status Code [UPLOAD API THUMBNAIL]: 404
+[INFO ] 2022-10-25 08:48:40.673 [TestNG-tests-1] DataPopulations - Status Code [CHANGE API STATUS]: 404
+[INFO ] 2022-10-25 08:48:40.723 [TestNG-tests-1] DataPopulations - Status Code [SEARCH API]: 200
+[INFO ] 2022-10-25 08:48:40.723 [TestNG-tests-1] DataPopulations - [PUBLISHER PORTAL]: Publisher Portal tests were completed
+[INFO ] 2022-10-25 08:48:40.958 [TestNG-tests-1] DataPopulations - Status Code [SEARCHED API BY NAME]: 200
+[INFO ] 2022-10-25 08:48:41.022 [TestNG-tests-1] DataPopulations - Status Code [CREATE NEW APPLICATION 1]: 201
+[INFO ] 2022-10-25 08:48:41.073 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO API 1]: 404
+[INFO ] 2022-10-25 08:48:41.113 [TestNG-tests-1] DataPopulations - Status Code [GENERATE ACCESS TOKEN 1]: 403
+[INFO ] 2022-10-25 08:48:41.113 [TestNG-tests-1] DataPopulations - [DEV PORTAL]: Developer Portal tests were completed
+[INFO ] 2022-10-25 08:52:25.061 [TestNG-tests-1] DataPopulations - [TENANT MANAGMENT]: Tenant management related tests were completed
+[INFO ] 2022-10-25 08:52:26.596 [TestNG-tests-1] DataPopulations - [USER STORE]: User store related tests were completed
+[INFO ] 2022-10-25 08:52:27.154 [TestNG-tests-1] DataPopulations - Status Code [CREATE OPEN API DEFINITION]: 500
+[INFO ] 2022-10-25 08:52:27.458 [TestNG-tests-1] DataPopulations - Status Code [SEARCHED API BY NAME]: 200
+[INFO ] 2022-10-25 08:52:27.514 [TestNG-tests-1] DataPopulations - Status Code [CREATE NEW APPLICATION 1]: 201
+[INFO ] 2022-10-25 08:52:42.864 [TestNG-tests-1] DataPopulations - [TENANT MANAGMENT]: Tenant management related tests were completed
+[INFO ] 2022-10-25 08:52:43.088 [TestNG-tests-1] DataPopulations - [USER STORE]: User store related tests were completed
+[INFO ] 2022-10-25 08:52:43.508 [TestNG-tests-1] DataPopulations - Status Code [CREATE OPEN API DEFINITION]: 201
+[INFO ] 2022-10-25 08:52:43.730 [TestNG-tests-1] DataPopulations - Status Code [UPLOAD API THUMBNAIL]: 201
+[INFO ] 2022-10-25 08:52:44.007 [TestNG-tests-1] DataPopulations - Status Code [CHANGE API STATUS]: 200
+[INFO ] 2022-10-25 08:52:44.041 [TestNG-tests-1] DataPopulations - Status Code [SEARCH API]: 200
+[INFO ] 2022-10-25 08:52:44.041 [TestNG-tests-1] DataPopulations - [PUBLISHER PORTAL]: Publisher Portal tests were completed
+[INFO ] 2022-10-25 08:52:44.194 [TestNG-tests-1] DataPopulations - Status Code [SEARCHED API BY NAME]: 200
+[INFO ] 2022-10-25 08:52:44.242 [TestNG-tests-1] DataPopulations - Status Code [CREATE NEW APPLICATION 1]: 409
+[INFO ] 2022-10-25 08:52:44.383 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO API 1]: 201
+[INFO ] 2022-10-25 08:52:44.566 [TestNG-tests-1] DataPopulations - Status Code [GENERATE ACCESS TOKEN 1]: 200
+[INFO ] 2022-10-25 08:52:44.575 [TestNG-tests-1] DataPopulations - [DEV PORTAL]: Developer Portal tests were completed
+[INFO ] 2022-10-25 08:53:04.205 [TestNG-tests-1] DemoDataValidation - Status Code [SEARCHED API BY NAME]: 200
+[INFO ] 2022-10-25 08:53:04.254 [TestNG-tests-1] DemoDataValidation - Status Code [AVAILABILITY OF APPLICATION 1]: 403
+[INFO ] 2022-10-25 08:53:04.840 [TestNG-tests-1] DemoDataValidation - Status Code [INVOKE REST API]: 200
+[INFO ] 2022-10-25 08:53:49.832 [TestNG-tests-1] DemoDataValidation - Status Code [SEARCHED API BY NAME]: 200
+[INFO ] 2022-10-25 08:53:49.883 [TestNG-tests-1] DemoDataValidation - Status Code [AVAILABILITY OF APPLICATION 1]: 403
+[INFO ] 2022-10-25 08:53:49.912 [TestNG-tests-1] DemoDataValidation - Status Code [INVOKE REST API]: 200
+[INFO ] 2022-10-25 08:57:41.057 [TestNG-tests-1] DemoDataValidation - Status Code [SEARCHED API BY NAME]: 200
+[INFO ] 2022-10-25 08:57:41.114 [TestNG-tests-1] DemoDataValidation - Status Code [AVAILABILITY OF APPLICATION 1]: 403
+[INFO ] 2022-10-25 08:57:41.142 [TestNG-tests-1] DemoDataValidation - Status Code [INVOKE REST API]: 200
+[INFO ] 2022-10-25 08:59:51.417 [TestNG-tests-1] DemoDataValidation - Status Code [SEARCHED API BY NAME]: 200
+[INFO ] 2022-10-25 08:59:51.471 [TestNG-tests-1] DemoDataValidation - Status Code [AVAILABILITY OF APPLICATION 1]: 403
+[INFO ] 2022-10-25 08:59:51.521 [TestNG-tests-1] DemoDataValidation - Status Code [INVOKE REST API]: 200
+[INFO ] 2022-10-25 09:00:15.806 [TestNG-tests-1] DemoDataValidation - Status Code [SEARCHED API BY NAME]: 200
+[INFO ] 2022-10-25 09:00:15.854 [TestNG-tests-1] DemoDataValidation - Status Code [AVAILABILITY OF APPLICATION 1]: 403
+[INFO ] 2022-10-25 09:00:15.875 [TestNG-tests-1] DemoDataValidation - Status Code [INVOKE REST API]: 200
+[INFO ] 2022-10-25 09:05:09.828 [TestNG-tests-1] DemoDataValidation - Status Code [SEARCHED API BY NAME]: 200
+[INFO ] 2022-10-25 09:05:11.328 [TestNG-tests-1] DemoDataValidation - Status Code [AVAILABILITY OF APPLICATION 1]: 200
+[INFO ] 2022-10-25 09:05:11.479 [TestNG-tests-1] DemoDataValidation - Status Code [INVOKE REST API]: 401
+[INFO ] 2022-10-25 09:06:00.124 [TestNG-tests-1] DemoDataValidation - Status Code [SEARCHED API BY NAME]: 200
+[INFO ] 2022-10-25 09:06:00.208 [TestNG-tests-1] DemoDataValidation - Status Code [AVAILABILITY OF APPLICATION 1]: 403
+[INFO ] 2022-10-25 09:06:00.226 [TestNG-tests-1] DemoDataValidation - Status Code [INVOKE REST API]: 401
+[INFO ] 2022-10-25 09:08:35.162 [TestNG-tests-1] DemoDataValidation - Status Code [SEARCHED API BY NAME]: 200
+[INFO ] 2022-10-25 09:08:35.247 [TestNG-tests-1] DemoDataValidation - Status Code [AVAILABILITY OF APPLICATION 1]: 200
+[INFO ] 2022-10-25 09:08:35.262 [TestNG-tests-1] DemoDataValidation - Status Code [INVOKE REST API]: 404
+[INFO ] 2022-10-25 09:09:53.166 [TestNG-tests-1] DemoDataValidation - Status Code [SEARCHED API BY NAME]: 200
+[INFO ] 2022-10-25 09:09:53.241 [TestNG-tests-1] DemoDataValidation - Status Code [AVAILABILITY OF APPLICATION 1]: 200
+[INFO ] 2022-10-25 09:09:53.256 [TestNG-tests-1] DemoDataValidation - Status Code [INVOKE REST API]: 404
+[INFO ] 2022-10-25 09:11:42.696 [TestNG-tests-1] DemoDataValidation - Status Code [SEARCHED API BY NAME]: 200
+[INFO ] 2022-10-25 09:11:42.764 [TestNG-tests-1] DemoDataValidation - Status Code [AVAILABILITY OF APPLICATION 1]: 200
+[INFO ] 2022-10-25 09:11:42.779 [TestNG-tests-1] DemoDataValidation - Status Code [INVOKE REST API]: 404
+[INFO ] 2022-10-25 09:14:10.833 [TestNG-tests-1] DataPopulations - [TENANT MANAGMENT]: Tenant management related tests were completed
+[INFO ] 2022-10-25 09:14:13.232 [TestNG-tests-1] DataPopulations - [USER STORE]: User store related tests were completed
+[INFO ] 2022-10-25 09:14:16.299 [TestNG-tests-1] DataPopulations - Status Code [CREATE OPEN API DEFINITION]: 201
+[INFO ] 2022-10-25 09:14:17.117 [TestNG-tests-1] DataPopulations - Status Code [UPLOAD API THUMBNAIL]: 201
+[INFO ] 2022-10-25 09:14:18.582 [TestNG-tests-1] DataPopulations - Status Code [CHANGE API STATUS]: 200
+[INFO ] 2022-10-25 09:14:18.694 [TestNG-tests-1] DataPopulations - Status Code [SEARCH API]: 200
+[INFO ] 2022-10-25 09:14:18.695 [TestNG-tests-1] DataPopulations - [PUBLISHER PORTAL]: Publisher Portal tests were completed
+[INFO ] 2022-10-25 09:14:19.030 [TestNG-tests-1] DataPopulations - Status Code [SEARCHED API BY NAME]: 200
+[INFO ] 2022-10-25 09:14:19.576 [TestNG-tests-1] DataPopulations - Status Code [CREATE NEW APPLICATION 1]: 201
+[INFO ] 2022-10-25 09:14:19.764 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO API 1]: 201
+[INFO ] 2022-10-25 09:14:20.773 [TestNG-tests-1] DataPopulations - Status Code [GENERATE ACCESS TOKEN 1]: 200
+[INFO ] 2022-10-25 09:14:20.779 [TestNG-tests-1] DataPopulations - [DEV PORTAL]: Developer Portal tests were completed
+[INFO ] 2022-10-25 09:14:37.040 [TestNG-tests-1] DemoDataValidation - Status Code [SEARCHED API BY NAME]: 200
+[INFO ] 2022-10-25 09:14:37.146 [TestNG-tests-1] DemoDataValidation - Status Code [AVAILABILITY OF APPLICATION 1]: 200
+[INFO ] 2022-10-25 09:14:37.167 [TestNG-tests-1] DemoDataValidation - Status Code [INVOKE REST API]: 404
+[INFO ] 2022-10-25 09:21:12.509 [TestNG-tests-1] DemoDataValidation - Status Code [SEARCHED API BY NAME]: 200
+[INFO ] 2022-10-25 09:21:12.570 [TestNG-tests-1] DemoDataValidation - Status Code [AVAILABILITY OF APPLICATION 1]: 200
+[INFO ] 2022-10-25 09:21:12.585 [TestNG-tests-1] DemoDataValidation - Status Code [INVOKE REST API]: 404
+[INFO ] 2022-10-25 09:21:58.707 [TestNG-tests-1] DemoDataValidation - Status Code [SEARCHED API BY NAME]: 200
+[INFO ] 2022-10-25 09:21:58.783 [TestNG-tests-1] DemoDataValidation - Status Code [AVAILABILITY OF APPLICATION 1]: 200
+[INFO ] 2022-10-25 09:21:58.799 [TestNG-tests-1] DemoDataValidation - Status Code [INVOKE REST API]: 401
+[INFO ] 2022-10-25 09:22:45.946 [TestNG-tests-1] DemoDataValidation - Status Code [SEARCHED API BY NAME]: 200
+[INFO ] 2022-10-25 09:22:46.026 [TestNG-tests-1] DemoDataValidation - Status Code [AVAILABILITY OF APPLICATION 1]: 200
+[INFO ] 2022-10-25 09:23:11.211 [TestNG-tests-1] DemoDataValidation - Status Code [SEARCHED API BY NAME]: 200
+[INFO ] 2022-10-25 09:23:11.298 [TestNG-tests-1] DemoDataValidation - Status Code [AVAILABILITY OF APPLICATION 1]: 200
+[INFO ] 2022-10-25 09:23:25.540 [TestNG-tests-1] DemoDataValidation - Status Code [SEARCHED API BY NAME]: 200
+[INFO ] 2022-10-25 09:23:25.618 [TestNG-tests-1] DemoDataValidation - Status Code [AVAILABILITY OF APPLICATION 1]: 200
+[INFO ] 2022-10-25 09:23:25.640 [TestNG-tests-1] DemoDataValidation - Status Code [INVOKE REST API]: 401
+[INFO ] 2022-10-25 09:25:19.928 [TestNG-tests-1] DataPopulations - [TENANT MANAGMENT]: Tenant management related tests were completed
+[INFO ] 2022-10-25 09:25:20.245 [TestNG-tests-1] DataPopulations - [USER STORE]: User store related tests were completed
+[INFO ] 2022-10-25 09:25:20.521 [TestNG-tests-1] DataPopulations - Status Code [CREATE OPEN API DEFINITION]: 409
+[INFO ] 2022-10-25 09:25:21.131 [TestNG-tests-1] DataPopulations - Status Code [UPLOAD API THUMBNAIL]: 201
+[INFO ] 2022-10-25 09:25:21.465 [TestNG-tests-1] DataPopulations - Status Code [CHANGE API STATUS]: 200
+[INFO ] 2022-10-25 09:25:21.519 [TestNG-tests-1] DataPopulations - Status Code [SEARCH API]: 200
+[INFO ] 2022-10-25 09:25:21.519 [TestNG-tests-1] DataPopulations - [PUBLISHER PORTAL]: Publisher Portal tests were completed
+[INFO ] 2022-10-25 09:25:21.654 [TestNG-tests-1] DataPopulations - Status Code [SEARCHED API BY NAME]: 200
+[INFO ] 2022-10-25 09:25:21.708 [TestNG-tests-1] DataPopulations - Status Code [CREATE NEW APPLICATION 1]: 201
+[INFO ] 2022-10-25 09:25:21.761 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO API 1]: 201
+[INFO ] 2022-10-25 09:25:21.894 [TestNG-tests-1] DataPopulations - Status Code [GENERATE ACCESS TOKEN 1]: 200
+[INFO ] 2022-10-25 09:25:21.901 [TestNG-tests-1] DataPopulations - [DEV PORTAL]: Developer Portal tests were completed
+[INFO ] 2022-10-25 09:25:32.784 [TestNG-tests-1] DemoDataValidation - Status Code [SEARCHED API BY NAME]: 200
+[INFO ] 2022-10-25 09:25:32.865 [TestNG-tests-1] DemoDataValidation - Status Code [AVAILABILITY OF APPLICATION 1]: 200
+[INFO ] 2022-10-25 09:25:33.491 [TestNG-tests-1] DemoDataValidation - Status Code [INVOKE REST API]: 200
+[INFO ] 2022-10-25 09:27:35.979 [TestNG-tests-1] DataPopulations - [TENANT MANAGMENT]: Tenant management related tests were completed
+[INFO ] 2022-10-25 09:27:37.495 [TestNG-tests-1] DataPopulations - [USER STORE]: User store related tests were completed
+[INFO ] 2022-10-25 09:27:38.036 [TestNG-tests-1] DataPopulations - Status Code [CREATE OPEN API DEFINITION]: 500
+[INFO ] 2022-10-25 09:27:38.330 [TestNG-tests-1] DataPopulations - Status Code [SEARCHED API BY NAME]: 200
+[INFO ] 2022-10-25 09:27:38.399 [TestNG-tests-1] DataPopulations - Status Code [CREATE NEW APPLICATION 1]: 201
+[INFO ] 2022-10-25 09:27:47.834 [TestNG-tests-1] DataPopulations - [TENANT MANAGMENT]: Tenant management related tests were completed
+[INFO ] 2022-10-25 09:27:48.261 [TestNG-tests-1] DataPopulations - [USER STORE]: User store related tests were completed
+[INFO ] 2022-10-25 09:27:49.142 [TestNG-tests-1] DataPopulations - Status Code [CREATE OPEN API DEFINITION]: 201
+[INFO ] 2022-10-25 09:27:49.535 [TestNG-tests-1] DataPopulations - Status Code [UPLOAD API THUMBNAIL]: 201
+[INFO ] 2022-10-25 09:27:50.034 [TestNG-tests-1] DataPopulations - Status Code [CHANGE API STATUS]: 200
+[INFO ] 2022-10-25 09:27:50.092 [TestNG-tests-1] DataPopulations - Status Code [SEARCH API]: 200
+[INFO ] 2022-10-25 09:27:50.092 [TestNG-tests-1] DataPopulations - [PUBLISHER PORTAL]: Publisher Portal tests were completed
+[INFO ] 2022-10-25 09:27:50.347 [TestNG-tests-1] DataPopulations - Status Code [SEARCHED API BY NAME]: 200
+[INFO ] 2022-10-25 09:27:50.425 [TestNG-tests-1] DataPopulations - Status Code [CREATE NEW APPLICATION 1]: 409
+[INFO ] 2022-10-25 09:27:50.521 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO API 1]: 201
+[INFO ] 2022-10-25 09:27:50.718 [TestNG-tests-1] DataPopulations - Status Code [GENERATE ACCESS TOKEN 1]: 200
+[INFO ] 2022-10-25 09:27:50.725 [TestNG-tests-1] DataPopulations - [DEV PORTAL]: Developer Portal tests were completed
+[INFO ] 2022-10-25 09:28:06.221 [TestNG-tests-1] DemoDataValidation - Status Code [SEARCHED API BY NAME]: 200
+[INFO ] 2022-10-25 09:28:06.319 [TestNG-tests-1] DemoDataValidation - Status Code [AVAILABILITY OF APPLICATION 1]: 200
+[INFO ] 2022-10-25 09:28:06.551 [TestNG-tests-1] DemoDataValidation - Status Code [INVOKE REST API]: 200
+[INFO ] 2022-10-25 11:08:40.472 [TestNG-tests-1] DataPopulations - [TENANT MANAGMENT]: Tenant management related tests were completed
+[INFO ] 2022-10-25 11:08:42.120 [TestNG-tests-1] DataPopulations - [USER STORE]: User store related tests were completed
+[INFO ] 2022-10-25 11:08:42.648 [TestNG-tests-1] DataPopulations - Status Code [CREATE OPEN API DEFINITION]: 500
+[INFO ] 2022-10-25 11:08:42.937 [TestNG-tests-1] DataPopulations - Status Code [SEARCHED API BY NAME]: 200
+[INFO ] 2022-10-25 11:08:43.015 [TestNG-tests-1] DataPopulations - Status Code [CREATE NEW APPLICATION 1]: 201
+[INFO ] 2022-10-25 11:09:11.544 [TestNG-tests-1] DataPopulations - [TENANT MANAGMENT]: Tenant management related tests were completed
+[INFO ] 2022-10-25 11:09:11.819 [TestNG-tests-1] DataPopulations - [USER STORE]: User store related tests were completed
+[INFO ] 2022-10-25 11:09:12.342 [TestNG-tests-1] DataPopulations - Status Code [CREATE OPEN API DEFINITION]: 201
+[INFO ] 2022-10-25 11:09:12.679 [TestNG-tests-1] DataPopulations - Status Code [UPLOAD API THUMBNAIL]: 201
+[INFO ] 2022-10-25 11:09:13.108 [TestNG-tests-1] DataPopulations - Status Code [CHANGE API STATUS]: 200
+[INFO ] 2022-10-25 11:09:13.166 [TestNG-tests-1] DataPopulations - Status Code [SEARCH API]: 200
+[INFO ] 2022-10-25 11:09:13.166 [TestNG-tests-1] DataPopulations - [PUBLISHER PORTAL]: Publisher Portal tests were completed
+[INFO ] 2022-10-25 11:09:13.429 [TestNG-tests-1] DataPopulations - Status Code [SEARCHED API BY NAME]: 200
+[INFO ] 2022-10-25 11:09:13.496 [TestNG-tests-1] DataPopulations - Status Code [CREATE NEW APPLICATION 1]: 409
+[INFO ] 2022-10-25 11:09:13.660 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO API 1]: 201
+[INFO ] 2022-10-25 11:09:13.879 [TestNG-tests-1] DataPopulations - Status Code [GENERATE ACCESS TOKEN 1]: 200
+[INFO ] 2022-10-25 11:09:13.886 [TestNG-tests-1] DataPopulations - [DEV PORTAL]: Developer Portal tests were completed
+[INFO ] 2022-10-25 11:09:45.959 [TestNG-tests-1] DemoDataValidation - Status Code [SEARCHED API BY NAME]: 200
+[INFO ] 2022-10-25 11:09:46.110 [TestNG-tests-1] DemoDataValidation - Status Code [AVAILABILITY OF APPLICATION 1]: 200
+[INFO ] 2022-10-25 11:09:46.306 [TestNG-tests-1] DemoDataValidation - Status Code [INVOKE REST API]: 200
+[INFO ] 2022-10-26 11:19:52.978 [TestNG-tests-1] DataPopulations - [TENANT MANAGMENT]: Tenant management related tests were completed
+[INFO ] 2022-10-26 11:19:58.109 [TestNG-tests-1] DataPopulations - [USER STORE]: User store related tests were completed
+[INFO ] 2022-10-26 11:20:07.806 [TestNG-tests-1] DataPopulations - Status Code [CREATE OPEN API DEFINITION]: 201
+[INFO ] 2022-10-26 11:20:08.828 [TestNG-tests-1] DataPopulations - Status Code [UPLOAD API THUMBNAIL]: 201
+[INFO ] 2022-10-26 11:20:10.602 [TestNG-tests-1] DataPopulations - Status Code [CHANGE API STATUS]: 200
+[INFO ] 2022-10-26 11:20:10.777 [TestNG-tests-1] DataPopulations - Status Code [SEARCH API]: 200
+[INFO ] 2022-10-26 11:20:10.777 [TestNG-tests-1] DataPopulations - [PUBLISHER PORTAL]: Publisher Portal tests were completed
+[INFO ] 2022-10-26 11:20:13.070 [TestNG-tests-1] DataPopulations - Status Code [SEARCHED API BY NAME]: 200
+[INFO ] 2022-10-26 11:20:13.511 [TestNG-tests-1] DataPopulations - Status Code [CREATE NEW APPLICATION 1]: 201
+[INFO ] 2022-10-26 11:20:13.659 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO API 1]: 201
+[INFO ] 2022-10-26 11:20:15.250 [TestNG-tests-1] DataPopulations - Status Code [GENERATE ACCESS TOKEN 1]: 200
+[INFO ] 2022-10-26 11:20:15.256 [TestNG-tests-1] DataPopulations - [DEV PORTAL]: Developer Portal tests were completed
+[INFO ] 2022-10-26 11:20:28.413 [TestNG-tests-1] DemoDataValidation - Status Code [SEARCHED API BY NAME]: 200
+[INFO ] 2022-10-26 11:20:28.571 [TestNG-tests-1] DemoDataValidation - Status Code [AVAILABILITY OF APPLICATION 1]: 200
+[INFO ] 2022-10-26 11:20:29.714 [TestNG-tests-1] DemoDataValidation - Status Code [INVOKE REST API]: 200

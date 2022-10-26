@@ -1,7 +1,7 @@
 {
     "openapi": "3.0.1",
     "info": {
-     "title": "test1",
+     "title": "test16",
      "version": "1.0.0"
     },
     "servers": [
@@ -166,7 +166,7 @@
      ],
      "type": "http"
     },
-    "x-wso2-basePath": "/t/test1_tenant.com/test1/1.0.0",
+    "x-wso2-basePath": "/t/test16_wso2.com/test16/1.0.0",
     "x-wso2-transports": [
      "http",
      "https"

@@ -9,10 +9,11 @@
             <!--Optional:-->
             <xsd:action>ui.execute</xsd:action>
             <!--Optional:-->
-            <xsd:resourceId>/permission/admin/manage/resources/govern</xsd:resourceId>
-            <xsd:resourceId>/permission/admin/manage/api/create</xsd:resourceId>
+            <!--xsd:resourceId>/permission/admin/manage/resources/govern</xsd:resourceId>
+            <xsd:resourceId>/permission/admin/configure</xsd:resourceId>
+            <xsd:resourceId>/permission/admin/manage/api/create</xsd:resourceId-->
             <xsd:resourceId>/permission/admin</xsd:resourceId>
-            <xsd:resourceId>/permission/admin/configure/governance</xsd:resourceId>
+            
          </ser:permissions>
       </ser:addRole>
    </soapenv:Body>
