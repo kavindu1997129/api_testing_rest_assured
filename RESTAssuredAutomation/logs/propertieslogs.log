@@ -14771,3 +14771,18 @@
 [INFO ] 2022-10-26 11:20:28.413 [TestNG-tests-1] DemoDataValidation - Status Code [SEARCHED API BY NAME]: 200
 [INFO ] 2022-10-26 11:20:28.571 [TestNG-tests-1] DemoDataValidation - Status Code [AVAILABILITY OF APPLICATION 1]: 200
 [INFO ] 2022-10-26 11:20:29.714 [TestNG-tests-1] DemoDataValidation - Status Code [INVOKE REST API]: 200
+[INFO ] 2022-10-26 16:46:25.247 [TestNG-tests-1] DataPopulations - [TENANT MANAGMENT]: Tenant management related tests were completed
+[INFO ] 2022-10-26 16:46:28.769 [TestNG-tests-1] DataPopulations - [USER STORE]: User store related tests were completed
+[INFO ] 2022-10-26 16:46:33.559 [TestNG-tests-1] DataPopulations - Status Code [CREATE OPEN API DEFINITION]: 201
+[INFO ] 2022-10-26 16:46:34.766 [TestNG-tests-1] DataPopulations - Status Code [UPLOAD API THUMBNAIL]: 201
+[INFO ] 2022-10-26 16:46:35.589 [TestNG-tests-1] DataPopulations - Status Code [CHANGE API STATUS]: 200
+[INFO ] 2022-10-26 16:46:35.669 [TestNG-tests-1] DataPopulations - Status Code [SEARCH API]: 200
+[INFO ] 2022-10-26 16:46:35.670 [TestNG-tests-1] DataPopulations - [PUBLISHER PORTAL]: Publisher Portal tests were completed
+[INFO ] 2022-10-26 16:46:36.109 [TestNG-tests-1] DataPopulations - Status Code [SEARCHED API BY NAME]: 200
+[INFO ] 2022-10-26 16:46:36.257 [TestNG-tests-1] DataPopulations - Status Code [CREATE NEW APPLICATION 1]: 201
+[INFO ] 2022-10-26 16:46:36.417 [TestNG-tests-1] DataPopulations - Status Code [SUBSCRIBE TO API 1]: 201
+[INFO ] 2022-10-26 16:46:36.701 [TestNG-tests-1] DataPopulations - Status Code [GENERATE ACCESS TOKEN 1]: 200
+[INFO ] 2022-10-26 16:46:36.711 [TestNG-tests-1] DataPopulations - [DEV PORTAL]: Developer Portal tests were completed
+[INFO ] 2022-10-26 16:48:24.070 [TestNG-tests-1] DemoDataValidation - Status Code [SEARCHED API BY NAME]: 200
+[INFO ] 2022-10-26 16:48:24.196 [TestNG-tests-1] DemoDataValidation - Status Code [AVAILABILITY OF APPLICATION 1]: 200
+[INFO ] 2022-10-26 16:48:24.378 [TestNG-tests-1] DemoDataValidation - Status Code [INVOKE REST API]: 200
